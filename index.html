@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ProtoType Builder</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/css/kang2oon.reset.min.css" rel="stylesheet">
+	<link href="/css/jquery-ui.min.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/jquery.modal.css" rel="stylesheet">
+	<link href="/css/colorPicker.css" rel="stylesheet">
+	<link href="/css/prism.css" rel="stylesheet">
+	<link href="/css/jquery.ezdz.min.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/css/pt-common.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+	<div class="container clearfix">
+		<div class="action_area">
+			<ul class="clearfix">
+				<li class="bgcolor">
+					<p>Background</p>
+					<input id="wrapcolor" type="text" value="#f2f2f4" />
+				</li>
+				<li class="text-center clearfix rsp">
+					<i class="fa fa-desktop"></i>
+					<div class="switch">
+						<input id="responsive" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+						<label for="responsive"></label>
+					</div>
+					<i class="fa fa-mobile"></i>
+				</li>
+				<li class="text-right act_btn">
+					<a href="#load" name="modal" class="btn btn-default">Load</a>
+					<a href="javascript:reset();" class="btn btn-default">Reset</a>
+					<a href="#preview" name="modal" class="btn btn-special">Preview</a>
+					<!--a href="javascript:save();" class="btn btn-special">Save</a-->	
+				</li>
+			</ul>
+		</div>
+		<div class="wrapper">
+			<div id="pt-wrapper" class="droparea"></div>		
+		</div>
+	</div>
+	<div class="sidebar">
+		<h1>PROTOTYPE<br/>BUILDER</h1>
+		<div id="templete">
+			<h3>채용공고 형</h3>
+			<div>
+				<ul class="drag-list">
+					<li item="pt1_mod0101">1</li>
+					<li item="pt1_mod0102">2</li>
+					<li item="pt1_mod0103">3</li>
+					<!-- <li item="ad_letter1"><img src="/images/ad_letter_type1.png" alt="" /><span>AD Letter Template1</span></li>
+					<li item="edulove_letter1"><img src="/images/ad_letter_type2.png" alt="" /><span>AD Letter Template2(교컴)</span></li>
+					<li item="mall_letter1"><img src="/images/mall_letter_type1.png" alt="" /><span>Mall Letter Template1(목)</span></li>
+					<li item="mall_letter2"><img src="/images/mall_letter_type2.png" alt="" /><span>Mall Letter Template2(목)</span></li> -->
+				</ul>
+			</div>
+			<h3>브로슈어 형</h3>
+			<div>
+				<ul class="drag-list">
+					
+				</ul>
+			</div>
+			<h3>인포그래픽 형</h3>
+			<div>
+				<ul class="drag-list">
+					
+				</ul>
+			</div>
+			<h3>SNS 형</h3>
+			<div>
+				<ul class="drag-list">
+					
+				</ul>
+			</div>
+			<h3>매거진 형</h3>
+			<div>
+				<ul class="drag-list">
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modals">
+	<div id="load" class="window">
+		<h2>불러오기 <div class="close_modal"><i class="fa fa-times"></i></div></h2>
+		<div class="ac"><input type="file" id="mail-load" onchange='readText(this)' /></div>
+		<a href="javascript:void(0);" class="btn btn-default close_modal mgbotmid">닫기</a>
+	</div>
+
+	<div id="preview" class="window">
+		<h2>Code Preview <div class="close_modal"><i class="fa fa-times"></i></div></h2>
+		<pre><code class="language-markup"></code></pre>
+		<a href="javascript:void(0);" class="btn btn-default close_modal mgbotmid">닫기</a>
+	</div>
+	
+	<div id="edit-form" class="window">
+		<h2><span></span> <div class="close_modal"><i class="fa fa-times"></i></div></h2>
+		<div class="edit-contents"></div>
+		<div class="btn-area"><a href="javascript:void(0);" class="btn btn-special edit-save mgbotmid">저장</a> <a href="javascript:void(0);" class="btn btn-default close_modal mgbotmid">닫기</a></div>
+	</div>
+</div>
+
+<div id="mask"></div>
+
+<form id="export-form" action="export.php" method="post" name="export-form">
+	<textarea id="export-textarea" name="export-textarea"></textarea>
+</form>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.ezdz.js"></script>
+<script src="/js/jquery.modal.min.js"></script>
+<script src="/js/jquery.colorPicker.min.js"></script>
+<script src="/js/prism.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/templete.js"></script>
+</body>
+</html>
