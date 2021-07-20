@@ -21,14 +21,14 @@ html, body{font-family:'Noto Sans KR', sans-serif;font-size:13px;-webkit-font-sm
 .sidebar{position:fixed;top:0;left:0;width:240px;height:100%;background:#2d333f;text-align:center;}
 	.sidebar h1{color:rgba(255,255,255,.35);padding :30px 0;line-height:1.2;font-size:16px;border-bottom:1px solid #373d4a;background:#373d4a;}
 	.sidebar img{max-width:100%;}
-.ui-state-highlight {height:1.5em;line-height:1.2em;}
+.ui-state-highlight {height:3em;/*line-height:1.2em;*/}
 #export-form{display:none;}
 #btn_group{display:inline-block;margin:3px;}
 div.wrapper{height:auto;max-height:calc(100vh - 108px);width:calc(100% - 80px);border:1px solid #ccc;margin:20px auto;background:#fff;overflow-y:auto;}
 div.wrapper.xs{width:362px;}
 div.droparea{width:100%;min-height:100px;}
 	div.droparea.xs{width:362px;overflow-x:hidden;}
-	div.droparea > div{cursor:move;}
+	/* div.droparea > div{cursor:move;} */
 ul.drag-list{position:relative;cursor:move;}
 	ul.drag-list li{list-style:none;margin-bottom:10px;text-align:center;line-height:1;}
 	ul.drag-list li span{display:block;color:#fff;font-size:11px;margin:5px 0 15px;}

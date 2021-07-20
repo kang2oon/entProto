@@ -38,7 +38,8 @@ $(document).ready(function(){
 		revert: true,
 		placeholder: "ui-state-highlight",
 		receive : function(event, ui) {
-			$(this).find('li').replaceWith(Contents(jQuery(ui.item[0]).attr('item')));
+			$(this).find('li.item').replaceWith(Contents(jQuery(ui.item[0]).attr('item')));
+			// $(this).find('li').replaceWith(Contents(jQuery(ui.item[0]).attr('item')));
 		}
 	});
 	$(".drag-list li, .droparea").disableSelection();
