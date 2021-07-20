@@ -43,7 +43,7 @@ html, body{font-family:'Noto Sans KR', sans-serif;font-size:13px;font-weight:400
     .header .action a + a{margin-left:24px;}
     .header .action a.on{color:#ff1c31;}
 
-/* Anchor Tab */ 
+/* Anchor Tab */
 .anc_tab-wrap.sty01{border:1px #ddd;border-style:solid none;}
 .anc_tab-wrap.sty02{background:#001540;}
     .anc_tab-wrap .cnt-container{overflow-x:auto;-ms-overflow-style:none;scrollbar-width:none;}

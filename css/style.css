@@ -24,7 +24,7 @@ html, body{font-family:'Noto Sans KR', sans-serif;font-size:13px;-webkit-font-sm
 .ui-state-highlight {height:3em;/*line-height:1.2em;*/}
 #export-form{display:none;}
 #btn_group{display:inline-block;margin:3px;}
-div.wrapper{height:auto;max-height:calc(100vh - 108px);width:calc(100% - 80px);border:1px solid #ccc;margin:20px auto;background:#fff;overflow-y:auto;}
+div.wrapper{height:auto;max-height:calc(100vh - 108px);width:calc(100% - 40px);border:1px solid #ccc;margin:20px auto;background:#fff;overflow-y:auto;}
 div.wrapper.xs{width:362px;}
 div.droparea{width:100%;min-height:100px;}
 	div.droparea.xs{width:362px;overflow-x:hidden;}
