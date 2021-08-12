@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="author" content="kang2oon">
+	<title>Json Data Test</title>
+	<style>
+		#certified span+span::before{content:", ";}
+	</style>
+</head>
+<body>
+
+	<div class="regData">등록일</div><hr/>
+	<div class="modData">최종수정일</div><hr/>
+	<p class="comName">기업명</p><hr/>
+	<p class="comNum">사업자등록번호</p><hr/>
+	<p class="comForm">기업형태</p><hr/>
+	<div class="incCate">업종</div><hr/>
+	<p class="ceo">대표자</p><hr/>
+	<p class="tel">전화번호</p><hr/>
+	<p class="address">주소</p><hr/>
+	<p class="site">홈페이지</p><hr/>
+	<p class="manager">담당자</p>
+	<p class="mngTel">담당자 연락처</p>
+	<p class="mngEmail">담당자 이메일</p><hr/>
+	<div class="history">연혁</div><hr/>
+	<div class="certified">인증</div><hr/>
+	<div class="welfare">복지</div><hr/>
+	<div class="dvCulture">조직문화</div><hr/>
+	<div class="talent">인재상</div><hr/>
+	<div class="slogan">슬로건</div><hr/>
+	<div class="vision">비전</div><hr/>
+	<div class="mission">미션</div><hr/>
+	<div class="keyValue">핵심가치</div><hr/>
+	<div class="keyTask">전략과제</div><hr/>
+	<div class="swot">SWOT</div><hr/>
+	<div class="bizDiv">사업영역</div><hr/>
+	<div class="product">주요상품</div><hr/>
+	<div class="ivCeo">CEO인터뷰</div><hr/>
+	<div class="ivMng">인사담당자 인터뷰</div><hr/>
+	<div class="ivEmp">신입사원 인터뷰</div><hr/>
+	<div class="employee">직원정보</div><hr/>
+	<div class="recruitProcess">채용절차</div><hr/>
+	<div class="comMov">기업 홍보영상</div><hr/>
+	<div class="comPic">기업 내/외부 사진</div><hr/>
+	<h2>API - 나이스정보통신</h2><hr/>
+	<div class="comBuildDate">설립일</div><hr/>
+	<div class="employeeState">종업원 현황</div><hr/>
+	<div class="financeInfo">재무정보</div><hr/>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="jsontohtml.js"></script>
+<script>
+	xmlhttp.open("GET", "8738601250.json");
+	xmlhttp.send();
+</script>
+</body>
+</html>

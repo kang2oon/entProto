@@ -20,7 +20,7 @@ html, body{font-family:'Noto Sans KR', sans-serif;font-size:13px;font-weight:400
 /* Header */
 .header-wrap{padding:70px 0;}
     .header-wrap.sty01{background:url(/images/bg_sty01.png) 50% 50%;}
-    .header-wrap.sty02{}
+    /* .header-wrap.sty02{} */
 .header{position:relative;}
     .header .biz_cate{position:absolute;top:-70px;right:0;text-align:center;padding:32px 16px;border-radius:0 0 8px 8px;font-size:14px;font-weight:300;}
     .header .biz_cate.blue{background:#437cff;color:#fff;}
