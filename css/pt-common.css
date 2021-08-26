@@ -5,11 +5,15 @@ Date    : 2021-07-16
 */
 
 /* Font */
-@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@300;400;500;700&display=swap');
 /* reset */
 html,body{width:100%;height:100%}html{overflow-y:scroll}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,table,tr,th,td,label,select{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}ul,ol,li{list-style:none}img,fieldset{border:0}label{cursor:pointer}textarea{overflow:auto}button,input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}input[type="checkbox"],input[type="radio"]{border:0}svg:not(:root){overflow:hidden}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}.clearfix:before,.clearfix:after{content:"";display:block}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix{*zoom:1}
 /* Common */
+*{box-sizing:border-box;}
 html, body{font-family:'Noto Sans KR', sans-serif;font-size:13px;font-weight:400;-webkit-font-smoothing:antialiased;line-height:1.6;color:#212121;}
+img{max-width:100%;}a{text-decoration:none;color:inherit;}
+.ff_serif{font-family:'Noto Serif KR', serif;}
 .fc_fff{color:#fff;}
 .fc_000{color:#000;}
 .fc_919191{color:#919191;}
@@ -21,12 +25,13 @@ html, body{font-family:'Noto Sans KR', sans-serif;font-size:13px;font-weight:400
 .header-wrap{padding:70px 0;}
     .header-wrap.sty01{background:url(/images/bg_sty01.png) 50% 50%;}
     /* .header-wrap.sty02{} */
-.header{position:relative;}
+.header{position:relative;display:flex;align-items:center;}
     .header .biz_cate{position:absolute;top:-70px;right:0;text-align:center;padding:32px 16px;border-radius:0 0 8px 8px;font-size:14px;font-weight:300;}
     .header .biz_cate.blue{background:#437cff;color:#fff;}
     .header .biz_cate.green{background:#93b022;color:#fff;}
     .header .biz_cate.cate01 i{position:relative;display:block;width:40px;height:40px;margin:0 auto 8px;background:url(/images/ico_biz_cate01.png) no-repeat 50% 50%;}
-    .header .logo{float:left;margin-right:144px;}
+    .header .logo{float:left;margin-right:120px;}
+    .header .logo img{max-width:300px;}
     .header .info{float:left;}
     .header .info dl{margin:12px 0 36px;}
     .header .info dl dt, .header .info dl dd{float:left;line-height:20px;}
@@ -59,3 +64,94 @@ html, body{font-family:'Noto Sans KR', sans-serif;font-size:13px;font-weight:400
     .anc_tab-wrap.sty02 li:first-child{border-left:1px solid rgba(255,255,255,.25);}
     .anc_tab-wrap.sty02 a{position:relative;display:inline-block;color:inherit;font-size:16px;font-weight:300;text-decoration:none;padding:20px 32px;}
     .anc_tab-wrap.sty02 a.active{background:#da0011;font-weight:400;}
+
+/* 인포그래픽형 */
+    /* 기업소개 */
+.inf_mod_company.sty01{background-color:#002d78;padding:80px 0 60px;}
+    .inf_mod_company.sty01 h2{font-size:72px;font-weight:500;}
+    .inf_mod_company.sty01 .slogan{font-size:24px;margin-bottom:80px;}
+    .inf_mod_company.sty01 .com_goal{display:flex;max-width:800px;margin-top:24px;}
+    .inf_mod_company.sty01 .com_goal .tit{width:240px;text-align:right;font-size:40px;font-weight:500;color:#cee5ff;margin-right:32px;}
+    .inf_mod_company.sty01 .com_goal .tit.box{background:#016be3;padding:24px 20px 24px 36px;}
+    .inf_mod_company.sty01 .com_goal .mission, .inf_mod_company.sty01 .com_goal .vision, .inf_mod_company.sty01 .com_goal .keyValue{font-size:20px;width:calc(100% - 272px);}
+    .inf_mod_company.sty01 .com_goal .mission span, .inf_mod_company.sty01 .com_goal .vision span{font-size:16px;display:block;color:#cee5ff;}
+    .inf_mod_company.sty01 .com_goal .keyValue ul{display:flex;justify-content:space-between;height:100%;}
+    .inf_mod_company.sty01 .com_goal .keyValue ul li{border:1px solid #016be3;font-size:16px;padding:12px 20px;text-align:center;}
+    .inf_mod_company.sty01 .com_goal .keyValue ul li::before{content:" ";display:block;width:52px;height:52px;margin:0 auto 8px;}
+    /* 재무정보 */
+.inf_mod_financeS1.sty01{padding:80px 0;}
+    .inf_mod_financeS1.sty01 h3{font-size:48px;font-weight:500;text-align:center;margin-bottom:60px;}
+    .inf_mod_financeS1.sty01 ul{display:flex;justify-content:space-evenly;}
+    .inf_mod_financeS1.sty01 ul li{text-align:center;font-size:20px;font-weight:300;}
+    .inf_mod_financeS1.sty01 ul li .ico{position:relative;display:block;width:240px;height:240px;margin:0 auto 20px;background-color:#ececec;border-radius:50%;text-align:center;}
+    .inf_mod_financeS1 ul li .ico::before{
+        position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);
+        content:" ";display:block;width:120px;height:120px;
+    }
+    .inf_mod_financeS1.sty01 ul li .cnt{font-size:40px;font-weight:500;color:#fbc800;}
+.inf_mod_financeS2.sty01{background-color:#d3e3fa;padding:80px 0;height:730px;}
+    .inf_mod_financeS2.sty01 .type_pink{position:absolute;left:50%;top:50%;transform:translate(-40%, 0);width:570px;}
+    .inf_mod_financeS2.sty01 .type_pink li{
+        text-align:center;display:flex;justify-content:center;align-items:center;flex-direction:column;
+        background-repeat:no-repeat;background-position:50% 50%;color:#fff;font-size:24px;line-height:1.4;
+    }
+    .inf_mod_financeS2.sty01 .type_pink li:nth-child(1){height:180px;background-image:url(/images/bg_financeS2_pink_top.png);background-size:100% 180px;}
+    .inf_mod_financeS2.sty01 .type_pink li:nth-child(2){height:180px;background-image:url(/images/bg_financeS2_pink_mid.png);background-size:100% 180px;}
+    .inf_mod_financeS2.sty01 .type_pink li:nth-child(3){height:160px;background-image:url(/images/bg_financeS2_pink_bot.png);background-size:100% 160px;}
+    .inf_mod_financeS2.sty01 .type_pink li span{font-size:42px;font-weight:500;}
+    .inf_mod_financeS2.sty01 .type_orange{position:absolute;left:50%;top:50%;transform:translate(5%, 100px);width:500px;}
+    .inf_mod_financeS2.sty01 .type_orange li{
+        text-align:center;display:flex;justify-content:center;align-items:center;flex-direction:column;
+        background-repeat:no-repeat;background-position:50% 50%;color:#fff;font-size:21px;line-height:1.3;
+    }
+    .inf_mod_financeS2.sty01 .type_orange li:nth-child(1){height:160px;background-image:url(/images/bg_financeS2_orange_top.png);background-size:100% 160px;}
+    .inf_mod_financeS2.sty01 .type_orange li:nth-child(2){height:140px;background-image:url(/images/bg_financeS2_orange_mid.png);background-size:100% 140px;}
+    .inf_mod_financeS2.sty01 .type_orange li:nth-child(3){height:140px;background-image:url(/images/bg_financeS2_orange_bot.png);background-size:100% 140px;}
+    .inf_mod_financeS2.sty01 .type_orange li span{font-size:38px;font-weight:500;}
+    .inf_mod_financeS2.sty01 .type_green{position:absolute;left:50%;top:50%;transform:translate(-100%, 200px);width:360px;
+    }
+    .inf_mod_financeS2.sty01 .type_green li{
+        text-align:center;display:flex;justify-content:center;align-items:center;flex-direction:column;
+        background-repeat:no-repeat;background-position:50% 50%;color:#fff;font-size:21px;line-height:1.2;
+    }
+    .inf_mod_financeS2.sty01 .type_green li:nth-child(1){height:120px;background-image:url(/images/bg_financeS2_green_top.png);background-size:100% 120px;}
+    .inf_mod_financeS2.sty01 .type_green li:nth-child(2){height:100px;background-image:url(/images/bg_financeS2_green_mid.png);background-size:100% 100px;}
+    .inf_mod_financeS2.sty01 .type_green li:nth-child(3){height:100px;background-image:url(/images/bg_financeS2_green_bot.png);background-size:100% 100px;}
+    .inf_mod_financeS2.sty01 .type_green li span{font-size:38px;font-weight:500;}
+    .inf_mod_financeS2.sty01 .type_blue{position:absolute;left:50%;top:50%;transform:translate(-190%, 270px);width:280px;
+    }
+    .inf_mod_financeS2.sty01 .type_blue li{
+        text-align:center;display:flex;justify-content:center;align-items:center;flex-direction:column;
+        background-repeat:no-repeat;background-position:50% 50%;color:#1f628d;font-size:16px;line-height:1.2;
+    }
+    .inf_mod_financeS2.sty01 .type_blue li:nth-child(1){height:100px;background-image:url(/images/bg_financeS2_blue_top.png);background-size:100% 100px;}
+    .inf_mod_financeS2.sty01 .type_blue li:nth-child(2){height:100px;background-image:url(/images/bg_financeS2_blue_mid.png);background-size:100% 100px;}
+    .inf_mod_financeS2.sty01 .type_blue li:nth-child(3){height:100px;background-image:url(/images/bg_financeS2_blue_bot.png);background-size:100% 100px;}
+    .inf_mod_financeS2.sty01 .type_blue li span{font-size:28px;font-weight:500;}
+    /* 직원정보 */
+.inf_mod_emp.sty01{background-color:#f3f3f3;padding:80px 0;}
+    .inf_mod_emp.sty01 .empCnt_wrap{display:flex;justify-content:space-between;}
+    .inf_mod_emp.sty01 .empCnt_wrap > div{flex:1;}
+    .inf_mod_emp.sty01 .empCnt_wrap > div+div{margin-left:80px;}
+    .inf_mod_emp.sty01 .lastEmployeeState{background-color:#fff;border-radius:30px;}
+    .inf_mod_emp.sty01 .lastEmployeeState > div{display:flex;align-items:center;}
+    .inf_mod_emp.sty01 .lastEmployeeState > div > div{flex:1;}
+    .inf_mod_emp.sty01 .lastEmployeeState > div > div+div{margin-left:40px;}
+    .inf_mod_emp.sty01 .lastEmployeeState > div > div:nth-child(1){text-align:right;}
+    .inf_mod_emp.sty01 .lastEmployeeState .total_wrap{background-color:#ff8b10;color:#fff;border-radius:30px;font-size:24px;padding:30px 0;}
+    .inf_mod_emp.sty01 .lastEmployeeState .total_wrap .lastTotal{font-size:40px;font-weight:500;}
+    .inf_mod_emp.sty01 .lastEmployeeState .empState_wrap{font-size:18px;margin-top:32px;}
+    .inf_mod_emp.sty01 .lastEmployeeState .empState_wrap .lastJoin, .inf_mod_emp.sty01 .lastEmployeeState .empState_wrap .lastResign{font-size:24px;font-weight:500;}
+    /* 그래프 데이터 */
+.graphData{display:none;}
+#graph_empCnt svg{min-height:300px;}
+    /* 조직문화 & 복지정보 */
+.inf_mod_welfare.sty01{background-color:#d3e3fa;padding:80px 0;}
+    .inf_mod_welfare.sty01 h3{color:#092e87;font-size:48px;}
+    .inf_mod_welfare.sty01 .culture_wrap{position:relative;margin-top:40px;background-color:#fff;}
+    .swiper{width:100%;height:100%;}
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+      }
+

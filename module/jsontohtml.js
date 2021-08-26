@@ -2,7 +2,6 @@ const xmlhttp = new XMLHttpRequest();
 
 xmlhttp.onload = function() {
     const myObj = JSON.parse(this.responseText);
-    var baseUrl = "1";
     //var baseUrl = "https://cdn.jsdelivr.net/gh/kang2oon/entProto/";
     // 등록일
     var regData = myObj.regData;
@@ -46,6 +45,10 @@ xmlhttp.onload = function() {
     $(".manager").html(manager);
     $(".mngTel").html(mngTel);
     $(".mngEmail").html(mngEmailLink);
+    // 기업 CI
+    var imgCiUrl = myObj.imgCi;
+    var imgCi = "<img src='"+imgCiUrl+"' alt='"+comName+"'/>";
+    $(".imgCi").html(imgCi);
     // 연혁
     var historyCnt = myObj.history.length;
     var histroyWrap = myObj.history;
@@ -175,14 +178,16 @@ xmlhttp.onload = function() {
     // 조직문화
     var dvCultureCnt = myObj.dvCulture.length;
     var dvCultureWrap = myObj.dvCulture;
-    var dvCulture = "<dl>";
+    var dvCulture = "<div class='swiper-wrapper'>";
     for(var i=0; i<dvCultureCnt; i++){
         var title = dvCultureWrap[i].title;
         var desc = dvCultureWrap[i].desc;
-        dvCulture += "<dt>"+title+"</dt>";
-        dvCulture += "<dd>"+desc+"</dd>";
+        dvCulture += "<div class='swiper-slide'>";
+        dvCulture += "<div>"+title+"</div>";
+        dvCulture += "<div>"+desc+"</div>";
+        dvCulture += "</div>";
     }
-    dvCulture += "</dl>";
+    dvCulture += "</div>";
     $(".dvCulture").html(dvCulture);
     // 인재상
     var talentCnt = myObj.talent.length;
@@ -324,7 +329,7 @@ xmlhttp.onload = function() {
     $(".recruitProcess").html(recruitProcess);
     // 기업홍보영상
     var comMovUrl = myObj.comMov;
-    var comMov = "<iframe width='560' height='315' src='"+comMovUrl+"' title='YouTube video player' frameborder='0' allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture' allowfullscreen></iframe>";
+    var comMov = "<iframe src='"+comMovUrl+"' title='YouTube video player' frameborder='0' allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture' allowfullscreen></iframe>";
     $(".comMov").html(comMov);
     // 기업 내/외부 사진
     var comPicCnt = myObj.comPic.length;
@@ -357,6 +362,23 @@ xmlhttp.onload = function() {
     }
     employeeState += "</ul>";
     $(".employeeState").html(employeeState);
+    var ctLabel = "";
+    for(var i=0; i<empstatCnt; i++){
+        ctLabel += "<span>"+empstatWrap[i].year+"</span>";
+        joinCnt += "<span>"+empstatWrap[i].cnt[0].join+"</span>";
+        resignCnt += "<span>"+empstatWrap[i].cnt[0].resign+"</span>";
+        totalCnt += "<span>"+empstatWrap[i].cnt[0].total+"</span>";
+    }
+    $(".ctLabel").html(ctLabel);
+    $(".joinCnt").html(joinCnt);
+    $(".resignCnt").html(resignCnt);
+    $(".totalCnt").html(totalCnt);
+    var lastTotal = empstatWrap[0].cnt[0].total;
+    var lastJoin = empstatWrap[0].cnt[0].join;
+    var lastResign = empstatWrap[0].cnt[0].resign;
+    $(".lastEmployeeState .lastTotal").html(lastTotal);
+    $(".lastEmployeeState .lastJoin").html(lastJoin);
+    $(".lastEmployeeState .lastResign").html(lastResign);
     // 재무정보
     var financeInfoWrap = myObj.financeInfo[0];
     var fiPosition = financeInfoWrap.position;
@@ -368,6 +390,57 @@ xmlhttp.onload = function() {
         financeInfo += "<li>매출액(백만원) : "+fiSales[0]+", "+fiSales[1]+", "+fiSales[2]+"</li>";
         financeInfo += "<li>당기순이익(백만원) : "+fiProfit[0]+", "+fiProfit[1]+", "+fiProfit[2]+"</li>";
         financeInfo += "<li>자본금(백만원) : "+fiCapital[0]+", "+fiCapital[1]+", "+fiCapital[2]+"</li>";
-        financeInfo += "<ul>";
+        financeInfo += "</ul>";
     $(".financeInfo").html(financeInfo);
+    if(fiPosition[0] != null){
+        $(".fiPosition").html(fiPosition[0]+"위");
+    }else{
+        $(".fiPosition").html("순위없음");
+    }
+    $(".fiSales").html(fiSales[0]);
+    $(".fiProfit").html(fiProfit[0]);
+    $(".fiCapital").html(fiCapital[0]);
+    // 기업평가 등급
+    var bizGrade = myObj.bizGrade;
+    $(".bizGrade").html(bizGrade);
+    // 산업 내 위치
+    var bizPositionWrap = myObj.bizPosition[0];
+    var bpActivity = bizPositionWrap.activity;
+    var bpProfitability = bizPositionWrap.profitability;
+    var bpStability = bizPositionWrap.stability;
+    var bpGrowthability = bizPositionWrap.growthability;
+    var bpScale = bizPositionWrap.scale;
+    var bizPosition = "<h3>산업 내 위치</h3><ul>";
+        bizPosition += "<li>활동성 : "+bpActivity+"</li>";
+        bizPosition += "<li>수익성 : "+bpProfitability+"</li>";
+        bizPosition += "<li>안정성 : "+bpStability+"</li>";
+        bizPosition += "<li>성장성 : "+bpGrowthability+"</li>";
+        bizPosition += "<li>규모 : "+bpScale+"</li>";
+        bizPosition += "</ul>";
+    $(".bizPosition").html(bizPosition);
+    if(bpActivity != null){
+        $(".bpActivity").html(bpActivity);
+    }else{
+        $(".bpActivity").html("정보없음");
+    }
+    if(bpProfitability != null){
+        $(".bpProfitability").html(bpProfitability);
+    }else{
+        $(".bpProfitability").html("정보없음");
+    }
+    if(bpStability != null){
+        $(".bpStability").html(bpStability);
+    }else{
+        $(".bpStability").html("정보없음");
+    }
+    if(bpGrowthability != null){
+        $(".bpGrowthability").html(bpGrowthability);
+    }else{
+        $(".bpGrowthability").html("정보없음");
+    }
+    if(bpScale != null){
+        $(".bpScale").html(bpScale);
+    }else{
+        $(".bpScale").html("정보없음");
+    }    
 }

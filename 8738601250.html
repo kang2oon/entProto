@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="author" content="kang2oon">
+	<title class="comName">기업명</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="/css/pt-common.css" rel="stylesheet">
+    <style>
+        /*기업별 스타일*/
+        .inf_mod_company{
+            background-image:url(/images/@smp_bg_inf_mod_company01.png);
+            background-repeat:no-repeat;
+            background-position:100% 0;
+        }
+        .inf_mod_company .com_goal .keyValue ul li::before{
+            background-image:url(/images/@smp_bg_inf_mod_company_keyValue.png);
+            background-repeat:no-repeat;
+            background-position:0 0;
+            background-size:cover;
+        }
+        .inf_mod_company .com_goal .keyValue ul li:nth-child(2):before{background-position-x:-52px;}
+        .inf_mod_company .com_goal .keyValue ul li:nth-child(3):before{background-position-x:-104px;}
+        .inf_mod_company .com_goal .keyValue ul li:nth-child(4):before{background-position-x:-156px;}
+        .inf_mod_financeS1 ul li .ico::before{
+            background-image:url(/images/@smp_bg_inf_mod_finance01.png);
+            background-repeat:no-repeat;
+            background-position:0 0;
+            background-size:cover;
+        }
+        .inf_mod_financeS1 ul li:nth-child(2) .ico::before{background-position-x:-120px;}
+        .inf_mod_financeS1 ul li:nth-child(3) .ico::before{background-position-x:-240px;}
+        .inf_mod_financeS1 ul li:nth-child(4) .ico::before{background-position-x:-360px;}
+    </style>
+</head>
+<body>
+    <div class="module-wrap">
+        <div class="header-wrap sty02">
+            <div class="cnt-container header clearfix">
+                <div class="biz_cate cate01 green">
+                    <i></i>
+                    Consulting
+                </div>
+                <div class="logo imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
+                <div class="info fc_000">
+                    <dl class="clearfix">
+                        <dt>업종</dt>
+                        <dd class="incCate">업종</dd>
+                        <dt>대표자</dt>
+                        <dd class="ceo">대표자</dd>
+                        <dt>기업형태</dt>
+                        <dd class="comForm">기업형태</dd>
+                    </dl>
+                    <div class="action fc_000 clearfix">
+                        <a href="javascript:void(0);" class="on">관심기업 등록<i>♥</i></a>
+                        <a href="javascript:void(0);">공고 바로가기<i>→</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module-wrap">
+        <div class="anc_tab-wrap sty02">
+            <div class="cnt-container fc_fff">
+                <ul>
+                    <li><a href="javascript:void(0);" class="active">기업개요</a></li>
+                    <li><a href="javascript:void(0);">현직자 인터뷰</a></li>
+                    <li><a href="javascript:void(0);">채용공고</a></li>
+                    <li> <a href="javascript:void(0);">기업 뉴스</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="module-wrap inf_mod_company sty01">    
+        <div class="cnt-container fc_fff">
+            <h2 class="comName">기업명</h2>
+            <div class="slogan">슬로건</div>
+            <div class="com_goal clearfix">
+                <div class="tit">미션</div>
+                <div class="mission">미션</div>
+            </div>
+            <div class="com_goal clearfix">
+                <div class="tit">비전</div>
+                <div class="vision">비전</div>
+            </div>
+            <div class="com_goal clearfix">
+                <div class="tit box">핵심가치</div>
+                <div class="keyValue">핵심가치</div>
+            </div>
+        </div>
+    </div>
+    <div class="module-wrap inf_mod_financeS1 sty01">
+        <div class="cnt-container">
+            <h3>Finance Information</h3>
+            <ul>
+                <li>
+                    <div class="ico"></div>
+                    <div class="cnt"><span class="fiPosition">-</span></div>
+                    동종업종내 위치
+                </li>
+                <li>
+                    <div class="ico"></div>
+                    <div class="cnt"><span class="fiCapital">-</span></div>
+                    자본금(백만원)
+                </li>
+                <li>
+                    <div class="ico"></div>
+                    <div class="cnt"><span class="fiProfit">-</span></div>
+                    당기순이익(백만원)
+                </li>
+                <li>
+                    <div class="ico"></div>
+                    <div class="cnt"><span class="fiSales">-</span></div>
+                    매출액(백만원)
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="module-wrap inf_mod_financeS2 sty01">
+        <div class="cnt-container">
+            <ul class="type_pink">
+                <li></li>
+                <li>
+                    성장성<span class="bpGrowthability">-</span>
+                </li>
+                <li></li>
+            </ul>
+            <ul class="type_orange">
+                <li></li>
+                <li>
+                    규모형태<span class="bpScale">-</span>
+                </li>
+                <li></li>
+            </ul>
+            <ul class="type_green">
+                <li></li>
+                <li></li>
+                <li>
+                    안정성<span class="bpStability">-</span>
+                </li>
+            </ul>
+            <ul class="type_blue">
+                <li></li>
+                <li>
+                    수익성<span class="bpProfitability">-</span>
+                </li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="module-wrap inf_mod_emp sty01">
+        <div class="cnt-container">
+            <div class="empCnt_wrap">
+                <ul class="graphData">
+                    <li class="ctLabel"></li>
+                    <li class="joinCnt"></li>
+                    <li class="resignCnt"></li>
+                    <li class="totalCnt"></li>
+                </ul>
+                <div id="graph_empCnt"></div>
+                <div class="lastEmployeeState">
+                    <div class="total_wrap">
+                        <div>총 인원(명)</div>
+                        <div class="lastTotal">-</div>
+                    </div>
+                    <div class="empState_wrap">
+                        <div>최근 1년 입사자</div>
+                        <div class="lastJoin">-</div>
+                    </div>
+                    <div class="empState_wrap">
+                        <div>최근 1년 퇴사자</div>
+                        <div class="lastResign">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module-wrap inf_mod_welfare sty01">
+        <div class="cnt-container">
+            <h3>조직문화</h3>
+            <div class="culture_wrap">
+                <div class="swiper dvCulture">
+                    조직문화            
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="/module/jsontohtml.js"></script>
+<script>
+	xmlhttp.open("GET", "/module/8738601250.json");
+    xmlhttp.onloadend = function(){
+        var ctLabelData1 = $('.ctLabel span:nth-child(1)').text();
+        var ctLabelData2 = $('.ctLabel span:nth-child(2)').text();
+        var ctLabelData3 = $('.ctLabel span:nth-child(3)').text();
+        var joinCnt1 = $('.joinCnt span:nth-child(1)').text();
+        var joinCnt2 = $('.joinCnt span:nth-child(2)').text();
+        var joinCnt3 = $('.joinCnt span:nth-child(3)').text();
+        var resignCnt1 = $('.resignCnt span:nth-child(1)').text();
+        var resignCnt2 = $('.resignCnt span:nth-child(2)').text();
+        var resignCnt3 = $('.resignCnt span:nth-child(3)').text();
+        var totalCnt1 = $('.totalCnt span:nth-child(1)').text();
+        var totalCnt2 = $('.totalCnt span:nth-child(2)').text();
+        var totalCnt3 = $('.totalCnt span:nth-child(3)').text();
+
+        var chart1 = bb.generate({
+            bindto: "#graph_empCnt",
+            data: {
+                type: "bar",
+                x: "x",
+                columns: [
+                    ["x", ctLabelData3, ctLabelData2, ctLabelData1],
+                    ["입사자", joinCnt3, joinCnt2, joinCnt1],
+                    ["퇴사자", resignCnt3, resignCnt2, resignCnt1],
+                    ["총원", totalCnt3, totalCnt2, totalCnt1]
+                ],
+                colors: {
+                    입사자 : "rgba(0, 46, 121, 1)",
+                    퇴사자 : "rgba(189, 189, 189, 1)",
+                    총원 : "rgba(255, 139, 16, 1)"
+                }
+            },
+            grid: {
+                x: {
+                    show: true
+                },
+                y: {
+                    show: true
+                }
+            },
+            bar: {
+                padding: 3,
+                width: {
+                    max: 30
+                }
+            }
+        });
+
+        setTimeout(function(){
+            chart1.resize();
+        }, 100);
+
+    };
+	xmlhttp.send();
+
+    $(document).ready(function(){
+        var dvCulture = new Swiper(".dvCulture",{
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: ".culture_wrap .swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".culture_wrap .swiper-button-next",
+                prevEl: ".culture_wrap .swiper-button-prev"
+            }
+        });
+    });
+</script>
+</body>
+</html>

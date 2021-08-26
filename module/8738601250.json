@@ -1,19 +1,19 @@
 {
-    "regData" : "",
-    "modData" : "",
+    "regData" : "2021-08-10",
+    "modData" : "2021-08-12",
     "comName" : "헌정안전 주식회사",
     "comNum" : "873-86-01250",
     "comForm" : "중소기업",
     "incCate" : "서비스업",
-    "ceo" : "",
-    "tel" : "",
+    "ceo" : "김상호",
+    "tel" : "031-990-7050",
     "zipcode" : 14118,
     "address" : "경기도 안양시 동안구 엘에스로 116번길 25-32, 912호 ",
     "site" : "https://hj-safety.co.kr/",
     "manager" : "신지희",
     "mngTel" : "010-2307-1033",
     "mngEmail" : "contact@hj-safety.co.kr",
-    "imgCi" : "",
+    "imgCi" : "https://cdn.imweb.me/thumbnail/20210201/2243d8df177c0.png",
     "history" : [
         {
             "year" : 2021,
@@ -98,7 +98,6 @@
             "education" : [
                 "신입사원교육",
                 "직무향상교육"
-                
             ],
             "convenience" : [
                 "중식제공",
@@ -120,7 +119,6 @@
                 "휴가비 지원",
                 "직책수당",
                 "육아수당"
-
             ],
             "facilities" : [
                 
@@ -163,8 +161,8 @@
     "imgThumbOver" : "",
     "imgCom" : "",
     "slogan" : "안전에 대한 Total Solution을 제공하는 종합 안전 컨설팅 회사 구현",
-    "vision" : "Keep Your Safety Visible, 안전관리의 시각화를 통해 새로운 안전 패러다임 제시",
-    "mission" : "Awake Your Safety Mind, 잠들어 있는 안전의식을 깨워 모두가 안전한 사회 구현",
+    "vision" : "<span>Keep Your Safety Visible,</span> 안전관리의 시각화를 통해 새로운 안전 패러다임 제시",
+    "mission" : "<span>Awake Your Safety Mind,</span> 잠들어 있는 안전의식을 깨워 모두가 안전한 사회 구현",
     "keyValue" : [
         "도전과 성취",
         "유연한 사고",
@@ -386,6 +384,16 @@
             "sales" : [555, null, null],
             "profit" : [-48, null, null],
             "capital" : [100, null, null]
+        }
+    ],
+    "bizGrade" : "BBB-",
+    "bizPosition" : [
+        {
+            "activity" : null,
+            "profitability" : null,
+            "stability" : null,
+            "growthability" : null,
+            "scale" : null
         }
     ]
 }
