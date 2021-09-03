@@ -14,35 +14,32 @@ Contents = function(item) {
 		case "mod_header01":
 			var contents = "";
 			//contents += "<script src='https://code.jquery.com/jquery-1.12.4.min.js' integrity='sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=' crossorigin='anonymous'></script>\n";
-			contents += "<div class='module-wrap edit_wrap'>\n";
-			contents += "<div class='header-wrap sty01'>\n";
+			contents += "<div class='module-wrap edit_wrap com_mod_header sty01'>\n";
 			contents += "<div class='cnt-container header clearfix'>\n";
 			contents += "<div class='biz_cate cate01 blue'><i></i>Consulting</div>\n";
 			contents += "<div class='logo'><img src='/images/logo_smaple01.png' alt='' /></div>\n";
 			contents += "<div class='info fc_fff'>\n";
 			contents += "<dl class='clearfix'><dt>업종</dt><dd>사회적기업</dd><dt>대표자</dt><dd>제윤경</dd><dt>기업형태</dt><dd>사회적기업</dd></dl>\n";
 			contents += "<div class='action fc_fff clearfix'><a href='javascript:void(0);'>관심기업 등록<i>♥</i></a><a href='javascript:void(0);'>공고 바로가기<i>→</i></a></div>\n";
-			contents += "</div>\n</div>\n</div>\n";
+			contents += "</div>\n</div>\n";
 			contents += "</div>\n";
 		break;
 		case "mod_header02":
 			var contents = "";
-			contents += "<div class='module-wrap edit_wrap bg_color'>\n";
-			contents += "<div class='header-wrap sty02'>\n";
+			contents += "<div class='module-wrap edit_wrap bg_color com_mod_header sty02'>\n";
 			contents += "<div class='cnt-container header clearfix'>\n";
 			contents += "<div class='biz_cate cate01 green'><i></i>Consulting</div>\n";
 			contents += "<div class='logo'><img src='/images/logo_smaple01.png' alt='' /></div>\n";
 			contents += "<div class='info fc_000'>\n";
 			contents += "<dl class='clearfix'><dt>업종</dt><dd>사회적기업</dd><dt>대표자</dt><dd>제윤경</dd><dt>기업형태</dt><dd>사회적기업</dd></dl>\n";
 			contents += "<div class='action fc_000 clearfix'><a href='javascript:void(0);' class='on'>관심기업 등록<i>♥</i></a><a href='javascript:void(0);'>공고 바로가기<i>→</i></a></div>\n";
-			contents += "</div>\n</div>\n</div>\n";
+			contents += "</div>\n</div>\n";
 			contents += "</div>\n";
 		break;
 
 		// Anchor Tab
 		case "mod_anc_tab01":
-			var contents = "<div class='module-wrap edit_wrap bg_color'>\n";
-			contents += "<div class='anc_tab-wrap sty01'>\n";
+			var contents = "<div class='module-wrap edit_wrap bg_color com_mod_anchor sty01'>\n";
 			contents += "<div class='cnt-container fc_919191'>\n";
 			contents += "<ul>\n"
 			contents += "<li><a href='javascript:void(0);' class='active'>채용공고</a></li>\n";
@@ -52,11 +49,9 @@ Contents = function(item) {
 			contents += "<li> <a href='javascript:void(0);'>기업 뉴스</a></li>\n";
 			contents += "</ul>\n";
 			contents += "</div>\n</div>\n";
-			contents += "</div>\n";
 		break;
 		case "mod_anc_tab02":
-			var contents = "<div class='module-wrap edit_wrap'>\n";
-			contents += "<div class='anc_tab-wrap sty02'>\n";
+			var contents = "<div class='module-wrap edit_wrap com_mod_anchor sty02'>\n";
 			contents += "<div class='cnt-container fc_fff'>\n";
 			contents += "<ul>\n"
 			contents += "<li><a href='javascript:void(0);' class='active'>채용공고</a></li>\n";
@@ -66,7 +61,6 @@ Contents = function(item) {
 			contents += "<li> <a href='javascript:void(0);'>기업 뉴스</a></li>\n";
 			contents += "</ul>\n";
 			contents += "</div>\n</div>\n";
-			contents += "</div>\n";
 		break;
 		
 		// 채용공고 형

@@ -104,76 +104,98 @@ xmlhttp.onload = function() {
     var handicap = welfareWrap.handicap;
     var etc = welfareWrap.etc;
     var welfare = "";
+    var welfare = "<div class='swiper-wrapper'>";
     if ( deduct.length > 0 ){
+        welfare += "<div class='swiper-slide deduct'>";
         welfare += "<dl><dt>공제</dt>";
         for(var i=0; i<deduct.length; i++){
             welfare += "<dd>"+deduct[i]+"</dd>";
         }
         welfare += "</dl>";
+        welfare += "</div>";
     }
     if ( insurance.length > 0 ){
+        welfare += "<div class='swiper-slide insurance'>";
         welfare += "<dl><dt>연금/보험</dt>";
         for(var i=0; i<insurance.length; i++){
             welfare += "<dd>"+insurance[i]+"</dd>";
         }
         welfare += "</dl>";
+        welfare += "</div>";
     }
     if ( education.length > 0 ){
+        welfare += "<div class='swiper-slide education'>";
         welfare += "<dl><dt>교육/연수</dt>";
         for(var i=0; i<education.length; i++){
             welfare += "<dd>"+education[i]+"</dd>";
         }
         welfare += "</dl>";
+        welfare += "</div>";
     }
     if ( convenience.length > 0 ){
+        welfare += "<div class='swiper-slide convenience'>";
         welfare += "<dl><dt>생활편의</dt>";
         for(var i=0; i<convenience.length; i++){
             welfare += "<dd>"+convenience[i]+"</dd>";
         }
         welfare += "</dl>";
+        welfare += "</div>";
     }
     if ( leisure.length > 0 ){
+        welfare += "<div class='swiper-slide leisure'>";
         welfare += "<dl><dt>여가/행사</dt>";
         for(var i=0; i<leisure.length; i++){
             welfare += "<dd>"+leisure[i]+"</dd>";
         }
         welfare += "</dl>";
+        welfare += "</div>";
     }
     if ( reward.length > 0 ){
+        welfare += "<div class='swiper-slide reward'>";
         welfare += "<dl><dt>보상/수당</dt>";
         for(var i=0; i<reward.length; i++){
             welfare += "<dd>"+reward[i]+"</dd>";
         }
         welfare += "</dl>";
+        welfare += "</div>";
     }
     if ( facilities.length > 0 ){
+        welfare += "<div class='swiper-slide facilities'>";
         welfare += "<dl><dt>사내시설</dt>";
         for(var i=0; i<facilities.length; i++){
             welfare += "<dd>"+facilities[i]+"</dd>";
         }
         welfare += "</dl>";
+        welfare += "</div>";
     }
     if ( holiday.length > 0 ){
+        welfare += "<div class='swiper-slide holiday'>";
         welfare += "<dl><dt>휴무/휴가</dt>";
         for(var i=0; i<holiday.length; i++){
             welfare += "<dd>"+holiday[i]+"</dd>";
         }
         welfare += "</dl>";
+        welfare += "</div>";
     }
     if ( handicap.length > 0 ){
+        welfare += "<div class='swiper-slide handicap'>";
         welfare += "<dl><dt>장애인지원</dt>";
         for(var i=0; i<handicap.length; i++){
             welfare += "<dd>"+handicap[i]+"</dd>";
         }
         welfare += "</dl>";
+        welfare += "</div>";
     }
     if ( etc.length > 0 ){
+        welfare += "<div class='swiper-slide etc'>";
         welfare += "<dl><dt>기타</dt>";
         for(var i=0; i<etc.length; i++){
             welfare += "<dd>"+etc[i]+"</dd>";
         }
         welfare += "</dl>";
+        welfare += "</div>";
     }
+    welfare += "</div>";
     $(".welfare").html(welfare);
     // 조직문화
     var dvCultureCnt = myObj.dvCulture.length;
@@ -183,11 +205,10 @@ xmlhttp.onload = function() {
         var title = dvCultureWrap[i].title;
         var desc = dvCultureWrap[i].desc;
         dvCulture += "<div class='swiper-slide'>";
-        dvCulture += "<div>"+title+"</div>";
-        dvCulture += "<div>"+desc+"</div>";
+        dvCulture += "<div class='tit'>"+title+"</div>";
+        dvCulture += "<div class='desc'>"+desc+"</div>";
         dvCulture += "</div>";
     }
-    dvCulture += "</div>";
     $(".dvCulture").html(dvCulture);
     // 인재상
     var talentCnt = myObj.talent.length;

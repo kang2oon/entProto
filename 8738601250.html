@@ -11,59 +11,80 @@
     <link href="/css/pt-common.css" rel="stylesheet">
     <style>
         /*기업별 스타일*/
-        .inf_mod_company{
+        .inf_mod_summary{
             background-image:url(/images/@smp_bg_inf_mod_company01.png);
             background-repeat:no-repeat;
             background-position:100% 0;
         }
-        .inf_mod_company .com_goal .keyValue ul li::before{
+        .inf_mod_summary .com_goal .keyValue ul li::before{
             background-image:url(/images/@smp_bg_inf_mod_company_keyValue.png);
             background-repeat:no-repeat;
             background-position:0 0;
             background-size:cover;
         }
-        .inf_mod_company .com_goal .keyValue ul li:nth-child(2):before{background-position-x:-52px;}
-        .inf_mod_company .com_goal .keyValue ul li:nth-child(3):before{background-position-x:-104px;}
-        .inf_mod_company .com_goal .keyValue ul li:nth-child(4):before{background-position-x:-156px;}
-        .inf_mod_financeS1 ul li .ico::before{
+        .inf_mod_summary .com_goal .keyValue ul li:nth-child(2):before{background-position-x:-52px;}
+        .inf_mod_summary .com_goal .keyValue ul li:nth-child(3):before{background-position-x:-104px;}
+        .inf_mod_summary .com_goal .keyValue ul li:nth-child(4):before{background-position-x:-156px;}
+        .inf_mod_finance ul li .ico::before{
             background-image:url(/images/@smp_bg_inf_mod_finance01.png);
             background-repeat:no-repeat;
             background-position:0 0;
             background-size:cover;
         }
-        .inf_mod_financeS1 ul li:nth-child(2) .ico::before{background-position-x:-120px;}
-        .inf_mod_financeS1 ul li:nth-child(3) .ico::before{background-position-x:-240px;}
-        .inf_mod_financeS1 ul li:nth-child(4) .ico::before{background-position-x:-360px;}
+        .inf_mod_finance ul li:nth-child(2) .ico::before{background-position-x:-120px;}
+        .inf_mod_finance ul li:nth-child(3) .ico::before{background-position-x:-240px;}
+        .inf_mod_finance ul li:nth-child(4) .ico::before{background-position-x:-360px;}
+
+        .inf_mod_welfare .culture_wrap::before{content:url(/images/img_culture.png);position:absolute;left:0;bottom:0;line-height:0;}
+        .inf_mod_welfare .welfare_wrap::before{content:url(/images/img_welfare.png);position:absolute;left:0;bottom:0;line-height:0;}
+        .inf_mod_welfare .culture_wrap .swiper-slide::before{
+            content:"";display:inline-block;margin-bottom:8px;width:112px;height:112px;
+            background-image:url(/images/ico_culture.png);background-repeat:no-repeat;background-position:0 0;
+        }
+        .inf_mod_welfare .culture_wrap .swiper-slide:nth-child(2):before{background-position-x:-112px;}
+        .inf_mod_welfare .culture_wrap .swiper-slide:nth-child(3):before{background-position-x:-224px;}
+        .inf_mod_welfare .welfare_wrap .swiper-slide::before{
+            content:"";display:inline-block;margin-bottom:8px;width:112px;height:112px;
+            background-image:url(/images/ico_welfare.png);background-repeat:no-repeat;background-position:0 0;
+        }
+        .inf_mod_welfare .welfare_wrap .swiper-slide.deduct::before{background-position-x:-112px;}
+        .inf_mod_welfare .welfare_wrap .swiper-slide.insurance::before{background-position-x:0;}
+        .inf_mod_welfare .welfare_wrap .swiper-slide.education::before{background-position-x:-224px;}
+        .inf_mod_welfare .welfare_wrap .swiper-slide.convenience::before{background-position-x:-112px;}
+        .inf_mod_welfare .welfare_wrap .swiper-slide.leisure::before{background-position-x:-224px;}
+        .inf_mod_welfare .welfare_wrap .swiper-slide.reward::before{background-position-x:0;}
+        .inf_mod_welfare .welfare_wrap .swiper-slide.facilities::before{background-position-x:-112px;}
+        .inf_mod_welfare .welfare_wrap .swiper-slide.holiday::before{background-position-x:-224px;}
+        .inf_mod_welfare .welfare_wrap .swiper-slide.handicap::before{background-position-x:0;}
+        .inf_mod_welfare .welfare_wrap .swiper-slide.etc::before{background-position-x:-112px;}
     </style>
 </head>
 <body>
-    <div class="module-wrap">
-        <div class="header-wrap sty02">
-            <div class="cnt-container header clearfix">
-                <div class="biz_cate cate01 green">
-                    <i></i>
-                    Consulting
-                </div>
-                <div class="logo imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
-                <div class="info fc_000">
-                    <dl class="clearfix">
-                        <dt>업종</dt>
-                        <dd class="incCate">업종</dd>
-                        <dt>대표자</dt>
-                        <dd class="ceo">대표자</dd>
-                        <dt>기업형태</dt>
-                        <dd class="comForm">기업형태</dd>
-                    </dl>
-                    <div class="action fc_000 clearfix">
-                        <a href="javascript:void(0);" class="on">관심기업 등록<i>♥</i></a>
-                        <a href="javascript:void(0);">공고 바로가기<i>→</i></a>
-                    </div>
+    <div class="module-wrap com_mod_header sty02">
+        <div class="cnt-container header clearfix">
+            <div class="biz_cate cate01 green">
+                <i></i>
+                Consulting
+            </div>
+            <div class="logo imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
+            <div class="info fc_000">
+                <dl class="clearfix">
+                    <dt>업종</dt>
+                    <dd class="incCate">업종</dd>
+                    <dt>대표자</dt>
+                    <dd class="ceo">대표자</dd>
+                    <dt>기업형태</dt>
+                    <dd class="comForm">기업형태</dd>
+                </dl>
+                <div class="action fc_000 clearfix">
+                    <a href="javascript:void(0);" class="on">관심기업 등록<i>♥</i></a>
+                    <a href="javascript:void(0);">공고 바로가기<i>→</i></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="module-wrap">
-        <div class="anc_tab-wrap sty02">
+        <div class="com_mod_anchor sty02">
             <div class="cnt-container fc_fff">
                 <ul>
                     <li><a href="javascript:void(0);" class="active">기업개요</a></li>
@@ -74,7 +95,7 @@
             </div>
         </div>
     </div>
-    <div class="module-wrap inf_mod_company sty01">    
+    <div class="module-wrap inf_mod_summary sty01">    
         <div class="cnt-container fc_fff">
             <h2 class="comName">기업명</h2>
             <div class="slogan">슬로건</div>
@@ -92,7 +113,7 @@
             </div>
         </div>
     </div>
-    <div class="module-wrap inf_mod_financeS1 sty01">
+    <div class="module-wrap inf_mod_finance sty01">
         <div class="cnt-container">
             <h3>Finance Information</h3>
             <ul>
@@ -119,7 +140,7 @@
             </ul>
         </div>
     </div>
-    <div class="module-wrap inf_mod_financeS2 sty01">
+    <div class="module-wrap inf_mod_percent sty01">
         <div class="cnt-container">
             <ul class="type_pink">
                 <li></li>
@@ -185,7 +206,14 @@
                 <div class="swiper dvCulture">
                     조직문화            
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <h3 class="mgtop_80">복리후생</h3>
+            <div class="welfare_wrap">
+                <div class="swiper welfare">
+                    복리후생            
+                </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
@@ -249,28 +277,26 @@
             chart1.resize();
         }, 100);
 
-    };
-	xmlhttp.send();
-
-    $(document).ready(function(){
-        var dvCulture = new Swiper(".dvCulture",{
+        var dvCultureSlider = new Swiper(".dvCulture",{
             slidesPerView: 3,
             spaceBetween: 30,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            loop: true,
-            pagination: {
-                el: ".culture_wrap .swiper-pagination",
-                clickable: true,
-            },
             navigation: {
                 nextEl: ".culture_wrap .swiper-button-next",
                 prevEl: ".culture_wrap .swiper-button-prev"
             }
         });
-    });
+
+        var welfareSlider = new Swiper(".welfare",{
+            slidesPerView: 3,
+            spaceBetween: 30,
+            //loop: true,
+            navigation: {
+                nextEl: ".welfare_wrap .swiper-button-next",
+                prevEl: ".welfare_wrap .swiper-button-prev"
+            }
+        });
+    };
+	xmlhttp.send();
 </script>
 </body>
 </html>
