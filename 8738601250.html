@@ -57,6 +57,16 @@
         .inf_mod_welfare .welfare_wrap .swiper-slide.holiday::before{background-position-x:-224px;}
         .inf_mod_welfare .welfare_wrap .swiper-slide.handicap::before{background-position-x:0;}
         .inf_mod_welfare .welfare_wrap .swiper-slide.etc::before{background-position-x:-112px;}
+        .com_mod_add{padding:120px 0;}
+        .com_mod_add .img_wrap{display:flex;flex-wrap:wrap;}
+        .com_mod_add .img_wrap div{flex:1 1 30%;}
+        .com_mod_add .img_wrap div + div{margin-left:20px;}
+        .inf_mod_swot.sty01 .swot_wrap .tit::before{
+            content:"";position:absolute;width:46px;height:46px;background-image:url(/images/ico_swot.png);background-repeat:no-repeat;}
+        .inf_mod_swot.sty01 .swot_wrap .swotS .tit::before{right:-60px;top:4px;background-position:0 0;}
+        .inf_mod_swot.sty01 .swot_wrap .swotW .tit::before{left:-60px;top:4px;background-position:-46px 0;}
+        .inf_mod_swot.sty01 .swot_wrap .swotO .tit::before{right:-60px;top:4px;background-position:-92px 0;}
+        .inf_mod_swot.sty01 .swot_wrap .swotT .tit::before{left:-60px;top:4px;background-position:-138px 0;}
     </style>
 </head>
 <body>
@@ -219,6 +229,74 @@
             </div>
         </div>
     </div>
+    <div class="module-wrap com_mod_add">
+        <div class="cnt-container">
+            <div class="img_wrap">
+                <div><img src="/images/@smp_img_cert01.png" alt="" /></div>
+                <div><img src="/images/@smp_img_cert02.png" alt="" /></div>
+                <div><img src="/images/@smp_img_cert03.png" alt="" /></div>
+            </div>
+            <div class="img_wrap mgtop_20">
+                <div><img src="/images/@smp_img_photo01.png" alt="" /></div>
+                <div><img src="/images/@smp_img_photo02.png" alt="" /></div>
+                <div><img src="/images/@smp_img_photo03.png" alt="" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="module-wrap inf_mod_swot sty01">
+        <div class="cnt-container swot_wrap">
+            <div class="title">
+                SWOT<br/>분석
+                <hr/>
+                <div class="imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
+            </div>
+            <div class="swotS">
+                <div class="tit">strengths</div>
+                <div class="desc">strengths</div>
+            </div>
+            <div class="swotW">
+                <div class="tit">weakenesses</div>
+                <div class="desc">strengths</div>
+            </div>
+            <div class="swotO">
+                <div class="tit">opportunities</div>
+                <div class="desc">strengths</div>
+            </div>
+            <div class="swotT">
+                <div class="tit">threats</div>
+                <div class="desc">strengths</div>
+            </div>
+        </div>
+    </div>
+    <div class="module-wrap inf_mod_biz sty01">
+        <div class="cnt-container">
+            <h3>주요사업</h3>
+            <div class="slogan">슬로건</div>
+            <div class="bizDiv mgtop_80">주요사업</div>
+        </div>
+    </div>
+    <div class="module-wrap inf_mod_interview sty01">
+        <div class="cnt-container">
+            <div class="iv_wrap qa_ceo">
+                <div class="ivCeoPhoto photo">대표이사 사진</div>
+                <div class="swiper ivCeo">대표이사 인터뷰</div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="iv_wrap qa_mng mgtop_80">
+                <div class="ivMngPhoto photo">인사담당자 사진</div>
+                <div class="swiper ivMng">인사담당자 인터뷰</div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="iv_wrap qa_emp mgtop_80">
+                <div class="ivEmpPhoto photo">인사담당자 사진</div>
+                <div class="swiper ivEmp">인사담당자 인터뷰</div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
 
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
@@ -293,6 +371,39 @@
             navigation: {
                 nextEl: ".welfare_wrap .swiper-button-next",
                 prevEl: ".welfare_wrap .swiper-button-prev"
+            }
+        });
+
+        var ceoIvSlider = new Swiper(".ivCeo",{
+            slidesPerView: 3,
+            spaceBetween: 0,
+            //loop: true,
+            autoHeight: true,
+            navigation: {
+                nextEl: ".iv_wrap.qa_ceo .swiper-button-next",
+                prevEl: ".iv_wrap.qa_ceo .swiper-button-prev"
+            }
+        });
+
+        var mngIvSlider = new Swiper(".ivMng",{
+            slidesPerView: 3,
+            spaceBetween: 0,
+            //loop: true,
+            autoHeight: true,
+            navigation: {
+                nextEl: ".iv_wrap.qa_mng .swiper-button-next",
+                prevEl: ".iv_wrap.qa_mng .swiper-button-prev"
+            }
+        });
+
+        var empIvSlider = new Swiper(".ivEmp",{
+            slidesPerView: 3,
+            spaceBetween: 0,
+            //loop: true,
+            autoHeight: true,
+            navigation: {
+                nextEl: ".iv_wrap.qa_emp .swiper-button-next",
+                prevEl: ".iv_wrap.qa_emp .swiper-button-prev"
             }
         });
     };
