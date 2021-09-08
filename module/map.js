@@ -13,7 +13,11 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 // 지도를 생성합니다    
 var map = new kakao.maps.Map(mapContainer, mapOption);
 
+map.setZoomable(false);
 
+// 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+var zoomControl = new kakao.maps.ZoomControl();
+map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
 // 장소 검색 객체를 생성합니다
 var ps = new kakao.maps.services.Places(map); 
@@ -100,12 +104,13 @@ function displayPlaces(places) {
 
 // 마커를 생성하고 지도 위에 마커를 표시하는 함수입니다
 function addMarker(position, order) {
-    var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_category.png', // 마커 이미지 url, 스프라이트 이미지를 씁니다
-        imageSize = new kakao.maps.Size(27, 28),  // 마커 이미지의 크기
+    var imageSrc = '/images/ico_location_map.png',
+    //var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_category.png', // 마커 이미지 url, 스프라이트 이미지를 씁니다
+        imageSize = new kakao.maps.Size(30, 30),  // 마커 이미지의 크기
         imgOptions =  {
-            spriteSize : new kakao.maps.Size(72, 208), // 스프라이트 이미지의 크기
-            spriteOrigin : new kakao.maps.Point(46, (order*36)), // 스프라이트 이미지 중 사용할 영역의 좌상단 좌표
-            offset: new kakao.maps.Point(11, 28) // 마커 좌표에 일치시킬 이미지 내에서의 좌표
+            spriteSize : new kakao.maps.Size(72, 504), // 스프라이트 이미지의 크기
+            spriteOrigin : new kakao.maps.Point(36, (order*36)), // 스프라이트 이미지 중 사용할 영역의 좌상단 좌표
+            offset: new kakao.maps.Point(15, 15) // 마커 좌표에 일치시킬 이미지 내에서의 좌표
         },
         markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imgOptions),
             marker = new kakao.maps.Marker({
@@ -191,3 +196,4 @@ function changeCategoryClass(el) {
         el.className = 'on';
     } 
 } 
+  

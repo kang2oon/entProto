@@ -67,21 +67,6 @@
         .inf_mod_swot.sty01 .swot_wrap .swotW .tit::before{left:-60px;top:4px;background-position:-46px 0;}
         .inf_mod_swot.sty01 .swot_wrap .swotO .tit::before{right:-60px;top:4px;background-position:-92px 0;}
         .inf_mod_swot.sty01 .swot_wrap .swotT .tit::before{left:-60px;top:4px;background-position:-138px 0;}
-
-        #category {position:absolute;top:10px;left:10px;border-radius: 5px; border:1px solid #909090;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);background: #fff;overflow: hidden;z-index: 200;}
-        #category li {float:left;list-style: none;width:50px;border-right:1px solid #acacac;padding:6px 0;text-align: center; cursor: pointer;}
-        #category li.on {background: #eee;}
-        #category li:hover {background: #ffe6e6;border-left:1px solid #acacac;margin-left: -1px;}
-        #category li:last-child{margin-right:0;border-right:0;}
-        #category li span {display: block;margin:0 auto 3px;width:27px;height: 28px;}
-        #category li .category_bg {background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_category.png) no-repeat;}
-        #category li .bank {background-position: -10px 0;}
-        #category li .mart {background-position: -10px -36px;}
-        #category li .pharmacy {background-position: -10px -72px;}
-        #category li .oil {background-position: -10px -108px;}
-        #category li .cafe {background-position: -10px -144px;}
-        #category li .store {background-position: -10px -180px;}
-        #category li.on .category_bg {background-position-x:-46px;}
     </style>
 </head>
 <body>
@@ -405,36 +390,74 @@
     </div>
     <div class="module-wrap com_mod_map">
         <div id="map"></div>
-        <ul id="category">
-            <li id="BK9" data-order="0"> 
-                <span class="category_bg bank"></span>
-                은행
-            </li>       
-            <li id="FD6" data-order="1"> 
-                <span class="category_bg mart"></span>
-                음식점
-            </li>  
-            <li id="PM9" data-order="2"> 
-                <span class="category_bg pharmacy"></span>
-                약국
-            </li>  
-            <li id="SW8" data-order="3"> 
-                <span class="category_bg oil"></span>
-                지하철
-            </li>  
-            <li id="CE7" data-order="4"> 
-                <span class="category_bg cafe"></span>
-                카페
-            </li>  
-            <li id="CS2" data-order="5"> 
-                <span class="category_bg store"></span>
-                편의점
-            </li>
-            <li id="HP8" data-order="2"> 
-                <span class="category_bg pharmacy"></span>
-                병원
-            </li>      
-        </ul>
+        <div class="map_info_wrap">
+            <div class="com_info">
+                <div class="comName">기업명</div>
+                <a href="javascript:void(0);" target="_blank" class="find_road">길 찾기</a>
+                <p class="comAddress">주소</p>
+                <p class="tel">전화번호</p>
+            </div>
+            <div class="around_wrap">
+                <ul id="category">
+                    <li id="MT1" data-order="0"> 
+                        <span class="category_bg mt1"></span>
+                        대형마트
+                    </li>       
+                    <li id="CS2" data-order="1"> 
+                        <span class="category_bg cs2"></span>
+                        편의점
+                    </li>  
+                    <li id="AC5" data-order="2"> 
+                        <span class="category_bg ac5"></span>
+                        학원
+                    </li>  
+                    <li id="PK6" data-order="3"> 
+                        <span class="category_bg pk6"></span>
+                        주차장
+                    </li>  
+                    <li id="OL7" data-order="4"> 
+                        <span class="category_bg ol7"></span>
+                        주유소
+                    </li>  
+                    <li id="SW8" data-order="5"> 
+                        <span class="category_bg sw8"></span>
+                        지하철
+                    </li>
+                    <li id="BK9" data-order="6"> 
+                        <span class="category_bg bk9"></span>
+                        은행
+                    </li> 
+                    <li id="CT1" data-order="7"> 
+                        <span class="category_bg ct1"></span>
+                        문화시설
+                    </li>       
+                    <li id="AT4" data-order="8"> 
+                        <span class="category_bg at4"></span>
+                        관광명소
+                    </li>  
+                    <li id="AD5" data-order="9"> 
+                        <span class="category_bg ad5"></span>
+                        숙박
+                    </li>  
+                    <li id="FD6" data-order="10"> 
+                        <span class="category_bg fd6"></span>
+                        음식점
+                    </li>  
+                    <li id="CE7" data-order="11"> 
+                        <span class="category_bg ce7"></span>
+                        카페
+                    </li>  
+                    <li id="HP8" data-order="12"> 
+                        <span class="category_bg hp8"></span>
+                        병원
+                    </li>
+                    <li id="PM9" data-order="14"> 
+                        <span class="category_bg pm9"></span>
+                        약국
+                    </li>      
+                </ul>
+            </div>
+        </div>
     </div>
 
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -444,15 +467,6 @@
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script>
 <script src="/module/jsontohtml.js"></script>
 <script src="/module/map.js"></script>
-<script>
-    // var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-    //     mapOption = { 
-    //         center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-    //         level: 3 // 지도의 확대 레벨
-    //     };
-
-    // var map = new kakao.maps.Map(mapContainer, mapOption);
-</script>
 <script>
 	xmlhttp.open("GET", "/module/8738601250.json");
     xmlhttp.onloadend = function(){
@@ -468,6 +482,8 @@
         var totalCnt1 = $('.totalCnt span:nth-child(1)').text();
         var totalCnt2 = $('.totalCnt span:nth-child(2)').text();
         var totalCnt3 = $('.totalCnt span:nth-child(3)').text();
+        var comName = $('h2.comName').text();
+        var comAddress = $('.comAddress').text();
 
         var chart1 = bb.generate({
             bindto: "#graph_empCnt",
@@ -557,6 +573,53 @@
                 prevEl: ".iv_wrap.qa_emp .swiper-button-prev"
             }
         });
+
+        // 주소-좌표 변환 객체를 생성합니다
+        var geocoder = new kakao.maps.services.Geocoder();
+
+        // 주소로 좌표를 검색합니다
+        geocoder.addressSearch(comAddress, function(result, status) {
+
+            // 정상적으로 검색이 완료됐으면 
+            if (status === kakao.maps.services.Status.OK) {
+
+                var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+                //console.log(result[0].y+' / '+result[0].x);
+
+                var imageSrc = '/images/ico_mark.png', // 마커이미지의 주소입니다    
+                    imageSize = new kakao.maps.Size(34, 48), // 마커이미지의 크기입니다
+                    imageOption = {offset: new kakao.maps.Point(16, 48)};
+
+                    // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption)
+
+                // 결과값으로 받은 위치를 마커로 표시합니다
+                var marker = new kakao.maps.Marker({
+                    map: map,
+                    position: coords,
+                    image: markerImage
+                });
+
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+
+                var content = '<div class="customoverlay">'+comName+'</div>';
+
+                var customOverlay = new kakao.maps.CustomOverlay({
+                    map: map,
+                    position: coords,
+                    content: content,
+                    yAnchor: 1 
+                });
+
+                // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+                map.setCenter(coords);
+
+                var find_road = "https://map.kakao.com/link/to/"+comName+","+result[0].y+","+result[0].x;
+                //console.log(find_road);
+                $(".find_road").attr("href",find_road);
+            } 
+        });  
     };
 	xmlhttp.send();
 </script>

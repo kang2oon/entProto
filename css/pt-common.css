@@ -105,6 +105,55 @@ img{max-width:100%;}a{text-decoration:none;color:inherit;}
     /* 지도 */
 .com_mod_map{height:720px;}
     .com_mod_map #map{height:720px;}
+    .com_mod_map .map_info_wrap{position:absolute;top:0;left:0;background-color:#fff;z-index:100;}
+    .com_mod_map .map_info_wrap .com_info{padding:20px;background-color:#258fff;color:#fff;}
+    .com_mod_map .map_info_wrap .com_info .comName{display:inline-block;font-size:20px;font-weight:700;line-height:26px;}
+    .com_mod_map .map_info_wrap .com_info .find_road{
+        display:inline-block;margin-left:8px;border:1px solid #fff;border-radius:16px;padding:2px 8px;z-index:110;cursor:pointer;
+    }
+    .com_mod_map .map_info_wrap .com_info .comAddress{display:block;margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,.35);}
+    .com_mod_map .map_info_wrap .around_wrap{padding:20px 20px 10px;}
+    #category{display:flex;flex-wrap:wrap;max-width:350px;}
+        #category li {width:50px;margin-bottom:10px;text-align:center;cursor:pointer;font-size:12px;letter-spacing:-0.5px;}
+        #category li span{display:block;margin:0 auto 3px;width:30px;height:30px;}
+        #category li .category_bg{background:url(/images/ico_location_map.png) no-repeat;}
+        #category li .mt1{background-position: 0 0;}
+        #category li .cs2{background-position: 0 -36px;}
+        #category li .ac5{background-position: 0 -72px;}
+        #category li .pk6{background-position: 0 -108px;}
+        #category li .ol7{background-position: 0 -144px;}
+        #category li .sw8{background-position: 0 -180px;}
+        #category li .bk9{background-position: 0 -216px;}
+        #category li .ct1{background-position: 0 -252px;}
+        #category li .at4{background-position: 0 -288px;}
+        #category li .ad5{background-position: 0 -324px;}
+        #category li .fd6{background-position: 0 -360px;}
+        #category li .ce7{background-position: 0 -396px;}
+        #category li .hp8{background-position: 0 -432px;}
+        #category li .pm9{background-position: 0 -468px;}
+        #category li.on .category_bg {background-position-x:-36px;}
+
+        .placeinfo_wrap {position:absolute;bottom:28px;left:-150px;width:300px;}
+        .placeinfo {position:relative;width:100%;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;padding-bottom: 10px;background: #fff;}
+        .placeinfo:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
+        .placeinfo_wrap .after {content:'';position:relative;margin-left:-12px;left:50%;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+        .placeinfo a, .placeinfo a:hover, .placeinfo a:active{color:#fff;text-decoration: none;}
+        .placeinfo a, .placeinfo span {display: block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+        .placeinfo span {margin:5px 5px 0 5px;cursor: default;font-size:13px;}
+        .placeinfo .title {font-weight: bold; font-size:14px;border-radius: 6px 6px 0 0;margin: -1px -1px 0 -1px;padding:10px; color: #fff;background: #d95050;background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
+        .placeinfo .tel {color:#0f7833;}
+        .placeinfo .jibun {color:#999;font-size:11px;margin-top:0;}
+        .customoverlay{
+            position:relative;bottom:64px;float:left;
+            border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;
+            background-color:#fff;padding:8px 16px;font-weight:500;
+        }
+
+        .customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
+        /* .customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
+        .customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:bold;} */
+        .customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+        
 
 
 /* 인포그래픽형 */

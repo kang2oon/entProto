@@ -33,6 +33,7 @@ xmlhttp.onload = function() {
     var address = myObj.address;
     var fullAdd = "("+zipcode+") "+address;
     $(".address").html(fullAdd);
+    $(".comAddress").html(address);
     // 홈페이지
     var site = myObj.site;
     var siteLink = "<a href='"+site+"' target='_blank'>"+site+"</a>";
