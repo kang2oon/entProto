@@ -431,13 +431,13 @@ xmlhttp.onload = function() {
         financeInfo += "</ul>";
     $(".financeInfo").html(financeInfo);
     if(fiPosition[0] != null){
-        $(".fiPosition").html(fiPosition[0]+"위");
+        $(".fiPosition").html(fiPosition[0].toLocaleString()+"위");
     }else{
         $(".fiPosition").html("순위없음");
     }
-    $(".fiSales").html(fiSales[0]);
-    $(".fiProfit").html(fiProfit[0]);
-    $(".fiCapital").html(fiCapital[0]);
+    $(".fiSales").html(fiSales[0].toLocaleString());
+    $(".fiProfit").html(fiProfit[0].toLocaleString());
+    $(".fiCapital").html(fiCapital[0].toLocaleString());
     // 기업평가 등급
     var bizGrade = myObj.bizGrade;
     $(".bizGrade").html(bizGrade);
