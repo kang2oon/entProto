@@ -351,11 +351,14 @@ img{max-width:100%;}a{text-decoration:none;color:inherit;}
         position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);text-align:center;font-size:36px;font-weight:700;line-height:1.3;
     }
     .inf_mod_swot.sty01 .swot_wrap .title hr{margin:20px 0;border-width:1px;border-color:#f1f1f1 transparent #5d5d5d;border-style:solid none;min-width:240px;}
-    .inf_mod_swot.sty01 .swot_wrap .title .imgCi{max-width:200px;display:inline-block;}
-    .inf_mod_swot.sty01 .swot_wrap .swotS .tit, 
-    .inf_mod_swot.sty01 .swot_wrap .swotW .tit, 
-    .inf_mod_swot.sty01 .swot_wrap .swotO .tit, 
-    .inf_mod_swot.sty01 .swot_wrap .swotT .tit{color:#082e81;font-size:30px;font-weight:700;text-transform:uppercase;}
+    .inf_mod_swot.sty01 .swot_wrap .title .imgCi{max-width:200px;display:inline-block;} 
+    .inf_mod_swot.sty01 .swot_wrap .tit{color:#082e81;font-size:30px;font-weight:700;text-transform:uppercase;}
+    .inf_mod_swot.sty01 .swot_wrap .tit::before{
+        content:"";position:absolute;width:46px;height:46px;background-image:url(/images/ico_swot.png);background-repeat:no-repeat;}
+    .inf_mod_swot.sty01 .swot_wrap .swotS .tit::before{right:-60px;top:4px;background-position:0 0;}
+    .inf_mod_swot.sty01 .swot_wrap .swotW .tit::before{left:-60px;top:4px;background-position:-46px 0;}
+    .inf_mod_swot.sty01 .swot_wrap .swotO .tit::before{right:-60px;top:4px;background-position:-92px 0;}
+    .inf_mod_swot.sty01 .swot_wrap .swotT .tit::before{left:-60px;top:4px;background-position:-138px 0;}
     .inf_mod_swot.sty01 .swot_wrap .swotS .desc, 
     .inf_mod_swot.sty01 .swot_wrap .swotW .desc, 
     .inf_mod_swot.sty01 .swot_wrap .swotO .desc, 

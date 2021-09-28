@@ -15,6 +15,8 @@
 	<link href="/css/colorPicker.css" rel="stylesheet">
 	<link href="/css/prism.css" rel="stylesheet">
 	<link href="/css/jquery.ezdz.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
 	<link href="/css/style.css" rel="stylesheet">
 	<link href="/css/pt-common.css" rel="stylesheet">
 </head>
@@ -50,20 +52,38 @@
 	<div class="sidebar">
 		<h1>PROTOTYPE<br/>BUILDER</h1>
 		<div id="templete">
-			<h3>헤더</h3>
+			
+			<h3>공통 모듈</h3>
 			<div>
 				<ul class="drag-list">
-					<li class="item" item="mod_header01"><img src="/images/mod_header01.png" alt="" /><span>헤더 모듈 스타일 1</span></li>
-					<li class="item" item="mod_header02"><img src="/images/mod_header02.png" alt="" /><span>헤더 모듈 스타일 2</span></li>
+					<li class="item" item="mod_header01"><img src="/images/mod_header01.png" alt="" /><span>헤더 스타일 1</span></li>
+					<li class="item" item="mod_header02"><img src="/images/mod_header02.png" alt="" /><span>헤더 스타일 2</span></li>
+					<li class="item" item="mod_anc_tab01"><img src="/images/mod_anc_tab01.png" alt="" /><span>탭 스타일 1</span></li>
+					<li class="item" item="mod_anc_tab02"><img src="/images/mod_anc_tab02.png" alt="" /><span>탭 스타일 2</span></li>
+					<li class="item" item="mod_com_recruit"><img src="/images/mod_com_recruit.png" alt="" /><span>채용공고</span></li>
+					<li class="item" item="mod_com_news"><img src="/images/mod_com_news.png" alt="" /><span>기업 뉴스</span></li>
+					<li class="item" item="mod_com_map"><img src="/images/mod_com_map.png" alt="" /><span>지도</span></li>
 				</ul>
 			</div>
-			<h3>탭</h3>
+			
+			<h3>재무정보</h3>
 			<div>
 				<ul class="drag-list">
-					<li class="item" item="mod_anc_tab01"><img src="/images/mod_anc_tab01.png" alt="" /><span>탭 모듈 스타일 1</span></li>
-					<li class="item" item="mod_anc_tab02"><img src="/images/mod_anc_tab02.png" alt="" /><span>탭 모듈 스타일 2</span></li>
+					<li class="item" item="mod_inf_finance01"><img src="/images/mod_inf_finance01.png" alt="" /><span>재무정보 인포그래픽 1</span></li>
+					<li class="item" item="mod_inf_finance02"><img src="/images/mod_inf_finance02.png" alt="" /><span>재무정보 인포그래픽 2</span></li>
+					<li class="item" item="mod_inf_percent01"><img src="/images/mod_inf_percent01.png" alt="" /><span>기업위치 인포그래픽 1</span></li>
+					<li class="item" item="mod_inf_percent02"><img src="/images/mod_inf_percent02.png" alt="" /><span>기업위치 인포그래픽 2</span></li>
 				</ul>
 			</div>
+
+			<h3>SWOT</h3>
+			<div>
+				<ul class="drag-list">
+					<li class="item" item="mod_inf_swot01"><img src="/images/mod_inf_swot01.png" alt="" /><span>SWOT 인포그래픽 1</span></li>
+					<li class="item" item="mod_inf_swot02"><img src="/images/mod_inf_swot02.png" alt="" /><span>SWOT 인포그래픽 2</span></li>
+				</ul>
+			</div>
+			
 			<h3>프로토타입</h3>
 			<div>
 				<ul class="drag-list">
@@ -146,5 +166,9 @@
 <script src="/js/prism.js"></script>
 <script src="/js/script.js"></script>
 <script src="/js/templete.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@5.4.5/js/swiper.min.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script>
+<script src="/module/map.js"></script>
 </body>
 </html>

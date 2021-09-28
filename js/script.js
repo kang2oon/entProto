@@ -4,10 +4,8 @@ $(document).ready(function(){
 		var chk = $(this).is(':checked');
 		if(chk == true){
 			$('.wrapper').addClass('xs');
-			//$('.droparea').addClass('xs');
 		}else{
 			$('.wrapper').removeClass('xs');
-			//$('.droparea').removeClass('xs');
 		}
 	});
 	$('#wrapcolor').change(function(){
@@ -38,8 +36,13 @@ $(document).ready(function(){
 		revert: true,
 		placeholder: "ui-state-highlight",
 		receive : function(event, ui) {
-			$(this).find('li.item').replaceWith(Contents(jQuery(ui.item[0]).attr('item')));
-			// $(this).find('li').replaceWith(Contents(jQuery(ui.item[0]).attr('item')));
+			var item = $(this).find('li.item');
+			var itemType = item.attr('item');
+			console.log(itemType);
+			item.replaceWith(Contents(jQuery(ui.item[0]).attr('item')));
+			if (itemType == 'mod_com_map'){
+				mapAppend();
+			}
 		}
 	});
 	$(".drag-list li, .droparea").disableSelection();
@@ -49,6 +52,18 @@ function addContents(item){
 	var contents = Contents(item);
 	$('.droparea').append(contents);
 }
+// Map Append
+function mapAppend(){
+	var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+		mapOption = {
+			center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+			level: 5 // 지도의 확대 레벨
+		};
+
+	var map = new kakao.maps.Map(mapContainer, mapOption);
+}
+//});
+
 // Left Sidebar Accordion
 $(function(){
     $( "#templete" ).accordion({
