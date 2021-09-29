@@ -59,11 +59,15 @@ xmlhttp.onload = function() {
         var remarkCnt = remarks.length;
         var remark = "";
         for(var j=0; j<remarkCnt; j++){
-            remark += "<li>"+remarks[j].month;
-            remark += " <span>"+remarks[j].event+"</span>";	
-            remark += "</li>";
+            var events = remarks[j].event;
+            var eventsCnt = events.length;
+            remark += "<li><div class='month'>"+remarks[j].month+"</div><div class='event'>";
+            for(var k=0; k<eventsCnt; k++){
+                remark += "<span>"+events[k]+"</span>";
+            }	
+            remark += "</div></li>";
         }
-        history += "<div>"+histroyWrap[i].year;
+        history += "<div><span>"+histroyWrap[i].year+"</span>";
         history += "<ul>"+remark+"</ul>";	
         history += "</div>"
     }

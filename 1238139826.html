@@ -12,28 +12,33 @@
     <style>
         /*기업별 스타일*/
         .inf_mod_summary{background-image:url(/images/@bg_header_1238139826.jpg);background-size:cover;background-position:50% 50%;}
-        .inf_mod_summary .comMsg{font-size:16px;font-weight:300;max-width:55%;margin:0 auto;color:rgba(255,255,255,.75)}
-        .inf_mod_summary .comMsg2{            
-            position:relative;font-size:18px;font-weight:300;border-top:1px solid #3cf6ff;
-            max-width:55%;margin:-100px auto 0;z-index:100;padding-top:40px;
-        }
+        .inf_mod_summary .comMsg{font-size:22px;font-weight:400;margin:0 auto;color:rgba(255,255,255,.9)}
         .mix_biz_product_wrap{
             background-color:#f8f8f8;background-image:url(/images/@bg_mix_1238139826.png);
-            background-position:0 0;background-repeat:no-repeat;
+            background-position:50% 0;background-repeat:no-repeat;
         }
+        .inf_mod_history.sty02 .history_wrap .holder a{font-size:0;}
+        .inf_mod_history.sty02 .history_wrap .holder a:nth-child(1)::before{content:"2021-2016";font-size:20px;}
+        .inf_mod_history.sty02 .history_wrap .holder a:nth-child(3)::before{content:"2015-2011";font-size:20px;}
+        .inf_mod_history.sty02 .history_wrap .holder a:nth-child(4)::before{content:"2010-2006";font-size:20px;}
+        .inf_mod_history.sty02 .history_wrap .holder a:nth-child(5)::before{content:"2005-1998";font-size:20px;}
+        .inf_mod_history.sty02 .history_wrap .holder a:nth-child(7)::before{content:"1997-1990";font-size:20px;}
+        .inf_mod_history.sty02 .history_wrap .history div ul .month{display:none;}
+        .inf_mod_biz.sty02 .msgAdd{text-align:center;color:#666;font-size:18px;max-width:72%;margin:20px auto 40px;}
         .inf_mod_finance ul li .ico::before{
             background-image:url(/images/@bg_finance_1238139826.png);
             background-repeat:no-repeat;background-position:0 0;
-           
         }
         .inf_mod_finance ul li:nth-child(2) .ico::before{background-position-x:-140px;}
         .inf_mod_finance ul li:nth-child(3) .ico::before{background-position-x:-280px;}
         .inf_mod_finance ul li:nth-child(4) .ico::before{background-position-x:-420px;}
+    
+
         .com_mod_add{padding:120px 0;} 
         .com_mod_add .img_wrap{display:flex;flex-wrap:wrap;}
         .com_mod_add.talentPerson{background-color:#f8f8f8;padding:100px 0;}
         .com_mod_add.talentPerson .tit{font-size:48px;font-weight:700;text-align:center;color:#242a73;}
-        .com_mod_add.talentPerson .talent_wrap{display:flex;justify-content:space-between;margin-top:88px;}
+        .com_mod_add.talentPerson .talent_wrap{display:flex;justify-content:space-between;align-items:center;margin-top:40px;}
         .com_mod_add.talentPerson .talent_wrap > div{width:250px;}
         .com_mod_add.talentPerson .talent_wrap > div:nth-child(2n+1){margin-top:120px;}
         .com_mod_add.talentPerson .stit{font-size:18px;font-weight:500;color:#242a73;margin-bottom:8px;}
@@ -84,27 +89,29 @@
     <div class="module-wrap inf_mod_summary sty02">    
         <div class="cnt-container fc_fff">
             <div class="imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
-            <div class="slogan">슬로건</div>
-            <div class="comMsg">(주)빅텍은 고객에게 기대 그 이상의 가치를 드리는  Electronic Warfare Syatem, Power Supply, Signal Processing & Control 분야의 전문 기업입니다.</div>
-            <div class="mv_wrap clearfix">
-                <div>
-                    <div class="tit">MISSION</div>
-                    <div class="desc mission">미션</div>
-                </div>
-                <div>
-                    <div class="tit">VISION</div>
-                    <div class="desc vision">비전</div>
-                </div>
-            </div>
-            <div class="comMsg2">
-                평화로운 오늘의 일상이 이어지고,<br/>다가올 내일이 기대되는 행복한 세상이 행복을 모두가 누릴 수 있도록,<br/><br/>
+            <div class="mission">미션</div>
+            <div class="comMsg">
+                평화로운 오늘의 일상이 이어지고, 다가올 내일이 기대되는 행복한 세상이 행복을 모두가 누릴 수 있도록,<br/>
                 (주)빅텍은 최고의 기술을 위한 도전과 혁신을 이어가고 있습니다.
             </div>
         </div>
     </div>
     <div class="mix_biz_product_wrap">
+        <div class="module-wrap inf_mod_history sty02">
+            <div class="cnt-container">
+                <h3>VICTEK STORY</h3>
+                <div class="history_wrap">
+                    <div class="holder"></div>
+                    <div id="history" class="history">연혁</div>
+                    <div class="arrow_prev">이전</div>
+                    <div class="arrow_next">이후</div>
+                </div>
+            </div>
+        </div>
         <div class="module-wrap inf_mod_biz sty02">
             <div class="cnt-container">
+                <h3>사업분야</h3>
+                <div class="msgAdd">㈜빅텍은 전자전,군용전원,감시/정찰 분야 등 방위산업을 통해 국가안보에 기여하고 있으며, 친환경 모빌리티인 공공자전거 시스템을 통해 더 편리하고 지속가능한 생활환경을 만들고 있습니다. </div>
                 <div class="biz_wrap">
                     <div class="bizDiv">주요사업</div>
                 </div>
@@ -181,6 +188,68 @@
             </div>
         </div>
     </div>
+    <div class="module-wrap com_mod_add talentPerson">
+        <div class="cnt-container">
+            <div class="tit">"빅텍의 가장 소중한 재산은 사람입니다."</div>
+            <div class="talent_wrap">
+                <div>
+                    <div class="ico"></div>
+                    <div class="stit">적극적으로 실천하는 빅텍인</div>
+                    <div class="desc">기업은 영속적으로 발전함으로써 이윤의 사회환원을 통해 국가와 사회에 공헌하게 됩니다. 이런 기업을 영속적으로 발전시킬 수 있는 원동력은 주어진 일에 대한 적극적 사고와 행동실천에 있다고 하겠습니다. </div>
+                </div>
+                <div>
+                    <div class="ico"></div>
+                    <div class="stit">끊임없이 자기계발을 하는 빅텍인</div>
+                    <div class="desc">조직의 구성원이 많아지면 나태해지거나 무사 안일주의가 평배하게 됩니다. 이것은 곧 기업이 쇠퇴하는 원인을 제공하게 되므로 구성원들은 창의력이 발휘 되도록 끊임없는 노력을 통해 건전한 기업을 만들어야 하겠습니다.</div>
+                </div>
+                <div>
+                    <div class="ico"></div>
+                    <div class="stit">세계최고를 목표로 끊임없이 도전하는 빅텍인</div>
+                    <div class="desc">세계화 시대에 세계 우량기업과 경쟁에서 이기려면 진취적인 창의성과 도전정신이 필요합니다.</div>
+                </div>
+                <div>
+                    <div class="ico"></div>
+                    <div class="stit">침착한 판단과 결과에 책임지는 빅텍인</div>
+                    <div class="desc">실무자의 판단이 가장 중요하며, 일의 성패를 좌우하게 되므로 담당자의 냉철한 판단과 결과에 대해 책임질줄 아는 사람이어야 합니다.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module-wrap inf_mod_interview sty02">
+        <div class="cnt-container">
+            <div class="iv_wrap qa_ceo">
+                <div class="ivCeoPhoto photo">대표이사 사진</div>
+                <div class="qa_warp">
+                    <div class="hr"></div>
+                    <div class="mem">CEO</div>
+                    <div class="swiper ivCeo">대표이사 인터뷰</div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="iv_wrap qa_mng">
+                <div class="ivMngPhoto photo">인사담당자 사진</div>
+                <div class="qa_warp">
+                    <div class="hr"></div>
+                    <div class="mem">인사담당자</div>
+                    <div class="swiper ivMng">인사담당자 인터뷰</div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="iv_wrap qa_emp">
+                <div class="ivEmpPhoto photo">재직자 사진</div>
+                <div class="qa_warp">
+                    <div class="hr"></div>
+                    <div class="mem">재직자</div>
+                    <div class="swiper ivEmp">재직자 인터뷰</div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
     <div class="module-wrap inf_mod_welfare sty02">
         <div class="cnt-container">
             <!-- <h3>조직문화</h3>
@@ -235,55 +304,6 @@
         </div>
     </div>
     
-    <div class="module-wrap inf_mod_interview sty01">
-        <div class="cnt-container">
-            <div class="iv_wrap qa_ceo">
-                <div class="ivCeoPhoto photo">대표이사 사진</div>
-                <div class="swiper ivCeo">대표이사 인터뷰</div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-            <div class="iv_wrap qa_mng mgtop_80">
-                <div class="ivMngPhoto photo">인사담당자 사진</div>
-                <div class="swiper ivMng">인사담당자 인터뷰</div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-            <div class="iv_wrap qa_emp mgtop_80">
-                <div class="ivEmpPhoto photo">인사담당자 사진</div>
-                <div class="swiper ivEmp">인사담당자 인터뷰</div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </div>
-    </div>
-    <div class="module-wrap com_mod_add talentPerson">
-        <div class="cnt-container">
-            <div class="tit">"빅텍의 가장 소중한 재산은 사람입니다."</div>
-            <div class="talent_wrap">
-                <div>
-                    <div class="ico"></div>
-                    <div class="stit">적극적으로 실천하는 빅텍인</div>
-                    <div class="desc">기업은 영속적으로 발전함으로써 이윤의 사회환원을 통해 국가와 사회에 공헌하게 됩니다. 이런 기업을 영속적으로 발전시킬 수 있는 원동력은 주어진 일에 대한 적극적 사고와 행동실천에 있다고 하겠습니다. </div>
-                </div>
-                <div>
-                    <div class="ico"></div>
-                    <div class="stit">끊임없이 자기계발을 하는 빅텍인</div>
-                    <div class="desc">조직의 구성원이 많아지면 나태해지거나 무사 안일주의가 평배하게 됩니다. 이것은 곧 기업이 쇠퇴하는 원인을 제공하게 되므로 구성원들은 창의력이 발휘 되도록 끊임없는 노력을 통해 건전한 기업을 만들어야 하겠습니다.</div>
-                </div>
-                <div>
-                    <div class="ico"></div>
-                    <div class="stit">세계최고를 목표로 끊임없이 도전하는 빅텍인</div>
-                    <div class="desc">세계화 시대에 세계 우량기업과 경쟁에서 이기려면 진취적인 창의성과 도전정신이 필요합니다.</div>
-                </div>
-                <div>
-                    <div class="ico"></div>
-                    <div class="stit">침착한 판단과 결과에 책임지는 빅텍인</div>
-                    <div class="desc">실무자의 판단이 가장 중요하며, 일의 성패를 좌우하게 되므로 담당자의 냉철한 판단과 결과에 대해 책임질줄 아는 사람이어야 합니다.</div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="module-wrap com_mod_recruit sty01">
         <div class="bg_bot"></div>
         <div class="cnt-container">
@@ -453,6 +473,7 @@
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script>
 <script src="/module/jsontohtml.js"></script>
 <script src="/module/map.js"></script>
+<script src="/js/jPages.min.js"></script>
 <script>
 	xmlhttp.open("GET", "/module/1238139826.json");
     xmlhttp.onloadend = function(){
@@ -471,6 +492,13 @@
         var comName = $('.map_info_wrap .comName').text();
         var comAddress = $('.comAddress').text();
 
+        $("div.holder").jPages({
+            containerID : "history",
+            perPage     : 5,
+            previous    : ".arrow_prev",
+            next        : ".arrow_next",
+        });
+        
         var chart1 = bb.generate({
             bindto: "#graph_empCnt",
             data: {
@@ -509,15 +537,6 @@
             chart1.resize();
         }, 100);
 
-        // var dvCultureSlider = new Swiper(".dvCulture",{
-        //     slidesPerView: 3,
-        //     spaceBetween: 30,
-        //     navigation: {
-        //         nextEl: ".culture_wrap .swiper-button-next",
-        //         prevEl: ".culture_wrap .swiper-button-prev"
-        //     }
-        // });
-
         var welfareSlider = new Swiper(".welfare",{
             slidesPerView: 2,
             // grid: {
@@ -533,7 +552,8 @@
         });
 
         var ceoIvSlider = new Swiper(".ivCeo",{
-            slidesPerView: 3,
+            slidesPerView: 1,
+            //slidesPerColumn: 3,
             spaceBetween: 0,
             //loop: true,
             autoHeight: true,
@@ -544,7 +564,7 @@
         });
 
         var mngIvSlider = new Swiper(".ivMng",{
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 0,
             //loop: true,
             autoHeight: true,
@@ -555,7 +575,7 @@
         });
 
         var empIvSlider = new Swiper(".ivEmp",{
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 0,
             //loop: true,
             autoHeight: true,
