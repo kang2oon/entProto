@@ -2027,7 +2027,7 @@ html{font-size: 8px}
     .bro_mod_history.sty02 .timeline .item_det2 > ul{margin-left: 50px}
     
 /* 조직문화 & 복리후생 */    
-    .mag_mod_culture.sty03 .culture_wrap{column-count:2;-webkit-column-count: 2; -moz-column-count:2;column-gap:10px}    
+    .mag_mod_culture.sty03 .culture_wrap{column-count:1;-webkit-column-count: 1; -moz-column-count:1;column-gap:0}    
     .mag_mod_culture.sty03 .culture_wrap .item{padding: 2.0rem;margin-top: 10px}
     .mag_mod_culture.sty03 .culture_wrap .item .tit{font-size: 2.0rem}
     
