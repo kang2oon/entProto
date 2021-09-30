@@ -1966,7 +1966,7 @@ html{font-size: 8px}
 	.com_mod_recruit .tb_recruit tr,
 	.com_mod_recruit .tb_recruit td,
 	.com_mod_recruit .tb_recruit tbody {display: block;}
-	.com_mod_recruit .tb_recruit td{border: 0 !important;text-align:left;padding: 1.0rem !important}
+	.com_mod_recruit .tb_recruit td{border: 0 !important;text-align:left !important;padding: 1.0rem !important}
 	.com_mod_recruit .tb_recruit tr{border-bottom: 1px solid #dcdcdc;padding-top: 2.0rem;padding-bottom: 2.0rem;}
 	.com_mod_recruit .tb_recruit .date{color: #999}
 	.com_mod_recruit .tb_recruit .tit{}
