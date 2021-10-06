@@ -28,7 +28,7 @@ img{max-width:100%;}a{text-decoration:none;color:inherit;}
 
 /* Common */
     /* Header */
-.com_mod_header{padding:70px 0;}
+.com_mod_header{padding:70px 0;background:#fff;}
     .com_mod_header.sty01{background:url(/images/bg_sty01.png) 50% 50%;}
     /* .com_mod_header.sty02{} */
 .header{position:relative;display:flex;align-items:center;}
@@ -53,6 +53,11 @@ img{max-width:100%;}a{text-decoration:none;color:inherit;}
     }.sty02 .header .action a.on i{border-color:#ff1c31;}
     .header .action a + a{margin-left:24px;}
     .header .action a.on{color:#ff1c31;}
+.com_mod_header.fixed{position:fixed;width:100%;padding:24px 0;z-index:1000;}
+    .com_mod_header.fixed .header{display:block;}
+    .com_mod_header.fixed .header .biz_cate, .com_mod_header.fixed .header .info dl{display:none;}
+    .com_mod_header.fixed .header .logo img{max-width:180px;}
+    .com_mod_header.fixed .header .info{float:right;}
     /* Anchor Tab */
 .com_mod_anchor.sty01{border:1px #ddd;border-style:solid none;}
 .com_mod_anchor.sty02{background:#001540;}
@@ -69,6 +74,8 @@ img{max-width:100%;}a{text-decoration:none;color:inherit;}
     .com_mod_anchor.sty02 li:first-child{border-left:1px solid rgba(255,255,255,.25);}
     .com_mod_anchor.sty02 a{position:relative;display:inline-block;color:inherit;font-size:16px;font-weight:300;text-decoration:none;padding:20px 32px;}
     .com_mod_anchor.sty02 a.active{background:#da0011;font-weight:400;}
+.com_mod_anchor.fixed{position:fixed;width:100%;z-index:1000;}
+    .com_mod_anchor.fixed.sty02 a{padding:12px 32px;}
     /* 채용공고 */
 .com_mod_recruit.sty01{padding:80px 0;}
     .com_mod_recruit.sty01 .bg_bot{position:absolute;bottom:0;width:100%;background:#2b71b9;height:280px;}
@@ -282,7 +289,6 @@ img{max-width:100%;}a{text-decoration:none;color:inherit;}
     .inf_mod_percent.sty02 .scale span{font-size:36px;font-weight:700;}
     .inf_mod_percent.sty02 .stable span{font-size:36px;font-weight:700;}
     .inf_mod_percent.sty02 .profit span{font-size:20px;font-weight:700;}
-    
     /* 직원정보 */
 .inf_mod_emp{background-color:#f3f3f3;padding:80px 0;}
     .inf_mod_emp .empCnt_wrap{display:flex;justify-content:space-between;}
@@ -481,3 +487,135 @@ img{max-width:100%;}a{text-decoration:none;color:inherit;}
     .inf_mod_interview.sty02 .iv_wrap .swiper-button-next::after, .inf_mod_interview.sty02 .iv_wrap .swiper-button-prev::after{font-size:24px;color:#00c7da;}
     .inf_mod_interview.sty02 .iv_wrap .swiper-button-next{top:216px;right:24px;}
     .inf_mod_interview.sty02 .iv_wrap .swiper-button-prev{top:216px;left:auto;right:48px;}
+
+/* Break Point */
+@media screen and (max-width: 780px) {
+    /* Common */
+    .cnt-container{max-width:calc(100% - 40px);}
+    .com_mod_anchor .cnt-container{max-width:100%;}
+    .com_mod_header{padding:40px 0;}
+    /* Header & Anchor */
+    .header .biz_cate{display:none;}
+    .header .logo{margin-right:60px;}
+    .header .logo img{max-width:240px;}
+}
+@media screen and (max-width: 480px) {
+    /* Common */
+    .cnt-container{max-width:calc(100% - 24px);}
+    .com_mod_header{padding:40px 0;}
+    /* Header & Anchor */
+    .header{display:block;text-align:center;}
+    .header .info dl{display:none;}
+    .header .logo, .header .info, .com_mod_header.fixed .header .info{float:none;}
+    .header .logo{margin:0 0 24px;}
+    .header .logo img{max-width:240px;}
+    .com_mod_anchor.sty02 a{padding:12px 32px;}
+    /* 채용공고 */
+    .com_mod_recruit.sty01{padding:60px 0;}
+    .com_mod_recruit.sty01 h3{font-size:28px;margin: 0 0 20px;}
+    .com_mod_recruit.sty01 .tb_recruit th{padding:16px;}
+    .com_mod_recruit.sty01 .tb_recruit td{padding:12px;}
+    .com_mod_recruit.sty01 .tb_recruit td .apply{display:block;margin:8px 0 0;padding:8px;}
+    .com_mod_recruit.sty01 .box_recruit h4 .period{top:-41px;background:#2971b9;color:#fff;padding:4px 8px;}
+    .com_mod_recruit.sty01 .box_recruit .detail_wrap dl dt, .com_mod_recruit.sty01 .box_recruit .detail_wrap dl dd{width:100%;}
+    .com_mod_recruit.sty01 .box_recruit .detail_wrap dl dt{font-weight:500;margin:0;}
+    .com_mod_recruit.sty01 .box_recruit .detail_wrap dl dd{margin-bottom:12px;}
+    .com_mod_recruit.sty01 .box_recruit .detail_wrap > div + div{margin-left:30px;}
+    /* 기업뉴스 */
+    .com_mod_map .map_info_wrap{width:80%;}
+    .com_mod_news.sty01{padding:60px 0;;}
+    /* 지도 */
+    .com_mod_map .map_info_wrap .around_wrap{display:none;}
+    /* 인포그래픽형 */
+    /* 기업소개 */
+    .inf_mod_summary.sty02{padding:60px 0 80px;}
+    .inf_mod_summary.sty02 .imgCi img{max-width:60%;}
+    .inf_mod_summary.sty02 .mission{font-size:32px;margin:20px 0 16px;}
+    .inf_mod_summary.sty02 .comMsg{font-size:16px;}
+    /* 연혁 */
+    .inf_mod_history.sty02{padding:40px 0 20px;}
+    .inf_mod_history.sty02 h3{font-size:32px;}
+    .inf_mod_history.sty02 .history_wrap .history{padding:20px 0;background-position:80px 0;}
+    .inf_mod_history.sty02 .history_wrap .arrow_prev, .inf_mod_history.sty02 .history_wrap .arrow_next{
+        left:80px;width:30px;height:30px;background-size:cover;
+    }
+    .inf_mod_history.sty02 .history_wrap .arrow_next{background-position: -30px 0;}
+    .inf_mod_history.sty02 .history_wrap .history > div{background-position:72px 50%;}
+    .inf_mod_history.sty02 .history_wrap .history > div > span{flex-shrink:0;width:100px;text-align:left;font-size:24px;padding-left:8px;}
+    .inf_mod_history.sty02 .history_wrap .history > div > ul{flex-grow:1;}
+    .inf_mod_history.sty02 .history_wrap .history > div:nth-child(even){flex-direction:row;}
+    .inf_mod_history.sty02 .history_wrap .history > div:nth-child(even) div.event span{text-align:left;}
+    /* 사업영역 */
+    .inf_mod_biz.sty02{padding:40px 0;}
+    .inf_mod_biz.sty02 h3{font-size:32px;}
+    .inf_mod_biz.sty02 .biz_wrap{width:100%;}
+    .inf_mod_biz.sty02 .bizDiv{flex-wrap:wrap;}
+    .inf_mod_biz.sty02 .bizDiv > div{width:48%;margin-bottom:16px;}
+    /* 제품정보 */
+    .inf_mod_product.sty02 h3{font-size:32px;}
+    .inf_mod_product.sty02 .pd_wrap{width:100%;margin:24px auto 0;}
+    .inf_mod_product.sty02 .product > div img, .inf_mod_product.sty02 .product > div h4, .inf_mod_product.sty02 .product > div p{float:none;}
+    .inf_mod_product.sty02 .product > div img{width:100%;}
+    .inf_mod_product.sty02 .product > div h4, .inf_mod_product.sty02 .product > div p{width:100%;margin-left:0;}
+    .inf_mod_product.sty02 .product > div h4{margin:12px 0 8px;}
+    /* 재무정보 */
+    .inf_mod_finance{padding:60px 0;}
+    .inf_mod_finance h3{font-size:32px;margin-bottom:40px;}
+    .inf_mod_finance.sty02 ul{margin:0 0 0 5vw;}
+    .inf_mod_finance.sty02 ul li{width:48vw;height:48vw;margin:-2.5vw;font-size:14px;}
+    .inf_mod_finance.sty02 ul li .ico{width:60px;height:60px;margin:32px auto 4px;}
+    .inf_mod_finance.sty02 ul li .cnt{font-size:28px;}
+    /* 기업위치(백분위) */
+    .inf_mod_percent.sty02{background-position:5% 100%;}
+    .inf_mod_percent.sty02 .growth{width:240px;height:240px;font-size:24px;top:280px;left:5vw;}
+    .inf_mod_percent.sty02 .growth span{font-size:44px;}
+    .inf_mod_percent.sty02 .scale{top:460px;left:auto;right:3vw;}
+    .inf_mod_percent.sty02 .stable{left:auto;right:10vw;}
+    .inf_mod_percent.sty02 .profit{top:60px;left:10vw;}
+    /* 직원정보 */
+    .inf_mod_emp{padding:60px 0;}
+    .inf_mod_emp .empCnt_wrap{flex-direction:column;}
+    .inf_mod_emp .empCnt_wrap > div+div{margin:40px 0 0;}
+    /* 인터뷰 */
+    .inf_mod_interview.sty02{padding:80px 0 40px;}
+    .inf_mod_interview.sty02 > div > div{width:100%;margin-bottom:40px;}
+    /* 조직문화 & 복지정보 */
+    .inf_mod_welfare.sty02{padding:80px 0 40px;}
+    .inf_mod_welfare.sty02 .welfare_wrap h3:before{content:"";}
+    .inf_mod_welfare.sty02 .welfare_wrap h3{font-size:48px;padding:32px 48px;}
+    .inf_mod_welfare.sty02 .swiper{width:calc(100% - 80px);}
+    .inf_mod_welfare.sty02 .swiper-slide dt{font-size:20px;margin-bottom:4px;}
+    .inf_mod_welfare.sty02 .swiper-slide dd{font-size:14px;}
+    .inf_mod_welfare.sty02 .swiper-slide dl{margin-left:100px;}
+    .inf_mod_welfare.sty02 .swiper-slide dl::before{width:80px;height:80px;left:-100px;background-size:cover;}
+    .inf_mod_welfare.sty02 .swiper-slide.deduct dl::before{background-position-x:0;}
+    .inf_mod_welfare.sty02 .swiper-slide.insurance dl::before{background-position-x:-80px;}
+    .inf_mod_welfare.sty02 .swiper-slide.education dl::before{background-position-x:-160px;}
+    .inf_mod_welfare.sty02 .swiper-slide.convenience dl::before{background-position-x:-240px;}
+    .inf_mod_welfare.sty02 .swiper-slide.leisure dl::before{background-position-x:-320px;}
+    .inf_mod_welfare.sty02 .swiper-slide.reward dl::before{background-position-x:-400px;}
+    .inf_mod_welfare.sty02 .swiper-slide.facilities dl::before{background-position-x:-480px;}
+    .inf_mod_welfare.sty02 .swiper-slide.holiday dl::before{background-position-x:-560px;}
+    .inf_mod_welfare.sty02 .swiper-slide.handicap dl::before{background-position-x:-740px;}
+    .inf_mod_welfare.sty02 .swiper-slide.etc dl::before{background-position-x:-800px;}
+    .inf_mod_welfare.sty02 .welfare_wrap .swiper-button-prev{left:8px;}
+    .inf_mod_welfare.sty02 .welfare_wrap .swiper-button-next{right:8px;}
+    /* SWOT */
+    .inf_mod_swot.sty02{padding:60px 0;}
+    .inf_mod_swot.sty02 .title{font-size:48px;}
+    .inf_mod_swot.sty02 .swot_wrap{flex-wrap:wrap;}
+    .inf_mod_swot.sty02 .swot_wrap > div{width:50%;margin:0 auto;}
+    .inf_mod_swot.sty02 .swot_wrap > div::before{width:150px;height:203px;margin:0 auto;background-size:cover;}
+    .inf_mod_swot.sty02 .swot_wrap .swotS .tit, 
+    .inf_mod_swot.sty02 .swot_wrap .swotW .tit, 
+    .inf_mod_swot.sty02 .swot_wrap .swotO .tit, 
+    .inf_mod_swot.sty02 .swot_wrap .swotT .tit{font-size:20px;margin-bottom:8px;}
+    .inf_mod_swot.sty02 .swot_wrap .swotS .desc, 
+    .inf_mod_swot.sty02 .swot_wrap .swotW .desc, 
+    .inf_mod_swot.sty02 .swot_wrap .swotO .desc, 
+    .inf_mod_swot.sty02 .swot_wrap .swotT .desc{font-size:14px;padding:0 8px 24px;}
+    .inf_mod_swot.sty02 .swot_wrap .swotS::before {background-position-x:0;}
+    .inf_mod_swot.sty02 .swot_wrap .swotW::before {background-position-x:-150px;}
+    .inf_mod_swot.sty02 .swot_wrap .swotO::before {background-position-x:-300px;}
+    .inf_mod_swot.sty02 .swot_wrap .swotT::before {background-position-x:-450px;}
+}

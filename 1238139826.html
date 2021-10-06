@@ -50,6 +50,21 @@
         .com_mod_add.talentPerson .talent_wrap > div:nth-child(2) .ico{background-position-x:-250px;}
         .com_mod_add.talentPerson .talent_wrap > div:nth-child(3) .ico{background-position-x:-500px;}
         .com_mod_add.talentPerson .talent_wrap > div:nth-child(4) .ico{background-position-x:-750px;}
+        @media screen and (max-width: 480px) {
+            .inf_mod_biz.sty02 .msgAdd{max-width:80%;font-size:16px;margin:16px auto 32px;}
+            .inf_mod_finance ul li .ico::before{background-size:cover;}
+            .inf_mod_finance ul li:nth-child(2) .ico::before{background-position-x:-60px;}
+            .inf_mod_finance ul li:nth-child(3) .ico::before{background-position-x:-120px;}
+            .inf_mod_finance ul li:nth-child(4) .ico::before{background-position-x:-180px;}
+            .com_mod_add.talentPerson{padding:80px 0;}
+            .com_mod_add.talentPerson .tit{font-size:32px;}
+            .com_mod_add.talentPerson .talent_wrap{flex-wrap:wrap;}
+            .com_mod_add.talentPerson .talent_wrap > div{width:80%;margin:0 auto;}
+            .com_mod_add.talentPerson .talent_wrap > div:nth-child(2n+1){margin-top:24px;}
+            .com_mod_add.talentPerson .talent_wrap > div+div{margin-top:24px;}
+            .com_mod_add.talentPerson .ico{margin:0 auto 20px;}
+            .com_mod_add{padding:60px 0;}
+        }
     </style>
 </head>
 <body>
@@ -474,6 +489,7 @@
 <script src="/module/jsontohtml.js"></script>
 <script src="/module/map.js"></script>
 <script src="/js/jPages.min.js"></script>
+<script src="/js/pt-common.js"></script>
 <script>
 	xmlhttp.open("GET", "/module/1238139826.json");
     xmlhttp.onloadend = function(){
@@ -538,7 +554,7 @@
         }, 100);
 
         var welfareSlider = new Swiper(".welfare",{
-            slidesPerView: 2,
+            slidesPerView: 1,
             // grid: {
             //     rows: 2
             // },
@@ -548,6 +564,11 @@
             navigation: {
                 nextEl: ".welfare_wrap .swiper-button-next",
                 prevEl: ".welfare_wrap .swiper-button-prev"
+            },
+            breakpoints:{
+                480: {
+                    slidesPerView: 2,
+                }
             }
         });
 
