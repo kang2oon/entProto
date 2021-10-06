@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="author" content="kang2oon">
+	<title class="comName">기업명</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">
+	<link href="./css/pt-common.css" rel="stylesheet">
+	<!--스크롤 이벤트-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/slick.css">
+	<style>
+		body {
+			color: #323232
+		}
+
+		.bro_mod_header.simryul .main_header {
+			background: url(./images/simryle_main_bg.png) top no-repeat;
+			background-size: cover;
+			width: 100%;
+			height: 631px;
+		}
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+
+.bro_mod_header.simryul{}
+.bro_mod_header.simryul .cnt-container{position: relative;height: 100%;}
+.bro_mod_header.simryul .main_tit{background: #ffe300;display: inline-block;padding: 4.0rem;position: absolute;right: -4%;top: 50%;transform: translateY(-50%);font-family: 'Noto Serif KR', serif;}
+.bro_mod_header.simryul .main_tit storng{font-size: 5.7rem;display: block;}
+.bro_mod_header.simryul .main_tit storng:nth-child(1){text-align: left}
+.bro_mod_header.simryul .main_tit storng:nth-child(2){text-align: right}
+.bro_mod_header.simryul .main_tit h3{line-height: 1;}
+.bro_mod_header.simryul .main_tit h3:after{content: '';display: block;width: 40px;height: 1px;background: #000;margin: 3.0rem auto;}
+.bro_mod_header.simryul .main_tit p{text-align: center;font-size: 2.2rem} 
+.bro_mod_header.simryul .logo{position: absolute;bottom: -10%;padding: 10px;background: #fff;box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);text-align: center;}
+.bro_mod_header.simryul .header_cont {display: flex;align-items: center;font-family: 'Noto Serif KR', serif;margin-top: 15rem;border-bottom: 2px solid #323232;padding-bottom: 4.0rem;}
+.bro_mod_header.simryul .header_cont dt{font-size: 4.8rem;width: 450px;}
+.bro_mod_header.simryul .header_cont dd {width: calc(100% - 450px);font-weight: 600}
+.bro_mod_header.simryul .header_cont dd span{background: #fff17f}
+
+/* 연혁 */
+.bro_mod_history.sty02{}
+.bro_mod_history.sty02 h3{font-family: 'Noto Serif KR', serif;text-align: center;font-size: 5.0rem;margin-bottom: 5.0rem}
+
+/* 비전 */
+.bro_mod_vision.simryul{margin: 10.0rem 0}
+.bro_mod_vision.simryul .vision_wrap{}
+.bro_mod_vision.simryul .vision_wrap .top{display: flex;justify-content: center;}
+.bro_mod_vision.simryul .vision_wrap .top   .circle{width: 360px;height: 360px;border-radius: 50%;position: relative;margin-left: -40px}
+.bro_mod_vision.simryul .vision_wrap .top  .item span{display: block;font-size: 2.2rem;position: absolute;left: 50%;top: 50%;color: #fff;width: 100%;text-align: center;transform: translate(-50%,-50%)}
+.bro_mod_vision.simryul .vision_wrap .top > .item:nth-child(1) .circle{background: rgba(63, 207, 227, 0.8);margin-left: 0}
+.bro_mod_vision.simryul .vision_wrap .top > .item:nth-child(2) .circle{background: rgba(13, 98, 209, 0.8);}
+.bro_mod_vision.simryul .vision_wrap .top > .item:nth-child(3) .circle{background: rgba(177, 198, 7, 0.8);}
+.bro_mod_vision.simryul .vision_wrap .top p {text-align: center;margin-top: 2.0rem;font-size: 3.0rem;font-family: 'Noto Serif KR', serif;font-weight: bold;}
+.bro_mod_vision.simryul .middle{text-align: center;margin: 6.0rem 0}
+.bro_mod_vision.simryul .middle p{font-family: 'Noto Serif KR', serif;font-weight: bold;font-size: 4.0rem;display: inline-block;border: 2px dotted #2a86ff;padding: 15px 90px;border-radius: 50px;background: #fff;position: relative;}
+.bro_mod_vision.simryul .middle p:before{content: '';display: block;background: url(../images/simryle_vision_line01.png) no-repeat;width: 100px;height: 248px;position: absolute;left:0;top: 50%;transform: translateY(-50%);z-index: -1}
+.bro_mod_vision.simryul .middle p:after{content: '';display: block;background: url(../images/simryle_vision_line02.png) no-repeat;width: 100px;height: 248px;position: absolute;right:0;top: 50%;transform: translateY(-50%);z-index: -1}
+.bro_mod_vision.simryul .bottom {margin-top: 9.0rem;display: flex;justify-content: center;}
+.bro_mod_vision.simryul .bottom > .item{border-radius: 100px;width: 500px;text-align: center;position: relative;margin-left: -40px;padding: 2.0rem}
+.bro_mod_vision.simryul .bottom > .item:nth-child(1){background: rgba(255, 227, 0, 0.80);margin-left: 0}
+.bro_mod_vision.simryul .bottom > .item:nth-child(2){background: rgba(177, 177, 177, 0.50)}
+.bro_mod_vision.simryul p{font-size: 2.2rem;font-family: 'Noto Serif KR', serif;}
+.bro_mod_vision.simryul p strong{font-size: 3.0rem}
+
+/* 주요상품 */
+.bro_mod_product.simryul{background: url(../images/simryle_product_bg.png) no-repeat;padding: 10rem 0;color: #fff}
+.bro_mod_product.simryul h4 {font-size: 3.5rem;font-family: 'Noto Serif KR', serif;;text-align: center;margin-bottom: 4.0rem}
+.bro_mod_product.simryul .product_wrap{display: flex;}
+.bro_mod_product.simryul .product_wrap > div {width: 33.333%;text-align: center;position: relative;}
+.bro_mod_product.simryul .product_wrap > div:after{content: '';display: block;width: 1px;height: 70%;background: rgba(255, 255, 255, 0.69);position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
+.bro_mod_product.simryul .product_wrap > div:last-child:after{display: none}
+.bro_mod_product.simryul .product_wrap > div .ico{display: block;margin: 1.5rem auto}
+.bro_mod_product.simryul .product_wrap > div .ico.ico01{background: url(../images/simryle_product_ico01.png) no-repeat center;width: 114px;height: 104px;}
+.bro_mod_product.simryul .product_wrap > div .ico.ico02{background: url(../images/simryle_product_ico02.png) no-repeat center;width: 114px;height: 104px;}
+.bro_mod_product.simryul .product_wrap > div .ico.ico03{background: url(../images/simryle_product_ico03.png) no-repeat center;width: 114px;height: 104px;}
+.bro_mod_product.simryul .product_wrap > div  p{font-size: 2.2rem;}
+.bro_mod_product.simryul .product_wrap > div:after{content: '';display: block;clear: both;}
+
+
+
+/* 사업영역 */
+.bro_mod_biz.simryul {margin: 10.0rem 0}
+.bro_mod_biz.simryul h3{font-family: 'Noto Serif KR', serif;text-align: center;font-size: 5.0rem;margin-bottom: 5.0rem;}
+.bro_mod_biz.simryul .blue{color: #505cb2;font-size: 2.9rem;}
+.bro_mod_biz.simryul .blue .num {font-size: 2.3rem;display: block;}
+.bro_mod_biz.simryul .tit{font-size: 5.8rem;font-family: 'Noto Serif KR', serif;font-weight: bold}
+.bro_mod_biz.simryul .slick-list { margin:0 -20px;}
+.bro_mod_biz.simryul .slick-slide {margin:10px 20px;}
+.bro_mod_biz.simryul .desc{font-size: 2.4rem;margin-top: 1.5rem}
+.bro_mod_biz.simryul .biz_wrap .item  div{float: left}
+.bro_mod_biz.simryul .biz_wrap .item  .txt{width: calc(100% - 690px)}
+.bro_mod_biz.simryul .biz_wrap .item  .img{width: 690px;overflow: hidden;border-radius: 15px;box-shadow: 0 0 15px rgba(0, 0, 0, 0.2)}
+.bro_mod_biz.simryul  .slick-arrow{width: 29px;height: 54px;text-indent: -9999px;position: absolute;top: 50%;transform: translateY(-50%);opacity: 0.5}
+.bro_mod_biz.simryul  .slick-prev{background: url(../images/slider01_prev.png);left: -70px}
+.bro_mod_biz.simryul  .slick-next{background: url(../images/slider01_next.png);right:-70px}
+
+.inf_mod_swot{margin: 10rem 0}
+.inf_mod_swot h3{font-family: 'Noto Serif KR', serif;text-align: center;font-size: 5.0rem;margin-bottom: 10.0rem;font-weight: bold}
+.inf_mod_swot .swot_wrap ol {}
+.inf_mod_swot .swot_wrap ol li{font-size: 1.6rem;position: relative;text-align: left;padding-left: 18px;margin-bottom: 1.3rem;}
+.inf_mod_swot .swot_wrap ol li:last-child{margin-bottom: 0}
+.inf_mod_swot .swot_wrap ol li:nth-child(1):before{content: '1.';display: block;position: absolute;left: 0;font-weight: bold}
+.inf_mod_swot .swot_wrap ol li:nth-child(2):before{content: '2.';display: block;position: absolute;left: 0;font-weight: bold}
+.inf_mod_swot .swot_wrap ol li:nth-child(3):before{content: '3.';display: block;position: absolute;left: 0;font-weight: bold}
+.inf_mod_swot.sty04 .swot_wrap .swotS .tit:before{background: url(../images/simryle_swot_ico01.png) no-repeat center}
+.inf_mod_swot.sty04 .swot_wrap .swotW .tit:before{background: url(../images/simryle_swot_ico02.png) no-repeat center}
+.inf_mod_swot.sty04 .swot_wrap .swotO .tit:before{background: url(../images/simryle_swot_ico03.png) no-repeat center}
+.inf_mod_swot.sty04 .swot_wrap .swotT .tit:before{background: url(../images/simryle_swot_ico04.png) no-repeat center}
+
+
+/* 복리후생 */
+.mag_mod_culture.sty03{margin: 10rem 0;}
+.mag_mod_culture.sty03 h3{font-family: 'Noto Serif KR', serif;text-align: center;font-size: 5.0rem;margin-bottom: 4.0rem;font-weight: bold}
+.mag_mod_culture.sty03 .item .desc{color: #555}
+.mag_mod_culture.sty03 .culture_wrap {padding-bottom: 2.0rem;}
+.mag_mod_culture.sty03 .culture_wrap .item{padding: 9.0rem 4.0rem;transform: translateZ(0);}
+.mag_mod_culture.sty03 .culture_wrap .item:nth-child(5){padding: 15rem 4.0rem}
+.mag_mod_culture.sty03 .culture_wrap .item:nth-child(4) {padding: 4.0rem}
+.mag_mod_culture.sty03 .culture_wrap .item:nth-child(6) {padding: 10rem 4.0rem}
+.mag_mod_culture.sty03 .culture_wrap .item:nth-child(3),
+.mag_mod_culture.sty03 .culture_wrap .item:nth-child(8){background: #354585;padding: 12.0rem 4.0rem}
+.mag_mod_culture.sty03 .culture_wrap .item:nth-child(3) .desc,
+.mag_mod_culture.sty03 .culture_wrap .item:nth-child(8) .desc{color: #fff}
+
+/* 현직자 인터뷰 */
+.mag_mod_interview.sty02 h3{font-family: 'Noto Serif KR', serif;font-weight: bold}
+.mag_mod_interview.sty02 .tabs li.active{background: #ffe300;border: 1px solid #252525;color: #252525;font-weight: bold;}
+.mag_mod_interview.sty02 .tabs li.active:after{background: url(../images/tab_arrow.png)}
+.mag_mod_interview.sty02 .tab_content#tab1 {background: url(../images/simryle_ceo.png) no-repeat right bottom 10.0rem;}
+.mag_mod_interview.sty02 .tab_content#tab2 {background: url(../images/simryle_hr_img.png) no-repeat right bottom 10.0rem;}
+.mag_mod_interview.sty02 .tab_content#tab3 {background: url(../images/simryle_newcomer_img.png) no-repeat right bottom 10.0rem;}
+.mag_mod_interview.sty02 .slick-dots li.slick-active button{background: #2a86ff}
+.mag_mod_interview.sty02  dd{color: #606060}
+
+/* 기업 리뷰 */
+.mag_mod_review{margin: 10.0rem 0}
+.mag_mod_review h3{font-family: 'Noto Serif KR', serif;font-weight: bold}
+.mag_mod_review.sty02 .culture_wrap  .item:nth-child(1){background: #2a86ff !important}
+.mag_mod_review.sty02 .culture_wrap  .item:nth-child(4){background: #bdd30f;color: #555}
+.mag_mod_review.sty02 .culture_wrap  .item:nth-child(1):after{border-top: 20px solid #2a86ff}
+.mag_mod_review.sty02 .culture_wrap  .item:nth-child(4):after{border-top: 20px solid #bdd30f}
+
+.com_mod_recruit.sty03{padding: 0}
+
+@media all and (max-width:1400px){
+	.bro_mod_header.simryul .main_tit {right: 20px;}
+    
+    /* 사업영역 */
+    .biz_wrap {width: 1080px;margin: auto}
+    .bro_mod_biz.simryul .tit{font-size: 5.0rem}
+    .bro_mod_biz.simryul .biz_wrap .item .txt{width: calc(100% - 550px)}
+    .bro_mod_biz.simryul .biz_wrap .item .img{width: 550px;}
+	
+}
+
+@media all and (max-width:1260px){
+	.bro_mod_header.simryul .logo{}
+	.bro_mod_header.simryul .logo img{width: 200px;}
+	
+	 /* 사업영역 */
+    .biz_wrap{width: 100%;}
+    
+    .mag_mod_culture.sty03 .culture_wrap .item{padding: 4.0rem !important}
+    
+
+}
+
+
+@media all and (max-width:1024px){
+	.bro_mod_header.simryul .logo{bottom: -5%}
+	.bro_mod_header.simryul .logo img{width: 200px;}
+	.bro_mod_header.simryul .main_tit storng{font-size: 3.5rem}
+	.bro_mod_header.simryul .main_tit p{font-size: 2.0rem}
+	.bro_mod_header.simryul .header_cont {margin-top: 10rem}
+	
+	.bro_mod_header.simryul .header_cont dt{font-size: 3.5rem;width: 320px}
+	.bro_mod_header.simryul .header_cont dd{width: calc(100% - 320px)}
+	
+	/* 비전 */
+	.bro_mod_vision.simryul .vision_wrap .top .circle{width: 300px;height: 300px;}
+	.bro_mod_vision.simryul .bottom > .item{width: 50%;}
+	.bro_mod_vision.simryul p{font-size: 1.8rem}
+	.bro_mod_vision.simryul p strong{font-size: 2.5rem}
+	
+	/* 주요사업 */
+	.bro_mod_product.simryul h4 {font-size: 2.5rem;}
+    .bro_mod_product.simryul .product_wrap > div  p{font-size: 1.8rem;}
+    
+    /* 사업영역 */
+    .bro_mod_biz.simryul h3{margin-bottom: 3.0rem}
+    .bro_mod_biz.simryul .tit{font-size: 5.0rem}
+    .bro_mod_biz.simryul .biz_wrap .item > div{float: none;}
+    .bro_mod_biz.simryul .biz_wrap .item .txt{width: 100%;margin-bottom: 2.0rem;text-align: center}
+    .bro_mod_biz.simryul .biz_wrap .item .img{max-width: 550px;width:100%;margin: auto;}
+    .bro_mod_biz.simryul .blue{font-size: 2.2rem}
+    .bro_mod_biz.simryul .tit{font-size: 4.0rem}
+    .bro_mod_biz.simryul .desc{font-size: 2.0rem}
+    .bro_mod_biz.simryul .slick-prev{left: 0}
+    .bro_mod_biz.simryul .slick-next{right: 0}
+	
+	
+    .inf_mod_swot.sty04 .swot_wrap .swotS .tit:before{background-size: 70px;width: 70px;height: 90px}
+    .inf_mod_swot.sty04 .swot_wrap .swotW .tit:before{background-size: 70px;width: 70px;height: 90px}
+    .inf_mod_swot.sty04 .swot_wrap .swotO .tit:before{background-size: 70px;width: 70px;height: 90px}
+    .inf_mod_swot.sty04 .swot_wrap .swotT .tit:before{background-size: 70px;width: 70px;height: 90px}
+	
+    
+    
+}
+
+@media all and (max-width:768px){
+	h3 {font-size: 4.0rem !important;}
+	.bro_mod_header.simryul .main_header {height: 550px;}
+	.bro_mod_header.simryul .header_cont {display: block;}
+	.bro_mod_header.simryul .header_cont dt,
+	.bro_mod_header.simryul .header_cont dd{width: 100%;}
+	.bro_mod_header.simryul .header_cont dd{margin-top: 1.5rem}
+	
+	/* 비전 */
+	.bro_mod_vision.simryul{margin: 5.0rem 0;}
+	.bro_mod_vision.simryul .vision_wrap .top .item span{font-size: 1.8rem}
+	.bro_mod_vision.simryul .vision_wrap .top .circle{width: 260px;height: 260px;}
+	.bro_mod_vision.simryul .bottom > .item{width: 50%;}
+	.bro_mod_vision.simryul p{font-size: 1.6rem}
+	.bro_mod_vision.simryul .vision_wrap .top p{font-size: 2.0rem;}
+	
+	.bro_mod_vision.simryul .middle{margin: 8.0rem;}
+	.bro_mod_vision.simryul .middle p{font-size: 2.2rem}
+	.bro_mod_vision.simryul .middle p:before{background-size: 70px;width: 70px;height: 170px}
+	.bro_mod_vision.simryul .middle p:after{background-size: 70px;width: 70px;height: 170px}
+	.bro_mod_vision.simryul p strong{font-size: 2.2rem} 
+	
+	 .inf_mod_swot.sty04 .swot_wrap .tit{font-size: 2.2rem}    
+
+	 .bro_mod_biz.simryul{margin: 5.0rem 0;}
+	 .mag_mod_culture.sty03{margin: 5.0rem 0;}
+	 .inf_mod_swot{margin: 5.0rem 0;}
+	 .mag_mod_interview.sty02{padding: 5.0rem 0}
+    
+	.inf_mod_swot.sty04 .swot_wrap .swotS .tit:before{background-size: 50px;width: 50px;height: 60px}
+    .inf_mod_swot.sty04 .swot_wrap .swotW .tit:before{background-size: 50px;width: 50px;height: 60px}
+    .inf_mod_swot.sty04 .swot_wrap .swotO .tit:before{background-size: 50px;width: 50px;height: 60px}
+    .inf_mod_swot.sty04 .swot_wrap .swotT .tit:before{background-size: 50px;width: 50px;height: 60px}
+    
+    /* 주요사업 */
+    .bro_mod_product.simryul{padding: 5.0rem 0}
+	.bro_mod_product.simryul h4 {font-size: 2.2rem;}
+    .bro_mod_product.simryul .product_wrap > div  p{font-size: 1.6rem;word-break: keep-all;padding: 0 10px}
+    .bro_mod_product.simryul .product_wrap > div  p br{display: none}
+    .bro_mod_product.simryul .product_wrap > div .ico.ico01{background-size: 80px}
+    .bro_mod_product.simryul .product_wrap > div .ico.ico02{background-size: 60px}
+    .bro_mod_product.simryul .product_wrap > div .ico.ico03{background-size: 60px}
+    
+    
+    
+
+}
+
+@media all and (max-width:640px){
+	h3 {font-size: 3.0rem !important;margin-bottom: 3.0rem !important;}
+	.bro_mod_header.simryul .main_header {height: 450px;}
+	.bro_mod_header.simryul .logo img{width: 150px}
+	.bro_mod_vision.simryul .vision_wrap .top .circle{width: 170px;height: 170px;margin-left: -20px}
+	.bro_mod_vision.simryul .bottom{display: block;}
+	.bro_mod_vision.simryul .bottom > .item{width: 100%;margin-left: 0;margin-top: 2.0rem;}
+    
+    /* 주요사업 */
+    .bro_mod_product.simryul{padding: 5.0rem 0}
+	.bro_mod_product.simryul h4 {font-size: 2.0rem;word-break: keep-all}
+    .bro_mod_product.simryul h4 br{display: none}
+    .bro_mod_product.simryul .product_wrap > div  p{font-size: 1.6rem;}
+    .bro_mod_product.simryul .product_wrap > div .ico.ico01{background-size: 80px}
+    .bro_mod_product.simryul .product_wrap > div .ico.ico02{background-size: 60px}
+    .bro_mod_product.simryul .product_wrap > div .ico.ico03{background-size: 60px}
+    
+     /* 주요사업 */
+    .biz_wrap{box-sizing: border-box;}
+    .bro_mod_biz.simryul .tit{font-size: 3.0rem;}
+    .bro_mod_biz.simryul .blue{font-size: 2.0rem;}
+    .bro_mod_biz.simryul .desc{font-size: 1.8rem}
+    .bro_mod_biz.simryul .biz_wrap .item .img{max-width: calc(100% - 90px)}
+    .bro_mod_biz.simryul .slick-next{background-size: 15px;background-repeat: no-repeat;width: 15px;height: 26px}
+    .bro_mod_biz.simryul .slick-prev{background-size: 15px;background-repeat: no-repeat;width: 15px;height: 26px}
+    
+    .mag_mod_culture.sty03 .culture_wrap .item{padding: 2.0rem !important}
+
+	
+}
+
+
+@media all and (max-width:480px){
+	.bro_mod_header.simryul .main_header {height: 450px;}
+	.bro_mod_header.simryul .main_tit{right: 50%;transform:translate(50%, -50%);max-width:300px;width: 100%;}
+	.bro_mod_header.simryul .logo{bottom: -5%}
+	
+	.bro_mod_vision.simryul .vision_wrap .top{display: block;}
+	.bro_mod_vision.simryul .vision_wrap .top .circle{margin:25px auto !important}
+	
+	.bro_mod_vision.simryul .middle p{padding: 15px;max-width: 280px;width: 100%;}
+    
+    /* 주요사업 */
+    .bro_mod_product.simryul{background-size: cover}
+    .bro_mod_product.simryul .product_wrap {display: block;}
+    .bro_mod_product.simryul .product_wrap > div{width: 100%;margin-bottom: 3.0rem;}
+    .bro_mod_product.simryul .product_wrap > div:last-child{margin-bottom: 0}
+    .bro_mod_product.simryul .product_wrap > div:after{display: none}
+    .bro_mod_product.simryul .product_wrap > div .ico.ico01{background-size: 60px;height: 60px}
+    .bro_mod_product.simryul .product_wrap > div .ico.ico02{background-size: 50px;height: 60px;}
+    .bro_mod_product.simryul .product_wrap > div .ico.ico03{background-size: 50px;height: 60px;}
+	
+}
+	</style>
+</head>
+
+<body>
+	<div class="module-wrap edit_wrap bg_color com_mod_header sty02">
+		<div class="cnt-container header clearfix">
+			<div class="biz_cate cate01 green"><i></i>Consulting</div>
+			<div class="logo"><img src="/images/logo_smaple01.png" alt=""></div>
+			<div class="info fc_000">
+				<dl class="clearfix">
+					<dt>업종</dt>
+					<dd>사회적기업</dd>
+					<dt>대표자</dt>
+					<dd>제윤경</dd>
+					<dt>기업형태</dt>
+					<dd>사회적기업</dd>
+				</dl>
+				<div class="action fc_000 clearfix"><a href="javascript:void(0);" class="on">관심기업 등록<i>♥</i></a><a href="javascript:void(0);">공고 바로가기<i>→</i></a></div>
+			</div>
+		</div>
+	</div>
+	<div class="module-wrap edit_wrap com_mod_anchor sty02">
+		<div class="cnt-container fc_fff">
+			<ul>
+
+				<li><a href="#target01" class="active">기업개요</a></li>
+				<li><a href="#target02">주요사업</a></li>
+				<li><a href="#target03">채용공고</a></li>
+				<li> <a href="#target04">기업 뉴스</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 헤더영역 style01-->
+	<div class="module-wrap bro_mod_header simryul target" id="target01">
+		<!--main_header-->
+		<div class="main_header">
+			<div class="cnt-container">
+				<div class="main_tit">
+					<h3>
+						<storng>Show your Mind<br />
+						</storng>
+						<storng>through ART<br />
+						</storng>
+					</h3>
+					<p>“ 그리는 것 보다 더 멋진 건 없다 ”</p>
+				</div>
+				<div class="logo">
+					<img src="./images/simryle_logo.png" alt="심률 로고">
+				</div>
+			</div>
+		</div>
+		<!--//main_header-->
+
+		<div class="cnt-container">
+			<dl class="header_cont">
+				<dt>
+					<strong>idraw</strong> 아이드로우
+				</dt>
+				<dd><span>"그리는 것 보다 더 멋진 건 없다"라는 철학</span>으로 기본을 탄탄하게 상상과 창의를 즐겁게 그릴 수 있는 플랫폼을 운영합니다. <span>직접 제작하여 특허 등록된 교구재를 활용</span>하여 다양한 예술 콘텐츠를 개발, 연구합니다.</dd>
+			</dl>
+		</div>
+
+	</div>
+	<!--// 헤더영역 style01-->
+
+
+
+	<!--브로슈어형 연혁 -->
+	<div class="module-wrap bro_mod_history sty02">
+		<div class="cnt-container">
+			<h3>연혁</h3>
+			<div class="timeline">
+				<ul class="item_det1">
+					<li class="date">2021</li>
+					<li class="item_det2">
+						<ul>
+							<li>
+								<strong>2021.07</strong>
+								<ul>
+									<li>화성시문화재단&#60;2021 예술키트 서로서로&#62;</li>
+								</ul>
+							</li>
+							<li>
+								<strong>2021.06</strong>
+								<ul>
+									<li>용인시 대일초&#60;학부모 연수 특허교구재 예술교육&#62;</li>
+								</ul>
+							</li>
+							<li>
+								<strong>2021.05</strong>
+								<ul>
+									<li>재단 자문 &#60;화성시문화재단_교육 키트&#62;</li>
+									<li>기업 출강 &#60;(주)헥사콘&#62;</li>
+									<li>재단 출강 &#60;화성시문화재단_로얄 엑스&#62;</li>
+								</ul>
+							</li>
+							<li>
+								<strong>2021.04</strong>
+								<ul>
+									<li>공공기관 출강 &#60;성동구청 독서당 인문아카데미센터&#62;</li>
+									<li>박물관 출강 &#60;안중근의사기념관&#62;</li>
+									<li>idraw 베타서비스 진행</li>
+								</ul>
+							</li>
+							<li>
+								<strong>2021.03</strong>
+								<ul>
+									<li>idraw 상표 특허청 등록 완료</li>
+									<li>전연령대 미술 교육프로그램 개발</li>
+									<li>idraw 시그니처 교육 콘텐츠 교구재 3가지 특허 출원</li>
+								</ul>
+							</li>
+							<li>
+								<strong>2021.01</strong>
+								<ul>
+									<li>뉴욕기반 포터블뮤지엄과 파트너쉽 체결</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="item_det1">
+					<li class="date">2020</li>
+					<li class="item_det2">
+						<ul>
+							<li>
+								<strong>2020.05</strong>
+								<ul>
+									<li>기업 디자인 자문 &#60;(주)쇼어테크&#62;</li>
+								</ul>
+							</li>
+							<li>
+								<strong>2020.03</strong>
+								<ul>
+									<li>idraw 교육콘텐츠 기획·개발</li>
+									<li>브랜드 idraw 런칭</li>
+								</ul>
+							</li>
+							<li>
+								<strong>2020.01</strong>
+								<ul>
+									<li>법인 (주)심률 설립</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<!-- //연혁 -->
+	</div>
+	<!--//브로슈어형 연혁 -->
+
+
+	<!-- 비전 -->
+	<div class="module-wrap bro_mod_vision simryul">
+		<div class="cnt-container">
+			<div class="vision_wrap">
+				<div class="top">
+					<div class="item">
+						<div class="circle">
+							<span>예술로 성장하는<br />마음의 비율
+							</span>
+						</div>
+						<p>비전</p>
+					</div>
+					<div class="item">
+						<div class="circle">
+							<span>"그리는 것보다<br />
+								더 멋진 건 없다"를<br />
+								추구하는 예술 교육
+
+							</span>
+						</div>
+						<p>미션</p>
+					</div>
+					<div class="item">
+						<div class="circle">
+							<span>예술을 통해 가치 있는<br />
+								창작활동과 최선의 밸런스<br />
+								(내면+표현력)를 <br />
+								도모하고 자주적인<br />
+								인격을 양성
+
+							</span>
+						</div>
+						<p>핵심가치</p>
+					</div>
+				</div>
+
+				<div class="middle">
+					<p>기업전략과제</p>
+				</div>
+
+				<div class="bottom">
+					<div class="item">
+						<p>오래도록 남을 스테디셀러와 같은<br />
+							<strong>'품격 있는 교육＇ 추구</strong>
+						</p>
+
+					</div>
+					<div class="item">
+						<p>전문가의 큐레이션과 작가, 작품, 재료 등의<br />
+							<strong>창의적인 선별</strong>로 교육 연구
+						</p>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- //비전 -->
+
+
+	<!-- 주요 상품 -->
+	<div class="module-wrap bro_mod_product simryul target" id="target02">
+		<div class="cnt-container">
+			<h4>주식회사 심률은 전문 연구진이 개발한 교구재 <br />
+				그리고 경력 있는 큐레이터와 함께<br />
+				수요자 맞춤형 전문 예술교육을 컨텐츠로 개발하고 제공하는 기업입니다.
+			</h4>
+			<div class="product_wrap">
+				<div>
+					<span class="ico ico01"></span>
+					<p>유아동 감성교육에 대한<br />
+						강한 니즈 및 사회적 필요성</p>
+				</div>
+				<div>
+					<span class="ico ico02"></span>
+					<p>높은 학력과 경력을<br />
+						보유한 미술교육 강사 확보</p>
+				</div>
+				<div>
+					<span class="ico ico03"></span>
+					<p>IoT디바이스 및 프로그램 개발<br />
+						협력 네트워크 확보</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //주요 상품 -->
+
+
+	<!-- 사업영역 -->
+	<div class="module-wrap bro_mod_biz simryul">
+		<div class="cnt-container">
+			<h3>사업영역</h3>
+			<div class="biz_wrap">
+				<div class="item">
+					<div class="txt">
+						<p class="blue">
+							<span class="num">01</span>
+							창의융합 교육 프로젝트
+						</p>
+						<p class="tit">교육과정</p>
+						<p class="desc">총 22개의 다양한 미술 교육과정
+						</p>
+					</div>
+					<div class="img">
+						<img src="./images/simryle_biz_img01.png" alt="마티에르 표현">
+					</div>
+				</div>
+				<div class="item">
+					<div class="txt">
+						<p class="blue">
+							<span class="num">02</span>
+							창의융합 교육 프로젝트
+						</p>
+						<p class="tit">i draw 특허교구재</p>
+					</div>
+					<div class="img">
+						<img src="./images/simryle_biz_img02.png" alt="달력, 꽃, 비즈 공예">
+					</div>
+				</div>
+				<div class="item">
+					<div class="txt">
+						<p class="blue">
+							<span class="num">03</span>
+							전문 큐레이터와 함께하는
+						</p>
+						<p class="tit">방문미술 교육</p>
+					</div>
+					<div class="img">
+						<img src="./images/simryle_biz_img03.png" alt="회차마다 즐겁게 놀며 배우는 아이드로우 방문 미술 교육!">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--//사업영역 -->
+
+	<!-- 인포그래픽형 swot 분석 style04-->
+	<div class="module-wrap inf_mod_swot sty04">
+		<div class="cnt-container">
+			<h3>SWOT 분석</h3>
+			<div class="swot_wrap">
+				<div class="swotS">
+					<div class="tit">Strengths</div>
+					<div class="desc">
+						<ol>
+							<li>유아동 감성교육에 대한 강한
+								니즈 및 사회적 필요성</li>
+							<li>높은 학력과 경력을 보유한
+								미술교육 강사 확보</li>
+							<li>IoT디바이스 및 프로그램
+								개발 협력 네트워크 확보</li>
+						</ol>
+					</div>
+				</div>
+				<div class="swotW">
+					<div class="tit">weakenesses</div>
+					<div class="desc">
+						<ol>
+							<li>사업화 초기의 취약한<br />
+								브랜드 인지도</li>
+							<li>유아동 교육 시장의 가격 중심<br />
+								경쟁 가열</li>
+							<li>안정적인 서비스 기반 및 협력<br />
+								네트워크 부족</li>
+						</ol>
+					</div>
+				</div>
+				<div class="swotO">
+					<div class="tit">opportunities</div>
+					<div class="desc">
+						<ol>
+							<li>온라인,모바일 서비스<br />
+								수요의 급성장</li>
+							<li>스마트 모바일 커머스 시장<br />
+								 성장세 지속</li>
+							<li>SNS를 통한 구매 및<br>
+								프로그램 참여 영향력 증대</li>
+						</ol>
+					</div>
+				</div>
+				<div class="swotT">
+					<div class="tit">threats</div>
+					<div class="desc">
+						<ol>
+							<li>온라인 소비자들의 취향
+								다양화</li>
+							<li>소셜 마케팅 관련 제도적 변화</li>
+							<li>대형 교육 사업자의 BM 침해</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 인포그래픽형 swot 분석 style04-->
+
+
+	<!-- 매거진형  조직문화,복리후생 style 03 -->
+	<div class="module-wrap mag_mod_culture sty03">
+		<div class="cnt-container">
+			<h3>조직문화 &amp; 복리후생</h3>
+			<div class="culture_wrap">
+				<div class="item">
+					<p class="tit">휴가비 지원</p>
+					<p class="desc">여름휴가, 휴가비 지원<br />
+						(6개월 이상 근무자)</p>
+				</div>
+				<div class="item">
+					<p class="tit">수평적 분위기</p>
+					<p class="desc">직원 간 수평적 분위기 조성</p>
+				</div>
+				<div class="item">
+					<p class="tit">생일 축하</p>
+					<p class="desc">직원 생일축하 선물</p>
+				</div>
+				<div class="item">
+					<p class="tit">비전 나눔</p>
+					<p class="desc">예술ㆍ문화ㆍ시대에 대한<br />
+						비전 나눔</p>
+				</div>
+				<div class="item">
+					<p class="tit">자기개발</p>
+
+					<p class="desc">다양한 프로젝트 참여를 <br>
+						통한 자기개발 가능</p>
+				</div>
+				<div class="item">
+					<p class="tit">성취 및 성장
+					</p>
+					<p class="desc">성취와 성장 추구
+					</p>
+				</div>
+				<div class="item">
+					<p class="tit">식사 및 간식</p>
+					<p class="desc">점심식사, 간식 제공</p>
+				</div>
+				<div class="item">
+					<p class="tit">문화적 소통</p>
+					<p class="desc">직원 간 (사이 간)<br>
+						문화적 소통
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //매거진형  조직문화,복리후생 style 03 -->
+
+
+	<!-- 매거진형 현직자 인터뷰 style02-->
+	<div class="module-wrap mag_mod_interview sty02">
+		<div class="cnt-container">
+			<h3>현직자 인터뷰</h3>
+			<div class="tab_container">
+				<ul class="tabs">
+					<li class="active">
+						<a href="javascript:vold" data-tab="tab1">CEO</a>
+					</li>
+					<li>
+						<a href="javascript:vold" data-tab="tab2">인사담당자</a>
+					</li>
+					<li>
+						<a href="javascript:vold" data-tab="tab3">신입사원</a>
+					</li>
+				</ul>
+
+				<div class="tab_content" id="tab1">
+					<div class="interview_wrap">
+						<dl>
+							<dt class="q">CEO로서 한 말씀 해주신다면?</dt>
+							<dd class="a">교육에 관한 신념과 열정이 있으신 분들 ㈜심률에서 역량을 펼쳐 함께 글로벌비즈니스를<br />
+								향해 힘차게 발돋음 할 수있도록 돕겠습니다. </dd>
+						</dl>
+						<dl>
+							<dt class="q">회사의 설립배경, 경영철학, 경영이념에 대해 설명해 주세요.</dt>
+							<dd class="a">안녕하세요. "미술은 왜 스쳐 지나가듯 배울까?" 라는 의문으로<br />
+								예술 교육을 연구하게 된 (주)심률 입니다.(주)심률은 전연령층이<br />
+								다양한 예술을 경험할 수 있는 예술교육기관 입니다.</dd>
+						</dl>
+						<dl>
+							<dt class="q">우리회사는 OOO이다. 짧게 표현할 수 있는 단어는 무엇이라<br />
+								생각하시나요? 그리고 그 의미에 대해서 설명해주세요</dt>
+							<dd class="a">우리회사는 고인물이 아니다.의미는 파릇파릇 돋아나는
+								여러 아이디어를 자유롭게 제안할 수있다.</dd>
+						</dl>
+						<dl>
+							<dt class="q">우리 기업만의 경쟁력은?</dt>
+							<dd class="a">온,오프라인 온라인 플랫폼이며,미국,호주,캐나다등 현지 작가
+								큐레이터들과 실시간으로 화상을 통해 언제 어디서든 시공간을 <br />
+								초월하여 아트키트와 함께 예술교육을 받을 수 있다.</dd>
+						</dl>
+						<dl>
+							<dt class="q">회사의 주력 서비스 혹은 제품은 무엇인가요
+							</dt>
+							<dd class="a">온라인,오프라인 예술교육 플랫폼이며,아트키트와 공공기관 교육을 진행하고 있다. </dd>
+						</dl>
+
+					</div>
+				</div>
+
+
+				<div class="tab_content" id="tab2">
+					<div class="interview_wrap">
+						<dl>
+							<dt class="q">간단한 자기소개 작성 부탁드립니다 (이름/업무/입사년차)</dt>
+							<dd class="a">안녕하세요. ㈜심률의 정유진 선임연구원입니다. 저는 다양한 분야에서 전문성을 가춘 큐레이터분들을 관리하며<br />
+								교육 콘텐츠 개발 시 ㈜심률의 톤 앤 매너에 가깝게 지도해주고 지지해주는 역할을 합니다. 뿐만 아니라 온/오프라인<br />
+								교육 콘텐츠 기획 및 강의, 교육 키트 개발 등 여러 분야에서 업무를 수행하고 있습니다.<br />
+								21년 1월부터 현재까지 다니고 있습니다.</dd>
+						</dl>
+						<dl>
+							<dt class="q">직무를 수행하면서 전문성이 길러진다고 생각하나요?</dt>
+							<dd class="a">네, 교육 키트 개발 및 교육 콘텐츠 기획과 동시에 강의를 할 수 있는 시스템을 갖췄고 그 안에서 다양한 전문적인<br />
+								일들을 습득할 수 있기에 프로적 정신을 함양시킬 수 있습니다.</dd>
+						</dl>
+						<dl>
+							<dt class="q">자신의 노력여하에 따라 업무 기회가 주어지나요?</dt>
+							<dd class="a">다양한 프로젝트에 최대한 여러 가지 참여할 수 있는 기회를
+								드리고자 노력합니다.</dd>
+						</dl>
+						<dl>
+							<dt class="q">회사에서 지원되는 복리후생 중 자랑하고 싶은
+								2가지는 무엇인가요?</dt>
+							<dd class="a">중식제공 및 워크숍</dd>
+						</dl>
+						<dl>
+							<dt class="q">복장이나 헤어스타일의 자율성은 어느 정도인지요?</dt>
+							<dd class="a">업무 시 제품 촬영, 미팅 등의 환경을 고려하여 큰 무리가 없다면
+								개성에 맞는 복장 및 헤어스타일 좋습니다.</dd>
+						</dl>
+						<dl>
+							<dt class="q">업무가 끝나면 상사 눈치 안보고 퇴근할 수 있나요?</dt>
+							<dd class="a">네, 업무를 마치신 후 자유롭게 퇴근 가능한 환경을 유지하고 있습니다.</dd>
+						</dl>
+					</div>
+				</div>
+
+				<div class="tab_content" id="tab3">
+					<div class="interview_wrap">
+						<dl>
+							<dt class="q">간단한 자기소개 작성 부탁드립니다 (이름/업무/입사년차)</dt>
+							<dd class="a">안녕하세요. ㈜심률의 정유진 선임연구원입니다. 저는 다양한 분야에서 전문성을 가춘 큐레이터분들을<br />
+								관리하며 교육 콘텐츠 개발 시 ㈜심률의 톤 앤 매너에 가깝게 지도해주고 지지해주는 역할을 합니다.<br />
+								뿐만 아니라 온/오프라인 교육 콘텐츠 기획 및 강의, 교육 키트 개발 등 여러 분야에서 업무를 수행하고
+								있습니다.<br /> 21년 1월부터 현재까지 다니고 있습니다. </dd>
+						</dl>
+						<dl>
+							<dt class="q">회사의 주력 서비스 혹은 제품은 무엇인가요?</dt>
+							<dd class="a">전문적인 교육 프로그램과 특허 등록된 교구재입니다. 다른 미술교육 회사에서는 접할 수 없는
+								특별한 교구재입니다.</dd>
+						</dl>
+						<dl>
+							<dt class="q">회사 내 조직문화는 어떠한가요? </dt>
+							<dd class="a">각자의 업무에 충실하면서도 서로의 의견을 존중하며
+								프로젝트에 도움될 방향으로 함께 가려 합니다!</dd>
+						</dl>
+						<dl>
+							<dt class="q">복장이나 헤어스타일의 자율성은 어느 정도인지요?</dt>
+							<dd class="a">복장제한은 따로 없지만 교구재 제작과 촬영을 위해
+								항상 편하고 단정하게 입고 있습니다~</dd>
+						</dl>
+						<dl>
+							<dt class="q">업무가 끝나면 상사 눈치 안보고 퇴근할 수 있나요?</dt>
+							<dd class="a">제가 끝내고 싶은 업무가 있을 때가 아니면 언제나 칼퇴합니다!</dd>
+						</dl>
+						<dl>
+							<dt class="q">어떤 성격 직원이 기업에 어울린다고 생각되나요?</dt>
+							<dd class="a">스타트업 회사기 때문에 주어진 일만 하기보다 적극적으로 의견을 내고 업무에 참여하는 성격이어야 한다고 생각합니다.<br />
+								새로운 사업공고를 따내어 회사의 성장을 함께 도모해야 하기에 적극적인 태도가 필요하다고 봅니다.</dd>
+						</dl>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<!-- //매거진형 현직자 인터뷰 style02-->
+
+
+	<!-- 매거진형 현직자 인터뷰 style02-->
+	<div class="module-wrap mag_mod_review sty02">
+		<div class="cnt-container">
+			<h3>기업 리뷰</h3>
+			<div class="culture_wrap">
+				<div class="item">
+					<p class="desc">연차가 쌓일수록 다른 사람 기분이나
+						입장 신경 안쓰고 눈치 볼 필요없이
+						오래 다닌 사람들끼리 친목도모하면서
+						회사생활 즐겁게 할 수 있음
+
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">연차가 쌓일수록 다른 사람 기분이나
+						입장 신경 안쓰고 눈치 볼 필요없이
+						오래 다닌 사람들끼리 친목도모하면서
+						회사생활 즐겁게 할 수 있음
+
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">연 2회 성과급 제도
+						영업이익 % 인센티브 지급
+						야근수당, 주휴수당 지급
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">연 2회 성과급 제도
+						영업이익 % 인센티브 지급
+						야근수당, 주휴수당 지급
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">탄력근무제 시행
+						자유로운 월차사용<br />
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //매거진형 현직자 인터뷰 style02-->
+
+
+	<!--공통 채용공고 style01-->
+	<div class="module-wrap com_mod_recruit sty03  target" id="target03">
+		<div class="bg_bot"></div>
+		<div class="cnt-container">
+			<h3>채용공고</h3>
+			<table class="tb_recruit" summary="채용공고">
+				<caption>채용공고 리스트</caption>
+				<thead>
+					<tr>
+						<th scope="col">접수기간</th>
+						<th scope="col">채용제목</th>
+						<th scope="col">고용형태</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="date">2021.05.31 까지</td>
+						<td class="tit">풀스택 개발자 채용/경력채용/급여250만원</td>
+						<td class="support">정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+					</tr>
+					<tr>
+						<td class="date">상시채용</td>
+						<td class="tit">생산직 지원 채용/경력 무관/급여220만원</td>
+						<td class="support">계약직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+					</tr>
+					<tr>
+						<td class="date">상시채용</td>
+						<td class="tit">경영지원팀 직원 채용/경력 무관/급여220만경영지원팀 직원 채용/경력 무관/급여220만경영지원팀 직원 채용/경력 무관/급여</td>
+						<td class="support">정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="box_recruit">
+				<h4>경기도일자리재단 신입 직원 채용<span class="period">상시채용</span></h4>
+				<hr />
+				<div class="detail_wrap">
+					<div>
+						<h5>지원자격</h5>
+						<dl class="clearfix">
+							<dt>경력</dt>
+							<dd>경력무관</dd>
+							<dt>학력</dt>
+							<dd>고졸이상</dd>
+							<dt>우대</dt>
+							<dd>인근거주자, 1종 보통운전면허, 회계실무자격증 FAT1급 이상</dd>
+						</dl>
+					</div>
+					<div>
+						<h5>근무조건</h5>
+						<dl class="clearfix">
+							<dt>고용형태</dt>
+							<dd>정규직</dd>
+							<dt>급여</dt>
+							<dd>220만원 이상</dd>
+							<dt>근무시간</dt>
+							<dd>주5일(월~금) 08:30~17:30</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<!--//채용공고 상세-->
+
+
+	<div class="module-wrap com_mod_news sty01 target" id="target04">
+		<div class="cnt-container">
+			<div class="news_row">
+				<a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
+				<div class="desc">
+					경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
+					'2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
+					친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+				</div>
+				<div class="reg_date">2021.05.15</div>
+			</div>
+			<div class="news_row">
+				<a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
+				<div class="desc">
+					경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
+					'2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
+					친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+				</div>
+				<div class="reg_date">2021.05.15</div>
+			</div>
+			<div class="paging_wrap">
+				<a href="javascript:void(0);" class="prev disable">이전</a>
+				<a href="javascript:void(0);" class="current">1</a>
+				<a href="javascript:void(0);">2</a>
+				<a href="javascript:void(0);">3</a>
+				<a href="javascript:void(0);">4</a>
+				<a href="javascript:void(0);">5</a>
+				<a href="javascript:void(0);" class="next">다음</a>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="module-wrap com_mod_map">
+        <div id="map"></div>
+        <div class="map_info_wrap">
+            <div class="com_info">
+                <div class="comName">기업명</div>
+                <a href="javascript:void(0);" target="_blank" class="find_road">길 찾기</a>
+                <p class="comAddress">주소</p>
+                <p class="tel">전화번호</p>
+            </div>
+            <div class="around_wrap">
+                <ul id="category">
+                    <li id="MT1" data-order="0"> 
+                        <span class="category_bg mt1"></span>
+                        대형마트
+                    </li>       
+                    <li id="CS2" data-order="1"> 
+                        <span class="category_bg cs2"></span>
+                        편의점
+                    </li>  
+                    <li id="AC5" data-order="2"> 
+                        <span class="category_bg ac5"></span>
+                        학원
+                    </li>  
+                    <li id="PK6" data-order="3"> 
+                        <span class="category_bg pk6"></span>
+                        주차장
+                    </li>  
+                    <li id="OL7" data-order="4"> 
+                        <span class="category_bg ol7"></span>
+                        주유소
+                    </li>  
+                    <li id="SW8" data-order="5"> 
+                        <span class="category_bg sw8"></span>
+                        지하철
+                    </li>
+                    <li id="BK9" data-order="6"> 
+                        <span class="category_bg bk9"></span>
+                        은행
+                    </li> 
+                    <li id="CT1" data-order="7"> 
+                        <span class="category_bg ct1"></span>
+                        문화시설
+                    </li>       
+                    <li id="AT4" data-order="8"> 
+                        <span class="category_bg at4"></span>
+                        관광명소
+                    </li>  
+                    <li id="AD5" data-order="9"> 
+                        <span class="category_bg ad5"></span>
+                        숙박
+                    </li>  
+                    <li id="FD6" data-order="10"> 
+                        <span class="category_bg fd6"></span>
+                        음식점
+                    </li>  
+                    <li id="CE7" data-order="11"> 
+                        <span class="category_bg ce7"></span>
+                        카페
+                    </li>  
+                    <li id="HP8" data-order="12"> 
+                        <span class="category_bg hp8"></span>
+                        병원
+                    </li>
+                    <li id="PM9" data-order="14"> 
+                        <span class="category_bg pm9"></span>
+                        약국
+                    </li>      
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="./js/imgLiquid-min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="./js/waypoints.min.js"></script>
+	<script src="./js/jquery.counterup.min.js"></script>
+	<script src="./js/run.js"></script>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script>
+	<script src="/module/jsontohtml.js"></script>
+	<script src="/module/map.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.biz_wrap').slick({
+
+			});
+
+			// 탭 슬라이드 깨짐 방지
+			$(".tabs li a").click(function() {
+				$('.mag_mod_interview.sty02 .interview_wrap').slick('setPosition');
+				return false;
+			});
+
+			$('.mag_mod_interview.sty02 .interview_wrap').slick({
+				slide: 'div',
+				slidesPerRow: 1,
+				rows: 3,
+				arrows: false,
+				dots: true,
+				fade: true
+			});
+			
+		});
+
+		    // 주소-좌표 변환 객체를 생성합니다
+			var geocoder = new kakao.maps.services.Geocoder();
+
+// 주소로 좌표를 검색합니다
+geocoder.addressSearch(comAddress, function(result, status) {
+
+	// 정상적으로 검색이 완료됐으면 
+	if (status === kakao.maps.services.Status.OK) {
+
+		var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+		//console.log(result[0].y+' / '+result[0].x);
+
+		var imageSrc = '/images/ico_mark.png', // 마커이미지의 주소입니다    
+			imageSize = new kakao.maps.Size(34, 48), // 마커이미지의 크기입니다
+			imageOption = {offset: new kakao.maps.Point(16, 48)};
+
+			// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+		var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption)
+
+		// 결과값으로 받은 위치를 마커로 표시합니다
+		var marker = new kakao.maps.Marker({
+			map: map,
+			position: coords,
+			image: markerImage
+		});
+
+		// 마커가 지도 위에 표시되도록 설정합니다
+		marker.setMap(map);
+
+		var content = '<div class="customoverlay">'+comName+'</div>';
+
+		var customOverlay = new kakao.maps.CustomOverlay({
+			map: map,
+			position: coords,
+			content: content,
+			yAnchor: 1 
+		});
+
+		// 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+		map.setCenter(coords);
+
+		var find_road = "https://map.kakao.com/link/to/"+comName+","+result[0].y+","+result[0].x;
+		//console.log(find_road);
+		$(".find_road").attr("href",find_road);
+	} 
+});  
+	</script>
+</body></html>
