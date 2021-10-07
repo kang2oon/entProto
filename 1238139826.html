@@ -50,6 +50,14 @@
         .com_mod_add.talentPerson .talent_wrap > div:nth-child(2) .ico{background-position-x:-250px;}
         .com_mod_add.talentPerson .talent_wrap > div:nth-child(3) .ico{background-position-x:-500px;}
         .com_mod_add.talentPerson .talent_wrap > div:nth-child(4) .ico{background-position-x:-750px;}
+        /* Break Point */
+        @media screen and (max-width: 768px) {
+            .com_mod_add.talentPerson .talent_wrap{flex-wrap:wrap;}
+            .com_mod_add.talentPerson .talent_wrap > div{width:48%;}
+            .com_mod_add.talentPerson .talent_wrap > div:nth-child(2n+1){margin-top:32px;}
+            .com_mod_add.talentPerson .talent_wrap > div+div{margin-top:32px;}
+            .com_mod_add.talentPerson .ico{margin:0 auto 20px;}
+        }
         @media screen and (max-width: 480px) {
             .inf_mod_biz.sty02 .msgAdd{max-width:80%;font-size:16px;margin:16px auto 32px;}
             .inf_mod_finance ul li .ico::before{background-size:cover;}
@@ -58,11 +66,9 @@
             .inf_mod_finance ul li:nth-child(4) .ico::before{background-position-x:-180px;}
             .com_mod_add.talentPerson{padding:80px 0;}
             .com_mod_add.talentPerson .tit{font-size:32px;}
-            .com_mod_add.talentPerson .talent_wrap{flex-wrap:wrap;}
             .com_mod_add.talentPerson .talent_wrap > div{width:80%;margin:0 auto;}
             .com_mod_add.talentPerson .talent_wrap > div:nth-child(2n+1){margin-top:24px;}
             .com_mod_add.talentPerson .talent_wrap > div+div{margin-top:24px;}
-            .com_mod_add.talentPerson .ico{margin:0 auto 20px;}
             .com_mod_add{padding:60px 0;}
         }
     </style>
@@ -566,7 +572,7 @@
                 prevEl: ".welfare_wrap .swiper-button-prev"
             },
             breakpoints:{
-                480: {
+                780: {
                     slidesPerView: 2,
                 }
             }
