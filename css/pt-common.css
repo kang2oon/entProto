@@ -1989,7 +1989,8 @@ html{font-size: 8px}
     /* Header & Anchor */
     .header{display:block;text-align:center;}
     .header .info dl{display:none;}
-    .header .logo, .header .info, .com_mod_header.fixed .header .info{float:none;}
+    .header .logo, .header .info, .com_mod_header.fixed .header .logo, .com_mod_header.fixed .header .info{float:none;}
+    .com_mod_header.fixed .header .info{margin-top:16px;}
     .header .logo{margin:0 0 24px;}
     .header .logo img{max-width:240px;}
     .com_mod_anchor.sty02 a{padding:12px 32px;}
@@ -2100,7 +2101,7 @@ html{font-size: 8px}
     .inf_mod_swot.sty02 .swot_wrap .swotO::before {background-position-x:-300px;}
     .inf_mod_swot.sty02 .swot_wrap .swotT::before {background-position-x:-450px;}
     /* Header */
-	.header .info dl {display: block;text-align: center;}
+	
 	.header .info dl dt {margin-right: 0}
 	.header .info dl dd{margin-right: 0;margin-bottom: 1.5rem;margin-top: .5rem}
 	.header .info dl dd:last-child{margin-bottom: 0}
