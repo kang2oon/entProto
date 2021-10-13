@@ -1,52 +1,47 @@
 
-/*
-Project : ProtoType Common 
-Author  : kang2oon
-Date    : 2021-07-16
-*/
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@300;400;500;700&display=swap');
-/* reset */
-html{font-size: 10px}
-body {font-size: 1.6rem}
-html,body{width:100%;height:100%}html{overflow-y:scroll}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,table,tr,th,td,label,select{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}ul,ol,li{list-style:none}img,fieldset{border:0}label{cursor:pointer}textarea{overflow:auto}button,input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}input[type="checkbox"],input[type="radio"]{border:0}svg:not(:root){overflow:hidden}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}.clearfix:before,.clearfix:after{content:"";display:block}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix{*zoom:1}
+/* 폰트 */
+@import  URL ( 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap' );
+@import  URL ( 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@300;400;500;700&display =스왑' );
+/* 초기화 */
+html { 글꼴 크기 :  10 픽셀 }
+본문 { 글꼴 크기 :  1.6 rem }
+html , 본문 { 너비 : 100 % ; height : 100 % } html { overflow-y : scroll} body , div , dl , dt , dd , ul , ol , li , h1 , h2 , h3 , h4 , h5 , h6 , form , fieldset , p , button , table, tr , th , td , 레이블 , 선택 { 여백 : 0 ; 패딩 : 0 } 테이블 { 테두리 접기 : 접기; 국경 간격 : 0 } UL , OL , 리 { 목록 스타일 : 없음} IMG , 필드 셋 { 국경 : 0 } 라벨 { 커서 : 포인터} 텍스트 영역 {오버플로 : 자동} 버튼 , 입력 [ 유형 = "버튼" ] , 입력 [ 유형 = "재설정" ] , 입력 [ 유형 = "제출" ]{ -webkit-appearance : 버튼; cursor : pointer} 입력 [ type = "checkbox" ] , 입력 [ type = "radio" ]{ border : 0 } svg : not (: root ){ overflow : hidden} 기사 , 제쳐두고 , details , figcaption , figure , footer , header , hgroup , main , nav , section , summary { display : block} audio , canvas , progress , video { display : inline-block; vertical-align : 기준선}. 클리어픽스 :전에 , . clearfix : 뒤에 { 내용 : "" ; 표시 : 차단}. clearfix : 후 { clear : 둘 다; 가시성 : 숨김; 라인 높이 : 0 ; 높이 : 0 }. clearfix { * 확대/축소 : 1}
 
-button{border: 0;font-family: 'Noto Sans KR'}
-caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
-.hide{position: absolute;left:-99999px;width: 0;height: 0;overflow: hidden}
-.tct{text-align: center}
-.tlt{text-align: left}
-.section{margin: 6.0rem 0}
-.btn_wrap{margin-top: 6.0rem}
+버튼 { 테두리 :  0 ; font-family :  'Noto Sans KR' }
+캡션 { 위치 : 절대; 왼쪽 :  -99999 픽셀 ; 너비 :  0 ; 높이 :  0 ; 오버플로 : 숨김}
+. 숨기기 { 위치 : 절대; 왼쪽 : -99999 픽셀 ; 너비 :  0 ; 높이 :  0 ; 오버플로 : 숨김}
+. tct { 텍스트 정렬 : 가운데}
+. tlt { 텍스트 정렬 : 왼쪽}
+. 섹션 { 여백 :  6.0 rem  0 }
+. btn_wrap { margin-top :  6.0 rem }
 
-.module-wrap .white_box_sdw{background: #fff;padding: 5.0rem;border: 1px solid #ddd;position: relative;box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.08)}
-button{border:0;}
+. 모듈 랩 . white_box_sdw { 배경 :  # fff ; 패딩 :  5.0 rem ; 테두리 :  1 픽셀 솔리드 # ddd ; 위치 : 상대; 상자 그림자 :  2 픽셀  0 픽셀  7 픽셀  rgba ( 0 ,  0 ,  0 ,  0.08 )}
+버튼 { 테두리 : 0 ;}
 
-/* Common */
-*{box-sizing:border-box;}
-html, body{font-family:'Noto Sans KR', sans-serif;font-weight:400;-webkit-font-smoothing:antialiased;line-height:1.6;color:#212121;}
-img{max-width:100%;}a{text-decoration:none;color:inherit;}
-.ff_serif{font-family:'Noto Serif KR', serif;}
-.fc_fff{color:#fff;}
-.fc_000{color:#000;}
-.fc_919191{color:#919191;}
-.txt_center{text-align:center!important;}
-.mgtop_20{margin-top:20px!important;}
-.mgtop_40{margin-top:40px!important;}
-.mgtop_80{margin-top:80px!important;}
-.btn{display:inline-block;}
+/* 흔한 */
+* { 상자 크기 : 테두리 상자;}
+html ,  body { font-family : 'Noto Sans KR' , sans-serif; 글꼴 두께 : 400 ; -webkit-font-smoothing : 앤티앨리어싱됨; 줄 높이 : 1.6 ; 색상 : # 212121 ;}
+img { 최대 너비 : 100 % ;} a { 텍스트 장식 : 없음; 색상 : 상속;}
+. ff_serif { 글꼴군 : '노토 세리프 KR' , serif;}
+. fc_fff { 색상 : # fff ;}
+. fc_000 { 색상 : # 000 ;}
+. fc_919191 { 색상 : # 919191 ;}
+. txt_center { 텍스트 정렬 : 센터 !중요 ;}
+. mgtop_20 { 마진 - 상단 : 20 픽셀 ! 중요 ;}
+. mgtop_40 { 여백 상단 : 40 픽셀 !중요 ;}
+. mgtop_80 { 여백 상단 : 80 픽셀 !중요 ;}
+. btn { 디스플레이 : 인라인 블록;}
 
 .module-wrap .white_box_sdw{background: #fff;padding: 5.0rem;border: 1px solid #ddd;position: relative;box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.08)}
 .module-wrap{position:relative;}
-.mgtop_80{margin-top:80px;}
-select { border-radius:0; /* 아이폰 사파리 보더 없애기 */ -webkit-appearance:none; /* 화살표 없애기 for chrome*/ -moz-appearance:none; /* 화살표 없애기 for firefox*/ appearance:none /* 화살표 없애기 공통*/ ;background: url(../images/common/select_arrow.png) no-repeat right 10px center #fff;font-size: 16px;min-width: 90px;padding:7px  15px;padding-right: 35px;box-sizing: border-box;}
-select::-ms-expand{ display:none /* 화살표 없애기 for IE10, 11*/ }
+. mgtop_80 { 여백 상단 : 80 픽셀 ;}
+선택 { 테두리 반경 : 0 ; /* 낱말 보더 없애기 */  -webkit-appearance : 없음; /* chrome*/  -moz-appearance : 없음; /* 파이어폭스에 대한 편성기*/  출연 : 없음 /* 낱낱이 낱낱이 파헤쳐진다*/ ; 배경 : URL (.. / 이미지 / 일반 / select_arrow.png) 노 반복 우측 10 픽셀 센터 #의 FFF ; 글꼴 크기 :  16 픽셀 ; 최소 너비 :  90 픽셀 ; 패딩 :7 픽셀   15 픽셀 ; 패딩 오른쪽 :  35 픽셀 ; 상자 크기 : 테두리 상자;}
+select :: -ms-expand { display : none /* IE10, 11*용 궁합기 }
 select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select_arrow.png) no-repeat right 15px center #fff;border-radius: 3px;font-family: 'Noto Sans KR',sans-serif}
 .module-wrap, .com_mod_header, .com_mod_anchor{position:relative;}
-.cnt-container{position:relative;max-width:1260px;margin:0 auto;}
-.module-wrap .bb-axis.bb-axis-x {font-family: 'Noto Sans KR';font-size: 16px;fill:#555}
-.module-wrap .bb-axis.bb-axis-x line{stroke:none}
+. cnt-container { 위치 : 상대; 최대 너비 : 1260 픽셀 ; 여백 : 0 자동;}
+. 모듈 랩 . bb 축 . bb-axis-x { font-family :  'Noto Sans KR' ; 글꼴 크기 :  16 픽셀 ; 채우기 : # 555 }
+. 모듈 랩 . bb 축 . bb-axis-x  라인 { 스트로크 : 없음}
 .module-wrap .bb-axis.bb-axis-y line{stroke:none}
 .module-wrap .bb-grid line{stroke-dasharray: 0;stroke:#ddd !important}
 .module-wrap .bb-axis.bb-axis-y {font-size: 14px;font-family: 'Noto Sans KR';fill:#555}
@@ -56,12 +51,12 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
 /* Common */
     /* Header */
 .com_mod_header{padding:70px 0;background:#fff;}
-    .com_mod_header.sty01{background:url(/images/bg_sty01.png) 50% 50%;}
+    . com_mod_header . sty01 { 배경 : url (/images/bg_sty01.png) 50 %  50 % ;}
     /* .com_mod_header.sty02{} */
-.header{position:relative;display:flex;align-items:center;}
-    .header .biz_cate{position:absolute;top:-70px;right:0;text-align:center;padding:32px 16px;border-radius:0 0 8px 8px;font-size:1.4rem;font-weight:300;}
-    .header .biz_cate.blue{background:#437cff;color:#fff;}
-    .header .biz_cate.green{background:#93b022;color:#fff;}
+. 헤더 { 위치 : 상대; 디스플레이 : 플렉스; 항목 정렬 : 센터;}
+    . 헤더 . biz_cate { 위치 : 절대; 상단 : -70 픽셀 ; 오른쪽 : 0 ; 텍스트 정렬 : 가운데; 패딩 : 32 픽셀  16 픽셀 ; 테두리 반경 : 0  0  8 px  8 px ; 글꼴 크기 : 1.4 rem ; 글꼴 두께 : 300 ;}
+    . 헤더 . biz_cate . 파란색 { 배경 : # 437cff ; 색상 : # fff ;}
+    . 헤더 . biz_cate . 녹색 { 배경 : # 93b022 ; 색상 : # fff ;}
     .header .biz_cate.cate01 i{position:relative;display:block;width:40px;height:40px;margin:0 auto 8px;background:url(/images/ico_biz_cate01.png) no-repeat 50% 50%;}
     .header .logo{float:left;margin-right:120px;}
     .header .logo img{max-width:300px;}
@@ -70,53 +65,53 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
     .header .info dl dt, .header .info dl dd{float:left;line-height:20px;}
     .header .info dl dt{font-size:1.6rem;font-weight:300;margin-right:12px;}
     .header .info dl dd{font-size:2.0rem;font-weight:500;margin-right:48px;}
-    .sty01 .header .action a{display:inline-block;font-size:1.6rem;color:inherit;text-decoration:none;border:1px solid #fff;padding:8px 16px;border-radius:24px;line-height:20px;}
-    .sty01 .header .action a.on{border-color:#ff1c31;}
-    .sty01 .header .action a i{font-style:normal;font-size:2.0rem;display:inline-block;margin-left:32px;}
-    .sty02 .header .action a{display:inline-block;font-size:1.6rem;color:inherit;text-decoration:none;line-height:28px;}
-    .sty02 .header .action a i{
+    . 스티01 . 헤더 . action  a { display : 인라인 블록; 글꼴 크기 : 1.6 rem ; 색상 : 상속; 텍스트 장식 : 없음; 테두리 : 1 픽셀 솔리드 # fff ; 패딩 : 8 픽셀  16 픽셀 ; 테두리 반경 : 24 픽셀 ; 줄 높이 : 20 픽셀 ;}
+    . 스티01 . 헤더 . 조치  가 . 에 { 국경 색상 : # ff1c31 ;}
+    . 스티01 . 헤더 . 액션  내가 { 글꼴 스타일 : 일반; 글꼴 크기 : 2.0 rem ; 디스플레이 : 인라인 블록; 여백 왼쪽 : 32 픽셀 ;} 
+    . 스티02 . 헤더 . action  a { display : 인라인 블록; 글꼴 크기 : 1.6 rem ; 색상 : 상속; 텍스트 장식 : 없음; 줄 높이 : 28 픽셀 ;}
+    . 스티02 . 헤더 . 액션  내가 { 
         font-style:normal;font-size:1.6rem;display:inline-block;margin-left:16px;width:28px;height:28px;
         border:1px solid #000;text-align:center;line-height:28px;border-radius:14px;
-    }.sty02 .header .action a.on i{border-color:#ff1c31;}
-    .header .action a + a{margin-left:24px;}
-    .header .action a.on{color:#ff1c31;}
-.com_mod_header.fixed{position:fixed;width:100%;padding:24px 0;z-index:4000;}
-    .com_mod_header.fixed .header{display:block;}
-    .com_mod_header.fixed .header .biz_cate, .com_mod_header.fixed .header .info dl{display:none;}
-    .com_mod_header.fixed .header .logo img{max-width:180px;}
-    .com_mod_header.fixed .header .info{float:right;}
-    /* Anchor Tab */
-.com_mod_anchor.sty01{border:1px #ddd;border-style:solid none;background: #fff}
-.com_mod_anchor.sty02{background:#001540;}
-    .com_mod_anchor .cnt-container{overflow-x:auto;-ms-overflow-style:none;scrollbar-width:none;}
-    .com_mod_anchor .cnt-container::-webkit-scrollbar{display:none;}
-    .com_mod_anchor ul{display:table;white-space:nowrap;table-layout:fixed;}
+    }. 스티02 . 헤더 . 조치  가 . 에  내가 { 국경 색상 : # ff1c31 ;}
+    . 헤더 . 액션  a  +  a { 여백-왼쪽 : 24 픽셀 ;}
+    . 헤더 . 조치  가 . 에 { 색상 : #의 ff1c31 ;}
+. com_mod_header . 고정 { 위치 : 고정; 너비 : 100 % ; 패딩 : 24 픽셀  0 ; Z-색인 : 4000 ;}
+    . com_mod_header . 고정 . 헤더 { 디스플레이 : 블록;}
+    . com_mod_header . 고정 . 헤더 . biz_cate , . com_mod_header . 고정 . 헤더 . 정보  dl { 표시 : 없음;}
+    . com_mod_header . 고정 . 헤더 . 로고  img { 최대 너비 : 180 픽셀 ;}
+    . com_mod_header . 고정 . 헤더 . 정보 { float : 오른쪽;}
+    /* 앵커 탭 */
+. com_mod_anchor . sty01 { 테두리 : 1 픽셀  # ddd ; 테두리 스타일 : 단색 없음; 배경 :  # fff }
+. com_mod_anchor . sty02 { 배경 : # 001540 ;}
+    . com_mod_anchor . cnt-container { overflow-x : 자동; -ms-overflow-style : 없음; 스크롤바 너비 : 없음;}
+    . com_mod_anchor . cnt-container :: -webkit-scrollbar { 표시 : 없음;}
+    . com_mod_anchor  ul { 디스플레이 : 테이블; 공백 : nowrap; 테이블 레이아웃 : 고정;}
     .com_mod_anchor li{display: table-cell;}
     .com_mod_anchor.sty01 li + li{padding-left:32px;}
     .com_mod_anchor.sty01 a{position:relative;display:inline-block;color:inherit;font-size:1.8rem;text-decoration:none;padding:20px 10px;}
-    .com_mod_anchor.sty01 a.active{color:#000;}
-    .com_mod_anchor.sty01 a.active::before{content:"";display:block;width:10px;height:10px;background:#ff1c31;border-radius:50%;position:absolute;top:12px;right:2px;}
+    . com_mod_anchor . sty01  가 . 활성 { 색상 : # 000 ;}
+    . com_mod_anchor . sty01  가 . 활성 :: 이전 { 내용 : "" ; 표시 : 차단; 너비 : 10 픽셀 ; 높이 : 10 픽셀 ; 배경 : # ff1c31 ; 테두리 반경 : 50 % ; 위치 : 절대; 상단 : 12 픽셀 ; 오른쪽 : 2 픽셀 ;}
 	.com_mod_anchor.sty01 a:hover{color:#000;}
-	.com_mod_anchor.sty01 a:hover::before{content:"";display:block;width:10px;height:10px;background:#ff1c31;border-radius:50%;position:absolute;top:12px;right:2px;}
-	.com_mod_anchor.sty01 a:hover::after{content:"";display:block;width:100%;height:3px;background:#437cff;position:absolute;left:0;bottom:0;}
-    .com_mod_anchor.sty01 a.active::after{content:"";display:block;width:100%;height:3px;background:#437cff;position:absolute;left:0;bottom:0;}
-    .com_mod_anchor.sty02 li{border-right:1px solid rgba(255,255,255,.25);}
-    .com_mod_anchor.sty02 li:first-child{border-left:1px solid rgba(255,255,255,.25);}
-    .com_mod_anchor.sty02 a{position:relative;display:inline-block;color:inherit;font-size:1.6rem;font-weight:300;text-decoration:none;padding:20px 32px;}
-    .com_mod_anchor.sty02 a.active{background:#da0011;font-weight:400;}
-.com_mod_anchor.fixed{position:fixed;width:100%;z-index:1000;}
-    .com_mod_anchor.fixed.sty02 a{padding:12px 32px;}
+	. com_mod_anchor . sty01  a : hover :: before { content : "" ; 표시 : 차단; 너비 : 10 픽셀 ; 높이 : 10 픽셀 ; 배경 : # ff1c31 ; 테두리 반경 : 50 % ; 위치 : 절대; 상단 : 12 픽셀 ; 오른쪽 : 2 픽셀 ;}
+	. com_mod_anchor . sty01  : 호버 :: 후 { 내용 : "" ; 표시 : 차단; 너비 : 100 % ; 높이 : 3 픽셀 ; 배경 : # 437cff ; 위치 : 절대; 왼쪽 : 0 ; 하단 : 0 ;}
+    . com_mod_anchor . sty01  가 . 활성 :: 후 { 내용 : "" ; 표시 : 차단; 너비 : 100 % ; 높이 : 3 픽셀 ; 배경 : # 437cff ; 위치 : 절대; 왼쪽 : 0 ; 하단 : 0 ;}
+    . com_mod_anchor . sty02의  리튬 { 보더 오른쪽 : 1 개 픽셀 고체 RGBA ( 255 , 255 , 255 , 0.25 )}
+    . com_mod_anchor . sty02의  리튬 : 제 아이 { 테두리 좌측 : 1 개 픽셀 고체 RGBA ( 255 , 255 , 255 , 0.25 )}
+    . com_mod_anchor . sty02  a { 위치 : 상대; 디스플레이 : 인라인 블록; 색상 : 상속; 글꼴 크기 : 1.6 rem ; 글꼴 두께 : 300 ; 텍스트 장식 : 없음; 패딩 : 20 픽셀  32 픽셀 ;}
+    . com_mod_anchor . sty02  가 . 활성 { 배경 : # da0011 ; 글꼴 두께 : 400 ;}
+. com_mod_anchor . 고정 { 위치 : 고정; 너비 : 100 % ; Z-색인 : 1000 ;}
+    . com_mod_anchor . 고정 . sty02  a { 패딩 : 12 픽셀  32 픽셀 ;}
     /* 채용공고 */
-.com_mod_recruit.sty01{padding:80px 0;}
-    .com_mod_recruit.sty01 .bg_bot{position:absolute;bottom:0;width:100%;background:#2b71b9;height:280px;}
-    .com_mod_recruit.sty01 h3{font-size:32px;margin:0 0 40px;}
+. com_mod_recruit . sty01 { 패딩 : 80 픽셀  0 ;}
+    . com_mod_recruit . 스티01 . bg_bot { 위치 : 절대; 하단 : 0 ; 너비 : 100 % ; 배경 : # 2b71b9 ; 높이 : 280 픽셀 ;}
+    . com_mod_recruit . sty01  h3 { 글꼴 크기 : 32 픽셀 ; 여백 : 0  0  40 픽셀 ;}
     .com_mod_recruit.sty01 .tb_recruit{width:100%;margin-bottom:60px;}
     .com_mod_recruit.sty01 .tb_recruit th{border:2px #000;border-style:solid none;font-size:16px;padding:24px;}
     .com_mod_recruit.sty01 .tb_recruit td{border:1px #dcdcdc;border-style:none none solid;font-size:14px;padding:16px;text-align:center;}
-    .com_mod_recruit.sty01 .tb_recruit td .apply{color:#da0020;padding:8px 16px;border:1px solid #da0020;margin-left:16px;}
+    . com_mod_recruit . 스티01 . tb_recruit  td . 적용 { 색상 : # da0020 ; 패딩 : 8 픽셀  16 픽셀 ; 테두리 : 1 픽셀 솔리드 # da0020 ; 여백 왼쪽 : 16 픽셀 ;}
     .com_mod_recruit.sty01 .box_recruit{border:1px solid #2971b9;background:#fff;padding:40px;}
     .com_mod_recruit.sty01 .box_recruit h4{position:relative;font-size:20px;}
-    .com_mod_recruit.sty01 .box_recruit h4 .period{position:absolute;top:3px;right:0;font-size:14px;font-weight:400;color:#666;}
+    . com_mod_recruit . 스티01 . box_recruit  h4 . 마침표 { 위치 : 절대; 상단 : 3 픽셀 ; 오른쪽 : 0 ; 글꼴 크기 : 14 픽셀 ; 글꼴 두께 : 400 ; 색상 : # 666 ;}
     .com_mod_recruit.sty01 .box_recruit hr{width:100%;margin:30px 0;border:1px #000;border-style:solid none;}
     .com_mod_recruit.sty01 .box_recruit .detail_wrap{display:flex;}
     .com_mod_recruit.sty01 .box_recruit .detail_wrap > div{flex:1;}
@@ -2140,4 +2135,3 @@ html{font-size: 8px}
 	.rec_mod_finance .local_rank_wrap .lank_img{max-width: 150px;width: 100%;margin: auto;}
 	.rec_mod_finance .local_rank_wrap table{margin-top: 2.0rem;}
 }
-
