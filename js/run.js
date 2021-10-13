@@ -1,11 +1,5 @@
 $(document).ready(function () {
 
-	// 플로팅메뉴
-	$('.com_mod_anchor a').off("click").on('click', function () {
-		$(this).addClass('active');
-		$(this).parent().siblings().children().removeClass('active');
-	});
-
 	// 탭 컨텐츠 숨기기
 	$(".tab_content").hide();
 
@@ -62,14 +56,6 @@ $(document).ready(function () {
 
 
 
-	$(window).on('scroll', function () {
-		//스크롤의 위치가 상단에서 190보다 크면
-		if ($(window).scrollTop() > 244) {
-			$('.com_mod_anchor').addClass("fixed");
-		} else {
-			$('.com_mod_anchor').removeClass("fixed");
-		}
-
 		// 도움말 버튼
 		$('.qm_btn a').click(function () {
 			$(this).parent().find('span').toggle()
@@ -82,7 +68,7 @@ $(document).ready(function () {
 				qmbtn.find('span').hide();
 			}
 		});
-	});
+
 
 	$(".imgFill").imgLiquid();
 
