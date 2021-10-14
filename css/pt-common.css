@@ -204,7 +204,7 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
     .com_mod_news.sty02 .paging_wrap .last{background: url(../images/jp_paging_last.png) no-repeat center}
        /* 지도 */
 .com_mod_map{height:720px;}
-.com_mod_map #map{height:720px;}
+.com_mod_map #map{height:720px;background-image:url(/images/@bg_smp_map.png);background-position:50% 50%;}
 .com_mod_map .map_info_wrap{position:absolute;top:0;left:0;background-color:#fff;z-index:100;}
 .com_mod_map .map_info_wrap .com_info{padding:20px;background-color:#258fff;color:#fff;}
 .com_mod_map .map_info_wrap .com_info .comName{display:inline-block;font-size:20px;font-weight:700;line-height:26px;}
