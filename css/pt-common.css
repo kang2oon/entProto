@@ -209,9 +209,10 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
 .com_mod_map .map_info_wrap .com_info{padding:20px;background-color:#258fff;color:#fff;}
 .com_mod_map .map_info_wrap .com_info .comName{display:inline-block;font-size:20px;font-weight:700;line-height:26px;}
 .com_mod_map .map_info_wrap .com_info .find_road{
-    display:inline-block;margin-left:8px;border:1px solid #fff;border-radius:16px;padding:2px 8px;z-index:110;cursor:pointer;
+    display:inline-block;margin-left:8px;border:1px solid #fff;border-radius:16px;padding:2px 8px;z-index:110;cursor:pointer;color:inherit;
 }
 .com_mod_map .map_info_wrap .com_info .comAddress{display:block;margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,.35);}
+.com_mod_map .map_info_wrap .com_info .tel a{color:inherit;}
 .com_mod_map .map_info_wrap .around_wrap{padding:20px 20px 10px;}
 #category{display:flex;flex-wrap:wrap;max-width:350px;}
     #category li {width:50px;margin-bottom:10px;text-align:center;cursor:pointer;font-size:12px;letter-spacing:-0.5px;}
