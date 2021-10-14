@@ -2,7 +2,7 @@ const xmlhttp = new XMLHttpRequest();
 
 xmlhttp.onload = function() {
     const myObj = JSON.parse(this.responseText);
-    //var baseUrl = "https://cdn.jsdelivr.net/gh/kang2oon/entProto/";
+    var baseUrl = "https://cdn.jsdelivr.net/gh/kang2oon/entProto/";
     // 등록일
     var regData = myObj.regData;
     $(".regData").html(regData);
@@ -37,7 +37,9 @@ xmlhttp.onload = function() {
     // 홈페이지
     var site = myObj.site;
     var siteLink = "<a href='"+site+"' target='_blank'>"+site+"</a>";
+    var siteLink2 = "<a href='"+site+"' target='_blank'>홈페이지 바로가기</a>";
     $(".site").html(siteLink);
+    $(".siteGo").html(siteLink2);
     // 담당자
     var manager = myObj.manager;
     var mngTel = myObj.mngTel;
@@ -48,7 +50,7 @@ xmlhttp.onload = function() {
     $(".mngEmail").html(mngEmailLink);
     // 기업 CI
     var imgCiUrl = myObj.imgCi;
-    var imgCi = "<img src='"+imgCiUrl+"' alt='"+comName+"'/>";
+    var imgCi = "<img src='"+baseUrl+imgCiUrl+"' alt='"+comName+"'/>";
     $(".imgCi").html(imgCi);
     // 연혁
     var historyCnt = myObj.history.length;
@@ -266,7 +268,7 @@ xmlhttp.onload = function() {
         var title = bizDivWrap[i].title;
         var desc = bizDivWrap[i].desc;
         var img = bizDivWrap[i].img;
-        bizDiv += "<div><img src='"+img+"' alt='"+title+"'>";
+        bizDiv += "<div><img src='"+baseUrl+img+"' alt='"+title+"'>";
         bizDiv += "<h4>"+title+"</h4>";
         bizDiv += "<p>"+desc+"</p>"
         bizDiv += "</div>";
@@ -280,7 +282,7 @@ xmlhttp.onload = function() {
         var title = productWrap[i].title;
         var desc = productWrap[i].desc;
         var img = productWrap[i].img;
-        product += "<div><img src='"+img+"' alt='"+title+"'>";
+        product += "<div><img src='"+baseUrl+img+"' alt='"+title+"'>";
         product += "<h4>"+title+"</h4>";
         product += "<p>"+desc+"</p>"
         product += "</div>";
@@ -300,7 +302,7 @@ xmlhttp.onload = function() {
     var imgCeo = myObj.imgCeo;
     var ivCeoCnt = myObj.ivCeo.length;
     var ivCeoWrap = myObj.ivCeo;
-    var ivCeoPhoto = "<img src='"+imgCeo+"' alt='대표이사'>";
+    var ivCeoPhoto = "<img src='"+baseUrl+imgCeo+"' alt='대표이사'>";
     var ivCeo = "<div class='swiper-wrapper'>";
     for(var i=0; i<ivCeoCnt; i++){
         ivCeo += "<div class='swiper-slide'>";
@@ -315,7 +317,7 @@ xmlhttp.onload = function() {
     var imgMng = myObj.imgMng;
     var ivMngCnt = myObj.ivMng.length;
     var ivMngWrap = myObj.ivMng;
-    var ivMngPhoto = "<img src='"+imgMng+"' alt='인사담당자'>";
+    var ivMngPhoto = "<img src='"+baseUrl+imgMng+"' alt='인사담당자'>";
     var ivMng = "<div class='swiper-wrapper'>";
     for(var i=0; i<ivMngCnt; i++){
         ivMng += "<div class='swiper-slide'>";
@@ -330,7 +332,7 @@ xmlhttp.onload = function() {
     var imgEmp = myObj.imgEmp;
     var ivEmpCnt = myObj.ivEmp.length;
     var ivEmpWrap = myObj.ivEmp;
-    var ivEmpPhoto = "<img src='"+imgEmp+"' alt='재직자'>";
+    var ivEmpPhoto = "<img src='"+baseUrl+imgEmp+"' alt='재직자'>";
     var ivEmp = "<div class='swiper-wrapper'>";
     for(var i=0; i<ivEmpCnt; i++){
         ivEmp += "<div class='swiper-slide'>";
@@ -380,7 +382,7 @@ xmlhttp.onload = function() {
     for(var i=0; i<comPicCnt; i++){
         var url = comPicWrap[i].url;
         var desc = comPicWrap[i].desc;
-        comPic = "<li><img src='"+url+"' alt='"+desc+"'></li>";
+        comPic = "<li><img src='"+baseUrl+url+"' alt='"+desc+"'></li>";
     }
     comPic += "</ul>";
     $(".comPic").html(comPic);
