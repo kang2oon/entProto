@@ -68,16 +68,6 @@
 .rec_mod_vision.sty01 p .orange{color: #ff725e}
 .rec_mod_vision.sty01 p .blue{color: #0bb0ef}
 .rec_mod_vision.sty01 .vision_wrap{margin-bottom: 5.0rem}
-.rec_mod_vision.sty01 .mission_warp{display: flex;}
-.rec_mod_vision.sty01 .mission_warp > div{width: calc(33.333% - 26.666px);margin-right: 40px;}
-.rec_mod_vision.sty01 .mission_warp > div:last-child{margin-right: 0}
-.rec_mod_vision.sty01 .mission_warp > div:nth-child(2) .num{color: #ff6e59}
-.rec_mod_vision.sty01 .mission_warp .img img{margin: auto;display: block;}
-.rec_mod_vision.sty01 .mission_warp .txt{margin-top: 3.0rem;display: flex;align-items: flex-start}
-.rec_mod_vision.sty01 .mission_warp .txt .num{font-size: 5.6rem;margin-right: 3.0rem;line-height: 1;color: #00aeef}
-.rec_mod_vision.sty01 .mission_warp .txt dt{font-size: 2.0rem;margin-bottom: 1.0rem;font-weight: bold;text-transform: uppercase;letter-spacing: 3px}
-.rec_mod_vision.sty01 .mission_warp .txt dd{color: #9a9a9a;font-size: 1.8rem;}
-.rec_mod_welfare{background: url(../images/tongyang_welfare_bg.png) no-repeat bottom -150px left;padding: 13rem 0}
 .rec_mod_welfare .welfare_img{margin-top: 6.0rem}
 .rec_mod_welfare .welfare_img .item1{background: url(../images/tongyang_welfare_img01.png) no-repeat center;}
 .rec_mod_welfare .welfare_img .item2{background: url(../images/tongyang_welfare_img02.png) no-repeat center;}
@@ -143,9 +133,6 @@
 	.rec_mod_welfare h3,
 	.rec_mod_interview.sty02 h3{margin-bottom: 3.0rem}
 	.rec_mod_vision.sty01 p{font-size: 1.8rem}
-	.rec_mod_vision.sty01 .mission_warp{display: block;}
-	.rec_mod_vision.sty01 .mission_warp > div{width: 100%;margin-right: 0;margin-bottom: 4.0rem;}
-	.rec_mod_vision.sty01 .mission_warp .img img{width: 150px}
 	.recruiter_interview_wrap .cnt-container:before{width: 250px;background-size: 250px;height: 220px}
 	.rec_mod_interview.sty02 .swiper-container .q{font-size: 2.0rem;}
 	.rec_mod_interview.sty02 .swiper-container .a{font-size: 1.8rem}
@@ -1571,10 +1558,12 @@
 				
 			});
 
-			var interview = new Swiper('.recruiter_interview_wrap .swiper-container', {
+			var recruiterInterview = new Swiper('.recruiter_interview_wrap .swiper-container', {
 				arrows: true,
 				scrollbar: {
 					el: '.swiper-scrollbar',
+					draggable: true,
+					hide: false
 				},
 				navigation: {
 					nextEl: '.swiper-button-next',
@@ -1582,10 +1571,12 @@
 				},
 			});
 
-			var interview2 = new Swiper('.worker_interview_wrap .swiper-container', {
+			var workerInterview = new Swiper('.worker_interview_wrap .swiper-container', {
 				arrows: true,
 				scrollbar: {
 					el: '.swiper-scrollbar',
+					draggable: true,
+					hide: false
 				},
 				navigation: {
 					nextEl: '.swiper-button-next',

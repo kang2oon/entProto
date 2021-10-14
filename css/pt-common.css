@@ -943,8 +943,6 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .rec_mod_finance.sty02 .top .circle p strong{color: #ffd014;font-size: 3.4rem;font-weight: bold;}
 .rec_mod_finance.sty02 .chart_cont{padding: 2.0rem;border-radius: 15px;}
 
-
-
 /* 복리후생 */
 .rec_mod_welfare{padding: 8.0rem 0}
 .rec_mod_welfare h3{font-size: 3.2rem;margin-bottom: 4.0rem}
@@ -985,6 +983,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 /* .rec_mod_welfare.sty01 .company_gallery{} */
 .rec_mod_welfare.sty01 .company_gallery div{width: calc(33% - 10px);margin-right: 15px;border:1px solid #ddd;box-shadow:2px 2px 5px rgba(0, 0, 0, 0.05);height: 250px;margin-top: 15px}
 .rec_mod_welfare.sty01 div:nth-child(3n){margin-right: 0}
+
 /*현직자 복지 사용후기 */
 .rec_mod_welfare.sty01 .welfare_review_wrap{background: #fff3c3;padding: 8.0rem 0}
 .rec_mod_welfare.sty01 .welfare_review_wrap h3 span{color: #ff1c31}
@@ -995,6 +994,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .rec_mod_welfare.sty01 .welfare_review .cont {width: calc(100% - 180px)}
 .rec_mod_welfare.sty01 .welfare_review .top p{font-size: 2.2rem;font-weight: bold;word-break: keep-all}
 .rec_mod_welfare.sty01 .welfare_review .bottom p{font-size: 1.7rem;color: #727272}
+
 /*연봉정보*/
 .rec_mod_welfare .salary{display: flex;justify-content: space-between;}
 .rec_mod_welfare .salary > div{width: calc(50% - 50px)}
@@ -1031,6 +1031,17 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .rec_mod_vision.sty01 .video_wrap iframe {position: absolute;top: 0;
 left: 0;width: 100%;height: 100%;}
 .rec_mod_vision.sty01 .video_wrap {border: 2px solid #437cff;border-radius: 15px;overflow: hidden}
+.rec_mod_vision.sty01 .mission_warp{display: flex;}
+.rec_mod_vision.sty01 .mission_warp > div{width: calc(33.333% - 26.666px);margin-right: 40px;}
+.rec_mod_vision.sty01 .mission_warp > div:last-child{margin-right: 0}
+.rec_mod_vision.sty01 .mission_warp > div:nth-child(2) .num{color: #ff6e59}
+.rec_mod_vision.sty01 .mission_warp .img img{margin: auto;display: block;}
+.rec_mod_vision.sty01 .mission_warp .txt{margin-top: 3.0rem;display: flex;align-items: flex-start}
+.rec_mod_vision.sty01 .mission_warp .txt .num{font-size: 5.6rem;margin-right: 3.0rem;line-height: 1;color: #00aeef}
+.rec_mod_vision.sty01 .mission_warp .txt dt{font-size: 2.0rem;margin-bottom: 1.0rem;font-weight: bold;text-transform: uppercase;letter-spacing: 3px}
+.rec_mod_vision.sty01 .mission_warp .txt dd{color: #9a9a9a;font-size: 1.8rem;}
+.rec_mod_welfare{background: url(../images/tongyang_welfare_bg.png) no-repeat bottom -150px left;padding: 13rem 0}
+
 /*ceo 인터뷰*/
 .rec_mod_interview.sty01 h3 {font-size: 3.5rem;margin-bottom: 4.0rem}
 .rec_mod_interview.sty01 h3  span{color: #ff1c31}
@@ -1988,13 +1999,15 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
     .inf_mod_finance.sty02 ul{margin:48px auto;max-width:600px;}
     .inf_mod_finance.sty02 ul li{margin:-20px;}
 	
-	
-/* 주요 제품*/
+    /* 주요 제품*/
 	.rec_mod_product.sty01 .swiper-button-prev, .rec_mod_product.sty01 .swiper-button-next{background-size: 20px;width: 20px;height: 38px}
 	
 	/* 기업비전*/
 	.rec_mod_vision.sty01 .swiper-button-next, .rec_mod_vision.sty01 .swiper-button-prev {background-size: 20px;width: 20px;height: 38px}
-	
+	.rec_mod_vision.sty01 .mission_warp{display: block;}
+	.rec_mod_vision.sty01 .mission_warp > div{width: 100%;margin-right: 0;margin-bottom: 4.0rem;}
+	.rec_mod_vision.sty01 .mission_warp .img img{width: 150px}
+    
 	/* 동종업종내 위치 */
 	.rec_mod_finance .local_rank_wrap .lank_img{width: 200px}
 	.rec_mod_finance .local_rank_wrap .lank_img > div {width: 90px;height: 90px}
