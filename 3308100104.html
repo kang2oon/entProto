@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="author" content="kang2oon">
+	<title class="comName">기업명</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
+    <link href="/css/pt-common.css" rel="stylesheet">
+    <style>
+        /* 신규타입 상단처리 */
+        #main_banner, .company_info_outer, .wantCompany_ct_box{display:none;}
+        .wantCompany_body{padding:0;}
+        #companyInfoWrap{padding:0 0 40px;}
+        
+        /*기업별 스타일*/
+        .mag_mod_summary{background-image:url(/images/@bg_header_3308100104.jpg);background-size:cover;background-position:50% 50%;}
+        .mag_mod_history.sty02 .sero_division{
+            margin:12px 0;height:24px;
+            background-image:url(/images/bg_inf_history_sero.png);background-repeat:repeat-y;background-position:50%;
+        }
+        .mag_mod_history.sty02 .addMsg{font-size:1.8rem;color:#666;text-align:center;}
+        .com_mod_add{padding:120px 0;}
+        .com_mod_add.process h3{font-size:4rem;font-weight:500;text-align:center;margin-bottom:60px;}
+        .com_mod_add.process h3 strong{font-weight:700;color:#0054a6;}
+        .com_mod_add.comMsg{
+            background-image:url(/images/@bg_comMsg_3308100104.jpg);background-position:50% 50%;background-size:cover;
+            font-size:3rem;
+        }
+        .com_mod_add.comMsg strong{font-size:4rem;color:#ecc219;}
+        .com_mod_add.comMsg .accent{box-shadow:inset 0 -24px 0 0 #000;}
+        .mag_mod_culture.sty02 .culwel_wrap{margin-top:24px;}
+        .mag_mod_culture.sty02 .culwel_wrap.first{margin-top:120px;}
+        .mag_mod_culture.sty02 .culwel_wrap .title.cult{background-image:url(/images/@bg_culture_3308100104.png);}
+        .mag_mod_culture.sty02 .culwel_wrap .title.welf{background-image:url(/images/@bg_welfare_3308100104.png);}
+
+
+
+
+        
+        .inf_mod_finance ul li .ico::before{
+            background-image:url(/images/@bg_finance_1238139826.png);
+            background-repeat:no-repeat;background-position:0 0;
+        }
+        .inf_mod_finance ul li:nth-child(2) .ico::before{background-position-x:-140px;}
+        .inf_mod_finance ul li:nth-child(3) .ico::before{background-position-x:-280px;}
+        .inf_mod_finance ul li:nth-child(4) .ico::before{background-position-x:-420px;}
+    
+
+        /* Break Point */
+        @media screen and (max-width: 768px) {
+            
+        }
+        @media screen and (max-width: 480px) {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="module-wrap com_mod_header sty02">
+        <div class="cnt-container header clearfix">
+            <div class="biz_cate cate01 green">
+                <i></i>
+                Consulting
+            </div>
+            <div class="logo imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
+            <div class="info fc_000">
+                <dl class="clearfix">
+                    <dt>업종</dt>
+                    <dd class="incCate">업종</dd>
+                    <dt>대표자</dt>
+                    <dd class="ceo">대표자</dd>
+                    <dt>기업형태</dt>
+                    <dd class="comForm">기업형태</dd>
+                </dl>
+                <div class="action fc_000 clearfix">
+                    <a href="javascript:void(0);" class="on">관심기업 등록<i>♥</i></a>
+                    <a href="javascript:void(0);">공고 바로가기<i>→</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module-wrap com_mod_anchor sty02">
+        <div class="cnt-container fc_fff">
+            <ul>
+                <li><a href="javascript:void(0);" class="active">기업개요</a></li>
+                <li><a href="javascript:void(0);">현직자 인터뷰</a></li>
+                <li><a href="javascript:void(0);">채용공고</a></li>
+                <li> <a href="javascript:void(0);">기업 뉴스</a></li>
+            </ul>
+            <div class="siteGo">사이트</div>
+        </div>
+    </div>
+    <div class="module-wrap mag_mod_summary sty02">    
+        <div class="cnt-container fc_fff">
+            <div class="imgCom"></div>
+            <div>
+                <div class="vision">비젼</div>
+                <div class="imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="module-wrap mag_mod_history sty02">
+        <div class="cnt-container">
+            <h3>연혁</h3>
+            <div class="sero_division"></div>
+            <div class="addMsg">세계가 인정하는 기술력과 국내외의 여러 이해 관계자들과 함께 동행해온 경험으로, 세계 정상을 향해 계속해서 길을 만들어 나가겠습니다.</div>
+            <div class="history">연혁</div>
+        </div>
+    </div>
+    <div class="module-wrap mag_mod_vision sty02">
+        <div class="cnt-container">
+            <div>
+                <div class="keyValue">비젼</div>
+                <div class="slogan">슬로건</div>
+            </div>
+            <div><img src="/images/@img_vision_3308100104.png" alt="" /></div>
+        </div>
+    </div>
+    <div class="mag_mix_finance">
+
+    </div>
+    <div class="module-wrap inf_mod_finance sty02">
+        <div class="cnt-container txt_center">
+            <h3>Finance Information</h3>
+            <ul class="clearfix">
+                <li>
+                    <div class="ico"></div>
+                    <div class="cnt"><span class="fiPosition">-</span></div>
+                    동종업종내 위치
+                </li>
+                <li>
+                    <div class="ico"></div>
+                    <div class="cnt"><span class="fiCapital">-</span></div>
+                    자본금(백만원)
+                </li>
+                <li>
+                    <div class="ico"></div>
+                    <div class="cnt"><span class="fiProfit">-</span></div>
+                    당기순이익(백만원)
+                </li>
+                <li>
+                    <div class="ico"></div>
+                    <div class="cnt"><span class="fiSales">-</span></div>
+                    매출액(백만원)
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="module-wrap inf_mod_percent sty02">
+        <div class="cnt-container">
+            <div class="percent_wrap">
+                <div class="growth">성장성<span class="bpGrowthability">-</span></div>
+                <div class="scale">규모형태<span class="bpScale">-</span></div>
+                <div class="stable">안정성<span class="bpStability">-</span></div>
+                <div class="profit">수익성<span class="bpProfitability">-</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="module-wrap inf_mod_emp sty02">
+        <div class="cnt-container">
+            <div class="empCnt_wrap">
+                <ul class="graphData">
+                    <li class="ctLabel"></li>
+                    <li class="joinCnt"></li>
+                    <li class="resignCnt"></li>
+                    <li class="totalCnt"></li>
+                </ul>
+                <div id="graph_empCnt"></div>
+                <div class="lastEmployeeState">
+                    <div class="total_wrap">
+                        <div>총 인원(명)</div>
+                        <div class="lastTotal">-</div>
+                    </div>
+                    <div class="empState_wrap">
+                        <div>최근 1년 입사자</div>
+                        <div class="lastJoin">-</div>
+                        <div class="mgtop_20">최근 1년 퇴사자</div>
+                        <div class="lastResign">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="module-wrap com_mod_add process">
+        <div class="cnt-container">
+            <h3><strong>MERC</strong> 폐전기전자제품 수집 경로</h3>
+            <img src="images/@img_process_3308100104.jpg" alt="폐전기전자제품 수집 경로" />
+        </div>
+    </div>
+    <div class="module-wrap com_mod_add comMsg">
+        <div class="cnt-container fc_fff txt_center">
+            <strong>폐전기전자제품 재활용</strong>을 통한<br/>
+            <span class="accent">지속가능한 자원순환사회 구현</span>을 위해 쉼없이 달립니다!
+        </div>
+    </div>
+    <div class="module-wrap mag_mod_culture sty02">
+        <div class="cnt-container">
+            <div class="comMov">기업홍보영상</div>
+            <div class="culwel_wrap first">
+                <div class="title cult">조직문화</div>
+                <div class="culture_wrap">
+                    <div class="swiper dvCulture">
+                        조직문화
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="culwel_wrap">
+                <div class="title welf">복리후생</div>
+                <div class="welfare_wrap">
+                    <div class="swiper welfare">
+                        복리후생            
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="module-wrap inf_mod_welfare sty02">
+        <div class="cnt-container">
+            <!/-- <h3>조직문화</h3>
+            <div class="culture_wrap">
+                <div class="swiper dvCulture">
+                    조직문화            
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div> -/->
+            <!/-- <div class="welfare_wrap">
+                <h3>복리후생</h3>
+                <div class="swiper welfare">
+                    복리후생            
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div> -/->
+        </div>
+    </div> -->
+    
+    <div class="module-wrap com_mod_recruit sty01">
+        <div class="bg_bot"></div>
+        <div class="cnt-container">
+            <h3>채용공고</h3>
+            <table class="tb_recruit" summary="채용공고">
+                <thead>
+                <tr>
+                    <th>접수기간</th>
+                    <th>채용제목</th>
+                    <th>고용형태</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2021.05.31 까지</td>
+                    <td>풀스택 개발자 채용/경력채용/급여250만원</td>
+                    <td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+                </tr>
+                <tr>
+                    <td>상시채용</td>
+                    <td>생산직 지원 채용/경력 무관/급여220만원</td>
+                    <td>계약직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+                </tr>
+                <tr>
+                    <td>상시채용</td>
+                    <td>경영지원팀 직원 채용/경력 무관/급여220만원</td>
+                    <td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="box_recruit">
+                <h4>경기도일자리재단 신입 직원 채용<span class="period">상시채용</span></h4>
+                <hr/>
+                <div class="detail_wrap">
+                    <div>
+                        <h5>지원자격</h5>
+                        <dl class="clearfix">
+                            <dt>경력</dt>
+                            <dd>경력무관</dd>
+                            <dt>학력</dt>
+                            <dd>고졸이상</dd>
+                            <dt>우대</dt>
+                            <dd>인근거주자, 1종 보통운전면허, 회계실무자격증 FAT1급 이상</dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <h5>근무조건</h5>
+                        <dl class="clearfix">
+                            <dt>고용형태</dt>
+                            <dd>정규직</dd>
+                            <dt>급여</dt>
+                            <dd>220만원 이상</dd>
+                            <dt>근무시간</dt>
+                            <dd>주5일(월~금) 08:30~17:30</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module-wrap com_mod_news sty01">
+        <div class="cnt-container">
+            <div class="news_row">
+                <a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
+                <div class="desc">
+                    경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
+                    '2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
+                    친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+                </div>
+                <div class="reg_date">2021.05.15</div>
+            </div>
+            <div class="news_row">
+                <a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
+                <div class="desc">
+                    경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
+                    '2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
+                    친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+                </div>
+                <div class="reg_date">2021.05.15</div>
+            </div>
+            <div class="paging_wrap">
+                <a href="javascript:void(0);" class="prev disable">이전</a>
+                <a href="javascript:void(0);" class="current">1</a>
+                <a href="javascript:void(0);">2</a>
+                <a href="javascript:void(0);">3</a>
+                <a href="javascript:void(0);">4</a>
+                <a href="javascript:void(0);">5</a>
+                <a href="javascript:void(0);" class="next">다음</a>
+            </div>
+        </div>
+    </div>
+    <div class="module-wrap com_mod_map">
+        <div id="map"></div>
+        <div class="map_info_wrap">
+            <div class="com_info">
+                <div class="comName">기업명</div>
+                <a href="javascript:void(0);" target="_blank" class="find_road">길 찾기</a>
+                <p class="comAddress">주소</p>
+                <p class="tel">전화번호</p>
+            </div>
+            <div class="around_wrap">
+                <ul id="category">
+                    <li id="MT1" data-order="0"> 
+                        <span class="category_bg mt1"></span>
+                        대형마트
+                    </li>       
+                    <li id="CS2" data-order="1"> 
+                        <span class="category_bg cs2"></span>
+                        편의점
+                    </li>  
+                    <li id="AC5" data-order="2"> 
+                        <span class="category_bg ac5"></span>
+                        학원
+                    </li>  
+                    <li id="PK6" data-order="3"> 
+                        <span class="category_bg pk6"></span>
+                        주차장
+                    </li>  
+                    <li id="OL7" data-order="4"> 
+                        <span class="category_bg ol7"></span>
+                        주유소
+                    </li>  
+                    <li id="SW8" data-order="5"> 
+                        <span class="category_bg sw8"></span>
+                        지하철
+                    </li>
+                    <li id="BK9" data-order="6"> 
+                        <span class="category_bg bk9"></span>
+                        은행
+                    </li> 
+                    <li id="CT1" data-order="7"> 
+                        <span class="category_bg ct1"></span>
+                        문화시설
+                    </li>       
+                    <li id="AT4" data-order="8"> 
+                        <span class="category_bg at4"></span>
+                        관광명소
+                    </li>  
+                    <li id="AD5" data-order="9"> 
+                        <span class="category_bg ad5"></span>
+                        숙박
+                    </li>  
+                    <li id="FD6" data-order="10"> 
+                        <span class="category_bg fd6"></span>
+                        음식점
+                    </li>  
+                    <li id="CE7" data-order="11"> 
+                        <span class="category_bg ce7"></span>
+                        카페
+                    </li>  
+                    <li id="HP8" data-order="12"> 
+                        <span class="category_bg hp8"></span>
+                        병원
+                    </li>
+                    <li id="PM9" data-order="14"> 
+                        <span class="category_bg pm9"></span>
+                        약국
+                    </li>      
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@5.4.5/js/swiper.min.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script>
+<script src="/module/jsontohtml.js"></script>
+<script src="/module/map.js"></script>
+<script src="/js/jPages.min.js"></script>
+<script src="/js/pt-common.js"></script>
+<script>
+	xmlhttp.open("GET", "/module/3308100104.json");
+    xmlhttp.onloadend = function(){
+        var ctLabelData1 = $('.ctLabel span:nth-child(1)').text();
+        var ctLabelData2 = $('.ctLabel span:nth-child(2)').text();
+        var ctLabelData3 = $('.ctLabel span:nth-child(3)').text();
+        var joinCnt1 = $('.joinCnt span:nth-child(1)').text();
+        var joinCnt2 = $('.joinCnt span:nth-child(2)').text();
+        var joinCnt3 = $('.joinCnt span:nth-child(3)').text();
+        var resignCnt1 = $('.resignCnt span:nth-child(1)').text();
+        var resignCnt2 = $('.resignCnt span:nth-child(2)').text();
+        var resignCnt3 = $('.resignCnt span:nth-child(3)').text();
+        var totalCnt1 = $('.totalCnt span:nth-child(1)').text();
+        var totalCnt2 = $('.totalCnt span:nth-child(2)').text();
+        var totalCnt3 = $('.totalCnt span:nth-child(3)').text();
+        var comName = $('.map_info_wrap .comName').text();
+        var comAddress = $('.comAddress').text();
+
+        $("div.holder").jPages({
+            containerID : "history",
+            perPage     : 5,
+            previous    : ".arrow_prev",
+            next        : ".arrow_next",
+        });
+        
+        // var chart1 = bb.generate({
+        //     bindto: "#graph_empCnt",
+        //     data: {
+        //         type: "line",
+        //         x: "x",
+        //         columns: [
+        //             ["x", ctLabelData3, ctLabelData2, ctLabelData1],
+        //             ["입사자", joinCnt3, joinCnt2, joinCnt1],
+        //             ["퇴사자", resignCnt3, resignCnt2, resignCnt1],
+        //             ["총원", totalCnt3, totalCnt2, totalCnt1]
+        //         ],
+        //         colors: {
+        //             입사자: "rgba(38, 201, 168, 1)",
+        //             퇴사자: "rgba(189, 189, 189, 1)",
+        //             총원: "rgba(255, 139, 16, 1)"
+        //         }
+        //     },
+        //     grid: {
+        //         x: {
+        //             show: true
+        //         },
+        //         y: {
+        //             show: true
+        //         }
+        //     },
+        //     point:{
+        //         pattern: [
+        //             "<g><circle cx='8' cy='8' r='8'></circle><rect x='4' y='4' width='8' height='8' style='fill:#fff'></rect></g>",
+        //             "<g><circle cx='8' cy='8' r='8'></circle><rect x='4' y='4' width='8' height='8' style='fill:#fff'></rect></g>",
+        //             "<g><circle cx='8' cy='8' r='8'></circle><rect x='4' y='4' width='8' height='8' style='fill:#fff'></rect></g>"
+        //         ]
+        //     }
+        // });
+
+        // setTimeout(function(){
+        //     chart1.resize();
+        // }, 100);
+
+        var welfareSlider = new Swiper(".welfare",{
+            slidesPerView: 1,
+            slidesPerColumn: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".welfare_wrap .swiper-button-next",
+                prevEl: ".welfare_wrap .swiper-button-prev"
+            }
+            // breakpoints:{
+            //     780: {
+            //         slidesPerView: 2,
+            //     }
+            // }
+        });
+        var cultureSlider = new Swiper(".dvCulture",{
+            slidesPerView: 1,
+            slidesPerColumn: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".culture_wrap .swiper-button-next",
+                prevEl: ".culture_wrap .swiper-button-prev"
+            }
+        });
+
+        // var ceoIvSlider = new Swiper(".ivCeo",{
+        //     slidesPerView: 1,
+        //     //slidesPerColumn: 3,
+        //     spaceBetween: 0,
+        //     //loop: true,
+        //     autoHeight: true,
+        //     navigation: {
+        //         nextEl: ".iv_wrap.qa_ceo .swiper-button-next",
+        //         prevEl: ".iv_wrap.qa_ceo .swiper-button-prev"
+        //     }
+        // });
+
+        // var mngIvSlider = new Swiper(".ivMng",{
+        //     slidesPerView: 1,
+        //     spaceBetween: 0,
+        //     //loop: true,
+        //     autoHeight: true,
+        //     navigation: {
+        //         nextEl: ".iv_wrap.qa_mng .swiper-button-next",
+        //         prevEl: ".iv_wrap.qa_mng .swiper-button-prev"
+        //     }
+        // });
+
+        // var empIvSlider = new Swiper(".ivEmp",{
+        //     slidesPerView: 1,
+        //     spaceBetween: 0,
+        //     //loop: true,
+        //     autoHeight: true,
+        //     navigation: {
+        //         nextEl: ".iv_wrap.qa_emp .swiper-button-next",
+        //         prevEl: ".iv_wrap.qa_emp .swiper-button-prev"
+        //     }
+        // });
+
+        // 주소-좌표 변환 객체를 생성합니다
+        var geocoder = new kakao.maps.services.Geocoder();
+
+        // 주소로 좌표를 검색합니다
+        geocoder.addressSearch(comAddress, function(result, status) {
+
+            // 정상적으로 검색이 완료됐으면 
+            if (status === kakao.maps.services.Status.OK) {
+
+                var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+                //console.log(result[0].y+' / '+result[0].x);
+
+                var imageSrc = '/images/ico_mark.png', // 마커이미지의 주소입니다    
+                    imageSize = new kakao.maps.Size(34, 48), // 마커이미지의 크기입니다
+                    imageOption = {offset: new kakao.maps.Point(16, 48)};
+
+                    // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption)
+
+                // 결과값으로 받은 위치를 마커로 표시합니다
+                var marker = new kakao.maps.Marker({
+                    map: map,
+                    position: coords,
+                    image: markerImage
+                });
+
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+
+                var content = '<div class="customoverlay">'+comName+'</div>';
+
+                var customOverlay = new kakao.maps.CustomOverlay({
+                    map: map,
+                    position: coords,
+                    content: content,
+                    yAnchor: 1 
+                });
+
+                // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+                map.setCenter(coords);
+
+                var find_road = "https://map.kakao.com/link/to/"+comName+","+result[0].y+","+result[0].x;
+                //console.log(find_road);
+                $(".find_road").attr("href",find_road);
+            } 
+        });  
+    };
+	xmlhttp.send();
+</script>
+</body>
+</html>

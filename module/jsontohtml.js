@@ -2,7 +2,8 @@ const xmlhttp = new XMLHttpRequest();
 
 xmlhttp.onload = function() {
     const myObj = JSON.parse(this.responseText);
-    var baseUrl = "https://cdn.jsdelivr.net/gh/kang2oon/entProto/";
+    //var baseUrl = "https://cdn.jsdelivr.net/gh/kang2oon/entProto";
+    var baseUrl = "";
     // 등록일
     var regData = myObj.regData;
     $(".regData").html(regData);
@@ -52,6 +53,10 @@ xmlhttp.onload = function() {
     var imgCiUrl = myObj.imgCi;
     var imgCi = "<img src='"+baseUrl+imgCiUrl+"' alt='"+comName+"'/>";
     $(".imgCi").html(imgCi);
+    // 기업 이미지
+    var imgComUrl = myObj.imgCom;
+    var imgCom = "<img src='"+baseUrl+imgComUrl+"' alt='"+comName+"'/>";
+    $(".imgCom").html(imgCom);
     // 연혁
     var historyCnt = myObj.history.length;
     var histroyWrap = myObj.history;
@@ -211,10 +216,10 @@ xmlhttp.onload = function() {
     for(var i=0; i<dvCultureCnt; i++){
         var title = dvCultureWrap[i].title;
         var desc = dvCultureWrap[i].desc;
-        dvCulture += "<div class='swiper-slide'>";
+        dvCulture += "<div class='swiper-slide'><div>";
         dvCulture += "<div class='tit'>"+title+"</div>";
         dvCulture += "<div class='desc'>"+desc+"</div>";
-        dvCulture += "</div>";
+        dvCulture += "</div></div>";
     }
     $(".dvCulture").html(dvCulture);
     // 인재상
