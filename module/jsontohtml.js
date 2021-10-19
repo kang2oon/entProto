@@ -430,17 +430,30 @@ xmlhttp.onload = function() {
     $(".lastEmployeeState .lastResign").html(lastResign);
     // 재무정보
     var financeInfoWrap = myObj.financeInfo[0];
+    var fiYears = financeInfoWrap.year;
     var fiPosition = financeInfoWrap.position;
     var fiSales = financeInfoWrap.sales;
     var fiProfit = financeInfoWrap.profit;
     var fiCapital = financeInfoWrap.capital;
     var financeInfo = "<h3>재무정보(최근 3년)</h3><ul>";
-        financeInfo += "<li>동종업계 내 순위 : "+fiPosition[0]+", "+fiPosition[1]+", "+fiPosition[2]+"</li>";
-        financeInfo += "<li>매출액(백만원) : "+fiSales[0]+", "+fiSales[1]+", "+fiSales[2]+"</li>";
-        financeInfo += "<li>당기순이익(백만원) : "+fiProfit[0]+", "+fiProfit[1]+", "+fiProfit[2]+"</li>";
-        financeInfo += "<li>자본금(백만원) : "+fiCapital[0]+", "+fiCapital[1]+", "+fiCapital[2]+"</li>";
+        financeInfo += "<li>동종업계 내 순위 : <span>"+fiPosition[0]+"</span>, <span>"+fiPosition[1]+"</span>, <span>"+fiPosition[2]+"</span></li>";
+        financeInfo += "<li>매출액(백만원) : <span>"+fiSales[0]+"</span>, <span>"+fiSales[1]+"</span>, <span>"+fiSales[2]+"</span></li>";
+        financeInfo += "<li>당기순이익(백만원) : <span>"+fiProfit[0]+"</span>, <span>"+fiProfit[1]+"</span>, <span>"+fiProfit[2]+"</span></li>";
+        financeInfo += "<li>자본금(백만원) : <span>"+fiCapital[0]+"</span>, <span>"+fiCapital[1]+"</span>, <span>"+fiCapital[2]+"</span></li>";
         financeInfo += "</ul>";
     $(".financeInfo").html(financeInfo);
+
+    var financeYear = "<span>"+fiYears[0]+"</span>, <span>"+fiYears[1]+"</span>, <span>"+fiYears[2]+"</span>";
+    $(".financeYear").html(financeYear);
+    var financePosition =  "<span>"+fiPosition[0]+"</span>, <span>"+fiPosition[1]+"</span>, <span>"+fiPosition[2]+"</span>";
+    $(".financePosition").html(financePosition);
+    var financeSales =  "<span>"+fiSales[0]+"</span>, <span>"+fiSales[1]+"</span>, <span>"+fiSales[2]+"</span>";
+    $(".financeSales").html(financeSales);
+    var financeProfit =  "<span>"+fiProfit[0]+"</span>, <span>"+fiProfit[1]+"</span>, <span>"+fiProfit[2]+"</span>";
+    $(".financeProfit").html(financeProfit);
+    var financeCapital = "<span>"+fiCapital[0]+"</span>, <span>"+fiCapital[1]+"</span>, <span>"+fiCapital[2]+"</span>";
+    $(".financeCapital").html(financeCapital);
+    
     if(fiPosition[0] != null){
         $(".fiPosition").html(fiPosition[0].toLocaleString()+"위");
     }else{
@@ -449,6 +462,7 @@ xmlhttp.onload = function() {
     $(".fiSales").html(fiSales[0].toLocaleString());
     $(".fiProfit").html(fiProfit[0].toLocaleString());
     $(".fiCapital").html(fiCapital[0].toLocaleString());
+    
     // 기업평가 등급
     var bizGrade = myObj.bizGrade;
     $(".bizGrade").html(bizGrade);

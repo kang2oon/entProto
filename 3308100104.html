@@ -51,10 +51,12 @@
 
         /* Break Point */
         @media screen and (max-width: 768px) {
-            
+            .mag_mod_culture.sty02 .culwel_wrap.first{margin-top:60px;}
+            .mag_mod_culture.sty02 .culwel_wrap .title.cult, .mag_mod_culture.sty02 .culwel_wrap .title.welf{background-image:none;}
         }
         @media screen and (max-width: 480px) {
-            
+            .mag_mod_culture.sty02 .swiper-slide dd{width:100%;}
+            .mag_mod_culture.sty02 .swiper .swiper-wrapper{height:800px;}
         }
     </style>
 </head>
@@ -120,9 +122,99 @@
         </div>
     </div>
     <div class="mag_mix_finance">
-
+        <div class="module-wrap mag_mod_finance sty02">
+            <div class="cnt-container">
+                <h3>기업 재무정보</h3>
+                <div class="tab_warp clearfix">
+                    <div class="tab">
+                        <div class="on" data-tab="summary">재무평가 요약</div>
+                        <div data-tab="capital">자본금</div>
+                        <div data-tab="sales">매출액</div>
+                        <div data-tab="profit">당기순이익</div>
+                        <!-- <div data-tab="summary">재무평가 요약</div> -->
+                    </div>
+                    <div class="conts">
+                        <div class="summary">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <th>동종업종 내 순위</th>
+                                    <td><div class="fiPosition">-</div></td>
+                                </tr>
+                                <tr>
+                                    <th>기업평가등급</th>
+                                    <td>
+                                        <div class="bizGrade">-</div>
+                                        상거래를 위한 신용능력이 우량하며, 환경 변화에 적절한 대처가 가능한 기업
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>기업인증현황</th>
+                                    <td>이노비즈 인증기업, 경기도가족친화인증기업</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="capital">
+                            <div class="graphData financeYear"></div>
+                            <div class="graphData financeCapital"></div>
+                            <div class="graphData financeSales"></div>
+                            <div class="graphData financeProfit"></div>
+                            <div class="unit">단위 : 백만원</div>
+                            <div id="graph_fiCapital"></div>
+                        </div>
+                        <div class="sales">
+                            <div class="unit">단위 : 백만원</div>
+                            <div id="graph_fiSales"></div>
+                        </div>
+                        <div class="profit">
+                            <div class="unit">단위 : 백만원</div>
+                            <div id="graph_fiProfit"></div>
+                        </div>
+                        <!-- <div class="summary">재무평가 요약</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="module-wrap mag_mod_percent sty02">
+            <div class="cnt-container">
+                <div class="swiper percent">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div><img src="/images/@img_percent_3308100104_01.png" alt=""/></div>
+                            <div>
+                                <span class="cate">규모형태</span><span class="value bpScale">-</span><br/>
+                                <span class="desc">정확하고 신뢰할 수 있는 센싱 테크놀로지</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div><img src="/images/@img_percent_3308100104_02.png" alt=""/></div>
+                            <div>
+                                <span class="cate">수익성</span><span class="value bpProfitability">-</span><br/>
+                                <span class="desc">모든 어플리케이션에 원활하게 통합되는 제품 디자인</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div><img src="/images/@img_percent_3308100104_03.png" alt=""/></div>
+                            <div>
+                                <span class="cate">안정성</span><span class="value bpStability">-</span><br/>
+                                <span class="desc">설치가 간편하여, 귀중한 시간과 자원을 절약할 수 있는 통합 솔루션</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div><img src="/images/@img_percent_3308100104_04.png" alt=""/></div>
+                            <div>
+                                <span class="cate">성장성</span><span class="value bpGrowthability">-</span><br/>
+                                <span class="desc">기술, 영업 및 고객 서비스 팀의 고품질 서비스</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
     </div>
-    <div class="module-wrap inf_mod_finance sty02">
+    <!-- <div class="module-wrap inf_mod_finance sty02">
         <div class="cnt-container txt_center">
             <h3>Finance Information</h3>
             <ul class="clearfix">
@@ -148,42 +240,8 @@
                 </li>
             </ul>
         </div>
-    </div>
-    <div class="module-wrap inf_mod_percent sty02">
-        <div class="cnt-container">
-            <div class="percent_wrap">
-                <div class="growth">성장성<span class="bpGrowthability">-</span></div>
-                <div class="scale">규모형태<span class="bpScale">-</span></div>
-                <div class="stable">안정성<span class="bpStability">-</span></div>
-                <div class="profit">수익성<span class="bpProfitability">-</span></div>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="module-wrap inf_mod_emp sty02">
-        <div class="cnt-container">
-            <div class="empCnt_wrap">
-                <ul class="graphData">
-                    <li class="ctLabel"></li>
-                    <li class="joinCnt"></li>
-                    <li class="resignCnt"></li>
-                    <li class="totalCnt"></li>
-                </ul>
-                <div id="graph_empCnt"></div>
-                <div class="lastEmployeeState">
-                    <div class="total_wrap">
-                        <div>총 인원(명)</div>
-                        <div class="lastTotal">-</div>
-                    </div>
-                    <div class="empState_wrap">
-                        <div>최근 1년 입사자</div>
-                        <div class="lastJoin">-</div>
-                        <div class="mgtop_20">최근 1년 퇴사자</div>
-                        <div class="lastResign">-</div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div> -->
+    
     <div class="module-wrap com_mod_add process">
         <div class="cnt-container">
             <h3><strong>MERC</strong> 폐전기전자제품 수집 경로</h3>
@@ -416,65 +474,136 @@
 <script>
 	xmlhttp.open("GET", "/module/3308100104.json");
     xmlhttp.onloadend = function(){
-        var ctLabelData1 = $('.ctLabel span:nth-child(1)').text();
-        var ctLabelData2 = $('.ctLabel span:nth-child(2)').text();
-        var ctLabelData3 = $('.ctLabel span:nth-child(3)').text();
-        var joinCnt1 = $('.joinCnt span:nth-child(1)').text();
-        var joinCnt2 = $('.joinCnt span:nth-child(2)').text();
-        var joinCnt3 = $('.joinCnt span:nth-child(3)').text();
-        var resignCnt1 = $('.resignCnt span:nth-child(1)').text();
-        var resignCnt2 = $('.resignCnt span:nth-child(2)').text();
-        var resignCnt3 = $('.resignCnt span:nth-child(3)').text();
-        var totalCnt1 = $('.totalCnt span:nth-child(1)').text();
-        var totalCnt2 = $('.totalCnt span:nth-child(2)').text();
-        var totalCnt3 = $('.totalCnt span:nth-child(3)').text();
+        // var ctLabelData1 = $('.ctLabel span:nth-child(1)').text();
+        // var ctLabelData2 = $('.ctLabel span:nth-child(2)').text();
+        // var ctLabelData3 = $('.ctLabel span:nth-child(3)').text();
+        // var joinCnt1 = $('.joinCnt span:nth-child(1)').text();
+        // var joinCnt2 = $('.joinCnt span:nth-child(2)').text();
+        // var joinCnt3 = $('.joinCnt span:nth-child(3)').text();
+        // var resignCnt1 = $('.resignCnt span:nth-child(1)').text();
+        // var resignCnt2 = $('.resignCnt span:nth-child(2)').text();
+        // var resignCnt3 = $('.resignCnt span:nth-child(3)').text();
+        // var totalCnt1 = $('.totalCnt span:nth-child(1)').text();
+        // var totalCnt2 = $('.totalCnt span:nth-child(2)').text();
+        // var totalCnt3 = $('.totalCnt span:nth-child(3)').text();
         var comName = $('.map_info_wrap .comName').text();
         var comAddress = $('.comAddress').text();
+        var fiYear1 = $('.financeYear span:nth-child(1)').text();
+        var fiYear2 = $('.financeYear span:nth-child(2)').text();
+        var fiYear3 = $('.financeYear span:nth-child(3)').text();
+        var fiCapital1 = $('.financeCapital span:nth-child(1)').text();
+        var fiCapital2 = $('.financeCapital span:nth-child(2)').text();
+        var fiCapital3 = $('.financeCapital span:nth-child(3)').text();
+        var fiSales1 = $('.financeSales span:nth-child(1)').text();
+        var fiSales2 = $('.financeSales span:nth-child(2)').text();
+        var fiSales3 = $('.financeSales span:nth-child(3)').text();
+        var fiProfit1 = $('.financeProfit span:nth-child(1)').text();
+        var fiProfit2 = $('.financeProfit span:nth-child(2)').text();
+        var fiProfit3 = $('.financeProfit span:nth-child(3)').text();
 
-        $("div.holder").jPages({
-            containerID : "history",
-            perPage     : 5,
-            previous    : ".arrow_prev",
-            next        : ".arrow_next",
-        });
-        
-        // var chart1 = bb.generate({
-        //     bindto: "#graph_empCnt",
-        //     data: {
-        //         type: "line",
-        //         x: "x",
-        //         columns: [
-        //             ["x", ctLabelData3, ctLabelData2, ctLabelData1],
-        //             ["입사자", joinCnt3, joinCnt2, joinCnt1],
-        //             ["퇴사자", resignCnt3, resignCnt2, resignCnt1],
-        //             ["총원", totalCnt3, totalCnt2, totalCnt1]
-        //         ],
-        //         colors: {
-        //             입사자: "rgba(38, 201, 168, 1)",
-        //             퇴사자: "rgba(189, 189, 189, 1)",
-        //             총원: "rgba(255, 139, 16, 1)"
-        //         }
-        //     },
-        //     grid: {
-        //         x: {
-        //             show: true
-        //         },
-        //         y: {
-        //             show: true
-        //         }
-        //     },
-        //     point:{
-        //         pattern: [
-        //             "<g><circle cx='8' cy='8' r='8'></circle><rect x='4' y='4' width='8' height='8' style='fill:#fff'></rect></g>",
-        //             "<g><circle cx='8' cy='8' r='8'></circle><rect x='4' y='4' width='8' height='8' style='fill:#fff'></rect></g>",
-        //             "<g><circle cx='8' cy='8' r='8'></circle><rect x='4' y='4' width='8' height='8' style='fill:#fff'></rect></g>"
-        //         ]
-        //     }
+        // $("div.holder").jPages({
+        //     containerID : "history",
+        //     perPage     : 5,
+        //     previous    : ".arrow_prev",
+        //     next        : ".arrow_next",
         // });
+        
+        var chart1 = bb.generate({
+            bindto: "#graph_fiCapital",
+            data: {
+                type: "bar",
+                x: "x",
+                columns: [
+                    ["x", fiYear3, fiYear2, fiYear1],
+                    ["자본금", fiCapital3, fiCapital2, fiCapital1]
+                ]
+            },
+            grid: {
+                x: {
+                    show: true
+                },
+                y: {
+                    show: true
+                }
+            },
+            bar: {
+               width: {
+                   max: 60
+               } 
+            },
+            color: {
+                자본금: "#033a71"
+            },
+            legend: {
+                show: false
+            }
+        });
 
-        // setTimeout(function(){
-        //     chart1.resize();
-        // }, 100);
+        var chart2 = bb.generate({
+            bindto: "#graph_fiSales",
+            data: {
+                type: "bar",
+                x: "x",
+                columns: [
+                    ["x", fiYear3, fiYear2, fiYear1],
+                    ["매출액", fiSales3, fiSales2, fiSales1]
+                ]
+            },
+            grid: {
+                x: {
+                    show: true
+                },
+                y: {
+                    show: true
+                }
+            },
+            bar: {
+               width: {
+                   max: 60
+               } 
+            },
+            color: {
+                매출액: "#0054a6"
+            },
+            legend: {
+                show: false
+            }
+        });
+
+        var chart3 = bb.generate({
+            bindto: "#graph_fiProfit",
+            data: {
+                type: "bar",
+                x: "x",
+                columns: [
+                    ["x", fiYear3, fiYear2, fiYear1],
+                    ["당기순이익", fiProfit3, fiProfit2, fiProfit1]
+                ]
+            },
+            grid: {
+                x: {
+                    show: true
+                },
+                y: {
+                    show: true
+                }
+            },
+            bar: {
+               width: {
+                   max: 60
+               } 
+            },
+            color: {
+                당기순이익: "#0054a6"
+            },
+            legend: {
+                show: false
+            }
+        });
+
+        setTimeout(function(){
+            chart1.resize();
+        }, 100);
 
         var welfareSlider = new Swiper(".welfare",{
             slidesPerView: 1,
@@ -484,11 +613,6 @@
                 nextEl: ".welfare_wrap .swiper-button-next",
                 prevEl: ".welfare_wrap .swiper-button-prev"
             }
-            // breakpoints:{
-            //     780: {
-            //         slidesPerView: 2,
-            //     }
-            // }
         });
         var cultureSlider = new Swiper(".dvCulture",{
             slidesPerView: 1,
@@ -500,39 +624,38 @@
             }
         });
 
-        // var ceoIvSlider = new Swiper(".ivCeo",{
-        //     slidesPerView: 1,
-        //     //slidesPerColumn: 3,
-        //     spaceBetween: 0,
-        //     //loop: true,
-        //     autoHeight: true,
-        //     navigation: {
-        //         nextEl: ".iv_wrap.qa_ceo .swiper-button-next",
-        //         prevEl: ".iv_wrap.qa_ceo .swiper-button-prev"
-        //     }
-        // });
+        var percentSlider = new Swiper(".percent",{
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints:{
+                780: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                }
+            }
+        });
 
-        // var mngIvSlider = new Swiper(".ivMng",{
-        //     slidesPerView: 1,
-        //     spaceBetween: 0,
-        //     //loop: true,
-        //     autoHeight: true,
-        //     navigation: {
-        //         nextEl: ".iv_wrap.qa_mng .swiper-button-next",
-        //         prevEl: ".iv_wrap.qa_mng .swiper-button-prev"
-        //     }
-        // });
-
-        // var empIvSlider = new Swiper(".ivEmp",{
-        //     slidesPerView: 1,
-        //     spaceBetween: 0,
-        //     //loop: true,
-        //     autoHeight: true,
-        //     navigation: {
-        //         nextEl: ".iv_wrap.qa_emp .swiper-button-next",
-        //         prevEl: ".iv_wrap.qa_emp .swiper-button-prev"
-        //     }
-        // });
+        $('.tab > div').click(function(){
+            var item = $(this).attr('data-tab');
+            console.log(item);
+            $('.tab > div').removeClass('on');
+            $(this).addClass('on');
+            $('.conts > div').hide();
+            $('.conts > .' + item).show();
+            
+            $('#graph_fiCapital svg > g:nth-child(1), #graph_fiSales svg > g:nth-child(1), #graph_fiProfit svg > g:nth-child(1)').attr("transform", "translate(40.5, 4.5)");
+            setTimeout(function(){
+                chart1.resize();
+                chart2.resize();
+                chart3.resize();
+            }, 100);
+        });
 
         // 주소-좌표 변환 객체를 생성합니다
         var geocoder = new kakao.maps.services.Geocoder();

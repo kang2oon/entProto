@@ -1647,7 +1647,41 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 .mag_mod_finance.sty01 dd {font-size: 1.8rem;width: calc(100% - 200px);font-weight: 500}
 .mag_mod_finance.sty01 .rating{display: block;font-size: 3.5rem}
 .mag_mod_finance.sty01 dl:last-child {border-bottom: 0}
-.mag_mix_finance{background-color:#033668;padding:120px 0;}
+.mag_mix_finance{background-color:#033668;padding:80px 0;}
+.mag_mod_finance.sty02 > div, .mag_mod_percent.sty02 > div{background-color:#032e58;padding:60px 48px;border-radius:16px;}
+.mag_mod_finance.sty02 > div h3{font-size:4rem;font-weight:500;color:#fff;text-align:center;}
+.mag_mod_finance.sty02 > div .tab_warp{margin-top:60px;}
+.mag_mod_finance.sty02 > div .tab_warp .tab{float:left;width:280px;}
+.mag_mod_finance.sty02 > div .tab_warp .tab > div{width:100%;background:#fff;font-size:2.4rem;text-align:center;padding:40px 20px;border-radius:20px;cursor:pointer;}
+.mag_mod_finance.sty02 > div .tab_warp .tab > div + div{margin-top:24px;}
+.mag_mod_finance.sty02 > div .tab_warp .tab > div.on{background:#3090ee;color:#fff;}
+.mag_mod_finance.sty02 > div .tab_warp .conts{
+    float:right;background-color:#fff;border-radius:20px;padding:32px 48px;
+    width:calc(100% - 300px);height:544px;
+}
+.mag_mod_finance.sty02 > div .tab_warp .conts .summary table{width:100%;height:480px;border-collapse:collapse;}
+.mag_mod_finance.sty02 > div .tab_warp .conts .summary table tr + tr{border-top:1px solid #d1d1d1;}
+.mag_mod_finance.sty02 > div .tab_warp .conts .summary table th{width:35%;color:#252525;font-size:2rem;}
+.mag_mod_finance.sty02 > div .tab_warp .conts .summary table td{font-size:1.8rem;text-align:center;}
+.mag_mod_finance.sty02 > div .tab_warp .conts .summary table td .bizGrade{font-size:2rem;font-weight:500;margin-bottom:4px;}
+
+#graph_fiCapital svg, #graph_fiSales svg, #graph_fiProfit svg{width:100%;min-height:440px;}
+.mag_mod_finance.sty02 > div .tab_warp .conts .unit{font-size:1.4rem;text-align:right;color:#666;margin-bottom:24px;}
+.mag_mod_finance.sty02 > div .tab_warp .conts > div{display:none;width:100%;}
+.mag_mod_finance.sty02 > div .tab_warp .conts > div:first-child{display:block;}
+
+.mag_mod_percent.sty02 > div{padding:60px 48px 88px;margin-top:20px;}
+.mag_mod_percent.sty02 > div .swiper{width:100%;overflow:hidden;}
+.mag_mod_percent.sty02 > div .swiper-slide{display:flex;justify-content:space-between;align-items:center;background-color:#fff;padding:32px;border-radius:40px;}
+.mag_mod_percent.sty02 > div .swiper-slide > div:nth-child(1){flex-shrink:0;width:173px;margin-right:32px;}
+.mag_mod_percent.sty02 > div .swiper-slide > div:nth-child(2){flex-grow:1;}
+.mag_mod_percent.sty02 > div .swiper-slide > div .cate{display:inline-block;font-size:1.6rem;color:#0054a6;border:1px solid #0054a6;border-radius:18px;padding:4px 12px;margin-right:12px;}
+.mag_mod_percent.sty02 > div .swiper-slide > div .value{display:inline-block;font-size:3.2rem;font-weight:700;color:#0054a6;}
+.mag_mod_percent.sty02 > div .swiper-slide > div .desc{display:inline-block;font-size:1.8rem;color:#646a7c;margin-top:16px;}
+.mag_mod_percent.sty02 > div .swiper-pagination{margin-top:28px;left:50%;transform:translateX(-50%);}
+.mag_mod_percent.sty02 > div .swiper-pagination .swiper-pagination-bullet{width:20px;height:20px;background:#d3d3d3;opacity:1;margin:0 6px;}
+.mag_mod_percent.sty02 > div .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{background:#0054a6;}
+
 /*조직문화,복리후생*/
 .mag_mod_culture.sty01 {background: #ffcf4c;position: relative;z-index: 1}
 .mag_mod_culture.sty01 .culture_welfare_wrap > div {display: flex;margin-bottom: 2.0rem}
@@ -1996,6 +2030,19 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	
 /* 리뷰 */	
 	.mag_mod_review.sty02 .culture_wrap .item{padding: 2.0rem;}	
+
+/* 매거진형 */
+.mag_mod_summary.sty02{padding:120px 0 80px;}
+    .mag_mod_summary.sty02 > div, .mag_mod_vision.sty02 > div{flex-direction:column;}
+    .mag_mod_summary.sty02 > div > div:nth-child(1){width:100%;margin:0 0 32px 0;}
+    .mag_mod_history.sty02 .history > div > span{width:28%;min-width:160px;}
+    .mag_mod_vision.sty02 > div > div:nth-child(2){width:100%;margin:32px 0 0 0;text-align:right;}
+    .mag_mod_finance.sty02 > div .tab_warp .tab{width:200px;}
+    .mag_mod_finance.sty02 > div .tab_warp .tab > div{padding:40px 12px;}
+    .mag_mod_finance.sty02 > div .tab_warp .conts{width: calc(100% - 224px);}
+    .mag_mod_culture.sty02 .culwel_wrap{flex-direction:column;}
+    .mag_mod_culture.sty02 .culwel_wrap > div:nth-child(1){width:100%;margin:0 0 24px;}
+    .mag_mod_culture.sty02 .culwel_wrap > div:nth-child(2){width:100%;padding:0;}
     
 /* 채용공고형 start */	
 	.module-wrap .white_box_sdw{padding: 4.0rem 3.0rem}
@@ -2206,6 +2253,7 @@ html{font-size: 8px}
      .header .logo{margin:0 0 24px;}
      .header .logo img{max-width:240px;}
      .com_mod_anchor.sty02 a{padding:12px 32px;}
+     .com_mod_anchor.sty02 .siteGo{display:none;}
      /* 채용공고 */
      .com_mod_recruit.sty01{padding:60px 0;}
      .com_mod_recruit.sty01 h3{font-size:28px;margin: 0 0 20px;}
@@ -2314,7 +2362,7 @@ html{font-size: 8px}
      .inf_mod_swot.sty02 .swot_wrap .swotO::before {background-position-x:-300px;}
      .inf_mod_swot.sty02 .swot_wrap .swotT::before {background-position-x:-450px;}
 	/* Header */
-	.header .info dl {display: block;text-align: center;}
+	.header .info dl {display: none;text-align: center;}
 	.header .info dl dt {margin-right: 0}
 	.header .info dl dd{margin-right: 0;margin-bottom: 1.5rem;margin-top: .5rem}
 	.header .info dl dd:last-child{margin-bottom: 0}
@@ -2358,4 +2406,27 @@ html{font-size: 8px}
 	.rec_mod_finance .local_rank_wrap .left{display: block;}
 	.rec_mod_finance .local_rank_wrap .lank_img{max-width: 150px;width: 100%;margin: auto;}
 	.rec_mod_finance .local_rank_wrap table{margin-top: 2.0rem;}
+
+    /* 매거진형 */
+    .mag_mod_history.sty02{padding:80px 0 40px;}
+    .mag_mod_history.sty02 .history > div{margin-bottom:32px;}
+    .mag_mod_history.sty02 .history > div > span{font-size:2.8rem;width:88px;min-width:auto;margin-right:16px;}
+    .mag_mod_finance.sty02 > div, .mag_mod_percent.sty02 > div{padding:48px 32px;}
+    .mag_mod_percent.sty02 > div{padding:48px 32px 60px;}
+    .mag_mod_finance.sty02 > div .tab_warp{margin-top:48px;}
+    .mag_mod_finance.sty02 > div .tab_warp .tab, .mag_mod_finance.sty02 > div .tab_warp .conts{width:100%;}
+    .mag_mod_finance.sty02 > div .tab_warp .tab{display:flex;flex-wrap:wrap;justify-content:space-between;}
+    .mag_mod_finance.sty02 > div .tab_warp .tab > div{width:48%;padding:20px 12px;font-size:2rem;}
+    .mag_mod_finance.sty02 > div .tab_warp .tab > div + div{margin:0;}
+    .mag_mod_finance.sty02 > div .tab_warp .tab > div:nth-child(3), .mag_mod_finance.sty02 > div .tab_warp .tab > div:nth-child(4){margin:12px 0;}
+    .mag_mod_finance.sty02 > div .tab_warp .conts{height:320px;padding:24px;}
+    .mag_mod_finance.sty02 > div .tab_warp .conts .summary table{height:272px;}
+    .mag_mod_finance.sty02 > div .tab_warp .conts .summary table td{padding:0 16px;}
+    #graph_fiCapital svg, #graph_fiSales svg, #graph_fiProfit svg{height:240px;min-height:auto;}
+    .mag_mod_percent.sty02 > div .swiper-slide{padding:28px;}
+    .mag_mod_percent.sty02 > div .swiper-slide > div:nth-child(1){width:80px;margin-right:16px;}
+    .mag_mod_percent.sty02 > div .swiper-slide > div .value{font-style:2.8rem;}
+    .mag_mod_percent.sty02 > div .swiper-slide > div .desc{margin-top:8px;font-size:1.4rem;}
+    .mag_mod_percent.sty02 > div .swiper-pagination{margin-top:16px;}
+    
 }
