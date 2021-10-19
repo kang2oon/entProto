@@ -341,7 +341,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_culture.sty03 .swiper-button-next{margin-top: 0;transform: translateY(-50%);width: 32px;height: 55px;}
 .mag_mod_culture.sty03 .swiper-button-prev{left: -40px !important;background: url(../images/slider01_prev.png) no-repeat;}
 .mag_mod_culture.sty03 .swiper-button-prev:after{text-indent: -9999px;display: block;height: 100%}
-.mag_mod_culture.sty03 .swiper-button-next{right:-40px !important;background: url(../images/slider01_next.png) no-repeat;}
+.mag_mod_culture.sty03 .swiper-button-next{right:-40px !important;left:auto !important;background: url(../images/slider01_next.png) no-repeat;}
 .mag_mod_culture.sty03 .swiper-button-next:after{text-indent: -9999px;display: block;width: 100%;}
 
 .mag_mod_culture.sty04 h3{font-size: 5.0rem;margin-bottom: 4.0rem; text-align: center;}
