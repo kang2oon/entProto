@@ -430,7 +430,7 @@ xmlhttp.onload = function() {
     $(".lastEmployeeState .lastResign").html(lastResign);
     // 재무정보
     var financeInfoWrap = myObj.financeInfo[0];
-    var fiYears = financeInfoWrap.year;
+    var fiYear = financeInfoWrap.year;
     var fiPosition = financeInfoWrap.position;
     var fiSales = financeInfoWrap.sales;
     var fiProfit = financeInfoWrap.profit;
@@ -442,8 +442,15 @@ xmlhttp.onload = function() {
         financeInfo += "<li>자본금(백만원) : <span>"+fiCapital[0]+"</span>, <span>"+fiCapital[1]+"</span>, <span>"+fiCapital[2]+"</span></li>";
         financeInfo += "</ul>";
     $(".financeInfo").html(financeInfo);
-
-    var financeYear = "<span>"+fiYears[0]+"</span>, <span>"+fiYears[1]+"</span>, <span>"+fiYears[2]+"</span>";
+    if(fiPosition[0] != null){
+        $(".fiPosition").html(fiPosition[0].toLocaleString()+"위");
+    }else{
+        $(".fiPosition").html("순위없음");
+    }
+    $(".fiSales").html(fiSales[0].toLocaleString());
+    $(".fiProfit").html(fiProfit[0].toLocaleString());
+    $(".fiCapital").html(fiCapital[0].toLocaleString());
+    var financeYear = "<span>"+fiYear[0]+"</span>, <span>"+fiYear[1]+"</span>, <span>"+fiYear[2]+"</span>";
     $(".financeYear").html(financeYear);
     var financePosition =  "<span>"+fiPosition[0]+"</span>, <span>"+fiPosition[1]+"</span>, <span>"+fiPosition[2]+"</span>";
     $(".financePosition").html(financePosition);
@@ -453,16 +460,6 @@ xmlhttp.onload = function() {
     $(".financeProfit").html(financeProfit);
     var financeCapital = "<span>"+fiCapital[0]+"</span>, <span>"+fiCapital[1]+"</span>, <span>"+fiCapital[2]+"</span>";
     $(".financeCapital").html(financeCapital);
-    
-    if(fiPosition[0] != null){
-        $(".fiPosition").html(fiPosition[0].toLocaleString()+"위");
-    }else{
-        $(".fiPosition").html("순위없음");
-    }
-    $(".fiSales").html(fiSales[0].toLocaleString());
-    $(".fiProfit").html(fiProfit[0].toLocaleString());
-    $(".fiCapital").html(fiCapital[0].toLocaleString());
-    
     // 기업평가 등급
     var bizGrade = myObj.bizGrade;
     $(".bizGrade").html(bizGrade);

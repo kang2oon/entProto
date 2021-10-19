@@ -4,7 +4,7 @@ $(document).ready(function(){
         if ($(document).scrollTop() > gnbOffset.top) {
             $('.com_mod_header, .com_mod_anchor').addClass('fixed');
             var headerHeight = $('.com_mod_header').height();
-            console.log(headerHeight);
+            //console.log(headerHeight);
             $('.com_mod_anchor').css('top', headerHeight+48);
         } else {
             $('.com_mod_header, .com_mod_anchor').removeClass('fixed');

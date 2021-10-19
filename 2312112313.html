@@ -152,7 +152,7 @@ body {color: #323232}
 	<div class="module-wrap edit_wrap bg_color com_mod_header sty02">
 		<div class="cnt-container header clearfix">
 			<div class="biz_cate cate01 green"><i></i>Consulting</div>
-			<div class="logo"><img src="/images/logo_smaple01.png" alt=""></div>
+			<div class="logo imgCi"><img src="/images/logo_smaple01.png" alt=""></div>
 			<div class="info fc_000">
 				<dl class="clearfix">
 					<dt>업종</dt>
@@ -610,19 +610,7 @@ body {color: #323232}
 	<script>
 		xmlhttp.open("GET", "/module/2312112313.json");
 		xmlhttp.onloadend = function() {
-			var ctLabelData1 = $('.ctLabel span:nth-child(1)').text();
-			var ctLabelData2 = $('.ctLabel span:nth-child(2)').text();
-			var ctLabelData3 = $('.ctLabel span:nth-child(3)').text();
-			var joinCnt1 = $('.joinCnt span:nth-child(1)').text();
-			var joinCnt2 = $('.joinCnt span:nth-child(2)').text();
-			var joinCnt3 = $('.joinCnt span:nth-child(3)').text();
-			var resignCnt1 = $('.resignCnt span:nth-child(1)').text();
-			var resignCnt2 = $('.resignCnt span:nth-child(2)').text();
-			var resignCnt3 = $('.resignCnt span:nth-child(3)').text();
-			var totalCnt1 = $('.totalCnt span:nth-child(1)').text();
-			var totalCnt2 = $('.totalCnt span:nth-child(2)').text();
-			var totalCnt3 = $('.totalCnt span:nth-child(3)').text();
-			var comName = $('h2.comName').text();
+			var comName = $('.map_info_wrap .comName').text();
 			var comAddress = $('.comAddress').text();
 			
 			$('.product').addClass('.swiper-container');
@@ -675,7 +663,7 @@ body {color: #323232}
 					clickable: true,
 					observer: true,
 					observeParents: true,
-				},
+				}
 			});
 
 			var mngIvSlider = new Swiper(".ivMng", {
@@ -690,10 +678,8 @@ body {color: #323232}
 					type: 'bullets',
 					clickable: true,
 					observer: true,
-					observeParents: true,
-					
-					
-				},
+					observeParents: true,	
+				}
 			});
 
 			var empIvSlider = new Swiper(".ivEmp", {
@@ -707,7 +693,7 @@ body {color: #323232}
 					el: '.swiper-pagination',
 					type: 'bullets',
 					clickable: true
-				},
+				}
 			});
 
 			// 인터뷰
@@ -738,7 +724,6 @@ body {color: #323232}
 				//        $("#" + activeTab).fadeIn();
 				$("#" + tab_id).fadeIn();
 			});
-
 
 
 			// 주소-좌표 변환 객체를 생성합니다
