@@ -339,9 +339,9 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_culture.sty03 .masony  .item .tit .desc {color: #666666;font-size: 1.8rem;}
 .mag_mod_culture.sty03 .swiper-button-prev,
 .mag_mod_culture.sty03 .swiper-button-next{margin-top: 0;transform: translateY(-50%);width: 32px;height: 55px;}
-.mag_mod_culture.sty03 .swiper-button-prev{left: -40px;background: url(../images/slider01_prev.png) no-repeat;}
+.mag_mod_culture.sty03 .swiper-button-prev{left: -40px !important;background: url(../images/slider01_prev.png) no-repeat;}
 .mag_mod_culture.sty03 .swiper-button-prev:after{text-indent: -9999px;display: block;height: 100%}
-.mag_mod_culture.sty03 .swiper-button-next{right:-40px;background: url(../images/slider01_next.png) no-repeat;}
+.mag_mod_culture.sty03 .swiper-button-next{right:-40px !important;background: url(../images/slider01_next.png) no-repeat;}
 .mag_mod_culture.sty03 .swiper-button-next:after{text-indent: -9999px;display: block;width: 100%;}
 
 .mag_mod_culture.sty04 h3{font-size: 5.0rem;margin-bottom: 4.0rem; text-align: center;}
@@ -1842,8 +1842,8 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 .rec_mod_product.sty01 .pd_wrap .swiper-container{width: calc(100% - 100px);margin: auto;}
 	
 	.mag_mod_culture.sty03 .dvCulture{width: calc(100% - 100px);margin: auto}
-	.mag_mod_culture.sty03 .swiper-button-next{right: 0}
-	.mag_mod_culture.sty03 .swiper-button-prev{left: 0}
+	.mag_mod_culture.sty03 .swiper-button-next{right: 0 !important}
+	.mag_mod_culture.sty03 .swiper-button-prev{left: 0 !important}
 }
 
 @media all and (max-width:1260px){
