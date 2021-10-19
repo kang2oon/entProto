@@ -15,7 +15,13 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
-body {color: #323232}
+
+/* 신규타입 상단처리 */
+#main_banner, .company_info_outer, .wantCompany_ct_box{display:none;}
+        .wantCompany_body{padding:0;}
+        #companyInfoWrap{padding:0 0 40px;}
+
+		body {color: #323232}
 .bro_mod_summary {background: url(../images/simryle_main_bg.png) top no-repeat;background-size: cover;width: 100%;height: 631px;}
 .bro_mod_summary .cnt-container {position: relative;height: 100%;}
 .bro_mod_summary .main_tit {background: #ffe300;display: inline-block;padding: 4.0rem;position: absolute;right: -4%;top: 50%;transform: translateY(-50%);font-family: 'Noto Serif KR', serif;width: 550px;}
@@ -608,7 +614,7 @@ body {color: #323232}
 	<script src="/module/map.js"></script>
 
 	<script>
-		xmlhttp.open("GET", "/module/2312112313.json");
+		xmlhttp.open("GET", "/module/4618601528.json");
 		xmlhttp.onloadend = function() {
 			var comName = $('.map_info_wrap .comName').text();
 			var comAddress = $('.comAddress').text();
