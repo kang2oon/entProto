@@ -11,9 +11,9 @@
 	<link href="./css/pt-common.css" rel="stylesheet">
 	<!--스크롤 이벤트-->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="./css/slick.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
 	<style>
+
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
 /* 신규타입 상단처리 */
@@ -22,6 +22,7 @@
         #companyInfoWrap{padding:0 0 40px;}
 
 		body {color: #323232}
+		
 .bro_mod_summary {background: url(../images/simryle_main_bg.png) top no-repeat;background-size: cover;width: 100%;height: 631px;}
 .bro_mod_summary .cnt-container {position: relative;height: 100%;}
 .bro_mod_summary .main_tit {background: #ffe300;display: inline-block;padding: 4.0rem;position: absolute;right: -4%;top: 50%;transform: translateY(-50%);font-family: 'Noto Serif KR', serif;width: 550px;}
@@ -44,9 +45,11 @@
 /* 비전 */
 .bro_mod_vision {margin: 10.0rem 0}
 .bro_mod_vision .vision_wrap .top {display: flex;justify-content: center;}
-.bro_mod_vision .vision_wrap .top .circle {width: 360px;height: 360px;border-radius: 50%;position: relative;margin-left: -40px;word-break: keep-all}
+.bro_mod_vision .vision_wrap .top > div{margin-left: -40px}
+.bro_mod_vision .vision_wrap .top > div:first-child{margin-left: 0}
+.bro_mod_vision .vision_wrap .top .circle {width: 360px;height: 360px;border-radius: 50%;position: relative;word-break: keep-all}
 .bro_mod_vision .vision_wrap .top .item span {display: block;font-size: 2.2rem;position: absolute;left: 50%;top: 50%;color: #fff;width: 100%;text-align: center;transform: translate(-50%, -50%);padding: 4.0rem }
-.bro_mod_vision .vision_wrap .top>.item:nth-child(1) .circle {background: rgba(63, 207, 227, 0.8);margin-left: 0}
+.bro_mod_vision .vision_wrap .top>.item:nth-child(1) .circle {background: rgba(63, 207, 227, 0.8);}
 .bro_mod_vision .vision_wrap .top>.item:nth-child(2) .circle {background: rgba(13, 98, 209, 0.8);}
 .bro_mod_vision .vision_wrap .top>.item:nth-child(3) .circle {background: rgba(177, 198, 7, 0.8);}
 .bro_mod_vision .vision_wrap .top p {text-align: center;margin-top: 2.0rem;font-size: 3.0rem;font-family: 'Noto Serif KR', serif;font-weight: bold;}
@@ -55,7 +58,7 @@
 .bro_mod_vision .middle p:before {content: '';display: block;background: url(../images/simryle_vision_line01.png) no-repeat;width: 100px;height: 248px;position: absolute;left: 0;top: 50%;transform: translateY(-50%);z-index: -1}
 .bro_mod_vision .middle p:after {content: '';display: block;background: url(../images/simryle_vision_line02.png) no-repeat;width: 100px;height: 248px;position: absolute;right: 0;top: 50%;transform: translateY(-50%);z-index: -1}
 
-.bro_mod_vision .bottom dl{margin-top: 9.0rem;display: flex;justify-content: center;}
+.bro_mod_vision .bottom dl{display: flex;justify-content: center;}
 .bro_mod_vision .bottom dd {border-radius: 100px;width: 500px;text-align: center;position: relative;margin-left: -40px;padding: 2.0rem;font-size: 2.2rem;}
 .bro_mod_vision .bottom dd:nth-child(2) {background: rgba(255, 227, 0, 0.80);margin-left: 0}
 .bro_mod_vision .bottom dd:nth-child(4) {background: rgba(177, 177, 177, 0.50)}
@@ -78,7 +81,7 @@
 
 /* 사업영역 */
 .bro_mod_biz {margin: 10.0rem 0}
-.bro_mod_biz h3 {font-family: 'Noto Serif KR', serif;text-align: center;font-size: 5.0rem;margin-bottom: 5.0rem;}
+.bro_mod_biz h3 {font-family: 'Noto Serif KR', serif;text-align: center;margin-bottom: 5.0rem;font-size: 4.0rem}
 .bro_mod_biz .pd_wrap {position: relative}
 .bro_mod_biz .product {overflow: hidden}
 .bro_mod_biz .product  > div:after{content: '';display: block;clear: both}
@@ -96,7 +99,7 @@
 
 /*swot*/
 .inf_mod_swot {margin: 10rem 0}
-.inf_mod_swot h3 {font-family: 'Noto Serif KR', serif;text-align: center;font-size: 5.0rem;margin-bottom: 10.0rem;font-weight: bold}
+.inf_mod_swot h3 {font-family: 'Noto Serif KR', serif;text-align: center;margin-bottom: 10.0rem;font-weight: bold}
 .inf_mod_swot .swot_wrap ol li {font-size: 1.6rem;position: relative;text-align: left;padding-left: 18px;margin-bottom: 1.3rem;}
 .inf_mod_swot .swot_wrap ol li:last-child {margin-bottom: 0}
 .inf_mod_swot .swot_wrap ol li:nth-child(1):before {content: '1.';display: block;position: absolute;left: 0;font-weight: bold}
@@ -109,17 +112,11 @@
 
 /* 복리후생 */
 .mag_mod_culture.sty03 {margin: 10rem 0;}
-.mag_mod_culture.sty03 h3 {font-family: 'Noto Serif KR', serif;text-align: center;font-size: 5.0rem;margin-bottom: 4.0rem;font-weight: bold}
+.mag_mod_culture.sty03 h3 {font-family: 'Noto Serif KR', serif;text-align: center;margin-bottom: 4.0rem;font-weight: bold}
 .mag_mod_culture.sty03 .item .desc {color: #555}
 .mag_mod_culture.sty03 .culture_wrap {padding-bottom: 2.0rem;}
 .mag_mod_culture.sty03 .culture_wrap .item {padding: 9.0rem 4.0rem;transform: translateZ(0);}
-.mag_mod_culture.sty03 .culture_wrap .item:nth-child(5) {padding: 15rem 4.0rem}
-.mag_mod_culture.sty03 .culture_wrap .item:nth-child(4) {padding: 4.0rem}
-.mag_mod_culture.sty03 .culture_wrap .item:nth-child(6) {padding: 10rem 4.0rem}
-.mag_mod_culture.sty03 .culture_wrap .item:nth-child(3),
-.mag_mod_culture.sty03 .culture_wrap .item:nth-child(8) {background: #354585;padding: 12.0rem 4.0rem}
-.mag_mod_culture.sty03 .culture_wrap .item:nth-child(3) .desc,
-.mag_mod_culture.sty03 .culture_wrap .item:nth-child(8) .desc {color: #fff}
+.mag_mod_culture.sty03 .culture_wrap .item:hover{background: #354585;color: #fff}
 
 /* 현직자 인터뷰 */
 .mag_mod_interview.sty02 h3 {font-family: 'Noto Serif KR', serif;font-weight: bold}
@@ -127,8 +124,7 @@
 .mag_mod_interview.sty02 .tabs li.active:after {background: url(../images/tab_arrow.png)}
 .mag_mod_interview.sty02 .swiper-pagination-bullet-active {background: #2a86ff}
 .mag_mod_interview.sty02 dd {color: #606060}
-.mag_mod_interview.sty02 .swiper-wrapper{height: 600px;}
-.mag_mod_interview.sty02 .swiper-slide {height:calc(100% / 4)}
+
 
 /* 기업 리뷰 */
 .mag_mod_review {margin: 10.0rem 0}
@@ -139,19 +135,119 @@
 .mag_mod_review.sty02 .culture_wrap .item:nth-child(4):after {border-top: 20px solid #bdd30f}
 .com_mod_recruit.sty03 {padding: 0}
 
-@media all and (max-width:1400px) {}
+@media all and (max-width:1400px) {
+	.bro_mod_summary .main_tit{right: 20px}
+}
 
-@media all and (max-width:1260px) {}
+@media all and (max-width:1260px) {
+	.bro_mod_biz .swiper-button-next{right: 0}
+	.bro_mod_biz .swiper-button-prev{left: 0}
+	.bro_mod_biz .product{width: calc(100% - 100px);margin: auto}
+	.bro_mod_biz .product img{width: 450px}
+	.bro_mod_biz h4,
+	.bro_mod_biz p{width: calc(100% - 500px)}
+	.bro_mod_biz h4{font-size: 2.2rem}
+	.bro_mod_biz p{font-size: 3.5rem}
+	.bro_mod_biz p span{font-size: 1.8rem}
+	.bro_mod_biz .swiper-button-next,
+	.bro_mod_biz .swiper-button-prev{background-size: 20px;width: 20px;height: 35px}
+}
 
-@media all and (max-width:1024px) {}
+@media all and (max-width:1024px) {
+	.bro_mod_summary{height: 500px}
+	.bro_mod_summary .main_tit .slogan{font-size: 4.0rem;text-align: center}
+	.bro_mod_summary .main_tit span{font-size: 2.6rem}
+	.bro_mod_summary .imgCi img{max-width: 220px}
+	
+	.inf_mod_biz .bizDiv > div{align-items: flex-start}
+	.inf_mod_biz .bizDiv > div h4{font-size: 3.0rem;width: 260px}
+	.inf_mod_biz .bizDiv > div p{width: calc(100% - 260px)}
+	
+	.bro_mod_vision .vision_wrap .top .circle{width: 260px;height: 260px}
+	.bro_mod_vision .vision_wrap .top .item span{font-size: 1.8rem}
+	.bro_mod_vision .vision_wrap .top p{font-size: 2.2rem;margin-top: 1.0rem;}
+	.bro_mod_vision .middle p{font-size: 2.5rem;margin: 2.0rem 0}
+	.bro_mod_vision .middle p:before{background-size: 80px;width: 80px;height: 200px}
+	.bro_mod_vision .middle p:after{background-size: 80px;width: 80px;height: 200px}
+	.bro_mod_vision .bottom dd{width: calc(50% + 20px);font-size: 1.8rem;}
+	.bro_mod_vision .bottom dd strong{font-size: 2.6rem}
+	
+	.education,
+	.mag_mod_interview.sty02{padding: 6.0rem 0}
+	.bro_mod_biz,
+	.mag_mod_culture.sty03,
+	.mag_mod_review{margin: 6.0rem 0}
+	.education h4 {font-size: 2.4rem}
+	.education h4 br{display: none}
+	.education .education_wrap>div p{font-size: 1.8rem;}
+	.education .education_wrap>div .ico.ico01{background-size: 90px;width: 90px;height: 90px}
+	.education .education_wrap>div .ico.ico02{background-size: 70px;width: 70px;height: 90px;}
+	.education .education_wrap>div .ico.ico03{background-size: 80px;width: 80px;height: 90px;}
+	
+	.bro_mod_biz .product img{float: none;width: 100%;max-width: 690px;margin: auto}
+	.bro_mod_biz h4,
+	.bro_mod_biz p,
+	.bro_mod_biz p span{float: none;width: 100%}
+	
+}
 
-@media all and (max-width:768px) {}
+@media all and (max-width:768px) {
+	.bro_mod_history.sty02 h3,
+	.bro_mod_biz h3,
+	.inf_mod_swot.sty04 h3,
+	.mag_mod_culture.sty03 h3,
+	.mag_mod_interview.sty02 h3,
+	.mag_mod_review.sty02 h3{font-size: 3.0rem}
+	
+	.bro_mod_summary{height: 400px}
+	.bro_mod_summary .main_tit{padding: 3.0rem;right: 50%;transform: translate(50%,-50%);width: 290px}
+	.bro_mod_summary .main_tit .slogan{font-size: 3.5rem;}
+	.bro_mod_summary .main_tit span{font-size: 2.0rem}
+	.bro_mod_summary .imgCi img{max-width: 160px}
+	
+	.inf_mod_biz{margin-top: 8.0rem}
+	.inf_mod_biz .bizDiv > div{display: block;}
+	.inf_mod_biz .bizDiv > div h4{width: 100%;font-size: 2.2rem;word-break: keep-all}
+	.inf_mod_biz .bizDiv > div p{width: 100%;font-size: 1.6rem}
+	.bro_mod_vision .middle{margin: 3.0rem 0}
+	.bro_mod_vision .vision_wrap .top  > div {margin-left: -20px}
+	.bro_mod_vision .vision_wrap .top .circle{width: 220px;height: 220px;}
+	
+}
 
-@media all and (max-width:640px) {}
+@media all and (max-width:640px) {
+	
+	.bro_mod_vision .vision_wrap .top {display: block;}
+	.bro_mod_vision .vision_wrap .top .circle{margin: auto}
+	.bro_mod_vision .vision_wrap .top > div{margin-left: auto;margin-bottom: 4.0rem}
+	.bro_mod_vision .bottom dl{display: block;}
+	.bro_mod_vision .bottom dd{width: 100%;margin-left: 0;margin-top: 2.0rem;}
+	.bro_mod_vision .bottom dd:nth-child(2){margin-top: 0}
+	.bro_mod_vision .middle p{padding: 1.5rem 4.0rem;font-size: 2.0rem}
+	.bro_mod_vision .middle p:before{background-size: 50px;width: 50px;height: 135px}
+	.bro_mod_vision .middle p:after{background-size: 50px;width: 50px;height: 135px}
+	
+	.education .education_wrap{display: block;}
+	.education .education_wrap>div{width: 100%;margin-bottom: 3.0rem}
+	.education .education_wrap>div:last-child{margin-bottom: 0}
+	.education .education_wrap>div:after{display: none}
+	.education .education_wrap>div p{font-size: 1.8rem;}
+	.education h4 {font-size: 2.0rem}
+	.education .education_wrap>div .ico.ico01{background-size: 60px;width: 60px;height: 60px}
+	.education .education_wrap>div .ico.ico02{background-size: 50px;width: 50px;height: 60px;}
+	.education .education_wrap>div .ico.ico03{background-size: 60px;width: 60px;height: 60px;}
+	
+	.mag_mod_culture.sty03 .culture_wrap .item{padding: 4.0rem 2.0rem }
+	
+	
+}
 
-@media all and (max-width:480px) {}
+@media all and (max-width:480px) {
+	.bro_mod_summary{height: 350px}
+	.bro_mod_summary .imgCi img{max-width: 130px}
+	
+}
 	</style>
-
 </head>
 
 <body>
@@ -603,8 +699,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@5.4.5/js/swiper.min.js"></script>
 	<script src="./js/imgLiquid-min.js"></script>
-	<script src="./js/slick.min.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="./js/waypoints.min.js"></script>
 	<script src="./js/jquery.counterup.min.js"></script>
 	<script src="./js/run.js"></script>
@@ -618,12 +712,12 @@
 		xmlhttp.onloadend = function() {
 			var comName = $('.map_info_wrap .comName').text();
 			var comAddress = $('.comAddress').text();
-			
+
 			$('.product').addClass('.swiper-container');
 			$('.product').wrapInner('<div class="swiper-wrapper"></div>');
 			$('.product .swiper-wrapper > div').addClass('swiper-slide');
 			$('.pd_wrap').append('<div class="swiper-button-next"></div><div class="swiper-button-prev"></div>');
-			
+
 			var productSlider = new Swiper(".product", {
 				slidesPerView: 1,
 				navigation: {
@@ -634,31 +728,56 @@
 
 			// masony 레이아웃
 			var divs = $(".dvCulture .swiper-wrapper > div");
-			for (var i = 0; i < divs.length; i += 8) {
-				divs.slice(i, i + 8).wrapAll("<div class='masony swiper-slide'></div>");
-			}
-			$('.dvCulture .swiper-wrapper > div').each(function() {
-				$(this).children().removeClass('swiper-slide');
-				$(this).children().addClass('item');
-			});
-
-
-			var dvCultureSlider = new Swiper(".dvCulture", {
-				slidesPerView: 1,
-				navigation: {
-					nextEl: ".culture_wrap .swiper-button-next",
-					prevEl: ".culture_wrap .swiper-button-prev"
+			if ($(window).width() > 1260) {
+				for (var i = 0; i < divs.length; i += 8) {
+					divs.slice(i, i + 8).wrapAll("<div class='masony swiper-slide'></div>");
+					$('.dvCulture .swiper-wrapper > div').each(function() {
+						$(this).children().removeClass('swiper-slide');
+					});
+					$('.masony  > div').addClass('item');
 				}
+			} else {
+				$('.dvCulture .swiper-wrapper').addClass("masony")
+				$('.dvCulture .swiper-wrapper > div').each(function() {
+					$(this).addClass('item');
+				});
+			}
+
+			var ww = $(window).width();
+			var dvCultureSlider = undefined;
+
+			function initSwiper() {
+				if (ww > 1260 && dvCultureSlider == undefined) {
+					dvCultureSlider = new Swiper(".dvCulture", {
+						slidesPerView: 1,
+						navigation: {
+							nextEl: ".culture_wrap .swiper-button-next",
+							prevEl: ".culture_wrap .swiper-button-prev"
+						}
+					});
+				} else if (ww >= 1260 && dvCultureSlider != undefined) {
+					mySwiper.destroy();
+					dvCultureSlider = undefined;
+				}
+			}
+
+			initSwiper();
+
+			$(window).on('resize', function() {
+				ww = $(window).width();
+				initSwiper();
 			});
 
-		// dot
-		$(".ivCeo").append('<div class="swiper-pagination"></div>');
-		$(".ivMng").append('<div class="swiper-pagination"></div>');
-		$(".ivEmp").append('<div class="swiper-pagination"></div>');
+
+			// dot
+			$(".ivCeo").append('<div class="swiper-pagination"></div>');
+			$(".ivMng").append('<div class="swiper-pagination"></div>');
+			$(".ivEmp").append('<div class="swiper-pagination"></div>');
 
 			var ceoIvSlider = new Swiper(".ivCeo", {
 				slidesPerView: 1,
 				slidesPerColumn: 4,
+				slidesPerGroup: 4,
 				spaceBetween: 0,
 				//loop: true,
 				observer: true,
@@ -669,7 +788,25 @@
 					clickable: true,
 					observer: true,
 					observeParents: true,
-				}
+				},
+				breakpoints:{
+                1260: {
+                    slidesPerColumn: 4,
+					slidesPerGroup: 4,
+                },
+				1024: {
+                    slidesPerColumn: 3,
+					slidesPerGroup: 3,
+                },
+				768: {
+                    slidesPerColumn: 2,
+					slidesPerGroup: 2,
+                },
+				300: {
+                    slidesPerColumn: 2,
+					slidesPerGroup: 2,
+                }
+           		}
 			});
 
 			var mngIvSlider = new Swiper(".ivMng", {
@@ -684,8 +821,26 @@
 					type: 'bullets',
 					clickable: true,
 					observer: true,
-					observeParents: true,	
-				}
+					observeParents: true,
+				},
+				breakpoints:{
+                1260: {
+                    slidesPerColumn: 4,
+					slidesPerGroup: 4,
+                },
+				1024: {
+                    slidesPerColumn: 3,
+					slidesPerGroup: 3,
+                },
+				768: {
+                    slidesPerColumn: 2,
+					slidesPerGroup: 2,
+                },
+				300: {
+                    slidesPerColumn: 2,
+					slidesPerGroup: 2,
+                }
+           		}
 			});
 
 			var empIvSlider = new Swiper(".ivEmp", {
@@ -699,7 +854,25 @@
 					el: '.swiper-pagination',
 					type: 'bullets',
 					clickable: true
-				}
+				},
+				breakpoints:{
+                1260: {
+                    slidesPerColumn: 4,
+					slidesPerGroup: 4,
+                },
+				1024: {
+                    slidesPerColumn: 3,
+					slidesPerGroup: 3,
+                },
+				768: {
+                    slidesPerColumn: 2,
+					slidesPerGroup: 2,
+                },
+				300: {
+                    slidesPerColumn: 2,
+					slidesPerGroup: 2,
+                }
+           		}
 			});
 
 			// 인터뷰
@@ -782,8 +955,5 @@
 			});
 		};
 		xmlhttp.send();
-
 	</script>
-</body>
-
-</html>
+</body></html>
