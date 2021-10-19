@@ -36,19 +36,6 @@
         .mag_mod_culture.sty02 .culwel_wrap .title.cult{background-image:url(/images/@bg_culture_3308100104.png);}
         .mag_mod_culture.sty02 .culwel_wrap .title.welf{background-image:url(/images/@bg_welfare_3308100104.png);}
 
-
-
-
-        
-        .inf_mod_finance ul li .ico::before{
-            background-image:url(/images/@bg_finance_1238139826.png);
-            background-repeat:no-repeat;background-position:0 0;
-        }
-        .inf_mod_finance ul li:nth-child(2) .ico::before{background-position-x:-140px;}
-        .inf_mod_finance ul li:nth-child(3) .ico::before{background-position-x:-280px;}
-        .inf_mod_finance ul li:nth-child(4) .ico::before{background-position-x:-420px;}
-    
-
         /* Break Point */
         @media screen and (max-width: 768px) {
             .mag_mod_culture.sty02 .culwel_wrap.first{margin-top:60px;}
@@ -131,7 +118,6 @@
                         <div data-tab="capital">자본금</div>
                         <div data-tab="sales">매출액</div>
                         <div data-tab="profit">당기순이익</div>
-                        <!-- <div data-tab="summary">재무평가 요약</div> -->
                     </div>
                     <div class="conts">
                         <div class="summary">
@@ -171,7 +157,6 @@
                             <div class="unit">단위 : 백만원</div>
                             <div id="graph_fiProfit"></div>
                         </div>
-                        <!-- <div class="summary">재무평가 요약</div> -->
                     </div>
                 </div>
             </div>
@@ -214,34 +199,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="module-wrap inf_mod_finance sty02">
-        <div class="cnt-container txt_center">
-            <h3>Finance Information</h3>
-            <ul class="clearfix">
-                <li>
-                    <div class="ico"></div>
-                    <div class="cnt"><span class="fiPosition">-</span></div>
-                    동종업종내 위치
-                </li>
-                <li>
-                    <div class="ico"></div>
-                    <div class="cnt"><span class="fiCapital">-</span></div>
-                    자본금(백만원)
-                </li>
-                <li>
-                    <div class="ico"></div>
-                    <div class="cnt"><span class="fiProfit">-</span></div>
-                    당기순이익(백만원)
-                </li>
-                <li>
-                    <div class="ico"></div>
-                    <div class="cnt"><span class="fiSales">-</span></div>
-                    매출액(백만원)
-                </li>
-            </ul>
-        </div>
-    </div> -->
-    
+       
     <div class="module-wrap com_mod_add process">
         <div class="cnt-container">
             <h3><strong>MERC</strong> 폐전기전자제품 수집 경로</h3>
@@ -279,27 +237,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="module-wrap inf_mod_welfare sty02">
-        <div class="cnt-container">
-            <!/-- <h3>조직문화</h3>
-            <div class="culture_wrap">
-                <div class="swiper dvCulture">
-                    조직문화            
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div> -/->
-            <!/-- <div class="welfare_wrap">
-                <h3>복리후생</h3>
-                <div class="swiper welfare">
-                    복리후생            
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div> -/->
-        </div>
-    </div> -->
-    
+        
     <div class="module-wrap com_mod_recruit sty01">
         <div class="bg_bot"></div>
         <div class="cnt-container">
@@ -474,18 +412,6 @@
 <script>
 	xmlhttp.open("GET", "/module/3308100104.json");
     xmlhttp.onloadend = function(){
-        // var ctLabelData1 = $('.ctLabel span:nth-child(1)').text();
-        // var ctLabelData2 = $('.ctLabel span:nth-child(2)').text();
-        // var ctLabelData3 = $('.ctLabel span:nth-child(3)').text();
-        // var joinCnt1 = $('.joinCnt span:nth-child(1)').text();
-        // var joinCnt2 = $('.joinCnt span:nth-child(2)').text();
-        // var joinCnt3 = $('.joinCnt span:nth-child(3)').text();
-        // var resignCnt1 = $('.resignCnt span:nth-child(1)').text();
-        // var resignCnt2 = $('.resignCnt span:nth-child(2)').text();
-        // var resignCnt3 = $('.resignCnt span:nth-child(3)').text();
-        // var totalCnt1 = $('.totalCnt span:nth-child(1)').text();
-        // var totalCnt2 = $('.totalCnt span:nth-child(2)').text();
-        // var totalCnt3 = $('.totalCnt span:nth-child(3)').text();
         var comName = $('.map_info_wrap .comName').text();
         var comAddress = $('.comAddress').text();
         var fiYear1 = $('.financeYear span:nth-child(1)').text();
@@ -500,13 +426,6 @@
         var fiProfit1 = $('.financeProfit span:nth-child(1)').text();
         var fiProfit2 = $('.financeProfit span:nth-child(2)').text();
         var fiProfit3 = $('.financeProfit span:nth-child(3)').text();
-
-        // $("div.holder").jPages({
-        //     containerID : "history",
-        //     perPage     : 5,
-        //     previous    : ".arrow_prev",
-        //     next        : ".arrow_next",
-        // });
         
         var chart1 = bb.generate({
             bindto: "#graph_fiCapital",
@@ -630,7 +549,7 @@
             spaceBetween: 20,
             loop: true,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".mag_mod_percent .swiper-pagination",
                 clickable: true,
             },
             breakpoints:{
@@ -643,13 +562,11 @@
 
         $('.tab > div').click(function(){
             var item = $(this).attr('data-tab');
-            console.log(item);
             $('.tab > div').removeClass('on');
             $(this).addClass('on');
             $('.conts > div').hide();
             $('.conts > .' + item).show();
             
-            $('#graph_fiCapital svg > g:nth-child(1), #graph_fiSales svg > g:nth-child(1), #graph_fiProfit svg > g:nth-child(1)').attr("transform", "translate(40.5, 4.5)");
             setTimeout(function(){
                 chart1.resize();
                 chart2.resize();

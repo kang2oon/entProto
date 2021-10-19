@@ -11,9 +11,7 @@
 	<link href="./css/pt-common.css" rel="stylesheet">
 	<!--스크롤 이벤트-->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="./css/slick.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
-	<link rel="stylesheet" href="./css/sim.css">
 	<style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 body {color: #323232}
@@ -248,7 +246,7 @@ body {color: #323232}
 	<div class="module-wrap edit_wrap bg_color com_mod_header sty02">
 		<div class="cnt-container header clearfix">
 			<div class="biz_cate cate01 green"><i></i>Consulting</div>
-			<div class="logo"><img src="/images/logo_smaple01.png" alt=""></div>
+			<div class="logo imgCi"><img src="/images/logo_smaple01.png" alt=""></div>
 			<div class="info fc_000">
 				<dl class="clearfix">
 					<dt>업종</dt>
@@ -693,8 +691,6 @@ body {color: #323232}
 	<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@5.4.5/js/swiper.min.js"></script>
 	<script src="./js/imgLiquid-min.js"></script>
-	<script src="./js/slick.min.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="./js/waypoints.min.js"></script>
 	<script src="./js/jquery.counterup.min.js"></script>
 	<script src="./js/run.js"></script>
@@ -706,19 +702,7 @@ body {color: #323232}
 	<script>
 		xmlhttp.open("GET", "/module/2312112313.json");
 		xmlhttp.onloadend = function() {
-			var ctLabelData1 = $('.ctLabel span:nth-child(1)').text();
-			var ctLabelData2 = $('.ctLabel span:nth-child(2)').text();
-			var ctLabelData3 = $('.ctLabel span:nth-child(3)').text();
-			var joinCnt1 = $('.joinCnt span:nth-child(1)').text();
-			var joinCnt2 = $('.joinCnt span:nth-child(2)').text();
-			var joinCnt3 = $('.joinCnt span:nth-child(3)').text();
-			var resignCnt1 = $('.resignCnt span:nth-child(1)').text();
-			var resignCnt2 = $('.resignCnt span:nth-child(2)').text();
-			var resignCnt3 = $('.resignCnt span:nth-child(3)').text();
-			var totalCnt1 = $('.totalCnt span:nth-child(1)').text();
-			var totalCnt2 = $('.totalCnt span:nth-child(2)').text();
-			var totalCnt3 = $('.totalCnt span:nth-child(3)').text();
-			var comName = $('h2.comName').text();
+			var comName = $('.map_info_wrap .comName').text();
 			var comAddress = $('.comAddress').text();
 
 			$('.product').addClass('.swiper-container');
@@ -785,6 +769,7 @@ body {color: #323232}
 			var ceoIvSlider = new Swiper(".ivCeo", {
 				slidesPerView: 1,
 				slidesPerColumn: 4,
+				slidesPerGroup: 4,
 				spaceBetween: 0,
 				//loop: true,
 				observer: true,
@@ -796,15 +781,24 @@ body {color: #323232}
 					observer: true,
 					observeParents: true,
 				},
-				breakpoints: {
-					1024: {
-						slidesPerColumn: 3,
-					},
-					640: {
-						slidesPerColumn: 2,
-					}
-				}
-
+				breakpoints:{
+                1260: {
+                    slidesPerColumn: 4,
+					slidesPerGroup: 4,
+                },
+				1024: {
+                    slidesPerColumn: 3,
+					slidesPerGroup: 3,
+                },
+				768: {
+                    slidesPerColumn: 2,
+					slidesPerGroup: 2,
+                },
+				300: {
+                    slidesPerColumn: 2,
+					slidesPerGroup: 2,
+                }
+           		}
 			});
 
 			var mngIvSlider = new Swiper(".ivMng", {
@@ -820,9 +814,25 @@ body {color: #323232}
 					clickable: true,
 					observer: true,
 					observeParents: true,
-
-
 				},
+				breakpoints:{
+                1260: {
+                    slidesPerColumn: 4,
+					slidesPerGroup: 4,
+                },
+				1024: {
+                    slidesPerColumn: 3,
+					slidesPerGroup: 3,
+                },
+				768: {
+                    slidesPerColumn: 2,
+					slidesPerGroup: 2,
+                },
+				300: {
+                    slidesPerColumn: 2,
+					slidesPerGroup: 2,
+                }
+           		}
 			});
 
 			var empIvSlider = new Swiper(".ivEmp", {
@@ -837,6 +847,24 @@ body {color: #323232}
 					type: 'bullets',
 					clickable: true
 				},
+				breakpoints:{
+                1260: {
+                    slidesPerColumn: 4,
+					slidesPerGroup: 4,
+                },
+				1024: {
+                    slidesPerColumn: 3,
+					slidesPerGroup: 3,
+                },
+				768: {
+                    slidesPerColumn: 2,
+					slidesPerGroup: 2,
+                },
+				300: {
+                    slidesPerColumn: 2,
+					slidesPerGroup: 2,
+                }
+           		}
 			});
 
 			// 인터뷰
@@ -867,7 +895,6 @@ body {color: #323232}
 				//        $("#" + activeTab).fadeIn();
 				$("#" + tab_id).fadeIn();
 			});
-
 
 
 			// 주소-좌표 변환 객체를 생성합니다
