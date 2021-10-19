@@ -94,22 +94,52 @@
 .qa_emp{background: url(../images/tongyang_worker_bg.png) no-repeat;padding: 10.0rem 0;background-size: cover}
 .qa_emp .cnt-container{position: relative}
 .rec_mod_interview.sty02 .qa_mng img {bottom: -100px}
+.rec_mod_interview.sty02 .qa_emp img {bottom:-100px}
 .rec_mod_review.sty02{background: url(../images/tongyang_review_bg.png) no-repeat;background-size: cover;padding: 8.0rem 0}
 .rec_mod_review.sty02 h3{font-size: 3.4rem;margin-bottom: 4.0rem}
 .rec_mod_review h3 span{color: #ffd014}
 
+.rec_mod_welfare.sty02 .welfare_review_wrap{margin-top: 8.0rem;}
+
+@media all and (max-width:1400px){
+	.rec_mod_strategy.sty01 .navy_bg:after{display: none;}
+	.rec_mod_strategy.sty01 .spec .cont_box{width: 100%;}
+	.rec_mod_finance.sty02 .local_rank_wrap .lank_img span{display: none;}
+}
+
 @media all and (max-width:1260px){
+	.rec_mod_vision.sty01{margin-top: 100px;}
 }
 
 @media all and (max-width:1024px){
+	.rec_mod_vision.sty01{margin-top: 0px;}
+	.rec_mod_interview.sty02  img{opacity: 0.7;}
+	
+    .rec_mod_interview .swiper-button-prev:after, 
+	.rec_mod_interview .swiper-button-prev:after{background-size: 25px !important;width:25px !important;height: 40px !important;}
+	.rec_mod_interview .swiper-button-next:after, 
+	.rec_mod_interview .swiper-button-next:after{background-size: 25px !important;width:25px !important;height: 40px !important;}
 }
 
 @media all and (max-width:768px){
+	.rec_mod_biz.sty01 .bizDiv{display: block;}
+	.rec_mod_biz.sty01 .bizDiv > div{width: 100%;margin-right: 0;margin-bottom: 4.0rem;}
+	.rec_mod_biz.sty01 .bizDiv > div:last-child{margin-bottom: 0;}
+	.rec_mod_biz.sty01 .bizDiv img{width: 200px;}
+	.rec_mod_biz.sty01 .bizDiv h4{margin-top: 1.0rem;}
 	
+	.rec_mod_interview.sty02 .qa_mng img, 
+	.rec_mod_interview.sty02 .qa_emp img{width: 250px;}
+
+	.rec_mod_vision.sty01 p{font-size: 2.0rem;}
+	.rec_mod_vision.sty01 p br{display:none;word-break: keep-all;}
 }
 
 @media all and (max-width:640px){
-	
+     .inf_mod_history.sty02 .history_wrap .history{padding:20px 0;background-position:77px 0;}
+     .inf_mod_history.sty02 .history_wrap .arrow_prev, .inf_mod_history.sty02 .history_wrap .arrow_next{left:80px;width:30px;height:30px;background-size:cover !important;}
+     .inf_mod_history.sty02 .history_wrap .arrow_next{background-position: -30px 0;}
+     .inf_mod_history.sty02 .history_wrap .history > div{background-position:72px 50%;}
 }
 
 @media all and (max-width:480px){
@@ -1000,39 +1030,77 @@
 		</div>
 	</div>
 
-	<!-- 공통 지도 style01 -->
-	<div class="module-wrap com_mod_map sty02">
-		<div class="cnt-container">
-			<div class="location">
-				<strong>소재지</strong>
-				<p>경기도 부천시 원미구 부천로 136번길 어울마당(구, 원미구청) 3층</p>
-			</div>
-		</div>
-
-		<div id="map" style="width: 100%;height: 600px;"></div>
-		<!--잡아바에 업로드할시 appkey 변경 요망-->
-		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=30e937dc734be257fecff4a4ac48936b"></script>
-		<script>
-			var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-			var options = { //지도를 생성할 때 필요한 기본 옵션
-				center: new kakao.maps.LatLng(37.49716056637799, 126.78847965254768), //지도의 중심좌표.
-				level: 3 //지도의 레벨(확대, 축소 정도)
-			};
-			var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-
-			// 지도에 마커를 생성하고 표시한다
-			var marker = new kakao.maps.Marker({
-				position: new kakao.maps.LatLng(37.49716056637799, 126.78847965254768), // 마커의 좌표
-				map: map // 마커를 표시할 지도 객체
-			});
-			// 지도에 확대 축소 컨트롤을 생성한다
-			var zoomControl = new kakao.maps.ZoomControl();
-
-			// 지도의 우측에 확대 축소 컨트롤을 추가한다
-			map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-		</script>
-	</div>
-	<!-- //공통 지도 style01 -->
+	<div class="module-wrap com_mod_map">
+        <div id="map"></div>
+        <div class="map_info_wrap">
+            <div class="com_info">
+                <div class="comName">기업명</div>
+                <a href="javascript:void(0);" target="_blank" class="find_road">길 찾기</a>
+                <p class="comAddress">주소</p>
+                <p class="tel">전화번호</p>
+            </div>
+            <div class="around_wrap">
+                <ul id="category">
+                    <li id="MT1" data-order="0"> 
+                        <span class="category_bg mt1"></span>
+                        대형마트
+                    </li>       
+                    <li id="CS2" data-order="1"> 
+                        <span class="category_bg cs2"></span>
+                        편의점
+                    </li>  
+                    <li id="AC5" data-order="2"> 
+                        <span class="category_bg ac5"></span>
+                        학원
+                    </li>  
+                    <li id="PK6" data-order="3"> 
+                        <span class="category_bg pk6"></span>
+                        주차장
+                    </li>  
+                    <li id="OL7" data-order="4"> 
+                        <span class="category_bg ol7"></span>
+                        주유소
+                    </li>  
+                    <li id="SW8" data-order="5"> 
+                        <span class="category_bg sw8"></span>
+                        지하철
+                    </li>
+                    <li id="BK9" data-order="6"> 
+                        <span class="category_bg bk9"></span>
+                        은행
+                    </li> 
+                    <li id="CT1" data-order="7"> 
+                        <span class="category_bg ct1"></span>
+                        문화시설
+                    </li>       
+                    <li id="AT4" data-order="8"> 
+                        <span class="category_bg at4"></span>
+                        관광명소
+                    </li>  
+                    <li id="AD5" data-order="9"> 
+                        <span class="category_bg ad5"></span>
+                        숙박
+                    </li>  
+                    <li id="FD6" data-order="10"> 
+                        <span class="category_bg fd6"></span>
+                        음식점
+                    </li>  
+                    <li id="CE7" data-order="11"> 
+                        <span class="category_bg ce7"></span>
+                        카페
+                    </li>  
+                    <li id="HP8" data-order="12"> 
+                        <span class="category_bg hp8"></span>
+                        병원
+                    </li>
+                    <li id="PM9" data-order="14"> 
+                        <span class="category_bg pm9"></span>
+                        약국
+                    </li>      
+                </ul>
+            </div>
+        </div>
+    </div>
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -1162,6 +1230,14 @@
 					el: '.qa_ceo .swiper-scrollbar',
 					draggable: true,
 					hide: false
+				},
+				breakpoints: {
+					1260: {
+						autoHeight : false
+					},
+					300: {
+						autoHeight : true
+					}
 				}
 			});
 
