@@ -53,10 +53,10 @@ body {color: #323232}
 .bro_mod_vision .vision_wrap .top>.item:nth-child(2) .circle {background: rgba(13, 98, 209, 0.8);}
 .bro_mod_vision .vision_wrap .top>.item:nth-child(3) .circle {background: rgba(177, 198, 7, 0.8);}
 .bro_mod_vision .vision_wrap .top p {text-align: center;margin-top: 2.0rem;font-size: 3.0rem;font-family: 'Noto Serif KR', serif;font-weight: bold;}
-.bro_mod_vision .middle {text-align: center;margin: 6.0rem 0}
-.bro_mod_vision .middle p {font-family: 'Noto Serif KR', serif;font-weight: bold;font-size: 4.0rem;display: inline-block;border: 2px dotted #2a86ff;padding: 15px 90px;border-radius: 50px;background: #fff;position: relative;}
-.bro_mod_vision .middle p:before {content: '';display: block;background: url(../images/simryle_vision_line01.png) no-repeat;width: 100px;height: 248px;position: absolute;left: 0;top: 50%;transform: translateY(-50%);z-index: -1}
-.bro_mod_vision .middle p:after {content: '';display: block;background: url(../images/simryle_vision_line02.png) no-repeat;width: 100px;height: 248px;position: absolute;right: 0;top: 50%;transform: translateY(-50%);z-index: -1}
+.bro_mod_vision .middle {text-align: center;margin: 10.0rem auto;font-family: 'Noto Serif KR', serif;font-weight: bold;font-size: 4.0rem;position: relative;width: 500px;}
+.bro_mod_vision .middle p{background: #fff;width: 100%;height: 100%;padding: 15px 90px;position: relative;z-index: 2;border: 2px dotted #2a86ff;border-radius: 50px;background: #fff;}
+.bro_mod_vision .middle:before {content: '';display: block;background: url(../images/simryle_vision_line01.png) no-repeat;width: 100px;height: 248px;position: absolute;left: 0;top: 50%;transform: translateY(-50%);z-index:0}
+.bro_mod_vision .middle:after {content: '';display: block;background: url(../images/simryle_vision_line02.png) no-repeat;width: 100px;height: 248px;position: absolute;right: 0;top: 50%;transform: translateY(-50%);z-index: 0}
 
 .bro_mod_vision .bottom dl{display: flex;justify-content: center;}
 .bro_mod_vision .bottom dd {border-radius: 100px;width: 500px;text-align: center;position: relative;margin-left: -40px;padding: 2.0rem;font-size: 2.2rem;}
@@ -140,8 +140,8 @@ body {color: #323232}
 }
 
 @media all and (max-width:1260px) {
-.bro_mod_biz .swiper-button-next{right: 0}
-.bro_mod_biz .swiper-button-prev{left: 0}
+.bro_mod_biz .swiper-button-next{right: 0 !important}
+.bro_mod_biz .swiper-button-prev{left: 0 !important}
 .bro_mod_biz .product{width: calc(100% - 100px);margin: auto}
 .bro_mod_biz .product img{width: 450px}
 .bro_mod_biz h4,
@@ -167,8 +167,9 @@ body {color: #323232}
 .bro_mod_vision .vision_wrap .top .item span{font-size: 1.8rem}
 .bro_mod_vision .vision_wrap .top p{font-size: 2.2rem;margin-top: 1.0rem;}
 .bro_mod_vision .middle p{font-size: 2.5rem;margin: 2.0rem 0}
-.bro_mod_vision .middle p:before{background-size: 80px;width: 80px;height: 200px}
-.bro_mod_vision .middle p:after{background-size: 80px;width: 80px;height: 200px}
+.bro_mod_vision .middle:before{background-size: 80px;width: 80px;height: 200px}
+.bro_mod_vision .middle:after{background-size: 80px;width: 80px;height: 200px}
+.bro_mod_vision .middle {width: 400px;}
 .bro_mod_vision .bottom dd{width: calc(50% + 20px);font-size: 1.8rem;}
 .bro_mod_vision .bottom dd strong{font-size: 2.6rem}
 
@@ -209,7 +210,6 @@ body {color: #323232}
 .inf_mod_biz .bizDiv > div{display: block;}
 .inf_mod_biz .bizDiv > div h4{width: 100%;font-size: 2.2rem;word-break: keep-all}
 .inf_mod_biz .bizDiv > div p{width: 100%;font-size: 1.6rem}
-.bro_mod_vision .middle{margin: 3.0rem 0}
 .bro_mod_vision .vision_wrap .top  > div {margin-left: -20px}
 .bro_mod_vision .vision_wrap .top .circle{width: 220px;height: 220px;}
 
@@ -223,9 +223,10 @@ body {color: #323232}
 .bro_mod_vision .bottom dl{display: block;}
 .bro_mod_vision .bottom dd{width: 100%;margin-left: 0;margin-top: 2.0rem;}
 .bro_mod_vision .bottom dd:nth-child(2){margin-top: 0}
+.bro_mod_vision .middle{max-width: 300px;max-width: 5.0rem auto;width: 100%;}
 .bro_mod_vision .middle p{padding: 1.5rem 4.0rem;font-size: 2.0rem}
-.bro_mod_vision .middle p:before{background-size: 50px;width: 50px;height: 135px}
-.bro_mod_vision .middle p:after{background-size: 50px;width: 50px;height: 135px}
+.bro_mod_vision .middle:before{background-size: 50px;width: 50px;height: 135px}
+.bro_mod_vision .middle:after{background-size: 50px;width: 50px;height: 135px}
 
 .education .education_wrap{display: block;}
 .education .education_wrap>div{width: 100%;margin-bottom: 3.0rem}
