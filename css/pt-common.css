@@ -290,9 +290,9 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 
 .bro_mod_history.sty02{margin: 8.0rem 0}
 .bro_mod_history.sty02 .history > div{display: flex;align-items: flex-start;padding: 40px 0;position: relative}
-.bro_mod_history.sty02 .history > div:after{content: '';display: block;width: 24px;height: 100%;background: #e4e4e4;position: absolute;left: 50%;z-index: -1;transform: translateX(-50%)}
+.bro_mod_history.sty02 .history > div:after{content: '';display: block;width: 24px;height: 100%;background: #e4e4e4;position: absolute;left: 50%;transform: translateX(-50%)}
 .bro_mod_history.sty02 .history > div:last-child:after{border-radius: 0 0 20px 20px}
-.bro_mod_history.sty02 .history > div > span{background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,184,113,1) 0%, rgba(51,147,207,1) 100%); color: #fff;width:137px;border-radius: 20px;padding: 0 20px;position: absolute;left: 50%;transform: translateX(-50%); font-size: 2.8rem;display: block;}
+.bro_mod_history.sty02 .history > div > span{background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,184,113,1) 0%, rgba(51,147,207,1) 100%); color: #fff;width:137px;border-radius: 20px;padding: 0 20px;position: absolute;left: 50%;transform: translateX(-50%); font-size: 2.8rem;display: block;z-index: 1}
 .bro_mod_history.sty02 .history > div > span:after{content: '';display: block;width: 24px;height: 24px;background: #fff;border-radius: 50%;position: absolute;right: 10px;top: 50%;transform: translateY(-50%);box-shadow: 0 0 10px rgba(0, 0, 0, 0.10)}
 .bro_mod_history.sty02 .history > div ul{width: calc(50% - 100px);margin-left: auto;}
 .bro_mod_history.sty02 .history > div ul > li{display: flex;margin-bottom: 2.0rem}
@@ -693,8 +693,9 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_interview.sty02 .swiper-slide {height:calc(100% / 4)}
 
 /* 리뷰 */
+.mag_mod_review {border: 0;padding: 0}
 .mag_mod_review.sty02  h3{text-align: center;font-size: 4.0rem;}
-.mag_mod_review.sty02 .review_wrap{column-count: 3;-webkit-column-count: 3; -moz-column-count:3;column-gap: 30px;counter-reset:item-counter}
+.mag_mod_review.sty02 .review_wrap{column-count: 3;-webkit-column-count: 3; -moz-column-count:3;column-gap: 30px;counter-reset:item-counter;}
 .mag_mod_review.sty02 .review_wrap  .item{margin-top: 40px;border-radius: 20px;padding: 4.0rem;box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);text-align: center;background: #fff;width: 100%;transform: translateZ(0);position: relative;break-inside:avoid;display: inline-block}
 .mag_mod_review.sty02 .review_wrap  .item:after{content: '';display: block; width: 0;height: 0;border-top: 20px solid #fff;/* 화살표 */border-left: 15px solid transparent;border-right: 15px solid transparent;position: absolute;bottom: -20px;left: 50%;transform: translateX(-50%);}
 /* .mag_mod_review.sty02 .culture_wrap  .item:nth-child(1) {} */
