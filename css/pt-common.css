@@ -683,6 +683,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_interview.sty02 .tabs li:after{content: '';display: block;background: url(../images/tab_arrow.png) no-repeat center;width: 18px;height: 14px;position: absolute;right: 2.0rem;top: 50%;transform: translateY(-50%)}
 .mag_mod_interview.sty02 .tabs li a{display: block;width: 100%;height: 100%;padding: 1.5rem 2.0rem;}
 .mag_mod_interview.sty02 .tab_content {width: calc(100% - 270px);position: relative;overflow-x: hidden;min-height: 500px;padding-bottom: 6.0rem;}
+.mag_mod_interview.sty02 .tab_content > div{display:block;}
 .mag_mod_interview.sty02 .tab_content img{position: absolute;right: 0;bottom: 0}
 .mag_mod_interview.sty02 {margin-bottom: 5.0rem;}
 .mag_mod_interview.sty02 .q{font-size: 2.3rem;margin-bottom: 1.0rem;padding-left: 25px;position: relative;}
@@ -696,7 +697,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 
 /* 리뷰 */
 .mag_mod_review.sty02  h3{text-align: center;font-size: 4.0rem;}
-.mag_mod_review.sty02 .review_wrap{column-count: 3;-webkit-column-count: 3; -moz-column-count:3;column-gap: 30px;counter-reset:item-counter}
+.mag_mod_review.sty02 .review_wrap{column-count: 3;-webkit-column-count: 3; -moz-column-count:3;column-gap: 30px;counter-reset:item-counter;border:none;}
 .mag_mod_review.sty02 .review_wrap  .item{margin-top: 40px;border-radius: 20px;padding: 4.0rem;box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);text-align: center;background: #fff;width: 100%;transform: translateZ(0);position: relative;break-inside:avoid;display: inline-block}
 .mag_mod_review.sty02 .review_wrap  .item:after{content: '';display: block; width: 0;height: 0;border-top: 20px solid #fff;/* 화살표 */border-left: 15px solid transparent;border-right: 15px solid transparent;position: absolute;bottom: -20px;left: 50%;transform: translateX(-50%);}
 /* .mag_mod_review.sty02 .culture_wrap  .item:nth-child(1) {} */
