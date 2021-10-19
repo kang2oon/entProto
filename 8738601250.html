@@ -478,8 +478,10 @@
         var totalCnt1 = $('.totalCnt span:nth-child(1)').text();
         var totalCnt2 = $('.totalCnt span:nth-child(2)').text();
         var totalCnt3 = $('.totalCnt span:nth-child(3)').text();
-        var comName = $('h2.comName').text();
-        var comAddress = $('.comAddress').text();
+        var comName = $('.map_info_wrap .comName').text();
+		var comAddress = $('.comAddress').text();
+
+        
 
         var chart1 = bb.generate({
             bindto: "#graph_empCnt",
