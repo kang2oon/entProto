@@ -815,7 +815,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .rec_mod_finance .company_sale_wrap .chart_wrap{display: flex;justify-content: space-between}
 .rec_mod_finance .company_sale_wrap .chart_wrap > div{width: calc(50% - 40px);}
 .rec_mod_finance .company_sale_wrap .white_box_sdw h3 {font-size: 2.4rem;font-weight: 400;margin-bottom: 2.0rem;}
-.rec_mod_finance.sty01 .barChart01 .bb-shape:last-child {fill: #ff2e69 !important}
+.rec_mod_finance.sty02 #graph_fiSales .bb-bar:last-child {fill: #ff2e69 !important}
 .rec_mod_finance.sty01 .area_graph .wrap_graph:last-child .inner_graph{background: #ff2e69}
 .rec_mod_finance .area_graph .wrap_graph:last-child .inner_graph .txt_value{color: #000;font-weight: bold}
 .rec_mod_finance.sty01 .chart_cont{border-top: 2px solid #000;padding-top: 2.0rem}
