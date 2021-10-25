@@ -696,7 +696,8 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_interview.sty02 .swiper-slide {height:calc(100% / 4)}
 
 /* 리뷰 */
-.mag_mod_review {border: 0;padding: 0}
+.mag_mod_review {border: 0;}
+.mag_mod_review.sty02{padding: 8.0rem 0}
 .mag_mod_review.sty02  h3{text-align: center;font-size: 4.0rem;}
 .mag_mod_review.sty02 .review_wrap{column-count: 3;-webkit-column-count: 3; -moz-column-count:3;column-gap: 30px;counter-reset:item-counter;border:none;}
 .mag_mod_review.sty02 .review_wrap  .item{margin-top: 40px;border-radius: 20px;padding: 4.0rem;box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);text-align: center;background: #fff;width: 100%;transform: translateZ(0);position: relative;break-inside:avoid;display: inline-block}
@@ -1811,6 +1812,10 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 .sns_mod_summary.sty01 .slogan span{font-weight: bold}
 .sns_mod_summary.sty01 .slogan .red{color: #f46c4d}
 .sns_mod_summary.sty01 .slogan .blue{color: #3872ba}
+.sns_mod_summary.sty02 .cnt-container{display: flex;flex-direction: row-reverse;justify-content: space-between}
+.sns_mod_summary.sty02 .slogan{font-size: 10rem;line-height: 1;font-weight: 100}
+
+
 /* 주요상품 */
 .sns_mod_product.sty01 {background: #81dbeb}
 .sns_mod_product.sty01 .object_section .img{background: url(../images/sns_st01_img02.png) no-repeat;width: 680px;height: 427px;display: block;}
@@ -1833,6 +1838,74 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 .sns_mod_interview.sty01 .interview_wrap .text_area dt{font-size: 2.4rem;font-weight: bold;position: relative;padding-left: 25px;}
 .sns_mod_interview.sty01 .interview_wrap .text_area dt:before{content: 'Q.';position: absolute;display: block;left: 0;top: 0}
 .sns_mod_interview.sty01 .interview_wrap .text_area dd{font-size: 2.0rem;}
+
+.sns_mod_finance.sty02  ul{display: flex;}
+.sns_mod_finance.sty02 ul > li{width: calc(25% - 22.5px);margin-right: 30px;text-align: center}
+.sns_mod_finance.sty02 ul li:last-child{margin-right: 0}
+.sns_mod_finance.sty02 ul.finance01 li{font-size: 2.5rem;}
+.sns_mod_finance.sty02 ul.finance01 li > div {font-size: 2.0rem}
+.sns_mod_finance.sty02 ul.finance02 li{border: 1px solid rgba(39, 55, 90, 0.5);padding: 2.0rem;display: flex;flex-direction: column-reverse;font-size: 2.4rem;}
+.sns_mod_finance.sty02 ul.finance02 li div{font-size: 4.2rem;font-weight: bold;margin-bottom: 2.0rem}
+.sns_mod_vision.sty02 .vision_wrap{display: flex;flex-wrap: wrap;justify-content: center;}
+.sns_mod_vision.sty02 .vision_wrap > div {width:400px;height: 400px;;margin-right: 60px;border-radius: 20px;background: #ddd;padding: 4.0rem;margin-bottom: 30px;text-align: center;display: flex;box-shadow: 
+10px 10px 15px 10px rgba(0, 0, 0, 0.1)}
+.sns_mod_vision.sty02 .vision_wrap > div > div{font-size: 2.2rem;margin-top: auto;word-break: keep-all}
+.sns_mod_vision.sty02 .vision_wrap > div:nth-child(2n){margin-right: 0;margin-top: 5.0rem;}
+.sns_mod_vision.sty02 .vision_wrap > div:nth-child(3),
+.sns_mod_vision.sty02 .vision_wrap > div:nth-child(4){margin-bottom: 0}
+.sns_mod_vision.sty02 .vision_wrap .vision:before{content: 'VISION';display: block;font-size: 4.0rem;font-weight: bold;margin-bottom: 1.0rem}
+.sns_mod_vision.sty02 .vision_wrap .mission:before{content: 'MISSION';display: block;font-size: 4.0rem;font-weight: bold;margin-bottom: 1.0rem}
+.sns_mod_vision.sty02 .vision_wrap .keyValue:before{content: '핵심가치';display: block;font-size: 4.0rem;font-weight: bold;margin-bottom: 1.0rem}
+.sns_mod_vision.sty02 .vision_wrap .keyTask:before{content: '기업전략과제';display: block;font-size: 4.0rem;font-weight: bold;margin-bottom: 1.0rem}
+
+/*주요사업*/
+.sns_mod_biz.sty02 .bizDiv{display: flex;margin-top: 4.0rem}
+.sns_mod_biz.sty02 .bizDiv > div{box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);margin-right: 30px;width: calc(33.333% - 15px);border-radius: 20px;padding: 4.0rem;text-align: center;display: flex;flex-direction: column;align-items: center}
+.sns_mod_biz.sty02 .bizDiv > div img{order: 3;margin-top:auto}
+.sns_mod_biz.sty02 .bizDiv > div:last-child{margin-right: 0}
+.sns_mod_biz.sty02 .bizDiv > div h4{font-size: 2.4rem;margin-bottom: 1.0rem}
+.sns_mod_biz.sty02 .bizDiv > div p{font-size: 1.8rem;margin-bottom: 4.0rem}
+
+/*조직문화,복리후생*/
+.sns_mod_culture.sty02 .culwel_wrap{display: flex;}
+.sns_mod_culture.sty02 .culwel_wrap > div{width: calc(50% - 20px);margin-right: 40px;border: 1px solid #dcdcdc;padding: 4.0rem 4.0rem 15rem 4.0rem;position: relative;margin-top: 6.0rem}
+.sns_mod_culture.sty02 .culwel_wrap > div .swiper{overflow: hidden}
+.sns_mod_culture.sty02 .culwel_wrap > div:last-child{margin-right: 0}
+.sns_mod_culture.sty02 .culwel_wrap .culture_wrap .tit:before{content:'Culture';display: block;font-size: 3.8rem;font-weight: bold;text-transform: uppercase;color: #000;margin-bottom: 1.0rem}
+.sns_mod_culture.sty02 .culwel_wrap .welfare_wrap .tit:before{content:'welfare';display: block;font-size: 3.8rem;font-weight: bold;text-transform: uppercase;color: #000;margin-bottom: 1.0rem}
+.sns_mod_culture.sty02 .culwel_wrap  .tit{font-size: 2.6rem;color: #4e5ac3;font-weight: bold;margin-bottom: .5rem}
+.sns_mod_culture.sty02 .culwel_wrap .desc{font-size: 2.2rem;font-weight: 200}
+.sns_mod_culture.sty02 .swiper-button-next, 
+.sns_mod_culture.sty02 .swiper-button-prev{background: #232323;width: 30px;height: 30px;}
+.sns_mod_culture.sty02 .swiper-button-next:after, 
+.sns_mod_culture.sty02 .swiper-button-prev:after{color: #fff;font-size: 15px}
+.sns_mod_culture.sty02 .swiper-button-next{right: 0;top: -20px}
+.sns_mod_culture.sty02 .swiper-button-prev{left: auto;right: 35px;top: -20px}
+
+/* 인터뷰 */
+.sns_mod_interview.sty02 .qa_ceo{display: flex;justify-content: space-between;margin-top: 4.0rem}
+.sns_mod_interview.sty02 .qa_ceo .ivCeoPhoto{width: 200px;}
+.sns_mod_interview.sty02 .qa_ceo .qa_warp{width: calc(100% - 300px);overflow: hidden;padding-bottom: 5.0rem;position: relative}
+.sns_mod_interview.sty02 .qa_ceo .qa_warp .ivCeo {height: 600px;}
+.sns_mod_interview.sty02 .qa_ceo .qa_warp .swiper-slide {height: calc(100%/3)}
+.sns_mod_interview.sty02 .qa_ceo  .ivCeoPhoto img{box-shadow: 10px 10px  0 0px #c6cee7}
+.sns_mod_interview.sty02 .qa_ceo .mem{margin-top: 2.0rem;text-align: center;font-size: 3.0rem;font-weight: 500}
+.sns_mod_interview.sty02 .qa_ceo .mem span{display: block;color: #505cb2;font-size: 1.8rem;}
+.sns_mod_interview.sty02 .qa_ceo .q{font-size: 2.3rem;position: relative;padding-left: 50px;margin-bottom: 2.0rem}
+.sns_mod_interview.sty02 .qa_ceo .q:before{content: 'Q';display: block;width: 40px;height: 40px;line-height: 40px;border-radius: 50%;border: 1px solid #999;text-align: center;font-size: 2.0rem;color: #555;position: absolute;left: 0;top: 0;}
+.sns_mod_interview.sty02 .qa_ceo .a{font-size: 1.8rem;padding-left: 50px;position: relative;}
+.sns_mod_interview.sty02 .qa_ceo .a:before{content: 'A';display: block;width: 40px;height: 40px;line-height: 40px;border-radius: 50%;background: #505cb2;text-align: center;font-size: 2.0rem;color: #fff;position: absolute;left: 0;top: 0;}
+.sns_mod_interview.sty02 .swiper-pagination-bullet{background: #afafaf;width: 15px;height: 15px;opacity: 1}
+.sns_mod_interview.sty02 .swiper-pagination-bullet-active{background: #505cb2;width: 40px;border-radius: 20px}
+
+/* 기업 리뷰 */
+.sns_mod_review.sty02 {padding: 8.0rem 0;background: #5864b6}
+.sns_mod_review.sty02 .review_wrap{display: flex;flex-wrap: wrap;}
+.sns_mod_review.sty02 .review_wrap > div{background: #fff;width: calc(33% - 20px);margin-right: 30px;margin-top: 30px;padding: 4.0rem;border-radius: 15px;}
+.sns_mod_review.sty02 .review_wrap > div .desc{text-align: center;font-size: 1.8rem;}
+.sns_mod_review.sty02 .review_wrap > div:nth-child(odd) .desc:before{content: '';display: block;background: url(../images/@ico_review_4398702100.png) no-repeat;width: 80px;height: 80px;margin: 0 auto 20px auto;}
+.sns_mod_review.sty02 .review_wrap > div:nth-child(even) .desc:before{content: '';display: block;background: url(../images/@ico_review02_4398702100.png) no-repeat;width: 80px;height: 80px;margin: 0 auto 20px auto;}
+.sns_mod_review.sty02 .review_wrap > div:nth-child(3n){margin-right: 0}
 
 /* ------------------------ 반응형 start ------------------------*/
 
@@ -1915,10 +1988,10 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
     .inf_mod_swot.sty04 .swot_wrap > div:nth-child(3),
     .inf_mod_swot.sty04 .swot_wrap > div:nth-child(4) {margin-bottom: 0;}
     .inf_mod_swot.sty04 .swot_wrap .tit{font-size: 2.2rem}    
-    .inf_mod_swot.sty04 .swot_wrap .swotS .tit:before{background-size: 70px;width: 70px;height: 90px}
-    .inf_mod_swot.sty04 .swot_wrap .swotW .tit:before{background-size: 70px;width: 70px;height: 90px}
-    .inf_mod_swot.sty04 .swot_wrap .swotO .tit:before{background-size: 70px;width: 70px;height: 90px}
-    .inf_mod_swot.sty04 .swot_wrap .swotT .tit:before{background-size: 70px;width: 70px;height: 90px}
+    .inf_mod_swot.sty04 .swot_wrap .swotS .tit:before{background-size: 70px !important;width: 70px;height: 90px}
+    .inf_mod_swot.sty04 .swot_wrap .swotW .tit:before{background-size: 70px !important;width: 70px;height: 90px}
+    .inf_mod_swot.sty04 .swot_wrap .swotO .tit:before{background-size: 70px !important;width: 70px;height: 90px}
+    .inf_mod_swot.sty04 .swot_wrap .swotT .tit:before{background-size: 70px !important;width: 70px;height: 90px}
 
 	.rec_mod_swot.sty04 .swot_wrap div.diagram_area{width: 150px;height: 150px;}
 	.rec_mod_swot.sty04 .swot_wrap .diagram_area strong{font-size: 4.0rem}
@@ -1982,7 +2055,25 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.mag_mod_interview.sty02 .q br{display: none;font-size: 2.0rem}
 	.mag_mod_interview.sty02 .a{width: 100%}
 	
+/* sns형 start*/
+	.sns_mod_summary.sty02 .slogan{font-size: 6.0rem}
+/*  재무정보*/
+	.sns_mod_finance.sty02 ul {flex-wrap: wrap}
+	.sns_mod_finance.sty02 ul > li{width: calc(50% - 15px);margin-bottom: 3.0rem;margin-right: 30px}	
+	.sns_mod_finance.sty02 ul > li:nth-child(2n){margin-right: 0}
+	.sns_mod_finance.sty02 ul > li:nth-child(3),
+	.sns_mod_finance.sty02 ul > li:nth-child(4){margin-bottom: 0}
 	
+/* 비전*/	
+	.sns_mod_vision.sty02 .vision_wrap > div{width: 350px;height: 350px; margin-right: 40px;margin-bottom: 20px}
+	.sns_mod_vision.sty02 .vision_wrap > div > div{font-size: 1.8rem}
+	.sns_mod_vision.sty02 .vision_wrap .vision:before,
+	.sns_mod_vision.sty02 .vision_wrap .mission:before,
+	.sns_mod_vision.sty02 .vision_wrap .keyValue:before,
+	.sns_mod_vision.sty02 .vision_wrap .keyTask:before{font-size: 3.0rem}
+	.sns_mod_biz.sty02 .bizDiv > div{padding: 3rem}
+	.sns_mod_interview.sty02 .qa_ceo .qa_warp .swiper-slide{height: calc(100%/2)}
+	.sns_mod_review.sty02 .review_wrap > div{padding: 3rem;margin-right: 20px;width: calc(33% - 13.333px);margin-right: 20px;margin-top: 20px}
 	
 }
 
@@ -2130,6 +2221,25 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	/* 기업리뷰 */
 	.mag_mod_review.sty02 .review_wrap{column-count:1;-webkit-column-count:1;-moz-column-count:1}
 	
+	/* sns형 */
+	.sns_mod_vision.sty02 .vision_wrap > div{width: calc(50% - 15px);margin-right: 30px;margin-bottom: 10px;height: 250px}
+	.sns_mod_biz.sty02 .bizDiv > div{width: calc(33.333% - 10px);margin-right: 15px}
+	.sns_mod_biz.sty02 .bizDiv > div img{width: 70px}
+	.sns_mod_interview.sty02 .qa_ceo{display: block}
+	.sns_mod_interview.sty02 .qa_ceo .ivCeoPhoto{margin: auto;width: 150px}
+	.sns_mod_interview.sty02 .qa_ceo .qa_warp{width: 100%;margin-top: 3.0rem}
+	.sns_mod_interview.sty02 .qa_ceo .qa_warp .ivCeo{height: 250px}
+	.sns_mod_interview.sty02 .qa_ceo .qa_warp .swiper-slide{height: 100%}
+	.sns_mod_interview.sty02 .qa_ceo .q:before,
+	.sns_mod_interview.sty02 .qa_ceo .a:before{width: 30px;height: 30px;line-height: 30px;font-size: 1.6rem}
+	.sns_mod_interview.sty02 .qa_ceo .q,
+	.sns_mod_interview.sty02 .qa_ceo .a{padding-left: 40px}
+	.sns_mod_review.sty02 .review_wrap > div{padding: 3rem;margin-right: 20px;width: calc(33% - 13.333px);margin-right: 20px}
+	.sns_mod_review.sty02 .review_wrap > div{width: calc(50% - 20px)}
+	.sns_mod_review.sty02 .review_wrap > div:nth-child(3n){margin-right: 20px}
+	.sns_mod_review.sty02 .review_wrap > div:nth-child(2n){margin-right: 0}
+	
+	
 }
 @media all and (max-width:640px){
 html{font-size: 8px}
@@ -2271,6 +2381,18 @@ html{font-size: 8px}
 	/*인터뷰*/
 	.mag_mod_interview.sty02 .tab_content{min-height: auto;padding-bottom: 3.0rem}
 	.mag_mod_interview.sty02 .swiper-slide{height: calc(100%/2)}
+	
+	.sns_mod_culture.sty02 .culwel_wrap{display: block;}
+	.sns_mod_culture.sty02 .culwel_wrap > div{width: 100%;margin-right: 0;}
+	
+	.sns_mod_biz.sty02 .bizDiv{display: block;}
+	.sns_mod_biz.sty02 .bizDiv > div {width: 100%;margin-right: 0;margin-bottom: 2.0rem;}
+	.sns_mod_biz.sty02 .bizDiv > div:last-child{margin-bottom: 0}
+	.sns_mod_culture.sty02 .culwel_wrap > div{padding: 2rem 2.0rem 15rem 2.0rem}
+	.sns_mod_culture.sty02 .swiper-button-prev{top: 40px;right: 55px}
+	.sns_mod_culture.sty02 .swiper-button-next{top: 40px;right: 20px}
+	.sns_mod_review.sty02 .review_wrap > div{width:100%;margin-right: 0}
+	.sns_mod_review.sty02 .review_wrap > div:nth-child(3n){margin-right: 0}
 
 }
 
@@ -2461,5 +2583,19 @@ html{font-size: 8px}
     .mag_mod_percent.sty02 > div .swiper-slide > div .value{font-style:2.8rem;}
     .mag_mod_percent.sty02 > div .swiper-slide > div .desc{margin-top:8px;font-size:1.4rem;}
     .mag_mod_percent.sty02 > div .swiper-pagination{margin-top:16px;}
+	
+	/* sns형 */
+	.sns_mod_summary.sty02 .cnt-container{flex-direction: column-reverse}
+	.sns_mod_summary.sty02 .cnt-container .imgCom{margin-top: 3.0rem}
+	/* 재무정보*/
+	.sns_mod_finance.sty02 ul > li{margin-right: 10px;width: calc(50% - 5px);margin-bottom: 10px}
+	.sns_mod_finance.sty02 ul.finance02 li{width: 100%;margin-right: 0}
+	.sns_mod_finance.sty02 ul.finance02 li:nth-child(3){margin-bottom: 10px}
+	
+	
+	/* sns형 */
+	.sns_mod_vision.sty02 .vision_wrap > div{width:200px;margin: 2.0rem auto !important}
+	.sns_mod_vision.sty02 .vision_wrap > div:nth-child(2n){margin-top: 0}
+	.sns_mod_vision.sty02 .vision_wrap > div:nth-child(3){margin-bottom: 3.0rem}
     
 }
