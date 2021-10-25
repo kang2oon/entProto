@@ -776,103 +776,6 @@ background: linear-gradient(313deg, rgba(78,90,195,1) 0%, rgba(136,95,225,1) 100
 			var fiProfit2 = $('.financeProfit span:nth-child(2)').text();
 			var fiProfit3 = $('.financeProfit span:nth-child(3)').text();
 
-			var chart1 = bb.generate({
-				bindto: "#graph_fiCapital",
-				data: {
-					type: "bar",
-					x: "x",
-					columns: [
-						["x", fiYear3, fiYear2, fiYear1],
-						["자본금", fiCapital3, fiCapital2, fiCapital1]
-					]
-				},
-				grid: {
-					x: {
-						show: true
-					},
-					y: {
-						show: true
-					}
-				},
-				bar: {
-					width: {
-						max: 60
-					}
-				},
-				color: {
-					자본금: "#033a71"
-				},
-				legend: {
-					show: false
-				}
-			});
-
-			var chart2 = bb.generate({
-				bindto: "#graph_fiSales",
-				data: {
-					type: "bar",
-					x: "x",
-					columns: [
-						["x", fiYear3, fiYear2, fiYear1],
-						["매출액", fiSales3, fiSales2, fiSales1]
-					]
-				},
-				grid: {
-					x: {
-						show: true
-					},
-					y: {
-						show: true
-					}
-				},
-				bar: {
-					width: {
-						max: 60
-					}
-				},
-				color: {
-					매출액: "#0054a6"
-				},
-				legend: {
-					show: false
-				}
-			});
-
-			var chart3 = bb.generate({
-				bindto: "#graph_fiProfit",
-				data: {
-					type: "bar",
-					x: "x",
-					columns: [
-						["x", fiYear3, fiYear2, fiYear1],
-						["당기순이익", fiProfit3, fiProfit2, fiProfit1]
-					]
-				},
-				grid: {
-					x: {
-						show: true
-					},
-					y: {
-						show: true
-					}
-				},
-				bar: {
-					width: {
-						max: 60
-					}
-				},
-				color: {
-					당기순이익: "#0054a6"
-				},
-				legend: {
-					show: false
-				}
-			});
-
-			setTimeout(function() {
-				chart1.resize();
-			}, 100);
-
 			var welfareSlider = new Swiper(".dvWelfare", {
 				slidesPerView: 1,
 				slidesPerColumn: 1,
@@ -938,20 +841,6 @@ background: linear-gradient(313deg, rgba(78,90,195,1) 0%, rgba(136,95,225,1) 100
 			});
 			
 			
-
-			$('.tab > div').click(function() {
-				var item = $(this).attr('data-tab');
-				$('.tab > div').removeClass('on');
-				$(this).addClass('on');
-				$('.conts > div').hide();
-				$('.conts > .' + item).show();
-
-				setTimeout(function() {
-					chart1.resize();
-					chart2.resize();
-					chart3.resize();
-				}, 100);
-			});
 
 			// 주소-좌표 변환 객체를 생성합니다
 			var geocoder = new kakao.maps.services.Geocoder();
