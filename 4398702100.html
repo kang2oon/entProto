@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="author" content="kang2oon">
+	<title class="comName">기업명</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
+	<link href="/css/pt-common.css" rel="stylesheet">
+
+    <style>
+        /* 신규타입 상단처리 */
+        #main_banner, .company_info_outer, .wantCompany_ct_box{display:none;}
+        .wantCompany_body{padding:0;}
+        #companyInfoWrap{padding:0 0 40px;}
+		.sns_mod_summary.sty02{background: rgb(78,90,195);
+background: linear-gradient(313deg, rgba(78,90,195,1) 0%, rgba(136,95,225,1) 100%);padding: 8.0rem 0;position: relative;}
+		.sns_mod_summary.sty02:after{content: '';display: block;background: url(/images/@img03_summary_4398702100.png) no-repeat;width: 360px;height: 283px;position: absolute;bottom: -50px;left: 500px}
+		.sns_mod_summary.sty02 .slogan{background: rgb(202,253,191);background: linear-gradient(0deg, rgba(202,253,191,1) 0%, rgba(254,178,190,1) 100%);-webkit-background-clip: text; -webkit-text-fill-color: transparent;position: relative}
+		.sns_mod_summary.sty02 .slogan:after{content: '';display: block;background: url(/images/@img02_summary_4398702100.png) no-repeat;width: 91px;height: 94px;position: absolute;right: -50px;top: 50%;transform: translateY(-50%)}
+		
+		.sns_mod_finance h3,
+		.product_wrap h3,
+		.com_mod_add.talentPerson h3,
+		.inf_mod_swot h3,
+		.sns_mod_culture h3,
+		.sns_mod_interview h3,
+		.sns_mod_review h3{font-size: 4.0rem;text-align: center;text-transform: uppercase;letter-spacing: 2px;margin-bottom: 4.0rem;}
+		.sns_mod_finance h3 span,
+		.product_wrap h3 span,
+		.com_mod_add.talentPerson h3 span,
+		.inf_mod_swot h3 span,
+		.sns_mod_culture h3 span,
+		.sns_mod_interview h3 span,
+		.sns_mod_review h3 span{display: block;font-size: 3.6rem;color: #4e5ac3;margin-bottom: 2.0rem}
+		/* 재무정보 */
+		.sns_mod_finance.sty02 h3{margin: 8.0rem 0}
+		.sns_mod_finance.sty02 .finance_bg{background: url(/images/@bg_finance_4398702100.png) no-repeat;background-size: cover;padding: 8.0rem 0}
+		.sns_mod_finance.sty02 .finance01 li{color: #5a6af4}
+		.sns_mod_finance.sty02 .finance01 li div{color: #fff;}
+		.sns_mod_finance.sty02 .ico{margin: 0 auto 2.0rem auto;}
+		.sns_mod_finance.sty02 .finance01 li:nth-child(1) .ico{background: url(/images/@ico_finance01_4398702100.png) no-repeat center;width: 111px;height: 101px;}
+		.sns_mod_finance.sty02 .finance01 li:nth-child(2) .ico{background: url(/images/@ico_finance02_4398702100.png) no-repeat center;width: 109px;height: 101px;}
+		.sns_mod_finance.sty02 .finance01 li:nth-child(3) .ico{background: url(/images/@ico_finance03_4398702100.png) no-repeat center;width: 111px;height: 101px;}
+		.sns_mod_finance.sty02 .finance01 li:nth-child(4) .ico{background: url(/images/@ico_finance04_4398702100.png) no-repeat center;width: 99px;height: 101px;}
+		.sns_mod_finance.sty02 .finance02 {margin: 8.0rem 0}
+        .sns_mod_finance.sty02 .finance02 li:nth-child(1) .ico{background: url(/images/@ico_finance05_4398702100.png) no-repeat center;width: 122px;height: 109px;}
+		.sns_mod_finance.sty02 .finance02 li:nth-child(2) .ico{background: url(/images/@ico_finance06_4398702100.png) no-repeat center;width: 122px;height: 109px;}
+		.sns_mod_finance.sty02 .finance02 li:nth-child(3) .ico{background: url(/images/@ico_finance07_4398702100.png) no-repeat center;width: 122px;height: 109px;}
+		.sns_mod_finance.sty02 .finance02 li:nth-child(4) .ico{background: url(/images/@ico_finance08_4398702100.png) no-repeat center;width: 122px;height: 109px;}
+		
+		/*비젼*/
+		.sns_mod_vision.sty02{background: #f5f5f5;padding: 8.0rem 0;position: relative}
+		.sns_mod_vision.sty02:before{content: '';display: block;background: url(/images/@img_vision01_4398702100.png) no-repeat;width: 580px;height: 354px;position: absolute;left: 0;top:0px;left: 130px}
+		.sns_mod_vision.sty02:after{content: '';display: block;background: url(/images/@img_vision02_4398702100.png) no-repeat;width: 223px;height: 386px;position: absolute;bottom:-15px;right: 250px;z-index: 5}
+		.sns_mod_vision.sty02 .vision_wrap > div:nth-child(1){background:url(/images/@bg_vision01_4398702100.png) no-repeat center;background-size: cover}
+		.sns_mod_vision.sty02 .vision_wrap > div:nth-child(2){background:url(/images/@bg_vision02_4398702100.png) no-repeat center;background-size: cover}
+		.sns_mod_vision.sty02 .vision_wrap > div:nth-child(3){background:url(/images/@bg_vision03_4398702100.png) no-repeat center;background-size: cover}
+		.sns_mod_vision.sty02 .vision_wrap > div:nth-child(4){background:url(/images/@bg_vision04_4398702100.png) no-repeat center;background-size: cover;color: #fff}
+		
+		/*인증현황*/
+		.sns_mod_add.cert{background: url(/images/@bg_cert_4398702100.png) no-repeat;background-size: cover;padding: 8.0rem 0}
+		.sns_mod_add.cert .cnt-container{display: flex;align-items: center;}
+		.sns_mod_add.cert .cnt-container h3{color: #fff;font-weight: 100;line-height: 1.1;width: 300px;text-align: left;font-size: 4.0rem}
+		.sns_mod_add.cert .cnt-container h3 strong{display: block;}
+		.sns_mod_add.cert .cnt-container .cert_area{display: flex;width: calc(100% - 300px)}
+		.sns_mod_add.cert .cnt-container .cert_area > div{background: #fff;padding: 4.0rem 3.0rem;width: calc(25% - 11.25px);margin-right: 15px;font-size: 2.0rem;text-align: center;}
+		.sns_mod_add.cert .cnt-container .cert_area > div:last-child{margin-right: 0}
+		.sns_mod_add.cert .cnt-container .cert_area .date{font-size: 3.0rem;font-weight: bold}
+		.sns_mod_add.cert .cnt-container .cert_area .desc{font-size: 2.0rem}
+		
+		/*product*/
+		.product_wrap{padding: 8.0rem 0;background: url(/images/@bg_product_4398702100.png) no-repeat top center #cdd2ff;}
+		.product_wrap > h3:after{content: '';display: block;background: url(/images/@bg_product02_4398702100.png) no-repeat;width: 555px;height: 364px;margin: 5.0rem auto 0 auto;}
+		.product_wrap .white_box{background: #fff;padding: 6.0rem}
+		
+		.sns_mod_add.concept{text-align: center}
+		.sns_mod_add.concept h4{font-size: 5.0rem;font-weight: 100;margin-bottom: 5.0rem;}
+		.sns_mod_add.concept dt{font-size: 3.5rem;margin: 1.5rem;font-weight: bold;}
+		.sns_mod_add.concept dd{font-size: 2.0rem}
+		.sns_mod_add.concept .concept_wrap{display: flex;justify-content: space-between;margin-top: 4.0rem}
+		.sns_mod_add.concept .concept_wrap > div{width: 300px;height: 300px;border-radius: 50%;background: #4e5ac3;text-align: center;position: relative;padding: 40px;color: #fff}
+		.sns_mod_add.concept .concept_wrap > div:after{content: '';display: block;width: 200px;height: 1px;position: absolute;right: -200px;top: 50%;background: #4e5ac3;}
+		.sns_mod_add.concept .concept_wrap > div:last-child:after{display: none}
+		.sns_mod_add.concept .concept_wrap > div .tit{font-size: 2.2rem;font-weight: bold;margin: 1.0rem 0;}
+		.sns_mod_add.concept .concept_wrap > div .ico{margin: auto}
+		.sns_mod_add.concept .concept_wrap > div:nth-child(1) .ico{background: url(/images/@ico_concept01_4398702100.png) no-repeat center;width: 115px;height: 88px;}
+		.sns_mod_add.concept .concept_wrap > div:nth-child(2) .ico{background: url(/images/@ico_concept02_4398702100.png) no-repeat center;width: 109px;height: 88px;}
+		.sns_mod_add.concept .concept_wrap > div:nth-child(3) .ico{background: url(/images/@ico_concept03_4398702100.png) no-repeat center;width: 107px;height: 88px;}
+		
+		/* 인재 */
+		.com_mod_add.talentPerson{background: #9edbe5;padding: 8.0rem 0}
+		.com_mod_add.talentPerson .tit{text-align: center;font-size: 4.0rem;font-weight: 100;line-height: 1.1;margin: 2.0rem 0}
+		.com_mod_add.talentPerson img{display: block;margin: 5.0rem auto 0 auto}
+		
+		/*SWOT*/
+		.inf_mod_swot {margin: 8.0rem 0}
+		.inf_mod_swot.sty04 .swot_wrap .swotS{border: 2px solid #5fadc9}
+		.inf_mod_swot.sty04 .swot_wrap .swotS:before{color: #5fadc9}
+		.inf_mod_swot.sty04 .swot_wrap .swotS .tit{color: #5fadc9}
+		.inf_mod_swot.sty04 .swot_wrap .swotS .tit:after{background: #5fadc9}
+		.inf_mod_swot.sty04 .swot_wrap .swotS .tit:before{background: url(/images/@ico_swot01_4398702100.png) no-repeat center}
+		.inf_mod_swot.sty04 .swot_wrap .swotW{border: 2px solid #708de6}
+		.inf_mod_swot.sty04 .swot_wrap .swotW:before{color: #708de6}
+		.inf_mod_swot.sty04 .swot_wrap .swotW .tit{color: #708de6}
+		.inf_mod_swot.sty04 .swot_wrap .swotW .tit:after{background: #708de6}
+		.inf_mod_swot.sty04 .swot_wrap .swotW .tit:before{background: url(/images/@ico_swot02_4398702100.png) no-repeat center}
+		.inf_mod_swot.sty04 .swot_wrap .swotO{border: 2px solid #708de6}
+		.inf_mod_swot.sty04 .swot_wrap .swotO:before{color: #708de6}
+		.inf_mod_swot.sty04 .swot_wrap .swotO .tit{color: #708de6}
+		.inf_mod_swot.sty04 .swot_wrap .swotO .tit:after{background: #708de6}
+		.inf_mod_swot.sty04 .swot_wrap .swotO .tit:before{background: url(/images/@ico_swot03_4398702100.png) no-repeat center}
+		.inf_mod_swot.sty04 .swot_wrap .swotT{border: 2px solid #725cdf}
+		.inf_mod_swot.sty04 .swot_wrap .swotT:before{color: #725cdf}
+		.inf_mod_swot.sty04 .swot_wrap .swotT .tit{color: #725cdf}
+		.inf_mod_swot.sty04 .swot_wrap .swotT .tit:after{background: #725cdf}
+		.inf_mod_swot.sty04 .swot_wrap .swotT .tit:before{background: url(/images/@ico_swot04_4398702100.png) no-repeat center}
+		
+		/*조직문화,복리후생*/
+		.sns_mod_culture.sty02{margin: 8.0rem 0}
+		.sns_mod_culture.sty02 .culwel_wrap .culture_wrap{background: url(/images/@ico_welfare01_4398702100.png) no-repeat right 20px bottom 20px}
+		.sns_mod_culture.sty02 .culwel_wrap .welfare_wrap{background: url(/images/@ico_welfare02_4398702100.png) no-repeat right 20px bottom 20px}
+		
+		/*인터뷰*/
+		.sns_mod_interview.sty02{padding: 8.0rem 0;background: #eef4f9}
+		
+		/* 리뷰 */
+		.sns_mod_review h3{color: #fff}
+		.sns_mod_review h3 span{color: #a1aaf8}
+		
+		@media all and (max-width:1919px){
+			.sns_mod_vision.sty02:before,
+			.sns_mod_vision.sty02:after{display: none}
+		}
+		
+		@media all and (max-width:1260px){
+			.sns_mod_add.cert .cnt-container{display: block;}
+			.sns_mod_add.cert .cnt-container h3{margin-bottom: 4.0rem}
+			.sns_mod_add.cert .cnt-container .cert_area{width: 100%}
+			.product_wrap .white_box{padding: 4.0rem}
+		}
+		@media all and (max-width:1024px){
+			.sns_mod_summary.sty02 .imgCom{max-width: 400px}
+			.sns_mod_summary.sty02 .slogan:after{background-size: 50px;width: 50px;height: 53px;}
+			.sns_mod_summary.sty02:after{background-size: 200px;width: 200px;height: 163px;left: 20px}
+			
+			
+			.sns_mod_add.cert .cnt-container .cert_area .date{font-size: 2.4rem}
+			.sns_mod_add.cert .cnt-container .cert_area .desc{font-size: 1.8rem;word-break: keep-all}
+			.sns_mod_add.cert .cnt-container .cert_area .desc br{display: none}
+			
+			.sns_mod_add.concept .concept_wrap{display: block;}
+			.sns_mod_add.concept .concept_wrap > div{margin: 5.0rem auto}
+			.sns_mod_add.concept .concept_wrap > div:after{width: 1px;height: 5.0rem;right: 50%;transform: translateX(50%);top: auto;bottom: -5.0rem}
+			
+		}
+		@media all and (max-width:768px){
+			.product_wrap .white_box{padding: 2rem}
+			.sns_mod_add.concept img{width: 150px}
+			.sns_mod_add.concept h4{font-size: 3.2rem;margin-bottom: 3rem}
+			.sns_mod_add.concept dt{font-size: 2.6rem}
+			.sns_mod_add.concept dd{font-size: 1.8rem}
+			.sns_mod_add.concept .concept_wrap > div{width: 250px;height: 250px}
+			.sns_mod_add.concept .concept_wrap > div:nth-child(1) .ico{background-size: 80px;width: 80px;height: 56px}
+			.sns_mod_add.concept .concept_wrap > div:nth-child(2) .ico{background-size: 80px;width: 80px;height: 56px}
+			.sns_mod_add.concept .concept_wrap > div:nth-child(3) .ico{background-size: 80px;width: 80px;height: 56px}
+			.com_mod_add.talentPerson .tit{font-size: 2.6rem}
+			
+			.sns_mod_finance h3,
+			.product_wrap h3,
+			.com_mod_add.talentPerson h3,
+			.inf_mod_swot h3,
+			.sns_mod_culture h3,
+			.sns_mod_interview h3,
+			.sns_mod_review h3,
+			.sns_mod_add.cert .cnt-container h3{font-size: 3.6rem;}
+			.sns_mod_finance h3 span,
+			.product_wrap h3 span,
+			.com_mod_add.talentPerson h3 span,
+			.inf_mod_swot h3 span,
+			.sns_mod_culture h3 span,
+			.sns_mod_interview h3 span,
+			.sns_mod_review h3 span{font-size: 3.0rem;}
+		}
+		@media all and (max-width:640px){
+			.sns_mod_finance.sty02 .finance01 li:nth-child(1) .ico{background-size: 60px;width: 60px;height: 76px}
+			.sns_mod_finance.sty02 .finance01 li:nth-child(2) .ico{background-size: 60px;width: 60px;height: 60px}
+			.sns_mod_finance.sty02 .finance01 li:nth-child(3) .ico{background-size: 60px;width: 60px;height: 60px}
+			.sns_mod_finance.sty02 .finance01 li:nth-child(4) .ico{background-size: 60px;width: 60px;height: 60px}
+			.sns_mod_finance.sty02 ul.finance01 li,
+			.sns_mod_finance.sty02 ul.finance02 li{font-size: 2.0rem}
+			.sns_mod_finance.sty02 ul.finance02 li div{font-size: 3.0rem}
+			.sns_mod_finance.sty02 .finance02 li:nth-child(1) .ico{background-size: 60px;width: 60px;height: 52px}
+			.sns_mod_finance.sty02 .finance02 li:nth-child(2) .ico{background-size: 60px;width: 60px;height: 52px}
+			.sns_mod_finance.sty02 .finance02 li:nth-child(3) .ico{background-size: 60px;width: 60px;height: 52px}
+			.sns_mod_finance.sty02 .finance02 li:nth-child(4) .ico{background-size: 60px;width: 60px;height: 52px}
+			.sns_mod_add.cert .cnt-container .cert_area{flex-wrap: wrap}
+			.sns_mod_add.cert .cnt-container .cert_area > div{width: calc(50% - 10px);margin-right: 20px;margin-bottom: 20px;padding: 3.0rem 2.0rem}
+			.sns_mod_add.cert .cnt-container .cert_area > div:nth-child(3),
+			.sns_mod_add.cert .cnt-container .cert_area > div:nth-child(4){margin-bottom: 0}
+			.sns_mod_add.cert .cnt-container .cert_area > div:nth-child(2n){margin-right: 0}
+			.product_wrap > h3:after{background-size: 300px;width: 300px;height: 196px}
+			.sns_mod_culture.sty02 .culwel_wrap .culture_wrap{background-size: 80px}
+			.sns_mod_culture.sty02 .culwel_wrap .welfare_wrap{background-size: 80px}
+			.sns_mod_finance h3,
+			.product_wrap h3,
+			.com_mod_add.talentPerson h3,
+			.inf_mod_swot h3,
+			.sns_mod_culture h3,
+			.sns_mod_interview h3,
+			.sns_mod_review h3,
+			.sns_mod_add.cert .cnt-container h3{font-size: 3.0rem;}
+			.sns_mod_finance h3 span,
+			.product_wrap h3 span,
+			.com_mod_add.talentPerson h3 span,
+			.inf_mod_swot h3 span,
+			.sns_mod_culture h3 span,
+			.sns_mod_interview h3 span,
+			.sns_mod_review h3 span{display: block;font-size: 2.6rem;color: #4e5ac3;margin-bottom: 2.0rem}
+		
+		@media all and (max-width:480px){
+		.sns_mod_summary.sty02 .slogan:after{right: auto;right: 0;}
+			.sns_mod_summary.sty02:after{display: none}
+			
+		}
+		
+    </style>
+</head>
+
+<body>
+	<div class="module-wrap com_mod_header sty02">
+		<div class="cnt-container header clearfix">
+			<div class="biz_cate cate01 green">
+				<i></i>
+				Consulting
+			</div>
+			<div class="logo imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
+			<div class="info fc_000">
+				<dl class="clearfix">
+					<dt>업종</dt>
+					<dd class="incCate">업종</dd>
+					<dt>대표자</dt>
+					<dd class="ceo">대표자</dd>
+					<dt>기업형태</dt>
+					<dd class="comForm">기업형태</dd>
+				</dl>
+				<div class="action fc_000 clearfix">
+					<a href="javascript:void(0);" class="on">관심기업 등록<i>♥</i></a>
+					<a href="javascript:void(0);">공고 바로가기<i>→</i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="module-wrap com_mod_anchor sty02">
+		<div class="cnt-container fc_fff">
+			<ul>
+				<li><a href="javascript:void(0);" class="active">기업개요</a></li>
+				<li><a href="javascript:void(0);">현직자 인터뷰</a></li>
+				<li><a href="javascript:void(0);">채용공고</a></li>
+				<li> <a href="javascript:void(0);">기업 뉴스</a></li>
+			</ul>
+			<div class="siteGo">사이트</div>
+		</div>
+	</div>
+
+	<div class="module-wrap sns_mod_summary sty02">
+		<div class="cnt-container">
+			<div class="imgCom"></div>
+			<div>
+				<div class="slogan">비젼</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="module-wrap sns_mod_finance sty02">
+		<div class="cnt-container">
+			<h3><span>01</span>company summary</h3>
+		</div>
+		<div class="finance_bg">
+			<div class="cnt-container">
+				<ul class="finance01">
+					<li>
+						<div class="ico"></div>
+						설립일
+						<div class="cnt"><span class="">-</span></div>
+					</li>
+					<li>
+						<div class="ico"></div>
+						매출액(백만원)
+						<div class="cnt"><span class="fiSales">-</span></div>
+					</li>
+					<li>
+						<div class="ico"></div>
+						사원수
+						<div class="cnt"><span class="fiProfit">-</span></div>
+					</li>
+					<li>
+						<div class="ico"></div>
+						자본금(백만원)
+						<div class="cnt"><span class="fiCapital">-</span></div>
+					</li>
+				</ul>
+
+
+			</div>
+		</div>
+		<div class="cnt-container">
+			<ul class="finance02">
+				<li>
+					<div class="ico"></div>
+					<div class="cnt"><span class="fiPosition">-</span></div>
+					동종업종내 위치
+				</li>
+				<li>
+					<div class="ico"></div>
+					<div class="cnt"><span class="fiCapital">-</span></div>
+					자본금(백만원)
+				</li>
+				<li>
+					<div class="ico"></div>
+					<div class="cnt"><span class="fiProfit">-</span></div>
+					당기순이익(백만원)
+				</li>
+				<li>
+					<div class="ico"></div>
+					<div class="cnt"><span class="fiSales">-</span></div>
+					매출액(백만원)
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="module-wrap sns_mod_vision sty02">
+		<div class="cnt-container">
+			<div class="vision_wrap">
+				<div>
+					<div class="vision">비젼</div>
+				</div>
+				<div>
+					<div class="mission">미션</div>
+				</div>
+				<div>
+					<div class="keyValue">핵심가치</div>
+				</div>
+				<div>
+					<div class="keyTask">기업전략과제</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="module-wrap sns_mod_add cert">
+		<div class="cnt-container">
+			<h3>
+				엔터즈컴퍼니
+				<strong>기업인증현황</strong>
+			</h3>
+			<div class="cert_area">
+				<div>
+					<p class="date">2021. 09.</p>
+					<p class="desc">벤처기업 인증<br />
+(혁신성장유형)</p>
+				</div>
+				<div>
+					<p class="date">2021. 09.</p>
+					<p class="desc">성과공유기업<br>
+인증</p>
+				</div>
+				<div>
+					<p class="date">2021. 08.</p>
+					<p class="desc">기업부설연구소<br>
+설립</p>
+				</div>
+				<div>
+					<p class="date">2021. 06.</p>
+					<p class="desc">기술평가 우수기업
+선정</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="product_wrap">
+		<h3><span>02</span>Product</h3>
+		<div class="cnt-container">
+			<div class="white_box">
+				<div class="module-wrap sns_mod_add concept">
+					<h4>OUR CONCEPT</h4>
+					<img src="/images/@product_logo_4398702100.png" alt="앤터즈컴퍼니">
+					<dt>마케팅 콘셉트 설명</dt>
+					<dd>엔터즈컴퍼니는 재밌고 트렌디하고 감각적인 마케팅 방식으로 차별화된 소구포인트를 확립해<br />
+						체계적인 광고 전략을 구축합니다.</dd>
+					<div class="concept_wrap">
+						<div>
+							<div class="ico"></div>
+							<div class="tit">온라인 마케팅 시스템</div>
+							<div class="desc">언론 홍보, 바이럴 홍보, 블로그 및
+								SNS 홍보 등 차별적인 광고전략으로
+								온라인 마케팅 구축</div>
+						</div>
+						<div>
+							<div class="ico"></div>
+							<div class="tit">영상제작</div>
+							<div class="desc">바이럴 영상, CF, 영화 등 자체 제작
+								영상으로 비용 절감</div>
+						</div>
+						<div>
+							<div class="ico"></div>
+							<div class="tit">풍부한 경험</div>
+							<div class="desc">광고 마케팅, 기획 마케팅,
+								바이럴 마케팅을 비롯한 다양한
+								채널을 활용한 홍보 방식을 보유</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="module-wrap sns_mod_biz sty02 mgtop_80">
+					<h3>주요사업</h3>
+					<div class="bizDiv">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="module-wrap com_mod_add talentPerson">
+		<div class="cnt-container">
+			<h3><span>03</span>Employment</h3>
+			<div class="tit">엔터즈컴퍼니는<br />
+				이런 인재와 발전하고 싶어요.</div>
+			<img src="/images/@bg_person_4398702100.png" alt="">
+		</div>
+	</div>
+
+
+	<!-- 인포그래픽형 swot 분석 style04-->
+	<div class="module-wrap inf_mod_swot sty04">
+		<div class="cnt-container">
+			<h3><span>04</span>SWOT</h3>
+			<div class="swot_wrap">
+				<div class="swotS">
+					<div class="tit">Strengths</div>
+					<div class="desc">
+						Strengths
+					</div>
+				</div>
+				<div class="swotW">
+					<div class="tit">weakenesses</div>
+					<div class="desc">
+						weakenesses
+					</div>
+				</div>
+				<div class="swotO">
+					<div class="tit">opportunities</div>
+					<div class="desc">
+						opportunities
+					</div>
+				</div>
+				<div class="swotT">
+					<div class="tit">threats</div>
+					<div class="desc">
+						threats
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 인포그래픽형 swot 분석 style04-->
+
+
+	<div class="module-wrap sns_mod_culture sty02">
+		<div class="cnt-container">
+			<h3><span>05</span>Culture&amp;Welfare</h3>
+			<div class="culwel_wrap">
+					<div class="culture_wrap">
+						<div class="swiper dvCulture">
+							조직문화
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+					<div class="welfare_wrap">
+						<div class="swiper dvWelfare">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="tit">자유로운 출퇴근</div>
+								<div class="desc">내가 출근하고 싶을때 출근해 8시간 업무 진행, 자율성 완전 부여된 출퇴근 제도</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="tit">간식 완전 무제한 제공</div>
+								<div class="desc">간식, 음료 무제한 제공으로 일하면서 지치지 않게!</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="tit">눈치 안보는 연차 사용</div>
+								<div class="desc">급한일은 언제나 생기기 마련이죠. 연차 사용에 전혀 눈치 주지 않는 회사 분위기!</div>
+							</div>
+						</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="module-wrap sns_mod_interview sty02">
+			<h3><span>06</span>Interview</h3>
+		<div class="cnt-container">
+			<div class="iv_wrap qa_ceo">
+			<div class="photo">
+				<div class="ivCeoPhoto">대표이사 사진</div>
+				 <div class="mem">
+				 	<span>CEO</span>이사야
+				 </div>
+				</div>
+				 <div class="qa_warp">
+					 <div class="swiper ivCeo">대표이사 인터뷰</div>
+                </div>
+			</div>
+		</div>
+	</div>
+	
+		<!-- 매거진형 현직자 인터뷰 style02-->
+	<div class="module-wrap sns_mod_review sty02">
+		<div class="cnt-container">
+		<h3><span>07</span>Review</h3>
+			<div class="review_wrap">
+				<div class="item">
+					<p class="desc">연차가 쌓일수록 다른 사람 기분이나
+						입장 신경 안쓰고 눈치 볼 필요없이
+						오래 다닌 사람들끼리 친목도모하면서
+						회사생활 즐겁게 할 수 있음
+
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">연차가 쌓일수록 다른 사람 기분이나
+						입장 신경 안쓰고 눈치 볼 필요없이
+						오래 다닌 사람들끼리 친목도모하면서
+						회사생활 즐겁게 할 수 있음
+
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">연 2회 성과급 제도
+						영업이익 % 인센티브 지급
+						야근수당, 주휴수당 지급
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">연 2회 성과급 제도
+						영업이익 % 인센티브 지급
+						야근수당, 주휴수당 지급
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">탄력근무제 시행
+						자유로운 월차사용<br />
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //매거진형 현직자 인터뷰 style02-->
+
+
+	<div class="module-wrap com_mod_recruit sty01">
+		<div class="bg_bot"></div>
+		<div class="cnt-container">
+			<h3>채용공고</h3>
+			<table class="tb_recruit" summary="채용공고">
+				<thead>
+					<tr>
+						<th>접수기간</th>
+						<th>채용제목</th>
+						<th>고용형태</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2021.05.31 까지</td>
+						<td>풀스택 개발자 채용/경력채용/급여250만원</td>
+						<td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+					</tr>
+					<tr>
+						<td>상시채용</td>
+						<td>생산직 지원 채용/경력 무관/급여220만원</td>
+						<td>계약직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+					</tr>
+					<tr>
+						<td>상시채용</td>
+						<td>경영지원팀 직원 채용/경력 무관/급여220만원</td>
+						<td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="box_recruit">
+				<h4>경기도일자리재단 신입 직원 채용<span class="period">상시채용</span></h4>
+				<hr />
+				<div class="detail_wrap">
+					<div>
+						<h5>지원자격</h5>
+						<dl class="clearfix">
+							<dt>경력</dt>
+							<dd>경력무관</dd>
+							<dt>학력</dt>
+							<dd>고졸이상</dd>
+							<dt>우대</dt>
+							<dd>인근거주자, 1종 보통운전면허, 회계실무자격증 FAT1급 이상</dd>
+						</dl>
+					</div>
+					<div>
+						<h5>근무조건</h5>
+						<dl class="clearfix">
+							<dt>고용형태</dt>
+							<dd>정규직</dd>
+							<dt>급여</dt>
+							<dd>220만원 이상</dd>
+							<dt>근무시간</dt>
+							<dd>주5일(월~금) 08:30~17:30</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="module-wrap com_mod_news sty01">
+		<div class="cnt-container">
+			<div class="news_row">
+				<a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
+				<div class="desc">
+					경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
+					'2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
+					친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+				</div>
+				<div class="reg_date">2021.05.15</div>
+			</div>
+			<div class="news_row">
+				<a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
+				<div class="desc">
+					경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
+					'2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
+					친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+				</div>
+				<div class="reg_date">2021.05.15</div>
+			</div>
+			<div class="paging_wrap">
+				<a href="javascript:void(0);" class="prev disable">이전</a>
+				<a href="javascript:void(0);" class="current">1</a>
+				<a href="javascript:void(0);">2</a>
+				<a href="javascript:void(0);">3</a>
+				<a href="javascript:void(0);">4</a>
+				<a href="javascript:void(0);">5</a>
+				<a href="javascript:void(0);" class="next">다음</a>
+			</div>
+		</div>
+	</div>
+	<div class="module-wrap com_mod_map">
+		<div id="map"></div>
+		<div class="map_info_wrap">
+			<div class="com_info">
+				<div class="comName">기업명</div>
+				<a href="javascript:void(0);" target="_blank" class="find_road">길 찾기</a>
+				<p class="comAddress">주소</p>
+				<p class="tel">전화번호</p>
+			</div>
+			<div class="around_wrap">
+				<ul id="category">
+					<li id="MT1" data-order="0">
+						<span class="category_bg mt1"></span>
+						대형마트
+					</li>
+					<li id="CS2" data-order="1">
+						<span class="category_bg cs2"></span>
+						편의점
+					</li>
+					<li id="AC5" data-order="2">
+						<span class="category_bg ac5"></span>
+						학원
+					</li>
+					<li id="PK6" data-order="3">
+						<span class="category_bg pk6"></span>
+						주차장
+					</li>
+					<li id="OL7" data-order="4">
+						<span class="category_bg ol7"></span>
+						주유소
+					</li>
+					<li id="SW8" data-order="5">
+						<span class="category_bg sw8"></span>
+						지하철
+					</li>
+					<li id="BK9" data-order="6">
+						<span class="category_bg bk9"></span>
+						은행
+					</li>
+					<li id="CT1" data-order="7">
+						<span class="category_bg ct1"></span>
+						문화시설
+					</li>
+					<li id="AT4" data-order="8">
+						<span class="category_bg at4"></span>
+						관광명소
+					</li>
+					<li id="AD5" data-order="9">
+						<span class="category_bg ad5"></span>
+						숙박
+					</li>
+					<li id="FD6" data-order="10">
+						<span class="category_bg fd6"></span>
+						음식점
+					</li>
+					<li id="CE7" data-order="11">
+						<span class="category_bg ce7"></span>
+						카페
+					</li>
+					<li id="HP8" data-order="12">
+						<span class="category_bg hp8"></span>
+						병원
+					</li>
+					<li id="PM9" data-order="14">
+						<span class="category_bg pm9"></span>
+						약국
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@5.4.5/js/swiper.min.js"></script>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script>
+	<script src="/module/jsontohtml.js"></script>
+	<script src="/module/map.js"></script>
+	<script src="/js/jPages.min.js"></script>
+	<script src="/js/pt-common.js"></script>
+	<script>
+		xmlhttp.open("GET", "/module/4398702100.json");
+		xmlhttp.onloadend = function() {
+			var comName = $('.map_info_wrap .comName').text();
+			var comAddress = $('.comAddress').text();
+			var fiYear1 = $('.financeYear span:nth-child(1)').text();
+			var fiYear2 = $('.financeYear span:nth-child(2)').text();
+			var fiYear3 = $('.financeYear span:nth-child(3)').text();
+			var fiCapital1 = $('.financeCapital span:nth-child(1)').text();
+			var fiCapital2 = $('.financeCapital span:nth-child(2)').text();
+			var fiCapital3 = $('.financeCapital span:nth-child(3)').text();
+			var fiSales1 = $('.financeSales span:nth-child(1)').text();
+			var fiSales2 = $('.financeSales span:nth-child(2)').text();
+			var fiSales3 = $('.financeSales span:nth-child(3)').text();
+			var fiProfit1 = $('.financeProfit span:nth-child(1)').text();
+			var fiProfit2 = $('.financeProfit span:nth-child(2)').text();
+			var fiProfit3 = $('.financeProfit span:nth-child(3)').text();
+
+			var chart1 = bb.generate({
+				bindto: "#graph_fiCapital",
+				data: {
+					type: "bar",
+					x: "x",
+					columns: [
+						["x", fiYear3, fiYear2, fiYear1],
+						["자본금", fiCapital3, fiCapital2, fiCapital1]
+					]
+				},
+				grid: {
+					x: {
+						show: true
+					},
+					y: {
+						show: true
+					}
+				},
+				bar: {
+					width: {
+						max: 60
+					}
+				},
+				color: {
+					자본금: "#033a71"
+				},
+				legend: {
+					show: false
+				}
+			});
+
+			var chart2 = bb.generate({
+				bindto: "#graph_fiSales",
+				data: {
+					type: "bar",
+					x: "x",
+					columns: [
+						["x", fiYear3, fiYear2, fiYear1],
+						["매출액", fiSales3, fiSales2, fiSales1]
+					]
+				},
+				grid: {
+					x: {
+						show: true
+					},
+					y: {
+						show: true
+					}
+				},
+				bar: {
+					width: {
+						max: 60
+					}
+				},
+				color: {
+					매출액: "#0054a6"
+				},
+				legend: {
+					show: false
+				}
+			});
+
+			var chart3 = bb.generate({
+				bindto: "#graph_fiProfit",
+				data: {
+					type: "bar",
+					x: "x",
+					columns: [
+						["x", fiYear3, fiYear2, fiYear1],
+						["당기순이익", fiProfit3, fiProfit2, fiProfit1]
+					]
+				},
+				grid: {
+					x: {
+						show: true
+					},
+					y: {
+						show: true
+					}
+				},
+				bar: {
+					width: {
+						max: 60
+					}
+				},
+				color: {
+					당기순이익: "#0054a6"
+				},
+				legend: {
+					show: false
+				}
+			});
+
+			setTimeout(function() {
+				chart1.resize();
+			}, 100);
+
+			var welfareSlider = new Swiper(".dvWelfare", {
+				slidesPerView: 1,
+				slidesPerColumn: 1,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".welfare_wrap .swiper-button-next",
+					prevEl: ".welfare_wrap .swiper-button-prev"
+				}
+			});
+			var cultureSlider = new Swiper(".dvCulture", {
+				slidesPerView: 1,
+				slidesPerColumn: 1,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".culture_wrap .swiper-button-next",
+					prevEl: ".culture_wrap .swiper-button-prev"
+				}
+			});
+			
+			$(".ivCeo").append('<div class="swiper-pagination"></div>');
+			var ceoIvSlider = new Swiper(".ivCeo", {
+				slidesPerView: 1,
+				slidesPerColumn: 3,
+				spaceBetween: 0,
+				//loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+					observer: true,
+					observeParents: true,
+				},
+				 breakpoints: {
+					 640: {
+						 slidesPerColumn: 1,
+						 autoHeight:true
+					 },
+					 768: {
+						 slidesPerColumn: 2
+					 },
+					 1024: {
+						 slidesPerColumn: 3
+					 }
+				 }
+				
+			});
+
+			var percentSlider = new Swiper(".percent", {
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				spaceBetween: 20,
+				loop: true,
+				pagination: {
+					el: ".mag_mod_percent .swiper-pagination",
+					clickable: true,
+				},
+				breakpoints: {
+					780: {
+						slidesPerView: 2,
+						slidesPerGroup: 2,
+					}
+				}
+			});
+			
+			
+
+			$('.tab > div').click(function() {
+				var item = $(this).attr('data-tab');
+				$('.tab > div').removeClass('on');
+				$(this).addClass('on');
+				$('.conts > div').hide();
+				$('.conts > .' + item).show();
+
+				setTimeout(function() {
+					chart1.resize();
+					chart2.resize();
+					chart3.resize();
+				}, 100);
+			});
+
+			// 주소-좌표 변환 객체를 생성합니다
+			var geocoder = new kakao.maps.services.Geocoder();
+
+			// 주소로 좌표를 검색합니다
+			geocoder.addressSearch(comAddress, function(result, status) {
+
+				// 정상적으로 검색이 완료됐으면 
+				if (status === kakao.maps.services.Status.OK) {
+
+					var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+					//console.log(result[0].y+' / '+result[0].x);
+
+					var imageSrc = '/images/ico_mark.png', // 마커이미지의 주소입니다    
+						imageSize = new kakao.maps.Size(34, 48), // 마커이미지의 크기입니다
+						imageOption = {
+							offset: new kakao.maps.Point(16, 48)
+						};
+
+					// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+					var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption)
+
+					// 결과값으로 받은 위치를 마커로 표시합니다
+					var marker = new kakao.maps.Marker({
+						map: map,
+						position: coords,
+						image: markerImage
+					});
+
+					// 마커가 지도 위에 표시되도록 설정합니다
+					marker.setMap(map);
+
+					var content = '<div class="customoverlay">' + comName + '</div>';
+
+					var customOverlay = new kakao.maps.CustomOverlay({
+						map: map,
+						position: coords,
+						content: content,
+						yAnchor: 1
+					});
+
+					// 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+					map.setCenter(coords);
+
+					var find_road = "https://map.kakao.com/link/to/" + comName + "," + result[0].y + "," + result[0].x;
+					//console.log(find_road);
+					$(".find_road").attr("href", find_road);
+				}
+			});
+		};
+		xmlhttp.send();
+	</script>
+</body></html>
