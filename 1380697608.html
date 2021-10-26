@@ -10,110 +10,136 @@
 	<link href="./css/pt-common.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<style>
-.rec_mod_strategy.sty01 .navy_bg{background: url(../images/tongyang_strategy_bg.png) no-repeat top;position: relative;}
-.rec_mod_strategy.sty01 .navy_bg:after{content: '';display: block;background: url(../images/tongyang_strategy_img.png) no-repeat;width: 817px;height: 593px;position: absolute;right: 30px;bottom: 0}
-.rec_mod_strategy.sty01 .qnum{color: #ff6d56 !important}
-.rec_mod_strategy.sty01 .self_intro_wrap{border-radius: 20px}
-.rec_mod_strategy.sty01 .recent_question{background: url(../images/tongyang_strategy_bg02.png) no-repeat right center #ff6d56;display: block;padding: 4.0rem}
-.rec_mod_strategy.sty01 .rq_tit{display: block;text-align: left;color: #fff;font-weight: bold}
-.rec_mod_strategy.sty01 .rq_tit:after{display: none}
-.rec_mod_strategy.sty01 .rq_cont{padding-bottom: 0}
-.rec_mod_strategy.sty01 .rq_text{text-align: left}
-.rec_mod_strategy.sty01 .cont_box{border-radius: 20px}
-.rec_mod_strategy.sty01 .spec{position: relative}
-.rec_mod_strategy.sty01 .spec .cont_box{width: calc(100% - 400px)}
-.rec_mod_strategy.sty01 .spec .cont_box ul{width: 100%;}
-.rec_mod_strategy.sty01 .spec strong{width: 220px !important}
-.rec_mod_strategy.sty01 .spec p{width: calc(100% - 220px) !important}
-.rec_mod_strategy .spec.in_img .cont_box:after{display: none}
-.interview_tip{background: url(../images/tongyang_iv_bg.png) no-repeat #365696 !important;}
-.rec_mod_strategy.sty01 .interview_tip h3 {color: #fff}
-.rec_mod_strategy.sty01 .interview_tip .it_area_wrap{border:0;border-radius: 20px;}
-.rec_mod_strategy.sty01 .interview_tip .it_area_wrap:before{display: none}
-.rec_mod_strategy.sty01 .interview_tip .it_area b{color: #ff6d56}
-.rec_mod_strategy.sty01 .interview_tip .qm_btn{background-color: transparent;border: 1px solid #fff}
-.inf_mod_history.sty02{background: url(../images/tongyang_history_bg.png) no-repeat left top}
-.inf_mod_history.sty02 .history_wrap .history{background: url(../images/bg_inf_history_sero_tongyang.png)  repeat-y 50% 0}
-.inf_mod_history.sty02 .history_wrap .history > div{background: url(../images/bg_inf_history_garo_tongyang.png) no-repeat 50% 50%} 
-.inf_mod_history.sty02 h3{font-size: 34px;font-weight: bold;color: #000}
-.inf_mod_history.sty02 .en{text-align: center;font-size: 18px;margin-bottom: 30px}
-.inf_mod_history.sty02 .history_wrap .arrow_prev{background: url(../images/tongyang_history_prev.png) no-repeat #f3f3f3 !important;border-radius: 50%;}
-.inf_mod_history.sty02 .history_wrap .arrow_next{background: url(../images/tongyang_history_next.png) no-repeat #f3f3f3 !important;border-radius: 50%;}
-.inf_mod_history.sty02 .history_wrap .history > div > span{color:rgba(54, 86, 150, 0.5)}
-.inf_mod_history.sty02 .history_wrap .history > div div.event span{color: #365696}
-.rec_mod_swot.sty04 {padding: 8.0rem 0}
-.rec_mod_swot.sty04 h3{color: #fff;text-align: center;}
-.rec_mod_swot.sty04 .diagram_area{border-radius: 50%;border: 0 !important;color: #fff}
-.rec_mod_swot.sty04 .txt{color: #fff}
-.rec_mod_swot.sty04 .swotS .diagram_area {background: #365696}
-.rec_mod_swot.sty04 .swotS .tit {color: #365696}
-.rec_mod_swot.sty04 .swotW .diagram_area {background: #ff6d56}
-.rec_mod_swot.sty04 .swotW .tit {color: #ff6d56}
-.rec_mod_swot.sty04 .swotO .diagram_area {background: #0bb0ef}
-.rec_mod_swot.sty04 .swotO .tit {color: #0bb0ef}
-.rec_mod_swot.sty04 .swotT .diagram_area {background: #1d9f6e}
-.rec_mod_swot.sty04 .swotT .tit {color: #1d9f6e}
-.rec_mod_product.sty01 h3{color: #fff}
-.summary_bg{background: url(../images/tongyang_summary_bg.png) no-repeat top -200px left}
-.rec_mod_finance.sty02 .chart_cont {background: #365696;}
-.rec_mod_finance.sty02 .chart_cont li em{color: #fff}
-.rec_mod_finance.sty02 .chart_cont li p{color: #fff}
-.rec_mod_finance.sty02 .chart_cont li:last-child p{color: #ffd014}
-.rec_mod_finance.sty02 .barChart01 .bb-shape:last-child{fill: #ff6d56 !important}
-.rec_mod_finance.sty02 .area_graph .wrap_graph:last-child .inner_graph{background: #ff6d56}
-.rec_mod_finance .local_rank_wrap table .this_company ul{background: #365696;color: #fff;border: 3px solid #e76a5e}
-.rec_mod_vision.sty01{margin-top: 300px}
-.rec_mod_vision.sty01 p{font-size: 2.4rem;} 
-.rec_mod_vision.sty01 p .orange{color: #ff725e}
-.rec_mod_vision.sty01 p .blue{color: #0bb0ef}
-.rec_mod_welfare .welfare_img{margin-top: 6.0rem}
-.rec_mod_welfare .welfare_img .item1{background: url(../images/tongyang_welfare_img01.png) no-repeat center;}
-.rec_mod_welfare .welfare_img .item2{background: url(../images/tongyang_welfare_img02.png) no-repeat center;}
-.rec_mod_welfare .welfare_img .item3{background: url(../images/tongyang_welfare_img03.png) no-repeat center;}
-.rec_mod_welfare .welfare_img .item4{background: url(../images/tongyang_welfare_img04.png) no-repeat center;}
-.rec_mod_welfare .qm_btn{background: transparent;color: #fff;border: 1px solid #fff}
-.rec_mod_interview .swiper-container{color: #fff;}
-.rec_mod_interview h3 span{color: #ffd014}
-.rec_mod_interview .qa_ceo .swiper-button-next:after{background: url(../images/slider12_next.png) no-repeat right;width: 35px;height: 55px;text-indent: -9999px;}
-.rec_mod_interview .qa_ceo .swiper-button-prev:after{background: url(../images/slider12_prev.png) no-repeat left;width: 35px;height: 55px;text-indent: -9999px;}
-.rec_mod_interview .qa_mng .swiper-button-next:after,
-.rec_mod_interview .qa_emp .swiper-button-next:after{background: url(../images/slider13_next.png) no-repeat right;width: 35px;height: 55px;text-indent: -9999px;}
-.rec_mod_interview .swiper-button-next {right: -80px}
-.rec_mod_interview .swiper-button-prev {left: -80px}
-.rec_mod_interview .qa_mng .swiper-button-prev:after,
-.rec_mod_interview .qa_emp .swiper-button-prev:after{background: url(../images/slider13_prev.png) no-repeat left;width: 35px;height: 55px;text-indent: -9999px;}
-.qa_ceo{background: url(../images/tongyang_ceo_bg.png) no-repeat top left;padding: 8.0rem 0}
-.qa_ceo h3{text-align: center;margin-bottom: 4.0rem}
-.qa_mng{background: url(../images/tongyang_recruiter_bg.png) no-repeat right;padding: 10.0rem 0;background-size: cover}
-.qa_mng .cnt-container{position: relative}
-.qa_mng h3,
-.qa_emp h3,
-.rec_mod_review h3{color: #fff}
-.qa_mng h3:after,
-.qa_emp h3:after{content: 'Interview';display: inline-block;color: #fff;font-style: italic;opacity: 0.4;font-weight: 100}
-.qa_emp{background: url(../images/tongyang_worker_bg.png) no-repeat;padding: 10.0rem 0;background-size: cover}
-.qa_emp .cnt-container{position: relative}
-.rec_mod_interview.sty02 .qa_mng img {bottom: -100px}
-.rec_mod_review.sty02{background: url(../images/tongyang_review_bg.png) no-repeat;background-size: cover;padding: 8.0rem 0}
-.rec_mod_review.sty02 h3{font-size: 3.4rem;margin-bottom: 4.0rem}
-.rec_mod_review h3 span{color: #ffd014}
+		.rec_mod_strategy.sty01 .navy_bg {background: url(../images/tongyang_strategy_bg.png) no-repeat top;position: relative;}
+		.rec_mod_strategy.sty01 .navy_bg:after {content: '';display: block;background: url(../images/tongyang_strategy_img.png) no-repeat;width: 817px;height: 593px;position: absolute;right: 30px;bottom: 0}
+		.rec_mod_strategy.sty01 .qnum {color: #ff6d56 !important}
+		.rec_mod_strategy.sty01 .self_intro_wrap {border-radius: 20px}
+		.rec_mod_strategy.sty01 .recent_question {background: url(../images/tongyang_strategy_bg02.png) no-repeat right center #ff6d56;display: block;padding: 4.0rem}
+		.rec_mod_strategy.sty01 .rq_tit {display: block;text-align: left;color: #fff;font-weight: bold}
+		.rec_mod_strategy.sty01 .rq_tit:after {display: none}
+		.rec_mod_strategy.sty01 .rq_cont {padding-bottom: 0}
+		.rec_mod_strategy.sty01 .rq_text {text-align: left}
+		.rec_mod_strategy.sty01 .cont_box {border-radius: 20px}
+		.rec_mod_strategy.sty01 .spec {position: relative}
+		.rec_mod_strategy.sty01 .spec .cont_box {width: calc(100% - 400px)}
+		.rec_mod_strategy.sty01 .spec .cont_box ul {width: 100%;}
+		.rec_mod_strategy.sty01 .spec strong {width: 220px !important}
+		.rec_mod_strategy.sty01 .spec p {width: calc(100% - 220px) !important}
+		.rec_mod_strategy .spec.in_img .cont_box:after {display: none}
+		.interview_tip {background: url(../images/tongyang_iv_bg.png) no-repeat #365696 !important;}
+		.rec_mod_strategy.sty01 .interview_tip h3 {color: #fff}
+		.rec_mod_strategy.sty01 .interview_tip .it_area_wrap {border: 0;border-radius: 20px;}
+		.rec_mod_strategy.sty01 .interview_tip .it_area_wrap:before {display: none}
+		.rec_mod_strategy.sty01 .interview_tip .it_area b {color: #ff6d56}
+		.rec_mod_strategy.sty01 .interview_tip .qm_btn {background-color: transparent;border: 1px solid #fff}
+		.inf_mod_history.sty02 {background: url(../images/tongyang_history_bg.png) no-repeat left top}
+		.inf_mod_history.sty02 .history_wrap .history {background: url(../images/bg_inf_history_sero_tongyang.png) repeat-y 50% 0}
+		.inf_mod_history.sty02 .history_wrap .history>div {background: url(../images/bg_inf_history_garo_tongyang.png) no-repeat 50% 50%}
+		.inf_mod_history.sty02 h3 {font-size: 34px;font-weight: bold;color: #000}
+		.inf_mod_history.sty02 .en {text-align: center;font-size: 18px;margin-bottom: 30px}
+		.inf_mod_history.sty02 .history_wrap .arrow_prev {background: url(../images/tongyang_history_prev.png) no-repeat #f3f3f3 !important;border-radius: 50%;}
+		.inf_mod_history.sty02 .history_wrap .arrow_next {background: url(../images/tongyang_history_next.png) no-repeat #f3f3f3 !important;border-radius: 50%;}
+		.inf_mod_history.sty02 .history_wrap .history>div>span {color: rgba(54, 86, 150, 0.5)}
+		.inf_mod_history.sty02 .history_wrap .history>div div.event span {color: #365696}
+		.rec_mod_swot.sty04 {padding: 8.0rem 0}
+		.rec_mod_swot.sty04 h3 {color: #fff;text-align: center;}
+		.rec_mod_swot.sty04 .diagram_area {border-radius: 50%;border: 0 !important;color: #fff}
+		.rec_mod_swot.sty04 .txt {color: #fff}
+		.rec_mod_swot.sty04 .swotS .diagram_area {background: #365696}
+		.rec_mod_swot.sty04 .swotS .tit {color: #365696}
+		.rec_mod_swot.sty04 .swotW .diagram_area {background: #ff6d56}
+		.rec_mod_swot.sty04 .swotW .tit {color: #ff6d56}
+		.rec_mod_swot.sty04 .swotO .diagram_area {background: #0bb0ef}
+		.rec_mod_swot.sty04 .swotO .tit {color: #0bb0ef}
+		.rec_mod_swot.sty04 .swotT .diagram_area {background: #1d9f6e}
+		.rec_mod_swot.sty04 .swotT .tit {color: #1d9f6e}
+		.rec_mod_product.sty01 h3 {color: #fff}
+		.summary_bg {background: url(../images/tongyang_summary_bg.png) no-repeat top -200px left}
+		.rec_mod_finance.sty02 .chart_cont {background: #365696;}
+		.rec_mod_finance.sty02 .chart_cont li em {color: #fff}
+		.rec_mod_finance.sty02 .chart_cont li p {color: #fff}
+		.rec_mod_finance.sty02 .chart_cont li:last-child p {color: #ffd014}
+		.rec_mod_finance.sty02 #graph_fiSales .bb-shape:last-child {fill: #ff6d56 !important}
+		.rec_mod_finance.sty02 .area_graph .wrap_graph:last-child .inner_graph {background: #ff6d56}
+		.rec_mod_finance .local_rank_wrap table .this_company ul {background: #365696;color: #fff;border: 3px solid #e76a5e}
+		.rec_mod_vision.sty01 {margin-top: 300px}
+		.rec_mod_vision.sty01 p {font-size: 2.4rem;}
+		.rec_mod_vision.sty01 p .orange {color: #ff725e}
+		.rec_mod_vision.sty01 p .blue {color: #0bb0ef}
+		.rec_mod_welfare .welfare_img {margin-top: 6.0rem}
+		.rec_mod_welfare .welfare_img .item1 {background: url(../images/tongyang_welfare_img01.png) no-repeat center;}
+		.rec_mod_welfare .welfare_img .item2 {background: url(../images/tongyang_welfare_img02.png) no-repeat center;}
+		.rec_mod_welfare .welfare_img .item3 {background: url(../images/tongyang_welfare_img03.png) no-repeat center;}
+		.rec_mod_welfare .welfare_img .item4 {background: url(../images/tongyang_welfare_img04.png) no-repeat center;}
+		.rec_mod_welfare .qm_btn {background: transparent;color: #fff;border: 1px solid #fff}
+		.rec_mod_interview .swiper-container {color: #fff;}
+		.rec_mod_interview h3 span {color: #ffd014}
+		.rec_mod_interview .qa_ceo .swiper-button-next:after {background: url(../images/slider12_next.png) no-repeat right;width: 35px;height: 55px;text-indent: -9999px;}
+		.rec_mod_interview .qa_ceo .swiper-button-prev:after {background: url(../images/slider12_prev.png) no-repeat left;width: 35px;height: 55px;text-indent: -9999px;}
+		.rec_mod_interview .qa_mng .swiper-button-next:after,
+		.rec_mod_interview .qa_emp .swiper-button-next:after {background: url(../images/slider13_next.png) no-repeat right;width: 35px;height: 55px;text-indent: -9999px;}
+		.rec_mod_interview .swiper-button-next {right: -80px}
+		.rec_mod_interview .swiper-button-prev {left: -80px}
+		.rec_mod_interview .qa_mng .swiper-button-prev:after,
+		.rec_mod_interview .qa_emp .swiper-button-prev:after {background: url(../images/slider13_prev.png) no-repeat left;width: 35px;height: 55px;text-indent: -9999px;}
+		.qa_ceo {background: url(../images/tongyang_ceo_bg.png) no-repeat top left;padding: 8.0rem 0}
+		.qa_ceo h3 {text-align: center;margin-bottom: 4.0rem}
+		.qa_mng {background: url(../images/tongyang_recruiter_bg.png) no-repeat right;padding: 10.0rem 0;background-size: cover}
+		.qa_mng .cnt-container {position: relative}
+		.qa_mng h3,
+		.qa_emp h3,
+		.rec_mod_review h3 {color: #fff}
+		.qa_mng h3:after,
+		.qa_emp h3:after {content: 'Interview';display: inline-block;color: #fff;font-style: italic;opacity: 0.4;font-weight: 100}
+		.qa_emp {background: url(../images/tongyang_worker_bg.png) no-repeat;padding: 10.0rem 0;background-size: cover}
+		.qa_emp .cnt-container {position: relative}
+		.rec_mod_interview.sty02 .qa_mng img {bottom: -100px}
+		.rec_mod_interview.sty02 .qa_emp img {bottom: -100px}
+		.rec_mod_review.sty02 {background: url(../images/tongyang_review_bg.png) no-repeat;background-size: cover;}
+		.rec_mod_review.sty02 h3 {font-size: 3.4rem;margin-bottom: 4.0rem}
+		.rec_mod_review h3 span {color: #ffd014}
+		.rec_mod_welfare.sty02 .welfare_review_wrap {margin-top: 8.0rem;}
 
-@media all and (max-width:1260px){
-}
+		@media all and (max-width:1400px) {
+			.rec_mod_strategy.sty01 .navy_bg:after {display: none;}
+			.rec_mod_strategy.sty01 .spec .cont_box {width: 100%;}
+			.rec_mod_finance.sty02 .local_rank_wrap .lank_img span {display: none;}
+		}
 
-@media all and (max-width:1024px){
-}
+		@media all and (max-width:1260px) {
+			.rec_mod_vision.sty01 {margin-top: 100px;}
+		}
 
-@media all and (max-width:768px){
-	
-}
+		@media all and (max-width:1024px) {
+			.rec_mod_vision.sty01 {margin-top: 0px}
+			.rec_mod_interview.sty02 img {opacity: 0.7;}
+			.rec_mod_interview .swiper-button-prev:after,
+			.rec_mod_interview .swiper-button-prev:after {background-size: 25px !important;width: 25px !important;height: 40px !important;}
+			.rec_mod_interview .swiper-button-next:after,
+			.rec_mod_interview .swiper-button-next:after {background-size: 25px !important;width: 25px !important;height: 40px !important;}
+		}
 
-@media all and (max-width:640px){
-	
-}
+		@media all and (max-width:768px) {
+			.rec_mod_biz.sty01 .bizDiv {display: block;}
+			.rec_mod_biz.sty01 .bizDiv>div {width: 100%;margin-right: 0;margin-bottom: 4.0rem;}
+			.rec_mod_biz.sty01 .bizDiv>div:last-child {margin-bottom: 0;}
+			.rec_mod_biz.sty01 .bizDiv img {width: 200px;}
+			.rec_mod_biz.sty01 .bizDiv h4 {margin-top: 1.0rem;}
+			.rec_mod_interview.sty02 .qa_mng img,
+			.rec_mod_interview.sty02 .qa_emp img {width: 250px}
+			.rec_mod_vision.sty01 p {font-size: 2.0rem;}
+			.rec_mod_vision.sty01 p br {display: none;word-break: keep-all;}
+		}
 
-@media all and (max-width:480px){
-}
+		@media all and (max-width:640px) {
+			.inf_mod_history.sty02 .history_wrap .history {padding: 20px 0;background-position: 77px 0;}
+			.inf_mod_history.sty02 .history_wrap .arrow_prev,
+			.inf_mod_history.sty02 .history_wrap .arrow_next {left: 80px;width: 30px;height: 30px;background-size: cover !important;}
+			.inf_mod_history.sty02 .history_wrap .arrow_next {background-position: -30px 0;}
+			.inf_mod_history.sty02 .history_wrap .history>div {background-position: 72px 50%;}
+		}
+
+		@media all and (max-width:480px) {}
 	</style>
 </head>
 

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="author" content="kang2oon">
+	<title class="comName">기업명</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
+    <link href="/css/pt-common.css" rel="stylesheet">
+    <style>
+		.mag_mod_summary{background: url(/images/@bg_summary_1278653301.png) no-repeat;background-size: cover}
+		.mag_mod_biz.sty02 h3,
+		.mag_mod_welfare h3,
+		.mag_mod_interview h3,
+		.mag_mod_review h3{font-size: 5.0rem;margin-bottom: 3.0rem; text-align: center;font-weight: 200}
+		.sns_mod_finance.sty02 {margin: 8.0rem 0}
+		.sns_mod_finance.sty02 ul.finance01 li{color: #19ace3}
+		.sns_mod_finance.sty02 ul.finance01 li > div{color: #000}
+		.sns_mod_finance.sty02 .finance01 li:nth-child(1) .ico{background: url(/images/@ico_finance01_1278653301.png) no-repeat center;width: 111px;height: 101px;}
+		.sns_mod_finance.sty02 .finance01 li:nth-child(2) .ico{background: url(/images/@ico_finance02_1278653301.png) no-repeat center;width: 109px;height: 101px;}
+		.sns_mod_finance.sty02 .finance01 li:nth-child(3) .ico{background: url(/images/@ico_finance03_1278653301.png) no-repeat center;width: 111px;height: 101px;}
+		.sns_mod_finance.sty02 .finance01 li:nth-child(4) .ico{background: url(/images/@ico_finance04_1278653301.png) no-repeat center;width: 99px;height: 101px;}
+		.mag_mod_percent {background: url(/images/@bg_percent_1278653301.png) no-repeat #f6f4f4 bottom;background-size: cover;}
+		.mag_mod_add.value{background: #f6f4f4;padding: 8.0rem 0;}
+		.mag_mod_add.value .value_wrap{display: flex;}
+		.mag_mod_add.value .value_wrap p {font-size: 2.3rem;color: #fff;text-align: center;padding: 1.5rem 2rem;width: calc(100% + 30px);border-radius: 30px;margin-left: -15px}
+		.mag_mod_add.value .value_wrap > div{width: calc(33.333% - 10px);margin-right: 15px;}
+		.mag_mod_add.value .value_wrap > div:last-child{margin-right: 0}
+		.mag_mod_add.value .value_wrap > div >  div{border-radius: 5px;background: #fff;margin-top: 10px;text-align: center;font-size: 1.8rem;word-break: keep-all;min-height: 168px;position: relative;}
+		.mag_mod_add.value .value_wrap > div >  div > *{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: calc(100% - 40px)}
+		.mag_mod_add.value .value_wrap > div:nth-child(1) p {background: #006c94} 
+		.mag_mod_add.value .value_wrap > div:nth-child(1) > div{border: 2px solid rgba(0, 108, 148, 0.9)}
+		.mag_mod_add.value .value_wrap > div:nth-child(2) p {background: rgba(25, 172, 227, 0.9)} 
+		.mag_mod_add.value .value_wrap > div:nth-child(2) > div{border: 2px solid #19ace3}
+		.mag_mod_add.value .value_wrap > div:nth-child(3) p {background: #7e52ce} 
+		.mag_mod_add.value .value_wrap > div:nth-child(3) > div{border: 2px solid #7e52ce}
+		.mag_mod_biz.sty02 .bizDiv > div:nth-child(1){background: url(/images/@img_biz01_1278653301.png) no-repeat;background-size: cover}
+		.mag_mod_biz.sty02 .bizDiv > div:nth-child(2){background: url(/images/@img_biz02_1278653301.png) no-repeat;background-size: cover}
+		.mag_mod_biz.sty02 .bizDiv > div:nth-child(3){background: url(/images/@img_biz03_1278653301.png) no-repeat;background-size: cover}
+		
+		/*swot*/
+		.rec_mod_swot.sty03{background: #00455f}
+		.rec_mod_swot.sty03 .swot_wrap .diagram_area .swotS{background: #00aee5}
+		.rec_mod_swot.sty03 .swot_wrap .diagram_area .swotW{background: #a87ae5}
+		.rec_mod_swot.sty03 .swot_wrap .diagram_area .swotO{background: #7e3ece}
+		.rec_mod_swot.sty03 .swot_wrap .diagram_area .swotT{background: #006c96}
+		.rec_mod_swot.sty03 .swot_wrap .txt .swotT{left: 100px}
+		.rec_mod_swot.sty03 .swot_wrap .txt .swotO{left: 150px}
+		/* 조직문화*/
+		.mag_mod_welfare .culture_wrap{background: url(/images/@bg_welfare_1278653301.png) no-repeat right bottom;}
+		.mag_mod_welfare .culture_wrap .swiper {width: calc(100% - 300px)}
+/*
+		.mag_mod_welfare.sty03 .swiper-button-next,
+		.mag_mod_welfare.sty03 .swiper-button-prev{display: none}
+*/
+		
+		@media all and (max-width:1260px) {
+			.mag_mod_welfare .culture_wrap{background-size: 300px}
+			
+		}
+		
+		@media all and (max-width:1024px) {
+			.mag_mod_add.value .value_wrap p{font-size: 2.0rem}
+			.mag_mod_add.value .value_wrap > div > div > * {word-break: keep-all}
+			.mag_mod_add.value .value_wrap > div > div > * br{display: none}
+			.mag_mod_welfare .culture_wrap{background: none}
+			.mag_mod_welfare .culture_wrap .swiper{width: calc(100% - 100px)}
+		}
+		
+		@media all and (max-width:768px) {
+			.mag_mod_biz.sty02 h3,
+			.mag_mod_welfare h3,
+			.mag_mod_interview h3,
+			.mag_mod_review h3{font-size: 3.5rem;}
+			.mag_mod_vision.sty03 .msgAdd{font-size: 2.2rem}
+			.mag_mod_vision.sty03 .msgAdd br{display: none}
+			.mag_mod_vision.sty03 .msgAdd strong{font-size: 2.6rem}
+			
+		} 
+		@media all and (max-width:640px) {
+			.mag_mod_biz.sty02 h3,
+			.mag_mod_welfare h3,
+			.mag_mod_interview h3,
+			.mag_mod_review h3{font-size: 3.0rem;}
+			.sns_mod_finance.sty02 .finance01 li:nth-child(1) .ico{background-size: 60px;width: 60px;height: 65px}
+			.sns_mod_finance.sty02 .finance01 li:nth-child(2) .ico{background-size: 60px;width: 60px;height: 65px}
+			.sns_mod_finance.sty02 .finance01 li:nth-child(3) .ico{background-size: 60px;width: 60px;height: 65px}
+			.sns_mod_finance.sty02 .finance01 li:nth-child(4) .ico{background-size: 60px;width: 60px;height: 65px}
+			.mag_mod_add.value .value_wrap{display: block;}
+			.mag_mod_add.value .value_wrap > div{width: 100%;margin-right: 0;margin-bottom: 3.0rem}
+			.mag_mod_add.value .value_wrap > div:last-child{margin-bottom: 0}
+		}
+    </style>
+</head>
+<body>
+    <div class="module-wrap com_mod_header sty02">
+        <div class="cnt-container header clearfix">
+            <div class="biz_cate cate01 green">
+                <i></i>
+                Consulting
+            </div>
+            <div class="logo imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
+            <div class="info fc_000">
+                <dl class="clearfix">
+                    <dt>업종</dt>
+                    <dd class="incCate">업종</dd>
+                    <dt>대표자</dt>
+                    <dd class="ceo">대표자</dd>
+                    <dt>기업형태</dt>
+                    <dd class="comForm">기업형태</dd>
+                </dl>
+                <div class="action fc_000 clearfix">
+                    <a href="javascript:void(0);" class="on">관심기업 등록<i>♥</i></a>
+                    <a href="javascript:void(0);">공고 바로가기<i>→</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module-wrap com_mod_anchor sty02">
+        <div class="cnt-container fc_fff">
+            <ul>
+                <li><a href="javascript:void(0);" class="active">기업개요</a></li>
+                <li><a href="javascript:void(0);">현직자 인터뷰</a></li>
+                <li><a href="javascript:void(0);">채용공고</a></li>
+                <li> <a href="javascript:void(0);">기업 뉴스</a></li>
+            </ul>
+            <div class="siteGo">사이트</div>
+        </div>
+    </div>
+    <div class="module-wrap mag_mod_summary sty03">    
+        <div class="cnt-container">
+                <div class="text">
+                	<div class="comMsg">좋은 가성비 골프웨어의 강자
+               	 </div>
+                	<div class="comName">㈜럭스네트웍스</div>
+         	   </div>
+        </div>
+    </div>
+    
+	<div class="module-wrap sns_mod_finance sty02">
+			<div class="cnt-container">
+				<ul class="finance01">
+					<li>
+						<div class="ico"></div>
+						설립일
+						<div class="cnt"><span class="">-</span></div>
+					</li>
+					<li>
+						<div class="ico"></div>
+						매출액(백만원)
+						<div class="cnt"><span class="fiSales">-</span></div>
+					</li>
+					<li>
+						<div class="ico"></div>
+						사원수
+						<div class="cnt"><span class="fiProfit">-</span></div>
+					</li>
+					<li>
+						<div class="ico"></div>
+						자본금(백만원)
+						<div class="cnt"><span class="fiCapital">-</span></div>
+					</li>
+				</ul>
+			</div>
+	</div>
+   
+     <div class="module-wrap mag_mod_percent sty03">
+        <div class="cnt-container">
+            <div class="percent_wrap">
+                   <div class="profit"><div>수익성<span class="bpProfitability">-</span></div></div>
+                <div class="scale"><div>규모형태<span class="bpScale">-</span></div></div>
+                <div class="stable"><div>안정성<span class="bpStability">-</span></div></div>
+                 <div class="growth">
+                <div>성장성<span class="bpGrowthability">-</span></div></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="module-wrap mag_mod_vision sty03">
+        <div class="cnt-container">
+            <div class="msgAdd">
+            	<strong>㈜럭스네트웍스</strong>는 2004년 ‘럭스골프’ 브랜드 오픈을 시작으로<br />
+가성비 좋은 골프웨어, 스포츠 웨어 유통의 강소기업으로 자리매김하고 있습니다.
+            </div>
+            <div>
+               <div class="vision_wrap">
+               <div> 
+               		<div class="circle">VISION</div> 
+               		<div class="vision">비젼</div>
+               </div>
+                 <div> 
+               		<div class="circle">MISSION</div> 
+               		<div class="mission">미션</div>
+               </div>
+            </div>
+        </div>
+		</div>
+    </div>
+    
+    
+    <div class="module-wrap mag_mod_add value">
+        <div class="cnt-container">
+        <div class="value_wrap">
+      	  <div>
+       		<p>럭스 네트웍스의 핵심가치</p>
+        	<div class="keyValue">핵심가치</div>
+      	  </div>
+      	  <div>
+       		<p>인재상</p>
+        	<div class="talent">인재상</div>
+      	  </div>
+      	  <div>
+       		<p>전략과제</p>
+        	<div class="keyTask">핵심가치</div>
+      	  </div>
+        </div> 		
+        </div>
+    </div>
+    
+        <div class="module-wrap mag_mod_biz sty02">
+        <div class="cnt-container">
+            <h3>사업영역</h3>
+            <div class="bizDiv">주요사업</div>
+        </div>
+    </div>
+    
+    
+	<div class="module-wrap rec_mod_swot sty03">
+		<div class="cnt-container swot_wrap">
+			<div class="diagram_area">
+				<ul>
+					<li class="title">기업 SWOT<br />
+						분석
+					</li>
+					<li class="swotS">
+						<p><strong>S</strong>Strengths</p>
+					</li>
+					<li class="swotW">
+						<p><strong>W</strong>Weaknesses</p>
+					</li>
+					<li class="swotO">
+						<p><strong>O</strong>Opportunities</p>
+					</li>
+					<li class="swotT">
+						<p><strong>T</strong>Threats</p>
+					</li>
+				</ul>
+			</div>
+			<div class="txt">
+				<div class="swotS">
+					<div class="tit">strengths</div>
+					<div class="desc">여가 및 유흥 콘텐츠<br />
+						증가에 따른 자기개발 욕구 저하</div>
+				</div>
+				<div class="swotW">
+					<div class="tit">weakenesses</div>
+					<div class="desc">20년 굴지의 기업교육 <br />
+						서비스 대표 선두주자
+					</div>
+				</div>
+				<div class="swotO">
+					<div class="tit">opportunities</div>
+					<div class="desc">비대면 교육서비스<br />
+						개발을 통한 시장 확대
+					</div>
+				</div>
+				<div class="swotT">
+					<div class="tit">threats</div>
+					<div class="desc">코로나19 여파로 인한 <br />
+						교육수요 위축
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+      
+    <div class="module-wrap mag_mod_welfare sty03">
+        <div class="cnt-container">
+             <h3>조직문화&amp;복리후생</h3>
+            <div class="culture_wrap">
+                <div class="swiper dvCulture">
+                    조직문화            
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div> 
+        </div>
+    </div>
+      
+      
+	<div class="module-wrap mag_mod_interview sty03">
+		<h3>현직자 인터뷰</h3>
+		<div class="cnt-container">
+			<div class="iv_wrap qa_ceo">
+				<div class="ivCeoPhoto photo">대표이사 사진</div>
+				<div class="swiper ivCeo">대표이사 인터뷰</div>
+			</div>
+			<div class="iv_wrap qa_mng">
+				<div class="ivMngPhoto photo">인사담당자 사진</div>
+				<div class="swiper ivMng">인사담당자 인터뷰</div>
+			</div>
+			<div class="iv_wrap qa_emp">
+				<div class="ivEmpPhoto photo">인사담당자 사진</div>
+				<div class="swiper ivEmp">인사담당자 인터뷰</div>
+			</div>
+		</div>
+	</div>
+      
+	<div class="module-wrap mag_mod_review sty03">
+		<div class="cnt-container">
+			<h3>기업 리뷰</h3>
+			<div class="review_wrap">
+				<div class="item">
+					<p class="desc">연차가 쌓일수록 다른 사람 기분이나
+						입장 신경 안쓰고 눈치 볼 필요없이
+						오래 다닌 사람들끼리 친목도모하면서
+						회사생활 즐겁게 할 수 있음
+
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">연차가 쌓일수록 다른 사람 기분이나
+						입장 신경 안쓰고 눈치 볼 필요없이
+						오래 다닌 사람들끼리 친목도모하면서
+						회사생활 즐겁게 할 수 있음
+
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">연 2회 성과급 제도
+						영업이익 % 인센티브 지급
+						야근수당, 주휴수당 지급
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">연 2회 성과급 제도
+						영업이익 % 인센티브 지급
+						야근수당, 주휴수당 지급
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">탄력근무제 시행
+						자유로운 월차사용<br />
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+       
+        
+    <div class="module-wrap com_mod_recruit sty01">
+        <div class="bg_bot"></div>
+        <div class="cnt-container">
+            <h3>채용공고</h3>
+            <table class="tb_recruit" summary="채용공고">
+                <thead>
+                <tr>
+                    <th>접수기간</th>
+                    <th>채용제목</th>
+                    <th>고용형태</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2021.05.31 까지</td>
+                    <td>풀스택 개발자 채용/경력채용/급여250만원</td>
+                    <td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+                </tr>
+                <tr>
+                    <td>상시채용</td>
+                    <td>생산직 지원 채용/경력 무관/급여220만원</td>
+                    <td>계약직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+                </tr>
+                <tr>
+                    <td>상시채용</td>
+                    <td>경영지원팀 직원 채용/경력 무관/급여220만원</td>
+                    <td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="box_recruit">
+                <h4>경기도일자리재단 신입 직원 채용<span class="period">상시채용</span></h4>
+                <hr/>
+                <div class="detail_wrap">
+                    <div>
+                        <h5>지원자격</h5>
+                        <dl class="clearfix">
+                            <dt>경력</dt>
+                            <dd>경력무관</dd>
+                            <dt>학력</dt>
+                            <dd>고졸이상</dd>
+                            <dt>우대</dt>
+                            <dd>인근거주자, 1종 보통운전면허, 회계실무자격증 FAT1급 이상</dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <h5>근무조건</h5>
+                        <dl class="clearfix">
+                            <dt>고용형태</dt>
+                            <dd>정규직</dd>
+                            <dt>급여</dt>
+                            <dd>220만원 이상</dd>
+                            <dt>근무시간</dt>
+                            <dd>주5일(월~금) 08:30~17:30</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module-wrap com_mod_news sty01">
+        <div class="cnt-container">
+            <div class="news_row">
+                <a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
+                <div class="desc">
+                    경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
+                    '2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
+                    친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+                </div>
+                <div class="reg_date">2021.05.15</div>
+            </div>
+            <div class="news_row">
+                <a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
+                <div class="desc">
+                    경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
+                    '2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
+                    친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+                </div>
+                <div class="reg_date">2021.05.15</div>
+            </div>
+            <div class="paging_wrap">
+                <a href="javascript:void(0);" class="prev disable">이전</a>
+                <a href="javascript:void(0);" class="current">1</a>
+                <a href="javascript:void(0);">2</a>
+                <a href="javascript:void(0);">3</a>
+                <a href="javascript:void(0);">4</a>
+                <a href="javascript:void(0);">5</a>
+                <a href="javascript:void(0);" class="next">다음</a>
+            </div>
+        </div>
+    </div>
+    <div class="module-wrap com_mod_map">
+        <div id="map"></div>
+        <div class="map_info_wrap">
+            <div class="com_info">
+                <div class="comName">기업명</div>
+                <a href="javascript:void(0);" target="_blank" class="find_road">길 찾기</a>
+                <p class="comAddress">주소</p>
+                <p class="tel">전화번호</p>
+            </div>
+            <div class="around_wrap">
+                <ul id="category">
+                    <li id="MT1" data-order="0"> 
+                        <span class="category_bg mt1"></span>
+                        대형마트
+                    </li>       
+                    <li id="CS2" data-order="1"> 
+                        <span class="category_bg cs2"></span>
+                        편의점
+                    </li>  
+                    <li id="AC5" data-order="2"> 
+                        <span class="category_bg ac5"></span>
+                        학원
+                    </li>  
+                    <li id="PK6" data-order="3"> 
+                        <span class="category_bg pk6"></span>
+                        주차장
+                    </li>  
+                    <li id="OL7" data-order="4"> 
+                        <span class="category_bg ol7"></span>
+                        주유소
+                    </li>  
+                    <li id="SW8" data-order="5"> 
+                        <span class="category_bg sw8"></span>
+                        지하철
+                    </li>
+                    <li id="BK9" data-order="6"> 
+                        <span class="category_bg bk9"></span>
+                        은행
+                    </li> 
+                    <li id="CT1" data-order="7"> 
+                        <span class="category_bg ct1"></span>
+                        문화시설
+                    </li>       
+                    <li id="AT4" data-order="8"> 
+                        <span class="category_bg at4"></span>
+                        관광명소
+                    </li>  
+                    <li id="AD5" data-order="9"> 
+                        <span class="category_bg ad5"></span>
+                        숙박
+                    </li>  
+                    <li id="FD6" data-order="10"> 
+                        <span class="category_bg fd6"></span>
+                        음식점
+                    </li>  
+                    <li id="CE7" data-order="11"> 
+                        <span class="category_bg ce7"></span>
+                        카페
+                    </li>  
+                    <li id="HP8" data-order="12"> 
+                        <span class="category_bg hp8"></span>
+                        병원
+                    </li>
+                    <li id="PM9" data-order="14"> 
+                        <span class="category_bg pm9"></span>
+                        약국
+                    </li>      
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@5.4.5/js/swiper.min.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script>
+<script src="/module/jsontohtml.js"></script>
+<script src="/module/map.js"></script>
+<script src="/js/jPages.min.js"></script>
+<script src="/js/pt-common.js"></script>
+<script>
+	xmlhttp.open("GET", "/module/1278653301.json");
+    xmlhttp.onloadend = function(){
+        var comName = $('.map_info_wrap .comName').text();
+        var comAddress = $('.comAddress').text();
+        var fiYear1 = $('.financeYear span:nth-child(1)').text();
+        var fiYear2 = $('.financeYear span:nth-child(2)').text();
+        var fiYear3 = $('.financeYear span:nth-child(3)').text();
+        var fiCapital1 = $('.financeCapital span:nth-child(1)').text();
+        var fiCapital2 = $('.financeCapital span:nth-child(2)').text();
+        var fiCapital3 = $('.financeCapital span:nth-child(3)').text();
+        var fiSales1 = $('.financeSales span:nth-child(1)').text();
+        var fiSales2 = $('.financeSales span:nth-child(2)').text();
+        var fiSales3 = $('.financeSales span:nth-child(3)').text();
+        var fiProfit1 = $('.financeProfit span:nth-child(1)').text();
+        var fiProfit2 = $('.financeProfit span:nth-child(2)').text();
+        var fiProfit3 = $('.financeProfit span:nth-child(3)').text();
+        
+        var cultureSlider = new Swiper(".dvCulture",{
+            slidesPerView: 2,
+			slidesPerColumn: 3,
+			slidesPerGroup: 6,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".culture_wrap .swiper-button-next",
+                prevEl: ".culture_wrap .swiper-button-prev"
+            },
+			 breakpoints: {
+				 	300: {
+						 slidesPerView: 1,
+						 slidesPerColumn: 3,
+						 slidesPerGroup: 3,
+					 },
+					 640: {
+						 slidesPerView: 1,
+						 slidesPerColumn: 3,
+						 slidesPerGroup: 3,
+					 },
+				 	1024: {
+						 slidesPerView: 2,
+						 slidesPerColumn: 3,
+						 slidesPerGroup: 6,
+					 }
+			 }
+        });
+		
+		$(".ivCeo").append('<div class="swiper-pagination"></div>');
+			var ceoIvSlider = new Swiper(".ivCeo", {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				//loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+					observer: true,
+					observeParents: true,
+				}
+			});
+		
+		$(".ivMng").append('<div class="swiper-pagination"></div>');
+			var ceoIvSlider = new Swiper(".ivMng", {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				//loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+					observer: true,
+					observeParents: true,
+				}
+			});
+		
+		$(".ivEmp").append('<div class="swiper-pagination"></div>');
+			var ceoIvSlider = new Swiper(".ivEmp", {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				//loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+					observer: true,
+					observeParents: true,
+				}
+			});
+		
+		
+
+        var percentSlider = new Swiper(".percent",{
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: ".mag_mod_percent .swiper-pagination",
+                clickable: true,
+            },
+            breakpoints:{
+                780: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                }
+            }
+        });
+
+        $('.tab > div').click(function(){
+            var item = $(this).attr('data-tab');
+            $('.tab > div').removeClass('on');
+            $(this).addClass('on');
+            $('.conts > div').hide();
+            $('.conts > .' + item).show();
+            
+            setTimeout(function(){
+                chart1.resize();
+                chart2.resize();
+                chart3.resize();
+            }, 100);
+        });
+
+        // 주소-좌표 변환 객체를 생성합니다
+        var geocoder = new kakao.maps.services.Geocoder();
+
+        // 주소로 좌표를 검색합니다
+        geocoder.addressSearch(comAddress, function(result, status) {
+
+            // 정상적으로 검색이 완료됐으면 
+            if (status === kakao.maps.services.Status.OK) {
+
+                var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+                //console.log(result[0].y+' / '+result[0].x);
+
+                var imageSrc = '/images/ico_mark.png', // 마커이미지의 주소입니다    
+                    imageSize = new kakao.maps.Size(34, 48), // 마커이미지의 크기입니다
+                    imageOption = {offset: new kakao.maps.Point(16, 48)};
+
+                    // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption)
+
+                // 결과값으로 받은 위치를 마커로 표시합니다
+                var marker = new kakao.maps.Marker({
+                    map: map,
+                    position: coords,
+                    image: markerImage
+                });
+
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+
+                var content = '<div class="customoverlay">'+comName+'</div>';
+
+                var customOverlay = new kakao.maps.CustomOverlay({
+                    map: map,
+                    position: coords,
+                    content: content,
+                    yAnchor: 1 
+                });
+
+                // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+                map.setCenter(coords);
+
+                var find_road = "https://map.kakao.com/link/to/"+comName+","+result[0].y+","+result[0].x;
+                //console.log(find_road);
+                $(".find_road").attr("href",find_road);
+            } 
+        });  
+    };
+	xmlhttp.send();
+</script>
+</body>
+</html>
