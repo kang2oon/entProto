@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="author" content="kang2oon">
+	<title class="comName">기업명</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">
+	<link href="./css/pt-common.css" rel="stylesheet">
+	<!--스크롤 이벤트-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/slick.css">
+	<style>
+	</style>
+</head>
+
+    <div class="module-wrap inf_mod_welfare sty02">
+        <div class="cnt-container">
+            <!-- <h3>조직문화</h3>
+            <div class="culture_wrap">
+                <div class="swiper dvCulture">
+                    조직문화            
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div> -->
+            <div class="welfare_wrap">
+                <h3>복리후생</h3>
+                <div class="swiper welfare">
+                    복리후생            
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="module-wrap mag_mod_welfare sty03">
+        <div class="cnt-container">
+             <h3>조직문화&amp;복리후생</h3>
+            <div class="culture_wrap">
+                <div class="swiper dvCulture">
+                    조직문화            
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div> 
+        </div>
+    </div>
+    
+    <div class="module-wrap mag_mod_culture sty02">
+        <div class="cnt-container">
+            <div class="culwel_wrap first">
+                <div class="title cult">조직문화</div>
+                <div class="culture_wrap">
+                    <div class="swiper dvCulture">
+                        조직문화
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="culwel_wrap">
+                <div class="title welf">복리후생</div>
+                <div class="welfare_wrap">
+                    <div class="swiper welfare">
+                        복리후생            
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="module-wrap sns_mod_culture sty02">
+		<div class="cnt-container">
+			<div class="culwel_wrap">
+					<div class="culture_wrap">
+						<div class="swiper dvCulture">
+							조직문화
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+					<div class="welfare_wrap">
+						<div class="swiper dvWelfare">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="tit">자유로운 출퇴근</div>
+								<div class="desc">내가 출근하고 싶을때 출근해 8시간 업무 진행, 자율성 완전 부여된 출퇴근 제도</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="tit">간식 완전 무제한 제공</div>
+								<div class="desc">간식, 음료 무제한 제공으로 일하면서 지치지 않게!</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="tit">눈치 안보는 연차 사용</div>
+								<div class="desc">급한일은 언제나 생기기 마련이죠. 연차 사용에 전혀 눈치 주지 않는 회사 분위기!</div>
+							</div>
+						</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+
+			</div>
+
+		</div>
+	</div>
+   
+   <!-- //매거진형  조직문화,복리후생 style 03 -->
+	<div class="module-wrap mag_mod_culture sty03">
+		<div class="cnt-container">
+			<h3>조직문화 &amp; 복리후생</h3>
+			<div class="culture_wrap">
+				<div class="swiper dvCulture">
+					조직문화
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+	</div>
+
+    
+    
+<body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="./js/imgLiquid-min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="./js/waypoints.min.js"></script>
+	<script src="./js/jquery.counterup.min.js"></script>
+	<script src="./js/run.js"></script>
+	<script src="/module/jsontohtml.js"></script>
+	<script>
+		xmlhttp.open("GET", "/module/test.json");
+		xmlhttp.onloadend = function() {
+			var ctLabelData1 = $('.ctLabel span:nth-child(1)').text();
+			var ctLabelData2 = $('.ctLabel span:nth-child(2)').text();
+			var ctLabelData3 = $('.ctLabel span:nth-child(3)').text();
+			var joinCnt1 = $('.joinCnt span:nth-child(1)').text();
+			var joinCnt2 = $('.joinCnt span:nth-child(2)').text();
+			var joinCnt3 = $('.joinCnt span:nth-child(3)').text();
+			var resignCnt1 = $('.resignCnt span:nth-child(1)').text();
+			var resignCnt2 = $('.resignCnt span:nth-child(2)').text();
+			var resignCnt3 = $('.resignCnt span:nth-child(3)').text();
+			var totalCnt1 = $('.totalCnt span:nth-child(1)').text();
+			var totalCnt2 = $('.totalCnt span:nth-child(2)').text();
+			var totalCnt3 = $('.totalCnt span:nth-child(3)').text();
+			var fiYear1 = $('.financeYear span:nth-child(1)').text();
+			var fiYear2 = $('.financeYear span:nth-child(2)').text();
+			var fiYear3 = $('.financeYear span:nth-child(3)').text();
+			var fiCapital1 = $('.financeCapital span:nth-child(1)').text();
+			var fiCapital2 = $('.financeCapital span:nth-child(2)').text();
+			var fiCapital3 = $('.financeCapital span:nth-child(3)').text();
+			var fiSales1 = $('.financeSales span:nth-child(1)').text();
+			var fiSales2 = $('.financeSales span:nth-child(2)').text();
+			var fiSales3 = $('.financeSales span:nth-child(3)').text();
+			var fiProfit1 = $('.financeProfit span:nth-child(1)').text();
+        	var fiProfit2 = $('.financeProfit span:nth-child(2)').text();
+        	var fiProfit3 = $('.financeProfit span:nth-child(3)').text();
+        
+			var comName = $('h2.comName').text();
+			var comAddress = $('.comAddress').text();
+
+	
+			// 조직문화&복리후생 masony 레이아웃 
+			var divs = $(".mag_mod_culture.sty03 .dvCulture .swiper-wrapper > div");
+			if ($(window).width() > 1260) {
+				for (var i = 0; i < divs.length; i += 8) {
+					divs.slice(i, i + 8).wrapAll("<div class='masony swiper-slide'></div>");
+					$('.dvCulture .swiper-wrapper > div').each(function() {
+						$(this).children().removeClass('swiper-slide');
+					});
+					$('.masony  > div').addClass('item');
+				}
+			} else {
+				$('.dvCulture .swiper-wrapper').addClass("masony")
+				$('.dvCulture .swiper-wrapper > div').each(function() {
+					$(this).addClass('item');
+				});
+			}
+
+			var ww = $(window).width();
+			var dvCultureSlider = undefined;
+
+			function initSwiper() {
+				if (ww > 1260 && dvCultureSlider == undefined) {
+					dvCultureSlider = new Swiper(".mag_mod_culture.sty03 .dvCulture", {
+						slidesPerView: 1,
+						navigation: {
+							nextEl: ".mag_mod_culture.sty03 .swiper-button-next",
+							prevEl: ".mag_mod_culture.sty03 .swiper-button-prev"
+						}
+					});
+				} else if (ww >= 1260 && dvCultureSlider != undefined) {
+					mySwiper.destroy();
+					dvCultureSlider = undefined;
+				}
+			}
+
+			initSwiper();
+
+			$(window).on('resize', function() {
+				ww = $(window).width();
+				initSwiper();
+			});
+
+
+		};
+		xmlhttp.send();
+	</script>
+</body></html>
