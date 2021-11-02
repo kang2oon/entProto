@@ -11,7 +11,6 @@ $(document).ready(function(){
             $('.com_mod_anchor').css('top', 0);
         }
     });
-});
 
 
 	// 탭 컨텐츠 숨기기
@@ -47,3 +46,6 @@ $(document).ready(function(){
 		});
 
 	$(".imgFill").imgLiquid();
+	
+	
+});
