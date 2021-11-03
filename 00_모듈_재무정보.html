@@ -13,9 +13,61 @@
 	<style>
 	</style>
 </head>
-
 <body>
-	
+
+        <div class="module-wrap mag_mod_finance sty02">
+            <div class="cnt-container">
+                <h3>기업 재무정보</h3>
+                <div class="tab_warp clearfix">
+                    <div class="tab">
+                        <div class="on" data-tab="summary">재무평가 요약</div>
+                        <div data-tab="capital">자본금</div>
+                        <div data-tab="sales">매출액</div>
+                        <div data-tab="profit">당기순이익</div>
+                    </div>
+                    <div class="conts">
+                        <div class="summary">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <th>동종업종 내 순위</th>
+                                    <td><div class="fiPosition">-</div></td>
+                                </tr>
+                                <tr>
+                                    <th>기업평가등급</th>
+                                    <td>
+                                        <div class="bizGrade">-</div>
+                                        상거래를 위한 신용능력이 우량하며, 환경 변화에 적절한 대처가 가능한 기업
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>기업인증현황</th>
+                                    <td>이노비즈 인증기업, 경기도가족친화인증기업</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="capital">
+                            <div class="graphData financeYear"></div>
+                            <div class="graphData financeCapital"></div>
+                            <div class="graphData financeSales"></div>
+                            <div class="graphData financeProfit"></div>
+                            <div class="unit">단위 : 백만원</div>
+                            <div id="graph_fiCapital"></div>
+                        </div>
+                        <div class="sales">
+                            <div class="unit">단위 : 백만원</div>
+                            <div id="graph_fiSales"></div>
+                        </div>
+                        <div class="profit">
+                            <div class="unit">단위 : 백만원</div>
+                            <div id="graph_fiProfit"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 		<!-- 채용공고형 기업 재무정보 style02 -->
 		<div class="module-wrap rec_mod_finance sty02">
 			<!--기업 매출 및 이익-->
@@ -161,48 +213,7 @@
 			var comAddress = $('.comAddress').text();
 
 	
-			// 조직문화&복리후생 masony 레이아웃 
-			var divs = $(".mag_mod_culture.sty03 .dvCulture .swiper-wrapper > div");
-			if ($(window).width() > 1260) {
-				for (var i = 0; i < divs.length; i += 8) {
-					divs.slice(i, i + 8).wrapAll("<div class='masony swiper-slide'></div>");
-					$('.dvCulture .swiper-wrapper > div').each(function() {
-						$(this).children().removeClass('swiper-slide');
-					});
-					$('.masony  > div').addClass('item');
-				}
-			} else {
-				$('.dvCulture .swiper-wrapper').addClass("masony")
-				$('.dvCulture .swiper-wrapper > div').each(function() {
-					$(this).addClass('item');
-				});
-			}
-
-			var ww = $(window).width();
-			var dvCultureSlider = undefined;
-
-			function initSwiper() {
-				if (ww > 1260 && dvCultureSlider == undefined) {
-					dvCultureSlider = new Swiper(".mag_mod_culture.sty03 .dvCulture", {
-						slidesPerView: 1,
-						navigation: {
-							nextEl: ".mag_mod_culture.sty03 .swiper-button-next",
-							prevEl: ".mag_mod_culture.sty03 .swiper-button-prev"
-						}
-					});
-				} else if (ww >= 1260 && dvCultureSlider != undefined) {
-					mySwiper.destroy();
-					dvCultureSlider = undefined;
-				}
-			}
-
-			initSwiper();
-
-			$(window).on('resize', function() {
-				ww = $(window).width();
-				initSwiper();
-			});
-
+		
 
 		};
 		xmlhttp.send();

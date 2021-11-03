@@ -830,6 +830,28 @@ background: linear-gradient(313deg, rgba(78,90,195,1) 0%, rgba(136,95,225,1) 100
 			});
 			
 			
+			
+			var welfareSlider = new Swiper(".dvWelfare", {
+				slidesPerView: 1,
+				slidesPerColumn: 1,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".welfare_wrap .swiper-button-next",
+					prevEl: ".welfare_wrap .swiper-button-prev"
+				}
+			});
+			
+			var cultureSlider = new Swiper(".dvCulture", {
+				slidesPerView: 1,
+				slidesPerColumn: 1,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".culture_wrap .swiper-button-next",
+					prevEl: ".culture_wrap .swiper-button-prev"
+				}
+			});
+			
+			
 
 			// 주소-좌표 변환 객체를 생성합니다
 			var geocoder = new kakao.maps.services.Geocoder();
