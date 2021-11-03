@@ -204,6 +204,7 @@ background: linear-gradient(313deg, rgba(78,90,195,1) 0%, rgba(136,95,225,1) 100
 			.sns_mod_interview h3 span,
 			.sns_mod_review h3 span{display: block;font-size: 2.6rem;color: #4e5ac3;margin-bottom: 2.0rem}
 			.sns_mod_summary.sty02:after{display: none;}
+		}
 		
 		@media all and (max-width:480px){
 		.sns_mod_summary.sty02 .slogan:after{right: auto;right: 0;}
@@ -829,6 +830,28 @@ background: linear-gradient(313deg, rgba(78,90,195,1) 0%, rgba(136,95,225,1) 100
 			});
 			
 			
+			
+			var welfareSlider = new Swiper(".dvWelfare", {
+				slidesPerView: 1,
+				slidesPerColumn: 1,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".welfare_wrap .swiper-button-next",
+					prevEl: ".welfare_wrap .swiper-button-prev"
+				}
+			});
+			
+			var cultureSlider = new Swiper(".dvCulture", {
+				slidesPerView: 1,
+				slidesPerColumn: 1,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".culture_wrap .swiper-button-next",
+					prevEl: ".culture_wrap .swiper-button-prev"
+				}
+			});
+			
+			
 
 			$('.tab > div').click(function() {
 				var item = $(this).attr('data-tab');
@@ -893,6 +916,7 @@ background: linear-gradient(313deg, rgba(78,90,195,1) 0%, rgba(136,95,225,1) 100
 				}
 			});
 		};
+	
 		xmlhttp.send();
 	</script>
 </body></html>
