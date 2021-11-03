@@ -524,24 +524,71 @@
             chart1.resize();
         }, 100);
 
-        var welfareSlider = new Swiper(".welfare",{
-            slidesPerView: 1,
-            slidesPerColumn: 3,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: ".welfare_wrap .swiper-button-next",
-                prevEl: ".welfare_wrap .swiper-button-prev"
-            }
-        });
-        var cultureSlider = new Swiper(".dvCulture",{
-            slidesPerView: 1,
-            slidesPerColumn: 3,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: ".culture_wrap .swiper-button-next",
-                prevEl: ".culture_wrap .swiper-button-prev"
-            }
-        });
+        	// .mag_mod_culture.sty02 조직문화
+			var cultureSlider = new Swiper(".mag_mod_culture.sty02 .dvCulture", {
+				slidesPerView: 1,
+				slidesPerColumn: 3,
+				spaceBetween: 10,
+				navigation: {
+					nextEl: ".culture_wrap .swiper-button-next",
+					prevEl: ".culture_wrap .swiper-button-prev"
+				},
+				breakpoints: {
+					280: {
+						slidesPerView: 1,
+						slidesPerColumn: 1,
+						slidesPerGroup: 1,
+					},
+					640: {
+						slidesPerView: 1,
+						slidesPerColumn: 1,
+						slidesPerGroup: 1,
+					},
+					1024: {
+						slidesPerView: 2,
+						slidesPerColumn: 1,
+						slidesPerGroup: 1,
+					},
+					1261: {
+						slidesPerView: 1,
+						slidesPerColumn: 3,
+						slidesPerGroup: 3,
+					}
+				}
+			});
+
+			// .mag_mod_culture.sty02 복리후생 선택형
+			var welfareSlider = new Swiper(".mag_mod_culture.sty02 .welfare", {
+				slidesPerView: 1,
+				slidesPerColumn: 3,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-next",
+					prevEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-prev"
+				},
+				breakpoints: {
+					280: {
+						slidesPerView: 1,
+						slidesPerColumn: 1,
+						slidesPerGroup: 1,
+					},
+					640: {
+						slidesPerView: 1,
+						slidesPerColumn: 1,
+						slidesPerGroup: 1,
+					},
+					1024: {
+						slidesPerView: 2,
+						slidesPerColumn: 1,
+						slidesPerGroup: 1,
+					},
+					1261: {
+						slidesPerView: 1,
+						slidesPerColumn: 3,
+						slidesPerGroup: 3,
+					}
+				}
+			});
 
         var percentSlider = new Swiper(".percent",{
             slidesPerView: 1,
