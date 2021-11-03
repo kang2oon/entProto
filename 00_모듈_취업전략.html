@@ -182,48 +182,6 @@
 			var comAddress = $('.comAddress').text();
 
 	
-			// 조직문화&복리후생 masony 레이아웃 
-			var divs = $(".mag_mod_culture.sty03 .dvCulture .swiper-wrapper > div");
-			if ($(window).width() > 1260) {
-				for (var i = 0; i < divs.length; i += 8) {
-					divs.slice(i, i + 8).wrapAll("<div class='masony swiper-slide'></div>");
-					$('.dvCulture .swiper-wrapper > div').each(function() {
-						$(this).children().removeClass('swiper-slide');
-					});
-					$('.masony  > div').addClass('item');
-				}
-			} else {
-				$('.dvCulture .swiper-wrapper').addClass("masony")
-				$('.dvCulture .swiper-wrapper > div').each(function() {
-					$(this).addClass('item');
-				});
-			}
-
-			var ww = $(window).width();
-			var dvCultureSlider = undefined;
-
-			function initSwiper() {
-				if (ww > 1260 && dvCultureSlider == undefined) {
-					dvCultureSlider = new Swiper(".mag_mod_culture.sty03 .dvCulture", {
-						slidesPerView: 1,
-						navigation: {
-							nextEl: ".mag_mod_culture.sty03 .swiper-button-next",
-							prevEl: ".mag_mod_culture.sty03 .swiper-button-prev"
-						}
-					});
-				} else if (ww >= 1260 && dvCultureSlider != undefined) {
-					mySwiper.destroy();
-					dvCultureSlider = undefined;
-				}
-			}
-
-			initSwiper();
-
-			$(window).on('resize', function() {
-				ww = $(window).width();
-				initSwiper();
-			});
-
 
 		};
 		xmlhttp.send();
