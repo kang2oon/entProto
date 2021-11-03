@@ -340,7 +340,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_culture.sty04 .swiper-slide:nth-child(7) .tit:after{content: '';display: block;background:url(../images/mag_cult01_ico07.png) no-repeat center;width: 98px;height: 91px;margin: 20px auto 20px auto}
 .mag_mod_culture.sty04 .swiper-slide:nth-child(8) .tit:after{content: '';display: block;background:url(../images/mag_cult01_ico08.png) no-repeat center;width: 82px;height: 101px;margin: 20px auto 20px auto}
 .mag_mod_culture.sty04 .swiper-slide .desc{font-size: 1.8rem}
-.mag_mod_culture.sty04 .swiper-button-next{background: url(../images/slider01_next.png) no-repeat;right: -50px}
+.mag_mod_culture.sty04 .swiper-button-next{background: url(../images/slider01_next.png) no-repeat;right: -50px;left: auto !important}
 .mag_mod_culture.sty04 .swiper-button-prev{background: url(../images/slider01_prev.png) no-repeat;left: -50px}
 .mag_mod_culture.sty04 .swiper-button-next,
 .mag_mod_culture.sty04 .swiper-button-prev{width: 30px;height: 55px;}
@@ -358,7 +358,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_culture.sty05 .swiper-button-prev:after{color: #fff;font-size: 2.0rem;}
 .mag_mod_culture.sty05 .swiper-button-next,
 .mag_mod_culture.sty05 .swiper-button-prev{background: #4525ec;border-radius: 10px;width: 38px;height: 38px}
-.mag_mod_culture.sty05 .swiper-button-next {right: -60px}
+.mag_mod_culture.sty05 .swiper-button-next {right: -60px;left: auto !important}
 .mag_mod_culture.sty05 .swiper-button-prev {left: -60px}
 .bro_mod_culture.sty02{margin: 8.0rem 0}
 .bro_mod_culture.sty02 .culwel_wrap{position: relative;margin-bottom: 90px}
@@ -380,7 +380,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .bro_mod_culture.sty02 .swiper-button-prev{background: #4285f4;width: 30px;height: 30px;border-radius: 3px;margin-top: 0}
 .bro_mod_culture.sty02 .swiper-button-next:after,
 .bro_mod_culture.sty02 .swiper-button-prev:after{color: #fff;font-size: 1.6rem;}
-.bro_mod_culture.sty02 .swiper-button-next{top: 30px}
+.bro_mod_culture.sty02 .swiper-button-next{top: 30px;left: auto !important}
 .bro_mod_culture.sty02 .swiper-button-prev{top: 30px;right: 45px;left: auto}
 .bro_mod_culture.sty03 .dvCulture,
 .bro_mod_culture.sty03 .welfare,
@@ -402,7 +402,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .bro_mod_culture.sty03 .swiper-button-prev{background: #efca34;width: 30px;height: 30px;margin-top: 0}
 .bro_mod_culture.sty03 .swiper-button-next:after,
 .bro_mod_culture.sty03 .swiper-button-prev:after{font-size: 1.4rem;color: #000;font-weight: bold}
-.bro_mod_culture.sty03 .swiper-button-next {top:0;right: 0}
+.bro_mod_culture.sty03 .swiper-button-next {top:0;right: 0;left: auto !important}
 .bro_mod_culture.sty03 .swiper-button-prev {top:0;right: 40px;left: auto}
 .bro_mod_culture.sty04{margin: 8.0rem 0}
 .bro_mod_culture.sty04 .dvCulture,
@@ -427,7 +427,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .bro_mod_culture.sty04 .swiper-button-prev{background: #000;width: 30px;height: 30px;margin-top: 0;top: auto;bottom: -50px}
 .bro_mod_culture.sty04 .swiper-button-next:after,
 .bro_mod_culture.sty04 .swiper-button-prev:after{font-size: 1.4rem;color: #fff;font-weight: bold;}
-.bro_mod_culture.sty04 .swiper-button-next {left: calc(50% + 5px)}
+.bro_mod_culture.sty04 .swiper-button-next {left: calc(50% + 5px) !important;}
 .bro_mod_culture.sty04 .swiper-button-prev {right: calc(50% + 5px);left: auto}
 .bro_mod_culture.sty05{margin: 8.0rem 0}
 .bro_mod_culture.sty05 .dvCulture,
@@ -491,7 +491,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .bro_mod_culture.sty07 .swiper-button-prev{background: rgba(0, 0, 0, 0.67);width: 3.5rem;height: 3.5rem;margin-top: 0;top: 40%}
 .bro_mod_culture.sty07 .swiper-button-next:after,
 .bro_mod_culture.sty07 .swiper-button-prev:after{font-size: 1.4rem;color: #fff;font-weight: bold;}
-.bro_mod_culture.sty07 .swiper-button-next {right: 0}
+.bro_mod_culture.sty07 .swiper-button-next {right: 0;left: auto !important}
 .bro_mod_culture.sty07 .swiper-button-prev {left: 0}
 .rec_mod_welfare.sty01 .welfare {overflow: hidden}
 .rec_mod_welfare.sty01 .swiper-wrapper{height: 600px}
@@ -500,7 +500,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .rec_mod_welfare.sty01 .swiper-slide dt{font-weight: bold;font-size: 2.0rem;margin-bottom: 1.0rem}
 .rec_mod_welfare.sty01 .swiper-slide dd{position: relative;padding-left: 10px; font-size: 1.7rem;color: #666;}
 .rec_mod_welfare.sty01 .swiper-slide dd:before{content: '-';display: block;position: absolute;left: 0;top: 0}
-.rec_mod_welfare.sty01 .swiper-button-next{background: url(../images/slider09_next.png) no-repeat;width: 34px;height: 50px;right: -60px}
+.rec_mod_welfare.sty01 .swiper-button-next{background: url(../images/slider09_next.png) no-repeat;width: 34px;height: 50px;right: -60px;left: auto !important}
 .rec_mod_welfare.sty01 .swiper-button-prev{background: url(../images/slider09_prev.png) no-repeat;width: 34px;height: 50px;left: -60px}
 .rec_mod_welfare.sty01 .swiper-button-next:after,
 .rec_mod_welfare.sty01 .swiper-button-prev:after{text-indent: -9999px}
@@ -516,7 +516,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .rec_mod_welfare.sty03 .swiper-slide dt{font-weight: bold;font-size: 2.0rem;margin-bottom: 1.0rem}
 .rec_mod_welfare.sty03 .swiper-slide dd{position: relative;padding-left: 10px; font-size: 1.7rem;color: #666;}
 .rec_mod_welfare.sty03 .swiper-slide dd:before{content: '-';display: block;position: absolute;left: 0;top: 0}
-.rec_mod_welfare.sty03 .swiper-button-next{background: url(../images/slider11_next.png);width: 38px;height: 67px;right: -60px}
+.rec_mod_welfare.sty03 .swiper-button-next{background: url(../images/slider11_next.png);width: 38px;height: 67px;right: -60px;left: auto !important}
 .rec_mod_welfare.sty03 .swiper-button-prev{background: url(../images/slider11_prev.png);width: 38px;height: 67px;left: -60px}
 .rec_mod_welfare.sty03 .swiper-button-next:after,
 .rec_mod_welfare.sty03 .swiper-button-prev:after{text-indent: -9999px}
@@ -600,7 +600,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .sns_mod_culture.sty02 .swiper-button-prev{background: #232323;width: 30px;height: 30px;}
 .sns_mod_culture.sty02 .swiper-button-next:after, 
 .sns_mod_culture.sty02 .swiper-button-prev:after{color: #fff;font-size: 15px}
-.sns_mod_culture.sty02 .swiper-button-next{right: 0;top: -20px}
+.sns_mod_culture.sty02 .swiper-button-next{right: 0;top: -20px;left: auto !important}
 .sns_mod_culture.sty02 .swiper-button-prev{left: auto;right: 35px;top: -20px}
 
 /* swot 분석 */
@@ -793,7 +793,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_welfare.sty03 .swiper-button-prev{background: #252525;width: 54px;height: 54px;border-radius: 10px}
 .mag_mod_welfare.sty03 .swiper-button-next:after,
 .mag_mod_welfare.sty03 .swiper-button-prev:after{color: #fff;font-size: 2.0rem}
-.mag_mod_welfare.sty03 .swiper-button-next{right: -80px}
+.mag_mod_welfare.sty03 .swiper-button-next{right: -80px;left: auto !important}
 .mag_mod_welfare.sty03 .swiper-button-prev{left: -80px}
 
 /* 리뷰 */
