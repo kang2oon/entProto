@@ -128,35 +128,16 @@
 			var comName = $('h2.comName').text();
 			var comAddress = $('.comAddress').text();
 
-
-			//.bro_mod_history.sty03 연혁 슬라이드
-			//			var historySlider = $('.bro_mod_history.sty03 .history')
-			//			historySlider.addClass('swiper');
-			//			historySlider.wrapInner('<div class="swiper-wrapper"></div>');
-			//			historySlider.children().children().addClass('swiper-slide')
-			//			historySlider.append('<div class="swiper-pagination"></div>');
-			//			var cultureSlider = new Swiper(".bro_mod_history.sty03 .history", {
-			//				slidesPerView: 1,
-			//				pagination: {
-			//					el: '.bro_mod_history.sty03 .swiper-pagination',
-			//					type: 'bullets',
-			//					clickable: true,
-			//					observer: true,
-			//					observeParents: true,
-			//				}
-			//			});
-
-
 			var tabCont = $('.bro_mod_history.sty03 .history').children();
 			tabCont.each(function() {
 				var year = $(this).children('span').html();
 				$(this).addClass(year);
 			});
-			 var imgArray = Array();
+			 var tabArray = Array();
 			tabCont.each(function(){
-				imgArray.push($(this).attr("class"));
+				tabArray.push($(this).attr("class"));
 			})
-			var arrayList = $.map(imgArray, function(value){
+			var arrayList = $.map(tabArray, function(value){
 				return "<a href='javascript:vold'" + "data-tab=" + value + ">" + value + "</a>";
 			})
 			$('.tabs').html(arrayList);
