@@ -876,12 +876,13 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_review.sty05 .review_wrap .item:after{content: '';display: block; background: url(../images/speech_bubble.png) no-repeat;width: 25px;height: 9px;position: absolute;bottom: -9px;left: 50%;transform: translateX(-50%);z-index: 2}
 
 /* 사업영역 */
-.mag_mod_biz.sty03{padding: 8.0rem 0;background: #eee}
-.mag_mod_biz.sty03 h3{text-align: center;font-size: 4.0rem}
-.mag_mod_biz.sty03 .msgAdd{text-align: center;font-size: 1.8rem}
+.mag_mod_biz.sty03{padding: 8.0rem 0;background: #182b74}
+.mag_mod_biz.sty03 h3{text-align: center;font-size: 4.0rem;color: #fff;margin-bottom: 2.0rem}
+.mag_mod_biz.sty03 .msgAdd{text-align: center;font-size: 1.8rem;color: #fff}
 .mag_mod_biz.sty03 .biz_wrap{text-align: center;margin-top: 4.0rem}
 .mag_mod_biz.sty03 .bizDiv{overflow: hidden}
 .mag_mod_biz.sty03 .bizDiv img {width: 100%;display: block;}
+.mag_mod_biz.sty03 .bizDiv .swiper-slide > div{border-radius: 10px;overflow: hidden}
 .mag_mod_biz.sty03 h4{background: #fff;padding: 4rem 2rem 1rem 2rem;font-size: 2.4rem;color: #4525ec;}
 .mag_mod_biz.sty03 p{background: #fff;padding: 0 2rem 4rem 2rem}
 .mag_mod_biz.sty03 .swiper-button-prev,
@@ -890,8 +891,8 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_biz.sty03 .swiper-button-next{right: -60px;left: auto}
 .mag_mod_biz.sty03 .swiper-button-prev:after,
 .mag_mod_biz.sty03 .swiper-button-next:after{color: #fff;font-size: 1.8rem}
-
-
+.mag_mod_biz.sty04{margin: 8.0rem 0}
+.mag_mod_biz.sty04 h3 {text-align: center;font-size: 5.0rem}
 /* --- 채용공고형 start --- */
 	/*헤더영역*/
 .rec_mod_header {padding: 8.0rem 0}
