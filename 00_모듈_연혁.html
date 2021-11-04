@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,15 +15,39 @@
 </head>
 
 <body>
-
-	<div class="module-wrap inf_mod_history sty02">
+	<div class="module-wrap bro_mod_history sty02">
 		<div class="cnt-container">
-			<h3>VICTEK STORY</h3>
 			<div class="history_wrap">
 				<div class="holder"></div>
 				<div id="history" class="history">연혁</div>
-				<div class="arrow_prev">이전</div>
-				<div class="arrow_next">이후</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="module-wrap bro_mod_history sty03">
+		<div class="cnt-container">
+			<div class="history_wrap">
+				<!--<div class="holder"></div>-->
+
+				<div class="cont">
+					<p class="tit">국가 경쟁력을 갖추다</p>
+					<img src="./images/history_img01.png" alt="">
+					<p class="desc">제품 소프트웨어 검증 및 개발지원을 주 사업으로 전장 제품 소프트웨어의 안정성과 신뢰성 확보와 우수한 경쟁력 확보, 국제 경쟁력을 갖추다</p>
+				</div>
+
+				<div id="history" class="history">연혁</div>
+			</div>
+		</div>
+	</div>
+	<div class="module-wrap bro_mod_history sty04">
+		<div class="cnt-container">
+			<div class="history_wrap">
+			<!--<div class="holder"></div>-->
+				<div class="cont">
+					<p class="tit">올　바　른<br />생　각　과<br />가　치　관</p>
+				</div>
+
+				<div id="history" class="history">연혁</div>
 			</div>
 		</div>
 	</div>
@@ -36,15 +61,29 @@
 		</div>
 	</div>
 
-	<div class="module-wrap bro_mod_history sty02">
+	
+	<div class="module-wrap bro_mod_history sty05">
 		<div class="cnt-container">
+		<h3>연혁</h3>
 			<div class="history_wrap">
-				<div class="holder"></div>
+			<!--<div class="holder"></div>-->
 				<div id="history" class="history">연혁</div>
 			</div>
 		</div>
 	</div>
 
+
+	<div class="module-wrap inf_mod_history sty02">
+		<div class="cnt-container">
+			<h3>VICTEK STORY</h3>
+			<div class="history_wrap">
+				<div class="holder"></div>
+				<div id="history" class="history">연혁</div>
+				<div class="arrow_prev">이전</div>
+				<div class="arrow_next">이후</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
@@ -81,116 +120,62 @@
 
 			var comName = $('h2.comName').text();
 			var comAddress = $('.comAddress').text();
-
-
-			// 인터뷰 
-			var ceoIvSlider = new Swiper(".inf_mod_interview.sty02 .ivCeo", {
+			
+			
+			//.bro_mod_history.sty03 연혁 슬라이드
+			var historySlider = $('.bro_mod_history.sty03 .history')
+			historySlider.addClass('swiper');
+			historySlider.wrapInner('<div class="swiper-wrapper"></div>');
+			historySlider.children().children().addClass('swiper-slide')
+			historySlider.append('<div class="swiper-pagination"></div>');
+			var cultureSlider = new Swiper(".bro_mod_history.sty03 .history", {
 				slidesPerView: 1,
-				//slidesPerColumn: 3,
-				spaceBetween: 0,
-				//loop: true,
-				autoHeight: true,
-				navigation: {
-					nextEl: ".inf_mod_interview.sty02 .iv_wrap.qa_ceo .swiper-button-next",
-					prevEl: ".inf_mod_interview.sty02 .iv_wrap.qa_ceo .swiper-button-prev"
-				}
-			});
-
-			var mngIvSlider = new Swiper(".inf_mod_interview.sty02 .ivMng", {
-				slidesPerView: 1,
-				spaceBetween: 0,
-				//loop: true,
-				autoHeight: true,
-				navigation: {
-					nextEl: ".inf_mod_interview.sty02 .iv_wrap.qa_mng .swiper-button-next",
-					prevEl: ".inf_mod_interview.sty02 .iv_wrap.qa_mng .swiper-button-prev"
-				}
-			});
-
-			var empIvSlider = new Swiper(".inf_mod_interview.sty02 .ivEmp", {
-				slidesPerView: 1,
-				spaceBetween: 0,
-				//loop: true,
-				autoHeight: true,
-				navigation: {
-					nextEl: ".inf_mod_interview.sty02 .iv_wrap.qa_emp .swiper-button-next",
-					prevEl: ".inf_mod_interview.sty02 .iv_wrap.qa_emp .swiper-button-prev"
-				}
-			});
-
-			$(".mag_mod_interview.sty03 .ivCeo").append('<div class="swiper-pagination"></div>');
-			var ceoIvSlider = new Swiper(".mag_mod_interview.sty03 .ivCeo", {
-				slidesPerView: 1,
-				spaceBetween: 0,
-				//loop: true,
 				pagination: {
-					el: '.swiper-pagination',
+					el: '.bro_mod_history.sty03 .swiper-pagination',
 					type: 'bullets',
 					clickable: true,
 					observer: true,
 					observeParents: true,
 				}
 			});
-
-			$(".mag_mod_interview.sty03 .ivMng").append('<div class="swiper-pagination"></div>');
-			var ceoIvSlider = new Swiper(".mag_mod_interview.sty03 .ivMng", {
-				slidesPerView: 1,
-				spaceBetween: 0,
-				//loop: true,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
+			
+			
+			//.bro_mod_history.sty05 연혁 슬라이드
+			var historySlider = $('.bro_mod_history.sty05 .history')
+			historySlider.addClass('swiper');
+			historySlider.wrapInner('<div class="swiper-wrapper"></div>');
+			historySlider.children().children().addClass('swiper-slide')
+			historySlider.append('<div class="swiper-button-prev"></div>');
+			historySlider.append('<div class="swiper-button-next"></div>');
+			
+			var cultureSlider = new Swiper(".bro_mod_history.sty05 .history", {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".bro_mod_history.sty05 .swiper-button-next",
+					prevEl: ".bro_mod_history.sty05 .swiper-button-prev"
+				},
+				breakpoints: {
+					280: {
+						slidesPerView: 1
+					},
+					640: {
+						slidesPerView: 2
+					},
+					1024: {
+						slidesPerView: 2
+					},
+					1261: {
+						slidesPerView: 3,
+					}
 				}
-			});
-
-			$(".mag_mod_interview.sty03 .ivEmp").append('<div class="swiper-pagination"></div>');
-			var ceoIvSlider = new Swiper(".mag_mod_interview.sty03 .ivEmp", {
-				slidesPerView: 1,
-				spaceBetween: 0,
-				//loop: true,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
-				}
-			});
-
-
-			$('.mag_mod_interview.sty02 .cnt-container').addClass('tab_container')
-			$('.mag_mod_interview.sty02 .cnt-container').prepend("<ul class='tabs'><li class='active'><a href='javascript:vold' data-tab='tab1'>CEO</a></li><li><a href='javascript:vold' data-tab='tab2'>인사담당자</a></li><li><a href='javascript:vold' data-tab='tab3'>신입사원</a></li></ul>");
-			$('.mag_mod_interview.sty02  .iv_wrap').addClass('tab_content');
-			$('.mag_mod_interview.sty02 .qa_ceo').attr('id', 'tab1');
-			$('.mag_mod_interview.sty02 .qa_mng').attr('id', 'tab2');
-			$('.mag_mod_interview.sty02 .qa_emp').attr('id', 'tab3');
-
-			// 탭 컨텐츠 숨기기
-			$(".mag_mod_interview.sty02 .tab_content").hide();
-
-			// 첫번째 탭콘텐츠 보이기
-			$(".mag_mod_interview.sty02 .tab_container").each(function() {
-				$(this).children().children().children("li:first").addClass("active"); //Activate first tab
-				$(this).children(".tab_content").first().show();
-			});
-
-			//탭메뉴 클릭 이벤트
-			$(".mag_mod_interview.sty02 .tabs li a").click(function() {
-				//탭 안에 슬라이드 있을 때
-				var tab_id = $(this).attr('data-tab');
-				$(this).parent().siblings().removeClass("active");
-				$(this).parent().addClass("active");
-				$(this).parent().parent().parent().parent().find(".tab_content").hide();
-				//        var activeTab = $(this).attr("rel");
-				//        $("#" + activeTab).fadeIn();
-				$("#" + tab_id).fadeIn();
 			});
 
 
 		};
 		xmlhttp.send();
+
 	</script>
-</body></html>
+</body>
+
+</html>
