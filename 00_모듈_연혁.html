@@ -28,10 +28,7 @@
 		<div class="cnt-container">
 			<div class="tab_wrap">
 				<div class="tabs">
-					<a href="javascript:bold" data-tab="2018">2018</a>
-					<a href="javascript:bold" data-tab="2015">2015</a>
-					<a href="javascript:bold" data-tab="2014">2014</a>
-					<a href="javascript:bold" data-tab="2013">2013</a>
+					<!-- 탭 자동 생성 -->
 				</div>
 			</div>
 			<div class="history_wrap">
@@ -128,6 +125,8 @@
 			var comName = $('h2.comName').text();
 			var comAddress = $('.comAddress').text();
 
+
+			// 연혁 탭
 			var tabCont = $('.bro_mod_history.sty03 .history').children();
 			tabCont.each(function() {
 				var year = $(this).children('span').html();
@@ -141,8 +140,6 @@
 				return "<a href='javascript:vold'" + "data-tab=" + value + ">" + value + "</a>";
 			})
 			$('.tabs').html(arrayList);
-			
-			
 			$('.bro_mod_history.sty03 .tabs a:first').addClass('on')
 			$('.bro_mod_history.sty03 .history > div').hide();
 			$('.bro_mod_history.sty03 .history > div:first').show();
