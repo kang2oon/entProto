@@ -583,17 +583,19 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 
 /* 연혁 */
 .bro_mod_history.sty03{margin: 8.0rem 0}
+.bro_mod_history.sty03 .tab_wrap{overflow-x: auto;margin-bottom: 40px}
+.bro_mod_history.sty03 .tabs{display: table;width: 100%;table-layout: fixed;white-space: nowrap;border-collapse: collapse}
+.bro_mod_history.sty03 .tabs a{display: table-cell;text-align: center;font-size: 2.6rem;background: #fff;border: 1px solid #bfc7d0;padding: 1.0rem 2.0rem}
+.bro_mod_history.sty03 .tabs a.on {background: #253299;color: #fff}
 .bro_mod_history.sty03 .history_wrap{display: flex;justify-content: space-between}
 .bro_mod_history.sty03 .history_wrap > div{width:calc(50% - 30px);}
 .bro_mod_history.sty03 .history {overflow: hidden;position: relative;padding-bottom: 30px}
 .bro_mod_history.sty03 .cont .tit{font-size: 2.8rem;font-weight: 500;color: #1b2680;}
 .bro_mod_history.sty03 .cont img{margin: 2rem 0}
 .bro_mod_history.sty03 .cont .desc{font-size: 2.2rem;}
-.bro_mod_history.sty03 .history .swiper-slide > ul li{display: flex;font-size: 1.8rem;margin-bottom: 1.0rem;}
+.bro_mod_history.sty03 .history > div > ul  li{display: flex;font-size: 1.8rem;margin-bottom: 1.0rem;}
 .bro_mod_history.sty03 .history .event{margin-left: 10px;}
-.bro_mod_history.sty03 .history .swiper-pagination-bullet{width: 13px;height: 13px;}
-.bro_mod_history.sty03 .history  .swiper-pagination-bullet-active{background: #253299;width: 40px;border-radius: 20px}
-.bro_mod_history.sty03 .history  .swiper-slide > span {font-weight: bold;color: #62b4f0;font-size: 3.6rem;margin-bottom: 1.5rem;display: inline-block}
+.bro_mod_history.sty03 .history >  div > span {font-weight: bold;color: #62b4f0;font-size: 3.6rem;margin-bottom: 1.5rem;display: inline-block}
 .bro_mod_history.sty03 .history .month{font-weight: bold;color: #62b4f0;font-size: 2.0rem}
 .bro_mod_history.sty04 .history_wrap{display: flex;justify-content: space-between}
 .bro_mod_history.sty04 .history_wrap > div {width: calc(50% - 30px)}
@@ -872,6 +874,23 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_review.sty05 .review_wrap{column-count: 2;-webkit-column-count: 2; -moz-column-count:2;column-gap: 30px;counter-reset:item-counter;border:none;}
 .mag_mod_review.sty05 .review_wrap  .item{margin-top: 10px;margin-bottom: 30px; border-radius: 15px;padding: 4.0rem;text-align: center;background: #fff;width: 100%;transform: translateZ(0);position: relative;break-inside:avoid;display: inline-block;border: 1px solid #000}
 .mag_mod_review.sty05 .review_wrap .item:after{content: '';display: block; background: url(../images/speech_bubble.png) no-repeat;width: 25px;height: 9px;position: absolute;bottom: -9px;left: 50%;transform: translateX(-50%);z-index: 2}
+
+/* 사업영역 */
+.mag_mod_biz.sty03{padding: 8.0rem 0;background: #eee}
+.mag_mod_biz.sty03 h3{text-align: center;font-size: 4.0rem}
+.mag_mod_biz.sty03 .msgAdd{text-align: center;font-size: 1.8rem}
+.mag_mod_biz.sty03 .biz_wrap{text-align: center;margin-top: 4.0rem}
+.mag_mod_biz.sty03 .bizDiv{overflow: hidden}
+.mag_mod_biz.sty03 .bizDiv img {width: 100%;display: block;}
+.mag_mod_biz.sty03 h4{background: #fff;padding: 4rem 2rem 1rem 2rem;font-size: 2.4rem;color: #4525ec;}
+.mag_mod_biz.sty03 p{background: #fff;padding: 0 2rem 4rem 2rem}
+.mag_mod_biz.sty03 .swiper-button-prev,
+.mag_mod_biz.sty03 .swiper-button-next{background: #555;width:38px;height: 38px;border-radius: 10px}
+.mag_mod_biz.sty03 .swiper-button-prev{left: -60px;}
+.mag_mod_biz.sty03 .swiper-button-next{right: -60px;left: auto}
+.mag_mod_biz.sty03 .swiper-button-prev:after,
+.mag_mod_biz.sty03 .swiper-button-next:after{color: #fff;font-size: 1.8rem}
+
 
 /* --- 채용공고형 start --- */
 	/*헤더영역*/
@@ -2576,7 +2595,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.inf_mod_welfare.sty02 .welfare_wrap h3:before{display: none}
 	.inf_mod_welfare.sty02 .welfare_wrap h3{font-size: 3.0rem;padding: 2rem 4.0rem}
 	.inf_mod_welfare.sty02 .swiper{padding: 2.0rem 0}
-
+	
 	
 }
 
@@ -2929,6 +2948,8 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	/* 연혁 */
 	.bro_mod_history.sty03 .history_wrap{display: block;}
 	.bro_mod_history.sty03 .history_wrap > div{width: 100%;}
+	.bro_mod_history.sty03 .tabs a{font-size: 2.0rem}
+	.bro_mod_history.sty03 .tabs{min-width: 100%;width: auto}
 	.bro_mod_history.sty03 .history_wrap .cont{margin-bottom: 3.0rem}
 	.bro_mod_history.sty03 .history{padding-bottom: 50px}
 	.bro_mod_history.sty03 .cont .tit{font-size: 2.4rem}

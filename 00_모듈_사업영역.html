@@ -14,7 +14,15 @@
 </head>
 
 <body>
-
+ <div class="module-wrap mag_mod_biz sty03">
+            <div class="cnt-container">
+                <h3>사업분야</h3>
+                <div class="msgAdd">㈜빅텍은 전자전,군용전원,감시/정찰 분야 등 방위산업을 통해 국가안보에 기여하고 있으며, 친환경 모빌리티인 공공자전거 시스템을 통해 더 편리하고 지속가능한 생활환경을 만들고 있습니다. </div>
+                <div class="biz_wrap">
+                    <div class="bizDiv">주요사업</div>
+                </div>
+            </div>
+        </div>
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -52,6 +60,37 @@
 
 			var comName = $('h2.comName').text();
 			var comAddress = $('.comAddress').text();
+			
+			//mag_mod_biz.sty03 사업분야 슬라이드
+			var magBiz03 = $('.mag_mod_biz.sty03 .bizDiv')
+			magBiz03.addClass('swiper');
+			magBiz03.wrapInner('<div class="swiper-wrapper"></div>');
+			magBiz03.children().children().addClass('swiper-slide')
+			magBiz03.append('<div class="swiper-pagination"></div>');
+			magBiz03.append('<div class="swiper-button-prev"></div>');
+			magBiz03.append('<div class="swiper-button-next"></div>');
+			var cultureSlider = new Swiper(magBiz03, {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".mag_mod_biz.sty03 .swiper-button-next",
+					prevEl: ".mag_mod_biz.sty03 .swiper-button-prev"
+				},
+				breakpoints: {
+					280: {
+						slidesPerView: 1
+					},
+					640: {
+						slidesPerView: 2
+					},
+					1024: {
+						slidesPerView: 2
+					},
+					1261: {
+						slidesPerView: 3,
+					}
+				}
+			});
 
 
 

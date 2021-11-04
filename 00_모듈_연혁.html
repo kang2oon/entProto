@@ -26,9 +26,16 @@
 
 	<div class="module-wrap bro_mod_history sty03">
 		<div class="cnt-container">
+			<div class="tab_wrap">
+				<div class="tabs">
+					<a href="javascript:bold" data-tab="2018">2018</a>
+					<a href="javascript:bold" data-tab="2015">2015</a>
+					<a href="javascript:bold" data-tab="2014">2014</a>
+					<a href="javascript:bold" data-tab="2013">2013</a>
+				</div>
+			</div>
 			<div class="history_wrap">
 				<!--<div class="holder"></div>-->
-
 				<div class="cont">
 					<p class="tit">국가 경쟁력을 갖추다</p>
 					<img src="./images/history_img01.png" alt="">
@@ -42,7 +49,7 @@
 	<div class="module-wrap bro_mod_history sty04">
 		<div class="cnt-container">
 			<div class="history_wrap">
-			<!--<div class="holder"></div>-->
+				<!--<div class="holder"></div>-->
 				<div class="cont">
 					<p class="tit">올　바　른<br />생　각　과<br />가　치　관</p>
 				</div>
@@ -61,12 +68,12 @@
 		</div>
 	</div>
 
-	
+
 	<div class="module-wrap bro_mod_history sty05">
 		<div class="cnt-container">
-		<h3>연혁</h3>
+			<h3>연혁</h3>
 			<div class="history_wrap">
-			<!--<div class="holder"></div>-->
+				<!--<div class="holder"></div>-->
 				<div id="history" class="history">연혁</div>
 			</div>
 		</div>
@@ -120,26 +127,48 @@
 
 			var comName = $('h2.comName').text();
 			var comAddress = $('.comAddress').text();
-			
-			
+
+
 			//.bro_mod_history.sty03 연혁 슬라이드
-			var historySlider = $('.bro_mod_history.sty03 .history')
-			historySlider.addClass('swiper');
-			historySlider.wrapInner('<div class="swiper-wrapper"></div>');
-			historySlider.children().children().addClass('swiper-slide')
-			historySlider.append('<div class="swiper-pagination"></div>');
-			var cultureSlider = new Swiper(".bro_mod_history.sty03 .history", {
-				slidesPerView: 1,
-				pagination: {
-					el: '.bro_mod_history.sty03 .swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
-				}
+			//			var historySlider = $('.bro_mod_history.sty03 .history')
+			//			historySlider.addClass('swiper');
+			//			historySlider.wrapInner('<div class="swiper-wrapper"></div>');
+			//			historySlider.children().children().addClass('swiper-slide')
+			//			historySlider.append('<div class="swiper-pagination"></div>');
+			//			var cultureSlider = new Swiper(".bro_mod_history.sty03 .history", {
+			//				slidesPerView: 1,
+			//				pagination: {
+			//					el: '.bro_mod_history.sty03 .swiper-pagination',
+			//					type: 'bullets',
+			//					clickable: true,
+			//					observer: true,
+			//					observeParents: true,
+			//				}
+			//			});
+
+
+			var tabCont = $('.bro_mod_history.sty03 .history').children();
+			tabCont.each(function() {
+				var year = $(this).children('span').html();
+				$(this).addClass(year);
 			});
+			$('.bro_mod_history.sty03 .tabs a:first').addClass('on')
+			$('.bro_mod_history.sty03 .history > div').hide();
+			$('.bro_mod_history.sty03 .history > div:first').show();
+        $('.bro_mod_history.sty03 .tabs a').click(function(){
+            var item = $(this).attr('data-tab');
+            $(this).siblings().removeClass('on');
+            $(this).addClass('on');
+            $('.bro_mod_history.sty03 .history > div').hide();
+            $('.bro_mod_history.sty03 .history > .' + item).show();
+            
+        });
+
 			
 			
+
+
+
 			//.bro_mod_history.sty05 연혁 슬라이드
 			var historySlider = $('.bro_mod_history.sty05 .history')
 			historySlider.addClass('swiper');
@@ -147,7 +176,7 @@
 			historySlider.children().children().addClass('swiper-slide')
 			historySlider.append('<div class="swiper-button-prev"></div>');
 			historySlider.append('<div class="swiper-button-next"></div>');
-			
+
 			var cultureSlider = new Swiper(".bro_mod_history.sty05 .history", {
 				slidesPerView: 3,
 				spaceBetween: 30,
@@ -174,8 +203,5 @@
 
 		};
 		xmlhttp.send();
-
 	</script>
-</body>
-
-</html>
+</body></html>

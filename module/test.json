@@ -74,51 +74,6 @@
                     "event" : ["연구개발전담부서 인정, 벤처기업 지정, 특허출원"]
                 }
             ]
-        },
-		{
-            "year" : 2012,
-            "remark" : [
-                {
-                    "month" : "",
-                    "event" : ["기업은행 Family 기업 선정"]
-                }
-            ]
-        },
-		{
-            "year" : 2010,
-            "remark" : [
-                {
-                    "month" : "",
-                    "event" : ["한국산업안전보건공단 CLEAN 사업장 인증"]
-                }
-            ]
-        },
-		{
-            "year" : 2005,
-            "remark" : [
-                {
-                    "month" : "",
-                    "event" : ["한국플라스틱포장용기협회 이사 선임"]
-                }
-            ]
-        },
-		{
-            "year" : 2000,
-            "remark" : [
-                {
-                    "month" : "",
-                    "event" : ["ISO 9001 인증"]
-                }
-            ]
-        },
-		{
-            "year" : 1998,
-            "remark" : [
-                {
-                    "month" : "",
-                    "event" : ["㈜효성 시트(SHEET) 사업부 인수 후 동양인더스트리㈜ 설립"]
-                }
-            ]
         }
     ],
     "certified" : [
@@ -250,17 +205,17 @@
         {
             "title" : "<span>1</span> PS Sheet",
             "desc" : "폴리스틸렌 이라는 소재를 사용하여 성형성과 인쇄성이 뛰어나 성형 가공시 유리합니다.",
-            "img" : "/images/tongyang_mission_img01.png"
+            "img" : "/images/biz_sampleImg.png"
         },
         {
             "title" : "<span>2</span> PP Sheet",
             "desc" : "폴리프로필렌 소재를 사용하여 내충격성과 내열성이 뛰어납니다.",
-            "img" : "/images/tongyang_mission_img02.png"
+            "img" : "/images/biz_sampleImg.png"
         },
         {
             "title" : "<span>3</span> PET SHEET",
             "desc" : "투명성과 내충격성이 뛰어나고기체 투과성이 낮아 탄산음료 용기에 많이 사용됩니다.",
-            "img" : "/images/tongyang_mission_img03.png"
+            "img" : "/images/biz_sampleImg.png"
         }
     ],
     "product" : [
