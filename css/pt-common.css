@@ -120,7 +120,9 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
     .com_mod_anchor.fixed.sty02 a{padding:12px 32px;}
     .com_mod_anchor.fixed.sty02 .siteGo a{padding:8px 24px 8px 48px;}
 .com_mod_add .img_wrap{display:flex;flex-wrap:wrap;}
-	.com_mod_add .img_wrap > div{flex: 1 1 48%;}
+	.com_mod_add .img_wrap > div{flex: 1 1 48%;position:relative;}
+	.com_mod_add .img_wrap > div .over{display:none;}
+	.com_mod_add .img_wrap > div:hover .over{display:flex;position:absolute;align-self:center;justify-content:center;top:0;right:0;bottom:0;left:0;background-color:rgba(0,0,0,.5);color:#fff;font-size:1.8rem;}
  /* 채용공고 */
 .com_mod_recruit.sty01{padding:80px 0;}
     .com_mod_recruit.sty01 .bg_bot{position:absolute;bottom:0;width:100%;background:#2b71b9;height:280px;}
