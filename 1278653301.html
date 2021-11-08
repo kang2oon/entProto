@@ -36,9 +36,9 @@
 		.mag_mod_add.value .value_wrap > div:nth-child(2) > div{border: 2px solid #19ace3}
 		.mag_mod_add.value .value_wrap > div:nth-child(3) p {background: #7e52ce} 
 		.mag_mod_add.value .value_wrap > div:nth-child(3) > div{border: 2px solid #7e52ce}
-		.mag_mod_biz.sty02 .bizDiv > div:nth-child(1){background: url(/images/@img_biz01_1278653301.png) no-repeat;background-size: cover}
-		.mag_mod_biz.sty02 .bizDiv > div:nth-child(2){background: url(/images/@img_biz02_1278653301.png) no-repeat;background-size: cover}
-		.mag_mod_biz.sty02 .bizDiv > div:nth-child(3){background: url(/images/@img_biz03_1278653301.png) no-repeat;background-size: cover}
+		.mag_mod_biz.sty02 .bizDiv .swiper-slide:nth-child(1){background: url(/images/@img_biz01_1278653301.png) no-repeat;background-size: cover}
+		.mag_mod_biz.sty02 .bizDiv .swiper-slide:nth-child(2) {background: url(/images/@img_biz02_1278653301.png) no-repeat;background-size: cover}
+		.mag_mod_biz.sty02 .bizDiv .swiper-slide:nth-child(3){background: url(/images/@img_biz03_1278653301.png) no-repeat;background-size: cover}
 		
 		/*swot*/
 		.rec_mod_swot.sty03{background: #00455f}
@@ -556,6 +556,37 @@
         var fiProfit1 = $('.financeProfit span:nth-child(1)').text();
         var fiProfit2 = $('.financeProfit span:nth-child(2)').text();
         var fiProfit3 = $('.financeProfit span:nth-child(3)').text();
+
+        	//mag_mod_biz.sty02 사업분야 슬라이드
+		var magBiz02 = $('.mag_mod_biz.sty02 .bizDiv')
+		magBiz02.addClass('swiper');
+		magBiz02.wrapInner('<div class="swiper-wrapper"></div>');
+		magBiz02.children().children().wrap('<div class="swiper-slide"></div>')
+		magBiz02.append('<div class="swiper-pagination"></div>');
+		magBiz02.append('<div class="swiper-button-prev"></div>');
+		magBiz02.append('<div class="swiper-button-next"></div>');
+		var bizSlider = new Swiper(magBiz02, {
+			slidesPerView: 3,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: ".mag_mod_biz.sty02 .swiper-button-next",
+				prevEl: ".mag_mod_biz.sty02 .swiper-button-prev"
+			},
+			breakpoints: {
+				280: {
+					slidesPerView: 1
+				},
+				640: {
+					slidesPerView: 2
+				},
+				1024: {
+					slidesPerView: 2
+				},
+				1261: {
+					slidesPerView: 3,
+				}
+			}
+		});
         
         var cultureSlider = new Swiper(".dvCulture",{
             slidesPerView: 2,
