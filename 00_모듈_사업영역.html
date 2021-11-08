@@ -269,7 +269,7 @@
 			<div class="msgAdd">직원과 회사가 함께 성장하는 회사</div>
 			<div class="biz_wrap">
 				<div class="bizDiv">
-					<div class="active"><img src="/images/biz_sampleImg07.png" alt="<span>1</span> PS Sheet">
+					<div><img src="/images/biz_sampleImg07.png" alt="<span>1</span> PS Sheet">
 						<h4>타이틀1</h4>
 						<p>소개</p>
 					</div>
@@ -362,7 +362,7 @@
 		magBiz02.wrapInner('<div class="swiper-wrapper"></div>');
 		magBiz02.children().children().wrap('<div class="swiper-slide"></div>')
 		magBiz02.append('<div class="swiper-pagination"></div>');
-		magBiz02.append('<div class="swiper-button-prev"></div>');
+		magBiz02.append('<div c.lass="swiper-button-prev"></div>');
 		magBiz02.append('<div class="swiper-button-next"></div>');
 		var cultureSlider = new Swiper(magBiz02, {
 			slidesPerView: 3,
@@ -563,6 +563,7 @@
 		//bro_mod_biz.sty06 사업분야
 		var bizDiv = $('.bro_mod_biz.sty06 .bizDiv > div');
 		var bizTit = $('.bro_mod_biz.sty06 .bizDiv > div h4');
+		bizDiv.first().addClass('active')
 		bizTit.attr('tabindex','0')
 		$(bizDiv).each(function() {
 			$(this).find('h4, p').wrapAll('<div class="text_area"></div>')

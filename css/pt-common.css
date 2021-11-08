@@ -928,7 +928,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_biz.sty03 .swiper-button-prev,
 .mag_mod_biz.sty03 .swiper-button-next{background: #555;width:38px;height: 38px;border-radius: 10px}
 .mag_mod_biz.sty03 .swiper-button-prev{left: -60px;}
-.mag_mod_biz.sty03 .swiper-button-next{right: -60px;left: auto}
+.mag_mod_biz.sty03 .swiper-button-next{right: -60px;left: auto !important}
 .mag_mod_biz.sty03 .swiper-button-prev:after,
 .mag_mod_biz.sty03 .swiper-button-next:after{color: #fff;font-size: 1.8rem}
 .mag_mod_biz.sty04{margin: 8.0rem 0}
@@ -941,7 +941,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_biz.sty04 .biz_wrap .bizDiv {width: calc(100% - 320px);overflow: hidden}
 .mag_mod_biz.sty04 .biz_wrap img{display: block;border-radius: 10px;}
 .mag_mod_biz.sty04 .swiper-button-next,
-.mag_mod_biz.sty04 .swiper-button-prev{background: #2b2b2b;border-radius: 10px;width: 38px;height: 38px;top: auto;bottom: 100px}
+.mag_mod_biz.sty04 .swiper-button-prev{background: #2b2b2b;border-radius: 10px;width: 38px;height: 38px;top: auto;bottom: 50px}
 .mag_mod_biz.sty04 .swiper-button-next:after, 
 .mag_mod_biz.sty04 .swiper-button-prev:after{color: #fff;font-size: 2.0rem}
 .mag_mod_biz.sty04 .swiper-button-prev{left: 0}
@@ -983,7 +983,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .bro_mod_biz.sty02 .swiper-button-prev{background: url(../images/slider06_prev.png);left: -60px}
 .bro_mod_biz.sty02 .swiper-button-next{background: url(../images/slider06_next.png);left: auto !important;right: -60px}
 .bro_mod_biz.sty03{margin: 8.0rem 0}
-.bro_mod_biz.sty03 .tab_wrap{width: 100%;overflow-x: auto;  -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */}
+.bro_mod_biz.sty03 .tab_wrap{width: 100%;overflow-x: auto;overflow-y: hidden;-ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */}
 .bro_mod_biz.sty03 .tab_wrap::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera*/}
 .bro_mod_biz.sty03 .tab_wrap .tabs{display: table;min-width: 100%;white-space: nowrap;table-layout: fixed;border-collapse: collapse}
 .bro_mod_biz.sty03 .tab_wrap .tabs li{display: table-cell;text-align: center;padding: 0 5px}
@@ -2025,7 +2025,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 .mag_mod_biz.sty02 .swiper-button-next:after,
 .mag_mod_biz.sty02 .swiper-button-prev:after{text-indent: -9999px;}
 .mag_mod_biz.sty02 .swiper-button-prev{background: url(../images/culture01_prev.png) no-repeat;width: 41px;height: 78px;}
-.mag_mod_biz.sty02 .swiper-button-next{background: url(../images/culture01_next.png) no-repeat;width: 41px;height: 78px;}
+.mag_mod_biz.sty02 .swiper-button-next{background: url(../images/culture01_next.png) no-repeat;width: 41px;height: 78px;left: auto !important}
 
 
 /*기업재무정보*/
