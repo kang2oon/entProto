@@ -121,7 +121,7 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
     }.sty02 .header .action a.on i{border-color:#ff1c31;}
     .header .action a + a{margin-left:24px;}
     .header .action a.on{color:#ff1c31;}
-    .com_mod_header.fixed{position:fixed;width:100%;padding:24px 0;z-index:4000;}
+    .com_mod_header.fixed{position:fixed;top:0;width:100%;padding:24px 0;z-index:4000;}
     .com_mod_header.fixed .header{display:block;}
     .com_mod_header.fixed .header .biz_cate, .com_mod_header.fixed .header .info dl{display:none;}
     .com_mod_header.fixed .header .logo img{max-width:180px;}
