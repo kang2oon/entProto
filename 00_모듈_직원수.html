@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,60 +15,146 @@
 </head>
 
 <body>
+	<h2 style="color: red;padding: 20px;font-size: 20px"> * 직원수 모듈 공통 : 직원수 모듈에서 '연봉정보'는 제외되었습니다. 작업시 참고해주세요.</h2>
 
-    <div class="module-wrap inf_mod_emp sty02">
-        <div class="cnt-container">
-            <div class="empCnt_wrap">
-                <ul class="graphData">
-                    <li class="ctLabel"></li>
-                    <li class="joinCnt"></li>
-                    <li class="resignCnt"></li>
-                    <li class="totalCnt"></li>
-                </ul>
-                <div id="graph_empCnt"></div>
-                <div class="lastEmployeeState">
-                    <div class="total_wrap">
-                        <div>총 인원(명)</div>
-                        <div class="lastTotal">-</div>
-                    </div>
-                    <div class="empState_wrap">
-                        <div>최근 1년 입사자</div>
-                        <div class="lastJoin">-</div>
-                        <div class="mgtop_20">최근 1년 퇴사자</div>
-                        <div class="lastResign">-</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-      <div class="module-wrap inf_mod_emp sty01">
-        <div class="cnt-container">
-            <div class="empCnt_wrap">
-                <ul class="graphData">
-                    <li class="ctLabel"></li>
-                    <li class="joinCnt"></li>
-                    <li class="resignCnt"></li>
-                    <li class="totalCnt"></li>
-                </ul>
-                <div id="graph_empCnt"></div>
-                <div class="lastEmployeeState">
-                    <div class="total_wrap">
-                        <div>총 인원(명)</div>
-                        <div class="lastTotal">-</div>
-                    </div>
-                    <div class="empState_wrap">
-                        <div>최근 1년 입사자</div>
-                        <div class="lastJoin">-</div>
-                    </div>
-                    <div class="empState_wrap">
-                        <div>최근 1년 퇴사자</div>
-                        <div class="lastResign">-</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="module-wrap inf_mod_emp sty03">
+		<div class="cnt-container">
+			<div class="empCnt_wrap">
+				<ul class="graphData">
+					<li class="ctLabel"></li>
+					<li class="joinCnt"></li>
+					<li class="resignCnt"></li>
+					<li class="totalCnt"></li>
+				</ul>
+				<div class="chart_area">
+					<div id="graph_empCnt">
+					</div>
+					<ul id="legend"></ul>
+				</div>
+				<div class="cont_area">
+					<img src="images/inf_emp_img.png" alt="사원증 들고있는 이미지">
+					<div class="lastEmployeeState">
+						<div class="total_wrap">
+							<div>총 인원(명)</div>
+							<div class="lastTotal">-</div>
+						</div>
+						<div class="empState_wrap">
+							<div class="lastJoin_wrap">
+								<div>최근 1년 입사자</div>
+								<div class="lastJoin">-</div>
+							</div>
+							<div class="lastResign_wrap">
+								<div>최근 1년 퇴사자</div>
+								<div class="lastResign">-</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="module-wrap inf_mod_emp sty04">
+		<div class="cnt-container">
+			<div class="empCnt_wrap">
+				<div class="chart_area">
+					<ul class="graphData">
+						<li class="ctLabel"></li>
+						<li class="joinCnt"></li>
+						<li class="resignCnt"></li>
+						<li class="totalCnt"></li>
+					</ul>
+					<div id="graph_empCnt02"></div>
+					<ul id="legend02"></ul>
+				</div>
+				<div class="lastEmployeeState">
+					<div class="total_wrap">
+						<div>총 인원(명)</div>
+						<div class="lastTotal">-</div>
+					</div>
+					<div class="empState_wrap">
+						<div class="lastJoin_wrap">
+							<div>최근 1년 입사자</div>
+							<div class="lastJoin">-</div>
+						</div>
+						<div class="lastResign_wrap">
+							<div>최근 1년 퇴사자</div>
+							<div class="lastResign">-</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="module-wrap inf_mod_emp sty05">
+		<div class="cnt-container">
+			<div class="empCnt_wrap">
+				<div class="chart_area">
+					<ul class="graphData">
+						<li class="ctLabel"></li>
+						<li class="joinCnt"></li>
+						<li class="resignCnt"></li>
+						<li class="totalCnt"></li>
+					</ul>
+					<div id="graph_empCnt03"></div>
+					<ul id="legend03"></ul>
+				</div>
+				<div class="lastEmployeeState">
+					<div class="total_wrap">
+						<div>총 인원(명)</div>
+						<div class="lastTotal">-</div>
+					</div>
+					<div class="empState_wrap">
+						<div class="lastJoin_wrap">
+							<div>최근 1년 입사자</div>
+							<div class="lastJoin">-</div>
+						</div>
+						<div class="lastResign_wrap">
+							<div>최근 1년 퇴사자</div>
+							<div class="lastResign">-</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="module-wrap inf_mod_emp sty06">
+		<div class="cnt-container">
+			<div class="empCnt_wrap">
+				<div class="chart_area">
+					<ul class="graphData">
+						<li class="ctLabel"></li>
+						<li class="joinCnt"></li>
+						<li class="resignCnt"></li>
+						<li class="totalCnt"></li>
+					</ul>
+					<div id="graph_empCnt04"></div>
+					<ul id="legend04"></ul>
+				</div>
+				<div class="lastEmployeeState">
+					<div class="total_wrap">
+						<div>총 인원(명)</div>
+						<div class="lastTotal">-</div>
+					</div>
+					<div class="empState_wrap">
+						<div class="lastJoin_wrap">
+							<div>최근 1년 입사자</div>
+							<div class="lastJoin">-</div>
+						</div>
+						<div class="lastResign_wrap">
+							<div>최근 1년 퇴사자</div>
+							<div class="lastResign">-</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
@@ -75,7 +162,7 @@
 	<script src="./js/imgLiquid-min.js"></script>
 	<script src="/module/jsontohtml.js"></script>
 	<script>
-		xmlhttp.open("GET", "/module/test.json");
+		xmlhttp.open("GET", "/module/8738601250.json");
 		xmlhttp.onloadend = function() {
 			var ctLabelData1 = $('.ctLabel span:nth-child(1)').text();
 			var ctLabelData2 = $('.ctLabel span:nth-child(2)').text();
@@ -89,21 +176,271 @@
 			var totalCnt1 = $('.totalCnt span:nth-child(1)').text();
 			var totalCnt2 = $('.totalCnt span:nth-child(2)').text();
 			var totalCnt3 = $('.totalCnt span:nth-child(3)').text();
-			var fiYear1 = $('.financeYear span:nth-child(1)').text();
-			var fiYear2 = $('.financeYear span:nth-child(2)').text();
-			var fiYear3 = $('.financeYear span:nth-child(3)').text();
-			var fiCapital1 = $('.financeCapital span:nth-child(1)').text();
-			var fiCapital2 = $('.financeCapital span:nth-child(2)').text();
-			var fiCapital3 = $('.financeCapital span:nth-child(3)').text();
-			var fiSales1 = $('.financeSales span:nth-child(1)').text();
-			var fiSales2 = $('.financeSales span:nth-child(2)').text();
-			var fiSales3 = $('.financeSales span:nth-child(3)').text();
-			var fiProfit1 = $('.financeProfit span:nth-child(1)').text();
-			var fiProfit2 = $('.financeProfit span:nth-child(2)').text();
-			var fiProfit3 = $('.financeProfit span:nth-child(3)').text();
-
-			var comName = $('h2.comName').text();
+			var comName = $('.map_info_wrap .comName').text();
 			var comAddress = $('.comAddress').text();
+
+			//차트영역
+			var chart1 = bb.generate({
+				bindto: "#graph_empCnt",
+				data: {
+					type: "line",
+					// ******* 아래 columns 항목은 퍼블시 디자인 확인 영역 등록시 주석처리******
+					columns: [
+						["입사자", 55, 33, 11],
+						["퇴사자", 22, 33, 55],
+						["총원", 11, 55, 55]
+					],
+					// ******관리자 등록시 아래 columns 영역 주석풀고 등록 ******	
+					//                            columns: [
+					//                                joinCntList,
+					//                                resignCntList,
+					//                                totalCntList
+					//                            ],
+					colors: {
+						입사자: "rgb(0, 174, 239)",
+						퇴사자: "rgb(208, 208, 208)",
+						총원: "rgb(7, 232, 150)"
+					}
+				},
+				axis: {
+					x: {
+						type: "category",
+						//아래 categories 항목은 퍼블시 디자인 확인 영역 등록시 주석처리
+						categories: ['2019', '2020', '2021'],
+						// ******관리자 등록시 아래 categories 영역 주석풀고 등록 ******
+						//categories: ctLabelDataList,
+						padding: {
+							left: .2,
+							right: .2
+						}
+					}
+				},
+				grid: {
+					x: {
+						show: false
+					},
+					y: {
+						show: true
+					}
+				},
+				padding: {
+					bottom: 40
+				},
+				point: {
+					pattern: [
+						"<g><circle cx='10' cy='10' r='10'></circle><rect x='5' y='5' width='10' height='10' rx='10' ry='10' style='fill:#fff'></rect></g>"
+					]
+				},
+				legend: {
+					contents: {
+						bindto: "#legend",
+						template: "<li><span style='width:15px;height:15px;border-radius:50%;display:inline-block;margin-right:5px;border:4px solid ;border-color:{=COLOR}'></span>{=TITLE}</li>"
+					}
+				}
+			});
+			setTimeout(function() {
+				chart1.resize();
+			}, 100);
+
+			//차트영역
+			var chart2 = bb.generate({
+				bindto: "#graph_empCnt02",
+				data: {
+					type: "bar",
+					// ******* 아래 columns 항목은 퍼블시 디자인 확인 영역 등록시 주석처리******
+					columns: [
+						["입사자", 55, 33, 11],
+						["퇴사자", 22, 33, 55],
+						["총원", 11, 55, 55]
+					],
+					// ******관리자 등록시 아래 columns 영역 주석풀고 등록 ******	
+					//					columns: [
+					//						joinCntList,
+					//						resignCntList,
+					//						totalCntList
+					//					],
+					colors: {
+						입사자: "rgb(0, 200, 200)",
+						퇴사자: "rgb(205, 198, 198)",
+						총원: "rgb(83, 110, 194)"
+					}
+				},
+				axis: {
+					x: {
+						type: "category",
+						//아래 categories 항목은 퍼블시 디자인 확인 영역 등록시 주석처리
+						categories: ['2019', '2020', '2021'],
+						// ******관리자 등록시 아래 categories 영역 주석풀고 등록 ******
+						//  categories: ctLabelDataList,
+						padding: {
+							left: .2,
+							right: .2
+						}
+					}
+				},
+				grid: {
+					x: {
+						show: false
+					},
+					y: {
+						show: true
+					}
+				},
+				padding: {
+					bottom: 40
+				},
+				bar: {
+					padding: 3,
+					width: {
+						max: 30
+					},
+					radius: {
+						ratio: 0.5
+					}
+				},
+				legend: {
+					contents: {
+						bindto: "#legend02",
+						template: "<li><span style='width:15px;height:15px;border-radius:50% 50% 0 0;display:inline-block;margin-right:5px;background:{=COLOR}'></span>{=TITLE}</li>"
+					}
+				}
+			});
+			setTimeout(function() {
+				chart1.resize();
+			}, 100);
+
+
+			//차트영역
+			var chart3 = bb.generate({
+				bindto: "#graph_empCnt03",
+				data: {
+					type: "bar",
+					// ******* 아래 columns 항목은 퍼블시 디자인 확인 영역 등록시 주석처리******
+					columns: [
+						["입사자", 55, 33, 11],
+						["퇴사자", 22, 33, 55],
+						["총원", 11, 55, 55]
+					],
+					//							
+					// ******관리자 등록시 아래 columns 영역 주석풀고 등록 ******	
+					//					columns: [
+					//						joinCntList,
+					//						resignCntList,
+					//						totalCntList
+					//					],
+					colors: {
+						입사자: "rgb(0, 200, 200)",
+						퇴사자: "rgb(205, 198, 198)",
+						총원: "rgb(83, 110, 194)"
+					}
+				},
+				axis: {
+					x: {
+						type: "category",
+						//아래 categories 항목은 퍼블시 디자인 확인 영역 등록시 주석처리
+						categories: ['2019', '2020', '2021'],
+						// ******관리자 등록시 아래 categories 영역 주석풀고 등록 ******
+						//  categories: ctLabelDataList,
+						padding: {
+							left: .2,
+							right: .2
+						}
+					}
+				},
+				grid: {
+					x: {
+						show: false
+					},
+					y: {
+						show: true
+					}
+				},
+				padding: {
+					bottom: 40
+				},
+				bar: {
+					padding: 10,
+					width: {
+						max: 50
+					},
+					radius: {
+						ratio: 0.5
+					}
+				},
+				legend: {
+					contents: {
+						bindto: "#legend03",
+						template: "<li><span style='width:15px;height:15px;border-radius:50% 50% 0 0;display:inline-block;margin-right:5px;background:{=COLOR}'></span>{=TITLE}</li>"
+					}
+				}
+			});
+			setTimeout(function() {
+				chart3.resize();
+			}, 100);
+
+			//차트영역
+			var chart4 = bb.generate({
+				bindto: "#graph_empCnt04",
+				data: {
+					type: "bar",
+					// ******* 아래 columns 항목은 퍼블시 디자인 확인 영역 등록시 주석처리******
+					columns: [
+						["입사자", 55, 33, 11],
+						["퇴사자", 22, 33, 55],
+						["총원", 11, 55, 55]
+					],
+					// ******관리자 등록시 아래 columns 영역 주석풀고 등록 ******	
+					//           columns: [
+					//                                joinCntList,
+					//                                resignCntList,
+					//                                totalCntList
+					//                            ],
+					colors: {
+						입사자: "rgb(251, 203, 97)",
+						퇴사자: "rgb(196, 196, 196)",
+						총원: "rgb(219, 85, 77)"
+					}
+				},
+				axis: {
+					x: {
+						type: "category",
+						//아래 categories 항목은 퍼블시 디자인 확인 영역 등록시 주석처리
+						categories: ['2019', '2020', '2021'],
+						// ******관리자 등록시 아래 categories 영역 주석풀고 등록 ******
+						//categories: ctLabelDataList,
+						padding: {
+							left: .2,
+							right: .2
+						}
+					}
+				},
+				grid: {
+					x: {
+						show: false
+					},
+					y: {
+						show: true
+					}
+				},
+				padding: {
+					bottom: 40
+				},
+				bar: {
+					padding: 10,
+					width: {
+						max: 50
+					}
+				},
+				legend: {
+					contents: {
+						bindto: "#legend04",
+						template: "<li><span style='width:10px;height:10px;display:inline-block;margin-right:5px;background:{=COLOR}'></span>{=TITLE}</li>"
+					}
+				}
+			});
+			setTimeout(function() {
+				chart4.resize();
+			}, 100);
 
 
 
