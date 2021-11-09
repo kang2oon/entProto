@@ -1071,7 +1071,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .inf_mod_emp.sty03 .line-width{stroke-width: 3px; }
 .inf_mod_emp.sty03 .bb-legend-item{font-size: 1.6rem}
 .inf_mod_emp.sty03 .lastEmployeeState{display: flex;margin-top: auto;border-radius: 20px;overflow: hidden;}
-.inf_mod_emp.sty03 .right img{display: block;margin: 0 auto 3rem auto}
+.inf_mod_emp.sty03 .cont_area .img{display: block;margin: 0 auto 3rem auto;background: url(../images/inf_emp_img.png) no-repeat;width: 425px;height: 319px}
 .inf_mod_emp.sty03 .lastEmployeeState  > div {display: flex;align-items: center;justify-content:center;font-weight: 200;}
 .inf_mod_emp.sty03 .lastEmployeeState  .lastJoin,
 .inf_mod_emp.sty03 .lastEmployeeState  .lastResign{font-weight: 500;margin-left: 2.0rem}
@@ -1080,7 +1080,8 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .inf_mod_emp.sty03 .empState_wrap{flex-direction: column;background: #f0f0f0;width: calc(100% - 300px)}
 .inf_mod_emp.sty03 .empState_wrap > div {display: flex;position: relative;font-size: 2.4rem;align-items: center;margin-bottom: 2rem}
 .inf_mod_emp.sty03 .empState_wrap > div:last-child{margin-bottom: 0}
-.inf_mod_emp.sty03 .total_wrap{background: #07e896;color: #fff;font-size: 2.8rem;border-radius: 0;padding: 2.0rem;width: 300px}
+.inf_mod_emp.sty03 .total_wrap{background: #07e896;font-size: 2.8rem;border-radius: 0;padding: 2.0rem;width: 300px}
+.inf_mod_emp.sty03 .total_wrap > div {color: #fff;}
 .inf_mod_emp.sty03 .total_wrap > .lastTotal{font-weight: bold;font-size: 7.0rem;margin-left: 2.0rem}
 .inf_mod_emp.sty03 #legend {display: flex;justify-content: center;margin-top: auto}
 .inf_mod_emp.sty03 #legend li{display: flex;align-items: center;margin-right: 20px;color: #555}
@@ -1090,6 +1091,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .inf_mod_emp.sty04 .total_wrap{background: #6986e4;color: #fff;display: flex;align-items: center;justify-content: center;padding: 1rem;font-size: 2.8rem}
 .inf_mod_emp.sty04 .total_wrap > div:first-child:before{content: '';display: inline-block;background: url(../images/inf_emp_ico.png) no-repeat;width: 50px;height: 50px;margin-right: 20px;vertical-align:baseline}
 .inf_mod_emp.sty04 .total_wrap .lastTotal{font-size: 7.0rem;margin-left: 3.0rem}
+.inf_mod_emp.sty04 .total_wrap > div{color: #fff}
 .inf_mod_emp.sty04 .empState_wrap{display: flex;}
 .inf_mod_emp.sty04 .empState_wrap > div{width: calc(50% - 40px);margin: 4.0rem 80px 0 0;text-align: center;font-size: 2.4rem;padding-top: 120px;display: flex;justify-content: center;position: relative;padding-top: 90px;}
 .inf_mod_emp.sty04 .empState_wrap .lastJoin_wrap:before{content: '';display: block;background: url(../images/inf_emp_ico02.png) no-repeat;width: 182px;height: 56px;position: absolute;left: 50%;top: 0;transform: translateX(-50%)}
@@ -1108,9 +1110,10 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .inf_mod_emp.sty05 .empState_wrap{flex-direction: column;width: calc(100% - 300px)}
 .inf_mod_emp.sty05 .empState_wrap > div {display: flex;position: relative;font-size: 2.4rem;align-items: center;margin-bottom: 2rem;border-bottom: 1px solid #dcdcdc;padding-bottom: 2rem}
 .inf_mod_emp.sty05 .empState_wrap > div:last-child{margin-bottom: 0;border-bottom: 0}
-.inf_mod_emp.sty05 .total_wrap{background: #002e78;color: #fff;font-size: 2.8rem;padding: 2.0rem;width: 300px;border-radius: 20px;}
+.inf_mod_emp.sty05 .total_wrap{background: #002e78;font-size: 2.8rem;padding: 2.0rem;width: 300px;border-radius: 20px;}
 .inf_mod_emp.sty05 .total_wrap > div:first-child:before{content: '';display: block;background: url(../images/inf_emp_ico04.png) no-repeat;width: 66px;height: 66px;margin: 0 auto 2rem auto}
-.inf_mod_emp.sty05 .total_wrap > .lastTotal{font-weight: bold;font-size: 7.0rem;margin-left: 2.0rem;color: #54e1af}
+.inf_mod_emp.sty05 .total_wrap > div:first-child {color: #fff}
+.inf_mod_emp.sty05 .total_wrap > .lastTotal{font-weight: bold;font-size: 7.0rem;color: #54e1af}
 .inf_mod_emp.sty05 #legend03 {display: flex;justify-content: center;margin-top: auto}
 .inf_mod_emp.sty05 #legend03 li{display: flex;align-items: center;margin-right: 20px;color: #555;font-size: 1.6rem}
 .inf_mod_emp.sty05 #legend03 li:last-child{margin-right: 0}
@@ -1127,8 +1130,9 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .inf_mod_emp.sty06 .empState_wrap{flex-direction: column;width: calc(100% - 300px)}
 .inf_mod_emp.sty06 .empState_wrap > div {display: flex;position: relative;font-size: 2.4rem;align-items: center;margin-bottom: 2rem}
 .inf_mod_emp.sty06 .empState_wrap > div:last-child{margin-bottom: 0}
-.inf_mod_emp.sty06 .total_wrap{background: #db554d;color: #fff;font-size: 2.8rem;border-radius: 0;padding: 4.0rem;width: 300px;display: flex;flex-direction: column}
-.inf_mod_emp.sty06 .total_wrap > .lastTotal{font-weight: bold;font-size: 7.0rem;margin-left: 2.0rem}
+.inf_mod_emp.sty06 .total_wrap{background: #db554d;font-size: 2.8rem;border-radius: 0;padding: 4.0rem;width: 300px;display: flex;flex-direction: column}
+.inf_mod_emp.sty06 .total_wrap > div {color: #fff}
+.inf_mod_emp.sty06 .total_wrap > .lastTotal{font-weight: bold;font-size: 7.0rem;}
 .inf_mod_emp.sty06 #legend04 {display: flex;justify-content: center;margin-top: auto}
 .inf_mod_emp.sty06 #legend04 li{display: flex;align-items: center;margin-right: 20px;color: #555;font-size: 1.6rem}
 .inf_mod_emp.sty06 #legend04 li:last-child{margin-right: 0}
@@ -2666,7 +2670,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	
 	/* 직원수 */
 	.inf_mod_emp.sty03 .empCnt_wrap {flex-direction: column}
-	.inf_mod_emp.sty03 .empCnt_wrap .cont_area img{display: none}
+	.inf_mod_emp.sty03 .empCnt_wrap .cont_area .img{display: none}
 	.inf_mod_emp.sty03 .empCnt_wrap .cont_area{margin-top: 4.0rem;margin-left: 0}
 	.inf_mod_emp.sty03 .total_wrap{font-size: 2.2rem}
 	.inf_mod_emp.sty03 .total_wrap > .lastTotal{font-size: 5.0rem}
