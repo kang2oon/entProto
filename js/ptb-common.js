@@ -1640,7 +1640,7 @@ function displayMarker(locPosition) {
     var mapContainer = document.getElementById("map"); // 지도를 표시할 div
     var mapOption = {
         center	: locPosition.latlng,
-        level	: 3
+        level	: 5
     };
 
     var mapSrch = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
