@@ -380,23 +380,31 @@ function afterAjax(srchBizrno) {
                 }
             });
 
-            //복리후생 - 입력형
+             //복리후생 - 입력형
             if(isNull(welfareInput)){
                 var welfareInputTitle = "";//복리후생 입력형 제목
                 var welfareInputCntnt = "";//복리후생 입력형 내용
+				
+				var dvWelfare = "<div class='swiper-wrapper'>";
                 for(var i=1; i<addDtailList; i++){
                     welfareInputTitle = "welfareInputTitle = welfareInput.addTitle"+i;
                     eval(welfareInputTitle);
                     if (isNull(welfareInputTitle)){
                         //console.log("복리후생 입력형 제목"+i+" : " + welfareInputTitle);
+						dvWelfare += "<div class='swiper-slide'><div>";
+						dvWelfare += "<div class='tit'>"+welfareInputTitle+"</div>";
                     }
                     welfareInputCntnt = "welfareInputCntnt = welfareInput.addCntnt"+i;
                     eval(welfareInputCntnt);
                     if (isNull(welfareInputCntnt)){
                         //console.log("복리후생 입력형 내용"+i+" : " + welfareInputCntnt);
+						dvWelfare += "<div class='desc'>"+welfareInputCntnt+"</div>";
+                        dvWelfare += "</div></div>";
                     }
                 }
+				dvWelfare += "</div>";
             }
+			$(".dvWelfare").html(dvWelfare);
 
             //25.조직문화
             if(isNull(orgnz)){
