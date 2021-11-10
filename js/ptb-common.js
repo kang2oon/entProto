@@ -227,22 +227,44 @@ function afterAjax(srchBizrno) {
 
 //**기업인증정보 탭 -> Y값인경우 인증
             //18.일자리우수기업
+            var certified = "";
             var cert1 = empmnVO.jobExclncYn;
             //console.log("일자리우수기업 : " + cert1);
+            if(cert1 == "Y"){
+                //console.log("일자리우수기업");
+                certified += "<span>일자리우수기업</span>";
+            }
             //19.여성고용우수기업
             var cert2 = empmnVO.wmExclncYn;
             //console.log("여성고용우수기업 : " + cert2);
             //20.청년친화강소기업
+            if(cert2 == "Y"){
+                //console.log("여성고용우수기업");
+                certified += "<span>여성고용우수기업</span>";
+            }
             var cert3 = empmnVO.ythSmlGntYn;
             //console.log("청년친화강소기업 : " + cert3);
+            if(cert3 == "Y"){
+                //console.log("청년친화강소기업");
+                certified += "<span>청년친화강소기업</span>";
+            }
             //21.경기유망중소기업
             var cert4 = empmnVO.bhrcYn;
             //console.log("경기유망중소기업 : " + cert4);
+            if(cert4 == "Y"){
+                //console.log("경기유망중소기업");
+                certified += "<span>경기유망중소기업</span>";
+            }
             //22.기타기업(X)
 
             //23.면접수당 지급인증기업
             var cert5 = empmnVO.itvPayYn;
             //console.log("면접수당 지급인증기업 : " + cert5);
+            if(cert5 == "Y"){
+               //console.log("면접수당 지급인증기업");
+               certified += "<span>면접수당 지급인증기업</span>";
+            }
+            $(".certified").html(certified);
 
 //**기업복지정보 탭
             //24.복리후생-선택형
@@ -380,31 +402,23 @@ function afterAjax(srchBizrno) {
                 }
             });
 
-             //복리후생 - 입력형
+            //복리후생 - 입력형
             if(isNull(welfareInput)){
                 var welfareInputTitle = "";//복리후생 입력형 제목
                 var welfareInputCntnt = "";//복리후생 입력형 내용
-				
-				var dvWelfare = "<div class='swiper-wrapper'>";
                 for(var i=1; i<addDtailList; i++){
                     welfareInputTitle = "welfareInputTitle = welfareInput.addTitle"+i;
                     eval(welfareInputTitle);
                     if (isNull(welfareInputTitle)){
                         //console.log("복리후생 입력형 제목"+i+" : " + welfareInputTitle);
-						dvWelfare += "<div class='swiper-slide'><div>";
-						dvWelfare += "<div class='tit'>"+welfareInputTitle+"</div>";
                     }
                     welfareInputCntnt = "welfareInputCntnt = welfareInput.addCntnt"+i;
                     eval(welfareInputCntnt);
                     if (isNull(welfareInputCntnt)){
                         //console.log("복리후생 입력형 내용"+i+" : " + welfareInputCntnt);
-						dvWelfare += "<div class='desc'>"+welfareInputCntnt+"</div>";
-                        dvWelfare += "</div></div>";
                     }
                 }
-				dvWelfare += "</div>";
             }
-			$(".dvWelfare").html(dvWelfare);
 
             //25.조직문화
             if(isNull(orgnz)){
@@ -986,6 +1000,8 @@ function afterAjax(srchBizrno) {
                     oprtprft = Math.floor(finncstmtList[0].oprtprft / 1000).toLocaleString();
                     netincm = Math.floor(finncstmtList[0].netincm / 1000).toLocaleString();
                     capital = Math.floor(finncstmtList[0].capital / 1000).toLocaleString();
+                    diffSalamt = (((finncstmtList[0].salamt / finncstmtList[1].salamt)-1)*100);
+                    diffNetincm = (((finncstmtList[0].netincm / finncstmtList[1].netincm)-1)*100);
                     //console.log("동종업계 내 순위 최근 1년 : " + indstRank);
                     $(".fiPosition").html(indstRank+"위");
                     //console.log("수익 - 매출액(백만원) 최근 1년 : " + salamt);
@@ -995,9 +1011,22 @@ function afterAjax(srchBizrno) {
                     $(".fiProfit").html(netincm);
                     //console.log("자본금 (백만원) 최근 1년 : " + capital);
                     $(".fiCapital").html(capital);
+                    // 계산
+                    //console.log("계산-매출액(백만원) : " + diffSalamt.toFixed(2));
+                    //console.log("계산-당기순이익(백만원) : " + diffNetincm.toFixed(2));
+                    $(".diffSalamt strong").html(diffSalamt.toFixed(1));
+                    $(".diffNetincm strong").html(diffNetincm.toFixed(1));
 
                     //최근 3년 재무정보
                     //financeCnt = 3;
+                    var yearDataList = [];
+                    var capitalList = [];
+                    var salamtList = [];
+                    var netincmList = [];
+                    capitalList.push("자본금");
+                    salamtList.push("매출액");
+                    netincmList.push("당기순이익");
+
                     for(var i=0; i<financeCnt; i++){ //최근 3년간의 재무정보를 보여줘야할경우 주석 해제
                         indstRank = finncstmtList[i].indstRank;
                         salamt = Math.floor(finncstmtList[i].salamt / 1000);
@@ -1005,11 +1034,157 @@ function afterAjax(srchBizrno) {
                         netincm = Math.floor(finncstmtList[i].netincm / 1000);
                         capital = Math.floor(finncstmtList[i].capital / 1000);
                         // console.log("동종업계 내 순위 최근 3년"+i+" : " + indstRank);
-                        // console.log("동종업계 내 순위 최근 3년"+i+" : " + salamt);
-                        // console.log("동종업계 내 순위 최근 3년"+i+" : " + oprtprft);
-                        // console.log("동종업계 내 순위 최근 3년"+i+" : " + netincm);
-                        // console.log("동종업계 내 순위 최근 3년"+i+" : " + capital);
+                        // console.log("매출액(백만원) 최근 3년"+i+" : " + salamt);
+                        // console.log("영업이익(백만원) 최근 3년"+i+" : " + oprtprft);
+                        // console.log("당기순이익(백만원) 최근 3년"+i+" : " + netincm); 
+                        // console.log("자본금(백만원) 최근 3년"+i+" : " + capital);
+                        yearDataList.push(finncstmtList[i].stdDe.substring(0,4));
+                        capitalList.push(finncstmtList[i].capital);
+                        salamtList.push(finncstmtList[i].salamt);
+                        netincmList.push(finncstmtList[i].netincm);
                     }
+
+                    var chart2 = bb.generate({
+                        bindto: "#graph_fiCapital",
+                        data: {
+                            type: "bar",
+                            //x: "x",
+                            columns: [
+                                capitalList
+                            ]
+                        },
+                       padding: {
+                            top:    20,
+                            left:   40
+                        },
+                        grid: {
+                            x: {
+                                show: true
+                            },
+                            y: {
+                                show: true
+                            }
+                        },
+                        axis:{
+                            x: {
+                                type: "category",
+                                categories: yearDataList,
+                                padding: {
+                                    left: .2,
+                                    right: .2
+                                }
+                            }
+                        },
+                        bar: {
+                        width: {
+                            max: 60
+                        } 
+                        },
+                        color: {
+                            자본금: "#033a71"
+                        },
+                        legend: {
+                            show: false
+                        }
+                    });
+                    setTimeout(function(){
+                        chart2.resize();
+                    }, 100);
+
+                    var chart3 = bb.generate({
+                        bindto: "#graph_fiSales",
+                        data: {
+                            type: "bar",
+                            //x: "x",
+                            columns: [
+                                salamtList
+                            ]
+                        },
+                       padding: {
+                            top:    20,
+                            left:   40
+                        },
+                        grid: {
+                            x: {
+                                show: true
+                            },
+                            y: {
+                                show: true
+                            }
+                        },
+                        axis:{
+                            x: {
+                                type: "category",
+                                categories: yearDataList,
+                                padding: {
+                                    left: .2,
+                                    right: .2
+                                }
+                            }
+                        },
+                        bar: {
+                        width: {
+                            max: 60
+                        } 
+                        },
+                        color: {
+                            매출액: "#033a71"
+                        },
+                        legend: {
+                            show: false
+                        }
+                    });
+                    setTimeout(function(){
+                        chart3.resize();
+                    }, 100);
+
+                    var chart4 = bb.generate({
+                        bindto: "#graph_fiProfit",
+                        data: {
+                            type: "bar",
+                            //x: "x",
+                            columns: [
+                                netincmList
+                            ]
+                        },
+                       padding: {
+                            top:    20,
+                            left:   40
+                        },
+                        grid: {
+                            x: {
+                                show: true
+                            },
+                            y: {
+                                show: true
+                            }
+                        },
+                        axis:{
+                            x: {
+                                type: "category",
+                                categories: yearDataList,
+                                padding: {
+                                    left: .2,
+                                    right: .2
+                                }
+                            }
+                        },
+                        bar: {
+                        width: {
+                            max: 60
+                        } 
+                        },
+                        color: {
+                            당기순이익: "#033a71"
+                        },
+                        legend: {
+                            show: false
+                        }
+                    });
+                    setTimeout(function(){
+                        chart4.resize();
+                    }, 100);
+
                 }else{
                     indstRank = "순위없음";
                     salamt = "비공개";
@@ -1018,6 +1193,7 @@ function afterAjax(srchBizrno) {
                     capital = "비공개";
                 }
             }
+
 
             //등급정보
             //15.기업평가등급
