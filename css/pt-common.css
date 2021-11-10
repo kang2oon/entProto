@@ -1357,7 +1357,11 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_finance.sty02 .top > div > p{font-size: 2.0rem;font-weight: bold}
 .rec_mod_finance.sty02 .local_rank_wrap .lank_img span {background: url(../images/rec_finance02_img02.png) no-repeat;width: 433px;height: 591px;display: block;margin: auto;position: absolute;left: -200px;bottom: -150px}
 .rec_mod_finance.sty02 .local_rank_wrap .lank_img {width: 150px;margin-left: 150px}
-.rec_mod_finance.sty02 .chart_cont{padding: 2.0rem;border-radius: 15px;}
+.rec_mod_finance.sty02 .box_infomation{border:2px solid #ff763a;padding:24px 32px;margin-bottom:20px;}
+.rec_mod_finance.sty02 .chart_cont{display:flex;justify-content:space-around;}
+.rec_mod_finance.sty02 .chart_cont li{flex:1 1 30%;}
+.rec_mod_finance.sty02 .chart_cont li + li{border-left:1px solid #ddd;}
+.rec_mod_finance.sty02 .chart_cont li .diff_calc{color:#ff763a;}
 .rec_mod_percent.sty01 .percent_wrap{display: flex;text-align: center;color: #fff;position: relative;justify-content: flex-end;}
 .rec_mod_percent.sty01 .percent_wrap > div{margin-right: 30px}
 .rec_mod_percent.sty01 .percent_wrap > div:last-child{margin-right: 0}
@@ -2194,7 +2198,8 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 .mag_mod_finance.sty02 > div .tab_warp .conts .summary table td{font-size:1.8rem;text-align:center;}
 .mag_mod_finance.sty02 > div .tab_warp .conts .summary table td .bizGrade{font-size:2rem;font-weight:500;margin-bottom:4px;}
 
-#graph_fiCapital svg, #graph_fiSales svg, #graph_fiProfit svg{width:100%;min-height:440px;}
+.mag_mod_finance.sty02 .bb > svg{width:100%;min-height:440px;}
+/* #graph_fiCapital svg, #graph_fiSales svg, #graph_fiProfit svg{width:100%;min-height:440px;} */
 .mag_mod_finance.sty02 > div .tab_warp .conts .unit{font-size:1.4rem;text-align:right;color:#666;margin-bottom:24px;}
 .mag_mod_finance.sty02 > div .tab_warp .conts > div{display:none;width:100%;}
 .mag_mod_finance.sty02 > div .tab_warp .conts > div:first-child{display:block;}
