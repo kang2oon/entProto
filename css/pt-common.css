@@ -836,11 +836,10 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_interview.sty02 .tabs li.active a{color: #fff}
 .mag_mod_interview.sty02 .tabs li.active:after{background: url(../images/tab_arrow_active.png)}
 .mag_mod_interview.sty02 .tabs li:after{content: '';display: block;background: url(../images/tab_arrow.png) no-repeat center;width: 18px;height: 14px;position: absolute;right: 2.0rem;top: 50%;transform: translateY(-50%)}
-.mag_mod_interview.sty02 .tabs li a{display: block;width: 100%;height: 100%;padding: 1.5rem 2.0rem;color: }
+.mag_mod_interview.sty02 .tabs li a{display: block;width: 100%;height: 100%;padding: 1.5rem 2.0rem;}
 .mag_mod_interview.sty02 .tab_content {width: calc(100% - 270px);position: relative;overflow-x: hidden;min-height: 500px;padding-bottom: 6.0rem;}
 .mag_mod_interview.sty02 .tab_content > div{display:block;}
 .mag_mod_interview.sty02 .tab_content img{position: absolute;right: 0;bottom: 0}
-.mag_mod_interview.sty02 {margin-bottom: 5.0rem;}
 .mag_mod_interview.sty02 .q{font-size: 2.3rem;margin-bottom: 1.0rem;padding-left: 25px;position: relative;}
 .mag_mod_interview.sty02 .a{color: #606060;width: calc(100% - 200px);word-break: keep-all;font-size: 1.8rem}
 .mag_mod_interview.sty02 .q:before{content: 'Q.';display: block;position: absolute;left: 0;top: 0}
@@ -1265,7 +1264,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_interview.sty03 .qa_mng .iv_wrap img,
 .rec_mod_interview.sty03 .qa_emp .iv_wrap img{position: absolute;bottom: 0;right: 0}
 .rec_mod_interview.sty03 .qa_mng .iv_wrap .swiper,
-.rec_mod_interview.sty03 .qa_emp .iv_wrap .swiper{overflow: hidden}
+.rec_mod_interview.sty03 .qa_emp .iv_wrap .swiper{overflow: hidden;position: relative}
 .rec_mod_interview.sty03 .swiper:not(.ivCeo) .q{font-size: 2.6rem;position: relative;padding-left: 50px;margin-bottom: 2rem;font-weight: bold}
 .rec_mod_interview.sty03 .swiper:not(.ivCeo) .q:before{content: '';display: block;background: url(../images/q_img.png) no-repeat center;width: 42px;height: 47px;position: absolute;left: 0;top: 0}
 .rec_mod_interview.sty03 .swiper:not(.ivCeo) .a{font-size: 1.8rem}
@@ -1277,12 +1276,11 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_interview.sty04 .qa_ceo h3{font-size: 3.4rem;padding-bottom: 2rem}
 .rec_mod_interview.sty04 .qa_ceo .txt{color: #f758a6;font-weight: bold;font-size: 2.6rem}
 .rec_mod_interview.sty04 .qa_ceo .cnt-container{display: flex;flex-direction: row-reverse;justify-content: space-between}
-.rec_mod_interview.sty04 .qa_ceo .photo{border-radius: 20px;overflow: hidden}
-.rec_mod_interview.sty04 .qa_ceo .photo img{display: block;}
+.rec_mod_interview.sty04 .qa_ceo .photo img{display: block;border-radius: 20px}
 .rec_mod_interview.sty04 .qa_ceo .swiper{margin-right: 60px;overflow: hidden;width: 50%}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper{display: block;margin-top: 4rem}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide{height: auto;margin-bottom: 2rem;}
-.rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide .q{font-size: 2.3rem;width: 100%;cursor: pointer;border-bottom: 1px solid #000;padding-bottom: 1.5rem;margin-bottom: 1.5rem}
+.rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide .q{font-size: 2.3rem;width: 100%;cursor: pointer;border-bottom: 1px solid #000;padding-bottom: 1.5rem;margin-bottom: 1.5rem;position: relative}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide:nth-child(1) .q:before{content: '1.';display: inline-block}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide:nth-child(2) .q:before{content: '2.';display: inline-block}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide:nth-child(3) .q:before{content: '3.';display: inline-block}
@@ -1293,8 +1291,8 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide:nth-child(8) .q:before{content: '8.';display: inline-block}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide:nth-child(9) .q:before{content: '9.';display: inline-block}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide:nth-child(10) .q:before{content: '10.';display: inline-block}
-.rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide .q:after{content: '';display: block;background: url(../images/accordion_btn.png) no-repeat;width: 18px;height: 12px;position: absolute;right: 0;top: 50%;}
-.rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide .q.active:after{transform:rotate(180deg) translateY(50%)}
+.rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide .q:after{content: '';display: block;background: url(../images/accordion_btn.png) no-repeat;width: 18px;height: 12px;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
+.rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide .q.active:after{transform:translateY(-50%) rotate(180deg)}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide .a{font-size: 2rem;border-bottom: 1px solid #000;padding-bottom: 2rem;display: none;color: #555}
 .rec_mod_interview.sty04 .qa_mng{padding: 8rem 0;background: #5b379c;border-top: 10px solid #f758a6} 
 .rec_mod_interview.sty04 .qa_mng .photo{display: none}
@@ -1353,7 +1351,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_interview.sty05 .qa_ceo .a{font-size: 2.3rem;color:#56965c;font-size: 2.2rem }
 .rec_mod_interview.sty05  .load_more{display: block;background: url(../images/rec_interview05_load_more.png) no-repeat;width: 51px;height: 51px;margin: 4rem auto 0 auto;text-indent: -9999px;}
 .rec_mod_interview.sty05  .load_more.active{opacity: 0.3}
-.rec_mod_interview.sty05 .rec_itv05_tab{padding: 8.0rem 0;background: url(../images/rec_interview05_bg.png) no-repeat top #4aadf5} 
+.rec_mod_interview.sty05 .rec_itv05_tab{padding: 8.0rem 0;background: url(../images/rec_interview05_bg.png) no-repeat top #4aadf5;background-size: contain} 
 .rec_mod_interview.sty05 .rec_itv05_tab h3{color: #fff;font-size: 15rem;line-height: 1}
 .rec_mod_interview.sty05 .rec_itv05_wrap {margin-top: 4rem}
 .rec_mod_interview.sty05 .rec_itv05_wrap .photo{display: none}
@@ -2854,6 +2852,13 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.bro_mod_biz.sty07 .swiper-button-prev{left: 0;background-size: 30px;width: 30px;height: 56px}
 	.bro_mod_biz.sty07 .swiper-button-next{right: 0;background-size: 30px;height: 56px}
 	.bro_mod_biz.sty07 .swiper {width: calc(100% - 100px);margin: auto}
+	.rec_mod_interview.sty03 .swiper{padding-bottom: 50px}
+	.rec_mod_interview.sty03 .swiper-button-next,
+	.rec_mod_interview.sty03 .swiper-button-prev{top: auto;bottom: 0;transform: translateX(-50%)}
+	.rec_mod_interview.sty03 .swiper-button-next{left: calc(50% + 15px) !important;right: auto}
+	.rec_mod_interview.sty03 .swiper-button-prev{left: calc(50% - 15px) !important}
+	.rec_mod_interview.sty03 .swiper-button-next:after, 
+	.rec_mod_interview.sty03 .swiper-button-prev:after{font-size: 3rem}
 }
 
 @media all and (max-width:1260px){
@@ -2985,6 +2990,9 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.inf_mod_emp.sty06 .total_wrap{font-size: 2.2rem}
 	.inf_mod_emp.sty06 .total_wrap > .lastTotal{font-size: 5.0rem}
 	.inf_mod_emp.sty06 .empState_wrap > div{font-size: 2.0rem}
+	
+	.rec_mod_interview.sty04 .qa_mng .swiper-button-next{right: 20px !important}
+	.rec_mod_interview.sty04 .qa_mng .swiper-button-prev{left: 20px !important}
 	
 }
 
@@ -3209,6 +3217,29 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.bro_mod_biz.sty04 .biz_wrap .bizDiv > div img{margin-top: 0}
 	.bro_mod_biz.sty06 .bizDiv .text_area{width: calc(100% - 200px)}
 	
+	/* 인터뷰 */
+	.mag_mod_interview.sty05 .iv_wrap .cnt-container{display: block;}
+	.mag_mod_interview.sty05 .interview_txt{width: 100%;margin-bottom: 50px}
+	.mag_mod_interview.sty05 .swiper-button-next{left: auto !important;right: 0}
+	.mag_mod_interview.sty05 .swiper-button-prev{left: auto;right: 45px}
+	.mag_mod_interview.sty06 .swiper-wrapper{height: auto;}
+	.mag_mod_interview.sty06 .swiper-wrapper .swiper-slide{height: auto}
+	.bro_mod_interview.sty02 .interview_txt .photo{width: 300px}
+	.bro_mod_interview.sty02 .interview_txt .txt{width: calc(100% - 350px)}
+	.inf_mod_interview.sty03{margin: 6rem 0}
+	.inf_mod_interview.sty03 .cnt-container{display: block}
+	.inf_mod_interview.sty03 .cnt-container > div{width: 100%;margin-bottom: 4rem;padding: 2rem; padding-top: 170px;position: relative;}
+	.inf_mod_interview.sty03 .cnt-container > div:last-child{margin-bottom: 0}
+	.inf_mod_interview.sty03 .swiper-button-next, 
+	.inf_mod_interview.sty03 .swiper-button-prev{bottom: 0}
+	.inf_mod_interview.sty03 img{bottom: auto;top: 2rem;width: 140px}
+	.inf_mod_interview.sty03 .swiper-wrapper{height: auto}
+	.inf_mod_interview.sty03 .swiper-slide{height: auto}
+	.rec_mod_interview.sty03 .qa_ceo h3{font-size: 3rem}
+	.rec_mod_interview.sty03 .qa_ceo .txt{font-size: 2.2rem}
+	.rec_mod_interview.sty03 .qa_ceo .ivCeo{padding: 2rem}
+	.rec_mod_interview.sty03 .qa_mng .iv_wrap img, 
+	.rec_mod_interview.sty03 .qa_emp .iv_wrap img{width: 300px;position: static;margin-bottom: 4rem}
 }
 
 @media all and (max-width:768px){
@@ -3604,7 +3635,73 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.bro_mod_biz.sty03 .bizDiv > div{display: block;padding: 2rem}
 	.bro_mod_biz.sty03 .bizDiv > div .text_area{margin-left: 0;margin-top: 1.5rem}
 	
-
+	/* 인터뷰 */
+	.mag_mod_interview.sty04 {padding: 6rem 0}
+	.mag_mod_interview.sty04 .iv_wrap{display: block;}
+	.mag_mod_interview.sty04 .iv_wrap .photo {text-align: center}
+	.mag_mod_interview.sty04 .iv_wrap .swiper{width: 100%;margin-top: 3rem;padding-bottom: 50px;}
+	.mag_mod_interview.sty05 .itv_border{width: 100%}
+	.mag_mod_interview.sty05 .itv_border{padding: 2rem}
+	.mag_mod_interview.sty05 img{display: none}
+	.mag_mod_interview.sty05 .iv_wrap{padding: 6rem 0 4rem 0}
+	.mag_mod_interview.sty05 .interview_txt h3{font-size: 3rem}
+	.mag_mod_interview.sty05 .interview_txt{margin-bottom: 3rem}
+	.mag_mod_interview.sty05 .itv_border:before{left: 2rem}
+	.mag_mod_interview.sty06{padding: 6rem 0}
+	.mag_mod_interview.sty06 .iv_wrap{flex-direction: column;padding: 2rem}
+	.mag_mod_interview.sty06 .iv_wrap .swiper{width: 100%;padding: 5rem 0}
+	.mag_mod_interview.sty06 .iv_wrap .photo {text-align: center;}
+	.mag_mod_interview.sty06 .iv_wrap .photo  img{max-height: 400px}
+	.mag_mod_interview.sty06 .swiper-button-next, 
+	.mag_mod_interview.sty06 .swiper-button-prev{width: 40px;height: 40px}
+	.bro_mod_interview.sty02 .interview_txt{flex-direction: column}
+	.bro_mod_interview.sty02 .interview_txt .txt{width: 100%}
+	.bro_mod_interview.sty02 .interview_txt h3{font-size: 2.6rem}
+	.bro_mod_interview.sty02 .interview_txt strong{font-size: 2.4rem;margin: 1rem 0}
+	.bro_mod_interview.sty02 .q{font-size: 2.0rem;padding: 1rem 6.5rem 1rem 4.5rem}
+	.bro_mod_interview.sty02 .a{padding: 1rem 2rem}
+	.bro_mod_interview.sty02 .q:after{background-size: 20px;width: 20px;height: 15px}
+	.bro_mod_interview.sty02 .q.active:after{background-size: 20px;}
+	.rec_mod_interview.sty03 .qa_mng{margin-bottom: 6rem}
+	.rec_mod_interview.sty03 .qa_mng h3, 
+	.rec_mod_interview.sty03 .qa_emp h3{font-size: 3rem}
+	.rec_mod_interview.sty03 .swiper:not(.ivCeo) .q{padding-left: 40px}
+	.rec_mod_interview.sty03 .swiper:not(.ivCeo) .q:before{background-size: 30px;width: 30px;height: 35px}
+	.rec_mod_interview.sty03 .swiper-button-next:after, 
+	.rec_mod_interview.sty03 .swiper-button-prev:after{display: block !important}
+	.rec_mod_interview.sty04 .qa_ceo{padding: 6rem 0}
+	.rec_mod_interview.sty04 .qa_ceo .cnt-container{flex-direction: column}
+	.rec_mod_interview.sty04 .qa_ceo .photo img{max-height: 400px;margin: auto}
+	.rec_mod_interview.sty04 .qa_ceo .swiper{width: 100%;margin-right: 0;margin-top: 4rem;}
+	.rec_mod_interview.sty04 .qa_ceo h3{font-size: 3rem;padding-bottom: 1rem}
+	.rec_mod_interview.sty04 .qa_ceo .txt{font-size: 2.2rem}
+	.rec_mod_interview.sty04 .qa_emp{padding: 6rem 0}
+	.rec_mod_interview.sty04 .qa_mng .swiper-button-next,
+	.rec_mod_interview.sty04 .qa_mng .swiper-button-prev{background-size: 30px;width: 30px;height: 27px;top: 30%}
+	.rec_mod_interview.sty04 .qa_emp .load_more{background-size: 30px;width: 30px;height: 30px}
+	.rec_mod_interview.sty04 .qa_mng{padding: 6rem 0} 
+	.rec_mod_interview.sty04 .qa_emp .iv_wrap .photo{position: static}
+	.rec_mod_interview.sty04 .qa_emp .iv_wrap{display: block}
+	.rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper{width: 100%;padding: 2rem}
+	.rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(1) .q:before,
+	.rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(2) .q:before,
+	.rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(3) .q:before,
+	.rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(4) .q:before,
+	.rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(5) .q:before,
+	.rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(6) .q:before,
+	.rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(7) .q:before,
+	.rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(8) .q:before,
+	.rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(9) .q:before,
+	.rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(10) .q:before{font-size: 2.8rem}
+	.rec_mod_interview.sty05 .load_more{background-size: 35px;width: 35px;height: 35px}
+	.rec_mod_interview.sty05 .qa_ceo{padding: 6rem 0}
+	.rec_mod_interview.sty05 .qa_ceo h3{font-size: 3rem;max-width: 265px;width: 100%}
+	.rec_mod_interview.sty05 .qa_ceo .txt{font-size: 2.6rem}
+	.rec_mod_interview.sty05 .qa_ceo .txt br{display: none}
+	.rec_mod_interview.sty05 .rec_itv05_tab{padding: 6rem 0}
+	.rec_mod_interview.sty05 .rec_itv05_tab h3{font-size: 6rem}
+	.rec_mod_interview.sty05 .rec_itv05_wrap .tabs li{font-size: 2rem;word-break: keep-all;}
+	.rec_mod_interview.sty05 .rec_itv05_wrap .tabs  a {text-align: center}
 }
 
 
