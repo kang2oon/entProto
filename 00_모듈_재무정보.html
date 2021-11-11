@@ -163,6 +163,71 @@
 		</div>
 	</div>
 
+	<div class="module-wrap bro_mod_finance sty03 serif">
+		<div class="cnt-container">
+			<div class="comName">기업명</div>
+			<h3>기업재무 정보</h3>
+			<div class="tab_wrap clearfix">
+				<div class="tab">
+					<div class="on" data-tab="summary">재무평가 요약</div>
+					<div data-tab="capital">자본금</div>
+					<div data-tab="sales">매출액</div>
+					<div data-tab="profit">당기순이익</div>
+				</div>
+				<div class="conts">
+					<div class="summary">
+						<div>
+							<h4>동종업종 내 순위</h4>
+							<div class="fiPosition">9위</div>
+						</div>
+						<div>
+							<h4>기업평가등급</h4>
+							<div>
+								<div class="bizGrade">BBB-</div>
+								상거래를 위한 신용능력이 우량하며, 환경 변화에 적절한 대처가 가능한 기업
+							</div>
+						</div>
+						<div>
+							<h4>기업인증현황</h4>
+							<div class="certified">이노비즈 인증기업, 경기도가족친화인증기업</div>
+						</div>
+					</div>
+					<div class="capital">
+						<div class="unit">단위 : 백만원</div>
+						<div id="graph_fiCapital4"></div>
+					</div>
+					<div class="sales">
+						<div class="unit">단위 : 백만원</div>
+						<div id="graph_fiSales4"></div>
+					</div>
+					<div class="profit">
+						<div class="unit">단위 : 백만원</div>
+						<div id="graph_fiProfit4"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="module-wrap bro_mod_finance sty04">
+		<div class="cnt-container">
+			<div class="box_wrap">
+				<h3>기업 재무 정보</h3>
+				<div class="chart_wrap">
+					<div class="unit">단위 : 백만원</div>
+					<div class="legend">
+						<ul>
+							<li class="lg_capital"><i></i> 자본금</li>
+							<li class="lg_sales"><i></i> 매출액</li>
+							<li class="lg_profit"><i></i> 당기순이익</li>
+						</ul>
+					</div>
+					<div id="graph_three"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<br/><br/>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -187,6 +252,9 @@
 					chart23.resize();
 					chart33.resize();
 					chart43.resize();
+					chart24.resize();
+					chart34.resize();
+					chart44.resize();
 				}, 100);
 			});
 		});
@@ -198,142 +266,10 @@
 				//x: "x",
 				columns: [
 					["자본금", 50, 50, 50]
-				]
-			},
-			padding: {
-				top:    20,
-				//bottom: 20,
-				//right:  0,
-				left:   40
-			},
-			grid: {
-				x: {
-					show: true
-				},
-				y: {
-					show: true
+				],
+				colors: {
+					자본금: "#033a71"
 				}
-			},
-			axis:{
-				x: {
-					type: "category",
-					categories: [2021, 2020, 2019],
-					padding: {
-						left: .2,
-						right: .2
-					}
-				}
-			},
-			bar: {
-			width: {
-				max: 60
-			} 
-			},
-			color: {
-				자본금: "#033a71"
-			},
-			legend: {
-				show: false
-			}
-		});
-
-		var chart23 = bb.generate({
-			bindto: "#graph_fiCapital3",
-			data: {
-				type: "line",
-				columns: [
-					["자본금", 50, 50, 50]
-				]
-			},
-			padding: {
-				top:    20,
-				left:   40
-			},
-			grid: {
-				x: {
-					show: true
-				},
-				y: {
-					show: true
-				}
-			},
-			axis:{
-				x: {
-					type: "category",
-					categories: [2021, 2020, 2019],
-					padding: {
-						left: .2,
-						right: .2
-					}
-				}
-			},
-			point:{
-				pattern: [
-					"<g><circle cx='8' cy='8' r='8'></circle></g>"
-				]
-			},
-			color: {
-				자본금: "#00b568"
-			},
-			legend: {
-				show: false
-			}
-		});
-
-		var chart3 = bb.generate({
-			bindto: "#graph_fiSales",
-			data: {
-				type: "bar",
-				//x: "x",
-				columns: [
-					["매출액", 3103, 2920, 2767]
-				]
-			},
-			padding: {
-				top:    20,
-				//bottom: 20,
-				//right:  0,
-				left:   40
-			},
-			grid: {
-				x: {
-					show: true
-				},
-				y: {
-					show: true
-				}
-			},
-			axis:{
-				x: {
-					type: "category",
-					categories: [2021, 2020, 2019],
-					padding: {
-						left: .2,
-						right: .2
-					}
-				}
-			},
-			bar: {
-			width: {
-				max: 60
-			} 
-			},
-			color: {
-				매출액: "#033a71"
-			},
-			legend: {
-				show: false
-			}
-		});
-
-		var chart32 = bb.generate({
-			bindto: "#graph_fiSales2",
-			data: {
-				type: "bar",
-				//x: "x",
-				columns: [
-					["매출액", 3103, 2920, 2767]
-				]
 			},
 			padding: {
 				top:    20,
@@ -364,21 +300,21 @@
 					max: 60
 				} 
 			},
-			colors: {
-				매출액: "#ff763a"
-			},
 			legend: {
 				show: false
 			}
 		});
 
-		var chart33 = bb.generate({
-			bindto: "#graph_fiSales3",
+		var chart23 = bb.generate({
+			bindto: "#graph_fiCapital3",
 			data: {
 				type: "line",
 				columns: [
-					["매출액", 3103, 2920, 2767]
-				]
+					["자본금", 50, 50, 50]
+				],
+				colors: {
+					자본금: "#00b568"
+				}
 			},
 			padding: {
 				top:    20,
@@ -407,8 +343,248 @@
 					"<g><circle cx='8' cy='8' r='8'></circle></g>"
 				]
 			},
-			color: {
-				매출액: "#00b568"
+			legend: {
+				show: false
+			}
+		});
+
+		var chart24 = bb.generate({
+			bindto: "#graph_fiCapital4",
+			data: {
+				type: "bar",
+				//x: "x",
+				columns: [
+					["자본금", 50, 50, 50]
+				],
+				colors: {
+					자본금: "#553d23"
+				},
+				labels: {
+					colors: "white",
+					centered: true
+				},
+			},
+			padding: {
+				top:    20,
+				//bottom: 20,
+				//right:  0,
+				left:   60
+			},
+			grid: {
+				x: {
+					show: true
+				},
+				y: {
+					show: true
+				}
+			},
+			axis:{
+				x: {
+					type: "category",
+					categories: [2021, 2020, 2019],
+					padding: {
+						left: .2,
+						right: .2
+					}
+				},
+				rotated: true
+			},
+			bar: {
+				width: {
+					max: 60
+				},
+				radius: {
+					ratio: 0.5
+				} 
+			},
+			legend: {
+				show: false
+			}
+		});
+
+		var chart3 = bb.generate({
+			bindto: "#graph_fiSales",
+			data: {
+				type: "bar",
+				//x: "x",
+				columns: [
+					["매출액", 3103, 2920, 2767]
+				],
+				colors: {
+					매출액: "#033a71"
+				}
+			},
+			padding: {
+				top:    20,
+				//bottom: 20,
+				//right:  0,
+				left:   40
+			},
+			grid: {
+				x: {
+					show: true
+				},
+				y: {
+					show: true
+				}
+			},
+			axis:{
+				x: {
+					type: "category",
+					categories: [2021, 2020, 2019],
+					padding: {
+						left: .2,
+						right: .2
+					}
+				}
+			},
+			bar: {
+				width: {
+					max: 60
+				} 
+			},
+			legend: {
+				show: false
+			}
+		});
+
+		var chart32 = bb.generate({
+			bindto: "#graph_fiSales2",
+			data: {
+				type: "bar",
+				//x: "x",
+				columns: [
+					["매출액", 3103, 2920, 2767]
+				],
+				colors: {
+					매출액: "#ff763a"
+				}
+			},
+			padding: {
+				top:    20,
+				//bottom: 20,
+				//right:  0,
+				left:   40
+			},
+			grid: {
+				x: {
+					show: true
+				},
+				y: {
+					show: true
+				}
+			},
+			axis:{
+				x: {
+					type: "category",
+					categories: [2021, 2020, 2019],
+					padding: {
+						left: .2,
+						right: .2
+					}
+				}
+			},
+			bar: {
+				width: {
+					max: 60
+				} 
+			},
+			legend: {
+				show: false
+			}
+		});
+
+		var chart33 = bb.generate({
+			bindto: "#graph_fiSales3",
+			data: {
+				type: "line",
+				columns: [
+					["매출액", 3103, 2920, 2767]
+				],
+				colors: {
+					매출액: "#00b568"
+				}
+			},
+			padding: {
+				top:    20,
+				left:   40
+			},
+			grid: {
+				x: {
+					show: true
+				},
+				y: {
+					show: true
+				}
+			},
+			axis:{
+				x: {
+					type: "category",
+					categories: [2021, 2020, 2019],
+					padding: {
+						left: .2,
+						right: .2
+					}
+				}
+			},
+			point:{
+				pattern: [
+					"<g><circle cx='8' cy='8' r='8'></circle></g>"
+				]
+			},
+			legend: {
+				show: false
+			}
+		});
+
+		var chart34 = bb.generate({
+			bindto: "#graph_fiSales4",
+			data: {
+				type: "bar",
+				//x: "x",
+				columns: [
+				["매출액", 3103, 2920, 2767]
+				],
+				colors: {
+					매출액: "#858a63"
+				},
+				labels: {
+					colors: "white",
+					centered: true
+				},
+			},
+			padding: {
+				top:    20,
+				//bottom: 20,
+				//right:  0,
+				left:   60
+			},
+			grid: {
+				x: {
+					show: true
+				},
+				y: {
+					show: true
+				}
+			},
+			axis:{
+				x: {
+					type: "category",
+					categories: [2021, 2020, 2019],
+					padding: {
+						left: .2,
+						right: .2
+					}
+				},
+				rotated: true
+			},
+			bar: {
+				width: {
+					max: 60
+				},
+				radius: {
+					ratio: 0.5
+				} 
 			},
 			legend: {
 				show: false
@@ -422,7 +598,10 @@
 				//x: "x",
 				columns: [
 					["당기순이익", 208, 48, 50]
-				]
+				],
+				colors: {
+					당기순이익: "#033a71"
+				}
 			},
 			padding: {
 				top:    20,
@@ -449,12 +628,9 @@
 				}
 			},
 			bar: {
-			width: {
-				max: 60
-			} 
-			},
-			color: {
-				당기순이익: "#033a71"
+				width: {
+					max: 60
+				} 
 			},
 			legend: {
 				show: false
@@ -467,7 +643,10 @@
 				//x: "x",
 				columns: [
 					["당기순이익", 208, 48, 50]
-				]
+				],
+				colors: {
+					당기순이익: "#ff763a"
+				}
 			},
 			padding: {
 				top:    20,
@@ -494,12 +673,9 @@
 				}
 			},
 			bar: {
-			width: {
-				max: 60
-			} 
-			},
-			color: {
-				당기순이익: "#ff763a"
+				width: {
+					max: 60
+				} 
 			},
 			legend: {
 				show: false
@@ -512,7 +688,10 @@
 				type: "line",
 				columns: [
 					["당기순이익", 208, 48, 50]
-				]
+				],
+				colors: {
+					당기순이익: "#00b568"
+				}
 			},
 			padding: {
 				top:    20,
@@ -541,8 +720,113 @@
 					"<g><circle cx='8' cy='8' r='8'></circle></g>"
 				]
 			},
-			color: {
-				당기순이익: "#00b568"
+			legend: {
+				show: false
+			}
+		});
+
+		var chart44 = bb.generate({
+			bindto: "#graph_fiProfit4",
+			data: {
+				type: "bar",
+				//x: "x",
+				columns: [
+					["당기순이익", 208, 48, 50]
+				],
+				colors: {
+					당기순이익: "#d6b199"
+				},
+				labels: {
+					colors: "white",
+					centered: true
+				},
+			},
+			padding: {
+				top:    20,
+				//bottom: 20,
+				//right:  0,
+				left:   60
+			},
+			grid: {
+				x: {
+					show: true
+				},
+				y: {
+					show: true
+				}
+			},
+			axis:{
+				x: {
+					type: "category",
+					categories: [2021, 2020, 2019],
+					padding: {
+						left: .2,
+						right: .2
+					}
+				},
+				rotated: true
+			},
+			bar: {
+				width: {
+					max: 60
+				},
+				radius: {
+					ratio: 0.5
+				} 
+			},
+			legend: {
+				show: false
+			}
+		});
+
+		var chart5 = bb.generate({
+			bindto: "#graph_three",
+			data: {
+				type: "bar",
+				//x: "x",
+				columns: [
+					["자본금", 50, 50, 50],
+					["매출액", 3103, 2920, 2767],
+					["당기순이익", 208, 48, 50]
+				],
+				colors: {
+					자본금: "#eae2d9",
+					매출액: "#f3b771",
+					당기순이익: "#935f22"
+				}
+			},
+			padding: {
+				top:    20,
+				//bottom: 20,
+				//right:  0,
+				left:   40
+			},
+			grid: {
+				x: {
+					show: true
+				},
+				y: {
+					show: true
+				}
+			},
+			axis:{
+				x: {
+					type: "category",
+					categories: [2021, 2020, 2019],
+					padding: {
+						left: .2,
+						right: .2
+					}
+				}
+			},
+			bar: {
+				width: {
+					max: 20
+				},
+				padding: 3,
+				radius: {
+					ratio: 0.5
+				}
 			},
 			legend: {
 				show: false

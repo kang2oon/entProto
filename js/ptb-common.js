@@ -1051,7 +1051,10 @@ function afterAjax(srchBizrno) {
                             //x: "x",
                             columns: [
                                 capitalList
-                            ]
+                            ],
+                            colors: {
+                                자본금: "#033a71"
+                            },
                         },
                        padding: {
                             top:    20,
@@ -1076,12 +1079,9 @@ function afterAjax(srchBizrno) {
                             }
                         },
                         bar: {
-                        width: {
-                            max: 60
-                        } 
-                        },
-                        color: {
-                            자본금: "#033a71"
+                            width: {
+                                max: 60
+                            } 
                         },
                         legend: {
                             show: false
@@ -1098,7 +1098,10 @@ function afterAjax(srchBizrno) {
                             //x: "x",
                             columns: [
                                 salamtList
-                            ]
+                            ],
+                            color: {
+                                매출액: "#033a71"
+                            }
                         },
                        padding: {
                             top:    20,
@@ -1123,12 +1126,9 @@ function afterAjax(srchBizrno) {
                             }
                         },
                         bar: {
-                        width: {
-                            max: 60
-                        } 
-                        },
-                        color: {
-                            매출액: "#033a71"
+                            width: {
+                                max: 60
+                            } 
                         },
                         legend: {
                             show: false
@@ -1145,7 +1145,10 @@ function afterAjax(srchBizrno) {
                             //x: "x",
                             columns: [
                                 netincmList
-                            ]
+                            ],
+                            color: {
+                                당기순이익: "#033a71"
+                            }
                         },
                        padding: {
                             top:    20,
@@ -1171,11 +1174,8 @@ function afterAjax(srchBizrno) {
                         },
                         bar: {
                         width: {
-                            max: 60
-                        } 
-                        },
-                        color: {
-                            당기순이익: "#033a71"
+                                max: 60
+                            } 
                         },
                         legend: {
                             show: false
