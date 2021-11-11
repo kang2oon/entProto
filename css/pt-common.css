@@ -832,15 +832,16 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_interview.sty02 .tabs{width: 220px;margin-right: 50px;}
 .mag_mod_interview.sty02 .tabs li {font-size: 2.3rem;background: #fff;width: 100%; border-radius: 10px;border: 1px solid #252525;margin-bottom: 20px;position: relative;}
 .mag_mod_interview.sty02 .tabs li.active{background: #7dbb96;color: #fff;border: 1px solid #2a6a44}
+.mag_mod_interview.sty02 .tabs li.active a{color: #fff}
 .mag_mod_interview.sty02 .tabs li.active:after{background: url(../images/tab_arrow_active.png)}
 .mag_mod_interview.sty02 .tabs li:after{content: '';display: block;background: url(../images/tab_arrow.png) no-repeat center;width: 18px;height: 14px;position: absolute;right: 2.0rem;top: 50%;transform: translateY(-50%)}
-.mag_mod_interview.sty02 .tabs li a{display: block;width: 100%;height: 100%;padding: 1.5rem 2.0rem;}
+.mag_mod_interview.sty02 .tabs li a{display: block;width: 100%;height: 100%;padding: 1.5rem 2.0rem;color: }
 .mag_mod_interview.sty02 .tab_content {width: calc(100% - 270px);position: relative;overflow-x: hidden;min-height: 500px;padding-bottom: 6.0rem;}
 .mag_mod_interview.sty02 .tab_content > div{display:block;}
 .mag_mod_interview.sty02 .tab_content img{position: absolute;right: 0;bottom: 0}
 .mag_mod_interview.sty02 {margin-bottom: 5.0rem;}
 .mag_mod_interview.sty02 .q{font-size: 2.3rem;margin-bottom: 1.0rem;padding-left: 25px;position: relative;}
-.mag_mod_interview.sty02 .a{color: #606060;width: calc(100% - 200px);word-break: keep-all;}
+.mag_mod_interview.sty02 .a{color: #606060;width: calc(100% - 200px);word-break: keep-all;font-size: 1.8rem}
 .mag_mod_interview.sty02 .q:before{content: 'Q.';display: block;position: absolute;left: 0;top: 0}
 .mag_mod_interview.sty02 .swiper-pagination{bottom:0}
 .mag_mod_interview.sty02 .swiper-pagination-bullet{width: 15px;height: 15px;background: #afafaf;border-radius: 10px;text-indent: -9999px}
@@ -1230,7 +1231,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .inf_mod_interview.sty03 .swiper-button-next, 
 .inf_mod_interview.sty03 .swiper-button-prev{top: auto;margin-top: 0;bottom: 80px;transform: translateX(-50%)}
 .inf_mod_interview.sty03 .swiper-button-prev{left: calc(50% - 20px);}
-.inf_mod_interview.sty03 .swiper-button-next{left: calc(50% + 20px);}
+.inf_mod_interview.sty03 .swiper-button-next{left: calc(50% + 20px) !important;}
 .rec_mod_interview.sty03 .qa_ceo h3{font-size: 4.5rem;text-align: center;margin-bottom: 2rem;color: #365696}
 .rec_mod_interview.sty03 .qa_ceo .photo{display: none}
 .rec_mod_interview.sty03 .qa_ceo .txt{font-size: 3.0rem;text-align: center;font-weight: bold;}
@@ -1274,10 +1275,10 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_interview.sty04 .qa_ceo{background: #eee;padding: 8rem 0}
 .rec_mod_interview.sty04 .qa_ceo h3{font-size: 3.4rem;padding-bottom: 2rem}
 .rec_mod_interview.sty04 .qa_ceo .txt{color: #f758a6;font-weight: bold;font-size: 2.6rem}
-.rec_mod_interview.sty04 .qa_ceo .cnt-container{display: flex;flex-direction: row-reverse}
+.rec_mod_interview.sty04 .qa_ceo .cnt-container{display: flex;flex-direction: row-reverse;justify-content: space-between}
 .rec_mod_interview.sty04 .qa_ceo .photo{border-radius: 20px;overflow: hidden}
 .rec_mod_interview.sty04 .qa_ceo .photo img{display: block;}
-.rec_mod_interview.sty04 .qa_ceo .swiper{margin-right: 60px;overflow: hidden}
+.rec_mod_interview.sty04 .qa_ceo .swiper{margin-right: 60px;overflow: hidden;width: 50%}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper{display: block;margin-top: 4rem}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide{height: auto;margin-bottom: 2rem;}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide .q{font-size: 2.3rem;width: 100%;cursor: pointer;border-bottom: 1px solid #000;padding-bottom: 1.5rem;margin-bottom: 1.5rem}
@@ -1336,7 +1337,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(8) .q:before{content: '질문 8.';display: block;font-size: 3.5rem;font-weight: bold;color: #175ba8;margin-bottom: 1rem}
 .rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(9) .q:before{content: '질문 9.';display: block;font-size: 3.5rem;font-weight: bold;color: #175ba8;margin-bottom: 1rem}
 .rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(10) .q:before{content: '질문 10.';display: block;font-size: 3.5rem;font-weight: bold;color: #175ba8;margin-bottom: 1rem}
-.rec_mod_interview.sty04 .qa_emp .a{background: #f0f0f0;border-radius: 10px;padding: 2rem}
+.rec_mod_interview.sty04 .qa_emp .a{background: #f0f0f0;border-radius: 10px;padding: 2rem;font-size: 1.6rem}
 .rec_mod_interview.sty04 .qa_emp .load_more{background: url(../images/rec_interview04_emp_more_btn.png);width: 42px;height: 42px;text-indent: -9999px;display: block;margin: 2rem auto 0 auto}
 .rec_mod_interview.sty04 .qa_emp .load_more.active{opacity: 0.2}
 .rec_mod_interview.sty05 .qa_ceo{padding: 8rem 0;background: #eaffec}
@@ -1356,9 +1357,10 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_interview.sty05 .rec_itv05_wrap {margin-top: 4rem}
 .rec_mod_interview.sty05 .rec_itv05_wrap .photo{display: none}
 .rec_mod_interview.sty05 .rec_itv05_wrap .tabs {display: flex;}
-.rec_mod_interview.sty05 .rec_itv05_wrap .tabs li{font-size: 2.4rem;font-weight: bold;padding: 1rem 3rem;color: #fff;border:1px solid #fff}
-.rec_mod_interview.sty05 .rec_itv05_wrap .tabs li a{display: block;}
-.rec_mod_interview.sty05 .rec_itv05_wrap .tabs li.active{background: #fff;color: #0a3663;}
+.rec_mod_interview.sty05 .rec_itv05_wrap .tabs li{font-size: 2.4rem;font-weight: bold;padding: 1rem 3rem;border:1px solid #fff}
+.rec_mod_interview.sty05 .rec_itv05_wrap .tabs li a{display: block;color: #fff;}
+.rec_mod_interview.sty05 .rec_itv05_wrap .tabs li.active{background: #fff;}
+.rec_mod_interview.sty05 .rec_itv05_wrap .tabs li.active a {color: #0a3663;}
 .rec_mod_interview.sty05 .rec_itv05_wrap .tab_content{padding: 4rem 0}
 .rec_mod_interview.sty05 .rec_itv05_wrap .swiper-wrapper{display: block;height: auto;}
 .rec_mod_interview.sty05 .rec_itv05_wrap .swiper-wrapper > div{margin-bottom: 4rem;display: none}
