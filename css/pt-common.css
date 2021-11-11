@@ -1376,6 +1376,87 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_interview.sty05 .rec_itv05_wrap .swiper-wrapper > div:nth-child(10) .q:before{content: '10.';display:inline-block}
 .rec_mod_interview.sty05 .rec_itv05_wrap .a{font-size: 1.8rem;color: #fff}
 
+/* 취업전략 */
+	/*자소서 문항별 작성가이드*/
+.rec_mod_strategy.sty01 h3{font-size: 3.4rem;margin-bottom: 3.0rem}
+.rec_mod_strategy.sty01 h3 span{color: #ff1c31}
+.rec_mod_strategy.sty01 .navy_bg {background: url(../images/jp_md03_bg.png) no-repeat left bottom;padding:6.0rem 0}
+.rec_mod_strategy.sty01  .white_box{background: #fff;padding: 5.0rem 7.0rem;border: 1px solid #ddd;position: relative;box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.08)}
+.rec_mod_strategy.sty01  .white_box .guide_wrap > div {margin-bottom: 4.0rem;padding-bottom: 4.0rem;border-bottom: 1px solid #dddddd;}
+.rec_mod_strategy.sty01 .white_box .guide_wrap >div:last-child{border-bottom: 0;padding-bottom: 0}
+.rec_mod_strategy.sty01  .q {font-size: 2.4rem;font-weight: 400;margin: 10px 0;position: relative;padding-left: 30px}
+.rec_mod_strategy.sty01  .q:before{content: 'Q.';display: block;font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0}
+.rec_mod_strategy.sty01  .a {font-size: 2.0rem;color: #7d7d7d;}
+.rec_mod_strategy.sty01  .recent_question{background: #1a4fba;padding: 4.0rem 1.0rem;border-radius: 15px;position: relative;padding-bottom: 0;;overflow: hidden;display: flex;align-items: flex-end}
+.rec_mod_strategy.sty01  .rq_cont{text-align: center;padding-bottom: 4.0rem;width: calc(100% - 200px)}
+.rec_mod_strategy.sty01  .rq_tit{color: #fbff95;font-size: 4.0rem;font-family: 'GmarketSansMedium';position: relative;display: flex;align-items: center;margin-bottom: 2.0rem;justify-content: center;}
+.rec_mod_strategy.sty01  .rq_tit:after{content: '';display: inline-flex;background: url(../images/jp_md03_si_ico.png) no-repeat center;width: 58px;height: 52px;margin-left: 2.0rem}
+.rec_mod_strategy.sty01  .rq_text{color: #fff;}
+.rec_mod_strategy.sty01 .rq_text p {font-size: 1.9rem;}
+.rec_mod_strategy.sty01 .rq_text p strong{font-size: 3.0rem;}
+.rec_mod_strategy.sty01 .rq_img{margin-bottom: -15px}
+.rec_mod_strategy.sty01  .rq_img img{width: 100%;}
+.rec_mod_strategy.sty01 .highlight{display: inline;box-shadow: 0 -15px 0 0 inset #fbff95;color: #000;padding: 0 5px}
+
+/* 가산점 요인*/
+.rec_mod_strategy.sty01 .add_point h3,
+.rec_mod_strategy.sty01 .spec h3{color: #fff}
+.rec_mod_strategy.sty01 .cont_box{background: #fff;padding: 5.0rem;}
+.rec_mod_strategy.sty01 .cont_box li{display: flex;font-size: 2.4rem;margin-bottom: 10px}
+.rec_mod_strategy.sty01 .cont_box li:last-child{margin-bottom: 0}
+.rec_mod_strategy.sty01 .cont_box li strong{width: 150px;font-weight: 500}
+.rec_mod_strategy.sty01 .cont_box li p{color: #7b7b7b;width: calc(100% - 150px);}
+
+/*최근 입사자 합격 스펙*/
+.rec_mod_strategy .spec.in_img .cont_box{position: relative;}
+.rec_mod_strategy.sty01 .spec.in_img .cont_box:after{content: '';display: block;background: url(../images/jp_md03_img.png) no-repeat;width: 390px;height: 433px;position: absolute;right: 0;top: -433px;}
+.rec_mod_strategy.sty01 .spec .cont_box{display: flex;justify-content: space-between}
+.rec_mod_strategy.sty01 .spec .cont_box ul {width: calc(100% - 500px)}
+.rec_mod_strategy.sty01 .spec .cont_box .radar_chart {width: 450px}
+.rec_mod_strategy .spec .cont_box .radar_chart text{font-size: 1.6rem;font-family: 'Noto Sans KR'}
+
+/* 면접 꿀팁*/	
+.rec_mod_strategy.sty01 .interview_tip{background: #9dd7ff;padding: 8.0rem 0}
+.rec_mod_strategy.sty01 .interview_tip .interview_tip_wrap{background: #fff;padding: 5.0rem 7.0rem;box-shadow: 2px 0px 7px rgb(0 0 0 / 8%);box-shadow: 0px 7px 10px rgb(0 0 0 / 8%);position: relative;;border: 2px solid #437cff}
+.rec_mod_strategy.sty01 .interview_tip .interview_tip_wrap:before{content: '';display: block;background: url(../images/jp_md03_bg02.png) no-repeat;width: 160px;height: 160px;position: absolute;right: 0;top: 0;}
+.rec_mod_strategy.sty01 .interview_tip .interview_tip_wrap:after{content: '';display: block;background: url(../images/jp_md03_img02.png);width: 279px;height: 302px;position: absolute;right: 20px;bottom: 0}
+.rec_mod_strategy.sty01 .interview_tip .it_area{margin-bottom: 4.0rem;padding-bottom: 4.0rem;border-bottom: 1px solid #ddd;}
+.rec_mod_strategy.sty01 .interview_tip .it_area:last-child{border-bottom: 0;padding-bottom: 0;width: calc(100% - 350px)}
+.rec_mod_strategy.sty01 .interview_tip .it_area b{color: #ff1c31}
+.rec_mod_strategy.sty01 .interview_tip .qm_btn{background: #437cff;color: #fff}
+.rec_mod_strategy.sty02 {margin: 8rem 0}
+.rec_mod_strategy.sty02  h3{font-size: 3.4rem;color: #0b4467;margin-bottom: 4rem}
+.rec_mod_strategy.sty02 .guide{padding-bottom: 8rem}
+.rec_mod_strategy.sty02 .guide h3{text-align: center;}
+.rec_mod_strategy.sty02 .q{font-size: 2.6rem;margin-bottom: 1rem;position: relative;padding-left: 30px}
+.rec_mod_strategy.sty02 .q:before{content: 'Q.';font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0;}
+.rec_mod_strategy.sty02 .a{font-size: 2.2rem;color: #7d7d7d}
+.rec_mod_strategy.sty02 .guide_wrap > div,
+.rec_mod_strategy.sty02 .interview_tip_wrap > div {margin-bottom: 3rem;padding-bottom: 2rem;margin-bottom: 2rem;border-bottom: 1px solid #ddd}
+.rec_mod_strategy.sty02 .guide_wrap > div:last-child,
+.rec_mod_strategy.sty02 .interview_tip_wrap > div:last-child{border-bottom: 0}
+.rec_mod_strategy.sty02 .recent_question{background: url(../images/strategy02_bg.png) no-repeat center;background-size: cover;padding: 8rem 0;color: #fff}
+.rec_mod_strategy.sty02 .recent_question .rq_cont{display: flex;margin-left: 500px;}
+.rec_mod_strategy.sty02 .recent_question .rq_tit{font-size: 5.7rem;font-weight: bold;margin-right: 100px;line-height: 1.3}
+.rec_mod_strategy.sty02 .recent_question .rq_text p{font-size: 2.2rem;margin-bottom: 1rem}
+.rec_mod_strategy.sty02 .recent_question .rq_text p:last-child{margin-bottom: 0}
+.rec_mod_strategy.sty02 .bg{background: url(../images/strategy02_addPonitbg.png) no-repeat;padding: 8rem 0;}
+.rec_mod_strategy.sty02 .bg .cnt-container:first-child:before{content: '';display: block;background: url(../images/strategy02_img02.png) no-repeat;width: 484px;height: 423px;position: absolute;left: 0;top: -423px}
+.rec_mod_strategy.sty02 .add_point .cnt-container{position: relative}
+.rec_mod_strategy.sty02  .cont_box{background: #fff;padding: 4rem;margin-bottom: 4rem}
+.rec_mod_strategy.sty02  .cont_box:last-child{margin-bottom: 0}
+.rec_mod_strategy.sty02  .cont_box h3{text-align: center}
+.rec_mod_strategy.sty02 .cont_box li{display: flex;flex-wrap: wrap;margin-bottom: 2rem}
+.rec_mod_strategy.sty02 .cont_box li:last-child{margin-bottom: 0}
+.rec_mod_strategy.sty02 .cont_box .tit{font-size: 2.2rem;font-weight: 500;margin-right: 2rem}
+.rec_mod_strategy.sty02 .cont_box .desc{font-size: 2.2rem;color: #7b7b7b}
+.rec_mod_strategy.sty02 .spec.in_img .cont_box:after{content: '';display: block;background: url(../images/strategy02_img03.png) no-repeat;width: 463px;height: 570px;position: absolute;right: 0;bottom: 0;} 
+.rec_mod_strategy.sty02 .interview_tip{margin: 8rem 0}
+.rec_mod_strategy.sty02 .interview_tip .qm_btn{background: #0b4467;color: #fff}
+.rec_mod_strategy.sty02 .interview_tip h3{text-align: center;}
+.rec_mod_strategy.sty02 .interview_tip img{margin: 4rem auto;display: block;}
+.rec_mod_strategy.sty03 .guide h3{}
+
 /* --- 채용공고형 start --- */
 .rec_mod_header {padding: 8.0rem 0}
 .rec_mod_header.sty01 .logo img{margin: auto;display: block}
@@ -1397,55 +1478,6 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_header.sty01 .intro_text div .tit{font-size: 1.7rem;color: #727272;}
 .rec_mod_header.sty01 .intro_text div .text{font-size: 3.0rem;font-weight: bold;margin-top: 5px;width: 100%}
 
-
-/* 취업전략 */
-	/*자소서 문항별 작성가이드*/
-.rec_mod_strategy.sty01 h3{font-size: 3.4rem;margin-bottom: 3.0rem}
-.rec_mod_strategy.sty01 h3 span{color: #ff1c31}
-.rec_mod_strategy.sty01 .navy_bg {background: url(../images/jp_md03_bg.png) no-repeat left bottom;padding:6.0rem 0}
-.rec_mod_strategy.sty01  .self_intro_wrap{background: #fff;padding: 5.0rem 7.0rem;border: 1px solid #ddd;position: relative;box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.08)}
-.rec_mod_strategy.sty01  .self_intro_wrap .si_area {margin-bottom: 4.0rem;padding-bottom: 4.0rem;border-bottom: 1px solid #dddddd;}
-.rec_mod_strategy.sty01 .self_intro_wrap .si_area:last-child{border-bottom: 0;padding-bottom: 0}
-.rec_mod_strategy.sty01 .qnum{font-family: 'GmarketSansMedium';color:#437cff;font-size: 4.0rem; }
-.rec_mod_strategy.sty01  .tit {font-size: 2.4rem;font-weight: 400;margin: 10px 0}
-.rec_mod_strategy.sty01  .text {font-size: 2.0rem;color: #7d7d7d;}
-.rec_mod_strategy.sty01  .recent_question{background: #1a4fba;padding: 4.0rem 1.0rem;border-radius: 15px;position: relative;padding-bottom: 0;;overflow: hidden;display: flex;align-items: flex-end}
-.rec_mod_strategy.sty01  .rq_cont{text-align: center;padding-bottom: 4.0rem;width: calc(100% - 200px)}
-.rec_mod_strategy.sty01  .rq_tit{color: #fbff95;font-size: 4.0rem;font-family: 'GmarketSansMedium';position: relative;display: flex;align-items: center;margin-bottom: 2.0rem;justify-content: center;}
-.rec_mod_strategy.sty01  .rq_tit:after{content: '';display: inline-flex;background: url(../images/jp_md03_si_ico.png) no-repeat center;width: 58px;height: 52px;margin-left: 2.0rem}
-.rec_mod_strategy.sty01  .rq_text{color: #fff;}
-.rec_mod_strategy.sty01 .rq_text p {font-size: 1.9rem;}
-.rec_mod_strategy.sty01 .rq_text p strong{font-size: 3.0rem;}
-.rec_mod_strategy.sty01 .rq_img{margin-bottom: -15px}
-.rec_mod_strategy.sty01  .rq_img img{width: 100%;}
-
-.rec_mod_strategy.sty01 .highlight{display: inline;box-shadow: 0 -15px 0 0 inset #fbff95;color: #000;padding: 0 5px}
-/* 가산점 요인*/
-.rec_mod_strategy.sty01 .add_point h3,
-.rec_mod_strategy.sty01 .spec h3{color: #fff}
-.rec_mod_strategy.sty01 .cont_box{background: #fff;padding: 5.0rem;}
-.rec_mod_strategy.sty01 .cont_box li{display: flex;font-size: 2.4rem;margin-bottom: 10px}
-.rec_mod_strategy.sty01 .cont_box li:last-child{margin-bottom: 0}
-.rec_mod_strategy.sty01 .cont_box li strong{width: 150px;font-weight: 500}
-.rec_mod_strategy.sty01 .cont_box li p{color: #7b7b7b;width: calc(100% - 150px);}
-
-/*최근 입사자 합격 스펙*/
-.rec_mod_strategy .spec.in_img .cont_box{position: relative;}
-.rec_mod_strategy .spec.in_img .cont_box:after{content: '';display: block;background: url(../images/jp_md03_img.png) no-repeat;width: 390px;height: 433px;position: absolute;right: 0;top: -433px;}
-.rec_mod_strategy.sty01 .spec .cont_box{display: flex;justify-content: space-between}
-.rec_mod_strategy.sty01 .spec .cont_box ul {width: calc(100% - 500px)}
-.rec_mod_strategy.sty01 .spec .cont_box .radar_chart {width: 450px}
-.rec_mod_strategy .spec .cont_box .radar_chart text{font-size: 1.6rem;font-family: 'Noto Sans KR'}
-
-/* 면접 꿀팁*/	
-.rec_mod_strategy.sty01 .interview_tip{background: #9dd7ff;padding: 8.0rem 0}
-.rec_mod_strategy.sty01 .interview_tip .it_area_wrap{background: #fff;padding: 5.0rem 7.0rem;box-shadow: 2px 0px 7px rgb(0 0 0 / 8%);box-shadow: 0px 7px 10px rgb(0 0 0 / 8%);position: relative;;border: 2px solid #437cff}
-.rec_mod_strategy.sty01 .interview_tip .it_area_wrap:before{content: '';display: block;background: url(../images/jp_md03_bg02.png) no-repeat;width: 160px;height: 160px;position: absolute;right: 0;top: 0;}
-.rec_mod_strategy.sty01 .interview_tip .it_area_wrap:after{content: '';display: block;background: url(../images/jp_md03_img02.png);width: 279px;height: 302px;position: absolute;right: 20px;bottom: 0}
-.rec_mod_strategy.sty01 .interview_tip .it_area{margin-bottom: 4.0rem;padding-bottom: 4.0rem;border-bottom: 1px solid #ddd;}
-.rec_mod_strategy.sty01 .interview_tip .it_area:last-child{border-bottom: 0;padding-bottom: 0;width: calc(100% - 350px)}
-.rec_mod_strategy.sty01 .interview_tip .it_area b{color: #ff1c31}
-.rec_mod_strategy.sty01 .interview_tip .qm_btn{background: #437cff;color: #fff}
 
 /*swot 분석*/
 .rec_mod_swot.sty01 h3{font-size: 3.4rem;margin-bottom: 3.0rem;color: #fff}
