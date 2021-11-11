@@ -17,6 +17,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .tlt{text-align: left}
 .section{margin: 6.0rem 0}
 .btn_wrap{margin-top: 6.0rem}
+.serif{font-family: 'Noto Serif KR';}
 
 .module-wrap .white_box_sdw{background: #fff;padding: 5.0rem;border: 1px solid #ddd;position: relative;box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.08)}
 button{border:0;}
@@ -1647,7 +1648,7 @@ left: 0;width: 100%;height: 100%;}
 .bro_mod_finance.sty02 .tab_wrap .tab{display:flex;}
 .bro_mod_finance.sty02 .tab_wrap .tab > div{
 	flex:1 1 20%;text-align:center;font-size:2.4rem;color:#9a9a9a;background-color:#eee;border-radius:24px 24px 0 0;
-	box-shadow:0 -5px 8px 3px rgba(0,0,0,.05);padding:32px 0;
+	box-shadow:0 -5px 8px 3px rgba(0,0,0,.05);padding:32px 0;cursor:pointer;
 }
 .bro_mod_finance.sty02 .tab_wrap .tab > div.on{color:#00b568;background-color:#fff;}
 .bro_mod_finance.sty02 .tab_wrap .conts{box-shadow:0 5px 8px 3px rgba(0,0,0,.05);border-radius:0 0 24px 24px;padding:60px;}
@@ -1659,8 +1660,26 @@ left: 0;width: 100%;height: 100%;}
 }
 .bro_mod_finance.sty02 .tab_wrap .conts .summary > div + div{margin-left:32px;}
 .bro_mod_finance.sty02 .tab_wrap .conts .summary > div h4{font-size:2rem;padding:0 0 32px;border-bottom:1px solid #e8e8e8;margin-bottom:32px;}
-.bro_mod_finance.sty02 .tab_wrap .conts .unit {font-size:1.4rem;text-align:right;color:#666;margin-bottom: 24px;}
-
+.bro_mod_finance.sty02 .tab_wrap .conts .unit{font-size:1.4rem;text-align:right;color:#666;margin-bottom: 24px;}
+.bro_mod_finance.sty03{background-color:#f6f4f2;margin:16px 0;padding:80px 0;}
+.bro_mod_finance.sty03 .comName{font-size:1.6rem;font-weight:300;text-align:center;color:#43280c;}
+.bro_mod_finance.sty03 h3{font-size:4.8rem;font-weight:700;text-align:center;color:#43280c;}
+.bro_mod_finance.sty03 .tab_wrap{margin:32px auto;}
+.bro_mod_finance.sty03 .tab_wrap .tab{display:flex;border:1px solid #886a57;border-radius:40 px;overflow:hidden;}
+.bro_mod_finance.sty03 .tab_wrap .tab > div{flex:1 1 20%;text-align:center;font-size:2.4rem;color:#886a57;padding:20px 0;cursor:pointer;}
+.bro_mod_finance.sty03 .tab_wrap .tab > div + div{border-left:1px solid #886a57;}
+.bro_mod_finance.sty03 .tab_wrap .tab > div.on{background-color:#886a57;color:#fff;font-weight:500;}
+.bro_mod_finance.sty03 .tab_wrap .conts{padding:60px 0;}
+.bro_mod_finance.sty03 .tab_wrap .conts > div {display:none;}
+.bro_mod_finance.sty03 .tab_wrap .conts > div:first-child{display:block;}
+.bro_mod_finance.sty03 .tab_wrap .conts .summary > div{display:table;width:100%;background-color:#e0d8d3;padding:24px;}
+.bro_mod_finance.sty03 .tab_wrap .conts .summary > div + div{margin-top:12px;}
+.bro_mod_finance.sty03 .tab_wrap .conts .summary > div h4, .bro_mod_finance.sty03 .tab_wrap .conts .summary > div > div{
+	display:table-cell;text-align:center;padding:16px 0;vertical-align:middle;
+}
+.bro_mod_finance.sty03 .tab_wrap .conts .summary > div h4{width:30%;font-size:2rem;}
+.bro_mod_finance.sty03 .tab_wrap .conts .summary > div > div{border-left:1px solid #c5b7ae;font-size:1.8rem;}
+.bro_mod_finance.sty03 .tab_wrap .conts .unit{font-size:1.4rem;text-align:right;color:#666;margin-bottom: 24px;}
 /*  조직문화 및 복지  */ 
 .bro_mod_culture.sty01 .culture_wrap{display: flex;justify-content: center}
 .bro_mod_culture.sty01 .culture_wrap  > div {width: calc(50% - 15px);margin-right: 30px;}
@@ -3611,6 +3630,11 @@ html{font-size: 8px}
 	.sns_mod_finance.sty02 ul > li:nth-child(2n){margin-right: 0}
 	.sns_mod_finance.sty02 ul > li:nth-child(3),
 	.sns_mod_finance.sty02 ul > li:nth-child(4){margin-bottom: 0}
+	.bro_mod_finance.sty02 .tab_wrap .tab > div{font-size:1.8rem;padding:20px 8px;}
+	.bro_mod_finance.sty02 .tab_wrap .conts{padding:40px;}
+	.bro_mod_finance.sty02 .tab_wrap .conts > div:first-child{flex-wrap:wrap;}
+	.bro_mod_finance.sty02 .tab_wrap .conts .summary > div{flex:1 1 100%;}
+	.bro_mod_finance.sty02 .tab_wrap .conts .summary > div + div{margin:20px 0 0;}
 	
 	/* 백분위 정보 */
 	.mag_mod_percent.sty05{padding: 6rem 0}
@@ -3676,7 +3700,7 @@ html{font-size: 8px}
 	.inf_mod_emp.sty06 .empState_wrap{width: 100%;padding: 2.0rem}
 	.inf_mod_emp.sty06 .total_wrap{width:100%;font-size: 2.0rem;padding: 2rem}
 	.inf_mod_emp.sty06 .total_wrap > .lastTotal{font-size: 3.0rem}
-	.inf_mod_emp.sty06 .empState_wrap > div{font-size:1.8rem}
+	.inf_mod_emp.sty06 .empState_wrap > div{font-size:1.8rem} 
 }
 
 @media all and (max-width:480px){
