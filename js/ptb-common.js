@@ -815,19 +815,24 @@ function afterAjax(srchBizrno) {
             if(isNull(cvrltQstGuide)){
                 var cvrltQstGuideTitle = "";//자소서 문항
                 var cvrltQstGuideCntnt = "";//자소서 답변
+
+                var guide = "<div class='guide_wrap'>";
                 for(var i=1; i<addDtailList; i++){
                     cvrltQstGuideTitle = "cvrltQstGuideTitle = cvrltQstGuide.addTitle"+i;
                     eval(cvrltQstGuideTitle);
                     if (isNull(cvrltQstGuideTitle)){
                         //console.log("자소서 문항"+i+" : " + cvrltQstGuideTitle);
+                        guide += "<div><div class='q'>"+cvrltQstGuideTitle+"</div>";
                     }
                     cvrltQstGuideCntnt = "cvrltQstGuideCntnt = cvrltQstGuide.addCntnt"+i;
                     eval(cvrltQstGuideCntnt);
                     if (isNull(cvrltQstGuideCntnt)){
                         //console.log("자소서 답변"+i+" : " + cvrltQstGuideCntnt);
+                        guide += "<div class='a'>"+cvrltQstGuideCntnt+"</div></div>";
                     }
                 }
             }
+            $(".guide").html(guide);
 
             //43.최근 면접질문
             if(isNull(rcnIntQst)){
