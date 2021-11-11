@@ -1831,7 +1831,7 @@ left: 0;width: 100%;height: 100%;}
 .bro_mod_finance.sty03 .comName{font-size:1.6rem;font-weight:300;text-align:center;color:#43280c;}
 .bro_mod_finance.sty03 h3{font-size:4.8rem;font-weight:700;text-align:center;color:#43280c;}
 .bro_mod_finance.sty03 .tab_wrap{margin:32px auto;}
-.bro_mod_finance.sty03 .tab_wrap .tab{display:flex;border:1px solid #886a57;border-radius:40 px;overflow:hidden;}
+.bro_mod_finance.sty03 .tab_wrap .tab{display:flex;border:1px solid #886a57;border-radius:40px;overflow:hidden;}
 .bro_mod_finance.sty03 .tab_wrap .tab > div{flex:1 1 20%;text-align:center;font-size:2.4rem;color:#886a57;padding:20px 0;cursor:pointer;}
 .bro_mod_finance.sty03 .tab_wrap .tab > div + div{border-left:1px solid #886a57;}
 .bro_mod_finance.sty03 .tab_wrap .tab > div.on{background-color:#886a57;color:#fff;font-weight:500;}
@@ -1845,7 +1845,18 @@ left: 0;width: 100%;height: 100%;}
 }
 .bro_mod_finance.sty03 .tab_wrap .conts .summary > div h4{width:30%;font-size:2rem;}
 .bro_mod_finance.sty03 .tab_wrap .conts .summary > div > div{border-left:1px solid #c5b7ae;font-size:1.8rem;}
-.bro_mod_finance.sty03 .tab_wrap .conts .unit{font-size:1.4rem;text-align:right;color:#666;margin-bottom: 24px;}
+.bro_mod_finance.sty03 .tab_wrap .conts .unit{font-size:1.4rem;text-align:right;color:#666;margin-bottom:24px;}
+.bro_mod_finance.sty04 .box_wrap{border:2px solid #d3d3d3;border-radius:16px;padding:80px;}
+.bro_mod_finance.sty04 h3{font-size:4.8rem;font-weight:700;color:#4d3b24;text-align:center;margin-bottom:60px;}
+.bro_mod_finance.sty04 .chart_wrap .unit, .bro_mod_finance.sty04 .chart_wrap .legend{font-size:1.4rem;text-align:right;color:#999;margin-bottom:8px;}
+.bro_mod_finance.sty04 .chart_wrap .legend ul{display:flex;justify-content:flex-end;}
+.bro_mod_finance.sty04 .chart_wrap .legend ul li{margin-left:16px;line-height:1.4rem;}
+.bro_mod_finance.sty04 .chart_wrap .legend i{display:inline-block;width:16px;height:16px;background-color:#999;border-radius:8px;}
+.bro_mod_finance.sty04 .chart_wrap .legend .lg_capital i{background-color:#eae2d9;}
+.bro_mod_finance.sty04 .chart_wrap .legend .lg_sales i{background-color:#f3b771;}
+.bro_mod_finance.sty04 .chart_wrap .legend .lg_profit i{background-color:#935f22;}
+
+
 /*  조직문화 및 복지  */ 
 .bro_mod_culture.sty01 .culture_wrap{display: flex;justify-content: center}
 .bro_mod_culture.sty01 .culture_wrap  > div {width: calc(50% - 15px);margin-right: 30px;}
@@ -3801,6 +3812,13 @@ html{font-size: 8px}
 	.bro_mod_finance.sty02 .tab_wrap .conts > div:first-child{flex-wrap:wrap;}
 	.bro_mod_finance.sty02 .tab_wrap .conts .summary > div{flex:1 1 100%;}
 	.bro_mod_finance.sty02 .tab_wrap .conts .summary > div + div{margin:20px 0 0;}
+	.bro_mod_finance.sty03 .tab_wrap .tab{flex-wrap:wrap;}
+	.bro_mod_finance.sty03 .tab_wrap .tab > div{flex:1 1 40%;font-size:2rem;}
+	.bro_mod_finance.sty03 .tab_wrap .tab > div + div{border:none;}
+	.bro_mod_finance.sty03 .tab_wrap .tab > div:nth-child(2), .bro_mod_finance.sty03 .tab_wrap .tab > div:nth-child(4){border-left:1px solid #886a57;}
+	.bro_mod_finance.sty03 .tab_wrap .tab > div:nth-child(3), .bro_mod_finance.sty03 .tab_wrap .tab > div:nth-child(4){border-top:1px solid #886a57;}
+	.bro_mod_finance.sty03 .tab_wrap .conts .summary > div h4, .bro_mod_finance.sty03 .tab_wrap .conts .summary > div > div{padding:16px;}
+	.bro_mod_finance.sty04 .box_wrap{padding:40px;}
 	
 	/* 백분위 정보 */
 	.mag_mod_percent.sty05{padding: 6rem 0}
