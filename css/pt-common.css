@@ -5,6 +5,12 @@ Date    : 2021-07-16
 */
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@300;400;500;700&display=swap');
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* reset */
 html{font-size: 10px}
 body {font-size: 1.6rem}
@@ -41,11 +47,10 @@ img{max-width:100%;}a{text-decoration:none;color:inherit;}
 
 /*도움말 버튼*/
 .module-wrap .qm_btn{position: relative;font-size: 2.0rem;padding: 15px;width: 375px;border-radius: 5px;margin: auto}
-.module-wrap .qm_btn a{display: block;width: 45px;height: 45px;background: url(../images/jp_md02_qm.png) no-repeat center #ff1c31;border-radius: 50%;position: absolute;right: -22.5px;top: -22.5px;text-indent: -9999px}
-.module-wrap .qm_btn span{background: #fff;font-size: 1.4rem;color: #777;display: block;position: absolute;width: 230px;word-break: keep-all;padding: 10px;right: -260px;top: -30px;border-radius: 10px;display: none}
+.module-wrap .qm_btn em{display: block;width: 45px;height: 45px;background: url(../images/jp_md02_qm.png) no-repeat center #ff1c31;border-radius: 50%;position: absolute;right: -22.5px;top: -22.5px;text-indent: -9999px}
+.module-wrap .qm_btn span{background: #fff;font-size: 1.4rem;color: #777;display: block;position: absolute;width: 230px;word-break: keep-all;padding: 10px;right: -260px;top: -30px;border-radius: 10px;display: none;box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.12);z-index: 999}
 .module-wrap .qm_btn span:before{content: '';position: absolute;border-style: solid;
 border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;width: 0;z-index: 1;left: -10px;top: 10px;}
-
 
 .module-wrap .white_box_sdw{background: #fff;padding: 5.0rem;border: 1px solid #ddd;position: relative;box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.08)}
 .module-wrap{position:relative;}
@@ -1385,7 +1390,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_strategy.sty01  .white_box .guide_wrap > div {margin-bottom: 4.0rem;padding-bottom: 4.0rem;border-bottom: 1px solid #dddddd;}
 .rec_mod_strategy.sty01 .white_box .guide_wrap >div:last-child{border-bottom: 0;padding-bottom: 0}
 .rec_mod_strategy.sty01  .q {font-size: 2.4rem;font-weight: 400;margin: 10px 0;position: relative;padding-left: 30px}
-.rec_mod_strategy.sty01  .q:before{content: 'Q.';display: block;font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0}
+.rec_mod_strategy.sty01  .q:before{content: 'Q.';display: block;font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0;font-family: 'GmarketSansMedium' !important;}
 .rec_mod_strategy.sty01  .a {font-size: 2.0rem;color: #7d7d7d;}
 .rec_mod_strategy.sty01  .recent_question{background: #1a4fba;padding: 4.0rem 1.0rem;border-radius: 15px;position: relative;padding-bottom: 0;;overflow: hidden;display: flex;align-items: flex-end}
 .rec_mod_strategy.sty01  .rq_cont{text-align: center;padding-bottom: 4.0rem;width: calc(100% - 200px)}
@@ -1428,8 +1433,28 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_strategy.sty02  h3{font-size: 3.4rem;color: #0b4467;margin-bottom: 4rem}
 .rec_mod_strategy.sty02 .guide{padding-bottom: 8rem}
 .rec_mod_strategy.sty02 .guide h3{text-align: center;}
-.rec_mod_strategy.sty02 .q{font-size: 2.6rem;margin-bottom: 1rem;position: relative;padding-left: 30px}
-.rec_mod_strategy.sty02 .q:before{content: 'Q.';font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0;}
+.rec_mod_strategy.sty02 .q{font-size: 2.6rem;margin-bottom: 1rem;position: relative;padding-left: 60px}
+.rec_mod_strategy.sty02 .guide_wrap > div:nth-child(1) .q:before,
+.rec_mod_strategy.sty02 .interview_tip_wrap > div:nth-child(1) .q:before{content: 'Q1.';font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 4px;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty02 .guide_wrap > div:nth-child(2) .q:before,
+.rec_mod_strategy.sty02 .interview_tip_wrap > div:nth-child(2) .q:before{content: 'Q2.';font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 4px;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty02 .guide_wrap > div:nth-child(3) .q:before,
+.rec_mod_strategy.sty02 .interview_tip_wrap > div:nth-child(3) .q:before{content: 'Q3.';font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 4px;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty02 .guide_wrap > div:nth-child(4) .q:before,
+.rec_mod_strategy.sty02 .interview_tip_wrap > div:nth-child(4) .q:before{content: 'Q4.';font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 4px;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty02 .guide_wrap > div:nth-child(5) .q:before,
+.rec_mod_strategy.sty02 .interview_tip_wrap > div:nth-child(5) .q:before{content: 'Q5.';font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 4px;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty02 .guide_wrap > div:nth-child(6) .q:before,
+.rec_mod_strategy.sty02 .interview_tip_wrap > div:nth-child(6) .q:before{content: 'Q6.';font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 4px;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty02 .guide_wrap > div:nth-child(7) .q:before,
+.rec_mod_strategy.sty02 .interview_tip_wrap > div:nth-child(7) .q:before{content: 'Q7.';font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 4px;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty02 .guide_wrap > div:nth-child(8) .q:before,
+.rec_mod_strategy.sty02 .interview_tip_wrap > div:nth-child(8) .q:before{content: 'Q8.';font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 4px;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty02 .guide_wrap > div:nth-child(9) .q:before,
+.rec_mod_strategy.sty02 .interview_tip_wrap > div:nth-child(9) .q:before{content: 'Q9.';font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 4px;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty02 .guide_wrap > div:nth-child(10) .q:before,
+.rec_mod_strategy.sty02 .interview_tip_wrap > div:nth-child(10) .q:before{content: 'Q10.';font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 4px;font-family: 'GmarketSansMedium' !important;}
+
 .rec_mod_strategy.sty02 .a{font-size: 2.2rem;color: #7d7d7d}
 .rec_mod_strategy.sty02 .guide_wrap > div,
 .rec_mod_strategy.sty02 .interview_tip_wrap > div {margin-bottom: 3rem;padding-bottom: 2rem;margin-bottom: 2rem;border-bottom: 1px solid #ddd}
@@ -1443,9 +1468,9 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_strategy.sty02 .bg{background: url(../images/strategy02_addPonitbg.png) no-repeat;padding: 8rem 0;}
 .rec_mod_strategy.sty02 .bg .cnt-container:first-child:before{content: '';display: block;background: url(../images/strategy02_img02.png) no-repeat;width: 484px;height: 423px;position: absolute;left: 0;top: -423px}
 .rec_mod_strategy.sty02 .add_point .cnt-container{position: relative}
-.rec_mod_strategy.sty02  .cont_box{background: #fff;padding: 4rem;margin-bottom: 4rem}
-.rec_mod_strategy.sty02  .cont_box:last-child{margin-bottom: 0}
-.rec_mod_strategy.sty02  .cont_box h3{text-align: center}
+.rec_mod_strategy.sty02 .cont_box{background: #fff;padding: 4rem;margin-bottom: 4rem}
+.rec_mod_strategy.sty02 .cont_box:last-child{margin-bottom: 0}
+.rec_mod_strategy.sty02 .cont_box h3{text-align: center}
 .rec_mod_strategy.sty02 .cont_box li{display: flex;flex-wrap: wrap;margin-bottom: 2rem}
 .rec_mod_strategy.sty02 .cont_box li:last-child{margin-bottom: 0}
 .rec_mod_strategy.sty02 .cont_box .tit{font-size: 2.2rem;font-weight: 500;margin-right: 2rem}
@@ -1455,7 +1480,198 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_strategy.sty02 .interview_tip .qm_btn{background: #0b4467;color: #fff}
 .rec_mod_strategy.sty02 .interview_tip h3{text-align: center;}
 .rec_mod_strategy.sty02 .interview_tip img{margin: 4rem auto;display: block;}
-/* .rec_mod_strategy.sty03 .guide h3{} */
+.rec_mod_strategy.sty03{margin: 8rem 0}
+.rec_mod_strategy.sty03  h3{font-size: 3rem;margin-bottom: 4rem}
+.rec_mod_strategy.sty03 .tit_wrap {text-align: center;}
+.rec_mod_strategy.sty03 .tit_wrap h3{display: inline-block;padding: 1rem 4rem;border-radius: 5px;background: #eee}
+.rec_mod_strategy.sty03 .q{font-size: 2.6rem;margin-bottom: 1rem;position: relative;}
+.rec_mod_strategy.sty03 .guide_wrap > div:nth-child(1) .q:before{content: 'Q1.';font-weight: bold;color: #fa1848;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .guide_wrap > div:nth-child(2) .q:before{content: 'Q2.';font-weight: bold;color: #fa1848;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .guide_wrap > div:nth-child(3) .q:before{content: 'Q3.';font-weight: bold;color: #fa1848;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .guide_wrap > div:nth-child(4) .q:before{content: 'Q4.';font-weight: bold;color: #fa1848;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .guide_wrap > div:nth-child(5) .q:before{content: 'Q5.';font-weight: bold;color: #fa1848;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .guide_wrap > div:nth-child(6) .q:before{content: 'Q6.';font-weight: bold;color: #fa1848;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .guide_wrap > div:nth-child(7) .q:before{content: 'Q7.';font-weight: bold;color: #fa1848;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .guide_wrap > div:nth-child(8) .q:before{content: 'Q8.';font-weight: bold;color: #fa1848;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .guide_wrap > div:nth-child(9) .q:before{content: 'Q9.';font-weight: bold;color: #fa1848;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .guide_wrap > div:nth-child(10) .q:before{content: 'Q10.';font-weight: bold;color: #fa1848;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .a{font-size: 2.2rem;color: #7d7d7d}
+.rec_mod_strategy.sty03 .guide h3 {background: #222b7e;color: #fff}
+.rec_mod_strategy.sty03 .guide_wrap > div{display: flex;margin-bottom:3rem;padding-bottom: 3rem;border-bottom: 1px solid #dcdcdc}
+.rec_mod_strategy.sty03 .guide_wrap > div:last-child,
+.rec_mod_strategy.sty03 .interview_tip_wrap > div:last-child{border-bottom: 0}
+.rec_mod_strategy.sty03 .guide_wrap .q{width: 300px;margin-right:  30px;word-break: keep-all}
+.rec_mod_strategy.sty03 .guide_wrap .a{width: calc(100% - 330px)}
+.rec_mod_strategy.sty03 .bg{background: url(../images/strategy03_bg.png) no-repeat bottom left;background-size: cover;padding: 8rem 0}
+.rec_mod_strategy.sty03 .rq_cont{display: flex;background: #fff;border: 2px solid #262d7e;border-radius: 20px;padding: 4rem;position: relative;}
+.rec_mod_strategy.sty03 .rq_tit{font-size: 3.4rem;font-weight: bold;width: 200px;}
+.rec_mod_strategy.sty03 .rq_text{width: calc(100% - 200px)} 
+.rec_mod_strategy.sty03 .rq_text p {font-size: 2.4rem;margin-bottom: 1rem}
+.rec_mod_strategy.sty03 .rq_text p:last-child{margin-bottom: 0}
+.rec_mod_strategy.sty03 .rq_cont:after{content: '';display: block;background: url(../images/strategy03_img01.png) no-repeat;width: 380px;height: 329px;position: absolute;right: 0;bottom: 0}
+.rec_mod_strategy.sty03 .cont_box{border-radius: 20px;overflow: hidden;margin-top: 4rem;border: 2px solid #262d7e}
+.rec_mod_strategy.sty03 .cont_box > div {padding: 4rem}
+.rec_mod_strategy.sty03 .add_point{background: #262d7e;}
+.rec_mod_strategy.sty03 .add_point h3{color: #fff;background: transparent;border: 1px solid #fff}
+.rec_mod_strategy.sty03 .add_point li{display: flex;flex-wrap: wrap;margin-bottom: 2rem;color: #fff}
+.rec_mod_strategy.sty03 .add_point li:last-child{margin-bottom: 0}
+.rec_mod_strategy.sty03 .add_point .tit{font-size: 2.2rem;font-weight: 500;margin-right: 2rem}
+.rec_mod_strategy.sty03 .add_point .desc{font-size: 2.2rem;}
+.rec_mod_strategy.sty03 .spec{background: #fff}
+.rec_mod_strategy.sty03 .spec h3{background: #262d7e;color: #fff}
+.rec_mod_strategy.sty03 .spec li{display: flex;flex-wrap: wrap;margin-bottom: 2rem;justify-content: center}
+.rec_mod_strategy.sty03 .spec .tit{font-size: 2.2rem;font-weight: 500;margin-right: 2rem}
+.rec_mod_strategy.sty03 .spec .desc{font-size: 2.2rem;color: #555}
+.rec_mod_strategy.sty03 .interview_tip {margin: 8rem 0}
+.rec_mod_strategy.sty03 .interview_tip .q{position: relative;padding-left: 70px}
+.rec_mod_strategy.sty03 .interview_tip .q:before{color: #fb9925;position: absolute;left: 0;top: 0} 
+.rec_mod_strategy.sty03 .interview_tip_wrap > div:nth-child(1) .q:before{content: 'Q1.';font-weight: bold;color: #fb9925;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .interview_tip_wrap > div:nth-child(2) .q:before{content: 'Q2.';font-weight: bold;color: #fb9925;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .interview_tip_wrap > div:nth-child(3) .q:before{content: 'Q3.';font-weight: bold;color: #fb9925;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .interview_tip_wrap > div:nth-child(4) .q:before{content: 'Q4.';font-weight: bold;color: #fb9925;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .interview_tip_wrap > div:nth-child(5) .q:before{content: 'Q5.';font-weight: bold;color: #fb9925;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .interview_tip_wrap > div:nth-child(6) .q:before{content: 'Q6.';font-weight: bold;color: #fb9925;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .interview_tip_wrap > div:nth-child(7) .q:before{content: 'Q7.';font-weight: bold;color: #fb9925;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .interview_tip_wrap > div:nth-child(8) .q:before{content: 'Q8.';font-weight: bold;color: #fb9925;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .interview_tip_wrap > div:nth-child(9) .q:before{content: 'Q9.';font-weight: bold;color: #fb9925;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .interview_tip_wrap > div:nth-child(10) .q:before{content: 'Q10.';font-weight: bold;color: #fb9925;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty03 .interview_tip .a {padding-left: 40px}
+.rec_mod_strategy.sty03 .interview_tip_wrap > div{margin-bottom:3rem;padding-bottom: 3rem;border-bottom: 1px solid #dcdcdc}
+.rec_mod_strategy.sty03 .interview_tip .qm_btn{background: #262d7e;color: #fff}
+.rec_mod_strategy.sty04 h3 {font-size: 3rem;margin-bottom: 4rem}
+.rec_mod_strategy.sty04 .guide{background: url(../images/strategy04_bg01.png) no-repeat top left;padding: 8rem 0}
+.rec_mod_strategy.sty04 .guide h3{color: #fff}
+.rec_mod_strategy.sty04 .guide .white_box{background: #fff;border-radius: 30px;overflow: hidden;box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05)}
+.rec_mod_strategy.sty04 .guide .guide_wrap{background: #fff;padding: 4rem}
+.rec_mod_strategy.sty04 .q{font-size: 2.6rem;margin-bottom: 1rem;position: relative;}
+.rec_mod_strategy.sty04 .a{font-size: 2.2rem;color: #7d7d7d}
+.rec_mod_strategy.sty04 .guide_wrap > div,
+.rec_mod_strategy.sty04 .interview_tip_wrap > div{margin-bottom: 3rem;padding-bottom: 3rem;border-bottom: 1px solid #dcdcdc}
+.rec_mod_strategy.sty04 .guide_wrap > div:last-child,
+.rec_mod_strategy.sty04 .interview_tip_wrap > div:last-child{border-bottom: 0;padding-bottom: 0;margin-bottom: 0}
+.rec_mod_strategy.sty04 .guide_wrap > div:nth-child(1) .q:before {content: '1.';font-weight: bold;color: #fa1848;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .guide_wrap > div:nth-child(2) .q:before {content: '2.';font-weight: bold;color: #fa1848;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .guide_wrap > div:nth-child(3) .q:before {content: '3.';font-weight: bold;color: #fa1848;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .guide_wrap > div:nth-child(4) .q:before {content: '4.';font-weight: bold;color: #fa1848;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .guide_wrap > div:nth-child(5) .q:before {content: '5.';font-weight: bold;color: #fa1848;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .guide_wrap > div:nth-child(6) .q:before {content: '6.';font-weight: bold;color: #fa1848;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .guide_wrap > div:nth-child(7) .q:before {content: '7.';font-weight: bold;color: #fa1848;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .guide_wrap > div:nth-child(8) .q:before {content: '8.';font-weight: bold;color: #fa1848;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .guide_wrap > div:nth-child(9) .q:before {content: '9.';font-weight: bold;color: #fa1848;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .guide_wrap > div:nth-child(10) .q:before {content: '10.';font-weight: bold;color: #fa1848;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .guide .recent_question{background: #ff5a46;padding: 4rem;color: #fff}
+.rec_mod_strategy.sty04 .guide .rq_cont .rq_tit{font-size: 4.0rem;margin-bottom: 2rem;} 
+.rec_mod_strategy.sty04 .guide .rq_cont .rq_text{display: flex;}
+.rec_mod_strategy.sty04 .guide .rq_cont .rq_text p {width: calc(50% - 30px);margin-right: 60px;font-size: 2.0rem}
+.rec_mod_strategy.sty04 .guide .rq_cont .rq_text p storng{font-size: 2.0rem}
+.rec_mod_strategy.sty04 .guide .rq_cont .rq_text p:nth-child(2n){margin-right: 0}
+.rec_mod_strategy.sty04 .add_point{position: relative}
+.rec_mod_strategy.sty04 .add_point:before{content: '';display: block;background: url(../images/strategy04_img01.png) no-repeat;width: 506px;height: 713px;position: absolute;left: 0;top: -250px;z-index: 2}
+.rec_mod_strategy.sty04 .add_point h3{margin-left: 200px;color: #ff5a46}
+.rec_mod_strategy.sty04 .add_point .cont_box{background: #64e1e1;padding: 4.0rem 4rem 4rem 200px;width: calc(100% +  ((100vw - 1280px) / 2));position: relative;z-index: 1;border-radius: 30px 0 0 30px}
+.rec_mod_strategy.sty04 .cont_box li{display: flex;flex-wrap: wrap;margin-bottom: 2rem;color: #fff}
+.rec_mod_strategy.sty04 .cont_box .tit{font-size: 2.2rem;font-weight: 500;margin-right: 2rem}
+.rec_mod_strategy.sty04 .cont_box .desc{font-size: 2.2rem;}
+.rec_mod_strategy.sty04 .bg02 {background: url(../images/strategy04_img02.png) no-repeat bottom right;padding-bottom: 8rem}
+.rec_mod_strategy.sty04 .spec .cont_box{background: #ff5a46;padding: 4rem;width:50%;border-radius: 0 30px 30px 0}
+.rec_mod_strategy.sty04 .spec .cont_box .spec_wrap{margin-left: 280px;}
+.rec_mod_strategy.sty04 .interview_tip{padding: 8rem 0;background: url(../images/strategy04_bg01.png) no-repeat;position: relative;}
+.rec_mod_strategy.sty04 .interview_tip:after{content: '';display: block;background: url(../images/strategy04_img03.png) no-repeat;width: 655px;height: 510px;position: absolute;bottom: 0;right: 0}
+.rec_mod_strategy.sty04 .interview_tip h3{color: #fff}
+.rec_mod_strategy.sty04 .interview_tip_wrap {padding: 4rem;background: #fff;border-radius: 30px;border: 2px solid #ff5a46;}
+.rec_mod_strategy.sty04 .interview_tip_wrap > div:nth-child(1) .q:before {content: '1.';font-weight: bold;color: #ff5a46;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .interview_tip_wrap > div:nth-child(2) .q:before {content: '2.';font-weight: bold;color: #ff5a46;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .interview_tip_wrap > div:nth-child(3) .q:before {content: '3.';font-weight: bold;color: #ff5a46;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .interview_tip_wrap > div:nth-child(4) .q:before {content: '4.';font-weight: bold;color: #ff5a46;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .interview_tip_wrap > div:nth-child(5) .q:before {content: '5.';font-weight: bold;color: #ff5a46;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .interview_tip_wrap > div:nth-child(6) .q:before {content: '6.';font-weight: bold;color: #ff5a46;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .interview_tip_wrap > div:nth-child(7) .q:before {content: '7.';font-weight: bold;color: #ff5a46;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .interview_tip_wrap > div:nth-child(8) .q:before {content: '8.';font-weight: bold;color: #ff5a46;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .interview_tip_wrap > div:nth-child(9) .q:before {content: '9.';font-weight: bold;color: #ff5a46;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .interview_tip_wrap > div:nth-child(10) .q:before {content: '10.';font-weight: bold;color: #ff5a46;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty04 .interview_tip .qm_btn{background: #ff5a46;color: #fff}
+.rec_mod_strategy.sty04 .interview_tip .qm_btn em{color: #fff;background: url(../images/jp_md02_qm.png) no-repeat center #000;}
+.rec_mod_strategy.sty05 h3{font-size: 3rem;margin-bottom: 4rem}
+.rec_mod_strategy.sty05 .bg{background: url(../images/strategy05_bg.png) no-repeat top;background-size: cover;padding: 8rem 0}
+.rec_mod_strategy.sty05 .bg h3{text-align: center;color: #fff}
+.rec_mod_strategy.sty05 .guide_wrap{display: flex;flex-wrap: wrap}
+.rec_mod_strategy.sty05 .guide_wrap > div{background: #fff;border-radius: 20px;margin-right: 30px;padding: 4rem;width: calc(33.333% - 20px);margin-bottom: 20px}
+.rec_mod_strategy.sty05 .guide_wrap > div:nth-child(3n){margin-right: 0}
+.rec_mod_strategy.sty05 .guide_wrap > div:nth-child(1):before{content: '첫번째.';display: block;color: #4d1bac;font-size: 3.0rem;font-weight: bold;margin-bottom: 1rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .guide_wrap > div:nth-child(2):before{content: '두번째.';display: block;color: #4d1bac;font-size: 3.0rem;font-weight: bold;margin-bottom: 1rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .guide_wrap > div:nth-child(3):before{content: '세번째.';display: block;color: #a41bac;font-size: 3.0rem;font-weight: bold;margin-bottom: 1rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .guide_wrap > div:nth-child(4):before{content: '네번째.';display: block;color: #71a312;font-size: 3.0rem;font-weight: bold;margin-bottom: 1rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .guide_wrap > div:nth-child(5):before{content: '다섯번째.';display: block;color: #4d1bac;font-size: 3.0rem;font-weight: bold;margin-bottom: 1rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .guide_wrap > div:nth-child(6):before{content: '여섯번째.';display: block;color: #a41bac;font-size: 3.0rem;font-weight: bold;margin-bottom: 1rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .guide_wrap > div:nth-child(7):before{content: '일곱번째.';display: block;color: #71a312;font-size: 3.0rem;font-weight: bold;margin-bottom: 1rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .guide_wrap > div:nth-child(8):before{content: '여덟번째.';display: block;color: #4d1bac;font-size: 3.0rem;font-weight: bold;margin-bottom: 1rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .guide_wrap > div:nth-child(9):before{content: '아홉번째.';display: block;color: #a41bac;font-size: 3.0rem;font-weight: bold;margin-bottom: 1rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .guide_wrap > div:nth-child(10):before{content: '열번째.';display: block;color: #71a312;font-size: 3.0rem;font-weight: bold;margin-bottom: 1rem;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .guide_wrap > div .q{font-size: 2.4rem;font-weight: 500;margin-bottom: 2rem;}
+.rec_mod_strategy.sty05 .guide_wrap > div .a{font-size: 2rem;color: #525252}
+.rec_mod_strategy.sty05 .recent_question {border: 2px solid #fff;border-radius: 20px;padding: 4rem;color: #fff}
+.rec_mod_strategy.sty05 .recent_question .rq_tit{text-align: center;margin-bottom: 3rem;font-size: 4rem;;font-weight: bold;}
+.rec_mod_strategy.sty05 .recent_question .rq_text{display: flex;flex-wrap: wrap;}
+.rec_mod_strategy.sty05 .recent_question .rq_text p{margin-right: 60px;width: calc(50% - 30px);margin-bottom: 2rem;font-size: 2rem}
+.rec_mod_strategy.sty05 .recent_question .rq_text p:nth-child(2n){margin-right: 0}
+.rec_mod_strategy.sty05 .add_point{background: #f758a6;padding: 8rem 0;color: #fff;position: relative}
+.rec_mod_strategy.sty05 .add_point h3{text-align: center}
+.rec_mod_strategy.sty05 .add_point .cnt-container{position: relative}
+.rec_mod_strategy.sty05 .add_point:after{content: '';display: block;background: url(../images/strategy05_img01.png) no-repeat;width: 228px;height: 474px;position: absolute;bottom: 0;right: 20px}
+.rec_mod_strategy.sty05 .cont_box li{display: flex;flex-wrap: wrap;margin-bottom: 2rem;}
+.rec_mod_strategy.sty05 .cont_box .tit{font-size: 2.2rem;font-weight: 500;margin-right: 2rem}
+.rec_mod_strategy.sty05 .cont_box .desc{font-size: 2.2rem;}
+.rec_mod_strategy.sty05 .spec .cnt-container{background: url(../images/strategy05_bg02.png) no-repeat right bottom;background-size: contain;padding: 8rem 0;}
+.rec_mod_strategy.sty05 .spec  h3{color: #ef2f9d}
+.rec_mod_strategy.sty05 .interview_tip{background: rgb(96,139,255);
+background: linear-gradient(180deg, rgba(96,139,255,1) 0%, rgba(219,169,254,1) 100%);padding: 8rem 0}
+.rec_mod_strategy.sty05 .interview_tip h3{color: #fff;text-align: center;}
+.rec_mod_strategy.sty05 .interview_tip .interview_tip_wrap > div{background: #fff;padding: 4rem;margin-bottom: 2rem;border-radius: 30px;}
+.rec_mod_strategy.sty05 .interview_tip .interview_tip_wrap > div:last-child{margin-bottom: 0}
+.rec_mod_strategy.sty05 .interview_tip_wrap .q{font-size: 2.3rem;margin: 1.5rem 0;font-weight: 500}
+.rec_mod_strategy.sty05 .interview_tip_wrap .a {font-size: 2rem;color: #7d7d7d}
+.rec_mod_strategy.sty05 .interview_tip_wrap .a b{color: #ff50b1}
+.rec_mod_strategy.sty05 .interview_tip_wrap > div:nth-child(1) .q:before{content: '꿀팁 1.';display: block;font-size: 4rem;color: #ff50b1;font-weight: bold;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .interview_tip_wrap > div:nth-child(2) .q:before{content: '꿀팁 2.';display: block;font-size: 4rem;color: #ff50b1;font-weight: bold;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .interview_tip_wrap > div:nth-child(3) .q:before{content: '꿀팁 3.';display: block;font-size: 4rem;color: #ff50b1;font-weight: bold;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .interview_tip_wrap > div:nth-child(4) .q:before{content: '꿀팁 4.';display: block;font-size: 4rem;color: #ff50b1;font-weight: bold;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .interview_tip_wrap > div:nth-child(5) .q:before{content: '꿀팁 5.';display: block;font-size: 4rem;color: #ff50b1;font-weight: bold;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .interview_tip_wrap > div:nth-child(6) .q:before{content: '꿀팁 6.';display: block;font-size: 4rem;color: #ff50b1;font-weight: bold;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .interview_tip_wrap > div:nth-child(7) .q:before{content: '꿀팁 7.';display: block;font-size: 4rem;color: #ff50b1;font-weight: bold;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .interview_tip_wrap > div:nth-child(8) .q:before{content: '꿀팁 8.';display: block;font-size: 4rem;color: #ff50b1;font-weight: bold;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .interview_tip_wrap > div:nth-child(9) .q:before{content: '꿀팁 9.';display: block;font-size: 4rem;color: #ff50b1;font-weight: bold;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .interview_tip_wrap > div:nth-child(10) .q:before{content: '꿀팁 10.';display: block;font-size: 4rem;color: #ff50b1;font-weight: bold;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty05 .interview_tip .qm_btn{background: #ff50b1;color: #fff}
+.rec_mod_strategy.sty05 .interview_tip .qm_btn em{color: #fff;background: url(../images/jp_md02_qm.png) no-repeat center #000}
+.rec_mod_strategy.sty06 h3{font-size: 3rem;margin-bottom: 4rem}
+.rec_mod_strategy.sty06 .bg{background: url(../images/strategy06_bg01.png) no-repeat center bottom;padding: 8rem 0}
+.rec_mod_strategy.sty06 .tit_wrap h3{display: inline-block;border-bottom: 6px solid rgba(255, 255, 255, 0.65);color: #fff;padding-bottom: 1rem}
+.rec_mod_strategy.sty06  .guide{color: #fff}
+.rec_mod_strategy.sty06  .guide .q{font-size: 2.4rem;margin-bottom: 1rem}
+.rec_mod_strategy.sty06  .guide .a{font-size: 2.0rem;}
+.rec_mod_strategy.sty06  .guide_wrap > div{margin-bottom: 3rem} 
+.rec_mod_strategy.sty06  .guide_wrap > div:last-child{margin-bottom: 0}
+.rec_mod_strategy.sty06 .recent_question{border: 5px solid #053956;margin: 8rem 0}
+.rec_mod_strategy.sty06 .recent_question .rq_tit{font-size: 2.6rem;text-align: center;color: #fff;background: #053956;padding:2rem 4rem}
+.rec_mod_strategy.sty06 .recent_question  .rq_text{background: #fff;padding: 4rem;display: flex;flex-wrap: wrap}
+.rec_mod_strategy.sty06 .recent_question  .rq_text p {color: #175c87;width: calc(50% - 30px);margin-right: 60px;margin-bottom: 1rem;font-size: 2.0rem}
+.rec_mod_strategy.sty06 .recent_question  .rq_text p:nth-child(2n){margin-right: 0}
+.rec_mod_strategy.sty06 .cont_box li{display: flex;flex-wrap: wrap;margin-bottom: 2rem;color: #fff}
+.rec_mod_strategy.sty06 .cont_box .tit{font-size: 2.2rem;font-weight: 500;margin-right: 2rem}
+.rec_mod_strategy.sty06 .cont_box .desc{font-size: 2.2rem;}
+.rec_mod_strategy.sty06 .interview_tip{padding: 8rem 0; background: url(../images/strategy06_ivt_bg.png) no-repeat}
+.rec_mod_strategy.sty06 .interview_tip h3{color: #fff;line-height: 1.2}
+.rec_mod_strategy.sty06 .interview_tip h3 span{display: block;font-size: 15rem}
+.rec_mod_strategy.sty06 .interview_tip_wrap{display: flex;justify-content: space-between;flex-wrap: wrap}
+.rec_mod_strategy.sty06 .interview_tip_wrap > *{width: calc(50% - 60px)}
+.rec_mod_strategy.sty06 .interview_tip_wrap  .it_area{display: flex;flex-direction: column;margin-bottom: 15rem}
+.rec_mod_strategy.sty06 .interview_tip_wrap  .it_area:nth-child(even){text-align: right;}
+.rec_mod_strategy.sty06 .interview_tip_wrap  .q{font-size: 2.4rem;margin-bottom: 2rem}
+.rec_mod_strategy.sty06 .interview_tip_wrap  .a{font-size: 2rem;color: #7d7d7d}
+.rec_mod_strategy.sty06 .interview_tip_wrap  .a b{color: #ff3000}
+.rec_mod_strategy.sty06 .interview_tip .btn_wrap:before{content: '';display: block;background: url(../images/strategy06_ivtt_img.png) no-repeat;width: 575px;height: 574px;border: 10px solid #37bde8;border-radius: 50%;margin: auto}
+.rec_mod_strategy.sty06 .interview_tip .btn_wrap button{margin-top: -20px;background: #ff3000;color: #fff}
+.rec_mod_strategy.sty06 .interview_tip .qm_btn em{color: #fff;background: url(../images/jp_md02_qm.png) no-repeat center #000}
 
 /* --- 채용공고형 start --- */
 .rec_mod_header {padding: 8.0rem 0}
@@ -3331,7 +3547,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	
 	/* 도움말 버튼 */
 	.module-wrap .qm_btn{font-size: 1.8rem;padding: 1.5rem }
-	.module-wrap .qm_btn a{width: 35px;height: 35px;background-size: 1.4rem;right: -17.5px;top: -17.5px}
+	.module-wrap .qm_btn em{width: 35px;height: 35px;background-size: 1.4rem;right: -17.5px;top: -17.5px}
 	
 	/* 기업뉴스 */
 	.com_mod_news.sty02 .news_row .img{width: 250px}
