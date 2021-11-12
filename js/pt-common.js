@@ -12,6 +12,7 @@ $(document).ready(function(){
         }
     });
 
+
 	// 탭 컨텐츠 숨기기
 			$(".tab_content").hide();
 
@@ -34,7 +35,7 @@ $(document).ready(function(){
 			});
 	
 		// 도움말 버튼
-		$('.qm_btn em').click(function () {
+		$('.qm_txt a').click(function () {
 			$(this).parent().find('span').toggle()
 		})
 	
@@ -1146,5 +1147,4 @@ $(document).ready(function(){
 			});
 
 	
-	
-});
+	});
