@@ -856,7 +856,6 @@ function afterAjax(srchBizrno) {
 						 recent_question += "<p>"+rcnIntQstTitle+"</p>";
                     }
                 }
-				rcnIntQst += "</div>";
             }
 			 $(".recent_question .rq_text").html(recent_question);
 
