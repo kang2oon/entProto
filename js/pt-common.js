@@ -394,20 +394,8 @@ $(document).ready(function(){
 				}
 			});
 		
-				// mag_mod.interview.sty04
-		$(".mag_mod_interview.sty04 .ivCeo").append('<div class="swiper-pagination"></div>');
-		var ceoIvSlider = new Swiper(".mag_mod_interview.sty04 .ivCeo", {
-			slidesPerView: 1,
-			spaceBetween: 0,
-			//loop: true,
-			pagination: {
-				el: '.swiper-pagination',
-				type: 'bullets',
-				clickable: true,
-				observer: true,
-				observeParents: true,
-			}
-		});
+		
+
 		
 	});
 	
