@@ -1044,7 +1044,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .bro_mod_biz.sty06 .bizDiv img{position: absolute;right: 0;top: 50%;transform: translateY(-50%);display: none}
 .bro_mod_biz.sty06 .bizDiv .text_area{width: calc(100% - 400px);position: relative;z-index: 2;margin-bottom: 3.0rem}
 .bro_mod_biz.sty06 .bizDiv div:last-child .text_area{margin-bottom: 0}
-.bro_mod_biz.sty06 .bizDiv .text_area h4{cursor: pointer;font-size: 2.2rem;color: #5e5e5e;margin-bottom: 1.5rem;transform: all 0.3s}
+.bro_mod_biz.sty06 .bizDiv .text_area h4{cursor: pointer;font-size: 2.2rem;color: #5e5e5e;margin-bottom: 1.5rem;transition:all 0.3s}
 .bro_mod_biz.sty06 .bizDiv .text_area h4:before{content: '◆';display: inline-block;margin-right: 1rem}
 .bro_mod_biz.sty06 .bizDiv .text_area h4:hover,
 .bro_mod_biz.sty06 .bizDiv .text_area h4:active,
@@ -1423,7 +1423,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 
 /* 면접 꿀팁*/	
 .rec_mod_strategy.sty01 .interview_tip{background: #9dd7ff;padding: 8.0rem 0}
-.rec_mod_strategy.sty01 .interview_tip .interview_tip_wrap{background: #fff;padding: 5.0rem 7.0rem;box-shadow: 2px 0px 7px rgb(0 0 0 / 8%);box-shadow: 0px 7px 10px rgb(0 0 0 / 8%);position: relative;;border: 2px solid #437cff}
+.rec_mod_strategy.sty01 .interview_tip .interview_tip_wrap{background: #fff;padding: 5.0rem 7.0rem;box-shadow: 2px 0px 7px #eee;position: relative;border: 2px solid #437cff}
 .rec_mod_strategy.sty01 .interview_tip .interview_tip_wrap:before{content: '';display: block;background: url(../images/jp_md03_bg02.png) no-repeat;width: 160px;height: 160px;position: absolute;right: 0;top: 0;}
 .rec_mod_strategy.sty01 .interview_tip .interview_tip_wrap:after{content: '';display: block;background: url(../images/jp_md03_img02.png);width: 279px;height: 302px;position: absolute;right: 20px;bottom: 0}
 .rec_mod_strategy.sty01 .interview_tip .it_area{margin-bottom: 4.0rem;padding-bottom: 4.0rem;border-bottom: 1px solid #ddd;}
@@ -3595,7 +3595,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	
 	/* 도움말 버튼 */
 	.module-wrap .qm_btn{font-size: 1.8rem;padding: 1.5rem }
-	.module-wrap .qm_txt a{width: 35px;height: 35px;background-size: 1.4rem;right: -17.5px;top: -17.5px}
+	.module-wrap .qm_txt {display:none;}
 	
 	/* 기업뉴스 */
 	.com_mod_news.sty02 .news_row .img{width: 250px}
@@ -4043,7 +4043,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.rec_mod_strategy.sty03{margin: 6rem 0}
 	.rec_mod_strategy.sty03 .bg {padding: 6rem 0}
 	.rec_mod_strategy.sty03 .rq_cont{flex-direction: column;padding: 2rem;}
-	.rec_mod_strategy.sty03 .rq_tit{width: 100%;margin-bottom: 2rem;font-weight: 2.4rem}
+	.rec_mod_strategy.sty03 .rq_tit{width: 100%;margin-bottom: 2rem;font-size: 2.4rem}
 	.rec_mod_strategy.sty03 .rq_tit br{display: none;}
 	.rec_mod_strategy.sty03 .rq_text{width: 100%;}
 	.rec_mod_strategy.sty03 .interview_tip .q{padding-left: 7rem}
@@ -4551,7 +4551,7 @@ html{font-size: 8px}
     #graph_fiCapital svg, #graph_fiSales svg, #graph_fiProfit svg{height:240px;min-height:auto;}
     .mag_mod_percent.sty02 > div .swiper-slide{padding:28px;}
     .mag_mod_percent.sty02 > div .swiper-slide > div:nth-child(1){width:80px;margin-right:16px;}
-    .mag_mod_percent.sty02 > div .swiper-slide > div .value{font-style:2.8rem;}
+    .mag_mod_percent.sty02 > div .swiper-slide > div .value{font-size:2.8rem;}
     .mag_mod_percent.sty02 > div .swiper-slide > div .desc{margin-top:8px;font-size:1.4rem;}
     .mag_mod_percent.sty02 > div .swiper-pagination{margin-top:16px;}
 	
