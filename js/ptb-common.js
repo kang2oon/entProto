@@ -1104,7 +1104,7 @@ function afterAjax(srchBizrno) {
                             columns: [
                                 salamtList
                             ],
-                            color: {
+                            colors: {
                                 매출액: "#033a71"
                             }
                         },
@@ -1151,7 +1151,7 @@ function afterAjax(srchBizrno) {
                             columns: [
                                 netincmList
                             ],
-                            color: {
+                            colors: {
                                 당기순이익: "#033a71"
                             }
                         },
