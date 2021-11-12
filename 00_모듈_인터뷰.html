@@ -1453,6 +1453,7 @@
 		$(".mag_mod_interview.sty06 .ivCeo").append('<div class="swiper-pagination"></div>');
 		var ceoIvSlider = new Swiper(".mag_mod_interview.sty06 .ivCeo", {
 			slidesPerView: 1,
+			slidesPerColumn: 3,
 			spaceBetween: 0,
 			//loop: true,
 			pagination: {
@@ -1465,12 +1466,31 @@
 			navigation: {
 				nextEl: ".mag_mod_interview.sty06 .qa_ceo  .swiper-button-next",
 				prevEl: ".mag_mod_interview.sty06 .qa_ceo .swiper-button-prev"
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 3,
+					slidesPerGroup: 3,
+				},
+				1024: {
+					slidesPerColumn: 1,
+					slidesPerGroup: 1,
+				},
+				768: {
+					slidesPerColumn: 1,
+					slidesPerGroup: 1,
+				},
+				300: {
+					slidesPerColumn: 1,
+					slidesPerGroup: 1,
+				}
 			}
 		});
 
 		$(".mag_mod_interview.sty06 .ivMng").append('<div class="swiper-pagination"></div>');
 		var ceoIvSlider = new Swiper(".mag_mod_interview.sty06 .ivMng", {
 			slidesPerView: 1,
+			slidesPerColumn: 3,
 			spaceBetween: 0,
 			//loop: true,
 			pagination: {
@@ -1483,12 +1503,31 @@
 			navigation: {
 				nextEl: ".mag_mod_interview.sty06 .qa_mng .swiper-button-next",
 				prevEl: ".mag_mod_interview.sty06 .qa_mng .swiper-button-prev"
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 3,
+					slidesPerGroup: 3,
+				},
+				1024: {
+					slidesPerColumn: 1,
+					slidesPerGroup: 1,
+				},
+				768: {
+					slidesPerColumn: 1,
+					slidesPerGroup: 1,
+				},
+				300: {
+					slidesPerColumn: 1,
+					slidesPerGroup: 1,
+				}
 			}
 		});
 
 		$(".mag_mod_interview.sty06 .ivEmp").append('<div class="swiper-pagination"></div>');
 		var ceoIvSlider = new Swiper(".mag_mod_interview.sty06 .ivEmp", {
 			slidesPerView: 1,
+			slidesPerColumn: 3,
 			spaceBetween: 0,
 			//loop: true,
 			pagination: {
@@ -1501,6 +1540,24 @@
 			navigation: {
 				nextEl: ".mag_mod_interview.sty06 .qa_emp .swiper-button-next",
 				prevEl: ".mag_mod_interview.sty06 .qa_emp .swiper-button-prev"
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 3,
+					slidesPerGroup: 3,
+				},
+				1024: {
+					slidesPerColumn: 1,
+					slidesPerGroup: 1,
+				},
+				768: {
+					slidesPerColumn: 1,
+					slidesPerGroup: 1,
+				},
+				300: {
+					slidesPerColumn: 1,
+					slidesPerGroup: 1,
+				}
 			}
 		});
 
