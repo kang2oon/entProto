@@ -824,7 +824,7 @@ function afterAjax(srchBizrno) {
                 var cvrltQstGuideTitle = "";//자소서 문항
                 var cvrltQstGuideCntnt = "";//자소서 답변
 
-                var guide = "<div class='guide_inner'>";
+                var guide = "";
                 for(var i=1; i<addDtailList; i++){
                     cvrltQstGuideTitle = "cvrltQstGuideTitle = cvrltQstGuide.addTitle"+i;
                     eval(cvrltQstGuideTitle);
@@ -839,7 +839,6 @@ function afterAjax(srchBizrno) {
                         guide += "<div class='a'>"+cvrltQstGuideCntnt+"</div></div>";
                     }
                 }
-				guide += "</div>";
             }
             $(".guide_wrap").html(guide);
 
