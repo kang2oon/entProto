@@ -51,6 +51,10 @@ $(document).ready(function(){
 
 	
 	
+	});
+
+	
+	$(window).load(function(){
 	//mag_mod_biz.sty03 사업분야 슬라이드
 			var magBiz03 = $('.mag_mod_biz.sty03 .bizDiv')
 			magBiz03.addClass('swiper');
@@ -389,820 +393,1224 @@ $(document).ready(function(){
 					}
 				}
 			});
-	
-		//.mag_mod_culture.sty04 조직문화
-			var cultureSlider = new Swiper(".mag_mod_culture.sty04 .dvCulture", {
-				slidesPerView: 4,
-				slidesPerColumn: 2,
-				slidesPerGroup: 8,
-				spaceBetween: 10,
-				navigation: {
-					nextEl: ".mag_mod_culture.sty04  .swiper-button-next",
-					prevEl: ".mag_mod_culture.sty04  .swiper-button-prev"
-				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 2,
-					},
-					1024: {
-						slidesPerView: 3,
-						slidesPerColumn: 1,
-						slidesPerGroup: 3,
-					},
-					1261: {
-						slidesPerView: 4,
-						slidesPerColumn: 2,
-						slidesPerGroup: 8,
-					}
-				}
-			});
-
-
-			// .mag_mod_culture.sty03
-			//조직문화  masony 레이아웃 
-			var divs = $(".mag_mod_culture.sty03 .dvCulture .swiper-wrapper > div");
-			if ($(window).width() > 1260) {
-				for (var i = 0; i < divs.length; i += 8) {
-					divs.slice(i, i + 8).wrapAll("<div class='masony swiper-slide'></div>");
-					$('.dvCulture .swiper-wrapper > div').each(function() {
-						$(this).children().removeClass('swiper-slide');
-					});
-					$('.masony  > div').addClass('item');
-				}
-			} else {
-				$('.dvCulture .swiper-wrapper').addClass("masony")
-				$('.dvCulture .swiper-wrapper > div').each(function() {
-					$(this).addClass('item');
-				});
+		
+				// mag_mod.interview.sty04
+		$(".mag_mod_interview.sty04 .ivCeo").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty04 .ivCeo", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
 			}
+		});
 
-			var ww = $(window).width();
-			var dvCultureSlider = undefined;
+		$(".mag_mod_interview.sty04 .ivMng").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty04 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			}
+		});
 
-			function initSwiper() {
-				if (ww > 1260 && dvCultureSlider == undefined) {
-					dvCultureSlider = new Swiper(".mag_mod_culture.sty03 .dvCulture", {
-						slidesPerView: 1,
-						navigation: {
-							nextEl: ".mag_mod_culture.sty03 .swiper-button-next",
-							prevEl: ".mag_mod_culture.sty03 .swiper-button-prev"
-						}
-					});
-				} else if (ww >= 1260 && dvCultureSlider != undefined) {
-					mySwiper.destroy();
-					dvCultureSlider = undefined;
+		$(".mag_mod_interview.sty04 .ivEmp").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty04 .ivEmp", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			}
+		});
+
+		// mag_mod.interview.sty03
+		$(".mag_mod_interview.sty03 .ivCeo").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty03 .ivCeo", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			}
+		});
+
+		$(".mag_mod_interview.sty03 .ivMng").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty03 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			}
+		});
+
+		$(".mag_mod_interview.sty03 .ivEmp").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty03 .ivEmp", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			}
+		});
+
+
+		// mag_mod.interview.sty05
+		$(".mag_mod_interview.sty05 .ivCeo").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty05 .ivCeo", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".mag_mod_interview.sty05 .qa_ceo  .swiper-button-next",
+				prevEl: ".mag_mod_interview.sty05 .qa_ceo .swiper-button-prev"
+			}
+		});
+
+		$(".mag_mod_interview.sty05 .ivMng").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty05 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".mag_mod_interview.sty05 .qa_mng .swiper-button-next",
+				prevEl: ".mag_mod_interview.sty05 .qa_mng .swiper-button-prev"
+			}
+		});
+
+		$(".mag_mod_interview.sty05 .ivEmp").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty05 .ivEmp", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".mag_mod_interview.sty05 .qa_emp .swiper-button-next",
+				prevEl: ".mag_mod_interview.sty05 .qa_emp .swiper-button-prev"
+			}
+		});
+
+		// .mag_mod_interview.sty02 
+		$('.mag_mod_interview.sty02 .cnt-container').addClass('tab_container')
+		$('.mag_mod_interview.sty02 .cnt-container').prepend("<ul class='tabs'><li class='active'><a href='javascript:vold' data-tab='tab1'>CEO</a></li><li><a href='javascript:vold' data-tab='tab2'>인사담당자</a></li><li><a href='javascript:vold' data-tab='tab3'>신입사원</a></li></ul>");
+		$('.mag_mod_interview.sty02  .iv_wrap').addClass('tab_content');
+		$('.mag_mod_interview.sty02 .qa_ceo').attr('id', 'tab1');
+		$('.mag_mod_interview.sty02 .qa_mng').attr('id', 'tab2');
+		$('.mag_mod_interview.sty02 .qa_emp').attr('id', 'tab3');
+
+		$(".mag_mod_interview.sty02 .ivCeo").append('<div class="swiper-pagination"></div>');
+		$(".mag_mod_interview.sty02 .ivMng").append('<div class="swiper-pagination"></div>');
+		$(".mag_mod_interview.sty02 .ivEmp").append('<div class="swiper-pagination"></div>');
+			// 탭 컨텐츠 숨기기
+		$(".mag_mod_interview.sty02 .tab_content").hide();
+
+		// 첫번째 탭콘텐츠 보이기
+		$(".mag_mod_interview.sty02 .tab_container").each(function() {
+			$(this).children().children().children("li:first").addClass("active"); //Activate first tab
+			$(this).children(".tab_content").first().show();
+		});
+
+		//탭메뉴 클릭 이벤트
+		$(".mag_mod_interview.sty02 .tabs li a").click(function() {
+			//탭 안에 슬라이드 있을 때
+			var tab_id = $(this).attr('data-tab');
+			$(this).parent().siblings().removeClass("active");
+			$(this).parent().addClass("active");
+			$(this).parent().parent().parent().parent().find(".tab_content").hide();
+			//        var activeTab = $(this).attr("rel");
+			//        $("#" + activeTab).fadeIn();
+			$("#" + tab_id).fadeIn();
+		});
+
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty02 .ivCeo", {
+			slidesPerView: 1,
+			slidesPerColumn: 4,
+			slidesPerGroup: 4,
+			spaceBetween: 0,
+			//loop: true,
+			observer: true,
+			observeParents: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 4,
+					slidesPerGroup: 4,
+				},
+				1024: {
+					slidesPerColumn: 3,
+					slidesPerGroup: 3,
+				},
+				768: {
+					slidesPerColumn: 2,
+					slidesPerGroup: 2,
+				},
+				300: {
+					slidesPerColumn: 2,
+					slidesPerGroup: 2,
 				}
 			}
+		});
 
-			initSwiper();
-
-			$(window).on('resize', function() {
-				ww = $(window).width();
-				initSwiper();
-			});
-
-
-			// .mag_mod_culture.sty05 조직문화
-			var cultureSlider = new Swiper(".mag_mod_culture.sty05 .dvCulture", {
-				slidesPerView: 4,
-				slidesPerColumn: 2,
-				slidesPerGroup: 8,
-				spaceBetween: 20,
-				navigation: {
-					nextEl: ".mag_mod_culture.sty05 .swiper-button-next",
-					prevEl: ".mag_mod_culture.sty05 .swiper-button-prev"
-				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 2,
-					},
-					1024: {
-						slidesPerView: 3,
-						slidesPerColumn: 1,
-						slidesPerGroup: 3,
-					},
-					1261: {
-						slidesPerView: 4,
-						slidesPerColumn: 2,
-						slidesPerGroup: 8,
-					}
-				}
-			});
-
-			// .mag_mod_welfare.sty03 조직문화
-			var cultureSlider = new Swiper(".mag_mod_welfare.sty03 .dvCulture", {
-				slidesPerView: 2,
-				slidesPerColumn: 3,
-				slidesPerGroup: 6,
-				spaceBetween: 30,
-				navigation: {
-					nextEl: ".mag_mod_welfare.sty03 .culture_wrap .swiper-button-next",
-					prevEl: ".mag_mod_welfare.sty03 .culture_wrap .swiper-button-prev"
-				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1024: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 2,
-					},
-					1261: {
-						slidesPerView: 2,
-						slidesPerColumn: 3,
-						slidesPerGroup: 6,
-					}
-				}
-			});
-
-
-			// .bro_mod_culture.sty02 복리후생 입력형
-			var welfareSlider = new Swiper(".bro_mod_culture.sty02 .dvWelfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				navigation: {
-					nextEl: ".bro_mod_culture.sty02 .welfare_wrap .swiper-button-next",
-					prevEl: ".bro_mod_culture.sty02 .welfare_wrap .swiper-button-prev"
-				}
-			});
-
-			// .bro_mod_culture.sty02 복리후생 선택형
-			var welfareSlider = new Swiper(".bro_mod_culture.sty02 .welfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				navigation: {
-					nextEl: ".bro_mod_culture.sty02 .welfare_wrap .swiper-button-next",
-					prevEl: ".bro_mod_culture.sty02 .welfare_wrap .swiper-button-prev"
-				}
-			});
-
-			// .bro_mod_culture.sty02 조직문화
-			var cultureSlider = new Swiper(".bro_mod_culture.sty02 .dvCulture", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				navigation: {
-					nextEl: ".bro_mod_culture.sty02 .culture_wrap .swiper-button-next",
-					prevEl: ".bro_mod_culture.sty02 .culture_wrap .swiper-button-prev"
-				}
-			});
-
-			// .bro_mod_culture.sty03 복리후생 입력형
-			var welfareSlider = new Swiper(".bro_mod_culture.sty03 .dvWelfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				navigation: {
-					nextEl: ".bro_mod_culture.sty03 .welfare_wrap .swiper-button-next",
-					prevEl: ".bro_mod_culture.sty03 .welfare_wrap .swiper-button-prev"
-				}
-			});
-
-			// .bro_mod_culture.sty03 복리후생 선택형
-			var welfareSlider = new Swiper(".bro_mod_culture.sty03 .welfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				navigation: {
-					nextEl: ".bro_mod_culture.sty03 .welfare_wrap .swiper-button-next",
-					prevEl: ".bro_mod_culture.sty03 .welfare_wrap .swiper-button-prev"
-				}
-			});
-
-			// .bro_mod_culture.sty03 조직문화
-			var cultureSlider = new Swiper(".bro_mod_culture.sty03 .dvCulture", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				navigation: {
-					nextEl: ".bro_mod_culture.sty03 .culture_wrap .swiper-button-next",
-					prevEl: ".bro_mod_culture.sty03 .culture_wrap .swiper-button-prev"
-				}
-			});
-
-			// .bro_mod_culture.sty04 복리후생 입력형
-			var welfareSlider = new Swiper(".bro_mod_culture.sty04 .dvWelfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				navigation: {
-					nextEl: ".bro_mod_culture.sty04 .welfare_wrap .swiper-button-next",
-					prevEl: ".bro_mod_culture.sty04 .welfare_wrap .swiper-button-prev"
-				}
-			});
-
-			// .bro_mod_culture.sty04 복리후생 선택형
-			var welfareSlider = new Swiper(".bro_mod_culture.sty04 .welfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				navigation: {
-					nextEl: ".bro_mod_culture.sty04 .welfare_wrap .swiper-button-next",
-					prevEl: ".bro_mod_culture.sty04 .welfare_wrap .swiper-button-prev"
-				}
-			});
-
-			// .bro_mod_culture.sty04 조직문화
-			var cultureSlider = new Swiper(".bro_mod_culture.sty04 .dvCulture", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				navigation: {
-					nextEl: ".bro_mod_culture.sty04 .culture_wrap .swiper-button-next",
-					prevEl: ".bro_mod_culture.sty04 .culture_wrap .swiper-button-prev"
-				}
-			});
-
-			// .bro_mod_culture.sty04 조직문화
-			$(".bro_mod_culture.sty05 .dvCulture").append('<div class="swiper-pagination"></div>');
-			var cultureSlider = new Swiper(".bro_mod_culture.sty05 .dvCulture", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				pagination: {
-					el: '.dvCulture .swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
-				}
-			});
-
-			// .bro_mod_culture.sty05 복리후생 입력형
-			$(".bro_mod_culture.sty05 .dvWelfare").append('<div class="swiper-pagination"></div>');
-			var cultureSlider = new Swiper(".bro_mod_culture.sty05 .dvWelfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
-				}
-			});
-
-			// .bro_mod_culture.sty05 복리후생 선택형
-			$(".bro_mod_culture.sty05 .welfare").append('<div class="swiper-pagination"></div>');
-			var cultureSlider = new Swiper(".bro_mod_culture.sty05 .welfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
-				}
-			});
-
-			// .bro_mod_culture.sty06 조직문화
-			$(".bro_mod_culture.sty06 .dvCulture").append('<div class="swiper-pagination"></div>');
-			var cultureSlider = new Swiper(".bro_mod_culture.sty06 .dvCulture", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
-				}
-			});
-
-			// .bro_mod_culture.sty06 복리후생 입력형
-			$(".bro_mod_culture.sty06 .dvWelfare").append('<div class="swiper-pagination"></div>');
-			var cultureSlider = new Swiper(".bro_mod_culture.sty06 .dvWelfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
-				}
-			});
-
-			// .bro_mod_culture.sty06 복리후생 선택형
-			$(".bro_mod_culture.sty06 .welfare").append('<div class="swiper-pagination"></div>');
-			var cultureSlider = new Swiper(".bro_mod_culture.sty06 .welfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
-				}
-			});
-
-			// .bro_mod_culture.sty07 조직문화
-			var cultureSlider = new Swiper(".bro_mod_culture.sty07 .dvCulture", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				navigation: {
-					nextEl: ".bro_mod_culture.sty07 .culture_wrap .swiper-button-next",
-					prevEl: ".bro_mod_culture.sty07 .culture_wrap .swiper-button-prev"
-				}
-			});
-
-			// .bro_mod_culture.sty07 복리후생 입력형
-			var cultureSlider = new Swiper(".bro_mod_culture.sty07 .dvWelfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				navigation: {
-					nextEl: ".bro_mod_culture.sty07 .welfare_wrap .swiper-button-next",
-					prevEl: ".bro_mod_culture.sty07 .welfare_wrap .swiper-button-prev"
-				}
-			});
-
-			// .bro_mod_culture.sty07 복리후생 선택형
-			var cultureSlider = new Swiper(".bro_mod_culture.sty07 .welfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				navigation: {
-					nextEl: ".bro_mod_culture.sty07 .welfare_wrap .swiper-button-next",
-					prevEl: ".bro_mod_culture.sty07 .welfare_wrap .swiper-button-prev"
-				}
-			});
-
-			// .mag_mod_culture.sty02 조직문화
-			var cultureSlider = new Swiper(".mag_mod_culture.sty02 .dvCulture", {
-				slidesPerView: 1,
-				slidesPerColumn: 3,
-				spaceBetween: 10,
-				navigation: {
-					nextEl: ".culture_wrap .swiper-button-next",
-					prevEl: ".culture_wrap .swiper-button-prev"
-				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1024: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1261: {
-						slidesPerView: 1,
-						slidesPerColumn: 3,
-						slidesPerGroup: 3,
-					}
-				}
-			});
-
-			// .mag_mod_culture.sty02 복리후생 선택형
-			var welfareSlider = new Swiper(".mag_mod_culture.sty02 .welfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 3,
-				spaceBetween: 30,
-				navigation: {
-					nextEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-next",
-					prevEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-prev"
-				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1024: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1261: {
-						slidesPerView: 1,
-						slidesPerColumn: 3,
-						slidesPerGroup: 3,
-					}
-				}
-			});
-
-			// .mag_mod_culture.sty02 복리후생 입력형
-			var welfareSlider = new Swiper(".mag_mod_culture.sty02 .dvWelfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 3,
-				spaceBetween: 30,
-				navigation: {
-					nextEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-next",
-					prevEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-prev"
-				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1024: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1261: {
-						slidesPerView: 1,
-						slidesPerColumn: 3,
-						slidesPerGroup: 3,
-					}
-				}
-			});
-
-
-			// .rec_mod_welfare.sty01 복리후생 선택형
-			var cultureSlider = new Swiper(".rec_mod_welfare.sty01 .welfare", {
-				slidesPerView: 3,
-				slidesPerColumn: 2,
-				slidesPerGroup: 6,
-				spaceBetween: 10,
-				navigation: {
-					nextEl: ".rec_mod_welfare.sty01  .swiper-button-next",
-					prevEl: ".rec_mod_welfare.sty01  .swiper-button-prev"
-				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					768: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1024: {
-						slidesPerView: 3,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1261: {
-						slidesPerView: 3,
-						slidesPerColumn: 2,
-						slidesPerGroup: 6,
-					}
-				}
-			});
-
-			// .rec_mod_welfare.sty03 복리후생 선택형
-			var cultureSlider = new Swiper(".rec_mod_welfare.sty03 .welfare", {
-				slidesPerView: 3,
-				slidesPerColumn: 2,
-				slidesPerGroup: 6,
-				spaceBetween: 10,
-				navigation: {
-					nextEl: ".rec_mod_welfare.sty03  .swiper-button-next",
-					prevEl: ".rec_mod_welfare.sty03  .swiper-button-prev"
-				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					768: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1024: {
-						slidesPerView: 3,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1261: {
-						slidesPerView: 3,
-						slidesPerColumn: 2,
-						slidesPerGroup: 6,
-					}
-				}
-			});
-
-			// .rec_mod_welfare.sty04 복리후생 선택형
-			var cultureSlider = new Swiper(".rec_mod_welfare.sty04 .welfare", {
-				slidesPerView: 3,
-				scrollbar: {
-					el: ".swiper-scrollbar",
-					hide: false,
-				}
-			});
-
-
-
-
-			// .inf_mod_culture.sty02 탭
-			$('.conts > div').hide();
-			$('.conts > div').first().show();
-			$('.tab > a').click(function() {
-				var item = $(this).attr('data-tab');
-				$('.tab > a').removeClass('on');
-				$(this).addClass('on');
-				$('.conts > div').hide();
-				$('.conts > .' + item).show();
-			});
-
-			// .inf_mod_culture.sty02 복리후생 선택형
-			$(".inf_mod_culture.sty02 .welfare").append('<div class="swiper-pagination"></div>');
-			var cultureSlider = new Swiper(".inf_mod_culture.sty02 .welfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 3,
-				spaceBetween: 10,
+		var mngIvSlider = new Swiper(".mag_mod_interview.sty02 .ivMng", {
+			slidesPerView: 1,
+			slidesPerColumn: 4,
+			spaceBetween: 0,
+			observer: true,
+			dots: true,
+			observeParents: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
 				observer: true,
 				observeParents: true,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 4,
+					slidesPerGroup: 4,
 				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1024: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 2,
-					},
-					1261: {
-						slidesPerView: 1,
-						slidesPerColumn: 3,
-						slidesPerGroup: 3,
-					}
-				}
-			});
-
-			// .inf_mod_culture.sty02 조직문화
-			$(".inf_mod_culture.sty02 .dvCulture").append('<div class="swiper-pagination"></div>');
-			var cultureSlider = new Swiper(".inf_mod_culture.sty02 .dvCulture", {
-				slidesPerView: 1,
-				slidesPerColumn: 3,
-				spaceBetween: 10,
-				observer: true,
-				observeParents: true,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
+				1024: {
+					slidesPerColumn: 3,
+					slidesPerGroup: 3,
 				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1024: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 2,
-					},
-					1261: {
-						slidesPerView: 1,
-						slidesPerColumn: 3,
-						slidesPerGroup: 3,
-					}
-				}
-			});
-
-			// .inf_mod_culture.sty02 복리후생 입력형
-			$(".inf_mod_culture.sty02 .dvWelfare").append('<div class="swiper-pagination"></div>');
-			var cultureSlider = new Swiper(".inf_mod_culture.sty02 .dvWelfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 3,
-				spaceBetween: 10,
-				observer: true,
-				observeParents: true,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
-				}
-			});
-
-
-			// .inf_mod_culture.sty01 조직문화
-			$(".inf_mod_culture.sty01 .dvCulture").append('<div class="swiper-pagination"></div>');
-			var cultureSlider = new Swiper(".inf_mod_culture.sty01 .dvCulture", {
-				slidesPerView: 1,
-				slidesPerColumn: 3,
-				spaceBetween: 10,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
+				768: {
+					slidesPerColumn: 2,
+					slidesPerGroup: 2,
 				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1024: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 2,
-					},
-					1261: {
-						slidesPerView: 1,
-						slidesPerColumn: 3,
-						slidesPerGroup: 3,
-					}
+				300: {
+					slidesPerColumn: 2,
+					slidesPerGroup: 2,
 				}
-			});
+			}
+		});
 
-			// .inf_mod_culture.sty01 복리후생 입력형
-			$(".inf_mod_culture.sty01 .dvWelfare").append('<div class="swiper-pagination"></div>');
-			var cultureSlider = new Swiper(".inf_mod_culture.sty01 .dvWelfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 3,
-				spaceBetween: 10,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
+		var empIvSlider = new Swiper(".mag_mod_interview.sty02 .ivEmp", {
+			slidesPerView: 1,
+			slidesPerColumn: 4,
+			spaceBetween: 0,
+			observer: true,
+			dots: true,
+			observeParents: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 4,
+					slidesPerGroup: 4,
 				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1024: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 2,
-					},
-					1261: {
-						slidesPerView: 1,
-						slidesPerColumn: 3,
-						slidesPerGroup: 3,
-					}
-				}
-			});
-
-			// .inf_mod_culture.sty01 복리후생 선택형
-			$(".inf_mod_culture.sty01 .welfare").append('<div class="swiper-pagination"></div>');
-			var cultureSlider = new Swiper(".inf_mod_culture.sty01 .welfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 3,
-				spaceBetween: 10,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					observer: true,
-					observeParents: true,
+				1024: {
+					slidesPerColumn: 3,
+					slidesPerGroup: 3,
 				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1024: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 2,
-					},
-					1261: {
-						slidesPerView: 1,
-						slidesPerColumn: 3,
-						slidesPerGroup: 3,
-					}
-				}
-			});
-
-			//.inf_mod_welfare.sty02 복리후생
-			var welfareSlider = new Swiper(".inf_mod_welfare.sty02 .welfare", {
-				slidesPerView: 1,
-				// grid: {
-				//     rows: 2
-				// },
-				slidesPerColumn: 3,
-				spaceBetween: 30,
-				//loop: true,
-				navigation: {
-					nextEl: ".welfare_wrap .swiper-button-next",
-					prevEl: ".welfare_wrap .swiper-button-prev"
+				768: {
+					slidesPerColumn: 2,
+					slidesPerGroup: 2,
 				},
-				breakpoints: {
-					780: {
-						slidesPerView: 2,
-					}
+				300: {
+					slidesPerColumn: 2,
+					slidesPerGroup: 2,
 				}
-			});
-
-			// .sns_mod_culture.sty02 복리후생 입력형
-			var welfareSlider = new Swiper(".sns_mod_culture.sty02 .dvWelfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				spaceBetween: 30,
-				navigation: {
-					nextEl: ".sns_mod_culture.sty02 .welfare_wrap .swiper-button-next",
-					prevEl: ".sns_mod_culture.sty02 .welfare_wrap .swiper-button-prev"
-				}
-			});
-
-			// .sns_mod_culture.sty02 복리후생 선택형
-			var welfareSlider = new Swiper(".sns_mod_culture.sty02 .welfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				spaceBetween: 30,
-				navigation: {
-					nextEl: ".sns_mod_culture.sty02 .welfare_wrap .swiper-button-next",
-					prevEl: ".sns_mod_culture.sty02 .welfare_wrap .swiper-button-prev"
-				}
-			});
-
-
-			// .sns_mod_culture.sty02 조직문화
-			var cultureSlider = new Swiper(".sns_mod_culture.sty02 .dvCulture", {
-				slidesPerView: 1,
-				slidesPerColumn: 1,
-				spaceBetween: 30,
-				navigation: {
-					nextEl: ".sns_mod_culture.sty02 .culture_wrap .swiper-button-next",
-					prevEl: ".sns_mod_culture.sty02 .culture_wrap .swiper-button-prev"
-				}
-			});
+			}
+		});
 
 	
+
+
+		// mag_mod.interview.sty05
+		$(".mag_mod_interview.sty06 .ivCeo").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty06 .ivCeo", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".mag_mod_interview.sty06 .qa_ceo  .swiper-button-next",
+				prevEl: ".mag_mod_interview.sty06 .qa_ceo .swiper-button-prev"
+			}
+		});
+
+		$(".mag_mod_interview.sty06 .ivMng").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty06 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".mag_mod_interview.sty06 .qa_mng .swiper-button-next",
+				prevEl: ".mag_mod_interview.sty06 .qa_mng .swiper-button-prev"
+			}
+		});
+
+		$(".mag_mod_interview.sty06 .ivEmp").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty06 .ivEmp", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".mag_mod_interview.sty06 .qa_emp .swiper-button-next",
+				prevEl: ".mag_mod_interview.sty06 .qa_emp .swiper-button-prev"
+			}
+		});
+
+
+		//.bro_mod_interview.sty02
+		$('.bro_mod_interview.sty02 .q').click(function() {
+			$(this).toggleClass('active');
+			$(this).next().slideToggle();
+		})
+
+		$(".bro_mod_interview.sty02 .ivCeo").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".bro_mod_interview.sty02 .ivCeo", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			observer: true,
+			observeParents: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".bro_mod_interview.sty02 .qa_ceo .swiper-button-next",
+				prevEl: ".bro_mod_interview.sty02 .qa_ceo .swiper-button-prev"
+			}
+		});
+		$(".bro_mod_interview.sty02 .ivMng").append('<div class="swiper-pagination"></div>');
+		var mngIvSlider = new Swiper(".bro_mod_interview.sty02 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			observer: true,
+			dots: true,
+			observeParents: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".bro_mod_interview.sty02 .qa_mng .swiper-button-next",
+				prevEl: ".bro_mod_interview.sty02 .qa_mng .swiper-button-prev"
+			}
+		});
+
+		$(".bro_mod_interview.sty02 .ivEmp").append('<div class="swiper-pagination"></div>');
+		var empIvSlider = new Swiper(".bro_mod_interview.sty02 .ivEmp", {
+			slidesPerView: 1,
+			observer: true,
+			dots: true,
+			observeParents: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true
+			},
+			navigation: {
+				nextEl: ".bro_mod_interview.sty02 .qa_emp .swiper-button-next",
+				prevEl: ".bro_mod_interview.sty02 .qa_emp .swiper-button-prev"
+			}
+		});
+
+		/* .inf_mod_interview.sty03 */
+		var ceoIvSlider = new Swiper(".inf_mod_interview.sty03 .ivCeo", {
+			slidesPerView: 1,
+			slidesPerColumn: 3,
+			slidesPerGroup: 3,
+			spaceBetween: 0,
+			//loop: true,
+			observer: true,
+			observeParents: true,
+			navigation: {
+				nextEl: ".inf_mod_interview.sty03 .qa_ceo .swiper-button-next",
+				prevEl: ".inf_mod_interview.sty03 .qa_ceo .swiper-button-prev"
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 1,
+					slidesPerView: 3,
+				},
+				1024: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				},
+				300: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				}
+			}
+		});
+
+		var mngIvSlider = new Swiper(".inf_mod_interview.sty03 .ivMng", {
+			slidesPerView: 1,
+			slidesPerColumn: 3,
+			slidesPerGroup: 3,
+			spaceBetween: 0,
+			observer: true,
+			dots: true,
+			observeParents: true,
+			navigation: {
+				nextEl: ".inf_mod_interview.sty03 .qa_mng .swiper-button-next",
+				prevEl: ".inf_mod_interview.sty03 .qa_mng .swiper-button-prev"
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 1,
+					slidesPerView: 3,
+				},
+				1024: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				},
+				300: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				}
+			}
+		});
+
+		var empIvSlider = new Swiper(".inf_mod_interview.sty03 .ivEmp", {
+			slidesPerView: 1,
+			slidesPerColumn: 3,
+			slidesPerGroup: 3,
+			observer: true,
+			dots: true,
+			observeParents: true,
+			navigation: {
+				nextEl: ".inf_mod_interview.sty03 .qa_emp .swiper-button-next",
+				prevEl: ".inf_mod_interview.sty03 .qa_emp .swiper-button-prev"
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 1,
+					slidesPerView: 3,
+				},
+				1024: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				},
+				300: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				}
+			}
+		});
+
+		// rec_mod_interview03
+		//더보기 
+		$(".rec_mod_interview.sty03 .qa_ceo .swiper-slide").slice(0, 3).show();
+		$("body").on('click touchstart', '.rec_mod_interview.sty03 .qa_ceo .load_more', function(e) {
+			e.preventDefault();
+			$(".rec_mod_interview.sty03 .qa_ceo .swiper-slide:hidden").slice(0, 3).slideDown();
+			if ($(".rec_mod_interview.sty03 .qa_ceo .swiper-slide:hidden").length == 0) {
+				$(".rec_mod_interview.sty03 .qa_ceo .load_more").addClass('active');
+			}
+		});
+
+		var ceoIvSlider = new Swiper(".rec_mod_interview.sty03 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			observer: true,
+			observeParents: true,
+			navigation: {
+				nextEl: ".rec_mod_interview.sty03 .qa_mng .swiper-button-next",
+				prevEl: ".rec_mod_interview.sty03 .qa_mng .swiper-button-prev"
+			}
+		});
+
+		var ceoIvSlider = new Swiper(".rec_mod_interview.sty03 .ivEmp", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			observer: true,
+			observeParents: true,
+			navigation: {
+				nextEl: ".rec_mod_interview.sty03 .qa_emp .swiper-button-next",
+				prevEl: ".rec_mod_interview.sty03 .qa_emp .swiper-button-prev"
+			}
+		});
+
+		// rec_mod_interview04
+		$('.rec_mod_interview.sty04 .qa_ceo .q').attr('tabindex', '0')
+		$('.rec_mod_interview.sty04 .qa_ceo .q').click(function() {
+			$(this).next().slideToggle();
+			$(this).toggleClass('active')
+		});
+
+		var ceoIvSlider = new Swiper(".rec_mod_interview.sty04 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			observer: true,
+			observeParents: true,
+			navigation: {
+				nextEl: ".rec_mod_interview.sty04 .qa_mng .swiper-button-next",
+				prevEl: ".rec_mod_interview.sty04 .qa_mng .swiper-button-prev"
+			}
+		});
+
+		//더보기 
+		$(".rec_mod_interview.sty04 .ivEmp .swiper-slide").slice(0, 2).show();
+		$("body").on('click touchstart', '.rec_mod_interview.sty04 .ivEmp .load_more', function(e) {
+			e.preventDefault();
+			$(".rec_mod_interview.sty04 .ivEmp .swiper-slide:hidden").slice(0, 2).slideDown();
+			if ($(".rec_mod_interview.sty04 .ivEmp .swiper-slide:hidden").length == 0) {
+				$(".rec_mod_interview.sty04 .ivEmp .load_more").addClass('active');
+			}
+		});
+		
+		
+		//.rec_mod_interview.sty05
+		//더보기 
+		$(".rec_mod_interview.sty05 .qa_ceo .swiper-slide").slice(0, 2).show();
+		$("body").on('click touchstart', '.rec_mod_interview.sty05 .qa_ceo .load_more', function(e) {
+			e.preventDefault();
+			$(".rec_mod_interview.sty05 .qa_ceo .swiper-slide:hidden").slice(0, 2).slideDown();
+			if ($(".rec_mod_interview.sty05 .qa_ceo .swiper-slide:hidden").length == 0) {
+				$(".rec_mod_interview.sty05 .qa_ceo .load_more").addClass('active');
+			}
+		});
+		
+		//tab
+		// .rec_mod_interview.sty05 
+		var tabWrap = $('.rec_mod_interview.sty05 .rec_itv05_wrap')
+		$('.rec_mod_interview.sty05 .rec_itv05_wrap').addClass('tab_container');
+		$('.rec_mod_interview.sty05 .rec_itv05_wrap').prepend("<ul class='tabs'><li><a href='javascript:vold' data-tab='rec_itv05_tab1'>채용담당자 인터뷰</a></li><li><a href='javascript:vold' data-tab='rec_itv05_tab2'>신입사원 인터뷰</a></li></ul>");
+		
+		$('.rec_mod_interview.sty05 .rec_itv05_wrap .iv_wrap').addClass('tab_content');
+		$('.rec_mod_interview.sty05 .rec_itv05_wrap .qa_mng').attr('id', 'rec_itv05_tab1');
+		$('.rec_mod_interview.sty05 .rec_itv05_wrap .qa_emp').attr('id', 'rec_itv05_tab2');
+
+
+			// 탭 컨텐츠 숨기기
+		$(".rec_mod_interview.sty05 .rec_itv05_wrap .tab_content").hide();
+
+		// 첫번째 탭콘텐츠 보이기
+		$('.rec_mod_interview.sty05 .tab_container').each(function() {
+			$(this).find('.tabs').children("li:first").addClass("active"); //Activate first tab
+			$(this).children(".tab_content").first().show();
+		});
+
+		//탭메뉴 클릭 이벤트
+		$(".rec_mod_interview.sty05 .tab_container .tabs li a").click(function() {
+			//탭 안에 슬라이드 있을 때
+			var tab_id = $(this).attr('data-tab');
+			$(this).parent().siblings().removeClass("active");
+			$(this).parent().addClass("active");
+			$(this).parent().parent().parent().find(".tab_content").hide();
+			$("#" + tab_id).fadeIn();
+		});
+		
+		//더보기 
+		$(".rec_mod_interview.sty05 .qa_mng .swiper-slide").slice(0, 2).show();
+		$(".rec_mod_interview.sty05 .qa_emp .swiper-slide").slice(0, 2).show();
+		$("body").on('click touchstart', '.rec_mod_interview.sty05 .rec_itv05_wrap .load_more', function(e) {
+			e.preventDefault();
+			$(this).parent().find(".swiper-slide:hidden").slice(0, 2).slideDown();
+			if ($(this).parent().find(".swiper-slide:hidden").length == 0) {
+				$(this).addClass('active');
+			}
+		});
+		
+		
+				// mag_mod.interview.sty04
+		$(".mag_mod_interview.sty04 .ivCeo").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty04 .ivCeo", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			}
+		});
+
+		$(".mag_mod_interview.sty04 .ivMng").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty04 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			}
+		});
+
+		$(".mag_mod_interview.sty04 .ivEmp").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty04 .ivEmp", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			}
+		});
+
+		// mag_mod.interview.sty03
+		$(".mag_mod_interview.sty03 .ivCeo").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty03 .ivCeo", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			}
+		});
+
+		$(".mag_mod_interview.sty03 .ivMng").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty03 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			}
+		});
+
+		$(".mag_mod_interview.sty03 .ivEmp").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty03 .ivEmp", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			}
+		});
+
+
+		// mag_mod.interview.sty05
+		$(".mag_mod_interview.sty05 .ivCeo").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty05 .ivCeo", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".mag_mod_interview.sty05 .qa_ceo  .swiper-button-next",
+				prevEl: ".mag_mod_interview.sty05 .qa_ceo .swiper-button-prev"
+			}
+		});
+
+		$(".mag_mod_interview.sty05 .ivMng").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty05 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".mag_mod_interview.sty05 .qa_mng .swiper-button-next",
+				prevEl: ".mag_mod_interview.sty05 .qa_mng .swiper-button-prev"
+			}
+		});
+
+		$(".mag_mod_interview.sty05 .ivEmp").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty05 .ivEmp", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".mag_mod_interview.sty05 .qa_emp .swiper-button-next",
+				prevEl: ".mag_mod_interview.sty05 .qa_emp .swiper-button-prev"
+			}
+		});
+
+		// .mag_mod_interview.sty02 
+		$('.mag_mod_interview.sty02 .cnt-container').addClass('tab_container')
+		$('.mag_mod_interview.sty02 .cnt-container').prepend("<ul class='tabs'><li class='active'><a href='javascript:vold' data-tab='tab1'>CEO</a></li><li><a href='javascript:vold' data-tab='tab2'>인사담당자</a></li><li><a href='javascript:vold' data-tab='tab3'>신입사원</a></li></ul>");
+		$('.mag_mod_interview.sty02  .iv_wrap').addClass('tab_content');
+		$('.mag_mod_interview.sty02 .qa_ceo').attr('id', 'tab1');
+		$('.mag_mod_interview.sty02 .qa_mng').attr('id', 'tab2');
+		$('.mag_mod_interview.sty02 .qa_emp').attr('id', 'tab3');
+
+		$(".mag_mod_interview.sty02 .ivCeo").append('<div class="swiper-pagination"></div>');
+		$(".mag_mod_interview.sty02 .ivMng").append('<div class="swiper-pagination"></div>');
+		$(".mag_mod_interview.sty02 .ivEmp").append('<div class="swiper-pagination"></div>');
+			// 탭 컨텐츠 숨기기
+		$(".mag_mod_interview.sty02 .tab_content").hide();
+
+		// 첫번째 탭콘텐츠 보이기
+		$(".mag_mod_interview.sty02 .tab_container").each(function() {
+			$(this).children().children().children("li:first").addClass("active"); //Activate first tab
+			$(this).children(".tab_content").first().show();
+		});
+
+		//탭메뉴 클릭 이벤트
+		$(".mag_mod_interview.sty02 .tabs li a").click(function() {
+			//탭 안에 슬라이드 있을 때
+			var tab_id = $(this).attr('data-tab');
+			$(this).parent().siblings().removeClass("active");
+			$(this).parent().addClass("active");
+			$(this).parent().parent().parent().parent().find(".tab_content").hide();
+			//        var activeTab = $(this).attr("rel");
+			//        $("#" + activeTab).fadeIn();
+			$("#" + tab_id).fadeIn();
+		});
+
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty02 .ivCeo", {
+			slidesPerView: 1,
+			slidesPerColumn: 4,
+			slidesPerGroup: 4,
+			spaceBetween: 0,
+			//loop: true,
+			observer: true,
+			observeParents: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 4,
+					slidesPerGroup: 4,
+				},
+				1024: {
+					slidesPerColumn: 3,
+					slidesPerGroup: 3,
+				},
+				768: {
+					slidesPerColumn: 2,
+					slidesPerGroup: 2,
+				},
+				300: {
+					slidesPerColumn: 2,
+					slidesPerGroup: 2,
+				}
+			}
+		});
+
+		var mngIvSlider = new Swiper(".mag_mod_interview.sty02 .ivMng", {
+			slidesPerView: 1,
+			slidesPerColumn: 4,
+			spaceBetween: 0,
+			observer: true,
+			dots: true,
+			observeParents: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 4,
+					slidesPerGroup: 4,
+				},
+				1024: {
+					slidesPerColumn: 3,
+					slidesPerGroup: 3,
+				},
+				768: {
+					slidesPerColumn: 2,
+					slidesPerGroup: 2,
+				},
+				300: {
+					slidesPerColumn: 2,
+					slidesPerGroup: 2,
+				}
+			}
+		});
+
+		var empIvSlider = new Swiper(".mag_mod_interview.sty02 .ivEmp", {
+			slidesPerView: 1,
+			slidesPerColumn: 4,
+			spaceBetween: 0,
+			observer: true,
+			dots: true,
+			observeParents: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 4,
+					slidesPerGroup: 4,
+				},
+				1024: {
+					slidesPerColumn: 3,
+					slidesPerGroup: 3,
+				},
+				768: {
+					slidesPerColumn: 2,
+					slidesPerGroup: 2,
+				},
+				300: {
+					slidesPerColumn: 2,
+					slidesPerGroup: 2,
+				}
+			}
+		});
+
+	
+
+
+		// mag_mod.interview.sty05
+		$(".mag_mod_interview.sty06 .ivCeo").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty06 .ivCeo", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".mag_mod_interview.sty06 .qa_ceo  .swiper-button-next",
+				prevEl: ".mag_mod_interview.sty06 .qa_ceo .swiper-button-prev"
+			}
+		});
+
+		$(".mag_mod_interview.sty06 .ivMng").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty06 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".mag_mod_interview.sty06 .qa_mng .swiper-button-next",
+				prevEl: ".mag_mod_interview.sty06 .qa_mng .swiper-button-prev"
+			}
+		});
+
+		$(".mag_mod_interview.sty06 .ivEmp").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".mag_mod_interview.sty06 .ivEmp", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".mag_mod_interview.sty06 .qa_emp .swiper-button-next",
+				prevEl: ".mag_mod_interview.sty06 .qa_emp .swiper-button-prev"
+			}
+		});
+
+
+		//.bro_mod_interview.sty02
+		$('.bro_mod_interview.sty02 .q').click(function() {
+			$(this).toggleClass('active');
+			$(this).next().slideToggle();
+		})
+
+		$(".bro_mod_interview.sty02 .ivCeo").append('<div class="swiper-pagination"></div>');
+		var ceoIvSlider = new Swiper(".bro_mod_interview.sty02 .ivCeo", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			observer: true,
+			observeParents: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".bro_mod_interview.sty02 .qa_ceo .swiper-button-next",
+				prevEl: ".bro_mod_interview.sty02 .qa_ceo .swiper-button-prev"
+			}
+		});
+		$(".bro_mod_interview.sty02 .ivMng").append('<div class="swiper-pagination"></div>');
+		var mngIvSlider = new Swiper(".bro_mod_interview.sty02 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			observer: true,
+			dots: true,
+			observeParents: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				observer: true,
+				observeParents: true,
+			},
+			navigation: {
+				nextEl: ".bro_mod_interview.sty02 .qa_mng .swiper-button-next",
+				prevEl: ".bro_mod_interview.sty02 .qa_mng .swiper-button-prev"
+			}
+		});
+
+		$(".bro_mod_interview.sty02 .ivEmp").append('<div class="swiper-pagination"></div>');
+		var empIvSlider = new Swiper(".bro_mod_interview.sty02 .ivEmp", {
+			slidesPerView: 1,
+			observer: true,
+			dots: true,
+			observeParents: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true
+			},
+			navigation: {
+				nextEl: ".bro_mod_interview.sty02 .qa_emp .swiper-button-next",
+				prevEl: ".bro_mod_interview.sty02 .qa_emp .swiper-button-prev"
+			}
+		});
+
+		/* .inf_mod_interview.sty03 */
+		var ceoIvSlider = new Swiper(".inf_mod_interview.sty03 .ivCeo", {
+			slidesPerView: 1,
+			slidesPerColumn: 3,
+			slidesPerGroup: 3,
+			spaceBetween: 0,
+			//loop: true,
+			observer: true,
+			observeParents: true,
+			navigation: {
+				nextEl: ".inf_mod_interview.sty03 .qa_ceo .swiper-button-next",
+				prevEl: ".inf_mod_interview.sty03 .qa_ceo .swiper-button-prev"
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 1,
+					slidesPerView: 3,
+				},
+				1024: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				},
+				300: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				}
+			}
+		});
+
+		var mngIvSlider = new Swiper(".inf_mod_interview.sty03 .ivMng", {
+			slidesPerView: 1,
+			slidesPerColumn: 3,
+			slidesPerGroup: 3,
+			spaceBetween: 0,
+			observer: true,
+			dots: true,
+			observeParents: true,
+			navigation: {
+				nextEl: ".inf_mod_interview.sty03 .qa_mng .swiper-button-next",
+				prevEl: ".inf_mod_interview.sty03 .qa_mng .swiper-button-prev"
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 1,
+					slidesPerView: 3,
+				},
+				1024: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				},
+				300: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				}
+			}
+		});
+
+		var empIvSlider = new Swiper(".inf_mod_interview.sty03 .ivEmp", {
+			slidesPerView: 1,
+			slidesPerColumn: 3,
+			slidesPerGroup: 3,
+			observer: true,
+			dots: true,
+			observeParents: true,
+			navigation: {
+				nextEl: ".inf_mod_interview.sty03 .qa_emp .swiper-button-next",
+				prevEl: ".inf_mod_interview.sty03 .qa_emp .swiper-button-prev"
+			},
+			breakpoints: {
+				1260: {
+					slidesPerColumn: 1,
+					slidesPerView: 3,
+				},
+				1024: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				},
+				300: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				}
+			}
+		});
+
+		// rec_mod_interview03
+		//더보기 
+		$(".rec_mod_interview.sty03 .qa_ceo .swiper-slide").slice(0, 3).show();
+		$("body").on('click touchstart', '.rec_mod_interview.sty03 .qa_ceo .load_more', function(e) {
+			e.preventDefault();
+			$(".rec_mod_interview.sty03 .qa_ceo .swiper-slide:hidden").slice(0, 3).slideDown();
+			if ($(".rec_mod_interview.sty03 .qa_ceo .swiper-slide:hidden").length == 0) {
+				$(".rec_mod_interview.sty03 .qa_ceo .load_more").addClass('active');
+			}
+		});
+
+		var ceoIvSlider = new Swiper(".rec_mod_interview.sty03 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			observer: true,
+			observeParents: true,
+			navigation: {
+				nextEl: ".rec_mod_interview.sty03 .qa_mng .swiper-button-next",
+				prevEl: ".rec_mod_interview.sty03 .qa_mng .swiper-button-prev"
+			}
+		});
+
+		var ceoIvSlider = new Swiper(".rec_mod_interview.sty03 .ivEmp", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			observer: true,
+			observeParents: true,
+			navigation: {
+				nextEl: ".rec_mod_interview.sty03 .qa_emp .swiper-button-next",
+				prevEl: ".rec_mod_interview.sty03 .qa_emp .swiper-button-prev"
+			}
+		});
+
+		// rec_mod_interview04
+		$('.rec_mod_interview.sty04 .qa_ceo .q').attr('tabindex', '0')
+		$('.rec_mod_interview.sty04 .qa_ceo .q').click(function() {
+			$(this).next().slideToggle();
+			$(this).toggleClass('active')
+		});
+
+		var ceoIvSlider = new Swiper(".rec_mod_interview.sty04 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			observer: true,
+			observeParents: true,
+			navigation: {
+				nextEl: ".rec_mod_interview.sty04 .qa_mng .swiper-button-next",
+				prevEl: ".rec_mod_interview.sty04 .qa_mng .swiper-button-prev"
+			}
+		});
+
+		//더보기 
+		$(".rec_mod_interview.sty04 .ivEmp .swiper-slide").slice(0, 2).show();
+		$("body").on('click touchstart', '.rec_mod_interview.sty04 .ivEmp .load_more', function(e) {
+			e.preventDefault();
+			$(".rec_mod_interview.sty04 .ivEmp .swiper-slide:hidden").slice(0, 2).slideDown();
+			if ($(".rec_mod_interview.sty04 .ivEmp .swiper-slide:hidden").length == 0) {
+				$(".rec_mod_interview.sty04 .ivEmp .load_more").addClass('active');
+			}
+		});
+		
+		
+		//.rec_mod_interview.sty05
+		//더보기 
+		$(".rec_mod_interview.sty05 .qa_ceo .swiper-slide").slice(0, 2).show();
+		$("body").on('click touchstart', '.rec_mod_interview.sty05 .qa_ceo .load_more', function(e) {
+			e.preventDefault();
+			$(".rec_mod_interview.sty05 .qa_ceo .swiper-slide:hidden").slice(0, 2).slideDown();
+			if ($(".rec_mod_interview.sty05 .qa_ceo .swiper-slide:hidden").length == 0) {
+				$(".rec_mod_interview.sty05 .qa_ceo .load_more").addClass('active');
+			}
+		});
+		
+		//tab
+		// .rec_mod_interview.sty05 
+		var tabWrap = $('.rec_mod_interview.sty05 .rec_itv05_wrap')
+		$('.rec_mod_interview.sty05 .rec_itv05_wrap').addClass('tab_container');
+		$('.rec_mod_interview.sty05 .rec_itv05_wrap').prepend("<ul class='tabs'><li><a href='javascript:vold' data-tab='rec_itv05_tab1'>채용담당자 인터뷰</a></li><li><a href='javascript:vold' data-tab='rec_itv05_tab2'>신입사원 인터뷰</a></li></ul>");
+		
+		$('.rec_mod_interview.sty05 .rec_itv05_wrap .iv_wrap').addClass('tab_content');
+		$('.rec_mod_interview.sty05 .rec_itv05_wrap .qa_mng').attr('id', 'rec_itv05_tab1');
+		$('.rec_mod_interview.sty05 .rec_itv05_wrap .qa_emp').attr('id', 'rec_itv05_tab2');
+
+
+			// 탭 컨텐츠 숨기기
+		$(".rec_mod_interview.sty05 .rec_itv05_wrap .tab_content").hide();
+
+		// 첫번째 탭콘텐츠 보이기
+		$('.rec_mod_interview.sty05 .tab_container').each(function() {
+			$(this).find('.tabs').children("li:first").addClass("active"); //Activate first tab
+			$(this).children(".tab_content").first().show();
+		});
+
+		//탭메뉴 클릭 이벤트
+		$(".rec_mod_interview.sty05 .tab_container .tabs li a").click(function() {
+			//탭 안에 슬라이드 있을 때
+			var tab_id = $(this).attr('data-tab');
+			$(this).parent().siblings().removeClass("active");
+			$(this).parent().addClass("active");
+			$(this).parent().parent().parent().find(".tab_content").hide();
+			$("#" + tab_id).fadeIn();
+		});
+		
+		//더보기 
+		$(".rec_mod_interview.sty05 .qa_mng .swiper-slide").slice(0, 2).show();
+		$(".rec_mod_interview.sty05 .qa_emp .swiper-slide").slice(0, 2).show();
+		$("body").on('click touchstart', '.rec_mod_interview.sty05 .rec_itv05_wrap .load_more', function(e) {
+			e.preventDefault();
+			$(this).parent().find(".swiper-slide:hidden").slice(0, 2).slideDown();
+			if ($(this).parent().find(".swiper-slide:hidden").length == 0) {
+				$(this).addClass('active');
+			}
+		});
 	});
+	
