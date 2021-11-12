@@ -1455,7 +1455,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_strategy.sty02 .interview_tip .qm_btn{background: #0b4467;color: #fff}
 .rec_mod_strategy.sty02 .interview_tip h3{text-align: center;}
 .rec_mod_strategy.sty02 .interview_tip img{margin: 4rem auto;display: block;}
-.rec_mod_strategy.sty03 .guide h3{}
+/* .rec_mod_strategy.sty03 .guide h3{} */
 
 /* --- 채용공고형 start --- */
 .rec_mod_header {padding: 8.0rem 0}
@@ -1887,6 +1887,34 @@ left: 0;width: 100%;height: 100%;}
 .bro_mod_finance.sty04 .chart_wrap .legend .lg_capital i{background-color:#eae2d9;}
 .bro_mod_finance.sty04 .chart_wrap .legend .lg_sales i{background-color:#f3b771;}
 .bro_mod_finance.sty04 .chart_wrap .legend .lg_profit i{background-color:#935f22;}
+.bro_mod_finance.sty05{background-image:url(/images/@bg_finance_wrap_bro_sty05.png);padding:80px 0;}
+.bro_mod_finance.sty05 .tit_wrap{position:relative;display:flex;margin-top:64px;}
+.bro_mod_finance.sty05 .tit_wrap .mid_line{flex-shrink:0;width:30%;}
+.bro_mod_finance.sty05 .tit_wrap .mid_line hr{
+	border-style:solid none none;border-width:1px;border-width:1px;border-color:#fff;width:100%;margin:0;
+	position:relative;top:50%;
+}
+.bro_mod_finance.sty05 .tit_wrap .boxline{flex-shrink:0;width:32px;border:1px solid #fff;}
+.bro_mod_finance.sty05 .tit_wrap .boxline.left{border-right:none;}
+.bro_mod_finance.sty05 .tit_wrap .boxline.right{border-left:none;}
+.bro_mod_finance.sty05 .tit_wrap .tit_area{flex-grow:1;text-align:center;}
+.bro_mod_finance.sty05 h3{font-size:4.8rem;font-weight:700;text-align:center;color:#fff;}
+.bro_mod_finance.sty05 .tit_wrap .num_cnt{position:absolute;display:inline-block;margin-left:-28px;margin-top:-64px;}
+.bro_mod_finance.sty05 .tit_wrap .num_cnt .round{position:relative;width:56px;height:56px;background-color:#3443ec;border-radius:50%;z-index:10;}
+.bro_mod_finance.sty05 .tit_wrap .num_cnt .square{position:relative;width:32px;height:32px;background-color:#3443ec;transform:rotate(45deg);margin-left:12px;margin-top:-28px;z-index:10;}
+.bro_mod_finance.sty05 .tit_wrap .num_cnt .num{position:relative;color:#fff;font-size:2.4rem;line-height:56px;font-weight:500;margin-top:-60px;z-index:100;}
+.bro_mod_finance.sty05 .chart_wrap{
+	background-color:#fff;background-image:url(/images/@bg_finance_bro_sty05.png), url(/images/@bg_finance_bro_sty05.png);
+	background-repeat:repeat-x, repeat-x;background-position:left top, left bottom;
+	padding:80px;margin-top:60px;border-radius:60px;overflow:hidden;
+}
+.bro_mod_finance.sty05 .chart_wrap .unit, .bro_mod_finance.sty05 .chart_wrap .legend{font-size:1.4rem;text-align:right;color:#666;margin-bottom:8px;}
+.bro_mod_finance.sty05 .chart_wrap .legend ul{display:flex;justify-content:flex-end;}
+.bro_mod_finance.sty05 .chart_wrap .legend ul li{margin-left:16px;line-height:1.4rem;}
+.bro_mod_finance.sty05 .chart_wrap .legend i{display:inline-block;width:16px;height:16px;background-color:#999;border-radius:8px;}
+.bro_mod_finance.sty05 .chart_wrap .legend .lg_capital i{background-color:#3443ec;}
+.bro_mod_finance.sty05 .chart_wrap .legend .lg_sales i{background-color:#cb2c88;}
+.bro_mod_finance.sty05 .chart_wrap .legend .lg_profit i{background-color:#dbdef9;}
 
 
 /*  조직문화 및 복지  */ 
@@ -3950,6 +3978,8 @@ html{font-size: 8px}
 	.bro_mod_finance.sty03 .tab_wrap .tab > div:nth-child(3), .bro_mod_finance.sty03 .tab_wrap .tab > div:nth-child(4){border-top:1px solid #886a57;}
 	.bro_mod_finance.sty03 .tab_wrap .conts .summary > div h4, .bro_mod_finance.sty03 .tab_wrap .conts .summary > div > div{padding:16px;}
 	.bro_mod_finance.sty04 .box_wrap{padding:40px;}
+	.bro_mod_finance.sty05 .tit_wrap .mid_line, .bro_mod_finance.sty05 .tit_wrap .boxline{width:16px;}
+	.bro_mod_finance.sty05 .chart_wrap{padding:60px 40px;border-radius:40px;}
 	
 	/* 백분위 정보 */
 	.mag_mod_percent.sty05{padding: 6rem 0}
