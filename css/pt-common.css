@@ -1455,7 +1455,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_strategy.sty02 .interview_tip .qm_btn{background: #0b4467;color: #fff}
 .rec_mod_strategy.sty02 .interview_tip h3{text-align: center;}
 .rec_mod_strategy.sty02 .interview_tip img{margin: 4rem auto;display: block;}
-.rec_mod_strategy.sty03 .guide h3{}
+/* .rec_mod_strategy.sty03 .guide h3{} */
 
 /* --- 채용공고형 start --- */
 .rec_mod_header {padding: 8.0rem 0}
