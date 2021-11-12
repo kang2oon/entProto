@@ -406,19 +406,39 @@ function afterAjax(srchBizrno) {
             if(isNull(welfareInput)){
                 var welfareInputTitle = "";//복리후생 입력형 제목
                 var welfareInputCntnt = "";//복리후생 입력형 내용
+<<<<<<< Updated upstream
+=======
+
+				var dvWelfare = "<div class='swiper-wrapper'>";
+>>>>>>> Stashed changes
                 for(var i=1; i<addDtailList; i++){
                     welfareInputTitle = "welfareInputTitle = welfareInput.addTitle"+i;
                     eval(welfareInputTitle);
                     if (isNull(welfareInputTitle)){
                         //console.log("복리후생 입력형 제목"+i+" : " + welfareInputTitle);
+<<<<<<< Updated upstream
+=======
+						dvWelfare += "<div class='swiper-slide'><div>";
+						dvWelfare += "<div class='tit'>"+welfareInputTitle+"</div>";
+>>>>>>> Stashed changes
                     }
                     welfareInputCntnt = "welfareInputCntnt = welfareInput.addCntnt"+i;
                     eval(welfareInputCntnt);
                     if (isNull(welfareInputCntnt)){
                         //console.log("복리후생 입력형 내용"+i+" : " + welfareInputCntnt);
+<<<<<<< Updated upstream
                     }
                 }
             }
+=======
+						dvWelfare += "<div class='desc'>"+welfareInputCntnt+"</div>";
+                        dvWelfare += "</div></div>";
+                    }
+                }
+				dvWelfare += "</div>";
+            }
+			$(".dvWelfare").html(dvWelfare);
+>>>>>>> Stashed changes
 
             //25.조직문화
             if(isNull(orgnz)){
@@ -816,7 +836,11 @@ function afterAjax(srchBizrno) {
                 var cvrltQstGuideTitle = "";//자소서 문항
                 var cvrltQstGuideCntnt = "";//자소서 답변
 
+<<<<<<< Updated upstream
                 var guide = "<div class='guide_wrap'>";
+=======
+                var guide = "<div class='guide_inner'>";
+>>>>>>> Stashed changes
                 for(var i=1; i<addDtailList; i++){
                     cvrltQstGuideTitle = "cvrltQstGuideTitle = cvrltQstGuide.addTitle"+i;
                     eval(cvrltQstGuideTitle);
@@ -831,74 +855,146 @@ function afterAjax(srchBizrno) {
                         guide += "<div class='a'>"+cvrltQstGuideCntnt+"</div></div>";
                     }
                 }
+<<<<<<< Updated upstream
             }
             $(".guide").html(guide);
+=======
+				guide += "</div>";
+            }
+            $(".guide_wrap").html(guide);
+>>>>>>> Stashed changes
 
             //43.최근 면접질문
             if(isNull(rcnIntQst)){
                 var rcnIntQstTitle = "";//질문
+<<<<<<< Updated upstream
+=======
+				
+				var recent_question = ""
+>>>>>>> Stashed changes
                 for(var i=1; i<addDtailList; i++){
                     rcnIntQstTitle = "rcnIntQstTitle = rcnIntQst.addTitle"+i;
                     eval(rcnIntQstTitle);
                     if (isNull(rcnIntQstTitle)){
                         //console.log("최근 면접질문"+i+" : " + rcnIntQstTitle);
+<<<<<<< Updated upstream
                     }
                 }
             }
+=======
+						 recent_question += "<p>"+rcnIntQstTitle+"</p>";
+                    }
+                }
+				rcnIntQst += "</div>";
+            }
+			 $(".recent_question .rq_text").html(recent_question);
+>>>>>>> Stashed changes
 
             //44.채용 가산점 요인
             if(isNull(extraPointFactor)){
                 var extraPointFactorTitle = "";//가산점 요인
                 var extraPointFactorCntnt = "";//가산점 내용
+<<<<<<< Updated upstream
+=======
+				
+				var add_point = ""
+>>>>>>> Stashed changes
                 for(var i=1; i<addDtailList; i++){
                     extraPointFactorTitle = "extraPointFactorTitle = extraPointFactor.addTitle"+i;
                     eval(extraPointFactorTitle);
                     if (isNull(extraPointFactorTitle)){
                         //console.log("가산점 요인"+i+" : " + extraPointFactorTitle);
+<<<<<<< Updated upstream
+=======
+						  add_point += "<li><strong class='tit'>"+extraPointFactorTitle+"</strong>";
+>>>>>>> Stashed changes
                     }
                     extraPointFactorCntnt = "extraPointFactorCntnt = extraPointFactor.addCntnt"+i;
                     eval(extraPointFactorCntnt);
                     if (isNull(extraPointFactorCntnt)){
                         //console.log("가산점 내용"+i+" : " + extraPointFactorCntnt);
+<<<<<<< Updated upstream
                     }
                 }
             }
+=======
+						add_point += "<p class='desc'>"+extraPointFactorCntnt+"</p></li>";
+                    }
+                }
+            }
+			 $(".add_point_wrap").html(add_point);
+>>>>>>> Stashed changes
 
             //45.최근 입사자 합격스펙
             if(isNull(rcnEntrnPsSpec)){
                 var rcnEntrnPsSpecTitle = "";//입사자 스펙
                 var rcnEntrnPsSpecCntnt = "";//입사자 내용
+<<<<<<< Updated upstream
+=======
+				
+				var spec = ""
+>>>>>>> Stashed changes
                 for(var i=1; i<addDtailList; i++){
                     rcnEntrnPsSpecTitle = "rcnEntrnPsSpecTitle = rcnEntrnPsSpec.addTitle"+i;
                     eval(rcnEntrnPsSpecTitle);
                     if (isNull(rcnEntrnPsSpecTitle)){
                         //console.log("입사자 스펙"+i+" : " + rcnEntrnPsSpecTitle);
+<<<<<<< Updated upstream
+=======
+						 spec += "<li><strong class='tit'>"+rcnEntrnPsSpecTitle+"</strong>";
+>>>>>>> Stashed changes
                     }
                     rcnEntrnPsSpecCntnt = "rcnEntrnPsSpecCntnt = rcnEntrnPsSpec.addCntnt"+i;
                     eval(rcnEntrnPsSpecCntnt);
                     if (isNull(rcnEntrnPsSpecCntnt)){
                         //console.log("입사자 내용"+i+" : " + rcnEntrnPsSpecCntnt);
+<<<<<<< Updated upstream
                     }
                 }
             }
+=======
+						spec += "<p class='desc'>"+rcnEntrnPsSpecCntnt+"</p></li>";
+                    }
+                }
+            }
+			$(".spec_wrap").html(spec);
+>>>>>>> Stashed changes
 
             //46.면접 꿀팁
             if(isNull(intvwTip)){
                 var intvwTipTitle = "";//꿀팁 항목
                 var intvwTipCntnt = "";//꿀팁 내용
+<<<<<<< Updated upstream
+=======
+				
+				var tip = ""
+>>>>>>> Stashed changes
                 for(var i=1; i<addDtailList; i++){
                     intvwTipTitle = "intvwTipTitle = intvwTip.addTitle"+i;
                     eval(intvwTipTitle);
                     if (isNull(intvwTipTitle)){
                         //console.log("꿀팁 항목"+i+" : " + intvwTipTitle);
+<<<<<<< Updated upstream
+=======
+						tip += "<div class='it_area'><p class='q'>"+intvwTipTitle+"</p>";
+>>>>>>> Stashed changes
                     }
                     intvwTipCntnt = "intvwTipCntnt = intvwTip.addCntnt"+i;
                     eval(intvwTipCntnt);
                     if (isNull(intvwTipCntnt)){
                         //console.log("꿀팁 내용"+i+" : " + intvwTipCntnt);
+<<<<<<< Updated upstream
                     }
                 }
             }
+=======
+						tip += "<p class='a'>"+intvwTipCntnt+"</p></div>";
+                    }
+                }
+            }
+			$(".interview_tip_wrap").html(tip);
+			
+>>>>>>> Stashed changes
 
             //47.기업 홍보영상
             var comMovUrl = entInfo.prmtnMvUrl;

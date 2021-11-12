@@ -11,7 +11,10 @@ $(document).ready(function(){
             $('.com_mod_anchor').css('top', 0);
         }
     });
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 	// 탭 컨텐츠 숨기기
 			$(".tab_content").hide();
@@ -33,10 +36,12 @@ $(document).ready(function(){
 				//        $("#" + activeTab).fadeIn();
 				$("#" + tab_id).fadeIn();
 			});
-			// 도움말 버튼
-		$('.qm_btn a').click(function () {
+	
+		// 도움말 버튼
+		$('.qm_btn em').click(function () {
 			$(this).parent().find('span').toggle()
 		})
+	
 		// 외부영역 클릭 시 팝업 닫기
 		$(document).mouseup(function (e) {
 			var qmbtn = $(".qm_btn");
@@ -46,6 +51,7 @@ $(document).ready(function(){
 		});
 
 	$(".imgFill").imgLiquid();
+<<<<<<< Updated upstream
 
 			
 		// 연혁 탭
@@ -106,6 +112,8 @@ $(document).ready(function(){
 			});
 
 
+=======
+>>>>>>> Stashed changes
 	
 	//mag_mod_biz.sty03 사업분야 슬라이드
 			var magBiz03 = $('.mag_mod_biz.sty03 .bizDiv')
