@@ -1561,7 +1561,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_strategy.sty04 .guide_wrap > div:nth-child(10) .q:before {content: '10.';font-weight: bold;color: #fa1848;display: block;font-size: 4rem;font-family: 'GmarketSansMedium' !important;}
 .rec_mod_strategy.sty04 .guide .recent_question{background: #ff5a46;padding: 4rem;color: #fff}
 .rec_mod_strategy.sty04 .guide .rq_cont .rq_tit{font-size: 4.0rem;margin-bottom: 2rem;} 
-.rec_mod_strategy.sty04 .guide .rq_cont .rq_text{display: flex;}
+.rec_mod_strategy.sty04 .guide .rq_cont .rq_text{display: flex;flex-wrap: wrap}
 .rec_mod_strategy.sty04 .guide .rq_cont .rq_text p {width: calc(50% - 30px);margin-right: 60px;font-size: 2.0rem}
 .rec_mod_strategy.sty04 .guide .rq_cont .rq_text p storng{font-size: 2.0rem}
 .rec_mod_strategy.sty04 .guide .rq_cont .rq_text p:nth-child(2n){margin-right: 0}
