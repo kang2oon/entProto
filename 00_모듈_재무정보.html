@@ -257,6 +257,54 @@
 			</div>
 		</div>
 	</div>
+	<div class="module-wrap bro_mod_finance sty06">
+		<div class="cnt-container">
+			<div class="tit_wrap">
+				<hr/>
+				<div class="slogan">끊임없이 성장하는<br/>더 나은 세상을 만들어 갑니다.</div>
+				<h3><span>기업</span> 재무 정보</h3>
+				<div class="arrow_wrap">
+					<div class="prev">&lt;</div>
+					<div class="next">&gt;</div>
+				</div>
+			</div>
+			<div class="conts_wrap">
+				<div data-index="1" class="summary on">
+					<div class="tab_tit">재무평가 요약</div>
+					<div>
+						<h4>동종업종 내 순위</h4>
+						<div class="fiPosition">9위</div>
+					</div>
+					<div>
+						<h4>기업평가등급</h4>
+						<div>
+							<div class="bizGrade">BBB-</div>
+							상거래를 위한 신용능력이 우량하며, 환경 변화에 적절한 대처가 가능한 기업
+						</div>
+					</div>
+					<div>
+						<h4>기업인증현황</h4>
+						<div class="certified">이노비즈 인증기업, 경기도가족친화인증기업</div>
+					</div>
+				</div>
+				<div data-index="2" class="">
+					<div class="tab_tit">자본금</div>
+					<div class="unit">단위 : 백만원</div>
+					<div id="graph_fiCapital5"></div>
+				</div>
+				<div data-index="3" class="">
+					<div class="tab_tit">매출액</div>
+					<div class="unit">단위 : 백만원</div>
+					<div id="graph_fiSales5"></div>
+				</div>
+				<div data-index="4" class="">
+					<div class="tab_tit">당기순이익</div>
+					<div class="unit">단위 : 백만원</div>
+					<div id="graph_fiProfit5"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<br/><br/>
@@ -285,6 +333,41 @@
 					chart24.resize();
 					chart34.resize();
 					chart44.resize();
+				}, 100);
+			});
+
+			$('.arrow_wrap .next').click(function(){
+				var idx = $('.conts_wrap > div.on').attr('data-index');
+				var nidx = idx++;
+				var selm = $('[data-index="'+idx+'"]');
+				if(idx > 4){
+					$('.conts_wrap > div.on').removeClass('on');
+					$('[data-index="1"]').addClass('on');
+				}else{
+					$('.conts_wrap > div.on').removeClass('on');
+					selm.addClass('on');
+				};
+				setTimeout(function(){
+					chart25.resize();
+					chart35.resize();
+					chart45.resize();
+				}, 100);
+			});
+			$('.arrow_wrap .prev').click(function(){
+				var idx = $('.conts_wrap > div.on').attr('data-index');
+				var pidx = idx--;
+				var selm = $('[data-index="'+idx+'"]');
+				if(idx < 1){
+					$('.conts_wrap > div.on').removeClass('on');
+					$('[data-index="4"]').addClass('on');
+				}else{
+					$('.conts_wrap > div.on').removeClass('on');
+					selm.addClass('on');
+				};
+				setTimeout(function(){
+					chart25.resize();
+					chart35.resize();
+					chart45.resize();
 				}, 100);
 			});
 		});
@@ -426,6 +509,49 @@
 				radius: {
 					ratio: 0.5
 				} 
+			},
+			legend: {
+				show: false
+			}
+		});
+
+		var chart25 = bb.generate({
+			bindto: "#graph_fiCapital5",
+			data: {
+				type: "line",
+				columns: [
+					["자본금", 50, 50, 50]
+				],
+				colors: {
+					자본금: "#007ddd"
+				}
+			},
+			padding: {
+				top:    20,
+				left:   40
+			},
+			grid: {
+				x: {
+					show: true
+				},
+				y: {
+					show: true
+				}
+			},
+			axis:{
+				x: {
+					type: "category",
+					categories: [2021, 2020, 2019],
+					padding: {
+						left: .2,
+						right: .2
+					}
+				}
+			},
+			point:{
+				pattern: [
+					"<g><circle cx='8' cy='8' r='8'></circle></g>"
+				]
 			},
 			legend: {
 				show: false
@@ -621,6 +747,49 @@
 			}
 		});
 
+		var chart35 = bb.generate({
+			bindto: "#graph_fiSales5",
+			data: {
+				type: "line",
+				columns: [
+					["매출액", 3103, 2920, 2767]
+				],
+				colors: {
+					매출액: "#007ddd"
+				}
+			},
+			padding: {
+				top:    20,
+				left:   40
+			},
+			grid: {
+				x: {
+					show: true
+				},
+				y: {
+					show: true
+				}
+			},
+			axis:{
+				x: {
+					type: "category",
+					categories: [2021, 2020, 2019],
+					padding: {
+						left: .2,
+						right: .2
+					}
+				}
+			},
+			point:{
+				pattern: [
+					"<g><circle cx='8' cy='8' r='8'></circle></g>"
+				]
+			},
+			legend: {
+				show: false
+			}
+		});
+
 		var chart4 = bb.generate({
 			bindto: "#graph_fiProfit",
 			data: {
@@ -803,6 +972,49 @@
 				radius: {
 					ratio: 0.5
 				} 
+			},
+			legend: {
+				show: false
+			}
+		});
+
+		var chart45 = bb.generate({
+			bindto: "#graph_fiProfit5",
+			data: {
+				type: "line",
+				columns: [
+					["당기순이익", 208, 48, 50]
+				],
+				colors: {
+					당기순이익: "#007ddd"
+				}
+			},
+			padding: {
+				top:    20,
+				left:   40
+			},
+			grid: {
+				x: {
+					show: true
+				},
+				y: {
+					show: true
+				}
+			},
+			axis:{
+				x: {
+					type: "category",
+					categories: [2021, 2020, 2019],
+					padding: {
+						left: .2,
+						right: .2
+					}
+				}
+			},
+			point:{
+				pattern: [
+					"<g><circle cx='8' cy='8' r='8'></circle></g>"
+				]
 			},
 			legend: {
 				show: false
