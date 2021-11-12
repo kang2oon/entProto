@@ -12,7 +12,6 @@ $(document).ready(function(){
         }
     });
 
-
 	// 탭 컨텐츠 숨기기
 			$(".tab_content").hide();
 
@@ -33,10 +32,12 @@ $(document).ready(function(){
 				//        $("#" + activeTab).fadeIn();
 				$("#" + tab_id).fadeIn();
 			});
-			// 도움말 버튼
-		$('.qm_btn a').click(function () {
+	
+		// 도움말 버튼
+		$('.qm_btn em').click(function () {
 			$(this).parent().find('span').toggle()
 		})
+	
 		// 외부영역 클릭 시 팝업 닫기
 		$(document).mouseup(function (e) {
 			var qmbtn = $(".qm_btn");
@@ -46,66 +47,6 @@ $(document).ready(function(){
 		});
 
 	$(".imgFill").imgLiquid();
-
-			
-		// 연혁 탭
-			var tabCont = $('.bro_mod_history.sty03 .history').children();
-			tabCont.each(function() {
-				var year = $(this).children('span').html();
-				$(this).addClass(year);
-			});
-			 var tabArray = Array();
-			tabCont.each(function(){
-				tabArray.push($(this).attr("class"));
-			})
-			var arrayList = $.map(tabArray, function(value){
-				return "<a href='javascript:vold'" + "data-tab=" + value + ">" + value + "</a>";
-			})
-			$('.tabs').html(arrayList);
-			$('.bro_mod_history.sty03 .tabs a:first').addClass('on')
-			$('.bro_mod_history.sty03 .history > div').hide();
-			$('.bro_mod_history.sty03 .history > div:first').show();
-			$('.bro_mod_history.sty03 .tabs a').click(function() {
-				var item = $(this).attr('data-tab');
-				$(this).siblings().removeClass('on');
-				$(this).addClass('on');
-				$('.bro_mod_history.sty03 .history > div').hide();
-				$('.bro_mod_history.sty03 .history > .' + item).show();
-
-			});
-
-			//.bro_mod_history.sty05 연혁 슬라이드
-			var historySlider = $('.bro_mod_history.sty05 .history')
-			historySlider.addClass('swiper');
-			historySlider.wrapInner('<div class="swiper-wrapper"></div>');
-			historySlider.children().children().addClass('swiper-slide')
-			historySlider.append('<div class="swiper-button-prev"></div>');
-			historySlider.append('<div class="swiper-button-next"></div>');
-
-			var cultureSlider = new Swiper(".bro_mod_history.sty05 .history", {
-				slidesPerView: 3,
-				spaceBetween: 30,
-				navigation: {
-					nextEl: ".bro_mod_history.sty05 .swiper-button-next",
-					prevEl: ".bro_mod_history.sty05 .swiper-button-prev"
-				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1
-					},
-					640: {
-						slidesPerView: 2
-					},
-					1024: {
-						slidesPerView: 2
-					},
-					1261: {
-						slidesPerView: 3,
-					}
-				}
-			});
-
-
 	
 	//mag_mod_biz.sty03 사업분야 슬라이드
 			var magBiz03 = $('.mag_mod_biz.sty03 .bizDiv')
