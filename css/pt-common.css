@@ -1498,11 +1498,9 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_strategy.sty03 .guide_wrap > div:nth-child(10) .q:before{content: 'Q10.';font-weight: bold;color: #fa1848;display: block;font-size: 3rem;font-family: 'GmarketSansMedium' !important;}
 .rec_mod_strategy.sty03 .a{font-size: 2.2rem;color: #7d7d7d}
 .rec_mod_strategy.sty03 .guide h3 {background: #222b7e;color: #fff}
-.rec_mod_strategy.sty03 .guide_wrap > div{display: flex;margin-bottom:3rem;padding-bottom: 3rem;border-bottom: 1px solid #dcdcdc}
+.rec_mod_strategy.sty03 .guide_wrap > div{margin-bottom:3rem;padding-bottom: 3rem;border-bottom: 1px solid #dcdcdc}
 .rec_mod_strategy.sty03 .guide_wrap > div:last-child,
 .rec_mod_strategy.sty03 .interview_tip_wrap > div:last-child{border-bottom: 0}
-.rec_mod_strategy.sty03 .guide_wrap .q{width: 300px;margin-right:  30px;word-break: keep-all}
-.rec_mod_strategy.sty03 .guide_wrap .a{width: calc(100% - 330px)}
 .rec_mod_strategy.sty03 .bg{background: url(../images/strategy03_bg.png) no-repeat bottom left;background-size: cover;padding: 8rem 0}
 .rec_mod_strategy.sty03 .rq_cont{display: flex;background: #fff;border: 2px solid #262d7e;border-radius: 20px;padding: 4rem;position: relative;}
 .rec_mod_strategy.sty03 .rq_tit{font-size: 3.4rem;font-weight: bold;width: 200px;}
@@ -1645,7 +1643,7 @@ background: linear-gradient(180deg, rgba(96,139,255,1) 0%, rgba(219,169,254,1) 1
 .rec_mod_strategy.sty05 .interview_tip .qm_btn{background: #ff50b1;color: #fff}
 .rec_mod_strategy.sty05 .interview_tip .qm_txt a{color: #fff;background: url(../images/jp_md02_qm.png) no-repeat center #000}
 .rec_mod_strategy.sty06 h3{font-size: 3rem;margin-bottom: 4rem}
-.rec_mod_strategy.sty06 .bg{background: url(../images/strategy06_bg01.png) no-repeat center bottom;padding: 8rem 0}
+.rec_mod_strategy.sty06 .bg{background: url(../images/strategy06_bg01.png) no-repeat center bottom #509df6;padding: 8rem 0}
 .rec_mod_strategy.sty06 .tit_wrap h3{display: inline-block;border-bottom: 6px solid rgba(255, 255, 255, 0.65);color: #fff;padding-bottom: 1rem}
 .rec_mod_strategy.sty06  .guide{color: #fff}
 .rec_mod_strategy.sty06  .guide .q{font-size: 2.4rem;margin-bottom: 1rem}
