@@ -10,7 +10,9 @@
 	<link href="./css/pt-common.css" rel="stylesheet">
 	<!--스크롤 이벤트-->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/slick.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
         /*기업별 스타일*/
@@ -640,106 +642,104 @@
             },
         });
 
-       
-			// .mag_mod_culture.sty02 조직문화
-			var cultureSlider = new Swiper(".mag_mod_culture.sty02 .dvCulture", {
-				slidesPerView: 1,
-				slidesPerColumn: 3,
-				spaceBetween: 10,
-				navigation: {
-					nextEl: ".culture_wrap .swiper-button-next",
-					prevEl: ".culture_wrap .swiper-button-prev"
-				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1024: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1261: {
-						slidesPerView: 1,
-						slidesPerColumn: 3,
-						slidesPerGroup: 3,
-					}
-				}
-			});
+        // .mag_mod_culture.sty02 조직문화
+        var cultureSlider = new Swiper(".mag_mod_culture.sty02 .dvCulture", {
+            slidesPerView: 1,
+            slidesPerColumn: 3,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".culture_wrap .swiper-button-next",
+                prevEl: ".culture_wrap .swiper-button-prev"
+            },
+            breakpoints: {
+                280: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 1,
+                },
+                640: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 1,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 1,
+                },
+                1261: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 3,
+                    slidesPerGroup: 3,
+                }
+            }
+        });
 
-			// .mag_mod_culture.sty02 복리후생 선택형
-			var welfareSlider = new Swiper(".mag_mod_culture.sty02 .welfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 3,
-				spaceBetween: 30,
-				navigation: {
-					nextEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-next",
-					prevEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-prev"
-				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1024: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1261: {
-						slidesPerView: 1,
-						slidesPerColumn: 3,
-						slidesPerGroup: 3,
-					}
-				}
-			});
+        // .mag_mod_culture.sty02 복리후생 선택형
+        var welfareSlider = new Swiper(".mag_mod_culture.sty02 .welfare", {
+            slidesPerView: 1,
+            slidesPerColumn: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-next",
+                prevEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-prev"
+            },
+            breakpoints: {
+                280: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 1,
+                },
+                640: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 1,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 1,
+                },
+                1261: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 3,
+                    slidesPerGroup: 3,
+                }
+            }
+        });
 
-			// .mag_mod_culture.sty02 복리후생 입력형
-			var welfareSlider = new Swiper(".mag_mod_culture.sty02 .dvWelfare", {
-				slidesPerView: 1,
-				slidesPerColumn: 3,
-				spaceBetween: 30,
-				navigation: {
-					nextEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-next",
-					prevEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-prev"
-				},
-				breakpoints: {
-					280: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					640: {
-						slidesPerView: 1,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1024: {
-						slidesPerView: 2,
-						slidesPerColumn: 1,
-						slidesPerGroup: 1,
-					},
-					1261: {
-						slidesPerView: 1,
-						slidesPerColumn: 3,
-						slidesPerGroup: 3,
-					}
-				}
-			});
-
+        // .mag_mod_culture.sty02 복리후생 입력형
+        var welfareSlider = new Swiper(".mag_mod_culture.sty02 .dvWelfare", {
+            slidesPerView: 1,
+            slidesPerColumn: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-next",
+                prevEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-prev"
+            },
+            breakpoints: {
+                280: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 1,
+                },
+                640: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 1,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 1,
+                },
+                1261: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 3,
+                    slidesPerGroup: 3,
+                }
+            }
+        });
 
         // 주소-좌표 변환 객체를 생성합니다
         var geocoder = new kakao.maps.services.Geocoder();
