@@ -15,7 +15,7 @@
 		.mag_mod_welfare h3,
 		.mag_mod_interview h3,
 		.mag_mod_review h3{font-size: 5.0rem;margin-bottom: 3.0rem; text-align: center;font-weight: 200}
-		.sns_mod_info.sty01 {margin: 8.0rem 0}
+		.sns_mod_info.sty01 {margin: 8.0rem 0;background: #fff}
 		.sns_mod_info.sty01 .info_wrap > li{color: #19ace3}
 		.sns_mod_info.sty01 .info_wrap > li > div{color: #000}	
 		.sns_mod_info.sty01 ul li:nth-child(1) .ico{background: url(/images/@ico_finance01_1278653301.png) no-repeat center;width: 111px;height: 101px;}
@@ -121,15 +121,16 @@
     </div>
     <div class="module-wrap com_mod_anchor sty02">
         <div class="cnt-container fc_fff">
-            <ul>
-                <li><a href="javascript:void(0);" class="active">기업개요</a></li>
-                <li><a href="javascript:void(0);">현직자 인터뷰</a></li>
-                <li><a href="javascript:void(0);">채용공고</a></li>
-                <li> <a href="javascript:void(0);">기업 뉴스</a></li>
+             <ul>
+                <li><a href="#summary" class="active">기업개요</a></li>
+                <li><a href="#interview">현직자 인터뷰</a></li>
+                <li><a href="#recruit">채용공고</a></li>
+                <li> <a href="#news">기업 뉴스</a></li>
             </ul>
             <div class="siteGo">사이트</div>
         </div>
     </div>
+    <a name="summary"></a>
     <div class="module-wrap mag_mod_summary sty03">    
         <div class="cnt-container">
                 <div class="text">
@@ -166,8 +167,6 @@
 				</ul>
 		</div>
 	</div>
-   
-    
    
      <div class="module-wrap mag_mod_percent sty03">
         <div class="cnt-container">
@@ -222,12 +221,18 @@
         </div>
     </div>
     
-        <div class="module-wrap mag_mod_biz sty02">
-        <div class="cnt-container">
-            <h3>사업영역</h3>
-            <div class="bizDiv">주요사업</div>
-        </div>
-    </div>
+
+	<!--사업영역-->
+	<div class="module-wrap mag_mod_biz sty02">
+		<div class="cnt-container">
+			<div class="biz_wrap">
+				<div class="bizDiv">
+			</div>
+		</div>
+	</div>
+	</div>
+	<!--//사업영역-->
+
     
     
 	<div class="module-wrap rec_mod_swot sty03">
@@ -292,7 +297,7 @@
         </div>
     </div>
       
-      
+      <a name="interview"></a>
 	<div class="module-wrap mag_mod_interview sty03">
 		<h3>현직자 인터뷰</h3>
 		<div class="cnt-container">
@@ -370,7 +375,7 @@
 	</div>
 
        
-        
+     <a name="recruit"></a> 
     <div class="module-wrap com_mod_recruit sty01">
         <div class="bg_bot"></div>
         <div class="cnt-container">
@@ -431,6 +436,8 @@
             </div>
         </div>
     </div>
+    
+      <a name="news"></a> 
     <div class="module-wrap com_mod_news sty01">
         <div class="cnt-container">
             <div class="news_row">
@@ -560,36 +567,9 @@
         var fiProfit2 = $('.financeProfit span:nth-child(2)').text();
         var fiProfit3 = $('.financeProfit span:nth-child(3)').text();
 
-        	//mag_mod_biz.sty02 사업분야 슬라이드
-		var magBiz02 = $('.mag_mod_biz.sty02 .bizDiv')
-		magBiz02.addClass('swiper');
-		magBiz02.wrapInner('<div class="swiper-wrapper"></div>');
-		magBiz02.children().children().wrap('<div class="swiper-slide"></div>')
-		magBiz02.append('<div class="swiper-pagination"></div>');
-		magBiz02.append('<div class="swiper-button-prev"></div>');
-		magBiz02.append('<div class="swiper-button-next"></div>');
-		var bizSlider = new Swiper(magBiz02, {
-			slidesPerView: 3,
-			spaceBetween: 30,
-			navigation: {
-				nextEl: ".mag_mod_biz.sty02 .swiper-button-next",
-				prevEl: ".mag_mod_biz.sty02 .swiper-button-prev"
-			},
-			breakpoints: {
-				280: {
-					slidesPerView: 1
-				},
-				640: {
-					slidesPerView: 2
-				},
-				1024: {
-					slidesPerView: 2
-				},
-				1261: {
-					slidesPerView: 3,
-				}
-			}
-		});
+       
+		
+		
         
         var cultureSlider = new Swiper(".dvCulture",{
             slidesPerView: 2,
