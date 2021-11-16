@@ -30,29 +30,10 @@
 </head>
 
 <body>
-	<div class="module-wrap edit_wrap com_mod_header sty01">
-		<div class="cnt-container header clearfix">
-			<div class="biz_cate cate01 blue"><i></i>Consulting</div>
-			<div class="logo imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
-			<div class="info fc_fff">
-				<dl class="clearfix">
-					<dt>업종</dt>
-					<dd class="incCate">업종</dd>
-					<dt>대표자</dt>
-					<dd class="ceo">대표자</dd>
-					<dt>기업형태</dt>
-					<dd class="comForm">기업형태</dd>
-				</dl>
-				<div class="action fc_fff clearfix"><a href="javascript:void(0);">관심기업 등록<i>♥</i></a><a href="javascript:void(0);">공고 바로가기<i>→</i></a></div>
-			</div>
-		</div>
-	</div>
-
 	<div class="module-wrap com_mod_header sty02">
 		<div class="cnt-container header clearfix">
-			<div class="biz_cate cate01 green">
-				<i></i>
-				Consulting
+			<div id="iconArea">
+	
 			</div>
 			<div class="logo imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
 			<div class="info fc_000">
@@ -65,19 +46,20 @@
 					<dd class="comForm">기업형태</dd>
 				</dl>
 				<div class="action fc_000 clearfix">
-					<a href="javascript:void(0);" class="on">관심기업 등록<i>♥</i></a>
-					<a href="javascript:void(0);">공고 바로가기<i>→</i></a>
+					<a href="javascript:void(0);" id="scrapYn" onclick="onCntNew();">관심기업 등록<i>♥</i></a>
+					<a href="javascript:void(0);" id="copyUrlNew" onclick="copyUrlNew();" data-clipboard-action="copy">공고 바로가기<i>→</i></a>
 				</div>
 			</div>
 		</div>
 	</div>
+
 	<div class="module-wrap com_mod_anchor sty02">
 		<div class="cnt-container fc_fff">
 			<ul>
-				<li><a href="javascript:void(0);" class="active">기업개요</a></li>
-				<li><a href="javascript:void(0);">현직자 인터뷰</a></li>
-				<li><a href="javascript:void(0);">채용공고</a></li>
-				<li> <a href="javascript:void(0);">기업 뉴스</a></li>
+				<li><a href="#summary" class="active">기업개요</a></li>
+				<li><a href="#concept">마케팅 콘셉</a></li>
+				<li><a href="#recruit">채용공고</a></li>
+				<li> <a href="#news">기업뉴스</a></li>
 			</ul>
 			<div class="siteGo">사이트</div>
 		</div>
