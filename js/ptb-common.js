@@ -192,52 +192,53 @@
                 var imgCi = "<img src='"+entNewLogoImg+"' alt='"+comName+"'/>";
                 $(".imgCi").html(imgCi);
     
-                //17.기업연혁
-                var historyCnt = historyList.length;
-                if(historyCnt > 0){
-                    var historyYear = "";//연혁 년도
-                    var historyMonth = "";//연혁 월
-                    var historyCntnt = "";//연혁 내용
-                    
-                    var history = "";
-                    var historyCntntSplit = null;
-                    var yearNow = "";//현재 년도 데이터
-                    var yearChg = "";//다음 년도 데이터
-                    
-                    for(var i=0; i<historyCnt; i++){
-                        historyYear = historyList[i].stdYy;
+                
+            //17.기업연혁
+            var historyCnt = historyList.length;
+            if(historyCnt > 0){
+                var historyYear = "";//연혁 년도
+                var historyMonth = "";//연혁 월
+                var historyCntnt = "";//연혁 내용
+                
+                var history = "";
+                var historyCntntSplit = null;
+                var yearNow = "";//현재 년도 데이터
+                var yearChg = "";//다음 년도 데이터
+                
+                for(var i=0; i<historyCnt; i++){
+                    historyYear = historyList[i].stdYy;
 
-                        yearChg = historyYear;//변경년도
+                    yearChg = historyYear;//변경년도
 
-                        /*console.log("연혁 년도"+i+" : " + historyYear);
+                    /*console.log("연혁 년도"+i+" : " + historyYear);
 
-                        console.log("yearChg : " + yearChg);
-                        console.log("yearNow : " + yearNow);*/
-                        if(i > 0){
-	                        if(yearChg != yearNow){
-	                        	history += "</ul></div>";
-	                        }
-                        }
+                    console.log("yearChg : " + yearChg);
+                    console.log("yearNow : " + yearNow);*/
+                    if(i > 0){
                         if(yearChg != yearNow){
-                        	history += "<div><span>"+historyYear+"</span><ul>";
+                            history += "</ul></div>";
                         }
-                        historyMonth = historyList[i].stdMm;
-                        //console.log("연혁 월"+i+" : " + historyMonth);
-                        history += "<li><div class='month'>"+historyMonth+"</div><div class='event'>";
-                        historyCntnt = historyList[i].cnts;
-                        historyCntntSplit = historyCntnt.split("::");
-                        for(var j=0 ; j<historyCntntSplit.length ; j++){
-                            //console.log("연혁 내용"+i+"_"+j+" : " + historyCntntSplit[j]);
-                            history += "<span>"+historyCntntSplit[j]+"</span>";
-                        }
-                        history += "</div></li>";
-                        
-                        yearNow = historyYear;//현재년도
-                        /*console.log("yearChg : " + yearChg);
-                        console.log("yearNow : " + yearNow);*/
-                        
                     }
+                    if(yearChg != yearNow){
+                        history += "<div><span>"+historyYear+"</span><ul>";
+                    }
+                    historyMonth = historyList[i].stdMm;
+                    //console.log("연혁 월"+i+" : " + historyMonth);
+                    history += "<li><div class='month'>"+historyMonth+"</div><div class='event'>";
+                    historyCntnt = historyList[i].cnts;
+                    historyCntntSplit = historyCntnt.split("::");
+                    for(var j=0 ; j<historyCntntSplit.length ; j++){
+                        //console.log("연혁 내용"+i+"_"+j+" : " + historyCntntSplit[j]);
+                        history += "<span>"+historyCntntSplit[j]+"</span>";
+                    }
+                    history += "</div></li>";
+                    
+                    yearNow = historyYear;//현재년도
+                    /*console.log("yearChg : " + yearChg);
+                    console.log("yearNow : " + yearNow);*/
+                    
                 }
+            }
                 $(".history").html(history);
                 // $("div.holder").jPages({
                 //     containerID : "history",
@@ -448,6 +449,37 @@
                     dvWelfare += "</div>";
                 }
                 $(".dvWelfare").html(dvWelfare);
+                var welfareSlider = new Swiper(".mag_mod_culture.sty02 .dvWelfare", {
+                    slidesPerView: 1,
+                    slidesPerColumn: 3,
+                    spaceBetween: 30,
+                    navigation: {
+                        nextEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-next",
+                        prevEl: ".mag_mod_culture.sty02 .welfare_wrap .swiper-button-prev"
+                    },
+                    breakpoints: {
+                        280: {
+                            slidesPerView: 1,
+                            slidesPerColumn: 1,
+                            slidesPerGroup: 1,
+                        },
+                        640: {
+                            slidesPerView: 1,
+                            slidesPerColumn: 1,
+                            slidesPerGroup: 1,
+                        },
+                        1024: {
+                            slidesPerView: 2,
+                            slidesPerColumn: 1,
+                            slidesPerGroup: 1,
+                        },
+                        1261: {
+                            slidesPerView: 1,
+                            slidesPerColumn: 3,
+                            slidesPerGroup: 3,
+                        }
+                    }
+                });
     
                 //25.조직문화
                 if(isNull(orgnz)){
@@ -770,9 +802,12 @@
                 $(".ivCeo").append('<div class="swiper-pagination"></div>');
                 var ceoIvSlider = new Swiper(".ivCeo", {
                     slidesPerView: 1,
-                    slidesPerColumn: 1,
+                    slidesPerColumn: 4,
+                    slidesPerGroup: 4,
                     spaceBetween: 0,
                     //loop: true,
+                    observer: true,
+                    observeParents: true,
                     pagination: {
                         el: '.ivCeo .swiper-pagination',
                         type: 'bullets',
@@ -780,19 +815,24 @@
                         observer: true,
                         observeParents: true,
                     },
-                     breakpoints: {
-                         640: {
-                             slidesPerColumn: 1,
-                             autoHeight:true
-                         },
-                         768: {
-                             slidesPerColumn: 2
-                         },
-                         1024: {
-                             slidesPerColumn: 3
-                         }
-                     }
-                    
+                    breakpoints:{
+                    1260: {
+                        slidesPerColumn: 4,
+                        slidesPerGroup: 4,
+                    },
+                    1024: {
+                        slidesPerColumn: 3,
+                        slidesPerGroup: 3,
+                    },
+                    768: {
+                        slidesPerColumn: 2,
+                        slidesPerGroup: 2,
+                    },
+                    300: {
+                        slidesPerColumn: 2,
+                        slidesPerGroup: 2,
+                    }
+                    }
                 });
     
                 //38.채용담당자 인터뷰
@@ -826,39 +866,42 @@
                             ivMng += "<div class='a'>"+ivMngCntnt+"</div>";
                             ivMng += "</div>";
                         }
-            }
-
-            //41.현직자 복지 사용후기
-            var incmbDept = isNull(entInfo.incmbDept) ? entInfo.incmbDept : "비공개"; //소속부서(현직자복지후기)
-            var incmbNm = isNull(entInfo.incmbNm) ? entInfo.incmbNm : "비공개"; //이름(현직자복지후기)
-            var incmbReview = isNull(entInfo.incmbReview) ? entInfo.incmbReview : "비공개"; //후기(현직자복지후기)
-            // console.log("소속부서(현직자복지후기) : " + incmbDept);
-            // console.log("이름(현직자복지후기) : " + incmbNm);
-            // console.log("후기(현직자복지후기) : " + incmbReview);
-
-            //42.자소서 문항별 가이드
-            if(isNull(cvrltQstGuide)){
-                var cvrltQstGuideTitle = "";//자소서 문항
-                var cvrltQstGuideCntnt = "";//자소서 답변
-
-                var guide = "";
-                for(var i=1; i<addDtailList; i++){
-                    cvrltQstGuideTitle = "cvrltQstGuideTitle = cvrltQstGuide.addTitle"+i;
-                    eval(cvrltQstGuideTitle);
-                    if (isNull(cvrltQstGuideTitle)){
-                        //console.log("자소서 문항"+i+" : " + cvrltQstGuideTitle);
-                        guide += "<div><div class='q'>"+cvrltQstGuideTitle+"</div>";
                     }
                     ivMng += "</div>"; 
                 }
                 $(".ivMng").html(ivMng);
-                var mngIvSlider = new Swiper(".ivMng",{
+                $(".ivMng").append('<div class="swiper-pagination"></div>');
+                var mngIvSlider = new Swiper(".ivMng", {
                     slidesPerView: 1,
+                    slidesPerColumn: 4,
                     spaceBetween: 0,
-                    autoHeight: true,
-                    navigation: {
-                        nextEl: ".iv_wrap.qa_mng .swiper-button-next",
-                        prevEl: ".iv_wrap.qa_mng .swiper-button-prev"
+                    observer: true,
+                    dots: true,
+                    observeParents: true,
+                    pagination: {
+                        el: '.ivMng .swiper-pagination',
+                        type: 'bullets',
+                        clickable: true,
+                        observer: true,
+                        observeParents: true,
+                    },
+                    breakpoints:{
+                    1260: {
+                        slidesPerColumn: 4,
+                        slidesPerGroup: 4,
+                    },
+                    1024: {
+                        slidesPerColumn: 3,
+                        slidesPerGroup: 3,
+                    },
+                    768: {
+                        slidesPerColumn: 2,
+                        slidesPerGroup: 2,
+                    },
+                    300: {
+                        slidesPerColumn: 2,
+                        slidesPerGroup: 2,
+                    }
                     }
                 });
     
@@ -893,47 +936,70 @@
                             ivEmp += "<div class='a'>"+ivEmpCntnt+"</div>";
                             ivEmp += "</div>";
                         }
-            }
-            $(".guide_wrap").html(guide);
-
-            //43.최근 면접질문
-            if(isNull(rcnIntQst)){
-                var rcnIntQstTitle = "";//질문
-				
-				var recent_question = ""
-                for(var i=1; i<addDtailList; i++){
-                    rcnIntQstTitle = "rcnIntQstTitle = rcnIntQst.addTitle"+i;
-                    eval(rcnIntQstTitle);
-                    if (isNull(rcnIntQstTitle)){
-                        //console.log("최근 면접질문"+i+" : " + rcnIntQstTitle);
-						 recent_question += "<p>"+rcnIntQstTitle+"</p>";
                     }
                     ivEmp += "</div>";
                 }
                 $(".ivEmp").html(ivEmp);
-                var empIvSlider = new Swiper(".ivEmp",{
+                $(".ivEmp").append('<div class="swiper-pagination"></div>');
+                var empIvSlider = new Swiper(".ivEmp", {
                     slidesPerView: 1,
+                    slidesPerColumn: 4,
                     spaceBetween: 0,
-                    autoHeight: true,
-                    navigation: {
-                        nextEl: ".iv_wrap.qa_emp .swiper-button-next",
-                        prevEl: ".iv_wrap.qa_emp .swiper-button-prev"
-            }
-			 $(".recent_question .rq_text").html(recent_question);
-
-            //44.채용 가산점 요인
-            if(isNull(extraPointFactor)){
-                var extraPointFactorTitle = "";//가산점 요인
-                var extraPointFactorCntnt = "";//가산점 내용
-				
-				var add_point = ""
-                for(var i=1; i<addDtailList; i++){
-                    extraPointFactorTitle = "extraPointFactorTitle = extraPointFactor.addTitle"+i;
-                    eval(extraPointFactorTitle);
-                    if (isNull(extraPointFactorTitle)){
-                        //console.log("가산점 요인"+i+" : " + extraPointFactorTitle);
-						  add_point += "<li><strong class='tit'>"+extraPointFactorTitle+"</strong>";
+                    observer: true,
+                    dots: true,
+                    observeParents: true,
+                    pagination: {
+                        el: '.ivEmp .swiper-pagination',
+                        type: 'bullets',
+                        clickable: true
+                    },
+                    breakpoints:{
+                    1260: {
+                        slidesPerColumn: 4,
+                        slidesPerGroup: 4,
+                    },
+                    1024: {
+                        slidesPerColumn: 3,
+                        slidesPerGroup: 3,
+                    },
+                    768: {
+                        slidesPerColumn: 2,
+                        slidesPerGroup: 2,
+                    },
+                    300: {
+                        slidesPerColumn: 2,
+                        slidesPerGroup: 2,
                     }
+                    }
+                });
+
+                // 인터뷰
+                $('.mag_mod_interview.sty02 .cnt-container').addClass('tab_container')
+                $('.mag_mod_interview.sty02 .cnt-container').prepend("<ul class='tabs'><li class='active'><a href='javascript:vold' data-tab='tab1'>CEO</a></li><li><a href='javascript:vold' data-tab='tab2'>인사담당자</a></li><li><a href='javascript:vold' data-tab='tab3'>신입사원</a></li></ul>");
+                $('.iv_wrap').addClass('tab_content');
+                $('.qa_ceo').attr('id', 'tab1');
+                $('.qa_mng').attr('id', 'tab2');
+                $('.qa_emp').attr('id', 'tab3');
+
+                // 탭 컨텐츠 숨기기
+                $(".tab_content").hide();
+
+                // 첫번째 탭콘텐츠 보이기
+                $(".tab_container").each(function() {
+                    $(this).children().children().children("li:first").addClass("active"); //Activate first tab
+                    $(this).children(".tab_content").first().show();
+                });
+
+                //탭메뉴 클릭 이벤트
+                $(".tabs li a").click(function() {
+                    //탭 안에 슬라이드 있을 때
+                    var tab_id = $(this).attr('data-tab');
+                    $(this).parent().siblings().removeClass("active");
+                    $(this).parent().addClass("active");
+                    $(this).parent().parent().parent().parent().find(".tab_content").hide();
+                    //        var activeTab = $(this).attr("rel");
+                    //        $("#" + activeTab).fadeIn();
+                    $("#" + tab_id).fadeIn();
                 });
     
                 //40.채용절차
