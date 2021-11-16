@@ -826,6 +826,28 @@
                             ivMng += "<div class='a'>"+ivMngCntnt+"</div>";
                             ivMng += "</div>";
                         }
+            }
+
+            //41.현직자 복지 사용후기
+            var incmbDept = isNull(entInfo.incmbDept) ? entInfo.incmbDept : "비공개"; //소속부서(현직자복지후기)
+            var incmbNm = isNull(entInfo.incmbNm) ? entInfo.incmbNm : "비공개"; //이름(현직자복지후기)
+            var incmbReview = isNull(entInfo.incmbReview) ? entInfo.incmbReview : "비공개"; //후기(현직자복지후기)
+            // console.log("소속부서(현직자복지후기) : " + incmbDept);
+            // console.log("이름(현직자복지후기) : " + incmbNm);
+            // console.log("후기(현직자복지후기) : " + incmbReview);
+
+            //42.자소서 문항별 가이드
+            if(isNull(cvrltQstGuide)){
+                var cvrltQstGuideTitle = "";//자소서 문항
+                var cvrltQstGuideCntnt = "";//자소서 답변
+
+                var guide = "";
+                for(var i=1; i<addDtailList; i++){
+                    cvrltQstGuideTitle = "cvrltQstGuideTitle = cvrltQstGuide.addTitle"+i;
+                    eval(cvrltQstGuideTitle);
+                    if (isNull(cvrltQstGuideTitle)){
+                        //console.log("자소서 문항"+i+" : " + cvrltQstGuideTitle);
+                        guide += "<div><div class='q'>"+cvrltQstGuideTitle+"</div>";
                     }
                     ivMng += "</div>"; 
                 }
@@ -871,6 +893,20 @@
                             ivEmp += "<div class='a'>"+ivEmpCntnt+"</div>";
                             ivEmp += "</div>";
                         }
+            }
+            $(".guide_wrap").html(guide);
+
+            //43.최근 면접질문
+            if(isNull(rcnIntQst)){
+                var rcnIntQstTitle = "";//질문
+				
+				var recent_question = ""
+                for(var i=1; i<addDtailList; i++){
+                    rcnIntQstTitle = "rcnIntQstTitle = rcnIntQst.addTitle"+i;
+                    eval(rcnIntQstTitle);
+                    if (isNull(rcnIntQstTitle)){
+                        //console.log("최근 면접질문"+i+" : " + rcnIntQstTitle);
+						 recent_question += "<p>"+rcnIntQstTitle+"</p>";
                     }
                     ivEmp += "</div>";
                 }
@@ -882,6 +918,21 @@
                     navigation: {
                         nextEl: ".iv_wrap.qa_emp .swiper-button-next",
                         prevEl: ".iv_wrap.qa_emp .swiper-button-prev"
+            }
+			 $(".recent_question .rq_text").html(recent_question);
+
+            //44.채용 가산점 요인
+            if(isNull(extraPointFactor)){
+                var extraPointFactorTitle = "";//가산점 요인
+                var extraPointFactorCntnt = "";//가산점 내용
+				
+				var add_point = ""
+                for(var i=1; i<addDtailList; i++){
+                    extraPointFactorTitle = "extraPointFactorTitle = extraPointFactor.addTitle"+i;
+                    eval(extraPointFactorTitle);
+                    if (isNull(extraPointFactorTitle)){
+                        //console.log("가산점 요인"+i+" : " + extraPointFactorTitle);
+						  add_point += "<li><strong class='tit'>"+extraPointFactorTitle+"</strong>";
                     }
                 });
     
