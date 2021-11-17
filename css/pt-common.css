@@ -194,7 +194,7 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
     .com_mod_recruit.sty02 h3{font-size:3.2rem;margin:0 0 40px;}
     .com_mod_recruit.sty02 .tb_recruit{width:100%;margin-bottom:60px;table-layout: fixed}
     .com_mod_recruit.sty02 .tb_recruit th{font-size:2.0rem;padding:24px;background: #f0f0f0;border-top: 1px solid #dcdcdc;border-bottom: 1px solid #dcdcdc;}
-    .com_mod_recruit.sty02 .tb_recruit td{border:1px #dcdcdc;border-style:none none solid;font-size:1.7rem;padding:2.0rem;text-align:center;}
+    .com_mod_recruit.sty02 .tb_recruit td{border:1px #dcdcdc;border-style:none none solid;font-size:1.7rem;padding:2.0rem;text-align:center;background: #fff}
     .com_mod_recruit.sty02 .tb_recruit td .apply{color:#fff;padding:8px 16px;border:1px solid #da0020;margin-left:16px;background: #ff1c31;border-radius: 10px}
     .com_mod_recruit.sty02 .box_recruit{border:2px solid #437cff;background:#fff;padding:40px;}
     .com_mod_recruit.sty02 .box_recruit h4{position:relative;font-size:2.2rem;}
@@ -644,6 +644,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .bro_mod_history.sty03 .history .event{margin-left: 10px;}
 .bro_mod_history.sty03 .history >  div > span {font-weight: bold;color: #62b4f0;font-size: 3.6rem;margin-bottom: 1.5rem;display: inline-block}
 .bro_mod_history.sty03 .history .month{font-weight: bold;color: #62b4f0;font-size: 2.0rem}
+
 .bro_mod_history.sty04 .history_wrap{display: flex;justify-content: space-between}
 .bro_mod_history.sty04 .history_wrap > div {width: calc(50% - 30px)}
 .bro_mod_history.sty04 .history_wrap .cont{background: #333;position: relative;height: 570px}
@@ -1893,7 +1894,7 @@ background: linear-gradient(180deg, rgba(96,139,255,1) 0%, rgba(219,169,254,1) 1
 .rec_mod_vision.sty01 span{color: #ff1c31}
 .rec_mod_vision.sty01 h3{font-size: 3.2rem;margin-bottom: 4.0rem}
 .rec_mod_vision.sty01 .swiper-button-prev, 
-.rec_mod_vision.sty01 .swiper-button-next {width: 30px;height: 55px}
+.rec_mod_vision.sty01 .swiper-button-next {width: 30px;height: 55px;left: auto !important}
 .rec_mod_vision.sty01 .swiper-button-next{background: url(../images/slider01_next.png) no-repeat;right: 0;}
 .rec_mod_vision.sty01 .swiper-button-prev{background: url(../images/slider01_prev.png) no-repeat;left: 0;}
 .rec_mod_vision.sty01 .swiper-button-next,
@@ -3128,6 +3129,12 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 
 
 /* ------------------------ 반응형 start ------------------------*/
+
+/* ie */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.rec_mod_welfare.sty02 .welfare_img{display: flex;flex-wrap: wrap}
+	.rec_mod_welfare.sty02 .welfare_img > div{width: 50%;}
+}
 
 @media all and (max-width:1460px){
 /*주요상품*/	
