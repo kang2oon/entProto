@@ -1177,9 +1177,15 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .mag_mod_interview.sty05 .swiper-pagination-bullet{width: 14px;height: 14px;background: #afafaf;opacity: 1}
 .mag_mod_interview.sty05 .swiper-pagination-bullet-active{width: 40px;border-radius: 20px;background: #007ddd}
 .mag_mod_interview.sty06{background: #0d124d;padding: 8.0rem 0}
-.mag_mod_interview.sty06 .iv_wrap{background: #fff;border-radius: 20px;margin-bottom: 4rem;padding: 4rem; display: flex;justify-content: space-between;flex-direction: row-reverse}
+.mag_mod_interview.sty06 .iv_wrap{background: #fff;border-radius: 20px;margin-bottom: 4rem;padding: 4rem; display: flex;justify-content: space-between;flex-direction: row-reverse;position: relative;}
+
 .mag_mod_interview.sty06 .swiper-wrapper{width: calc(100% - 120px) !important;margin: auto;height: 800px}
 .mag_mod_interview.sty06 .swiper-wrapper .swiper-slide{height: calc(100%/3)}
+.mag_mod_interview.sty06 .iv_wrap .swiper-wrapper{padding-top: 60px}
+.mag_mod_interview.sty06 .iv_wrap.qa_ceo:before{content: 'CEO';display: block;font-size: 2.5rem;color: #fff;background: #565eb8;padding: 0.5rem 4rem;border-radius: 10px;position: absolute;left: 90px;top: 4rem}
+.mag_mod_interview.sty06 .iv_wrap.qa_mng:before{content: '인사담당자';display: block;font-size: 2.5rem;color: #fff;background: #565eb8;padding: 0.5rem 4rem;border-radius: 10px;position: absolute;left: 90px;top: 4rem}
+.mag_mod_interview.sty06 .iv_wrap.qa_emp:before{content: '재직자';display: block;font-size: 2.5rem;color: #fff;background: #565eb8;padding: 0.5rem 4rem;border-radius: 10px;position: absolute;left: 90px;top: 4rem}
+
 .mag_mod_interview.sty06 .iv_wrap .swiper {overflow: hidden;position: relative;width: calc(100% - 450px);}
 .mag_mod_interview.sty06 .iv_wrap:last-child{margin-bottom: 0}
 .mag_mod_interview.sty06 .iv_wrap .q{font-weight: 500;font-size: 2.0rem;position: relative;padding-left: 25px;margin-bottom: 1.0rem;color: #565eb8}
