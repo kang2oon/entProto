@@ -1179,12 +1179,12 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .mag_mod_interview.sty06{background: #0d124d;padding: 8.0rem 0}
 .mag_mod_interview.sty06 .iv_wrap{background: #fff;border-radius: 20px;margin-bottom: 4rem;padding: 4rem; display: flex;justify-content: space-between;flex-direction: row-reverse;position: relative;}
 
-.mag_mod_interview.sty06 .swiper-wrapper{width: calc(100% - 120px) !important;margin: auto;height: 800px}
-.mag_mod_interview.sty06 .swiper-wrapper .swiper-slide{height: calc(100%/3)}
+.mag_mod_interview.sty06 .swiper-wrapper{margin: auto;height: 800px;}
+.mag_mod_interview.sty06 .swiper-wrapper .swiper-slide{height: calc(100%/3);padding:0 5rem }
 .mag_mod_interview.sty06 .iv_wrap .swiper-wrapper{padding-top: 60px}
-.mag_mod_interview.sty06 .iv_wrap.qa_ceo:before{content: 'CEO';display: block;font-size: 2.5rem;color: #fff;background: #565eb8;padding: 0.5rem 4rem;border-radius: 10px;position: absolute;left: 90px;top: 4rem}
-.mag_mod_interview.sty06 .iv_wrap.qa_mng:before{content: '인사담당자';display: block;font-size: 2.5rem;color: #fff;background: #565eb8;padding: 0.5rem 4rem;border-radius: 10px;position: absolute;left: 90px;top: 4rem}
-.mag_mod_interview.sty06 .iv_wrap.qa_emp:before{content: '재직자';display: block;font-size: 2.5rem;color: #fff;background: #565eb8;padding: 0.5rem 4rem;border-radius: 10px;position: absolute;left: 90px;top: 4rem}
+.mag_mod_interview.sty06 .iv_wrap.qa_ceo:before{content: 'CEO';display: block;font-size: 2.5rem;color: #fff;background: #565eb8;padding: 0.5rem 4rem;border-radius: 10px;position: absolute;left: 9rem;top: 4rem}
+.mag_mod_interview.sty06 .iv_wrap.qa_mng:before{content: '인사담당자';display: block;font-size: 2.5rem;color: #fff;background: #565eb8;padding: 0.5rem 4rem;border-radius: 10px;position: absolute;left: 9rem;top: 4rem}
+.mag_mod_interview.sty06 .iv_wrap.qa_emp:before{content: '재직자';display: block;font-size: 2.5rem;color: #fff;background: #565eb8;padding: 0.5rem 4rem;border-radius: 10px;position: absolute;left: 9rem;top: 4rem}
 
 .mag_mod_interview.sty06 .iv_wrap .swiper {overflow: hidden;position: relative;width: calc(100% - 450px);}
 .mag_mod_interview.sty06 .iv_wrap:last-child{margin-bottom: 0}
@@ -3545,10 +3545,10 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	/* 백분위 정보 */
 	.mag_mod_percent.sty04 .percent_wrap > div{padding: 2rem;flex-direction: column;text-align: center}
 	.mag_mod_percent.sty04 .percent_wrap > div > div{margin-top: 1.0rem}
-	.mag_mod_percent.sty04 .percent_wrap .scale .ico{background-size: 50px;width: 50px;height: 60px}
-	.mag_mod_percent.sty04 .percent_wrap .growth .ico{background-size: 50px;width: 50px;height: 60px}
-	.mag_mod_percent.sty04 .percent_wrap .profit .ico{background-size: 50px;width: 50px;height: 60px}
-	.mag_mod_percent.sty04 .percent_wrap .stable .ico{background-size: 40px;width: 50px;height: 60px}
+	.mag_mod_percent.sty04 .percent_wrap .scale .ico{background-size: 50px !important;width: 50px !important;height: 60px !important}
+	.mag_mod_percent.sty04 .percent_wrap .growth .ico{background-size: 50px !important;width: 50px !important;height: 60px !important}
+	.mag_mod_percent.sty04 .percent_wrap .profit .ico{background-size: 50px !important;width: 50px !important;height: 60px !important}
+	.mag_mod_percent.sty04 .percent_wrap .stable .ico{background-size: 40px !important;width: 50px !important;height: 60px !important}
 	.bro_mod_percent.sty01 .percent_wrap{transform: scale(0.9)}
 	.bro_mod_percent.sty01 .percent_wrap > div{width: calc(50% - 68px)}
 	.bro_mod_percent.sty01 .percent_wrap > div span{display: block}
@@ -4047,7 +4047,9 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.mag_mod_interview.sty06{padding: 6rem 0}
 	.mag_mod_interview.sty06 .iv_wrap{flex-direction: column;padding: 2rem}
 	.mag_mod_interview.sty06 .iv_wrap .swiper{width: 100%;padding: 5rem 0}
-	.mag_mod_interview.sty06 .iv_wrap .photo {text-align: center;}
+	.mag_mod_interview.sty06 .iv_wrap:before{left: 50% !important;transform: translateX(-50%)}
+	.mag_mod_interview.sty06 .iv_wrap .swiper-wrapper{padding-top: 0}
+	.mag_mod_interview.sty06 .iv_wrap .photo {text-align: center;margin-top: 9rem}
 	.mag_mod_interview.sty06 .iv_wrap .photo  img{max-height: 400px}
 	.mag_mod_interview.sty06 .swiper-button-next, 
 	.mag_mod_interview.sty06 .swiper-button-prev{width: 40px;height: 40px}
