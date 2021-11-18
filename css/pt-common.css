@@ -1178,7 +1178,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .mag_mod_interview.sty05 .swiper-pagination-bullet-active{width: 40px;border-radius: 20px;background: #007ddd}
 .mag_mod_interview.sty06{background: #0d124d;padding: 8.0rem 0}
 .mag_mod_interview.sty06 .iv_wrap{background: #fff;border-radius: 20px;margin-bottom: 4rem;padding: 4rem; display: flex;justify-content: space-between;flex-direction: row-reverse;position: relative;}
-
+.mag_mod_interview.sty06 .iv_wrap .photo{max-width: 450px}
 .mag_mod_interview.sty06 .swiper-wrapper{margin: auto;height: 800px;}
 .mag_mod_interview.sty06 .swiper-wrapper .swiper-slide{height: calc(100%/3);padding:0 5rem }
 .mag_mod_interview.sty06 .iv_wrap .swiper-wrapper{padding-top: 60px}
@@ -3275,10 +3275,10 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.rec_mod_swot.sty03 .swot_wrap .txt > div{position: static;text-align: left !important;margin-bottom: 2.0rem;width: calc(100% - 30px);margin-left: 30px}
 	.rec_mod_swot.sty03 .swot_wrap .txt > div:last-child{margin-bottom: 0}
 	.inf_mod_swot.sty03 .swot_wrap > div .txt{width: calc(100% - 260px)}
-	.inf_mod_swot.sty03 .swotS:after{background-size: 250px;width: 250px;height: 256px}
-	.inf_mod_swot.sty03 .swotW:after{background-size: 250px;width: 250px;height: 256px}
-	.inf_mod_swot.sty03 .swotO:after{background-size: 250px;width: 250px;height: 256px}
-	.inf_mod_swot.sty03 .swotT:after{background-size: 250px;width: 250px;height: 256px}
+	.inf_mod_swot.sty03 .swotS:after{background-size: 250px !important;width: 250px;height: 256px}
+	.inf_mod_swot.sty03 .swotW:after{background-size: 250px !important;width: 250px;height: 256px}
+	.inf_mod_swot.sty03 .swotO:after{background-size: 250px !important;width: 250px;height: 256px}
+	.inf_mod_swot.sty03 .swotT:after{background-size: 250px !important;width: 250px;height: 256px}
 	.inf_mod_swot.sty03 .swot_wrap .desc{word-break: keep-all}
 	.inf_mod_swot.sty03 .swot_wrap .desc br{display: none}
 	.rec_mod_swot.sty05 .swot_wrap{background-position: right center}
@@ -3528,10 +3528,10 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.inf_mod_swot.sty03 .swot_wrap .tit{font-size: 2.2rem}
 	.inf_mod_swot.sty03 .swot_wrap .desc{font-size: 1.8rem}
 	.inf_mod_swot.sty03 .swot_wrap > div .txt{width: calc(100% - 150px)}
-	.inf_mod_swot.sty03 .swotS:after{background-size: 130px;width: 130px;height: 131px}
-	.inf_mod_swot.sty03 .swotW:after{background-size: 130px;width: 130px;height: 131px}
-	.inf_mod_swot.sty03 .swotO:after{background-size: 130px;width: 130px;height: 131px}
-	.inf_mod_swot.sty03 .swotT:after{background-size: 130px;width: 130px;height: 131px}
+	.inf_mod_swot.sty03 .swotS:after{background-size: 130px !important;width: 130px;height: 131px}
+	.inf_mod_swot.sty03 .swotW:after{background-size: 130px !important;width: 130px;height: 131px}
+	.inf_mod_swot.sty03 .swotO:after{background-size: 130px !important;width: 130px;height: 131px}
+	.inf_mod_swot.sty03 .swotT:after{background-size: 130px !important;width: 130px;height: 131px}
 	.rec_mod_swot.sty02 .diagram_area ul li{margin-right: 20px;width: 180px;height: 180px}
 	.rec_mod_swot.sty02 .diagram_area ul li strong{font-size: 4.0rem}
 	
