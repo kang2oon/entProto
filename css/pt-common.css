@@ -189,6 +189,7 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
     .com_mod_recruit.sty01 .box_recruit .detail_wrap dl dd{width:85%;}
 /* 채용공고 스타일 2*/
 .com_mod_recruit.sty02{padding-bottom:8.0rem;}
+.com_mod_recruit.sty02 .apply{height: auto !important}
 .com_mod_recruit.sty02 .qm_btn{color: #fff;border: 1px solid #fff;background: transparent}
     .com_mod_recruit.sty02 .bg_bot{position:absolute;bottom:0;width:100%;background:url(../images/jp_md02_bg.png) no-repeat;width: 100%;height: 658px;}
     .com_mod_recruit.sty02 h3{font-size:3.2rem;margin:0 0 40px;}
@@ -2012,7 +2013,8 @@ left: 0;width: 100%;height: 100%;}
 .rec_mod_product.sty01 .swiper-slide {background: #fff;border-radius: 20px;overflow: hidden}
 .rec_mod_product.sty01 .swiper-button-prev,
 .rec_mod_product.sty01 .swiper-button-next{width: 30px;height: 55px;text-indent: -9999px;display: block;position: absolute;transform: translateY(-50%);z-index: 555;margin-top: 0}
-.rec_mod_product.sty01 h4{display: none}
+.rec_mod_product.sty01 h4,
+.rec_mod_product.sty01 p{display: none}
 .rec_mod_product.sty01 .swiper-button-prev{background: url(../images/slider12_prev.png) no-repeat;left: -80px;}
 .rec_mod_product.sty01 .swiper-button-next{background: url(../images/slider12_next.png) no-repeat;right: -80px;left: auto !important}
 .rec_mod_product.sty01 .swiper-button-next:after, 
