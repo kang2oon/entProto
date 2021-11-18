@@ -899,7 +899,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_review.sty02 .review_wrap  .item:hover:after,
 .mag_mod_review.sty02 .review_wrap  .item:hover:after{border-top: 20px solid rgba(233,159,207,1)}
 .mag_mod_review.sty03{padding: 8.0rem 0;background: #e5e5e5}
-.mag_mod_review.sty03 .review_wrap{display: flex;flex-wrap: wrap;}
+.mag_mod_review.sty03 .review_wrap{display: flex;flex-wrap: wrap;border: 0 !important}
 .mag_mod_review.sty03 .review_wrap > .item{background: #fff;border-radius: 10px;box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12);width: calc(50% - 10px);margin-right: 20px;margin-top: 20px;padding:5.0rem 3.0rem;position: relative}
 .mag_mod_review.sty03 .review_wrap > .item:nth-child(2n){margin-right: 0}
 .mag_mod_review.sty03 .review_wrap > .item .desc{padding-left: 100px;}
