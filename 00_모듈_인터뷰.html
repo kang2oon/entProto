@@ -1016,67 +1016,6 @@
 	<!--인터뷰-->
 	<div class="module-wrap rec_mod_interview sty05">
 
-		<!--ceo 인터뷰-->
-		<div class="iv_wrap qa_ceo">
-			<div class="cnt-container">
-				<h3>CEO 인터뷰</h3>
-				<p class="txt">
-					가장 행복한 자리는 일자리입니다.<br />
-					당신의 일자리를 위해 경기도일자리재단이 함께 하겠습니다.
-				</p>
-				<div class="ivCeoPhoto photo">
-					<img src="./images/rec_interview05_ceo.png" alt="ceo">
-				</div>
-				<div class="swiper ivCeo">
-					<!--데이터 자동 삽입-->
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="q">질문</div>
-							<div class="a">답변</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="q">질문</div>
-							<div class="a">답변</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="q">질문</div>
-							<div class="a">답변</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="q">질문</div>
-							<div class="a">답변</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="q">질문</div>
-							<div class="a">답변</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="q">질문</div>
-							<div class="a">답변</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="q">질문</div>
-							<div class="a">답변</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="q">질문</div>
-							<div class="a">답변</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="q">질문</div>
-							<div class="a">답변</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="q">질문</div>
-							<div class="a">답변</div>
-						</div>
-
-					</div>
-				</div>
-				<a href="javascript:bold" class="load_more">더보기</a>
-			</div>
-		</div>
-		<!--//ceo 인터뷰-->
 
 		<div class="rec_itv05_tab">
 			<div class="cnt-container">
@@ -1084,7 +1023,7 @@
 					view</h3>
 
 				<div class="rec_itv05_wrap">
-					<ul class="tabs">
+					<ul class="tab">
 						<li><a href='javascript:vold' data-tab='rec_itv05_tab1'>채용담당자 인터뷰</a></li>
 						<li><a href='javascript:vold' data-tab='rec_itv05_tab2'>신입사원 인터뷰</a></li>
 					</ul>
@@ -1837,9 +1776,9 @@
 		// .rec_mod_interview.sty05 
 		var tabWrap = $('.rec_mod_interview.sty05 .rec_itv05_wrap')
 		$('.rec_mod_interview.sty05 .rec_itv05_wrap').addClass('tab_container');
-		$('.rec_mod_interview.sty05 .rec_itv05_wrap .iv_wrap').addClass('tab_content');
-		$('.rec_mod_interview.sty05 .rec_itv05_wrap .qa_mng').attr('id', 'rec_itv05_tab1');
-		$('.rec_mod_interview.sty05 .rec_itv05_wrap .qa_emp').attr('id', 'rec_itv05_tab2');
+		$('.rec_mod_interview.sty05 .iv_wrap').addClass('tab_content');
+		$('.rec_mod_interview.sty05 .qa_mng').attr('id', 'rec_itv05_tab1');
+		$('.rec_mod_interview.sty05 .qa_emp').attr('id', 'rec_itv05_tab2');
 
 
 		// 탭 컨텐츠 숨기기
