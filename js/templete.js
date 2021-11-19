@@ -25,16 +25,26 @@ Contents = function(item) {
 				contents += "</div>\n";
 		break;
 		case "mod_header02":
-			var contents = "";
-				contents += "<div class='module-wrap edit_wrap bg_color com_mod_header sty02'>\n";
-				contents += "<div class='cnt-container header clearfix'>\n";
-				contents += "<div class='biz_cate cate01 green'><i></i>Consulting</div>\n";
-				contents += "<div class='logo'><img src='/images/logo_smaple01.png' alt='' /></div>\n";
-				contents += "<div class='info fc_000'>\n";
-				contents += "<dl class='clearfix'><dt>업종</dt><dd>사회적기업</dd><dt>대표자</dt><dd>제윤경</dd><dt>기업형태</dt><dd>사회적기업</dd></dl>\n";
-				contents += "<div class='action fc_000 clearfix'><a href='javascript:void(0);' class='on'>관심기업 등록<i>♥</i></a><a href='javascript:void(0);'>공고 바로가기<i>→</i></a></div>\n";
-				contents += "</div>\n</div>\n";
-				contents += "</div>\n";
+			var contents = '<div class="module-wrap edit_wrap com_mod_header sty02">\n'
+						 + '	<div class="cnt-container header clearfix">\n'
+						 + '		<div id="iconArea"><div class="biz_cate cate22 green"><i></i></div></div>\n'
+						 + '		<div class="logo imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>\n'
+						 + '		<div class="info fc_000">\n'
+						 + '			<dl class="clearfix">\n'
+						 + '				<dt>업종</dt>\n'
+						 + '				<dd class="incCate">사회적기업</dd>\n'
+						 + '				<dt>대표자</dt>\n'
+						 + '				<dd class="ceo">제윤경</dd>\n'
+						 + '				<dt>기업형태</dt>\n'
+						 + '				<dd class="comForm">사회적기업</dd>\n'
+						 + '			</dl>\n'
+						 + '			<div class="action fc_000 clearfix">\n'
+						 + '				<a href="javascript:void(0);" id="scrapYn" onclick="onCntNew();">관심기업 등록<i>♥</i></a>\n'
+						 + '				<a href="javascript:void(0);" id="copyUrlNew" onclick="copyUrlNew();" data-clipboard-action="copy">공고 바로가기<i>→</i></a>\n'
+						 + '			</div>\n'
+						 + '		</div>\n'
+						 + '	</div>\n'
+						 + '</div>\n';
 		break;
 
 		// Anchor Tab
@@ -51,58 +61,99 @@ Contents = function(item) {
 				contents += "</div>\n</div>\n";
 		break;
 		case "mod_anc_tab02":
-			var contents = "<div class='module-wrap edit_wrap com_mod_anchor sty02'>\n";
-				contents += "<div class='cnt-container fc_fff'>\n";
-				contents += "<ul>\n"
-				contents += "<li><a href='javascript:void(0);' class='active'>채용공고</a></li>\n";
-				contents += "<li><a href='javascript:void(0);'>취업전략</a></li>\n";
-				contents += "<li><a href='javascript:void(0);'>기업개요</a></li>\n";
-				contents += "<li><a href='javascript:void(0);'>현직자 리뷰</a></li>\n";
-				contents += "<li> <a href='javascript:void(0);'>기업 뉴스</a></li>\n";
-				contents += "</ul>\n";
-				contents += "</div>\n</div>\n";
+			var contents = '<div class="module-wrap edit_wrap com_mod_anchor sty02">\n'
+						 + '	<div class="cnt-container fc_fff">\n'
+						 + '		<ul>\n'
+						 + '			<li><a href="#summary" class="active">기업개요</a></li>\n'
+						 + '			<li><a href="#product">제품소개</a></li>\n'
+						 + '			<li><a href="#recruit">채용공고</a></li>\n'
+						 + '			<li> <a href="#news">기업뉴스</a></li>\n'
+						 + '		</ul>\n'
+						 + '		<div class="siteGo">사이트</div>\n'
+						 + '	</div>\n'
+						 + '</div>\n';
 		break;
 
 		// 공통
 		case "mod_com_recruit":
-			var contents = '<div class="module-wrap edit_wrap com_mod_recruit sty01">\n';
-				contents += '<div class="bg_bot"></div>\n';
-				contents += '<div class="cnt-container">\n';
-				contents += '<h3>채용공고</h3>\n';
-				contents += '<table class="tb_recruit" summary="채용공고">\n';
-				contents += '<thead>\n<tr>\n<th>접수기간</th><th>채용제목</th><th>고용형태</th>\n</tr>\n</thead>\n';
-				contents += '<tbody>\n';
-				contents += '<tr>\n<td>2021.05.31 까지</td><td>풀스택 개발자 채용/경력채용/급여250만원</td><td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>\n</tr>';
-				contents += '<tr>\n<td>상시채용</td><td>생산직 지원 채용/경력 무관/급여220만원</td><td>계약직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>\n</tr>';
-				contents += '<tr>\n<td>상시채용</td><td>경영지원팀 직원 채용/경력 무관/급여220만원</td><td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>\n</tr>';
-				contents += '</tbody>\n';
-				contents += '</table>\n';
-				contents += '<div class="box_recruit">\n';
-				contents += '<h4>경기도일자리재단 신입 직원 채용<span class="period">상시채용</span></h4>\n<hr/>\n';
-				contents += '<div class="detail_wrap">\n';
-				contents += '<div><h5>지원자격</h5><dl class="clearfix"><dt>경력</dt><dd>경력무관</dd><dt>학력</dt><dd>고졸이상</dd><dt>우대</dt><dd>인근거주자, 1종 보통운전면허, 회계실무자격증 FAT1급 이상</dd></dl></div>\n';
-				contents += '<div><h5>근무조건</h5><dl class="clearfix"><dt>고용형태</dt><dd>정규직</dd><dt>급여</dt><dd>220만원 이상</dd><dt>근무시간</dt><dd>주5일(월~금) 08:30~17:30</dd></dl></div>';
-				contents += '</div>\n';
-				contents += '</div>\n';
-				contents += '</div>\n</div>\n';
+			var contents = '<a name="recruit"></a>\n'
+						 + '<div class="module-wrap edit_wrap com_mod_recruit sty01" id="recruitArea">\n'
+						 + '	<div class="bg_bot"></div>\n'
+						 + '	<div class="cnt-container" id="recruitContainer">\n'
+						 + '		<h3>채용공고</h3>\n'
+						 + '		<table class="tb_recruit otherRecruit" summary="채용공고" >\n'
+						 + '			<thead>\n'
+						 + '			<tr>\n'
+						 + '				<th>접수기간</th>\n'
+						 + '				<th>채용제목</th>\n'
+						 + '				<th>고용형태</th>\n'
+						 + '			</tr>\n'
+						 + '			</thead>\n'
+						 + '			<tbody id="otherRecruitList">\n'
+						 + '				<tr>\n<td>2021.05.31 까지</td><td>풀스택 개발자 채용/경력채용/급여250만원</td><td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>\n</tr>\n'
+						 + '				<tr>\n<td>상시채용</td><td>생산직 지원 채용/경력 무관/급여220만원</td><td>계약직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>\n</tr>\n'
+						 + '			</tbody>\n'
+						 + '		</table>\n'
+						 + '		<div class="box_recruit_wrap swiper">\n'
+						 + '			<div class="swiper-wrapper">\n'
+						 + '				<div class="box_recruit swiper-slide">\n'
+						 + '					<h4>\n'
+						 + '						<a href="javascript:;" >채용공고명</a>\n'
+						 + '						<span class="period">오늘까지</span>\n'
+						 + '					</h4>\n'
+						 + '					<hr/>\n'
+						 + '					<div class="detail_wrap">\n'
+						 + '						<div>\n'
+						 + '							<h5>지원자격</h5>\n'
+						 + '							<dl class="clearfix">\n'
+						 + '								<dt>경력</dt>\n'
+						 + '								<dd>경력무관</dd>\n'
+						 + '								<dt>학력</dt>\n'
+						 + '								<dd>고졸이상</dd>\n'
+						 + '								<dt>우대사항</dt>\n'
+						 + '								<dd>인근거주자, 1종보통운전면허</dd>\n'
+						 + '							</dl>\n'
+						 + '						</div>\n'
+						 + '						<div>\n'
+						 + '							<h5>근무조건</h5>\n'
+						 + '							<dl class="clearfix">\n'
+						 + '								<dt>고용형태</dt>\n'
+						 + '								<dd>정규직</dd>\n'
+						 + '								<dt>급여</dt>\n'
+						 + '								<dd>220만원 이상</dd>\n'
+						 + '								<dt>근무지역</dt>\n'
+						 + '								<dd>경기도 전체</dd>\n'
+						 + '							</dl>\n'
+						 + '						</div>\n'
+						 + '					</div>\n'
+						 + '				</div>\n'
+						 + '			</div>\n'
+						 + '			<div class="swiper-pagination"></div>\n'
+						 + '		</div>\n'
+						 + '	</div>\n'
+						 + '</div>\n';
 		break;
 		case "mod_com_news":
-			var contents = '<div class="module-wrap edit_wrap bg_color com_mod_news sty01">\n';
-				contents += '<div class="cnt-container">\n'
-				contents += '<div class="news_row">\n';
-				contents += '<a href="javascript:void(0);" class="tit">경기도 일자리재단 \'2021년 경기 여성 창업리그\' 개최</a>\n';
-				contents += '<div class="desc">경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해 \'2021년 경기 여성 창업리그\'를 개최한다고 12일 밝혔다. \'경기 여성 창업리그\'는 경기도가 도내 여성창업 친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...</div>\n';
-				contents += '<div class="reg_date">2021.05.15</div>\n';
-				contents += '</div>\n';
-				contents += '<div class="news_row">\n';
-				contents += '<a href="javascript:void(0);" class="tit">경기도 일자리재단 \'2021년 경기 여성 창업리그\' 개최</a>\n';
-				contents += '<div class="desc">경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해 \'2021년 경기 여성 창업리그\'를 개최한다고 12일 밝혔다. \'경기 여성 창업리그\'는 경기도가 도내 여성창업 친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...</div>\n';
-				contents += '<div class="reg_date">2021.05.15</div>\n';
-				contents += '</div>\n';
-				contents += '<div class="paging_wrap">\n';
-				contents += '<a href="javascript:void(0);" class="prev disable">이전</a><a href="javascript:void(0);" class="current">1</a><a href="javascript:void(0);">2</a><a href="javascript:void(0);">3</a><a href="javascript:void(0);">4</a><a href="javascript:void(0);">5</a><a href="javascript:void(0);" class="next">다음</a>\n';
-				contents += '</div>\n';
-				contents += '</div>\n</div>\n';
+			var contents = '<a name="news"></a>\n'
+						 + '<div class="module-wrap edit_wrap com_mod_news sty01">\n'
+						 + '	<div class="cnt-container">\n'
+						 + '		<div id="news_wrap">\n'
+						 + '			<div class="news_row">\n'
+						 + '				<a href="javascript:vodi(0);" target="_blank" class="tit">뉴스 제목</a>\n'
+						 + '				<div class="desc">뉴스 내용 뉴스 내용 뉴스 내용 뉴스 내용 뉴스 내용</div>\n'
+						 + '				<div class="reg_date">2021.01.01</div>\n'
+						 + '			</div>\n'
+						 + '			<div class="news_row">\n'
+						 + '				<a href="javascript:vodi(0);" target="_blank" class="tit">뉴스 제목</a>\n'
+						 + '				<div class="desc">뉴스 내용 뉴스 내용 뉴스 내용 뉴스 내용 뉴스 내용</div>\n'
+						 + '				<div class="reg_date">2021.01.01</div>\n'
+						 + '			</div>\n'
+						 + '		</div>\n'
+						 + '		<div id="paging_wrap" class="paging_wrap">\n'
+						 + '			<a href="javascript:void(0);" class="prev disable">이전</a><a href="javascript:void(0);" class="current">1</a><a href="javascript:void(0);">2</a><a href="javascript:void(0);">3</a><a href="javascript:void(0);">4</a><a href="javascript:void(0);">5</a><a href="javascript:void(0);" class="next">다음</a>\n'
+						 + '		</div>\n'
+						 + '	</div>\n'
+						 + '</div>\n';
 		break;
 		case "mod_com_map":
 			var contents = '<div class="module-wrap edit_wrap com_mod_map">\n';	

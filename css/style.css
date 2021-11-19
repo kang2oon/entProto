@@ -31,8 +31,9 @@ div.droparea{width:100%;min-height:100px;}
 	/* div.droparea > div{cursor:move;} */
 ul.drag-list{position:relative;cursor:move;}
 	ul.drag-list li{list-style:none;margin-bottom:10px;text-align:center;line-height:1;}
-	ul.drag-list li span{display:block;color:#fff;font-size:11px;margin:5px 0 15px;}
+	ul.drag-list li span{display:block;color:#fff;font-size:12px;margin:5px 0 15px;}
 #templete{text-align:left;font-family:'Noto Sans KR', sans-serif;}
+#templete h3{font-size:15px;}
 .edit_wrap{cursor:move;position:relative;}
 .obj_edit{cursor:pointer;position:relative;}
 .wrap-hover{position:absolute;top:0;right:0;text-align:center;font-size:24px;line-height:36px;}

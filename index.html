@@ -41,7 +41,7 @@
 					<a href="#load" name="modal" class="btn btn-default">Load</a>
 					<a href="javascript:reset();" class="btn btn-default">Reset</a>
 					<a href="#preview" name="modal" class="btn btn-special">Preview</a>
-					<!--a href="javascript:save();" class="btn btn-special">Save</a-->	
+					<!-- <a href="javascript:save();" class="btn btn-special">Save</a>	 -->
 				</li>
 			</ul>
 		</div>
@@ -56,10 +56,10 @@
 			<h3>공통 모듈</h3>
 			<div>
 				<ul class="drag-list">
-					<li class="item" item="mod_header01"><img src="/images/mod_header01.png" alt="" /><span>헤더 스타일 1</span></li>
-					<li class="item" item="mod_header02"><img src="/images/mod_header02.png" alt="" /><span>헤더 스타일 2</span></li>
-					<li class="item" item="mod_anc_tab01"><img src="/images/mod_anc_tab01.png" alt="" /><span>탭 스타일 1</span></li>
-					<li class="item" item="mod_anc_tab02"><img src="/images/mod_anc_tab02.png" alt="" /><span>탭 스타일 2</span></li>
+					<!-- <li class="item" item="mod_header01"><img src="/images/mod_header01.png" alt="" /><span>헤더 스타일 1</span></li> -->
+					<li class="item" item="mod_header02"><img src="/images/mod_header02.png" alt="" /><span>헤더</span></li>
+					<!-- <li class="item" item="mod_anc_tab01"><img src="/images/mod_anc_tab01.png" alt="" /><span>탭 스타일 1</span></li> -->
+					<li class="item" item="mod_anc_tab02"><img src="/images/mod_anc_tab02.png" alt="" /><span>앱커 탭</span></li>
 					<li class="item" item="mod_com_recruit"><img src="/images/mod_com_recruit.png" alt="" /><span>채용공고</span></li>
 					<li class="item" item="mod_com_news"><img src="/images/mod_com_news.png" alt="" /><span>기업 뉴스</span></li>
 					<li class="item" item="mod_com_map"><img src="/images/mod_com_map.png" alt="" /><span>지도</span></li>
@@ -182,7 +182,8 @@
 
 	<div id="preview" class="window">
 		<h2>Code Preview <div class="close_modal"><i class="fa fa-times"></i></div></h2>
-		<pre><code class="language-markup"></code></pre>
+		<pre><code id="code_export" class="language-markup"></code></pre>
+		<a href="javascript:downInner('preview', 'code_export');" class="btn btn-special">다운로드</a>	
 		<a href="javascript:void(0);" class="btn btn-default close_modal mgbotmid">닫기</a>
 	</div>
 	
