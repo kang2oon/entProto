@@ -1150,6 +1150,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .mag_mod_interview.sty04{background: #0d7ae9;padding: 8.0rem 0}
 .mag_mod_interview.sty04 .iv_wrap{background: #fff;border-radius: 20px;margin-bottom: 4rem;padding: 4rem;display: flex;justify-content: space-between}
 .mag_mod_interview.sty04 .iv_wrap .swiper {overflow: hidden;position: relative;width: calc(100% - 250px);}
+.mag_mod_interview.sty04 .iv_wrap .swiper-wrapper{padding-bottom: 50px}
 .mag_mod_interview.sty04 .iv_wrap:last-child{margin-bottom: 0}
 .mag_mod_interview.sty04 .iv_wrap .q{font-weight: 500;font-size: 2.0rem;position: relative;padding-left: 25px;margin-bottom: 1.0rem}
 .mag_mod_interview.sty04 .iv_wrap .q:before{content: 'Q.';display: block;color: #4525ec;position: absolute;left: 0;top: 0}
