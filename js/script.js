@@ -38,7 +38,7 @@ $(document).ready(function(){
 		receive : function(event, ui) {
 			var item = $(this).find('li.item');
 			var itemType = item.attr('item');
-			console.log(itemType);
+			//console.log(itemType);
 			item.replaceWith(Contents(jQuery(ui.item[0]).attr('item')));
 			if (itemType == 'mod_com_map'){
 				mapAppend();
@@ -103,7 +103,43 @@ $(document).ready(function() {
 });
 // Code Preview
 $('a[href=#preview]').click(function(){
-	var Data = $('.droparea').html();
+	var Data = '';
+		Data +=	'<html lang="ko">\n'
+			 +	'<head>\n'
+			 +	'	<meta charset="utf-8">\n'
+			 +	'	<meta http-equiv="X-UA-Compatible" content="IE=edge">\n'
+			 +	'	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">\n'
+			 +	'	<meta name="author" content="kang2oon">\n'
+			 +	'	<title class="comName">기업명</title>\n'
+			 +	'	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">\n'
+			 +	'	<link href="./css/pt-common.css" rel="stylesheet">\n'
+			 +	'	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">\n'
+			 +	'	<style>\n'
+			 +	'	/* 신규타입 상단처리 */\n'
+			 +	'	#main_banner, .company_info_outer, .wantCompany_ct_box, .top_menu_newB{display:none;}\n'
+			 +	'	.wantCompany_body{padding:0;}\n'
+			 +	'	#companyInfoWrap{padding:0 0 40px;}\n\n'
+			 +  '   /* 기업별 스타일을 추가해주세요 */\n\n'
+			 +  '   </style>\n'
+			 +  '   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>\n'
+			 +  '   <script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>\n'
+			 +  '   <script src="https://cdn.jsdelivr.net/npm/swiper@5.4.5/js/swiper.min.js"></script>\n'
+			 +  '   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script>\n'
+			 +  '   <script src="/module/jsontohtml.js"></script>\n'
+			 +  '   <script src="/module/map.js"></script>\n'
+			 +  '   <script src="/js/jPages.min.js"></script>\n'
+			 +  '   <script src="/js/pt-common.js"></script>\n'
+			 +  '</head>\n'
+			 +  '<body>\n'
+			 +  '	<!-- 모듈 추가 및 수정 -->\n\n';
+		Data += $('.droparea').html();
+		Data += '<script>\n'
+		     +  '	//레이아웃 작업시 필요한 스크립트 추가\n'
+			 +  '	$(document).ready(function(){\n\n'
+			 +  '	});\n'
+			 +  '</script>\n'
+			 +  '</body>\n'
+		     +  '</html>';
 	$('#preview pre code').text(Data);
 });
 // Contents Reset
@@ -120,8 +156,21 @@ function save(){
 	var Data = $('.wrapper').html();
 	$("#export-textarea").val(Data);
 	$("#export-form").submit();
-	$("#export-textarea").val(' ');
+	$("#export-textarea").val('');
 }
+
+function downInner(filename, elId, mineType){
+	var elHtml = document.getElementById(elId).innerHTML;
+	elHtml = elHtml.replaceAll("&lt;","<").replaceAll("&gt;",">");
+	//console.log(elHtml);
+	var link = document.createElement('a');
+	mineType = mineType || 'text/html';
+
+	link.setAttribute('download', filename);
+	link.setAttribute('href', 'data:'+ mineType +';charset=utf-8,'+ encodeURIComponent(elHtml));
+	link.click();
+}
+
 //$("#btn_group").buttonset();
 // Edit Wrap
 $(document).on("mouseenter", ".edit_wrap", function(){
