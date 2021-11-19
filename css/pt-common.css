@@ -1368,7 +1368,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_interview.sty05 .rec_itv05_tab{padding: 8.0rem 0;background: url(../images/rec_interview05_bg.png) no-repeat top #4aadf5;background-size: contain} 
 .rec_mod_interview.sty05 .rec_itv05_tab h3{color: #fff;font-size: 15rem;line-height: 1}
 .rec_mod_interview.sty05 .rec_itv05_wrap {margin-top: 4rem}
-.rec_mod_interview.sty05 .rec_itv05_wrap .photo{display: none}
+.rec_mod_interview.sty05 .rec_itv05_wrap .photo{display: none !important}
 .rec_mod_interview.sty05 .rec_itv05_wrap .tabs {display: flex;}
 .rec_mod_interview.sty05 .rec_itv05_wrap .tabs li{font-size: 2.4rem;font-weight: bold;padding: 1rem 3rem;border:1px solid #fff}
 .rec_mod_interview.sty05 .rec_itv05_wrap .tabs li a{display: block;color: #fff;}
