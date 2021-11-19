@@ -1786,12 +1786,12 @@
 
 		// 첫번째 탭콘텐츠 보이기
 		$('.rec_mod_interview.sty05 .tab_container').each(function() {
-			$(this).find('.tabs').children("li:first").addClass("active"); //Activate first tab
+			$(this).find('.tab').children("li:first").addClass("active"); //Activate first tab
 			$(this).children(".tab_content").first().show();
 		});
 
 		//탭메뉴 클릭 이벤트
-		$(".rec_mod_interview.sty05 .tab_container .tabs li a").click(function() {
+		$(".rec_mod_interview.sty05 .tab_container .tab li a").click(function() {
 			//탭 안에 슬라이드 있을 때
 			var tab_id = $(this).attr('data-tab');
 			$(this).parent().siblings().removeClass("active");
