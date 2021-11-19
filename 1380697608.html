@@ -8,8 +8,23 @@
 	<title class="comName">기업명</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">
 	<link href="./css/pt-common.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
 	<style>
+			/* 신규타입 상단처리 */
+		#main_banner,
+		.company_info_outer,
+		.wantCompany_ct_box {
+			display: none;
+		}
+
+		.wantCompany_body {
+			padding: 0;
+		}
+
+		#companyInfoWrap {
+			padding: 0 0 40px;
+		}
+
 		.rec_mod_strategy.sty01 .navy_bg {background: url(/images/tongyang_strategy_bg.png) no-repeat top;position: relative;}
 		.rec_mod_strategy.sty01 .navy_bg:after {content: '';display: block;background: url(/images/tongyang_strategy_img.png) no-repeat;width: 817px;height: 593px;position: absolute;right: 30px;bottom: 0}
 		.rec_mod_strategy.sty01 .qnum {color: #ff6d56 !important}
@@ -55,17 +70,9 @@
 		.rec_mod_swot.sty04 .swotT .tit {color: #1d9f6e}
 		.rec_mod_product.sty01 h3 {color: #fff}
 		.summary_bg {background: url(/images/tongyang_summary_bg.png) no-repeat top -200px left}
-		.rec_mod_finance.sty02{}
 		.rec_mod_finance.sty02 .cnt-container:after{content: '';display: block;background: url(../images/rec_finance02_img01.png) no-repeat;width: 452px;height: 513px;position: absolute;top: -400px;left: 0}
 		.rec_mod_finance.sty02 .white_box_sdw{position: relative;z-index: 5}
 		.rec_mod_percent.sty01 {margin-top: 190px}
-		.rec_mod_finance.sty02 .chart_cont {background: #365696;}
-		.rec_mod_finance.sty02 .chart_cont li em {color: #fff}
-		.rec_mod_finance.sty02 .chart_cont li p {color: #fff}
-		.rec_mod_finance.sty02 .chart_cont li:last-child p {color: #ffd014}
-		.rec_mod_finance.sty02 #graph_fiSales .bb-shape:last-child {fill: #ff6d56 !important}
-		.rec_mod_finance.sty02 .area_graph .wrap_graph:last-child .inner_graph {background: #ff6d56}
-		.rec_mod_finance .local_rank_wrap table .this_company ul {background: #365696;color: #fff;border: 3px solid #e76a5e}
 		.rec_mod_vision.sty01 {margin-top: 300px}
 		.rec_mod_vision.sty01 p {font-size: 2.4rem;}
 		.rec_mod_vision.sty01 p .orange {color: #ff725e}
@@ -77,7 +84,9 @@
 		.rec_mod_welfare .welfare_img .item3 {background: url(/images/tongyang_welfare_img03.png) no-repeat center;}
 		.rec_mod_welfare .welfare_img .item4 {background: url(/images/tongyang_welfare_img04.png) no-repeat center;}
 		.rec_mod_welfare .qm_btn {background: transparent;color: #fff;border: 1px solid #fff}
+		.rec_mod_strategy.sty01 .spec.in_img .cont_box:after{display: none}
 		.rec_mod_interview .swiper-container {color: #fff;}
+		.rec_mod_interview  .swiper-wrapper{}
 		.rec_mod_interview h3 span {color: #ffd014}
 		.rec_mod_interview .qa_ceo .swiper-button-next:after {background: url(/images/slider12_next.png) no-repeat right;width: 35px;height: 55px;text-indent: -9999px;}
 		.rec_mod_interview .qa_ceo .swiper-button-prev:after {background: url(/images/slider12_prev.png) no-repeat left;width: 35px;height: 55px;text-indent: -9999px;}
@@ -90,7 +99,7 @@
 		.qa_ceo {background: url(/images/tongyang_ceo_bg.png) no-repeat top left;padding: 8.0rem 0}
 		.qa_ceo h3 {text-align: center;margin-bottom: 4.0rem}
 		.qa_mng {background: url(/images/tongyang_recruiter_bg.png) no-repeat right;padding: 10.0rem 0;background-size: cover}
-		.qa_mng .cnt-container {position: relative}
+		.qa_mng .cnt-container {position: relative;min-height: 500px}
 		.qa_mng h3,
 		.qa_emp h3,
 		.rec_mod_review h3 {color: #fff}
@@ -98,13 +107,15 @@
 		.qa_emp h3:after {content: 'Interview';display: inline-block;color: #fff;font-style: italic;opacity: 0.4;font-weight: 100}
 		.qa_emp {background: url(/images/tongyang_worker_bg.png) no-repeat;padding: 10.0rem 0;background-size: cover}
 		.qa_emp .cnt-container {position: relative}
+		.rec_mod_interview .swiper {overflow: hidden}
 		.rec_mod_interview.sty02 .qa_mng img {bottom: -100px}
 		.rec_mod_interview.sty02 .qa_emp img {bottom: -100px}
 		.rec_mod_review.sty01 {background: url(/images/tongyang_review_bg.png) no-repeat;background-size: cover;}
 		.rec_mod_review.sty01 h3 {font-size: 3.4rem;margin-bottom: 4.0rem}
 		.rec_mod_review h3 span {color: #ffd014}
 		.rec_mod_welfare.sty02 .welfare_review_wrap {margin-top: 8.0rem;}
-
+	
+		
 		@media all and (max-width:1400px) {
 			.rec_mod_strategy.sty01 .navy_bg:after {display: none;}
 			.rec_mod_strategy.sty01 .spec .cont_box {width: 100%;}
@@ -173,11 +184,10 @@
 	<div class="module-wrap edit_wrap bg_color com_mod_anchor sty01">
 		<div class="cnt-container fc_919191">
 			<ul>
-				<li><a href="#target01" class="active">채용공고</a></li>
-				<li><a href="#target02">취업전략</a></li>
-				<li><a href="#target03">기업개요</a></li>
-				<li><a href="#target04">현직자 리뷰</a></li>
-				<li> <a href="#target05">기업 뉴스</a></li>
+				<li><a href="#recruit" class="active">채용공고</a></li>
+				<li><a href="#strategy">취업전략</a></li>
+				<li><a href="#interview">현직자 리뷰</a></li>
+				<li> <a href="#news">기업 뉴스</a></li>
 			</ul>
 		</div>
 	</div>
@@ -195,8 +205,8 @@
 				</li>
 				<li>
 					<div class="ico"></div>
-					<div class="cnt"><span class="comBuildDate">-</span>년</div>
-					설립년도
+					<div class="cnt"><span class="comBuildDate">-</span></div>
+					설립일
 				</li>
 				<li>
 					<div class="ico"></div>
@@ -226,35 +236,34 @@
 	</div>
 	<!--//채용공고형 헤더영역 style01-->
 
-	<!--공통 채용공고 style01-->
-	<div class="module-wrap com_mod_recruit sty02 target" id="target01">
+	<a name="recruit"></a>
+	<div class="module-wrap com_mod_recruit sty02">
 		<div class="bg_bot"></div>
 		<div class="cnt-container">
 			<h3>채용공고</h3>
-			<table class="tb_recruit" summary="채용공고">
-				<caption>채용공고 리스트</caption>
+			<table class="tb_recruit otherRecruit" summary="채용공고">
 				<thead>
 					<tr>
-						<th scope="col">접수기간</th>
-						<th scope="col">채용제목</th>
-						<th scope="col">고용형태</th>
+						<th>접수기간</th>
+						<th>채용제목</th>
+						<th>고용형태</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody id="otherRecruitList">
 					<tr>
-						<td class="date">2021.05.31 까지</td>
-						<td class="tit">풀스택 개발자 채용/경력채용/급여250만원</td>
-						<td class="support">정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+						<td>2021.05.31 까지</td>
+						<td>풀스택 개발자 채용/경력채용/급여250만원</td>
+						<td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
 					</tr>
 					<tr>
-						<td class="date">상시채용</td>
-						<td class="tit">생산직 지원 채용/경력 무관/급여220만원</td>
-						<td class="support">계약직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+						<td>상시채용</td>
+						<td>생산직 지원 채용/경력 무관/급여220만원</td>
+						<td>계약직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
 					</tr>
 					<tr>
-						<td class="date">상시채용</td>
-						<td class="tit">경영지원팀 직원 채용/경력 무관/급여220만경영지원팀 직원 채용/경력 무관/급여220만경영지원팀 직원 채용/경력 무관/급여</td>
-						<td class="support">정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+						<td>상시채용</td>
+						<td>경영지원팀 직원 채용/경력 무관/급여220만원</td>
+						<td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -287,77 +296,44 @@
 				</div>
 			</div>
 		</div>
-
-
-
-		<!--채용절차-->
-		<div class="cnt-container">
-			<div class="job_step">
-				<div>
-					<span class="ico ico01"></span>
-					<p>서류전형</p>
-				</div>
-				<em class="arrow">다음절차</em>
-				<div>
-					<span class="ico ico02"></span>
-					<p>적성검사
-					</p>
-				</div>
-				<em class="arrow">다음절차</em>
-				<div>
-					<span class="ico ico03"></span>
-					<p>실무면접</p>
-				</div>
-				<em class="arrow">다음절차</em>
-				<div>
-					<span class="ico ico04"></span>
-					<p>임원면접</p>
-				</div>
-			</div>
-
-
-			<div class="btn_wrap">
-				<button type="button" class="qm_btn">관심기업 등록하기
-					<span>관심기업으로 등록하면 채용 공고 마감일을 알람으로 받아보실 수 있습니다.</span>
-					<a href="javascript:vold(0)" title="도움말">도움말</a>
-				</button>
-			</div>
-		</div>
 	</div>
-	<!--//채용공고 상세-->
-
-	<!--공통 채용공고 style01-->
-
-	<!--채용공고형 취업전략 style01-->
-	<div class="module-wrap rec_mod_strategy sty01 target" id="target02">
+	
+	<a name="strategy"></a>
+	<div class="module-wrap rec_mod_strategy sty01">
 		<div class="navy_bg">
 			<!--자소서 문항별 가이드-->
-			<div class="cnt-container">
-				<h3>
-					자소서 문항별 작성 가이드
-				</h3>
-				<div class="self_intro_wrap section02">
-					<div class="si_area">
-						<strong class="qnum">Q1.</strong>
-						<p class="tit">성장배경에 대해서 기술해주세요.</p>
-						<p class="text">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
-							현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
-					</div>
-					<div class="si_area">
-						<strong class="qnum">Q2.</strong>
-						<p class="tit">직무 관련 본인의 장점
-						</p>
-						<p class="text">지원한 직무 관련하여 본인의 장점을 어떤식으로 발휘할 수 있는지에 대해서 기술해주세요.
-						</p>
-					</div>
+			<div class="guide">
+				<div class="cnt-container">
+					<h3>
+						자소서 문항별 작성 가이드
+					</h3>
+					<div class="white_box">
+						<div class="guide_wrap">
+							<!-- 데이터 자동삽입 -->
+							<div>
+								<div class="q">성장배경에 대해서 기술해주세요.</div>
+								<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+									현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+								</div>
+							</div>
+							<div>
+								<div class="q">성장배경에 대해서 기술해주세요.</div>
+								<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+									현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+								</div>
+							</div>
+							<!-- //데이터 자동삽입 -->
+						</div>
 
-					<div class="recent_question">
-						<div class="rq_cont">
-							<p class="rq_tit">최근 면접 질문</p>
-							<div class="rq_text">
-								<p>주변사람들에게 어떤식의 <strong>평판</strong>을 받고 있습니까?</p>
-								<p>같이 <strong>일하기 힘든 사람</strong>은 어떤 유형의 사람입니까?</p>
-
+						<div class="recent_question">
+							<div class="rq_cont">
+								<p class="rq_tit">최근 면접 질문</p>
+								<div class="rq_text">
+									<!-- 데이터 자동삽입 -->
+									<p>주변사람들에게 어떤식의 <strong>평판</strong>을 받고 있습니까?</p>
+									<p>같이 <strong>일하기 힘든 사람</strong>은 어떤 유형의 사람입니까?</p>
+									<!-- //데이터 자동삽입 -->
+								</div>
 							</div>
 						</div>
 					</div>
@@ -372,19 +348,25 @@
 						가산점 요인
 					</h3>
 					<div class="cont_box">
-						<ul>
+						<ul class="add_point_wrap">
+							<!-- 데이터 자동 삽입 -->
 							<li>
-								<strong>자격증</strong>
-								<p>대형운전면허, 지게차 면허, 전기공사업 면허</p>
+								<strong class="tit">자격증</strong>
+								<p class="desc">대형운전면허, 지게차 면허, 전기공사업 면허</p>
 							</li>
 							<li>
-								<strong>봉사활동</strong>
-								<p>자원봉사 포털 1365 기준 봉사활동 시간</p>
+								<strong class="tit">봉사활동</strong>
+								<p class="desc">자원봉사 포털 1365 기준 봉사활동 시간</p>
 							</li>
 							<li>
-								<strong>어학점수</strong>
-								<p>토플 80점 이상</p>
+								<strong class="tit">봉사활동</strong>
+								<p class="desc">자원봉사 포털 1365 기준 봉사활동 시간</p>
 							</li>
+							<li>
+								<strong class="tit">봉사활동</strong>
+								<p class="desc">자원봉사 포털 1365 기준 봉사활동 시간</p>
+							</li>
+							<!-- //데이터 자동 삽입 -->
 						</ul>
 					</div>
 				</div>
@@ -396,65 +378,66 @@
 				<div class="cnt-container">
 					<h3>최근 입사자 합격 스펙</h3>
 					<div class="cont_box">
-						<ul>
+						<ul class="spec_wrap">
+							<!-- 데이터 자동 삽입-->
 							<li>
-								<strong>학점</strong>
-								<p>3.7</p>
+								<strong class="tit">학점</strong>
+								<p class="desc">3.7</p>
 							</li>
 							<li>
-								<strong>토플</strong>
-								<p>110점</p>
+								<strong class="tit">학점</strong>
+								<p class="desc">3.7</p>
 							</li>
 							<li>
-								<strong>컴퓨터 관련 자격증</strong>
-								<p>1개 이상</p>
+								<strong class="tit">학점</strong>
+								<p class="desc">3.7</p>
 							</li>
-							<li>
-								<strong>외국어</strong>
-								<p>1개 이상</p>
-							</li>
+							<!-- //데이터 자동 삽입-->
 						</ul>
 					</div>
-				</div>
-			</div>
-			<!--//최근 입사자 합격 스펙-->
 
+				</div>
+				<!--//최근 입사자 합격 스펙-->
+
+
+			</div>
 
 		</div>
 		<!--//navy bg-->
 
-
-		<!--blue_bg 면접 꿀팁-->
-
 		<div class="interview_tip">
 			<div class="cnt-container">
 				<h3>채용담당자가 직접 알려주는 면접 꿀팁!</h3>
-				<div class="it_area_wrap">
+				<div class="interview_tip_wrap">
+					<!-- 데이터 자동 삽입 -->
 					<div class="it_area">
-						<strong class="qnum">Q1.</strong>
-						<p class="tit">인사담당자로서 면접 팁을 공유해주세요~</p>
-						<p class="text"><b>회사에 대한 공부가 가장 중요합니다.</b> 그 회사에서 추진하고 있는 사업이 무엇인지, 앞으로의 방향, 회사에서 사용하는 용어나 부서까지 알고 있다면, 면접관들에게 좋은 이미지를 심어줄 수 있습니다. 은행, 증권사를 보고 대략적으로 준비하는 것은 분명 차이가 있습니다.
+						<p class="q">인사담당자로서 면접 팁을 공유해주세요~</p>
+						<p class="a"><b>회사에 대한 공부가 가장 중요합니다.</b> 그 회사에서 추진하고 있는 사업이 무엇인지, 앞으로의 방향, 회사에서 사용하는 용어나 부서까지 알고 있다면, 면접관들에게 좋은 이미지를 심어줄 수 있습니다. 은행, 증권사를 보고 대략적으로 준비하는 것은 분명 차이가 있습니다.
 							그렇기 때문에 회사에 대해 공부를 하고, 그 용어나 개념을 일부 활용할 줄 안다면 자기소개서나 면접에서 다른 지원자와 차별이 될 것입니다.</p>
 					</div>
 					<div class="it_area">
-						<strong class="qnum">Q2.</strong>
-						<p class="tit">면접이라고 하면 아무래도 복장 부분에 많은 신경이 쓰이게 마련인데요~<br />
+						<p class="q">면접이라고 하면 아무래도 복장 부분에 많은 신경이 쓰이게 마련인데요~<br />
 							인사담당자님 눈에 가장 매력적인 지원자는 어떤 지원자인가요??</p>
-						<p class="text"><b>본인의 업무에 맞는 복장으로 준비해오시면 됩니다.</b> 면접전에 복장에 대한 공지가 특별히 없는 경우엔 출근을 하게 된다면 어떤 복장으로 출근을 할것인지 생각해보고 편하게 복장을 준비하시면 됩니다.</p>
+						<p class="a"><b>본인의 업무에 맞는 복장으로 준비해오시면 됩니다.</b> 면접전에 복장에 대한 공지가 특별히 없는 경우엔 출근을 하게 된다면 어떤 복장으로 출근을 할것인지 생각해보고 편하게 복장을 준비하시면 됩니다.</p>
 					</div>
+					<!-- //데이터 자동 삽입 -->
 				</div>
-				<div class="btn_wrap">
-					<button type="button" class="qm_btn">관심기업 등록하기
-						<span>관심기업으로 등록하면 채용 공고 마감일을 알람으로 받아보실 수 있습니다.</span>
-						<a href="javascript:vold(0)" title="도움말">도움말</a>
-					</button>
+					<div class="btn_wrap">
+					<div class="qm_btn_wrap">
+						<button type="button" class="qm_btn" onclick="onCntNew();">관심기업 등록하기</button>
+						<div class="qm_txt">
+							<a href="javascript:vold">도움말</a>
+							<span>관심기업으로 등록하면 채용 공고 마감일을 알람으로 받아보실 수 있습니다.</span>
+						</div>
+					</div>
 				</div>
 
 			</div>
 		</div>
 		<!--//blue_bg 면접 꿀팁-->
+		<!-- 취업전략 -->
 	</div>
-	<!--채용공고형 취업전략 style01-->
+
 
 	<div class="module-wrap inf_mod_history sty02">
 		<div class="cnt-container">
@@ -579,212 +562,58 @@
 					</div>
 
 
-		<!-- 채용공고형 기업 재무정보 style02 -->
-		<div class="module-wrap rec_mod_finance sty02">
-			<!--기업 매출 및 이익-->
-			<div class="company_sale_wrap">
-				<div class="cnt-container">
-					<!--//top-->
-					<div class="white_box_sdw section">
-						<!--chart_wrap-->
-						<div class="chart_wrap">
-							<div>
-								<h3>매출액</h3>
+		
+	<!-- 채용공고형 기업 재무정보 style02 -->
+	<div class="module-wrap rec_mod_finance sty02">
+		<!--기업 매출 및 이익-->
+		<div class="company_sale_wrap">
+			<div class="cnt-container">
+				<!--//top-->
+				<div class="white_box_sdw section">
+					<!--chart_wrap-->
+					<div class="chart_wrap">
+						<div>
+							<h3>매출액</h3>
+							<div class="box_infomation">
 								<ul class="chart_cont">
 									<li>
-										<em>2020년 매출액</em>
-										<p><strong>30</strong>억</p>
+										<em>최근 매출액</em>
+										<p><strong class="fiSales">3,103</strong>(백만원)</p>
 									</li>
 									<li>
-										<em>전년도 대비</em>
-										<p class="up"><strong>18</strong>% <span>▲</span></p>
-										<!--<p class="down"><strong>18</strong>% <span>▼</span></p>-->
-									</li>
-									<li>
-										<em>업계평균 대비</em>
-										<p class="up"><strong>200</strong>% <span>▲</span></p>
-										<!--<p class="down"><strong>200</strong>% <span>▼</span></p>-->
+										<em>이전전년도 대비</em>
+										<p class="diff_calc diffSalamt"><strong>6.2</strong>%</p>
 									</li>
 								</ul>
-								<div class="sales">
-									<div id="graph_fiSales"></div>
-								</div>
 							</div>
+							<div id="graph_fiSales2"></div>
+						</div>
 
-							<div>
-								<h3>당기순이익</h3>
+						<div>
+							<h3>당기순이익</h3>
+							<div class="box_infomation">
 								<ul class="chart_cont">
 									<li>
-										<em>2020년 당기순이익</em>
-										<p><strong>10</strong>억</p>
+										<em>최근 당기순이익</em>
+										<p><strong class="fiProfit">208</strong>(백만원)</p>
 									</li>
 									<li>
-										<em>전년도 대비</em>
-										<p class="up"><strong>5</strong>% <span>▲</span></p>
-										<!--<p class="down"><strong>18</strong>% <span>▼</span></p>-->
-									</li>
-									<li>
-										<em>업계평균 대비</em>
-										<p class="up"><strong>2</strong>% <span>▲</span></p>
-										<!--<p class="down"><strong>200</strong>% <span>▼</span></p>-->
+										<em>이전전년도 대비</em>
+										<p class="diff_calc diffNetincm"><strong>333.3</strong>%</p>
 									</li>
 								</ul>
-
-								<!--area_graph-->
-								<div class="area_graph" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="200" data-aos="fade-up">
-									<div class="graph_info">
-										<div class="grid_range">
-											<span class="range"></span>
-											<span class="range"></span>
-											<span class="range"></span>
-											<span class="range"><span>0</span></span>
-											<span class="range"></span>
-											<span class="range"></span>
-											<span class="range"></span>
-											<span class="range"></span>
-										</div>
-										<div class="graph_range">
-											<div class="wrap_graph">
-												<em class="tit_graph">2017</em>
-												<div class="graph">
-													<span class="inner_graph" style="height:55.133076%"><em class="txt_value"> 216억 6,782만원</em></span>
-												</div>
-											</div>
-											<div class="wrap_graph">
-												<em class="tit_graph">2018</em>
-												<div class="graph">
-													<span class="inner_graph" style="height:60.133076%">
-														<em class="txt_value"> 585억 9,981만원</em></span>
-												</div>
-											</div>
-											<div class="wrap_graph minus">
-												<em class="tit_graph">2019</em>
-												<div class="graph">
-													<span class="inner_graph" style="height:48.133076%"><em class="txt_value">-86억
-															1,832만원</em></span>
-												</div>
-											</div>
-											<div class="wrap_graph emph">
-												<em class="tit_graph">2020</em>
-												<div class="graph">
-													<span class="inner_graph" style="height:48.133076%"><em class="txt_value"> 581억 7,236만원</em></span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!--//area_graph-->
 							</div>
-
+							<div id="graph_fiProfit2"></div>
 						</div>
-						<!--//chart_wrap-->
+
 					</div>
-
-
-					<div class="white_box_sdw section">
-						<h3>동종업종내 위치(매출액 기준)</h3>
-
-						<div class="local_rank_wrap">
-							<div class="left">
-								<div class="lank_img">
-									<div class="lank01">
-										<p>상위<br />
-											<strong>10</strong>%
-										</p>
-									</div>
-									<span></span>
-								</div>
-								<table class="table">
-									<caption>동종업종내 위치 연도별 순위</caption>
-									<thead>
-										<tr>
-											<th scope="col">연도</th>
-											<th scope="col">순위</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>2020</td>
-											<td>23</td>
-										</tr>
-										<tr>
-											<td>2019</td>
-											<td>32</td>
-										</tr>
-										<tr>
-											<td>2018</td>
-											<td>85</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="right">
-								<table class="table">
-									<caption>동종업종내 순위 및 점수</caption>
-									<thead>
-										<tr>
-											<th scope="col">순위</th>
-											<th scope="col">기업명</th>
-											<th scope="col">재무종합 점수
-											</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>23</td>
-											<td>A</td>
-											<td>87</td>
-										</tr>
-										<tr>
-											<td>24</td>
-											<td>B</td>
-											<td>86</td>
-										</tr>
-										<tr>
-											<td>25</td>
-											<td>C</td>
-											<td>83.6</td>
-										</tr>
-										<tr>
-											<td>26</td>
-											<td>D</td>
-											<td>82</td>
-										</tr>
-										<tr class="this_company">
-											<td colspan="3">
-												<ul>
-													<li>23</li>
-													<li class="comName">동양인더스트리</li>
-													<li>83.6</li>
-												</ul>
-											</td>
-										</tr>
-										<tr>
-											<td>28</td>
-											<td>F</td>
-											<td>85</td>
-										</tr>
-										<tr>
-											<td>29</td>
-											<td>G</td>
-											<td>84</td>
-										</tr>
-										<tr>
-											<td>30</td>
-											<td>H</td>
-											<td>54</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
+					<!--//chart_wrap-->
 				</div>
 			</div>
-			<!--//기업 매출 및 이익-->
 		</div>
-		<!-- //채용공고형 기업 재무정보 style02 -->
+		<!--//기업 매출 및 이익-->
+	</div>
+	<!-- //채용공고형 기업 재무정보 style02 -->
 
 
 		<div class="module-wrap rec_mod_vision sty01">
@@ -852,30 +681,30 @@
 						현직자 <span>복지 사용후기</span>
 					</h3>
 					<div class="welfare_review">
-						<div class="cont">
-							<div class="top">
-								<p>영업팀 이영호 사원</p>
+						<div>
+							<div class="tit">
+								<div class="team">영업팀</div><div class="name">이영호 사원</div>
 							</div>
-							<dv class="bottom">
+							<dv class="desc">
 								<p>저는 영업팀에서 근무중인 이영호라고 합니다. <br>
 									평소 출퇴근 거리가 먼 저에게 회사에서 근처에 있는 기숙사(원룸)를 제공해주어 출퇴근 시간을 줄이고 저녁식사까지 <br>
 									제공해주어 회사에서 많은것들을 해결하여 보다 여유로운 퇴근후의 삶을 지내고 있습니다.<br /><br />
 
 									#수평적인 문화 #9-6 (주5일근무) #저녁무료제공 #기숙사
-
-
 								</p>
 							</dv>
 						</div>
 					</div>
 				</div>
 				<!--//welfare_review-->
-
-				<div class="btn_wrap">
-					<button type="button" class="qm_btn">관심기업 등록하기
-						<span>관심기업으로 등록하면 채용 공고 마감일을 알람으로 받아보실 수 있습니다.</span>
-						<a href="javascript:vold(0)" title="도움말">도움말</a>
-					</button>
+			<div class="btn_wrap">
+					<div class="qm_btn_wrap">
+						<button type="button" class="qm_btn" onclick="onCntNew();">관심기업 등록하기</button>
+						<div class="qm_txt">
+							<a href="javascript:vold">도움말</a>
+							<span>관심기업으로 등록하면 채용 공고 마감일을 알람으로 받아보실 수 있습니다.</span>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!--//welfare_review-->
@@ -886,12 +715,11 @@
 	<!--//summary_bg-->
 
 
-
+<a name="interview"></a>
 	<div class="module-wrap rec_mod_interview sty02">
 		<div class="iv_wrap qa_ceo">
 			<div class="cnt-container">
 				<h3>CEO 인터뷰</h3>
-				<div class="ivCeoPhoto photo">대표이사 사진</div>
 				<div class="swiper ivCeo">대표이사 인터뷰</div>
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
@@ -987,8 +815,45 @@
 		</div>
 	</div>
 	<!-- //매거진형 현직자 인터뷰 style02-->
+	
+	<!-- 1102추가 -->
+<a name="news"></a>
+	<div class="module-wrap com_mod_news sty01">
+		<div class="cnt-container">
+		<div id="news_wrap">
+			<div class="news_row">
+				<a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
+				<div class="desc">
+					경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
+					'2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
+					친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+				</div>
+				<div class="reg_date">2021.05.15</div>
+			</div>
+			<div class="news_row">
+				<a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
+				<div class="desc">
+					경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
+					'2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
+					친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+				</div>
+				<div class="reg_date">2021.05.15</div>
+			</div>
+			</div>
+			<div class="paging_wrap">
+				<a href="javascript:void(0);" class="prev disable">이전</a>
+				<a href="javascript:void(0);" class="current">1</a>
+				<a href="javascript:void(0);">2</a>
+				<a href="javascript:void(0);">3</a>
+				<a href="javascript:void(0);">4</a>
+				<a href="javascript:void(0);">5</a>
+				<a href="javascript:void(0);" class="next">다음</a>
+			</div>
+		</div>
+	</div>
 
-	<div class="module-wrap com_mod_news sty02 target" id="target05">
+<!-- 
+	<div class="module-wrap com_mod_news sty02">
 		<div class="cnt-container">
 			<div class="news_row">
 				<div class="img imgFill">
@@ -1037,6 +902,9 @@
 			</div>
 		</div>
 	</div>
+뉴스 -->
+	
+	
 
 	<div class="module-wrap com_mod_map">
 		<div id="map"></div>
@@ -1149,58 +1017,99 @@
 			var comAddress = $('.comAddress').text();
 
 			//매출액
-			var chart = bb.generate({
-				bindto: '#graph_fiSales',
-				data: {
-					columns: [
-						['매출액', 22, 24, 25, 27, 26],
-					],
-					type: 'bar',
-					colors: {
-						'매출액': '#d1d1d1',
-					}
-				},
-				grid: {
-					y: {
-						show: true
-					},
-				},
-				bar: {
-					width: {
-						ratio: 0.3
-					}
-				},
-				axis: {
-					x: {
-						type: 'category',
-						categories: ['2016년', '2017년', '2018년', '2019년', '2020년'],
-					},
-					y: {
-						max: 30,
-						min: 0,
-						padding: {
-							top: 0,
-							bottom: 0
-						},
-						tick: {
-							count: 7
-						}
-					},
-
-				},
-				tooltip: {
-					show: false
-				},
-				legend: {
-					show: false
-				},
-				padding: {
-					bottom: 20,
-					top: 20
+			
+			
+		var chart32 = bb.generate({
+			bindto: "#graph_fiSales2",
+			data: {
+				type: "bar",
+				//x: "x",
+				columns: [
+					["매출액", 3103, 2920, 2767]
+				],
+				colors: {
+					매출액: "#ff763a"
 				}
-
-
-			});
+			},
+			padding: {
+				top:    20,
+				//bottom: 20,
+				//right:  0,
+				left:   40
+			},
+			grid: {
+				x: {
+					show: true
+				},
+				y: {
+					show: true
+				}
+			},
+			axis:{
+				x: {
+					type: "category",
+					categories: [2021, 2020, 2019],
+					padding: {
+						left: .2,
+						right: .2
+					}
+				}
+			},
+			bar: {
+				width: {
+					max: 60
+				} 
+			},
+			legend: {
+				show: false
+			}
+		});
+			
+		var chart42 = bb.generate({
+			bindto: "#graph_fiProfit2",
+			data: {
+				type: "bar",
+				//x: "x",
+				columns: [
+					["당기순이익", 208, 48, 50]
+				],
+				colors: {
+					당기순이익: "#ff763a"
+				}
+			},
+			padding: {
+				top:    20,
+				//bottom: 20,
+				//right:  0,
+				left:   40
+			},
+			grid: {
+				x: {
+					show: true
+				},
+				y: {
+					show: true
+				}
+			},
+			axis:{
+				x: {
+					type: "category",
+					categories: [2021, 2020, 2019],
+					padding: {
+						left: .2,
+						right: .2
+					}
+				}
+			},
+			bar: {
+				width: {
+					max: 60
+				} 
+			},
+			legend: {
+				show: false
+			}
+		});
 
 			// 주요제품
 			$('.pd_wrap').addClass('swiper-container');
@@ -1237,6 +1146,15 @@
 						slidesPerView: 2,
 					},
 				}
+			});
+			
+			var vision = new Swiper(".vision_wrap .swiper-container", {
+				slidesPerView: 1,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".vision_wrap .swiper-button-next",
+					prevEl: ".vision_wrap .swiper-button-prev"
+				},
 			});
 
 			var ivCeo = new Swiper(".ivCeo", {
@@ -1292,18 +1210,7 @@
 			});
 
 
-			var recruiterInterview = new Swiper('.recruiter_interview_wrap .swiper-container', {
-				arrows: true,
-				scrollbar: {
-					el: '.swiper-scrollbar',
-					draggable: true,
-					hide: false
-				},
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-				},
-			});
+	
 
 
 
