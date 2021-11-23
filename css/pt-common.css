@@ -3285,7 +3285,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.inf_mod_swot.sty03 .swotT:after{background-size: 250px !important;width: 250px;height: 256px}
 	.inf_mod_swot.sty03 .swot_wrap .desc{word-break: keep-all}
 	.inf_mod_swot.sty03 .swot_wrap .desc br{display: none}
-	.rec_mod_swot.sty05 .swot_wrap{background-position: right center}
+	.rec_mod_swot.sty05 .swot_wrap{background-position: right center !important}
 	.rec_mod_swot.sty05 .swot_wrap > div{width: calc(100% - 400px)}
 	.rec_mod_swot.sty05 .swot_wrap > div > div{width: calc(50% - 10px);margin-right: 20px}
 	.rec_mod_swot.sty05 .swot_wrap .swotW{order: 1}
@@ -3538,7 +3538,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.rec_mod_swot.sty02 .diagram_area ul li{margin-right: 20px;width: 180px;height: 180px}
 	.rec_mod_swot.sty02 .diagram_area ul li strong{font-size: 4.0rem}
 	
-	.rec_mod_swot.sty05 .swot_wrap{background-position: top center;background-size: 300px;padding-top: 280px}
+	.rec_mod_swot.sty05 .swot_wrap{background-position: top center !important;background-size: 300px !important;padding-top: 280px}
 	.rec_mod_swot.sty05 .swot_wrap > div{width: 100%;}
 	
 	/* 재무정보 */
@@ -3865,7 +3865,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	
 	.rec_mod_swot.sty02 .diagram_area ul li{width: 140px;height: 140px}
 	.rec_mod_swot.sty05 .swot_wrap > div > div{width: 100%;margin-right: 0;margin-top: 20px}
-	.rec_mod_swot.sty05 .swot_wrap{background-size: 200px;padding-top: 180px}
+	.rec_mod_swot.sty05 .swot_wrap{background-size: 200px !important;padding-top: 180px}
 	.rec_mod_swot.sty05 .swot_wrap .swotS:before,
 	.rec_mod_swot.sty05 .swot_wrap .swotW:before,
 	.rec_mod_swot.sty05 .swot_wrap .swotO:before,
@@ -3949,7 +3949,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.bro_mod_culture.sty04 .culwel_wrap:last-child{margin-bottom: 0}
 	.bro_mod_culture.sty04 .title{font-size: 2.0rem;width: 110px;height: 80px;line-height: 80px}
 	.bro_mod_culture.sty04 .title:before{width: 30px;height: 30px;bottom: -15px}
-	.bro_mod_culture.sty05{padding: 6.0rem 0}
+	.bro_mod_culture.sty05{margin: 6.0rem 0}
 	.bro_mod_culture.sty05 .cnt-container{display: block}
 	.bro_mod_culture.sty05 .culwel_wrap{width: 100%}
 	.bro_mod_culture.sty06{padding: 6.0rem 0}
@@ -4230,6 +4230,7 @@ html{font-size: 8px}
 	.com_mod_anchor a{font-size: 1.6rem !important;padding: 1.5rem 2.0rem !important;}	
 	
  /* 연혁 */
+	.bro_mod_history.sty02{margin: 6rem 0}
 	.bro_mod_history.sty02 .history > div{padding: 2.0rem 0}
 	.bro_mod_history.sty02 .history > div > span {left: 0;transform: translateX(0);width: 80px;font-size: 2.0rem;padding: 0.5rem 1.0rem;text-align: right !important}
 	.bro_mod_history.sty02 .history > div > span:after{width: 20px;height: 20px;left: 10px}
@@ -4349,7 +4350,7 @@ html{font-size: 8px}
 	
 	/* 리뷰 */
 	.mag_mod_review.sty03 .review_wrap {display: block}
-	.mag_mod_review.sty03 .review_wrap > .item{width: 100%;margin-right: 0;padding: 2.0rem}
+	.mag_mod_review.sty03 .review_wrap > .item{width: 100%;margin-right: 0;padding: 4rem 2.0rem}
 	.mag_mod_review.sty03 .review_wrap > .item .desc:before{background-size: 60px !important;width: 60px !important;height: 60px !important;left: 20px}
 	.mag_mod_review.sty03 .review_wrap > .item .desc{padding-left: 80px}
 	.inf_mod_swot.sty03 .swot_wrap > div{background: #fff;padding: 3.0rem;width: calc(50% - 5px);margin-right: 10px;margin-top: 10px;border-radius: 10px}
