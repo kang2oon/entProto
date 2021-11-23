@@ -195,7 +195,7 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
     .com_mod_recruit.sty01 .box_recruit .detail_wrap dl dt{width:15%;}
     .com_mod_recruit.sty01 .box_recruit .detail_wrap dl dd{width:85%;}
 /* 채용공고 스타일 2*/
-.com_mod_recruit.sty02{padding-bottom:8.0rem;}
+.com_mod_recruit.sty02{margin-top: 8rem;padding-bottom:8.0rem;}
 .com_mod_recruit.sty02 .apply{height: auto !important}
 .com_mod_recruit.sty02 .qm_btn{color: #fff;border: 1px solid #fff;background: transparent}
     .com_mod_recruit.sty02 .bg_bot{position:absolute;bottom:0;width:100%;background:url(../images/jp_md02_bg.png) no-repeat;width: 100%;height: 658px;}
