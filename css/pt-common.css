@@ -754,6 +754,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 
 .inf_mod_swot.sty05 h3{text-align: center;font-size: 4.0rem;margin-bottom: 4.0rem}
 .inf_mod_swot.sty05 .swot_wrap{display: flex;justify-content: space-between;text-align: center;}
+.inf_mod_swot.sty05 .swot_wrap > div{width: calc(25% - 30px)}
 .inf_mod_swot.sty05 .swot_wrap span{font-size: 4.0rem;text-align: center;width: 130px;height: 130px;line-height: 130px; display: block;border-radius: 50%;margin: auto;position: relative;margin-bottom: 6.0rem}
 .inf_mod_swot.sty05 .swot_wrap span:after{content: '';display: block;width: 150px;height: 1px;background: #ccc;position: absolute;top: 50%;right:-135%}
 .inf_mod_swot.sty05 .swot_wrap >div:last-child span:after {display: none}
