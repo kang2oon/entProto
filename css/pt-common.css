@@ -1371,11 +1371,11 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_interview.sty05 .rec_itv05_tab h3{color: #fff;font-size: 15rem;line-height: 1}
 .rec_mod_interview.sty05 .rec_itv05_wrap {margin-top: 4rem}
 .rec_mod_interview.sty05 .rec_itv05_wrap .photo{display: none}
-.rec_mod_interview.sty05 .rec_itv05_wrap .tabs {display: flex;}
-.rec_mod_interview.sty05 .rec_itv05_wrap .tabs li{font-size: 2.4rem;font-weight: bold;padding: 1rem 3rem;border:1px solid #fff}
-.rec_mod_interview.sty05 .rec_itv05_wrap .tabs li a{display: block;color: #fff;}
-.rec_mod_interview.sty05 .rec_itv05_wrap .tabs li.active{background: #fff;}
-.rec_mod_interview.sty05 .rec_itv05_wrap .tabs li.active a {color: #0a3663;}
+.rec_mod_interview.sty05 .rec_itv05_wrap .tab {display: flex;}
+.rec_mod_interview.sty05 .rec_itv05_wrap .tab li{font-size: 2.4rem;font-weight: bold;padding: 1rem 3rem;border:1px solid #fff}
+.rec_mod_interview.sty05 .rec_itv05_wrap .tab li a{display: block;color: #fff;}
+.rec_mod_interview.sty05 .rec_itv05_wrap .tab li.active{background: #fff;}
+.rec_mod_interview.sty05 .rec_itv05_wrap .tab li.active a {color: #0a3663;}
 .rec_mod_interview.sty05 .rec_itv05_wrap .tab_content{padding: 4rem 0}
 .rec_mod_interview.sty05 .rec_itv05_wrap .tab_content > div{display: block}
 .rec_mod_interview.sty05 .rec_itv05_wrap .swiper-wrapper{display: block;height: auto;}
@@ -4104,8 +4104,8 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.rec_mod_interview.sty05 .qa_ceo .txt br{display: none}
 	.rec_mod_interview.sty05 .rec_itv05_tab{padding: 6rem 0}
 	.rec_mod_interview.sty05 .rec_itv05_tab h3{font-size: 6rem}
-	.rec_mod_interview.sty05 .rec_itv05_wrap .tabs li{font-size: 2rem;word-break: keep-all;}
-	.rec_mod_interview.sty05 .rec_itv05_wrap .tabs  a {text-align: center}
+	.rec_mod_interview.sty05 .rec_itv05_wrap .tab li{font-size: 2rem;word-break: keep-all;}
+	.rec_mod_interview.sty05 .rec_itv05_wrap .tab  a {text-align: center}
 	
 	/* 취업전략 */
 	.qm_btn_wrap{max-width: 375px;width: 100%}
