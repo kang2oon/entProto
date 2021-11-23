@@ -4490,6 +4490,7 @@ html{font-size: 8px}
      .header .logo{margin:0 0 24px;}
      .header .logo img{max-width:240px;}
      .com_mod_anchor.sty02 a{padding:12px 32px;}
+     .com_mod_anchor.sty01 .siteGo{display:none;}
      .com_mod_anchor.sty02 .siteGo{display:none;}
      /* 채용공고 */
      .com_mod_recruit.sty01{padding:60px 0;}
