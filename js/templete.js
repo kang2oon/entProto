@@ -34,7 +34,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		// Anchor Tab
 		// case "mod_anc_tab01":
@@ -60,12 +60,13 @@ Contents = function(item) {
 						 + '		</ul>\n'
 						 + '		<div class="siteGo">사이트</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		// 공통
 		case "mod_com_recruit":  //채용공고
-			var contents = '<a name="recruit"></a>\n'
+			var contents = ''
 						 + '<div class="module-wrap edit_wrap com_mod_recruit sty01" id="recruitArea">\n'
+						 + '	<a name="recruit"></a>\n'
 						 + '	<div class="bg_bot"></div>\n'
 						 + '	<div class="cnt-container" id="recruitContainer">\n'
 						 + '		<h3>채용공고</h3>\n'
@@ -119,11 +120,12 @@ Contents = function(item) {
 						 + '			<div class="swiper-pagination"></div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "mod_com_news":  // 뉴스
-			var contents = '<a name="news"></a>\n'
+			var contents = ''
 						 + '<div class="module-wrap edit_wrap com_mod_news sty01">\n'
+						 + '	<a name="news"></a>\n'
 						 + '	<div class="cnt-container">\n'
 						 + '		<div id="news_wrap">\n'
 						 + '			<div class="news_row">\n'
@@ -141,7 +143,7 @@ Contents = function(item) {
 						 + '			<a href="javascript:void(0);" class="prev disable">이전</a><a href="javascript:void(0);" class="current">1</a><a href="javascript:void(0);">2</a><a href="javascript:void(0);">3</a><a href="javascript:void(0);">4</a><a href="javascript:void(0);">5</a><a href="javascript:void(0);" class="next">다음</a>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "mod_com_map":  // 지도
 			var contents = '<div class="module-wrap edit_wrap com_mod_map">\n'
@@ -214,7 +216,7 @@ Contents = function(item) {
 						 + '			</ul>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		// SWOT
 		case "mod_inf_swot01":
@@ -243,7 +245,7 @@ Contents = function(item) {
 						+ '			<div class="desc">자본력 한계에 따른 안정적인 투자여력 미흡</div>\n'
 						+ '		</div>\n'
 						+ '	</div>\n'
-						+ '</div>';
+						+ '</div>\n\n';
 		break;
 		case "mod_inf_swot02":
 			var contents = ''
@@ -272,7 +274,7 @@ Contents = function(item) {
 						+ '			</div>\n'
 						+ '		</div>\n'
 						+ '	</div>\n'
-						+ '</div>';
+						+ '</div>\n\n';
 		break;
 		case "mod_inf_swot03":
 		var contents = ''
@@ -309,7 +311,7 @@ Contents = function(item) {
 						+ '			</div>\n'
 						+ '		</div>\n'
 						+ '	</div>\n'
-						+ '</div>';
+						+ '</div>\n\n';
 		break;
 		case "mod_inf_swot04":
 		var contents = ''
@@ -332,7 +334,7 @@ Contents = function(item) {
 					 + '			<div class="desc">threats</div>\n'
 					 + '		</div>\n'
 					 + '	</div>\n'
-					 + '</div>';
+					 + '</div>\n\n';
 		break;
 		case "mod_inf_swot05":
 		var contents = ''
@@ -359,7 +361,7 @@ Contents = function(item) {
 					 + '			<div class="desc">threats</div>\n'
 					 + '		</div>\n'
 					 + '	</div>\n'
-					 + '</div>';
+					 + '</div>\n\n';
 		break;
 		case "mod_rec_swot02":
 		var contents = ''
@@ -405,7 +407,7 @@ Contents = function(item) {
 					 + '		</div>\n'
 					 + '		</div>\n'
 					 + '	</div>\n'
-					 + '</div>';
+					 + '</div>\n\n';
 		break;
 		case "mod_rec_swot03":
 		var contents = ''
@@ -448,7 +450,7 @@ Contents = function(item) {
 					 + '		</div>\n'
 					 + '		</div>\n'
 					 + '	</div>\n'
-					 + '</div>';
+					 + '</div>\n\n';
 		break;
 		case "mod_rec_swot04":
 		var contents = ''
@@ -493,7 +495,7 @@ Contents = function(item) {
 					 + '			</div>'
 					 + '	</div>\n'
 					 + '	</div>\n'
-					 + '</div>';
+					 + '</div>\n\n';
 		break;	
 		case "mod_rec_swot05":
 		var contents = ''
@@ -532,7 +534,7 @@ Contents = function(item) {
 					 + '		</div>\n'
 					 + '		</div>\n'
 					 + '	</div>\n'
-					 + '</div>';
+					 + '</div>\n\n';
 		break;
 		// 기업 리뷰	
 		case "mod_mag_review01":
@@ -560,7 +562,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "mod_mag_review02":
 			var contents = ''
@@ -587,7 +589,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "mod_mag_review03":
 			var contents = ''
@@ -614,7 +616,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "mod_mag_review05":
 			var contents = ''
@@ -641,7 +643,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "mod_sns_review01":
 			var contents = ''
@@ -668,7 +670,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "mod_rec_review01":
 				var contents = ''
@@ -695,7 +697,7 @@ Contents = function(item) {
 							 + '			</div>\n'
 							 + '		</div>\n'
 							 + '	</div>\n'
-							 + '</div>\n';
+							 + '</div>\n\n';
 		break;
 		// 백분위정보
 		case "mod_inf_percent01":
@@ -731,7 +733,7 @@ Contents = function(item) {
 						 + '			<li></li>\n'
 						 + '		</ul>\n'
 						 + '	</div>\n'
-						 + '</div>';
+						 + '</div>\n\n';
 		break;
 		case "mod_inf_percent02":
 			var contents = ''
@@ -744,7 +746,7 @@ Contents = function(item) {
 						 + '			<div class="profit">수익성<span class="bpProfitability">상위57%</span></div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>';
+						 + '</div>\n\n';
 		break;
 		case "mag_mod_percent05":
 			var contents = ''
@@ -769,7 +771,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "mag_mod_percent04":
 			var contents = ''
@@ -794,7 +796,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "mag_mod_percent06":
 			var contents = ''
@@ -852,7 +854,7 @@ Contents = function(item) {
 						 + '			}\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mag_bro_percent01":
 			var contents = ''
@@ -880,7 +882,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "mag_mod_percent03":
 			var contents = ''
@@ -905,7 +907,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "inf_mod_percent03":
 			var contents = ''
@@ -930,7 +932,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "inf_mod_percent04":
 			var contents = ''
@@ -958,7 +960,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "inf_mod_percent05":
 			var contents = ''
@@ -983,7 +985,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "rec_mod_percent02":
 			var contents = ''
@@ -1017,7 +1019,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		case "rec_mod_percent03":
 			var contents = ''
@@ -1051,7 +1053,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n';
+						 + '</div>\n\n';
 		break;
 		// 사업분야
 		case "mag_mod_biz01":
@@ -1131,7 +1133,7 @@ Contents = function(item) {
 						 + '		}\n'
 						 + '	});\n'
 						//  + '});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mag_mod_biz02":
 			var contents = ''
@@ -1195,7 +1197,7 @@ Contents = function(item) {
 						 + '			}\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mag_mod_biz03":
 			var contents = ''
@@ -1267,7 +1269,7 @@ Contents = function(item) {
 						 + '			}\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mag_mod_biz04":
 			var contents = ''
@@ -1320,7 +1322,7 @@ Contents = function(item) {
 						 + '			prevEl: ".mag_mod_biz.sty05 .swiper-button-prev"\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mag_mod_biz05":
 			var contents = ''
@@ -1393,7 +1395,7 @@ Contents = function(item) {
 						 + '			}\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mag_mod_biz06":
 			var contents = ''
@@ -1460,7 +1462,7 @@ Contents = function(item) {
 						 + ' 	 	$(".bro_mod_biz.sty03 .bizDiv > div").hide();\n'
 						 + ' 	 	$(".bro_mod_biz.sty03 .bizDiv > ." + item).show();\n'
 						 + ' 	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mag_mod_biz07":
 			var contents = ''
@@ -1521,7 +1523,7 @@ Contents = function(item) {
 						 + ' 	 	$(".bro_mod_biz.sty04 .bizDiv > div").hide();\n'
 						 + ' 	 	$(".bro_mod_biz.sty04 .bizDiv > ." + item).show();\n'
 						 + ' 	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mag_mod_biz08":
 			var contents = ''
@@ -1597,7 +1599,7 @@ Contents = function(item) {
 						 + '			}\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mag_mod_biz09":
 			var contents = ''
@@ -1637,7 +1639,7 @@ Contents = function(item) {
 						 + '		$(this).parent().parent().addClass("active");\n'
 						 + '		$(this).parent().parent().siblings().removeClass("active");\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mag_mod_biz10":
 			var contents = ''
@@ -1732,7 +1734,7 @@ Contents = function(item) {
 						 + '			}\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		// 연혁
 		case "mod_history01":
@@ -1787,7 +1789,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n'
+						 + '</div>\n\n'
 		break;
 		case "mod_history02":
 			var contents = ''
@@ -1863,7 +1865,7 @@ Contents = function(item) {
 						 + '		$(".bro_mod_history.sty03 .history > div").hide();\n'
 						 + '		$(".bro_mod_history.sty03 .history > ." + item).show();\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mod_history03":
 			var contents = ''
@@ -1919,7 +1921,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n'
+						 + '</div>\n\n'
 		break;
 		case "mod_history04":
 			var contents = ''
@@ -1973,7 +1975,7 @@ Contents = function(item) {
 						 + '			</div>\n'
 						 + '		</div>\n'
 						 + '	</div>\n'
-						 + '</div>\n'
+						 + '</div>\n\n'
 		break;
 		case "mod_history05":
 			var contents = ''
@@ -2097,7 +2099,7 @@ Contents = function(item) {
 						 + '			}\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		// 인터뷰
 		case "mod_interview01":
@@ -2206,7 +2208,7 @@ Contents = function(item) {
 						 + '			observeParents: true,\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mod_interview02":
 			var contents = ''
@@ -2314,7 +2316,7 @@ Contents = function(item) {
 						 + '			observeParents: true,\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mod_interview03":
 			var contents = ''
@@ -2459,7 +2461,7 @@ Contents = function(item) {
 						 + '			prevEl: ".mag_mod_interview.sty05 .qa_emp .swiper-button-prev"\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mod_interview04":
 			var contents = ''
@@ -2642,7 +2644,7 @@ Contents = function(item) {
 						 + '			}\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mod_interview05":
 			var contents = ''
@@ -2823,7 +2825,7 @@ Contents = function(item) {
 						 + '			}\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mod_interview06":
 			var contents = ''
@@ -3002,7 +3004,7 @@ Contents = function(item) {
 						 + '			prevEl: ".bro_mod_interview.sty02 .qa_emp .swiper-button-prev"\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mod_interview07":
 			var contents = ''
@@ -3199,11 +3201,11 @@ Contents = function(item) {
 						 + '			}\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
 		break;
 		case "mod_interview08":
 			var contents = ''
-						 + '<div class="module-wrap rec_mod_interview sty03">\n'
+						 + '<div class="module-wrap edit_wrap rec_mod_interview sty03">\n'
 						 + '	<div class="cnt-container">\n'
 						 + '		<div class="iv_wrap qa_ceo">\n'
 						 + '			<h3>CEO 인터뷰</h3>\n'
@@ -3374,7 +3376,293 @@ Contents = function(item) {
 						 + '			prevEl: ".rec_mod_interview.sty03 .qa_emp .swiper-button-prev"\n'
 						 + '		}\n'
 						 + '	});\n'
-						 + '</script>\n';
+						 + '</script>\n\n';
+		break;
+		case "mod_interview09":
+			var contents = ''
+						 + '<div class="module-wrap edit_wrap rec_mod_interview sty04">\n'
+						 + '	<div class="iv_wrap qa_ceo">\n'
+						 + '		<div class="cnt-container">\n'
+						 + '			<div class="ivCeoPhoto photo"><img src="./images/rec_interview04_ceo.png" alt="ceo"></div>\n'
+						 + '			<div class="swiper ivCeo">\n'
+						 + '				<div class="txt_cont">\n'
+						 + '					<h3>CEO 인터뷰</h3>\n'
+						 + '					<p class="txt">\n'
+						 + '						가장 행복한 자리는 일자리입니다.<br>당신의 일자리를 위해 경기도일자리재단이 함께 하겠습니다.\n'
+						 + '					</p>\n'
+						 + '				</div>\n'
+						 + '				<div class="swiper-wrapper">\n'
+						 + '					<div class="swiper-slide">\n'
+						 + '						<div class="q" tabindex="0">질문</div>\n'
+						 + '						<div class="a">답변</div>\n'
+						 + '					</div>\n'
+						 + '					<div class="swiper-slide">\n'
+						 + '						<div class="q" tabindex="0">질문</div>\n'
+						 + '						<div class="a">답변</div>\n'
+						 + '					</div>\n'
+						 + '					<div class="swiper-slide">\n'
+						 + '						<div class="q" tabindex="0">질문</div>\n'
+						 + '						<div class="a">답변</div>\n'
+						 + '					</div>\n'
+						 + '					<div class="swiper-slide">\n'
+						 + '						<div class="q" tabindex="0">질문</div>\n'
+						 + '						<div class="a">답변</div>\n'
+						 + '					</div>\n'
+						 + '					<div class="swiper-slide">\n'
+						 + '						<div class="q" tabindex="0">질문</div>\n'
+						 + '						<div class="a">답변</div>\n'
+						 + '					</div>\n'
+						 + '					<div class="swiper-slide">\n'
+						 + '						<div class="q" tabindex="0">질문</div>\n'
+						 + '						<div class="a">답변</div>\n'
+						 + '					</div>\n'
+						 + '					<div class="swiper-slide">\n'
+						 + '						<div class="q" tabindex="0">질문</div>\n'
+						 + '						<div class="a">답변</div>\n'
+						 + '					</div>\n'
+						 + '					<div class="swiper-slide">\n'
+						 + '						<div class="q" tabindex="0">질문</div>\n'
+						 + '						<div class="a">답변</div>\n'
+						 + '					</div>\n'
+						 + '					<div class="swiper-slide">\n'
+						 + '						<div class="q" tabindex="0">질문</div>\n'
+						 + '						<div class="a">답변</div>\n'
+						 + '					</div>\n'
+						 + '					<div class="swiper-slide">\n'
+						 + '						<div class="q" tabindex="0">질문</div>\n'
+						 + '						<div class="a">답변</div>\n'
+						 + '					</div>\n'
+						 + '				</div>\n'
+						 + '			</div>\n'
+						 + '		</div>\n'
+						 + '	</div>\n'
+						 + '	<div class="qa_mng">\n'
+						 + '		<div class="cnt-container">\n'
+						 + '			<h3>채용담당자 인터뷰</h3>\n'
+						 + '			<div class="iv_wrap">\n'
+						 + '				<div class="ivMngPhoto photo"></div>\n'
+						 + '				<div class="swiper ivMng">\n'
+						 + '					<div class="swiper-wrapper">\n'
+						 + '						<div class="swiper-slide">\n'
+						 + '							<div class="q">신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~\n'
+						 + '							</div>\n'
+						 + '							<div class="a">답변1</div>\n'
+						 + '						</div>\n'
+						 + '						<div class="swiper-slide">\n'
+						 + '							<div class="q">질문2</div>\n'
+						 + '							<div class="a">답변2</div>\n'
+						 + '						</div>\n'
+						 + '						<div class="swiper-slide">\n'
+						 + '							<div class="q">질문3</div>\n'
+						 + '							<div class="a">답변3</div>\n'
+						 + '						</div>\n'
+						 + '					</div>\n'
+						 + '					<div class="swiper-button-next"></div>\n'
+						 + '					<div class="swiper-button-prev"></div>\n'
+						 + '				</div>\n'
+						 + '			</div>\n'
+						 + '		</div>\n'
+						 + '	</div>\n'
+						 + '	<div class="qa_emp">\n'
+						 + '		<div class="cnt-container">\n'
+						 + '			<h3>신입사원 인터뷰</h3>\n'
+						 + '			<div class="iv_wrap">\n'
+						 + '				<div class="ivEmpPhoto photo"><img src="./images/rec_interview04_emp.png" alt="신입사원"></div>\n'
+						 + '				<div class="swiper ivEmp">\n'
+						 + '					<div class="swiper-wrapper">\n'
+						 + '						<div class="swiper-slide" style="display: block;">\n'
+						 + '							<div class="q">질문1</div>\n'
+						 + '							<div class="a">신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~ <br>\n'
+						 + '								신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								<br>\n'
+						 + '								신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '							</div>\n'
+						 + '						</div>\n'
+						 + '						<div class="swiper-slide" style="display: block;">\n'
+						 + '							<div class="q">질문2</div>\n'
+						 + '							<div class="a">신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~ <br>\n'
+						 + '								신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								<br>\n'
+						 + '								신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '							</div>\n'
+						 + '						</div>\n'
+						 + '						<div class="swiper-slide" style="display: none;">\n'
+						 + '							<div class="q">질문3</div>\n'
+						 + '							<div class="a">신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~ <br>\n'
+						 + '								신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								<br>\n'
+						 + '								신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '							</div>\n'
+						 + '						</div>\n'
+						 + '					</div>\n'
+						 + '				<a href="javascript:bold" class="load_more">더보기</a></div>\n'
+						 + '			</div>\n'
+						 + '		</div>\n'
+						 + '	</div>\n'
+						 + '</div>\n'
+						 + '<script>\n'
+						 + '	$(".rec_mod_interview.sty04 .qa_ceo .q").attr("tabindex", "0");\n'
+						 + '	$(".rec_mod_interview.sty04 .qa_ceo .q").off("click").on("click", function() {\n'
+						 + '		$(this).next().slideToggle();\n'
+						 + '		$(this).toggleClass("active");\n'
+						 + '	});\n'
+						 + '	var mngIvSlider = new Swiper(".rec_mod_interview.sty04 .ivMng", {\n'
+						 + '		slidesPerView: 1,\n'
+						 + '		spaceBetween: 0,\n'
+						 + '		observer: true,\n'
+						 + '		observeParents: true,\n'
+						 + '		navigation: {\n'
+						 + '			nextEl: ".rec_mod_interview.sty04 .qa_mng .swiper-button-next",\n'
+						 + '			prevEl: ".rec_mod_interview.sty04 .qa_mng .swiper-button-prev"\n'
+						 + '		}\n'
+						 + '	});\n'
+						 + '	$(".rec_mod_interview.sty04 .ivEmp .swiper-slide").hide();\n'
+						 + '	$(".rec_mod_interview.sty04 .ivEmp .swiper-slide").slice(0, 2).show();\n'
+						 + '	$("body").on("click touchstart", ".rec_mod_interview.sty04 .ivEmp .load_more", function(e) {\n'
+						 + '		e.preventDefault();\n'
+						 + '		$(".rec_mod_interview.sty04 .ivEmp .swiper-slide:hidden").slice(0, 2).slideDown();\n'
+						 + '		if ($(".rec_mod_interview.sty04 .ivEmp .swiper-slide:hidden").length == 0) {\n'
+						 + '			$(".rec_mod_interview.sty04 .ivEmp .load_more").addClass("active");\n'
+						 + '		}\n'
+						 + '	});\n'
+						 + '</script>\n\n';
+		break;
+		case "mod_interview10":
+			var contents = ''
+						 + '<div class="module-wrap rec_mod_interview sty05">\n'
+						 + '	<div class="rec_itv05_tab">\n'
+						 + '		<div class="cnt-container">\n'
+						 + '			<h3>inter<br>view</h3>\n'
+						 + '			<div class="rec_itv05_wrap tab_container">\n'
+						 + '				<ul class="tab">\n'
+						 + '					<li class="active"><a href="javascript:vold" data-tab="rec_itv05_tab1">채용담당자 인터뷰</a></li>\n'
+						 + '					<li class=""><a href="javascript:vold" data-tab="rec_itv05_tab2">신입사원 인터뷰</a></li>\n'
+						 + '				</ul>\n'
+						 + '				<div class="qa_mng iv_wrap tab_content" id="rec_itv05_tab1" style="display: block;">\n'
+						 + '					<div class="ivMngPhoto photo"></div>\n'
+						 + '					<div class="swiper ivMng">\n'
+						 + '						<div class="swiper-wrapper">\n'
+						 + '							<div class="swiper-slide" style="display: block;">\n'
+						 + '								<div class="q">질문</div>\n'
+						 + '								<div class="a">신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~ <br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								</div>\n'
+						 + '							</div>\n'
+						 + '							<div class="swiper-slide" style="display: block;">\n'
+						 + '								<div class="q">질문</div>\n'
+						 + '								<div class="a">신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~ <br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								</div>\n'
+						 + '							</div>\n'
+						 + '							<div class="swiper-slide" style="display: none;">\n'
+						 + '								<div class="q">질문</div>\n'
+						 + '								<div class="a">신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~ <br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								</div>\n'
+						 + '							</div>\n'
+						 + '						</div>\n'
+						 + '					</div>\n'
+						 + '					<a href="javascript:bold" class="load_more">더보기</a>\n'
+						 + '				</div>\n'
+						 + '				<div class="qa_emp iv_wrap tab_content" id="rec_itv05_tab2" style="display: none;">\n'
+						 + '					<div class="ivEmpPhoto photo"></div>\n'
+						 + '					<div class="swiper ivEmp">\n'
+						 + '						<div class="swiper-wrapper">\n'
+						 + '							<div class="swiper-slide" style="display: block;">\n'
+						 + '								<div class="q">질문2</div>\n'
+						 + '								<div class="a">신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~ <br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								</div>\n'
+						 + '							</div>\n'
+						 + '							<div class="swiper-slide" style="display: block;">\n'
+						 + '								<div class="q">질문</div>\n'
+						 + '								<div class="a">신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~ <br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								</div>\n'
+						 + '							</div>\n'
+						 + '							<div class="swiper-slide" style="display: none;">\n'
+						 + '								<div class="q">질문</div>\n'
+						 + '								<div class="a">신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~ <br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '									신입사원 기준 실수령 월급이 얼마인지 정확하게 알려주세요~<br>\n'
+						 + '								</div>\n'
+						 + '							</div>\n'
+						 + '						</div>\n'
+						 + '					</div>\n'
+						 + '					<a href="javascript:bold" class="load_more">더보기</a>\n'
+						 + '				</div>\n'
+						 + '			</div>\n'
+						 + '		</div>\n'
+						 + '	</div>\n'
+						 + '</div>\n'
+						 + '<script>\n'
+						 + '	$(".rec_mod_interview.sty05 .qa_ceo .swiper-slide").hide();\n'
+						 + '	$(".rec_mod_interview.sty05 .qa_ceo .swiper-slide").slice(0, 2).show();\n'
+						 + '	$("body").on("click touchstart", ".rec_mod_interview.sty05 .qa_ceo .load_more", function(e) {\n'
+						 + '		e.preventDefault();\n'
+						 + '		$(".rec_mod_interview.sty05 .qa_ceo .swiper-slide:hidden").slice(0, 2).slideDown();\n'
+						 + '		if ($(".rec_mod_interview.sty05 .qa_ceo .swiper-slide:hidden").length == 0) {\n'
+						 + '			$(".rec_mod_interview.sty05 .qa_ceo .load_more").addClass("active");\n'
+						 + '		}\n'
+						 + '	});\n'
+						 + '	var tabWrap = $(".rec_mod_interview.sty05 .rec_itv05_wrap");\n'
+						 + '	$(".rec_mod_interview.sty05 .rec_itv05_wrap").addClass("tab_container");\n'
+						 + '	$(".rec_mod_interview.sty05 .iv_wrap").addClass("tab_content");\n'
+						 + '	$(".rec_mod_interview.sty05 .qa_mng").attr("id", "rec_itv05_tab1");\n'
+						 + '	$(".rec_mod_interview.sty05 .qa_emp").attr("id", "rec_itv05_tab2");\n'
+						 + '	$(".rec_mod_interview.sty05 .rec_itv05_wrap .tab_content").hide();\n'
+						 + '	$(".rec_mod_interview.sty05 .tab_container").each(function() {\n'
+						 + '		$(this).find(".tab").children("li:first").addClass("active");\n'
+						 + '		$(this).children(".tab_content").first().show();\n'
+						 + '	});\n'
+						 + '	$(".rec_mod_interview.sty05 .tab_container .tab li a").click(function() {\n'
+						 + '		var tab_id = $(this).attr("data-tab");\n'
+						 + '		$(this).parent().siblings().removeClass("active");\n'
+						 + '		$(this).parent().addClass("active");\n'
+						 + '		$(this).parent().parent().parent().find(".tab_content").hide();\n'
+						 + '		$("#" + tab_id).fadeIn();\n'
+						 + '	});\n'
+						 + '	$(".rec_mod_interview.sty05 .qa_mng .swiper-slide").hide();\n'
+						 + '	$(".rec_mod_interview.sty05 .qa_mng .swiper-slide").slice(0, 2).show();\n'
+						 + '	$(".rec_mod_interview.sty05 .qa_emp .swiper-slide").hide();\n'
+						 + '	$(".rec_mod_interview.sty05 .qa_emp .swiper-slide").slice(0, 2).show();\n'
+						 + '	$("body").on("click touchstart", ".rec_mod_interview.sty05 .rec_itv05_wrap .load_more", function(e) {\n'
+						 + '		e.preventDefault();\n'
+						 + '		$(this).parent().find(".swiper-slide:hidden").slice(0, 2).slideDown();\n'
+						 + '		if ($(this).parent().find(".swiper-slide:hidden").length == 0) {\n'
+						 + '			$(this).addClass("active");\n'
+						 + '		}\n'
+						 + '	});\n'
+						 + '</script>\n\n';
 		break;
 
 		
