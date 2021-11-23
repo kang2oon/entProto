@@ -3326,7 +3326,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.inf_mod_culture.sty02 .tab a:before{display: none !important}
 	.inf_mod_culture.sty02 .conts{width:100%}
 	.inf_mod_culture.sty02 .swiper-wrapper{height: auto}
-	.inf_mod_culture.sty02 .swiper-slide{height: auto}
+	.inf_mod_culture.sty02 .swiper-slide{height: auto;min-height: 150px}
 	.mag_mod_culture.sty02 .swiper .swiper-wrapper{height: auto}
 	.mag_mod_culture.sty02 .culwel_wrap{display: block}
 	.mag_mod_culture.sty02 .culwel_wrap{padding: 2rem 4rem} 
@@ -3334,13 +3334,13 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.mag_mod_culture.sty02 .culwel_wrap > div:nth-child(1){width: 100%;margin-bottom: 2.0rem}
 	.mag_mod_culture.sty02 .culwel_wrap > div:nth-child(2){width: 100%}
 	.mag_mod_culture.sty02 .swiper-slide > div,
-	.mag_mod_culture.sty02 .swiper-slide dl{padding-top: 0}
+	.mag_mod_culture.sty02 .swiper-slide dl{padding-top: 0;}
 	.mag_mod_culture.sty02 .swiper-slide dd{width:50%}
 	.mag_mod_culture.sty02 .swiper-slide{border-top: 0}
 	.mag_mod_culture.sty02 .swiper.dvCulture .swiper-wrapper{height: auto}
-	.mag_mod_culture.sty02 .swiper-slide{height: auto;min-height: 80px}
+	.mag_mod_culture.sty02 .swiper-slide{height: auto;min-height: 120px}
 	.rec_mod_welfare.sty01 .swiper-wrapper{height: auto}
-	.rec_mod_welfare.sty01 .swiper-slide{height: auto}
+	.rec_mod_welfare.sty01 .swiper-slide{height: auto;min-height: 130px}
 	.rec_mod_welfare.sty03 .swiper-wrapper{height: auto}
 	.rec_mod_welfare.sty03 .swiper-slide{height: auto}
 /* 사업영역 */
@@ -3982,6 +3982,8 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.mag_mod_culture.sty02 .swiper-slide{text-align: center}
 	.mag_mod_culture.sty02 .swiper-slide > *:first-child{margin-left: 0;padding-top: 100px !important}
 	.mag_mod_culture.sty02 .swiper-slide > *:first-child::before{left: 50%;transform: translateX(-50%);top: 0}
+	.mag_mod_culture.sty02 .swiper-slide div,
+	.mag_mod_culture.sty02 .swiper-slide dl{margin-left: 0}
 	.mag_mod_culture.sty02 .swiper-slide dd{width: 100%}
 	.mag_mod_culture.sty02 .swiper-slide .tit,
 	.mag_mod_culture.sty02 .swiper-slide dt{font-size: 2.2rem !important}
