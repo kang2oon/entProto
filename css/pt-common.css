@@ -143,13 +143,18 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
     .com_mod_anchor ul{display:table;white-space:nowrap;table-layout:fixed;}
     .com_mod_anchor li{display: table-cell;}
     .com_mod_anchor.sty01 li + li{padding-left:32px;}
-    .com_mod_anchor.sty01 a{position:relative;display:inline-block;color:inherit;font-size:1.8rem;text-decoration:none;padding:20px 10px;}
-    .com_mod_anchor.sty01 a.active{color:#000;}
-    .com_mod_anchor.sty01 a.active::before{content:"";display:block;width:10px;height:10px;background:#ff1c31;border-radius:50%;position:absolute;top:12px;right:2px;}
-	.com_mod_anchor.sty01 a:hover{color:#000;}
-	.com_mod_anchor.sty01 a:hover::before{content:"";display:block;width:10px;height:10px;background:#ff1c31;border-radius:50%;position:absolute;top:12px;right:2px;}
-	.com_mod_anchor.sty01 a:hover::after{content:"";display:block;width:100%;height:3px;background:#437cff;position:absolute;left:0;bottom:0;}
-    .com_mod_anchor.sty01 a.active::after{content:"";display:block;width:100%;height:3px;background:#437cff;position:absolute;left:0;bottom:0;}
+    .com_mod_anchor.sty01 li a{position:relative;display:inline-block;color:inherit;font-size:1.8rem;text-decoration:none;padding:20px 10px;}
+    .com_mod_anchor.sty01 li a.active{color:#000;}
+    .com_mod_anchor.sty01 li a.active::before{content:"";display:block;width:10px;height:10px;background:#ff1c31;border-radius:50%;position:absolute;top:12px;right:2px;}
+	.com_mod_anchor.sty01 li a:hover{color:#000;}
+	.com_mod_anchor.sty01 li a:hover::before{content:"";display:block;width:10px;height:10px;background:#ff1c31;border-radius:50%;position:absolute;top:12px;right:2px;}
+	.com_mod_anchor.sty01 li a:hover::after{content:"";display:block;width:100%;height:3px;background:#437cff;position:absolute;left:0;bottom:0;}
+    .com_mod_anchor.sty01 li a.active::after{content:"";display:block;width:100%;height:3px;background:#437cff;position:absolute;left:0;bottom:0;}
+
+.com_mod_anchor.sty01 .siteGo{position:absolute;top:50%;right:0;transform: translateY(-50%)}
+    .com_mod_anchor.sty01 .siteGo a{display:inline-block;font-size:1.3rem;font-weight:300;padding:8px 24px 8px 48px;background: #437cff;border-radius:30px;color: #fff !important}
+    .com_mod_anchor.sty01 .siteGo a::before{content:url(/images/ico_home.png);position:absolute;top:6px;left:20px;}
+
     .com_mod_anchor.sty02 li{border-right:1px solid rgba(255,255,255,.25);}
     .com_mod_anchor.sty02 li:first-child{border-left:1px solid rgba(255,255,255,.25);}
     .com_mod_anchor.sty02 a{position:relative;display:inline-block;color:inherit;font-size:1.6rem;font-weight:300;text-decoration:none;padding:20px 32px;}
@@ -190,7 +195,7 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
     .com_mod_recruit.sty01 .box_recruit .detail_wrap dl dt{width:15%;}
     .com_mod_recruit.sty01 .box_recruit .detail_wrap dl dd{width:85%;}
 /* 채용공고 스타일 2*/
-.com_mod_recruit.sty02{padding-bottom:8.0rem;}
+.com_mod_recruit.sty02{margin-top: 8rem;padding-bottom:8.0rem;}
 .com_mod_recruit.sty02 .apply{height: auto !important}
 .com_mod_recruit.sty02 .qm_btn{color: #fff;border: 1px solid #fff;background: transparent}
     .com_mod_recruit.sty02 .bg_bot{position:absolute;bottom:0;width:100%;background:url(../images/jp_md02_bg.png) no-repeat;width: 100%;height: 658px;}
@@ -881,7 +886,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_welfare.sty03 .swiper{overflow: hidden;height: 600px;margin-top: 4.0rem}
 .mag_mod_welfare.sty03 .swiper-slide{height: calc((100% - 60px) / 3);}
 .mag_mod_welfare.sty03 .swiper-slide > div{display: flex}
-.mag_mod_welfare.sty03 .swiper-slide .tit{width: 120px;height: 120px;border: 1px solid #000;text-align: center;border-radius: 15px;font-size: 2.3rem;word-break: keep-all;padding: 2.0rem;box-sizing: border-box;display: flex;align-items: center}
+.mag_mod_welfare.sty03 .swiper-slide .tit{width: 140px;height: 140px;border: 1px solid #000;text-align: center;border-radius: 15px;font-size: 2.3rem;word-break: keep-all;padding: 2.0rem;box-sizing: border-box;display: flex;align-items: center}
 .mag_mod_welfare.sty03 .swiper-slide .desc{padding-left: 20px;font-size: 1.8rem;color: #666;width: calc(100% - 140px)}
 .mag_mod_welfare.sty03 .swiper-button-next,
 .mag_mod_welfare.sty03 .swiper-button-prev{background: #252525;width: 54px;height: 54px;border-radius: 10px}
@@ -4485,6 +4490,7 @@ html{font-size: 8px}
      .header .logo{margin:0 0 24px;}
      .header .logo img{max-width:240px;}
      .com_mod_anchor.sty02 a{padding:12px 32px;}
+     .com_mod_anchor.sty01 .siteGo{display:none;}
      .com_mod_anchor.sty02 .siteGo{display:none;}
      /* 채용공고 */
      .com_mod_recruit.sty01{padding:60px 0;}
