@@ -1155,6 +1155,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 
 /* 인터뷰 */
 .mag_mod_interview.sty04{background: #0d7ae9;padding: 8.0rem 0}
+.mag_mod_interview.sty04 .swiper-wrapper{padding-bottom: 4rem}
 .mag_mod_interview.sty04 .iv_wrap{background: #fff;border-radius: 20px;margin-bottom: 4rem;padding: 4rem;display: flex;justify-content: space-between}
 .mag_mod_interview.sty04 .iv_wrap .swiper {overflow: hidden;position: relative;width: calc(100% - 250px);}
 .mag_mod_interview.sty04 .iv_wrap:last-child{margin-bottom: 0}
