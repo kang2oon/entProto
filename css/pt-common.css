@@ -1000,8 +1000,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .bro_mod_biz.sty02 .swiper-button-prev{background: url(../images/slider06_prev.png);left: -60px}
 .bro_mod_biz.sty02 .swiper-button-next{background: url(../images/slider06_next.png);left: auto !important;right: -60px}
 .bro_mod_biz.sty03{margin: 8.0rem 0}
-.bro_mod_biz.sty03 .tab_wrap{width: 100%;overflow-x: auto;overflow-y: hidden;-ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */}
-.bro_mod_biz.sty03 .tab_wrap::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera*/}
+.bro_mod_biz.sty03 .tab_wrap{width: 100%;overflow-x: auto;overflow-y: hidden;}
 .bro_mod_biz.sty03 .tab_wrap .tabs{display: table;min-width: 100%;white-space: nowrap;table-layout: fixed;border-collapse: collapse}
 .bro_mod_biz.sty03 .tab_wrap .tabs li{display: table-cell;text-align: center;padding: 0 5px}
 .bro_mod_biz.sty03 .tab_wrap .tabs li a{border: 1px solid #aea29f;border-bottom: 0;display: block;font-size: 2.2rem;padding:1rem 2.0rem;border-radius: 10px 10px 0 0;font-weight: bold;margin-bottom: -1px}
