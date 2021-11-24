@@ -167,6 +167,9 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
 	.com_mod_add .img_wrap > div .over{display:none;}
 	.com_mod_add .img_wrap > div:hover .over{display:flex;position:absolute;align-items:center;justify-content:center;top:0;right:0;bottom:0;left:0;background-color:rgba(0,0,0,.5);color:#fff;font-size:2.4rem;}
  /* 채용공고 */
+ /* 채용공고 히든처리*/
+.com_mod_recruit #recruitArea,
+.com_mod_recruit .otherRecruit{display:none;}
 .com_mod_recruit.sty01{padding:80px 0;}
     .com_mod_recruit.sty01 .bg_bot{position:absolute;bottom:0;width:100%;background:#2b71b9;height:280px;}
     .com_mod_recruit.sty01 h3{font-size:32px;margin:0 0 40px;}
@@ -4642,7 +4645,6 @@ html{font-size: 8px}
 	.com_mod_recruit .job_step p{font-size: 1.6rem}
 	.com_mod_recruit .job_step .arrow{background-size: 9px}
     
-	
 	/* SWOT 분석*/
     .inf_mod_swot.sty04 .swot_wrap{display: block;margin-bottom: 4.0rem}
     .inf_mod_swot.sty04 .swot_wrap > div{width: 100%;margin-right: 0}
@@ -4722,4 +4724,5 @@ html{font-size: 8px}
 	.rec_mod_percent.sty03 .percent_wrap > div:nth-child(2) .circle{width: 125px;height: 125px}
 	.rec_mod_percent.sty03 .percent_wrap > div:nth-child(3) .circle{width: 130px;height: 130px}
 	.rec_mod_percent.sty03 .percent_wrap > div:nth-child(4) .circle{width: 140px;height: 140px}
+
 }
