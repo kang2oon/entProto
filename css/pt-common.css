@@ -1905,12 +1905,13 @@ background: linear-gradient(180deg, rgba(96,139,255,1) 0%, rgba(219,169,254,1) 1
 /* 슬로건 및 기업비전 */
 .rec_mod_vision .vision_wrap .slick-arrow{display: block;position: absolute;width: 30px;height: 55px;text-indent: -9999px;top: 50%;transform: translateY(-50%);opacity: 0.5}
 .rec_mod_vision.sty01  .vision_wrap{text-align: center;margin: 4.0rem 0;position: relative;}
-.rec_mod_vision.sty01  .vision_wrap .swiper-container{overflow: hidden;width: calc(100% - 100px);margin: auto}
+.rec_mod_vision.sty01  .vision_wrap .swiper-container{overflow: hidden;width: calc(100% - 100px);margin: auto;position: static}
 .rec_mod_vision.sty01  .vision_wrap img {margin: auto;}
 .rec_mod_vision.sty01 span{color: #ff1c31}
 .rec_mod_vision.sty01 h3{font-size: 3.2rem;margin-bottom: 4.0rem}
 .rec_mod_vision.sty01 .swiper-button-prev, 
-.rec_mod_vision.sty01 .swiper-button-next {width: 30px;height: 55px;left: auto !important}
+.rec_mod_vision.sty01 .swiper-button-next {width: 30px;height: 55px;}
+.rec_mod_vision.sty01 .swiper-button-next{left: auto !important}
 .rec_mod_vision.sty01 .swiper-button-next{background: url(../images/slider01_next.png) no-repeat;right: 0;}
 .rec_mod_vision.sty01 .swiper-button-prev{background: url(../images/slider01_prev.png) no-repeat;left: 0;}
 .rec_mod_vision.sty01 .swiper-button-next,
