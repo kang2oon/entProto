@@ -28,7 +28,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .module-wrap .white_box_sdw{background: #fff;padding: 5.0rem;border: 1px solid #ddd;position: relative;box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.08)}
 button{border:0;}
 
-.module-wrap .review_wrap{background: none !important;padding: 0 !important}
+.module-wrap .review_wrap{background: none;padding: 0;border: 0;}
 
 /* Common */
 *{box-sizing:border-box;}
