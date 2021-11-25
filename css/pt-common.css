@@ -365,15 +365,18 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
 
 /* 조직문화& 복리후생 */
 .mag_mod_culture.sty03 h3{font-size: 4.0rem;text-align: center;margin-bottom: 4.0rem;}
-.mag_mod_culture.sty03 .dvCulture{overflow: hidden;}
+.mag_mod_culture.sty03 .swiper{overflow: hidden;}
 .mag_mod_culture.sty03 .masony{column-count: 4;-webkit-column-count: 4; -moz-column-count:4;overflow: visible;padding:20px}
 .mag_mod_culture.sty03 .masony  .item{margin: 10px; border-radius: 20px;padding: 4.0rem;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18);text-align: center;background: #fff;display: inline-block;width: 100%;transform: translateZ(0);box-sizing: border-box;margin-top: 20px}
 .mag_mod_culture.sty03 .masony  .item:hover{color: #fff;background: -moz-linear-gradient(top, #f59fb7 0%, #e89fd2 99%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, #f59fb7 0%,#e89fd2 99%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */}
-.mag_mod_culture.sty03 .masony  .item:hover .desc{color: #fff}
-.mag_mod_culture.sty03 .masony  .item .tit{font-size: 2.5rem;margin-bottom: 1.5rem}
-.mag_mod_culture.sty03 .masony  .item .tit .desc {color: #666666;font-size: 1.8rem;}
+.mag_mod_culture.sty03 .masony  .item:hover .desc,
+.mag_mod_culture.sty03 .masony  .item:hover dd{color: #fff}
+.mag_mod_culture.sty03 .masony  .item .tit,
+.mag_mod_culture.sty03 .masony  .item dt{font-size: 2.5rem;margin-bottom: 1.5rem}
+.mag_mod_culture.sty03 .masony  .item .desc,
+.mag_mod_culture.sty03 .masony  .item dd{color: #666666;font-size: 1.8rem;}
 .mag_mod_culture.sty03 .swiper-button-prev,
 .mag_mod_culture.sty03 .swiper-button-next{margin-top: 0;transform: translateY(-50%);width: 32px;height: 55px;}
 .mag_mod_culture.sty03 .swiper-button-prev{left: -40px !important;background: url(../images/slider01_prev.png) no-repeat;}
@@ -382,19 +385,33 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_culture.sty03 .swiper-button-next:after{text-indent: -9999px;display: block;width: 100%;}
 .mag_mod_culture.sty04 h3{text-align: center;font-size: 5.0rem;margin-bottom: 4.0rem}
 .mag_mod_culture.sty04 .culture_wrap{position: relative}
-.mag_mod_culture.sty04 .culture_wrap .dvCulture {overflow: hidden}
+.mag_mod_culture.sty04 .culture_wrap .swiper {overflow: hidden}
 .mag_mod_culture.sty04 .swiper-wrapper{height: 950px}
 .mag_mod_culture.sty04 .swiper-slide{height: calc((100% - 20px)/2);background: #00b568;border-radius: 20px;padding: 4rem;text-align: center}
-.mag_mod_culture.sty04 .swiper-slide .tit{font-size: 2.5rem;}
-.mag_mod_culture.sty04 .swiper-slide:nth-child(1) .tit:after{content: '';display: block;background:url(../images/mag_cult01_ico01.png) no-repeat center;width: 103px;height: 103px;margin: 20px auto 20px auto}
-.mag_mod_culture.sty04 .swiper-slide:nth-child(2) .tit:after{content: '';display: block;background:url(../images/mag_cult01_ico02.png) no-repeat center;width: 100px;height: 77px;margin: 20px auto 20px auto}
-.mag_mod_culture.sty04 .swiper-slide:nth-child(3) .tit:after{content: '';display: block;background:url(../images/mag_cult01_ico03.png) no-repeat center;width: 87px;height: 80px;margin: 20px auto 20px auto}
-.mag_mod_culture.sty04 .swiper-slide:nth-child(4) .tit:after{content: '';display: block;background:url(../images/mag_cult01_ico04.png) no-repeat center;width: 94px;height: 103px;margin: 20px auto 20px auto}
-.mag_mod_culture.sty04 .swiper-slide:nth-child(5) .tit:after{content: '';display: block;background:url(../images/mag_cult01_ico05.png) no-repeat center;width: 84px;height: 99px;margin: 20px auto 20px auto}
-.mag_mod_culture.sty04 .swiper-slide:nth-child(6) .tit:after{content: '';display: block;background:url(../images/mag_cult01_ico06.png) no-repeat center;width: 114px;height: 92px;margin: 20px auto 20px auto}
-.mag_mod_culture.sty04 .swiper-slide:nth-child(7) .tit:after{content: '';display: block;background:url(../images/mag_cult01_ico07.png) no-repeat center;width: 98px;height: 91px;margin: 20px auto 20px auto}
-.mag_mod_culture.sty04 .swiper-slide:nth-child(8) .tit:after{content: '';display: block;background:url(../images/mag_cult01_ico08.png) no-repeat center;width: 82px;height: 101px;margin: 20px auto 20px auto}
-.mag_mod_culture.sty04 .swiper-slide .desc{font-size: 1.8rem}
+.mag_mod_culture.sty04 .swiper-slide .tit,
+.mag_mod_culture.sty04 .swiper-slide dt{font-size: 2.5rem;}
+.mag_mod_culture.sty04 .swiper-slide .tit:after,
+.mag_mod_culture.sty04 .swiper-slide dt:after{content: '';display: block;background:url(../images/mag_cult01_ico01.png) no-repeat center;width: 103px;height: 103px;margin: 20px auto 20px auto}
+.mag_mod_culture.sty04 .swiper-slide:nth-child(1) .tit:after,
+.mag_mod_culture.sty04 .swiper-slide:nth-child(1) dt:after{content: '';display: block;background:url(../images/mag_cult01_ico01.png) no-repeat center;width: 103px;height: 103px;margin: 20px auto 20px auto}
+.mag_mod_culture.sty04 .swiper-slide:nth-child(2) .tit:after,
+.mag_mod_culture.sty04 .swiper-slide:nth-child(2) dt:after{content: '';display: block;background:url(../images/mag_cult01_ico02.png) no-repeat center;width: 100px;height: 77px;margin: 20px auto 20px auto}
+.mag_mod_culture.sty04 .swiper-slide:nth-child(3) .tit:after,
+.mag_mod_culture.sty04 .swiper-slide:nth-child(3) dt:after{content: '';display: block;background:url(../images/mag_cult01_ico03.png) no-repeat center;width: 87px;height: 80px;margin: 20px auto 20px auto}
+.mag_mod_culture.sty04 .swiper-slide:nth-child(4) .tit:after,
+.mag_mod_culture.sty04 .swiper-slide:nth-child(4) dt:after{content: '';display: block;background:url(../images/mag_cult01_ico04.png) no-repeat center;width: 94px;height: 103px;margin: 20px auto 20px auto}
+.mag_mod_culture.sty04 .swiper-slide:nth-child(5) .tit:after,
+.mag_mod_culture.sty04 .swiper-slide:nth-child(5) dt:after{content: '';display: block;background:url(../images/mag_cult01_ico05.png) no-repeat center;width: 84px;height: 99px;margin: 20px auto 20px auto}
+.mag_mod_culture.sty04 .swiper-slide:nth-child(6) .tit:after,
+.mag_mod_culture.sty04 .swiper-slide:nth-child(6) dt:after{content: '';display: block;background:url(../images/mag_cult01_ico06.png) no-repeat center;width: 114px;height: 92px;margin: 20px auto 20px auto}
+.mag_mod_culture.sty04 .swiper-slide:nth-child(7) .tit:after,
+.mag_mod_culture.sty04 .swiper-slide:nth-child(7) dt:after{content: '';display: block;background:url(../images/mag_cult01_ico07.png) no-repeat center;width: 98px;height: 91px;margin: 20px auto 20px auto}
+.mag_mod_culture.sty04 .swiper-slide:nth-child(8) .tit:after,
+.mag_mod_culture.sty04 .swiper-slide:nth-child(8) dt:after{content: '';display: block;background:url(../images/mag_cult01_ico08.png) no-repeat center;width: 82px;height: 101px;margin: 20px auto 20px auto}
+.mag_mod_culture.sty04 .swiper-slide .desc,
+.mag_mod_culture.sty04 .swiper-slide dd{font-size: 1.8rem}
+.mag_mod_culture.sty04 .swiper-slide dd{float: left;width: calc(50% - 5px);margin-right: 10px}
+.mag_mod_culture.sty04 .swiper-slide dd:nth-child(2n){margin-right: 0}
 .mag_mod_culture.sty04 .swiper-button-next{background: url(../images/slider01_next.png) no-repeat;right: -50px;left: auto !important}
 .mag_mod_culture.sty04 .swiper-button-prev{background: url(../images/slider01_prev.png) no-repeat;left: -50px}
 .mag_mod_culture.sty04 .swiper-button-next,
@@ -402,13 +419,17 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_culture.sty04 .swiper-button-next:after,
 .mag_mod_culture.sty04 .swiper-button-prev:after{text-indent: -9999px}
 .mag_mod_culture.sty05{background: #cdd8ff;padding: 8.0rem 0}
-.mag_mod_culture.sty05 .dvCulture {overflow: hidden}
+.mag_mod_culture.sty05 .swiper {overflow: hidden}
 .mag_mod_culture.sty05 h3{font-size: 5.0rem;text-align: center;margin-bottom: 4.0rem}
 .mag_mod_culture.sty05 .swiper-wrapper{height: 550px}
 .mag_mod_culture.sty05 .culture_wrap{position: relative}
 .mag_mod_culture.sty05 .swiper-slide{height: calc((100% - 40px)/2);background: #fff;border-radius: 20px;padding: 4rem;text-align: center;border-radius: 20px;padding: 2rem;text-align: center}
-.mag_mod_culture.sty05 .swiper-slide .tit{font-size: 2.0rem;margin-bottom: 1.0rem;font-weight: bold;color: #4525ec}
-.mag_mod_culture.sty05 .swiper-slide .desc{font-size: 1.8rem;color: #666}
+.mag_mod_culture.sty05 .swiper-slide .tit,
+.mag_mod_culture.sty05 .swiper-slide dt{font-size: 2.0rem;margin-bottom: 1.0rem;font-weight: bold;color: #4525ec}
+.mag_mod_culture.sty05 .swiper-slide .desc,
+.mag_mod_culture.sty05 .swiper-slide dd{font-size: 1.8rem;color: #666}
+.mag_mod_culture.sty05 .swiper-slide dd {float: left;width: calc(50% - 5px);margin-right: 10px}
+.mag_mod_culture.sty05 .swiper-slide dd:nth-child(2n){margin-right: 0}
 .mag_mod_culture.sty05 .swiper-button-next:after,
 .mag_mod_culture.sty05 .swiper-button-prev:after{color: #fff;font-size: 2.0rem;}
 .mag_mod_culture.sty05 .swiper-button-next,
@@ -1319,7 +1340,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_interview.sty04 .qa_ceo .txt{color: #f758a6;font-weight: bold;font-size: 2.6rem}
 .rec_mod_interview.sty04 .qa_ceo .cnt-container{display: flex;flex-direction: row-reverse;justify-content: space-between}
 .rec_mod_interview.sty04 .qa_ceo .photo img{display: block;border-radius: 20px}
-.rec_mod_interview.sty04 .qa_ceo .swiper{margin-right: 60px;overflow: hidden;width: 50%}
+.rec_mod_interview.sty04 .qa_ceo .left{margin-right: 60px;overflow: hidden;width: 50%}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper{display: block;margin-top: 4rem}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide{height: auto;margin-bottom: 2rem;}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide .q{font-size: 2.3rem;width: 100%;cursor: pointer;border-bottom: 1px solid #000;padding-bottom: 1.5rem;margin-bottom: 1.5rem;position: relative}
@@ -4136,7 +4157,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.rec_mod_interview.sty04 .qa_ceo{padding: 6rem 0}
 	.rec_mod_interview.sty04 .qa_ceo .cnt-container{flex-direction: column}
 	.rec_mod_interview.sty04 .qa_ceo .photo img{max-height: 400px;margin: auto}
-	.rec_mod_interview.sty04 .qa_ceo .swiper{width: 100%;margin-right: 0;margin-top: 4rem;}
+	.rec_mod_interview.sty04 .qa_ceo .left{width: 100%;margin-right: 0;margin-top: 4rem;}
 	.rec_mod_interview.sty04 .qa_ceo h3{font-size: 3rem;padding-bottom: 1rem}
 	.rec_mod_interview.sty04 .qa_ceo .txt{font-size: 2.2rem}
 	.rec_mod_interview.sty04 .qa_emp{padding: 6rem 0}
