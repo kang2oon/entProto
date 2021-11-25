@@ -564,6 +564,33 @@ Contents = function(item) {
 						 + '	</div>\n'
 						 + '</div>\n\n';
 		break;
+		//기업정보
+		case "sns_mod_info":
+			var contents = ''
+						 + '<div class="module-wrap edit_wrap sns_mod_info sty01">\n'
+						 + '	<div class="cnt-container">\n'
+						 + '		<ul class="info_wrap">\n'
+						 + '         	<li>\n'
+						 + '         	<div class="ico"></div>설립일\n'
+						 + '         	<div class="cnt"><span class="comBuildDate">-</span></div>\n'
+						 + '         	</li>\n'
+						 + '         	<li>\n'
+						 + '         	<div class="ico"></div>매출액(백만원)\n'
+						 + '         	<div class="cnt"><span class="fiSales">-</span></div>\n'
+						 + '         	</li>\n'
+						 + '         	<li>\n'
+						 + '         	<div class="ico"></div>사원수\n'
+						 + '         	<div class="cnt"><span class="fiProfit">-</span></div>\n'
+						 + '         	</li>\n'
+						 + '         	<li>\n'
+						 + '         	<div class="ico"></div>자본금(백만원)\n'
+						 + '         	<div class="cnt"><span class="fiCapital">-</span></div>\n'
+						 + '         	</li>\n'
+						 + '		</ul>\n'
+						 + '	</div>\n'
+						 + '</div>\n\n';
+		break;
+			
 		case "mod_mag_review02":
 			var contents = ''
 						 + '<div class="module-wrap edit_wrap mag_mod_review sty02">\n'
