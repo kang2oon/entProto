@@ -1224,6 +1224,8 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .mag_mod_interview.sty05 .swiper .q{color: #63b5f3;font-size: 2.3rem;position: relative;padding-left: 25px;margin-bottom: 1.0rem}
 .mag_mod_interview.sty05 .iv_wrap .q:before{content: 'Q.';display: block;position: absolute;left: 0;top: 0}
 .mag_mod_interview.sty05 .iv_wrap .a{font-size: 1.6rem;color: #eeeeee}
+.mag_mod_interview.sty05 .swiper .q,
+.mag_mod_interview.sty05 .swiper .a{width: calc(100% - 200px)}
 .mag_mod_interview.sty05 .swiper-pagination-bullet{width: 14px;height: 14px;background: #afafaf;opacity: 1}
 .mag_mod_interview.sty05 .swiper-pagination-bullet-active{width: 40px;border-radius: 20px;background: #007ddd}
 .mag_mod_interview.sty06{background: #0d124d;padding: 8.0rem 0}
@@ -3675,6 +3677,8 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	/* 인터뷰 */
 	.mag_mod_interview.sty05 .iv_wrap .cnt-container{display: block;}
 	.mag_mod_interview.sty05 .interview_txt{width: 100%;margin-bottom: 50px}
+	.mag_mod_interview.sty05 .swiper .q, 
+	.mag_mod_interview.sty05 .swiper .a{width: 100%}
 	.mag_mod_interview.sty05 .swiper-button-next{left: auto !important;right: 0}
 	.mag_mod_interview.sty05 .swiper-button-prev{left: auto;right: 45px}
 	.mag_mod_interview.sty06 .swiper-wrapper{height: auto;}
