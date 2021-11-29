@@ -3953,10 +3953,10 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.rec_mod_swot.sty05 .swot_wrap .swotT:before{font-size: 3.0rem}
 	
 	/* 기업정보 */
-	.sns_mod_info.sty01 ul li:nth-child(1) .ico{background-size: 60px;width: 60px;height: 70px}
-	.sns_mod_info.sty01 ul li:nth-child(2) .ico{background-size: 60px;width: 60px;height: 70px}
-	.sns_mod_info.sty01 ul li:nth-child(3) .ico{background-size: 60px;width: 60px;height: 70px}
-	.sns_mod_info.sty01 ul li:nth-child(4) .ico{background-size: 50px;width: 50px;height: 70px}
+	.sns_mod_info.sty01 ul li:nth-child(1) .ico{background-size: 60px !important;width: 60px;height: 70px}
+	.sns_mod_info.sty01 ul li:nth-child(2) .ico{background-size: 60px !important;width: 60px;height: 70px}
+	.sns_mod_info.sty01 ul li:nth-child(3) .ico{background-size: 60px !important;width: 60px;height: 70px}
+	.sns_mod_info.sty01 ul li:nth-child(4) .ico{background-size: 50px !important;width: 50px;height: 70px}
 	
 	/* 재무정보 */
 	.sns_mod_finance.sty02 ul li{width: calc(25% - 11.25px);margin-right: 15px;font-size: 1.8rem;word-break: keep-all}
@@ -4166,8 +4166,12 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.rec_mod_interview.sty04 .qa_ceo .txt{font-size: 2.2rem}
 	.rec_mod_interview.sty04 .qa_emp{padding: 6rem 0}
 	.rec_mod_interview.sty04 .qa_mng .swiper-button-next,
-	.rec_mod_interview.sty04 .qa_mng .swiper-button-prev{background-size: 30px;width: 30px;height: 27px;top: 30%}
-	.rec_mod_interview.sty04 .qa_emp .load_more{background-size: 30px;width: 30px;height: 30px}
+	.rec_mod_interview.sty04 .qa_mng .swiper-button-prev{background-size: 30px !important;width: 30px;height: 27px;top: 30%}
+	.rec_mod_interview.sty04 .qa_mng .swiper{padding-bottom: 5rem}
+	.rec_mod_interview.sty04 .qa_mng .swiper-button-next{top:auto !important;bottom: 0;right: calc(50% - 40px) !important}
+	.rec_mod_interview.sty04 .qa_mng .swiper-button-prev{top:auto !important;bottom: 0;left: calc(50% - 40px)  !important}
+	.rec_mod_interview.sty04 .qa_emp .load_more{background-size: 30px !important;width: 30px;height: 30px}
+	.rec_mod_interview.sty04 .qa_mng .q{padding: 4rem 5rem}
 	.rec_mod_interview.sty04 .qa_mng{padding: 6rem 0} 
 	.rec_mod_interview.sty04 .qa_emp .iv_wrap .photo{position: static}
 	.rec_mod_interview.sty04 .qa_emp .iv_wrap{display: block}
@@ -4253,11 +4257,11 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.bro_mod_finance.sty08 .conts_wrap > div{width: calc(50% - 15px);margin-bottom: 3rem}
 	.bro_mod_finance.sty08 .conts_wrap > div:nth-child(2n){margin-right: 0}
 	
-	.bro_mod_finance.sty09 h3{background-size: 400px;width: 400px;height: 400px;font-size: 4rem}
-	.bro_mod_finance.sty09 .conts_wrap > div:nth-child(1):before{background-size: 100px;width: 100px;height: 101px}
-	.bro_mod_finance.sty09 .conts_wrap > div:nth-child(2):before{background-size: 100px;width: 100px;height: 101px}
-	.bro_mod_finance.sty09 .conts_wrap > div:nth-child(3):before{background-size: 100px;width: 100px;height: 101px}
-	.bro_mod_finance.sty09 .conts_wrap > div:nth-child(4):before{background-size: 100px;width: 100px;height: 101px}
+	.bro_mod_finance.sty09 h3{background-size: 400px !important;width: 400px;height: 400px;font-size: 4rem}
+	.bro_mod_finance.sty09 .conts_wrap > div:nth-child(1):before{background-size: 100px !important;width: 100px;height: 101px}
+	.bro_mod_finance.sty09 .conts_wrap > div:nth-child(2):before{background-size: 100px !important;width: 100px;height: 101px}
+	.bro_mod_finance.sty09 .conts_wrap > div:nth-child(3):before{background-size: 100px !important;width: 100px;height: 101px}
+	.bro_mod_finance.sty09 .conts_wrap > div:nth-child(4):before{background-size: 100px !important;width: 100px;height: 101px}
 	.bro_mod_finance.sty09 .conts_wrap > div > div{font-size: 3.6rem}
 }
 
@@ -4549,7 +4553,7 @@ html{font-size: 8px}
 	.inf_mod_emp.sty06 .empState_wrap > div{font-size:1.8rem} 
 	
 	/* 재무정보 */
-	.bro_mod_finance.sty09 h3{width: 280px;height: 280px;background-size: 280px;font-size: 2.5rem}
+	.bro_mod_finance.sty09 h3{width: 280px;height: 280px;background-size: 280px !important;font-size: 2.5rem}
 	.bro_mod_finance.sty09 .conts_wrap{display: block;}
 	.bro_mod_finance.sty09 .conts_wrap > div{width: 100%;margin-right: 0;text-align: left}
 	.bro_mod_finance.sty09 .conts_wrap > div:nth-child(1):before{margin-right: 2rem}
