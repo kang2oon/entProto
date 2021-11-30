@@ -2917,10 +2917,10 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 .inf_mod_percent.sty03 .percent_wrap .stable .ico{background: url(../images/inf_percent03_ico01.png) no-repeat center;width: 76px;height: 76px}
 .inf_mod_percent.sty03 .percent_wrap .stable span{font-size: 3.5rem}
 .inf_mod_percent.sty03 .percent_wrap .growth{background: #ff7348;height: calc(70% - 10px);font-size: 3.0rem}
-.inf_mod_percent.sty03 .percent_wrap .growth .ico{background: url(../images/inf_percent03_ico02.png) no-repeat center;width: 85px;height: 94px}
+.inf_mod_percent.sty03 .percent_wrap .growth .ico{background: url(../images/inf_percent03_ico03.png) no-repeat center;width: 119px;height: 124px}
 .inf_mod_percent.sty03 .percent_wrap .growth span{font-size: 5.0rem}
 .inf_mod_percent.sty03 .percent_wrap .scale{background: #ab71e1;height: calc(60% - 10px);font-size: 2.4rem}
-.inf_mod_percent.sty03 .percent_wrap .scale .ico{background: url(../images/inf_percent03_ico03.png) no-repeat center;width: 119px;height: 124px}
+.inf_mod_percent.sty03 .percent_wrap .scale .ico{background: url(../images/inf_percent03_ico02.png) no-repeat center;width: 85px;height: 94px}
 .inf_mod_percent.sty03 .percent_wrap .scale span{font-size: 4.0rem}
 .inf_mod_percent.sty03 .percent_wrap .profit{background: #ffb200;height: calc(30% - 10px);font-size: 2.2rem}
 .inf_mod_percent.sty03 .percent_wrap .profit .ico{background: url(../images/inf_percent03_ico04.png) no-repeat center;width: 55px;height: 51px}
