@@ -349,7 +349,7 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
 /* 연혁 */
 .bro_mod_history.sty02{margin: 8.0rem 0}
 .bro_mod_history.sty02 .history > div{display: flex;align-items: flex-start;padding: 40px 0;position: relative}
-.bro_mod_history.sty02 .history > div:after{content: '';display: block;width: 24px;height: 100%;background: #e4e4e4;position: absolute;left: 50%;transform: translateX(-50%)}
+.bro_mod_history.sty02 .history > div:after{content: '';display: block;width: 24px;height: 100%;background: #e4e4e4;position: absolute;left: 50%;transform: translateX(-50%);top: 0}
 .bro_mod_history.sty02 .history > div:last-child:after{border-radius: 0 0 20px 20px}
 .bro_mod_history.sty02 .history > div > span{background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,184,113,1) 0%, rgba(51,147,207,1) 100%); color: #fff;width:137px;border-radius: 20px;padding: 0 20px;position: absolute;left: 50%;transform: translateX(-50%); font-size: 2.8rem;display: block;z-index: 1}
 .bro_mod_history.sty02 .history > div > span:after{content: '';display: block;width: 24px;height: 24px;background: #fff;border-radius: 50%;position: absolute;right: 10px;top: 50%;transform: translateY(-50%);box-shadow: 0 0 10px rgba(0, 0, 0, 0.10)}
@@ -1470,8 +1470,8 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_strategy.sty01 .cont_box{background: #fff;padding: 5.0rem;}
 .rec_mod_strategy.sty01 .cont_box li{display: flex;font-size: 2.4rem;margin-bottom: 10px}
 .rec_mod_strategy.sty01 .cont_box li:last-child{margin-bottom: 0}
-.rec_mod_strategy.sty01 .cont_box li strong{width: 150px;font-weight: 500}
-.rec_mod_strategy.sty01 .cont_box li p{color: #7b7b7b;width: calc(100% - 150px);}
+.rec_mod_strategy.sty01 .cont_box li strong{font-weight: 500;margin-right: 20px}
+.rec_mod_strategy.sty01 .cont_box li p{color: #7b7b7b;}
 
 /*최근 입사자 합격 스펙*/
 .rec_mod_strategy .spec.in_img .cont_box{position: relative;}
@@ -3518,11 +3518,9 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	
 	/*가산점 요인*/
 	.rec_mod_strategy .spec.in_img .cont_box:after{display: none}
-	.rec_mod_strategy.sty01 .cont_box li{font-size: 1.8rem;}
-	.rec_mod_strategy.sty01 .cont_box li strong{width: 100px;}
-	.rec_mod_strategy.sty01 .cont_box li p{width: calc(100% - 100px)}
+	.rec_mod_strategy.sty01 .cont_box li{font-size: 1.8rem;width: 100%}
 	.rec_mod_strategy.sty01 .spec .cont_box .radar_chart{width: 300px}
-	.rec_mod_strategy.sty01 .spec .cont_box ul{width: calc(100% - 350px)}
+	.rec_mod_strategy.sty01 .spec .cont_box ul{width:100%}
 	
 	/* 재무정보 */
 	.rec_mod_finance .company_sale_wrap .chart_wrap{display: block}
@@ -3832,7 +3830,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.rec_mod_strategy.sty01 .self_intro_wrap {padding: 3.0rem}
 	/* 가산점 요인 */
 	.rec_mod_strategy.sty01 .spec .cont_box .radar_chart{width: 250px}
-	.rec_mod_strategy.sty01 .spec .cont_box ul{width: calc(100% - 300px)}
+	.rec_mod_strategy.sty01 .spec .cont_box ul{width: 100%}
 	
 	/* 면접 꿀팁 */
 	.rec_mod_strategy.sty01 .interview_tip .it_area_wrap {padding: 3.0rem }
