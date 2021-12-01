@@ -4186,7 +4186,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(8) .q:before,
 	.rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(9) .q:before,
 	.rec_mod_interview.sty04 .qa_emp .iv_wrap .swiper-slide:nth-child(10) .q:before{font-size: 2.8rem}
-	.rec_mod_interview.sty05 .load_more{background-size: 35px;width: 35px;height: 35px}
+	.rec_mod_interview.sty05 .load_more{background-size: 35px !important;width: 35px;height: 35px}
 	.rec_mod_interview.sty05 .qa_ceo{padding: 6rem 0}
 	.rec_mod_interview.sty05 .qa_ceo h3{font-size: 3rem;max-width: 265px;width: 100%}
 	.rec_mod_interview.sty05 .qa_ceo .txt{font-size: 2.6rem}
