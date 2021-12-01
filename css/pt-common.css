@@ -990,8 +990,8 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_biz.sty03 .swiper-button-prev:after,
 .mag_mod_biz.sty03 .swiper-button-next:after{color: #fff;font-size: 1.8rem}
 .mag_mod_biz.sty04{margin: 8.0rem 0}
-.mag_mod_biz.sty04 .biz_wrap{display: flex;position: relative;}
-.mag_mod_biz.sty04 .biz_wrap .txt{width: 320px;position: relative}
+.mag_mod_biz.sty04 .biz_wrap{display: flex;position: relative;align-items: flex-start}
+.mag_mod_biz.sty04 .biz_wrap .txt{width: 320px;position: relative;padding-bottom: 120px}
 .mag_mod_biz.sty04 .biz_wrap .txt:before{content: '';display: block;width: 40px;height: 2px;background: #000;}
 .mag_mod_biz.sty04 .biz_wrap .txt .msgAdd{font-size: 1.6rem;color: #494949;margin: 3rem 0}
 .mag_mod_biz.sty04 .biz_wrap .txt h3{font-size: 3.5rem;color: #2b2b2b;font-weight: 400;letter-spacing: -1px}
@@ -4093,7 +4093,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	/* 사업영역 */
 	.mag_mod_biz.sty03{padding: 6rem 0}
 	.mag_mod_biz.sty04 .biz_wrap{display: block;}
-	.mag_mod_biz.sty04 .biz_wrap .txt{width: 100%;margin-bottom: 4.0rem}
+	.mag_mod_biz.sty04 .biz_wrap .txt{width: 100%;margin-bottom: 4.0rem;padding-bottom: 0}
 	.mag_mod_biz.sty04 .biz_wrap .bizDiv{width: 100%;}
 	.mag_mod_biz.sty04 .swiper-button-prev,
 	.mag_mod_biz.sty04 .swiper-button-next{width: 35px;height: 35px}
