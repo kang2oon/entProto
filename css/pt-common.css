@@ -646,9 +646,11 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .inf_mod_culture.sty01 .culture_wrap .swiper-slide{background: #00cbd6}
 .inf_mod_culture.sty01 .welfare_wrap .swiper-slide{background: #00d39f}
 .inf_mod_culture.sty01 .swiper-slide > * {padding-left: 120px;position: relative}
+.inf_mod_culture.sty01 .culture_wrap .swiper-slide div:first-child:before {content: '';display: block;width: 92px;height: 92px;border-radius: 50%;background: url(../images/rec_culture02_ico01.png) no-repeat center #80e5eb;position: absolute;left: 0;top: 0;}
 .inf_mod_culture.sty01 .culture_wrap .swiper-slide:nth-child(1) div:first-child:before {content: '';display: block;width: 92px;height: 92px;border-radius: 50%;background: url(../images/rec_culture02_ico01.png) no-repeat center #80e5eb;position: absolute;left: 0;top: 0;}
 .inf_mod_culture.sty01 .culture_wrap .swiper-slide:nth-child(2) div:first-child:before {content: '';display: block;width: 92px;height: 92px;border-radius: 50%;background: url(../images/rec_culture02_ico02.png) no-repeat center #80e5eb;position: absolute;left: 0;top: 0;}
 .inf_mod_culture.sty01 .culture_wrap .swiper-slide:nth-child(3) div:first-child:before {content: '';display: block;width: 92px;height: 92px;border-radius: 50%;background: url(../images/rec_culture02_ico03.png) no-repeat center #80e5eb;position: absolute;left: 0;top: 0;}
+.inf_mod_culture.sty01 .welfare_wrap .swiper-slide > *:first-child:before {content: '';display: block;width: 92px;height: 92px;border-radius: 50%;background: url(../images/rec_culture02_ico04.png) no-repeat center #80e9cf;position: absolute;left: 0;top: 0;}
 .inf_mod_culture.sty01 .welfare_wrap .swiper-slide:nth-child(1) > *:first-child:before {content: '';display: block;width: 92px;height: 92px;border-radius: 50%;background: url(../images/rec_culture02_ico04.png) no-repeat center #80e9cf;position: absolute;left: 0;top: 0;}
 .inf_mod_culture.sty01 .welfare_wrap .swiper-slide:nth-child(2) > *:first-child:before {content: '';display: block;width: 92px;height: 92px;border-radius: 50%;background: url(../images/rec_culture02_ico05.png) no-repeat center #80e9cf;position: absolute;left: 0;top: 0;}
 .inf_mod_culture.sty01 .welfare_wrap .swiper-slide:nth-child(3) > *:first-child:before {content: '';display: block;width: 92px;height: 92px;border-radius: 50%;background: url(../images/rec_culture02_ico06.png) no-repeat center #80e9cf;position: absolute;left: 0;top: 0;}
@@ -668,9 +670,11 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .inf_mod_culture.sty02 .conts > div {position: relative;padding: 4.0rem 4.0rem 6.0rem 4.0rem;background: #fff;}
 .inf_mod_culture.sty02 .conts > div > div {overflow: hidden;}
 .inf_mod_culture.sty02 .conts   .swiper-slide > *{padding-left: 150px;position: relative;}
+.inf_mod_culture.sty02  .culture_wrap .swiper-slide > *:before {content: '';display: block;background: url(../images/inf_culture_item01.png) no-repeat #dbf4ee center;width: 120px;height: 120px;border-radius: 50%;position: absolute;left: 0;top: 0}
 .inf_mod_culture.sty02  .culture_wrap .swiper-slide:nth-child(1) > *:before {content: '';display: block;background: url(../images/inf_culture_item01.png) no-repeat #dbf4ee center;width: 120px;height: 120px;border-radius: 50%;position: absolute;left: 0;top: 0}
 .inf_mod_culture.sty02  .culture_wrap .swiper-slide:nth-child(2) > *:before {content: '';display: block;background: url(../images/inf_culture_item02.png) no-repeat #dbf4ee center;width: 120px;height: 120px;border-radius: 50%;position: absolute;left: 0;top: 0}
 .inf_mod_culture.sty02  .culture_wrap .swiper-slide:nth-child(3) > *:before {content: '';display: block;background: url(../images/inf_culture_item03.png) no-repeat #dbf4ee center;width: 120px;height: 120px;border-radius: 50%;position: absolute;left: 0;top: 0}
+.inf_mod_culture.sty02  .welfare_wrap .swiper-slide> *:first-child:before {content: '';display: block;background: url(../images/inf_culture_item01.png) no-repeat #dbf4ee center;width: 120px;height: 120px;border-radius: 50%;position: absolute;left: 0;top: 0}
 .inf_mod_culture.sty02  .welfare_wrap .swiper-slide:nth-child(1) > *:first-child:before {content: '';display: block;background: url(../images/inf_culture_item01.png) no-repeat #dbf4ee center;width: 120px;height: 120px;border-radius: 50%;position: absolute;left: 0;top: 0}
 .inf_mod_culture.sty02  .welfare_wrap .swiper-slide:nth-child(2) > *:first-child:before {content: '';display: block;background: url(../images/inf_culture_item02.png) no-repeat #dbf4ee center;width: 120px;height: 120px;border-radius: 50%;position: absolute;left: 0;top: 0}
 .inf_mod_culture.sty02  .welfare_wrap .swiper-slide:nth-child(3) > *:first-child:before {content: '';display: block;background: url(../images/inf_culture_item03.png) no-repeat #dbf4ee center;width: 120px;height: 120px;border-radius: 50%;position: absolute;left: 0;top: 0}
@@ -1211,8 +1215,9 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .mag_mod_interview.sty04 .iv_wrap .a{font-size: 1.8rem;color:#555}
 .mag_mod_interview.sty04 .swiper-pagination-bullet{width: 14px;height: 14px;}
 .mag_mod_interview.sty04 .swiper-pagination-bullet-active{width: 40px;border-radius: 20px}
-.mag_mod_interview.sty05 .iv_wrap{background: #28394f;padding: 8.0rem 0}
-.mag_mod_interview.sty05 .iv_wrap .cnt-container{display: flex;}
+.mag_mod_interview.sty05 {background: #28394f;padding: 8.0rem 0}
+.mag_mod_interview.sty05 .swiper-container{padding-top: 5rem}
+.mag_mod_interview.sty05 .iv_wrap {display: flex;}
 .mag_mod_interview.sty05 .interview_txt{width: 350px;color: #fff;position: relative;}
 .mag_mod_interview.sty05 .swiper-button-next, 
 .mag_mod_interview.sty05 .swiper-button-prev{width: 38px;height: 38px;border-radius: 5px;background: #007ddd;margin-top: 0;top: auto;bottom:0}
@@ -1235,11 +1240,11 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .mag_mod_interview.sty05 .swiper-pagination-bullet{width: 14px;height: 14px;background: #afafaf;opacity: 1}
 .mag_mod_interview.sty05 .swiper-pagination-bullet-active{width: 40px;border-radius: 20px;background: #007ddd}
 .mag_mod_interview.sty06{background: #0d124d;padding: 8.0rem 0}
-.mag_mod_interview.sty06 .iv_wrap{background: #fff;border-radius: 20px;margin-bottom: 4rem;padding: 4rem; display: flex;justify-content: space-between;flex-direction: row-reverse;position: relative;}
+.mag_mod_interview.sty06 .iv_wrap{background: #fff;border-radius: 20px;margin-bottom: 4rem;padding: 4rem 7rem; display: flex;justify-content: space-between;flex-direction: row-reverse;position: relative;}
 .mag_mod_interview.sty06 .iv_wrap .photo{max-width: 450px}
-.mag_mod_interview.sty06 .swiper-wrapper{margin: auto;height: 800px;}
-.mag_mod_interview.sty06 .swiper-wrapper .swiper-slide{height: calc(100%/3);padding:0 5rem }
-.mag_mod_interview.sty06 .iv_wrap .swiper-wrapper{padding-top: 60px}
+.mag_mod_interview.sty06 .swiper-slide  .swiper-wrapper{margin: auto;height: 800px;}
+.mag_mod_interview.sty06 .swiper-slide  .swiper-wrapper .swiper-slide{height: calc(100%/3);padding-left: 5rem}
+.mag_mod_interview.sty06 .iv_wrap .swiper-wrapper{padding: 60px 0}
 .mag_mod_interview.sty06 .iv_wrap.qa_ceo:before{content: 'CEO';display: block;font-size: 2.5rem;color: #fff;background: #565eb8;padding: 0.5rem 4rem;border-radius: 10px;position: absolute;left: 9rem;top: 4rem}
 .mag_mod_interview.sty06 .iv_wrap.qa_mng:before{content: '인사담당자';display: block;font-size: 2.5rem;color: #fff;background: #565eb8;padding: 0.5rem 4rem;border-radius: 10px;position: absolute;left: 9rem;top: 4rem}
 .mag_mod_interview.sty06 .iv_wrap.qa_emp:before{content: '재직자';display: block;font-size: 2.5rem;color: #fff;background: #565eb8;padding: 0.5rem 4rem;border-radius: 10px;position: absolute;left: 9rem;top: 4rem}
@@ -1255,8 +1260,8 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .mag_mod_interview.sty06 .swiper-button-prev{width: 48px;height: 48px;border-radius: 50%;background: #565eb8;}
 .mag_mod_interview.sty06 .swiper-button-next:after, 
 .mag_mod_interview.sty06 .swiper-button-prev:after{color: #fff;font-size: 2.0rem}
-.mag_mod_interview.sty06 .swiper-button-prev{left: 0;}
-.mag_mod_interview.sty06 .swiper-button-next{left: auto!important;right: 0}
+.mag_mod_interview.sty06 .swiper-button-prev{left: 2rem}
+.mag_mod_interview.sty06 .swiper-button-next{left: auto!important;right: 2rem}
 .bro_mod_interview.sty02 > div{margin: 8.0rem 0}
 .bro_mod_interview.sty02 .interview_txt{display: flex;justify-content: space-between;position: relative;z-index: 3}
 .bro_mod_interview.sty02 .interview_txt .txt{width: calc(100% - 480px);position: relative}
@@ -1271,6 +1276,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .bro_mod_interview.sty02 .q.active{background: #1c96d5;color: #fff;}
 .bro_mod_interview.sty02 .q.active:after{content: '';display: block;background: url(../images/bro_interview02_up.png) no-repeat;}
 .bro_mod_interview.sty02 .a{display: none;background: #fff;padding: 2.0rem;font-size: 1.8rem;border-radius: 20px;}
+.bro_mod_interview.sty02 .sw_btn_wrap{max-width: 1260px;width:100%;position: absolute;top: 0;left: 50%;transform: translateX(-50%);height:20px;z-index: 55}
 .bro_mod_interview.sty02 .swiper-button-next, 
 .bro_mod_interview.sty02 .swiper-button-prev{width: 38px;height: 38px;border-radius: 10px;background: #1c96d5;margin-top: 0;top: 0}
 .bro_mod_interview.sty02 .swiper-button-next:after, 
@@ -2551,9 +2557,10 @@ left: 0;width: 100%;height: 100%;}
     .inf_mod_welfare.sty02 .swiper{width:calc(100% - 200px);height:100%;margin:0 auto;padding:60px 0;overflow:hidden;}
     .inf_mod_welfare.sty02 .swiper .swiper-wrapper{height:480px;}
     .inf_mod_welfare.sty02 .swiper-slide{height: calc((100% - 60px) / 3);}
-    .inf_mod_welfare.sty02 .swiper-slide dl{margin-left:120px;position:relative;}
-    .inf_mod_welfare.sty02 .swiper-slide dl::before{
-        content:"";position:absolute;top:8px;left:-120px;width:100px;height:100px;border-radius:50%;
+    .inf_mod_welfare.sty02 .swiper-slide dl,
+.inf_mod_welfare.sty02 .swiper-slide > *{margin-left:120px;position:relative;}
+    .inf_mod_welfare.sty02 .swiper-slide dl::before,
+ 	.inf_mod_welfare.sty02 .swiper-slide > *::before{ content:"";position:absolute;top:8px;left:-120px;width:100px;height:100px;border-radius:50%;
         display:block;background-color:#ffc600;text-align:center;
         background-image:url(/images/@ico_welfare_1238139826.png);background-repeat:no-repeat;
     }
@@ -2567,12 +2574,16 @@ left: 0;width: 100%;height: 100%;}
     .inf_mod_welfare.sty02 .swiper-slide.holiday dl::before{background-position-x:-700px;}
     .inf_mod_welfare.sty02 .swiper-slide.handicap dl::before{background-position-x:-800px;}
     .inf_mod_welfare.sty02 .swiper-slide.etc dl::before{background-position-x:-900px;}
-    .inf_mod_welfare.sty02 .swiper-slide dt{font-size:24px;font-weight:500;margin-bottom:8px;}
-    .inf_mod_welfare.sty02 .swiper-slide dd{display:inline-block;width:50%;padding-right:24px;font-size:16px;letter-spacing:-.5px;color:#666;margin:0 0 4px;}
+    .inf_mod_welfare.sty02 .swiper-slide dt,
+ .inf_mod_welfare.sty02 .swiper-slide .tit{font-size:24px;font-weight:500;margin-bottom:8px;}
+    .inf_mod_welfare.sty02 .swiper-slide dd,
+ .inf_mod_welfare.sty02 .swiper-slide .desc{display:inline-block;width:50%;padding-right:24px;font-size:16px;letter-spacing:-.5px;color:#666;margin:0 0 4px;}
+.inf_mod_welfare.sty02 .swiper-slide .desc{width: 100% !important}
     .inf_mod_welfare.sty02 .swiper-slide dd::before{content:"- ";}
-    .inf_mod_welfare.sty02 .welfare_wrap .swiper-button-next, .inf_mod_welfare.sty02 .welfare_wrap .swiper-button-prev{margin-top:80px;color:#ddd;}
+    .inf_mod_welfare.sty02 .welfare_wrap .swiper-button-next, .inf_mod_welfare.sty02 .welfare_wrap .swiper-button-prev{color:#ddd;}
     .inf_mod_welfare.sty02 .welfare_wrap .swiper-button-next{right:40px;left:auto!important;}
     .inf_mod_welfare.sty02 .welfare_wrap .swiper-button-prev{left:40px;}
+.inf_mod_welfare.sty02 .welslide_wrap{position: relative}
     /* SWOT */
 .inf_mod_swot.sty01{background-color:#f3f3f3;padding:120px 0;}
     .inf_mod_swot.sty01 .swot_wrap{
@@ -2823,6 +2834,14 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 .mag_mod_finance.sty01 dl:last-child {border-bottom: 0}
 .mag_mix_finance{background-color:#033668;padding:80px 0;}
 .mag_mod_finance.sty02 > div, .mag_mod_percent.sty02 > div{background-color:#032e58;padding:60px 48px;border-radius:16px;}
+
+.mag_mod_sty02_txt .cont{display: flex;justify-content:center}
+.mag_mod_sty02_txt .cont > div{margin-right: 8rem}
+.mag_mod_sty02_txt .cont > div:last-child{margin-right: 0}
+.mag_mod_sty02_txt .cont .tit{font-size: 2.4rem;color: #646a7c;text-align: center;}
+.mag_mod_sty02_txt .cont .desc{font-size: 2.4rem;color: #646a7c;display: flex;align-items: baseline}
+.mag_mod_sty02_txt .cont .desc span{font-weight: bold;color: #1a1361;font-size: 7rem;margin-right: .5rem}
+
 .mag_mod_finance.sty02 > div h3{font-size:4rem;font-weight:500;color:#fff;text-align:center;}
 .mag_mod_finance.sty02 > div .tab_warp{margin-top:60px;}
 .mag_mod_finance.sty02 > div .tab_warp .tab{float:left;width:280px;}
@@ -3456,6 +3475,9 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	
 	/* 백분위 정보 */
 	.mag_mod_percent.sty04 .percent_wrap > div{padding: 3rem;flex-direction: column;text-align: center}
+	
+	
+	.bro_mod_interview.sty02 .sw_btn_wrap{width: calc(100% - 40px)}
 }
 
 
@@ -3563,6 +3585,9 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
     .rec_mod_interview.sty02 .qa_emp .swiper-scrollbar {margin-top: 30px;}
     .rec_mod_interview.sty02  img{width: 350px;}
     .rec_mod_interview.sty02 .q{margin-top: 2.0rem;}
+	
+	.mag_mod_interview.sty06 .iv_wrap .photo{max-width: 300px}
+	.mag_mod_interview.sty06 .iv_wrap .swiper{width: calc(100% - 320px)}
 	
 /* sns형 start*/
 	.sns_mod_summary.sty02 .slogan{font-size: 6.0rem}
@@ -3679,15 +3704,19 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.bro_mod_biz.sty06 .bizDiv .text_area{width: calc(100% - 200px)}
 	
 	/* 인터뷰 */
-	.mag_mod_interview.sty05 .iv_wrap .cnt-container{display: block;}
+	.mag_mod_interview.sty05{padding: 6rem 0}
+	.mag_mod_interview.sty05 .iv_wrap {flex-direction: column}
 	.mag_mod_interview.sty05 .interview_txt{width: 100%;margin-bottom: 50px}
 	.mag_mod_interview.sty05 .swiper .q, 
 	.mag_mod_interview.sty05 .swiper .a{width: 100%}
-	.mag_mod_interview.sty05 .swiper-button-next{left: auto !important;right: 0}
-	.mag_mod_interview.sty05 .swiper-button-prev{left: auto;right: 45px}
-	.mag_mod_interview.sty06 .swiper-wrapper{height: auto;}
-	.mag_mod_interview.sty06 .swiper-wrapper .swiper-slide{height: auto}
-	.bro_mod_interview.sty02 .interview_txt .photo{width: 300px}
+	.mag_mod_interview.sty05 .swiper-button-next{left: auto !important;right: 0;bottom: auto;top: 10rem}
+	.mag_mod_interview.sty05 .swiper-button-prev{left: auto;right: 45px;bottom: auto;top: 10rem}
+	.mag_mod_interview.sty06 .iv_wrap{padding: 4rem 3rem}
+	.mag_mod_interview.sty06 .swiper-slide .swiper-wrapper .swiper-slide{}
+	.mag_mod_interview.sty05 .swiper-container{padding-top: 0}
+	.mag_mod_interview.sty06 .swiper-slide .swiper-wrapper{height: auto;}
+	.mag_mod_interview.sty06 .swiper-slide .swiper-wrapper .swiper-slide{height: auto}
+	.bro_mod_interview.sty02 .interview_txt .photo{width: 300px;display: none}
 	.bro_mod_interview.sty02 .interview_txt .txt{width: calc(100% - 350px)}
 	.inf_mod_interview.sty03{margin: 6rem 0}
 	.inf_mod_interview.sty03 .cnt-container{display: block}
@@ -3791,6 +3820,9 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	
 /* 인터뷰 */
 .inf_mod_interview.sty02 > div > div{width:100%;margin-bottom:40px;}
+	.inf_mod_welfare.sty02 .swiper .swiper-wrapper{min-height: 150px;height: auto}
+	.inf_mod_welfare.sty02 .welfare_wrap .swiper-button-next, .inf_mod_welfare.sty02 .welfare_wrap .swiper-button-prev{margin-top: 0;top: 50%;transform: translateY(-50%)}
+	.inf_mod_welfare.sty02 .swiper-slide{height: auto}
 
 /* 리뷰 */	
 	.mag_mod_review.sty02 .culture_wrap .item{padding: 2.0rem;}	
@@ -3896,6 +3928,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
     .rec_mod_interview .swiper-button-next:after, .rec_mod_interview .swiper-button-next:after,
     .rec_mod_interview .swiper-button-prev:after, .rec_mod_interview .swiper-button-prev:after{display: none}
     .rec_mod_interview.sty02 .q{font-size: 2.2rem;}
+	
 
 	/* sns형 */
 	.sns_mod_vision.sty02 .vision_wrap > div{width: calc(50% - 15px);margin-right: 30px;margin-bottom: 10px;height: 250px}
@@ -4134,13 +4167,13 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.mag_mod_interview.sty05 .itv_border{width: 100%}
 	.mag_mod_interview.sty05 .itv_border{padding: 2rem}
 	.mag_mod_interview.sty05 img{display: none}
-	.mag_mod_interview.sty05 .iv_wrap{padding: 6rem 0 4rem 0}
 	.mag_mod_interview.sty05 .interview_txt h3{font-size: 3rem}
 	.mag_mod_interview.sty05 .interview_txt{margin-bottom: 3rem}
 	.mag_mod_interview.sty05 .itv_border:before{left: 2rem;font-size: 8rem;top:-6rem}
 	.mag_mod_interview.sty06{padding: 6rem 0}
 	.mag_mod_interview.sty06 .iv_wrap{flex-direction: column;padding: 2rem}
-	.mag_mod_interview.sty06 .iv_wrap .swiper{width: 100%;padding: 5rem 0}
+	.mag_mod_interview.sty06 .iv_wrap .swiper{width: 100%;}
+	.mag_mod_interview.sty06 .iv_wrap .photo{text-align: center;margin: auto}
 	.mag_mod_interview.sty06 .iv_wrap:before{left: 50% !important;transform: translateX(-50%)}
 	.mag_mod_interview.sty06 .iv_wrap .swiper-wrapper{padding-top: 0}
 	.mag_mod_interview.sty06 .iv_wrap .photo {text-align: center;margin-top: 9rem}
@@ -4654,10 +4687,15 @@ html{font-size: 8px}
      .inf_mod_welfare.sty02{padding:80px 0 40px;}
      .inf_mod_welfare.sty02 .welfare_wrap h3{font-size:48px;padding:32px 48px;}
      .inf_mod_welfare.sty02 .swiper{width:calc(100% - 80px);}
-     .inf_mod_welfare.sty02 .swiper-slide dt{font-size:20px;margin-bottom:4px;}
-     .inf_mod_welfare.sty02 .swiper-slide dd{font-size:14px;}
+	.inf_mod_welfare.sty02 .welfare_wrap h3{font-size: 2.6rem;padding: 2rem 4rem}
+     .inf_mod_welfare.sty02 .swiper-slide dt,
+	.inf_mod_welfare.sty02 .swiper-slide .tit{font-size:20px;margin-bottom:4px;}
+	.inf_mod_welfare.sty02 .swiper-slide dl, .inf_mod_welfare.sty02 .swiper-slide > *{margin-left: 0 !important;padding-top: 100px;text-align: center}
+     .inf_mod_welfare.sty02 .swiper-slide dd,
+	.inf_mod_welfare.sty02 .swiper-slide .desc{font-size:14px;}
      .inf_mod_welfare.sty02 .swiper-slide dl{margin-left:100px;}
-     .inf_mod_welfare.sty02 .swiper-slide dl::before{width:80px;height:80px;left:-100px;background-size:cover;}
+     .inf_mod_welfare.sty02 .swiper-slide dl::before,
+	  .inf_mod_welfare.sty02 .swiper-slide div::before{width:80px;height:80px;left:50%;transform: translateX(-50%);background-size:cover;}
      .inf_mod_welfare.sty02 .swiper-slide.deduct dl::before{background-position-x:0;}
      .inf_mod_welfare.sty02 .swiper-slide.insurance dl::before{background-position-x:-80px;}
      .inf_mod_welfare.sty02 .swiper-slide.education dl::before{background-position-x:-160px;}
