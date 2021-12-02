@@ -564,9 +564,9 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .bro_mod_culture.sty07 dd{float: left;width: 50%;position: relative;padding: 0 3.0rem 1.0rem 4.5rem;font-size: 1.6rem;color: #5e5e5e}
 .bro_mod_culture.sty07 dd:before{content: '-';display: block;position: absolute;left: 3.0rem;top: 0;}
 .bro_mod_culture.sty07 .culture_wrap .img{background: url(../images/culture_img05.png) no-repeat;height: 288px;width: 100%;background-size: cover;display: none}
-.bro_mod_culture.sty07 .culture_wrap  .swiper-slide > div:before{content: '';display: block;width: 100%;height: 200px;background: url(/images/culture_img05.png) no-repeat;background-size: cover}
+.bro_mod_culture.sty07 .culture_wrap  .swiper-slide > div:before{content: '';display: block;width: 100%;height: 288px;background: url(/images/culture_img05.png) no-repeat;background-size: cover}
 .bro_mod_culture.sty07 .welfare_wrap .img{background: url(../images/culture_img06.png) no-repeat;height: 288px;width: 100%;background-size: cover;display: none}
-.bro_mod_culture.sty07 .welfare_wrap  .swiper-slide > *:before{content: '';display: block;width: 100%;height: 200px;background: url(/images/culture_img06.png) no-repeat;background-size: cover}
+.bro_mod_culture.sty07 .welfare_wrap  .swiper-slide > *:before{content: '';display: block;width: 100%;height: 288px;background: url(/images/culture_img06.png) no-repeat;background-size: cover}
 
 
 .bro_mod_culture.sty07 .swiper-button-next, 
