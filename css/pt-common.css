@@ -938,7 +938,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_welfare.sty03 .swiper{overflow: hidden;height: 600px;margin-top: 4.0rem}
 .mag_mod_welfare.sty03 .swiper-slide{height: calc((100% - 60px) / 3);}
 .mag_mod_welfare.sty03 .swiper-slide > div{display: flex}
-.mag_mod_welfare.sty03 .swiper-slide .tit{width: 140px;height: 140px;border: 1px solid #000;text-align: center;border-radius: 15px;font-size: 2.3rem;word-break: keep-all;padding: 2.0rem;box-sizing: border-box;display: flex;align-items: center}
+.mag_mod_welfare.sty03 .swiper-slide .tit{width: 140px;height: 140px;border: 1px solid #000;text-align: center;border-radius: 15px;font-size: 2.3rem;word-break: keep-all;padding: 2.0rem;box-sizing: border-box;display: flex;align-items: center;justify-content: center}
 .mag_mod_welfare.sty03 .swiper-slide .desc{padding-left: 20px;font-size: 1.8rem;color: #666;width: calc(100% - 140px)}
 .mag_mod_welfare.sty03 .swiper-button-next,
 .mag_mod_welfare.sty03 .swiper-button-prev{background: #252525;width: 54px;height: 54px;border-radius: 10px}
