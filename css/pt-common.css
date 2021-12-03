@@ -1229,7 +1229,8 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .mag_mod_interview.sty05 .interview_txt p {font-size: 1.8rem;margin: 2rem 0}
 .mag_mod_interview.sty05 .interview_txt h3{font-size: 3.5rem;font-weight: 200}
 .mag_mod_interview.sty05 img{position: absolute;bottom: 0;right: 0;z-index: 6}
-.mag_mod_interview.sty05 .itv_border{width:calc(100% - 350px);border: 10px solid rgba(255, 255, 255, 0.6);padding: 4.0rem;border-radius: 10px;position: relative;}
+.mag_mod_interview.sty05 .itv_border{width:calc(100% - 350px);border: 10px solid rgba(255, 255, 255, 0.6);padding: 4.0rem;border-radius: 10px;position: relative;min-height: 370px}
+.mag_mod_interview.sty05 .swiper{height: 100%}
 .mag_mod_interview.sty05 .itv_border:before{content: '❝';display: block;font-size: 12rem;color: #007ddd;position: absolute;left: 4rem;top: -8rem;z-index: 5}
 .mag_mod_interview.sty05 .swiper{overflow: hidden;position: relative;padding-bottom: 40px}
 .mag_mod_interview.sty05 .swiper .q{color: #63b5f3;font-size: 2.3rem;position: relative;padding-left: 25px;margin-bottom: 1.0rem}
@@ -4164,7 +4165,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.mag_mod_interview.sty04 .iv_wrap{display: block;}
 	.mag_mod_interview.sty04 .iv_wrap .photo {text-align: center}
 	.mag_mod_interview.sty04 .iv_wrap .swiper{width: 100%;margin-top: 3rem;padding-bottom: 50px;}
-	.mag_mod_interview.sty05 .itv_border{width: 100%}
+	.mag_mod_interview.sty05 .itv_border{width: 100%;height: auto}
 	.mag_mod_interview.sty05 .itv_border{padding: 2rem}
 	.mag_mod_interview.sty05 img{display: none}
 	.mag_mod_interview.sty05 .interview_txt h3{font-size: 3rem}
