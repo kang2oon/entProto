@@ -173,7 +173,7 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
 .com_mod_recruit.sty01{padding:80px 0;}
     .com_mod_recruit.sty01 .bg_bot{position:absolute;bottom:0;width:100%;background:#2b71b9;height:280px;}
     .com_mod_recruit.sty01 h3{font-size:32px;margin:0 0 40px;}
-    .com_mod_recruit.sty01 .tb_recruit{width:100%;margin-bottom:60px;}
+    .com_mod_recruit.sty01 .tb_recruit{width:100%;margin-bottom:60px;background: #fff}
     .com_mod_recruit.sty01 .tb_recruit th{border:2px #000;border-style:solid none;font-size:16px;padding:24px;}
     .com_mod_recruit.sty01 .tb_recruit td{border:1px #dcdcdc;border-style:none none solid;font-size:14px;padding:16px;text-align:center;}
     .com_mod_recruit.sty01 .tb_recruit td .apply{color:#da0020;padding:8px 16px;border:1px solid #da0020;margin-left:16px;}
