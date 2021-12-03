@@ -116,9 +116,8 @@ $('a[href=#preview]').click(function(){
 			 +	'	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">\n'
 			 +	'	<style>\n'
 			 +	'	/* 신규타입 상단처리 */\n'
-			 +	'	.newCompanyInfoWrap{display:none;}\n'
-			//  +	'	#main_banner, .company_info_outer, .wantCompany_ct_box, .top_menu_newB{display:none;}\n'
-			//  +	'	.wantCompany_body{padding:0;}\n'
+			 +	'	#main_banner, .company_info_outer, .wantCompany_ct_box, .top_menu_newB{display:none;}\n'
+			 +	'	.wantCompany_body{padding:0;}\n'
 			 +	'	#companyInfoWrap{padding:0 0 40px;}\n\n'
 			 +  '   /* 기업별 스타일을 추가해주세요 */\n\n'
 			 + 	'	@media all and (max-width:1024px) { }\n\n'
@@ -139,9 +138,9 @@ $('a[href=#preview]').click(function(){
 			 +  '	<!-- 모듈 추가 및 수정 -->\n\n';
 		Data += $('.droparea').html();
 		Data += '<script>\n'
-		     +  '	//레이아웃 작업시 필요한 스크립트 추가\n\n'
-			//  +  '	$(document).ready(function(){\n\n'
-			//  +  '	});\n'
+		     +  '	//레이아웃 작업시 필요한 스크립트 추가\n'
+			 +  '	$(document).ready(function(){\n\n'
+			 +  '	});\n'
 			 +  '</script>\n'
 			 +  '</body>\n'
 		     +  '</html>';
