@@ -4165,7 +4165,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.mag_mod_interview.sty04 .iv_wrap{display: block;}
 	.mag_mod_interview.sty04 .iv_wrap .photo {text-align: center}
 	.mag_mod_interview.sty04 .iv_wrap .swiper{width: 100%;margin-top: 3rem;padding-bottom: 50px;}
-	.mag_mod_interview.sty05 .itv_border{width: 100%;height: auto}
+	.mag_mod_interview.sty05 .itv_border{width: 100%;height: auto;min-height:auto;}
 	.mag_mod_interview.sty05 .itv_border{padding: 2rem}
 	.mag_mod_interview.sty05 img{display: none}
 	.mag_mod_interview.sty05 .interview_txt h3{font-size: 3rem}
