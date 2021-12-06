@@ -1303,6 +1303,9 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .inf_mod_interview.sty03 .swiper-slide{height: calc(100%/3)}
 .inf_mod_interview.sty03 .q{font-size: 1.8rem;margin-bottom: 1rem;position: relative;padding-left: 25px}
 .inf_mod_interview.sty03 .q:before{content: 'Q.';display: block;position: absolute;left: 0;top: 0}
+
+
+
 .inf_mod_interview.sty03 .a{font-size: 1.6rem;color: #555;}
 .inf_mod_interview.sty03 .swiper-button-next:after, 
 .inf_mod_interview.sty03 .swiper-button-prev:after{color: #555;font-size: 2.0rem;font-weight: bold;}
@@ -1463,8 +1466,28 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_strategy.sty01  .white_box{background: #fff;padding: 5.0rem 7.0rem;border: 1px solid #ddd;position: relative;box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.08)}
 .rec_mod_strategy.sty01  .white_box .guide_wrap > div {margin-bottom: 4.0rem;padding-bottom: 4.0rem;border-bottom: 1px solid #dddddd;}
 .rec_mod_strategy.sty01 .white_box .guide_wrap >div:last-child{border-bottom: 0;padding-bottom: 0}
-.rec_mod_strategy.sty01  .q {font-size: 2.4rem;font-weight: 400;margin: 10px 0;position: relative;padding-left: 30px}
-.rec_mod_strategy.sty01  .q:before{content: 'Q.';display: block;font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty01  .q {font-size: 2.4rem;font-weight: 400;margin: 10px 0;position: relative;padding-left: 6rem}
+.rec_mod_strategy.sty01  .guide_wrap> div:nth-child(1)  .q:before,
+.rec_mod_strategy.sty01  .interview_tip_wrap> div:nth-child(1)  .q:before{content: 'Q1.';display: block;font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty01  .guide_wrap> div:nth-child(2)  .q:before,
+.rec_mod_strategy.sty01  .interview_tip_wrap> div:nth-child(2)  .q:before{content: 'Q2.';display: block;font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty01  .guide_wrap> div:nth-child(3)  .q:before,
+.rec_mod_strategy.sty01  .interview_tip_wrap> div:nth-child(3)  .q:before{content: 'Q3.';display: block;font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty01  .guide_wrap> div:nth-child(4)  .q:before,
+.rec_mod_strategy.sty01  .interview_tip_wrap> div:nth-child(4)  .q:before{content: 'Q4.';display: block;font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty01  .guide_wrap> div:nth-child(5)  .q:before,
+.rec_mod_strategy.sty01  .interview_tip_wrap> div:nth-child(5)  .q:before{content: 'Q5.';display: block;font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty01  .guide_wrap> div:nth-child(6)  .q:before,
+.rec_mod_strategy.sty01  .interview_tip_wrap> div:nth-child(6)  .q:before{content: 'Q6.';display: block;font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty01  .guide_wrap> div:nth-child(7)  .q:before,
+.rec_mod_strategy.sty01  .interview_tip_wrap> div:nth-child(7)  .q:before{content: 'Q7.';display: block;font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty01  .guide_wrap> div:nth-child(8)  .q:before,
+.rec_mod_strategy.sty01  .interview_tip_wrap> div:nth-child(8)  .q:before{content: 'Q8.';display: block;font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty01  .guide_wrap> div:nth-child(9)  .q:before,
+.rec_mod_strategy.sty01  .interview_tip_wrap> div:nth-child(9)  .q:before{content: 'Q9.';display: block;font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0;font-family: 'GmarketSansMedium' !important;}
+.rec_mod_strategy.sty01  .guide_wrap> div:nth-child(10)  .q:before,
+.rec_mod_strategy.sty01  .interview_tip_wrap> div:nth-child(10)  .q:before{content: 'Q10.';display: block;font-weight: bold;color: #fb9925;position: absolute;left: 0;top: 0;font-family: 'GmarketSansMedium' !important;}
+
 .rec_mod_strategy.sty01  .a {font-size: 2.0rem;color: #7d7d7d;}
 .rec_mod_strategy.sty01  .recent_question{background: #1a4fba;padding: 4.0rem 1.0rem;border-radius: 15px;position: relative;padding-bottom: 0;;overflow: hidden;display: flex;align-items: flex-end}
 .rec_mod_strategy.sty01  .rq_cont{text-align: center;padding-bottom: 4.0rem;width: 100%}
