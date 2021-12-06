@@ -4622,6 +4622,7 @@ html{font-size: 8px}
 	.bro_mod_finance.sty09 .conts_wrap > div:nth-child(2):before{margin-right: 2rem}
 	.bro_mod_finance.sty09 .conts_wrap > div:nth-child(3):before{margin-right: 2rem}
 	.bro_mod_finance.sty09 .conts_wrap > div:nth-child(4):before{margin-right: 2rem}
+
 }
 
 @media all and (max-width:480px){
@@ -4847,5 +4848,9 @@ html{font-size: 8px}
 	.rec_mod_percent.sty03 .percent_wrap > div:nth-child(2) .circle{width: 125px;height: 125px}
 	.rec_mod_percent.sty03 .percent_wrap > div:nth-child(3) .circle{width: 130px;height: 130px}
 	.rec_mod_percent.sty03 .percent_wrap > div:nth-child(4) .circle{width: 140px;height: 140px}
+	
+	.mag_mod_sty02_txt .cont{flex-direction: column;align-items: center;justify-content: center;}
+	.mag_mod_sty02_txt .cont > div{margin-right: 0;margin-top: 6rem}
+	.mag_mod_sty02_txt .cont > div:first-child{margin-top: 0}
 
 }
