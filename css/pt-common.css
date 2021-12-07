@@ -349,6 +349,7 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
 /* 연혁 */
 .bro_mod_history.sty02{margin: 8.0rem 0}
 .bro_mod_history.sty02 .history > div{display: flex;align-items: flex-start;padding: 40px 0;position: relative}
+.bro_mod_history.sty02 .history > div:first-child{padding-top: 0 !important}
 .bro_mod_history.sty02 .history > div:after{content: '';display: block;width: 24px;height: 100%;background: #e4e4e4;position: absolute;left: 50%;transform: translateX(-50%);top: 0}
 .bro_mod_history.sty02 .history > div:last-child:after{border-radius: 0 0 20px 20px}
 .bro_mod_history.sty02 .history > div > span{background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,184,113,1) 0%, rgba(51,147,207,1) 100%); color: #fff;width:137px;border-radius: 20px;padding: 0 20px;position: absolute;left: 50%;transform: translateX(-50%); font-size: 2.8rem;display: block;z-index: 1}
