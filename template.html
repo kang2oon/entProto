@@ -42,7 +42,7 @@
 				</dl>
 				<div class="action fc_000 clearfix">
 					<a href="javascript:void(0);" id="scrapYn" onclick="onCntNew();">관심기업 등록<i>♥</i></a>
-					<a href="javascript:void(0);" id="copyUrlNew" onclick="copyUrlNew();" data-clipboard-action="copy">공고 바로가기<i>→</i></a>
+					<a href="javascript:void(0);" id="copyUrlNew" onclick="copyUrlNew();" data-clipboard-action="copy">페이지 URL 복사<i>→</i></a>
 				</div>
 			</div>
 		</div>
@@ -52,7 +52,7 @@
 		<div class="cnt-container fc_fff">
 			<ul>
 				<li><a href="#summary" class="active">기업개요</a></li>
-				<li><a href="#concept">마케팅 콘셉</a></li>
+				<li><a href="#product">제품소개</a></li>
 				<li><a href="#recruit">채용공고</a></li>
 				<li> <a href="#news">기업뉴스</a></li>
 			</ul>
@@ -60,103 +60,88 @@
 		</div>
 	</div>
 	
-    <div class="module-wrap com_mod_recruit sty01">
-        <div class="bg_bot"></div>
-        <div class="cnt-container">
-            <h3>채용공고</h3>
-            <table class="tb_recruit" summary="채용공고">
-                <thead>
-                <tr>
-                    <th>접수기간</th>
-                    <th>채용제목</th>
-                    <th>고용형태</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>2021.05.31 까지</td>
-                    <td>풀스택 개발자 채용/경력채용/급여250만원</td>
-                    <td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
-                </tr>
-                <tr>
-                    <td>상시채용</td>
-                    <td>생산직 지원 채용/경력 무관/급여220만원</td>
-                    <td>계약직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
-                </tr>
-                <tr>
-                    <td>상시채용</td>
-                    <td>경영지원팀 직원 채용/경력 무관/급여220만원</td>
-                    <td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
-                </tr>
-                </tbody>
-            </table>
-            <div class="box_recruit">
-                <h4>경기도일자리재단 신입 직원 채용<span class="period">상시채용</span></h4>
-                <hr/>
-                <div class="detail_wrap">
-                    <div>
-                        <h5>지원자격</h5>
-                        <dl class="clearfix">
-                            <dt>경력</dt>
-                            <dd>경력무관</dd>
-                            <dt>학력</dt>
-                            <dd>고졸이상</dd>
-                            <dt>우대</dt>
-                            <dd>인근거주자, 1종 보통운전면허, 회계실무자격증 FAT1급 이상</dd>
-                        </dl>
-                    </div>
-                    <div>
-                        <h5>근무조건</h5>
-                        <dl class="clearfix">
-                            <dt>고용형태</dt>
-                            <dd>정규직</dd>
-                            <dt>급여</dt>
-                            <dd>220만원 이상</dd>
-                            <dt>근무시간</dt>
-                            <dd>주5일(월~금) 08:30~17:30</dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	
-	<a name="news"></a>
-	<div class="module-wrap com_mod_news sty01">
-		<div class="cnt-container">
-		<div id="news_wrap">
-			<div class="news_row">
-				<a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
-				<div class="desc">
-					경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
-					'2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
-					친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+    <div class="module-wrap edit_wrap com_mod_recruit sty01" id="recruitArea">
+	<a name="recruit"></a>
+	<div class="bg_bot"></div>
+	<div class="cnt-container" id="recruitContainer">
+		<h3>채용공고</h3>
+		<table class="tb_recruit otherRecruit" summary="채용공고">
+			<thead>
+			<tr>
+				<th scope="col">접수기간</th>
+				<th scope="col">채용제목</th>
+				<th scope="col">고용형태</th>
+			</tr>
+			</thead>
+			<tbody id="otherRecruitList">
+				<tr>
+<td>2021.05.31 까지</td><td>풀스택 개발자 채용/경력채용/급여250만원</td><td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+</tr>
+				<tr>
+<td>상시채용</td><td>생산직 지원 채용/경력 무관/급여220만원</td><td>계약직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+</tr>
+			</tbody>
+		</table>
+		<div class="box_recruit_wrap swiper">
+			<div class="swiper-wrapper">
+				<div class="box_recruit swiper-slide">
+					<h4>
+						<a href="javascript:;">채용공고명</a>
+						<span class="period">오늘까지</span>
+					</h4>
+					<hr>
+					<div class="detail_wrap">
+						<div>
+							<h5>지원자격</h5>
+							<dl class="clearfix">
+								<dt>경력</dt>
+								<dd>경력무관</dd>
+								<dt>학력</dt>
+								<dd>고졸이상</dd>
+								<dt>우대사항</dt>
+								<dd>인근거주자, 1종보통운전면허</dd>
+							</dl>
+						</div>
+						<div>
+							<h5>근무조건</h5>
+							<dl class="clearfix">
+								<dt>고용형태</dt>
+								<dd>정규직</dd>
+								<dt>급여</dt>
+								<dd>220만원 이상</dd>
+								<dt>근무지역</dt>
+								<dd>경기도 전체</dd>
+							</dl>
+						</div>
+					</div>
 				</div>
-				<div class="reg_date">2021.05.15</div>
 			</div>
-			<div class="news_row">
-				<a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
-				<div class="desc">
-					경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
-					'2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
-					친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
-				</div>
-				<div class="reg_date">2021.05.15</div>
-			</div>
-			</div>
-			<div class="paging_wrap">
-				<a href="javascript:void(0);" class="prev disable">이전</a>
-				<a href="javascript:void(0);" class="current">1</a>
-				<a href="javascript:void(0);">2</a>
-				<a href="javascript:void(0);">3</a>
-				<a href="javascript:void(0);">4</a>
-				<a href="javascript:void(0);">5</a>
-				<a href="javascript:void(0);" class="next">다음</a>
-			</div>
+			<div class="swiper-pagination"></div>
 		</div>
 	</div>
+</div>
 
-	
+<div class="module-wrap edit_wrap com_mod_news sty01">
+	<a name="news"></a>
+	<div class="cnt-container">
+		<div id="news_wrap">
+			<div class="news_row">
+				<a href="javascript:vodi(0);" target="_blank" class="tit">뉴스 제목</a>
+				<div class="desc">뉴스 내용 뉴스 내용 뉴스 내용 뉴스 내용 뉴스 내용</div>
+				<div class="reg_date">2021.01.01</div>
+			</div>
+			<div class="news_row">
+				<a href="javascript:vodi(0);" target="_blank" class="tit">뉴스 제목</a>
+				<div class="desc">뉴스 내용 뉴스 내용 뉴스 내용 뉴스 내용 뉴스 내용</div>
+				<div class="reg_date">2021.01.01</div>
+			</div>
+		</div>
+		<div id="paging_wrap" class="paging_wrap">
+			<a href="javascript:void(0);" class="prev disable">이전</a><a href="javascript:void(0);" class="current">1</a><a href="javascript:void(0);">2</a><a href="javascript:void(0);">3</a><a href="javascript:void(0);">4</a><a href="javascript:void(0);">5</a><a href="javascript:void(0);" class="next">다음</a>
+		</div>
+	</div>
+</div>
+
 	<div class="module-wrap com_mod_map">
 		<div id="map"></div>
 		<div class="map_info_wrap">

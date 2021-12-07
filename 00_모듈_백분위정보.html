@@ -331,4 +331,22 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@5.4.5/js/swiper.min.js"></script>
 	<script src="./js/imgLiquid-min.js"></script>
 	<script src="/module/jsontohtml.js"></script>
+	<script>
+	    var percentSlider = new Swiper(".percent",{
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: ".mag_mod_percent .swiper-pagination",
+                clickable: true,
+            },
+            breakpoints:{
+                780: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                }
+            }
+        });
+	</script>
 </body></html>
