@@ -4855,5 +4855,7 @@ html{font-size: 8px}
 	.mag_mod_sty02_txt .cont{flex-direction: column;align-items: center;justify-content: center;}
 	.mag_mod_sty02_txt .cont > div{margin-right: 0;margin-top: 6rem}
 	.mag_mod_sty02_txt .cont > div:first-child{margin-top: 0}
+	
+	.bro_mod_finance.sty03  .bb-axis-y text{display: none}
 
 }
