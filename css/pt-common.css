@@ -1362,7 +1362,7 @@ background: linear-gradient(128deg, rgba(28,216,214,1) 0%, rgba(28,129,233,1) 10
 .rec_mod_interview.sty04 .qa_ceo .left{margin-right: 60px;overflow: hidden;width: 50%}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper{display: block;margin-top: 4rem}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide{height: auto;margin-bottom: 2rem;}
-.rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide .q{font-size: 2.3rem;width: 100%;cursor: pointer;border-bottom: 1px solid #000;padding-bottom: 1.5rem;margin-bottom: 1.5rem;position: relative}
+.rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide .q{font-size: 2.3rem;width: 100%;cursor: pointer;border-bottom: 1px solid #000;padding-bottom: 1.5rem;margin-bottom: 1.5rem;position: relative;padding-right: 30px;word-break: keep-all}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide:nth-child(1) .q:before{content: '1.';display: inline-block}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide:nth-child(2) .q:before{content: '2.';display: inline-block}
 .rec_mod_interview.sty04 .qa_ceo .swiper-wrapper .swiper-slide:nth-child(3) .q:before{content: '3.';display: inline-block}
