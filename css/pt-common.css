@@ -4857,5 +4857,14 @@ html{font-size: 8px}
 	.mag_mod_sty02_txt .cont > div:first-child{margin-top: 0}
 	
 	.bro_mod_finance.sty03  .bb-axis-y text{display: none}
-
+	.mag_mod_finance.sty02 > div .tab_warp .conts{height: auto}
+	.rec_mod_finance.sty02 .chart_cont{flex-direction: column;}
+	.rec_mod_finance.sty02 .chart_cont li + li{border-left: 0;margin-top: 2rem}
+	.bro_mod_finance.sty06 .cnt-container .tit_wrap .slogan{margin: 1.5rem 0}
+	.bro_mod_finance.sty06 .cnt-container .tit_wrap .arrow_wrap{margin: 2rem 0}
+	.bro_mod_finance.sty06 .cnt-container .conts_wrap .summary > div{display: block;}
+	.bro_mod_finance.sty06 .cnt-container .conts_wrap > div h4, .bro_mod_finance.sty06 .cnt-container .conts_wrap .summary > div > div{display: block;width: 100% !important;}
+	.bro_mod_finance.sty06 .cnt-container .conts_wrap .summary > div > div{border-left: 0}
+	.bro_mod_finance.sty06 .cnt-container .conts_wrap{padding: 3rem 2rem}
+	.bro_mod_finance.sty06 .cnt-container .conts_wrap .summary .tab_tit{padding: 0 0 1rem}
 }
