@@ -4542,6 +4542,7 @@ html{font-size: 8px}
 	.bro_mod_finance.sty02 .tab_wrap .conts .summary > div + div{margin:20px 0 0;}
 	.bro_mod_finance.sty03 .tab_wrap .tab{flex-wrap:wrap;}
 	.bro_mod_finance.sty03 .tab_wrap .tab > div{flex:1 1 40%;font-size:2rem;}
+	.bro_mod_finance.sty03 .tab_wrap .conts{padding:3rem 0;}
 	.bro_mod_finance.sty03 .tab_wrap .tab > div + div{border:none;}
 	.bro_mod_finance.sty03 .tab_wrap .tab > div:nth-child(2), .bro_mod_finance.sty03 .tab_wrap .tab > div:nth-child(4){border-left:1px solid #886a57;}
 	.bro_mod_finance.sty03 .tab_wrap .tab > div:nth-child(3), .bro_mod_finance.sty03 .tab_wrap .tab > div:nth-child(4){border-top:1px solid #886a57;}
