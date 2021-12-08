@@ -47,7 +47,7 @@ $(document).ready(function(){
 			}
 		});
 
-	$(".imgFill").imgLiquid();
+//	$(".imgFill").imgLiquid();
 
 	
 	
