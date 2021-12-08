@@ -4327,6 +4327,8 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.bro_mod_finance.sty09 .conts_wrap > div:nth-child(3):before{background-size: 100px !important;width: 100px;height: 101px}
 	.bro_mod_finance.sty09 .conts_wrap > div:nth-child(4):before{background-size: 100px !important;width: 100px;height: 101px}
 	.bro_mod_finance.sty09 .conts_wrap > div > div{font-size: 3.6rem}
+	
+	.mag_mod_percent.sty05 .percent_wrap > div > div span{font-size: 3rem}
 }
 
 
