@@ -883,8 +883,8 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .rec_mod_swot.sty05 .swot_wrap > div{display: flex;flex-wrap: wrap;justify-content: space-between;}
 .rec_mod_swot.sty05 .swot_wrap > div > div{width: calc(50% - 200px);margin-top: 40px}
 .rec_mod_swot.sty05 .swot_wrap > div > div:nth-child(2n){margin-right: 0}
-.rec_mod_swot.sty05 .swot_wrap .tit{font-size: 2.0rem;font-weight: 500;text-transform:capitalize}
-.rec_mod_swot.sty05 .swot_wrap .desc{font-size: 1.8rem;font-weight: 300}
+.rec_mod_swot.sty05 .swot_wrap .tit{font-size: 2.0rem;font-weight: 600;text-transform:capitalize}
+.rec_mod_swot.sty05 .swot_wrap .desc{font-size: 1.8rem;font-weight: 400}
 .rec_mod_swot.sty05 .swot_wrap .swotS{color: #94a82a}
 .rec_mod_swot.sty05 .swot_wrap .swotS:before{content: 'S';display: block;font-size: 5.0rem;font-weight: bold;margin-bottom: 2.0rem;line-height: 1}
 .rec_mod_swot.sty05 .swot_wrap .swotW{color: #355d78;order: 3}
