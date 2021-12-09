@@ -4329,6 +4329,9 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.bro_mod_finance.sty09 .conts_wrap > div > div{font-size: 3.6rem}
 	
 	.mag_mod_percent.sty05 .percent_wrap > div > div span{font-size: 3rem}
+		.mag_mod_sty02_txt .cont{flex-direction: column;align-items: center;justify-content: center;}
+	.mag_mod_sty02_txt .cont > div{margin-right: 0;margin-top: 6rem}
+	.mag_mod_sty02_txt .cont > div:first-child{margin-top: 0}
 }
 
 
@@ -4855,9 +4858,7 @@ html{font-size: 8px}
 	.rec_mod_percent.sty03 .percent_wrap > div:nth-child(3) .circle{width: 130px;height: 130px}
 	.rec_mod_percent.sty03 .percent_wrap > div:nth-child(4) .circle{width: 140px;height: 140px}
 	
-	.mag_mod_sty02_txt .cont{flex-direction: column;align-items: center;justify-content: center;}
-	.mag_mod_sty02_txt .cont > div{margin-right: 0;margin-top: 6rem}
-	.mag_mod_sty02_txt .cont > div:first-child{margin-top: 0}
+
 	
 	.bro_mod_finance.sty03  .bb-axis-y text{display: none}
 	.mag_mod_finance.sty02 > div .tab_warp .conts{height: auto}
