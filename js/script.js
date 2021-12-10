@@ -117,6 +117,8 @@ $('a[href=#preview]').click(function(){
 			 +	'	<style>\n'
 			 +	'	/* 신규타입 상단처리 */\n'
 			 +	'	.newCompanyInfoWrap{display:none;}\n'
+			 +  '  .wantCompany_body {padding:0;}\n'
+
 			//  +	'	#main_banner, .company_info_outer, .wantCompany_ct_box, .top_menu_newB{display:none;}\n'
 			//  +	'	.wantCompany_body{padding:0;}\n'
 			 +	'	#companyInfoWrap{padding:0 0 40px;}\n\n'
