@@ -4315,7 +4315,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.bro_mod_finance.sty07 h3{font-size: 3.6rem}
 	.bro_mod_finance.sty07 .conts_wrap{display: block;}
 	.bro_mod_finance.sty07 .conts_wrap > div:nth-child(1){margin-top: 0}
-	.bro_mod_finance.sty07 .conts_wrap > div{margin: -20px auto auto auto}
+	.bro_mod_finance.sty07 .conts_wrap > div{margin: -20px auto auto auto !important}
 	
 	.bro_mod_finance.sty08 .conts_wrap {flex-wrap: wrap}
 	.bro_mod_finance.sty08 .conts_wrap > div{width: calc(50% - 15px);margin-bottom: 3rem}
