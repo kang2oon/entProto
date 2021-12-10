@@ -2529,7 +2529,7 @@ left: 0;width: 100%;height: 100%;}
 .inf_mod_emp{background-color:#f3f3f3;padding:80px 0;}
     .inf_mod_emp .empCnt_wrap{display:flex;justify-content:space-between;}
     .inf_mod_emp .empCnt_wrap > div{flex:1;}
-    .inf_mod_emp .empCnt_wrap > div+div{margin-left:80px;}
+    .inf_mod_emp .empCnt_wrap > div+div{margin-left:40px;}
     .inf_mod_emp.sty01 .lastEmployeeState{background-color:#fff;border-radius:30px;}
     .inf_mod_emp.sty01 .lastEmployeeState > div{display:flex;align-items:center;}
     .inf_mod_emp.sty01 .lastEmployeeState > div > div{flex:1;}
