@@ -2765,7 +2765,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
     flex-shrink:0;width:240px;margin-right:48px;border-top:1px solid #0054a6;
     display:block;padding:24px 0;font-size:3.2rem;font-weight:700;color:#0054a6;
 }
-.mag_mod_history.sty02 .history > div > ul{flex-grow:1;font-size:1.8rem;border-top:1px solid #ededed;}
+.mag_mod_history.sty02 .history > div > ul{flex-grow:1;font-size:1.8rem;border-top:1px solid #ededed;width: 300px}
 .mag_mod_history.sty02 .history > div > ul li{padding:8px 0;display:flex;}
 .mag_mod_history.sty02 .history > div > ul li:first-child{padding-top:20px;}
 .mag_mod_history.sty02 .history > div > ul li div.month{flex-shrink:0;width:48px;color:#008d7a;font-weight:500;}
