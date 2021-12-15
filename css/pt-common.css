@@ -582,10 +582,9 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .rec_mod_welfare.sty01 .swiper-slide dl,
 .rec_mod_welfare.sty01 .swiper-slide > div{margin-left: 150px;}
 .rec_mod_welfare.sty01 .swiper-slide dt,
-.rec_mod_welfare.sty01 .swiper-slide > div .tit{font-weight: bold;font-size: 2.0rem;margin-bottom: 1.0rem}
+.rec_mod_welfare.sty01 .swiper-slide > div .tit{font-weight: bold;font-size: 2.0rem;margin-bottom: 1.0rem;padding-left: 10px;word-break: keep-all}
 .rec_mod_welfare.sty01 .swiper-slide dd,
-.rec_mod_welfare.sty01 .swiper-slide .desc{position: relative;padding-left: 10px; font-size: 1.7rem;color: #666;}
-.rec_mod_welfare.sty01 .swiper-slide .desc{padding-left: .}
+.rec_mod_welfare.sty01 .swiper-slide .desc{position: relative;padding-left: 10px; font-size: 1.7rem;color: #666;word-break: keep-all}
 .rec_mod_welfare.sty01 .swiper-slide dd:before{content: '-';display: block;position: absolute;left: 0;top: 0}
 .rec_mod_welfare.sty01 .swiper-button-next{background: url(../images/slider09_next.png) no-repeat;width: 34px;height: 50px;right: -60px;left: auto !important}
 .rec_mod_welfare.sty01 .swiper-button-prev{background: url(../images/slider09_prev.png) no-repeat;width: 34px;height: 50px;left: -60px}
