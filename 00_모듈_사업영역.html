@@ -521,18 +521,22 @@
 
 	// .bro_mod_biz.sty04 주요사업안내 탭
 	var tabCont03 = $('.bro_mod_biz.sty04 .bizDiv').children();
-	tabCont03.each(function () {
-		var title = $(this).children('h4').html();
-		$(this).addClass(title);
+	tabCont03.each(function (index) {
+		  $(this).attr('class','bzTab' + index);
 	});
 	var tabArray03 = Array();
 	tabCont03.each(function () {
-		tabArray03.push($(this).attr("class"));
+		tabArray03.push($(this).children('h4').html());
 	})
 	var arrayList03 = $.map(tabArray03, function (value) {
-		return "<li><a href='javascript:;'" + "data-tab=" + value + ">" + value + "</a></li>";
+		return "<li><a href='javascript:;' >" + value + "</a></li>";
 	})
+
 	$('.bro_mod_biz.sty04 .tabs').html(arrayList03);
+
+	$('.bro_mod_biz.sty04 .tabs li').each(function (index) {
+		  $(this).children().attr('data-tab','bzTab' + index);
+	});
 
 	$('.bro_mod_biz.sty04 .tabs a:first').addClass('on')
 	$('.bro_mod_biz.sty04 .bizDiv > div').hide();
