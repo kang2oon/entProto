@@ -4184,7 +4184,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.bro_mod_biz.sty06 .bizDiv img{max-width: 300px}
 	.bro_mod_biz.sty07{padding: 6.0rem 0}
 	.mag_mod_biz.sty05 h3{font-size: 3.0rem}
-	.bro_mod_biz.sty03 .bizDiv > div{display: block;padding: 2rem}
+	.bro_mod_biz.sty03 .bizDiv > div{flex-direction: column ;padding: 2rem}
 	.bro_mod_biz.sty03 .bizDiv > div .text_area{margin-left: 0;margin-top: 1.5rem}
 	
 	/* 인터뷰 */
