@@ -618,6 +618,31 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .rec_mod_welfare.sty03 .swiper-button-prev{background: url(../images/slider11_prev.png);width: 38px;height: 67px;left: -60px}
 .rec_mod_welfare.sty03 .swiper-button-next:after,
 .rec_mod_welfare.sty03 .swiper-button-prev:after{text-indent: -9999px}
+
+/*
+.rec_mod_welfare.sty05 .welfare,
+.rec_mod_welfare.sty05 .dvWelfare{overflow: hidden}
+.rec_mod_welfare.sty05 .swiper-slide{border: 1px solid #dcdcdc;padding: 4rem}
+.rec_mod_welfare.sty05 .swiper-slide dt,
+.rec_mod_welfare.sty05 .swiper-slide .tit{font-weight: bold;font-size: 2.0rem;margin-bottom: 1.0rem}
+.rec_mod_welfare.sty05 .swiper-slide dd,
+.rec_mod_welfare.sty05 .swiper-slide .desc{position: relative;padding-left: 10px; font-size: 1.7rem;color: #666;}
+.rec_mod_welfare.sty05 .swiper-slide .desc{padding-left: 0}
+.rec_mod_welfare.sty05 .swiper-slide dd:before{content: '-';display: block;position: absolute;left: 0;top: 0}
+.rec_mod_welfare.sty05 .swiper-button-next{background: url(../images/slider11_next.png);width: 38px;height: 67px;right: -60px;left: auto !important}
+.rec_mod_welfare.sty05 .swiper-button-prev{background: url(../images/slider11_prev.png);width: 38px;height: 67px;left: -60px}
+.rec_mod_welfare.sty05 .swiper-button-next:after,
+.rec_mod_welfare.sty05 .swiper-button-prev:after{text-indent: -9999px}
+.rec_mod_welfare.sty05 .swiper-wrapper{height: auto}
+.rec_mod_welfare.sty05 .swiper-slide{height: auto}
+.rec_mod_welfare.sty05 .swiper-slide > div{height: 100%}
+.rec_mod_welfare.sty05 .swiper-slide:nth-child(1){background: url(images/img_welfare_8548600212_1.png) no-repeat top left #fff}
+.rec_mod_welfare.sty05 .swiper-slide:nth-child(2){background: url(images/img_welfare_8548600212_2.png) no-repeat bottom left #fff}
+.rec_mod_welfare.sty05 .swiper-slide:nth-child(3){background: url(images/img_welfare_8548600212_3.png) no-repeat top left #fff}
+.rec_mod_welfare.sty05 .swiper-slide:nth-child(odd){padding-top: 270px}
+.rec_mod_welfare.sty05 .swiper-slide:nth-child(even){padding-bottom: 270px}		
+*/
+
 .rec_mod_welfare.sty04 .welfare,
 .rec_mod_welfare.sty04 .dvWelfare{overflow: hidden}
 .rec_mod_welfare.sty04  h3{text-align: center}
@@ -2758,6 +2783,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 
 /* 연혁 */
 .mag_mod_history.sty02{padding:120px 0 80px;}
+.mag_mod_history.sty02 .addMsg{text-align: center}
 .mag_mod_history.sty02 h3{font-size:4.0rem;font-weight:500;text-align:center;}
 .mag_mod_history.sty02 .history{margin-top:72px;}
 .mag_mod_history.sty02 .history > div{display:flex;margin-bottom:48px;}
