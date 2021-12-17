@@ -141,7 +141,7 @@ $('a[href=#preview]').click(function(){
 			 +  '	<!-- 모듈 추가 및 수정 -->\n\n';
 		Data += $('.droparea').html();
 		Data += '<script>\n'
-		     +  '	//레이아웃 작업시 필요한 스크립트 추가\n\n'
+		 
 			//  +  '	$(document).ready(function(){\n\n'
 			//  +  '	});\n'
 			 +  '</script>\n'

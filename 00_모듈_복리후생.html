@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
 	<link href="./css/pt-common.css" rel="stylesheet">
 	<style>
+		.rec_mod_welfare.sty01 .swiper-wrapper{height: auto}
+		.rec_mod_welfare.sty01 .swiper-slide{height: auto;min-height: 160px}
 	</style>
 </head>
 
@@ -2040,8 +2042,8 @@
 	<div class="module-wrap inf_mod_culture sty02">
 		<div class="cnt-container">
 			<div class="tab">
-				<a href="javascript:vold" class="on" data-tab="culture_wrap">조직문화</a>
-				<a href="javascript:vold" data-tab="welfare_wrap">복리후생</a>
+				<a href="javascript:;" class="on" data-tab="culture_wrap">조직문화</a>
+				<a href="javascript:;" data-tab="welfare_wrap">복리후생</a>
 			</div>
 			<div class="conts">
 				<div class="culture_wrap">
@@ -2507,6 +2509,117 @@
 
 				<!--//입력형 복리후생-->
 				<div class="swiper-scrollbar"></div>
+			</div>
+		</div>
+	</div>
+	<!--//조직문화&복리후생-->
+	
+		<!--조직문화&복리후생-->
+	<div class="module-wrap rec_mod_welfare sty05">
+		<div class="cnt-container">
+			<!-- <h3>조직문화</h3>
+            <div class="culture_wrap">
+                <div class="swiper dvCulture">
+                    조직문화            
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div> -->
+			<div class="welfare_wrap">
+				<h3>복리후생</h3>
+
+				<!--입력형 복리후생-->
+				<div class="swiper dvWelfare">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+						<div>
+							<div class="tit">자유로운 출퇴근</div>
+							<div class="desc">내가 출근하고 싶을때 출근해 8시간 업무 진행, 자율성 완전 부여된 출퇴근 제도</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+						<div>
+							<div class="tit">자유로운 출퇴근</div>
+							<div class="desc">내가 출근하고 싶을때 출근해 8시간 업무 진행, 자율성 완전 부여된 출퇴근 제도</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+						<div>
+							<div class="tit">자유로운 출퇴근</div>
+							<div class="desc">내가 출근하고 싶을때 출근해 8시간 업무 진행, 자율성 완전 부여된 출퇴근 제도</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+						<div>
+							<div class="tit">자유로운 출퇴근</div>
+							<div class="desc">내가 출근하고 싶을때 출근해 8시간 업무 진행, 자율성 완전 부여된 출퇴근 제도</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--//입력형 복리후생-->
+
+				<!-- 선택형 복리후생
+				<div class="swiper welfare">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<dl>
+								<dt>타이틀</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+							<dl>
+								<dt>타이틀</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+							<dl>
+								<dt>타이틀</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+							<dl>
+								<dt>타이틀</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+							<dl>
+								<dt>타이틀</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+							<dl>
+								<dt>타이틀</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+							<dl>
+								<dt>타이틀</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+							<dl>
+								<dt>타이틀</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			선택형 복리후생 -->
+
+
+
+
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</div>
 		</div>
 	</div>
@@ -3221,8 +3334,6 @@
 			// .rec_mod_welfare.sty01 복리후생 선택형
 			var cultureSlider = new Swiper(".rec_mod_welfare.sty01 .welfare", {
 				slidesPerView: 3,
-				slidesPerColumn: 2,
-				spaceBetween: 10,
 				navigation: {
 					nextEl: ".rec_mod_welfare.sty01  .swiper-button-next",
 					prevEl: ".rec_mod_welfare.sty01  .swiper-button-prev"
@@ -3230,23 +3341,18 @@
 				breakpoints: {
 					280: {
 						slidesPerView: 1,
-						slidesPerColumn: 1,
 					},
 					640: {
 						slidesPerView: 2,
-						slidesPerColumn: 1,
 					},
 					768: {
 						slidesPerView: 2,
-						slidesPerColumn: 1,
 					},
 					1024: {
 						slidesPerView: 3,
-						slidesPerColumn: 1,
 					},
 					1261: {
 						slidesPerView: 3,
-						slidesPerColumn: 2,
 					}
 				}
 			});
@@ -3378,6 +3484,86 @@
 			});
 
 
+			// .rec_mod_welfare.sty05 복리후생 선택형
+			var cultureSlider = new Swiper(".rec_mod_welfare.sty05 .welfare", {
+				slidesPerView: 3,
+				spaceBetween: 15,
+				navigation: {
+					nextEl: ".rec_mod_welfare.sty05  .swiper-button-next",
+					prevEl: ".rec_mod_welfare.sty05  .swiper-button-prev"
+				},
+				breakpoints: {
+					280: {
+						slidesPerView: 1,
+					},
+					640: {
+						slidesPerView: 2,
+					},
+					768: {
+						slidesPerView: 2,
+					},
+					1024: {
+						slidesPerView: 3,
+					},
+					1261: {
+						slidesPerView: 3,
+					}
+				}
+			});
+			
+				// .rec_mod_welfare.sty05 복리후생 선택형
+			var cultureSlider = new Swiper(".rec_mod_welfare.sty05 .dvWelfare", {
+				slidesPerView: 3,
+				spaceBetween: 15,
+				navigation: {
+					nextEl: ".rec_mod_welfare.sty05  .swiper-button-next",
+					prevEl: ".rec_mod_welfare.sty05  .swiper-button-prev"
+				},
+				breakpoints: {
+					280: {
+						slidesPerView: 1,
+					},
+					640: {
+						slidesPerView: 2,
+					},
+					768: {
+						slidesPerView: 2,
+					},
+					1024: {
+						slidesPerView: 3,
+					},
+					1261: {
+						slidesPerView: 3,
+					}
+				}
+			});
+			
+				// .rec_mod_welfare.sty05 복리후생 선택형
+			var cultureSlider = new Swiper(".rec_mod_welfare.sty05 .dvCulture", {
+				slidesPerView: 3,
+				spaceBetween: 15,
+				navigation: {
+					nextEl: ".rec_mod_welfare.sty05  .swiper-button-next",
+					prevEl: ".rec_mod_welfare.sty05  .swiper-button-prev"
+				},
+				breakpoints: {
+					280: {
+						slidesPerView: 1,
+					},
+					640: {
+						slidesPerView: 2,
+					},
+					768: {
+						slidesPerView: 2,
+					},
+					1024: {
+						slidesPerView: 3,
+					},
+					1261: {
+						slidesPerView: 3,
+					}
+				}
+			});
 
 
 			// .inf_mod_culture.sty02 탭

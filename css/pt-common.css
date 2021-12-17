@@ -619,7 +619,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .rec_mod_welfare.sty03 .swiper-button-next:after,
 .rec_mod_welfare.sty03 .swiper-button-prev:after{text-indent: -9999px}
 
-/*
+
 .rec_mod_welfare.sty05 .welfare,
 .rec_mod_welfare.sty05 .dvWelfare{overflow: hidden}
 .rec_mod_welfare.sty05 .swiper-slide{border: 1px solid #dcdcdc;padding: 4rem}
@@ -636,12 +636,13 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .rec_mod_welfare.sty05 .swiper-wrapper{height: auto}
 .rec_mod_welfare.sty05 .swiper-slide{height: auto}
 .rec_mod_welfare.sty05 .swiper-slide > div{height: 100%}
-.rec_mod_welfare.sty05 .swiper-slide:nth-child(1){background: url(images/img_welfare_8548600212_1.png) no-repeat top left #fff}
-.rec_mod_welfare.sty05 .swiper-slide:nth-child(2){background: url(images/img_welfare_8548600212_2.png) no-repeat bottom left #fff}
-.rec_mod_welfare.sty05 .swiper-slide:nth-child(3){background: url(images/img_welfare_8548600212_3.png) no-repeat top left #fff}
-.rec_mod_welfare.sty05 .swiper-slide:nth-child(odd){padding-top: 270px}
-.rec_mod_welfare.sty05 .swiper-slide:nth-child(even){padding-bottom: 270px}		
-*/
+.rec_mod_welfare.sty05 .swiper-slide:nth-child(1){background: url(../images/img_welfare_1278135614_4.jpg) no-repeat top left #fff}
+.rec_mod_welfare.sty05 .swiper-slide:nth-child(2){background: url(../images/img_welfare_1278135614_4.jpg) no-repeat bottom left #fff}
+.rec_mod_welfare.sty05 .swiper-slide:nth-child(3){background: url(../images/img_welfare_1278135614_4.jpg) no-repeat top left #fff}
+.rec_mod_welfare.sty05 .swiper-slide:nth-child(4){background: url(../images/img_welfare_1278135614_4.jpg) no-repeat bottom left #fff}
+.rec_mod_welfare.sty05 .swiper-slide:nth-child(odd){padding-top: 300px}
+.rec_mod_welfare.sty05 .swiper-slide:nth-child(even){padding-bottom: 300px}		
+
 
 .rec_mod_welfare.sty04 .welfare,
 .rec_mod_welfare.sty04 .dvWelfare{overflow: hidden}
@@ -3306,6 +3307,10 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 .rec_mod_product.sty01 .pd_wrap .swiper-container{width: calc(100% - 100px);margin: auto;}
 	
 /* 조직문화&복리후생*/
+	.rec_mod_welfare.sty05 .swiper-button-next{right: 0}
+	.rec_mod_welfare.sty05 .swiper-button-prev{left: 0}
+	.rec_mod_welfare.sty05 .swiper {width: calc(100% - 100px);margin: auto}
+	
 .mag_mod_culture.sty03 .dvCulture{width: calc(100% - 100px);margin: auto}
 	.mag_mod_culture.sty03 .swiper-button-next{right: 0 !important}
 	.mag_mod_culture.sty03 .swiper-button-prev{left: 0 !important}
