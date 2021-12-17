@@ -620,8 +620,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .rec_mod_welfare.sty03 .swiper-button-prev:after{text-indent: -9999px}
 
 
-.rec_mod_welfare.sty05 .welfare,
-.rec_mod_welfare.sty05 .dvWelfare{overflow: hidden}
+.rec_mod_welfare.sty05 .swiper{overflow: hidden}
 .rec_mod_welfare.sty05 .swiper-slide{border: 1px solid #dcdcdc;padding: 4rem}
 .rec_mod_welfare.sty05 .swiper-slide dt,
 .rec_mod_welfare.sty05 .swiper-slide .tit{font-weight: bold;font-size: 2.0rem;margin-bottom: 1.0rem}
