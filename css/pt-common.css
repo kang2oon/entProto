@@ -1049,6 +1049,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .mag_mod_biz.sty05 .swiper-slide > div img{flex: none}
 .mag_mod_biz.sty05 h4{font-size: 3.0rem;margin-bottom: 1.5rem;color: #333}
 .mag_mod_biz.sty05 p{font-size: 2.0rem;color: #666}
+.mag_mod_biz.sty05 .biz_wrap{position: relative}
 .mag_mod_biz.sty05 .bizDiv{overflow: hidden}
 .mag_mod_biz.sty05 img{display: block;border-radius: 10px;overflow: hidden;}
 .mag_mod_biz.sty05 .swiper-button-next:after,
