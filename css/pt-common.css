@@ -27,6 +27,9 @@ button{border:0;}
 
 .module-wrap .review_wrap{background: none;padding: 0;border: 0;}
 
+/* 리뷰 */
+.mag_mod_review,.sns_mod_review,.rec_mod_review{display:none}
+
 /* Common */
 *{box-sizing:border-box;}
 html, body{font-family:'Noto Sans KR', sans-serif;font-weight:400;-webkit-font-smoothing:antialiased;line-height:1.6;color:#212121;}
