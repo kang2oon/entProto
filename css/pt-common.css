@@ -157,7 +157,7 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
 
     .com_mod_anchor.sty02 li{border-right:1px solid rgba(255,255,255,.25);}
     .com_mod_anchor.sty02 li:first-child{border-left:1px solid rgba(255,255,255,.25);}
-    .com_mod_anchor.sty02 a{position:relative;display:inline-block;color:inherit;font-size:1.6rem;font-weight:300;text-decoration:none;padding:20px 32px;}
+    .com_mod_anchor.sty02 a{position:relative;display:inline-block;color:inherit;font-size:1.6rem;font-weight:300;text-decoration:none;padding:20px 32px;-webkit-transition: .3s all ease-out;-moz-transition: .3s all ease-out;transition: .3s all ease-out;}
     .com_mod_anchor.sty02 a.active{background:#da0011;font-weight:400;}
     .com_mod_anchor.sty02 .siteGo{position:absolute;top:50%;right:0;transform: translateY(-50%)}
     .com_mod_anchor.sty02 .siteGo a{display:inline-block;font-size:1.3rem;font-weight:300;padding:8px 24px 8px 48px;border:1px solid #fff;border-radius:30px;}
