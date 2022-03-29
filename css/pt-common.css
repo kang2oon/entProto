@@ -70,7 +70,8 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
 .module-wrap .bb-axis.bb-axis-y {font-size: 14px;font-family: 'Noto Sans KR';fill:#555}
 .module-wrap .bb-axis.bb-axis-y2 {font-size: 14px;font-family: 'Noto Sans KR';fill:#555}
 .module-wrap .domain{stroke:none}
-
+/* 채용공고 수정*/
+.box_recruit_wrap {overflow:hidden}
 /* Common */
 /* Header */
 .com_mod_header{padding:70px 0;background:#fff;}
