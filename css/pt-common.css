@@ -174,6 +174,8 @@ select.select_style01{border: 1px solid #e2e2e2;background: url(../images/select
  /* 채용공고 히든처리*/
 .com_mod_recruit #recruitArea,
 .com_mod_recruit .otherRecruit{display:none;}
+.com_mod_recruit .recruit_source{text-align:right;padding-bottom:10px;color:#999;font-size:1.4rem;}
+.com_mod_recruit .recruit_source img{max-height:16px;}
 .com_mod_recruit.sty01{padding:80px 0;}
     .com_mod_recruit.sty01 .bg_bot{position:absolute;bottom:0;width:100%;background:#2b71b9;height:280px;}
     .com_mod_recruit.sty01 h3{font-size:32px;margin:0 0 40px;}
@@ -656,7 +658,7 @@ background: linear-gradient(to bottom, #f59fb7 0%,#e89fd2 99%); /* W3C, IE10+, F
 .rec_mod_welfare.sty04 .swiper-slide .tit{font-weight: bold;font-size: 2.0rem;margin-bottom: 1.0rem}
 .rec_mod_welfare.sty04 .swiper-slide dd,
 .rec_mod_welfare.sty04 .swiper-slide .desc{position: relative;padding-left: 10px; font-size: 1.7rem;color: #666;}
-.rec_mod_welfare.sty04 .swiper-slide .desc:{padding-left: 0}
+/*.rec_mod_welfare.sty04 .swiper-slide .desc:{padding-left: 0}*/
 .rec_mod_welfare.sty04 .swiper-slide dd:before{content: '-';display: block;position: absolute;left: 0;top: 0}
 .inf_mod_culture.sty01{padding: 8.0rem 0}
 .inf_mod_culture.sty01 .cnt-container{display: flex}
@@ -3392,6 +3394,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.rec_mod_strategy.sty01 .spec.in_img .cont_box:after{display: none}
 	.rec_mod_strategy.sty01 .interview_tip .interview_tip_wrap:after{display: none}
 	.rec_mod_strategy.sty05 .add_point:after{display: none}
+}
 
 @media all and (max-width:1260px){
 	.cnt-container{width: calc(100% - 40px);margin: auto}
@@ -3775,7 +3778,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.mag_mod_interview.sty05 .swiper-button-next{left: auto !important;right: 0;bottom: auto;top: 10rem}
 	.mag_mod_interview.sty05 .swiper-button-prev{left: auto;right: 45px;bottom: auto;top: 10rem}
 	.mag_mod_interview.sty06 .iv_wrap{padding: 4rem 3rem}
-	.mag_mod_interview.sty06 .swiper-slide .swiper-wrapper .swiper-slide{}
+	/*.mag_mod_interview.sty06 .swiper-slide .swiper-wrapper .swiper-slide{}*/
 	.mag_mod_interview.sty05 .swiper-container{padding-top: 0}
 	.mag_mod_interview.sty06 .swiper-slide .swiper-wrapper{height: auto;}
 	.mag_mod_interview.sty06 .swiper-slide .swiper-wrapper .swiper-slide{height: auto;padding-left: 4rem}
@@ -4710,9 +4713,7 @@ html{font-size: 8px}
      .inf_mod_history.sty02{padding:40px 0 20px;}
      .inf_mod_history.sty02 h3{font-size:32px;}
      .inf_mod_history.sty02 .history_wrap .history{padding:20px 0;background-position:80px 0;}
-     .inf_mod_history.sty02 .history_wrap .arrow_prev, .inf_mod_history.sty02 .history_wrap .arrow_next{
-         left:80px;width:30px;height:30px;background-size:cover;
-     }
+     .inf_mod_history.sty02 .history_wrap .arrow_prev, .inf_mod_history.sty02 .history_wrap .arrow_next{left:80px;width:30px;height:30px;background-size:cover;}
      .inf_mod_history.sty02 .history_wrap .arrow_next{background-position: -30px 0;}
      .inf_mod_history.sty02 .history_wrap .history > div{background-position:72px 50%;}
      .inf_mod_history.sty02 .history_wrap .history > div > span{flex-shrink:0;width:100px;text-align:left;font-size:24px;padding-left:8px;}
@@ -4838,7 +4839,7 @@ html{font-size: 8px}
 	.rec_mod_finance.sty01 .company_sale_wrap .top > div:after{display: none}
 	/* 동종업종내 위치 */
 	.rec_mod_finance .local_rank_wrap .left{display: block;}
-	.rec_mod_finance .local_rank_wrap .lank_img{max-width: 150px;width: 100%;margin: auto ;}
+	.rec_mod_finance .local_rank_wrap .lank_img{max-width: 150px;width: 100%;margin: auto;}
 	.rec_mod_finance .local_rank_wrap table{margin-top: 2.0rem;}
 
     /* 매거진형 */
@@ -4893,9 +4894,7 @@ html{font-size: 8px}
 	.rec_mod_percent.sty03 .percent_wrap > div:nth-child(2) .circle{width: 125px;height: 125px}
 	.rec_mod_percent.sty03 .percent_wrap > div:nth-child(3) .circle{width: 130px;height: 130px}
 	.rec_mod_percent.sty03 .percent_wrap > div:nth-child(4) .circle{width: 140px;height: 140px}
-	
-
-	
+		
 	.bro_mod_finance.sty03  .bb-axis-y text{display: none}
 	.mag_mod_finance.sty02 > div .tab_warp .conts{height: auto}
 	.rec_mod_finance.sty02 .chart_cont{flex-direction: column;}
