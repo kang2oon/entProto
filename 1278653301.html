@@ -437,38 +437,6 @@
         </div>
     </div>
     
-      <a name="news"></a> 
-    <div class="module-wrap com_mod_news sty01">
-        <div class="cnt-container">
-            <div class="news_row">
-                <a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
-                <div class="desc">
-                    경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
-                    '2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
-                    친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
-                </div>
-                <div class="reg_date">2021.05.15</div>
-            </div>
-            <div class="news_row">
-                <a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
-                <div class="desc">
-                    경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
-                    '2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
-                    친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
-                </div>
-                <div class="reg_date">2021.05.15</div>
-            </div>
-            <div class="paging_wrap">
-                <a href="javascript:void(0);" class="prev disable">이전</a>
-                <a href="javascript:void(0);" class="current">1</a>
-                <a href="javascript:void(0);">2</a>
-                <a href="javascript:void(0);">3</a>
-                <a href="javascript:void(0);">4</a>
-                <a href="javascript:void(0);">5</a>
-                <a href="javascript:void(0);" class="next">다음</a>
-            </div>
-        </div>
-    </div>
     <div class="module-wrap com_mod_map">
         <div id="map"></div>
         <div class="map_info_wrap">
@@ -568,36 +536,39 @@
         var fiProfit3 = $('.financeProfit span:nth-child(3)').text();
 
        
-		
-		
-        
-        var cultureSlider = new Swiper(".dvCulture",{
-            slidesPerView: 2,
-			slidesPerColumn: 3,
-			slidesPerGroup: 6,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: ".culture_wrap .swiper-button-next",
-                prevEl: ".culture_wrap .swiper-button-prev"
-            },
-			 breakpoints: {
-				 	300: {
-						 slidesPerView: 1,
-						 slidesPerColumn: 3,
-						 slidesPerGroup: 3,
-					 },
-					 640: {
-						 slidesPerView: 1,
-						 slidesPerColumn: 3,
-						 slidesPerGroup: 3,
-					 },
-				 	1024: {
-						 slidesPerView: 2,
-						 slidesPerColumn: 3,
-						 slidesPerGroup: 6,
-					 }
-			 }
-        });
+		// .mag_mod_welfare.sty03 조직문화
+			var cultureSlider = new Swiper(".mag_mod_welfare.sty03 .dvCulture", {
+				slidesPerView: 2,
+				slidesPerColumn: 3,
+				slidesPerGroup: 6,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".mag_mod_welfare.sty03 .culture_wrap .swiper-button-next",
+					prevEl: ".mag_mod_welfare.sty03 .culture_wrap .swiper-button-prev"
+				},
+				breakpoints: {
+					280: {
+						slidesPerView: 1,
+						slidesPerColumn: 1,
+						slidesPerGroup: 1,
+					},
+					640: {
+						slidesPerView: 1,
+						slidesPerColumn: 1,
+						slidesPerGroup: 1,
+					},
+					1024: {
+						slidesPerView: 2,
+						slidesPerColumn: 1,
+						slidesPerGroup: 2,
+					},
+					1261: {
+						slidesPerView: 2,
+						slidesPerColumn: 3,
+						slidesPerGroup: 6,
+					}
+				}
+			});
 		
 		$(".ivCeo").append('<div class="swiper-pagination"></div>');
 			var ceoIvSlider = new Swiper(".ivCeo", {
@@ -643,22 +614,6 @@
 		
 		
 
-        var percentSlider = new Swiper(".percent",{
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 20,
-            loop: true,
-            pagination: {
-                el: ".mag_mod_percent .swiper-pagination",
-                clickable: true,
-            },
-            breakpoints:{
-                780: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 2,
-                }
-            }
-        });
 
         $('.tab > div').click(function(){
             var item = $(this).attr('data-tab');

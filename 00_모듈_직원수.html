@@ -148,7 +148,7 @@
 					<div class="empState_wrap">
 						<div class="lastJoin_wrap">
 							<div>최근 1년 입사자</div>
-							<div class="lastJoin">-</div>
+							<div class="lastJoin">비공개</div>
 						</div>
 						<div class="lastResign_wrap">
 							<div>최근 1년 퇴사자</div>
@@ -424,7 +424,7 @@
 					x: {
 						type: "category",
 						//아래 categories 항목은 퍼블시 디자인 확인 영역 등록시 주석처리
-						categories: ['202110', '202109', '202108', '202107','202106','202105','202104','202103','202102','202101','202012','202111'],
+						categories: ["202110", "202109", "202108", "202107","202106","202105","202104","202103","202102","202101","202012","202111"],
 						// ******관리자 등록시 아래 categories 영역 주석풀고 등록 ******
 						//categories: ctLabelDataList,
 						tick: {
@@ -466,7 +466,13 @@
 			}, 100);
 
 
-
+$('.tab > a').click(function() {
+					var item = $(this).attr('data-tab');
+					$('.tab > a').removeClass('on');
+					$(this).addClass('on');
+					$(this).parent().parent().find('.conts').children().hide();
+					$('.conts > .' + item).show();
+				});
 
 		};
 		xmlhttp.send();

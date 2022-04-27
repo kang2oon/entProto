@@ -506,47 +506,43 @@
                     dvCulture += "</div>";
                 }
                 $(".dvCulture").html(dvCulture);
-                // masony 레이아웃
-                var divs = $(".dvCulture .swiper-wrapper > div");
-                if ($(window).width() > 1260) {
-                    for (var i = 0; i < divs.length; i += 8) {
-                        divs.slice(i, i + 8).wrapAll("<div class='masony swiper-slide'></div>");
-                        $('.dvCulture .swiper-wrapper > div').each(function() {
-                            $(this).children().removeClass('swiper-slide');
-                        });
-                        $('.masony  > div').addClass('item');
-                    }
-                } else {
-                    $('.dvCulture .swiper-wrapper').addClass("masony")
-                    $('.dvCulture .swiper-wrapper > div').each(function() {
-                        $(this).addClass('item');
-                    });
-                }
+               
+				// .mag_mod_welfare.sty03 조직문화
+			var cultureSlider = new Swiper(".mag_mod_welfare.sty03 .swiper", {
+				slidesPerView: 2,
+				slidesPerColumn: 3,
+				slidesPerGroup: 6,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".mag_mod_welfare.sty03 .culture_wrap .swiper-button-next",
+					prevEl: ".mag_mod_welfare.sty03 .culture_wrap .swiper-button-prev"
+				},
+				breakpoints: {
+					280: {
+						slidesPerView: 1,
+						slidesPerColumn: 1,
+						slidesPerGroup: 1,
+					},
+					640: {
+						slidesPerView: 1,
+						slidesPerColumn: 1,
+						slidesPerGroup: 1,
+					},
+					1024: {
+						slidesPerView: 2,
+						slidesPerColumn: 1,
+						slidesPerGroup: 2,
+					},
+					1261: {
+						slidesPerView: 2,
+						slidesPerColumn: 3,
+						slidesPerGroup: 6,
+					}
+				}
+			});
 
-                var ww = $(window).width();
-                var dvCultureSlider = undefined;
-
-                function initSwiper() {
-                    if (ww > 1260 && dvCultureSlider == undefined) {
-                        dvCultureSlider = new Swiper(".dvCulture", {
-                            slidesPerView: 1,
-                            navigation: {
-                                nextEl: ".culture_wrap .swiper-button-next",
-                                prevEl: ".culture_wrap .swiper-button-prev"
-                            }
-                        });
-                    } else if (ww >= 1260 && dvCultureSlider != undefined) {
-                        mySwiper.destroy();
-                        dvCultureSlider = undefined;
-                    }
-                }
-
-                initSwiper();
-
-                $(window).on('resize', function() {
-                    ww = $(window).width();
-                    initSwiper();
-                });
+				
+				
                 // var cultureSlider = new Swiper(".dvCulture", {
                 //     slidesPerView: 1,
                 //     slidesPerColumn: 3,
@@ -727,18 +723,11 @@
                     }
                 }
                 $(".product").html(product);
-                $('.product').addClass('.swiper-container');
-                $('.product').wrapInner('<div class="swiper-wrapper"></div>');
-                $('.product .swiper-wrapper > div').addClass('swiper-slide');
-                $('.pd_wrap').append('<div class="swiper-button-next"></div><div class="swiper-button-prev"></div>');
+               $('.product > div').each(function() {
+				$(this).find('h4,p').wrapAll('<div class="text"></div>')
+			});
 
-                var productSlider = new Swiper(".product", {
-                    slidesPerView: 1,
-                    navigation: {
-                        nextEl: ".pd_wrap .swiper-button-next",
-                        prevEl: ".pd_wrap .swiper-button-prev"
-                    }
-                });
+          
     
                 //36.기업 전략과제
                 if(isNull(strtgTask)){
@@ -799,41 +788,13 @@
                     ivCeo += "</div>";
                 }
                 $(".ivCeo").html(ivCeo);
-                $(".ivCeo").append('<div class="swiper-pagination"></div>');
-                var ceoIvSlider = new Swiper(".ivCeo", {
-                    slidesPerView: 1,
-                    slidesPerColumn: 4,
-                    slidesPerGroup: 4,
-                    spaceBetween: 0,
-                    //loop: true,
-                    observer: true,
-                    observeParents: true,
-                    pagination: {
-                        el: '.ivCeo .swiper-pagination',
-                        type: 'bullets',
-                        clickable: true,
-                        observer: true,
-                        observeParents: true,
-                    },
-                    breakpoints:{
-                    1260: {
-                        slidesPerColumn: 4,
-                        slidesPerGroup: 4,
-                    },
-                    1024: {
-                        slidesPerColumn: 3,
-                        slidesPerGroup: 3,
-                    },
-                    768: {
-                        slidesPerColumn: 2,
-                        slidesPerGroup: 2,
-                    },
-                    300: {
-                        slidesPerColumn: 2,
-                        slidesPerGroup: 2,
-                    }
-                    }
-                });
+              
+			// rec_mod_interview04
+		$('.rec_mod_interview.sty04 .qa_ceo .q').attr('tabindex', '0')
+		$('.rec_mod_interview.sty04 .qa_ceo .q').off('click').on('click', function() {
+			$(this).next().slideToggle();
+			$(this).toggleClass('active')
+		});
     
                 //38.채용담당자 인터뷰
                 var ivMngPhoto = '';
@@ -870,41 +831,19 @@
                     ivMng += "</div>"; 
                 }
                 $(".ivMng").html(ivMng);
-                $(".ivMng").append('<div class="swiper-pagination"></div>');
-                var mngIvSlider = new Swiper(".ivMng", {
-                    slidesPerView: 1,
-                    slidesPerColumn: 4,
-                    spaceBetween: 0,
-                    observer: true,
-                    dots: true,
-                    observeParents: true,
-                    pagination: {
-                        el: '.ivMng .swiper-pagination',
-                        type: 'bullets',
-                        clickable: true,
-                        observer: true,
-                        observeParents: true,
-                    },
-                    breakpoints:{
-                    1260: {
-                        slidesPerColumn: 4,
-                        slidesPerGroup: 4,
-                    },
-                    1024: {
-                        slidesPerColumn: 3,
-                        slidesPerGroup: 3,
-                    },
-                    768: {
-                        slidesPerColumn: 2,
-                        slidesPerGroup: 2,
-                    },
-                    300: {
-                        slidesPerColumn: 2,
-                        slidesPerGroup: 2,
-                    }
-                    }
-                });
-    
+                $(".rec_mod_interview.sty04 .ivMng").append('<div class="swiper-button-prev"></div>');
+		$(".rec_mod_interview.sty04 .ivMng").append('<div class="swiper-button-next"></div>');
+		var ceoIvSlider = new Swiper(".rec_mod_interview.sty04 .ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			//loop: true,
+			observer: true,
+			observeParents: true,
+			navigation: {
+				nextEl: ".rec_mod_interview.sty04 .qa_mng .swiper-button-next",
+				prevEl: ".rec_mod_interview.sty04 .qa_mng .swiper-button-prev"
+			}
+		});
                 //39.신입사원 인터뷰
                 var ivEmpPhoto = '';
                 var ivEmpPhotoAlt = '';
@@ -940,67 +879,17 @@
                     ivEmp += "</div>";
                 }
                 $(".ivEmp").html(ivEmp);
-                $(".ivEmp").append('<div class="swiper-pagination"></div>');
-                var empIvSlider = new Swiper(".ivEmp", {
-                    slidesPerView: 1,
-                    slidesPerColumn: 4,
-                    spaceBetween: 0,
-                    observer: true,
-                    dots: true,
-                    observeParents: true,
-                    pagination: {
-                        el: '.ivEmp .swiper-pagination',
-                        type: 'bullets',
-                        clickable: true
-                    },
-                    breakpoints:{
-                    1260: {
-                        slidesPerColumn: 4,
-                        slidesPerGroup: 4,
-                    },
-                    1024: {
-                        slidesPerColumn: 3,
-                        slidesPerGroup: 3,
-                    },
-                    768: {
-                        slidesPerColumn: 2,
-                        slidesPerGroup: 2,
-                    },
-                    300: {
-                        slidesPerColumn: 2,
-                        slidesPerGroup: 2,
-                    }
-                    }
-                });
-
+               $(".rec_mod_interview.sty04 .ivEmp").append('<a href="javascript:bold" class="load_more">더보기</a>');
+		$(".rec_mod_interview.sty04 .ivEmp .swiper-slide").hide();
+		$(".rec_mod_interview.sty04 .ivEmp .swiper-slide").slice(0, 2).show();
+			
+		$(".rec_mod_interview.sty04 .ivEmp .swiper-slide").each(function(){
+			if ($(".rec_mod_interview.sty04 .ivEmp .swiper-slide").length == 2) {
+				$(this).parent().parent().find('.load_more').hide();
+			}
+		});
                 // 인터뷰
-                $('.mag_mod_interview.sty02 .cnt-container').addClass('tab_container')
-                $('.mag_mod_interview.sty02 .cnt-container').prepend("<ul class='tabs'><li class='active'><a href='javascript:vold' data-tab='tab1'>CEO</a></li><li><a href='javascript:vold' data-tab='tab2'>인사담당자</a></li><li><a href='javascript:vold' data-tab='tab3'>신입사원</a></li></ul>");
-                $('.iv_wrap').addClass('tab_content');
-                $('.qa_ceo').attr('id', 'tab1');
-                $('.qa_mng').attr('id', 'tab2');
-                $('.qa_emp').attr('id', 'tab3');
-
-                // 탭 컨텐츠 숨기기
-                $(".tab_content").hide();
-
-                // 첫번째 탭콘텐츠 보이기
-                $(".tab_container").each(function() {
-                    $(this).children().children().children("li:first").addClass("active"); //Activate first tab
-                    $(this).children(".tab_content").first().show();
-                });
-
-                //탭메뉴 클릭 이벤트
-                $(".tabs li a").click(function() {
-                    //탭 안에 슬라이드 있을 때
-                    var tab_id = $(this).attr('data-tab');
-                    $(this).parent().siblings().removeClass("active");
-                    $(this).parent().addClass("active");
-                    $(this).parent().parent().parent().parent().find(".tab_content").hide();
-                    //        var activeTab = $(this).attr("rel");
-                    //        $("#" + activeTab).fadeIn();
-                    $("#" + tab_id).fadeIn();
-                });
+                
     
                 //40.채용절차
                 if(isNull(emplProcess)){

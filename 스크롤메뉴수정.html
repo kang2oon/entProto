@@ -1,0 +1,1593 @@
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="wclassth=device-wclassth, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="author" content="kang2oon">
+	<title class="comName">기업명</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
+	<link href="./css/pt-common.css" rel="stylesheet">
+	<link rel="stylesheet" href="/1468101911.css">
+	<style>
+		/* 신규타입 상단처리 */
+		.newCompanyInfoWrap {
+			display: none;
+		}
+
+		.wantCompany_body {
+			padding: 0;
+		}
+
+		#companyInfoWrap {
+			padding: 0 0 40px;
+		}
+
+		.swiper-wrapper {
+			height: auto;
+		}
+
+		.cnt-tit {
+			font-size: 4rem !important;
+			text-align: center;
+			margin-bottom: 4rem;
+			font-weight: bold !important
+		}
+
+		.cnt-tit span {
+			font-size: 2.5rem;
+			display: block;
+			color: #1a8fcd;
+			text-transform: uppercase
+		}
+
+		.inf_mod_summary {
+			background: url(images/@bg_summary_5048610644.jpg) no-repeat;
+			background-size: cover;
+			padding: 8rem 0;
+			min-height: 700px;
+		}
+
+		.inf_mod_summary .txt {
+			width: calc(100% - 700px);
+			margin-left: auto;
+		}
+
+		.inf_mod_summary .txt h2 {
+			font-size: 5rem;
+			margin: 2rem 0
+		}
+
+		.inf_mod_summary .txt h2 span {
+			color: #1a8fcc
+		}
+
+		.inf_mod_summary .txt strong {
+			font-size: 3rem;
+			color: #1a8fcc;
+			font-weight: 500;
+			display: block;
+			margin-bottom: 1rem
+		}
+
+		.inf_mod_summary .txt p {
+			font-size: 2.3rem
+		}
+
+		.bro_mod_finance.sty07 {
+			margin: 0;
+		}
+
+		.bro_mod_finance.sty07 .cnt-container {
+			display: block;
+		}
+
+		.bro_mod_finance.sty07 .conts_wrap {
+			justify-content: center;
+		}
+
+		.bro_mod_finance.sty07 .conts_wrap>div {
+			background: #198bc7
+		}
+
+		.bro_mod_finance.sty07 .conts_wrap>div:nth-child(even) {
+			border-color: #198bc7;
+			color: #198bc7;
+		}
+
+		.bro_mod_finance.sty07 .conts_wrap>div:nth-child(even) .tit {
+			color: #555
+		}
+
+		.bg {
+			background: url(images/@bg_finance_5048610644.png) no-repeat bottom -200px left;
+			background-size: cover;
+			padding: 8rem 0
+		}
+
+		.mag_mod_percent.sty03 {
+			padding-bottom: 0
+		}
+
+		.inf_mod_philo {
+			margin: 8rem 0
+		}
+
+		.inf_mod_philo .philo_wrap {
+			max-width: 1080px;
+			margin: auto
+		}
+
+		.inf_mod_philo .philo_wrap>div {
+			background: #f5f5f5;
+			margin-top: 10rem;
+			padding: 8rem;
+			border-radius: 20px;
+			box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+			position: relative;
+		}
+
+		.inf_mod_philo .philo_wrap .tit {
+			font-size: 3.5rem;
+			color: #1c90cd;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.inf_mod_philo .philo_wrap .tit span {
+			display: block;
+			font-weight: 400;
+			font-size: 2.3rem;
+			color: #6cb6dd
+		}
+
+		.inf_mod_philo .philo_wrap .desc {
+			font-size: 2.2rem;
+		}
+
+		.inf_mod_philo .philo_wrap>div:nth-child(1) {
+			background: url(images/@bg_vision_5048610644.png) no-repeat #f8f8f8;
+			padding: 8rem 8rem 8rem 45rem
+		}
+
+		.inf_mod_philo .philo_wrap>div:nth-child(1):after {
+			content: '';
+			display: block;
+			background: url(images/@img_vision01_5048610644.png) no-repeat;
+			width: 425px;
+			height: 466px;
+			position: absolute;
+			left: 0;
+			top: -100px;
+			z-index: 2
+		}
+
+		.inf_mod_philo .philo_wrap>div:nth-child(2) {
+			background: url(images/@bg_vision02_5048610644.png) no-repeat #f8f8f8;
+			padding: 8rem 8rem 8rem 20rem
+		}
+
+		.inf_mod_philo .philo_wrap>div:nth-child(2):after {
+			content: '';
+			display: block;
+			background: url(images/@img_vision02_5048610644.png) no-repeat;
+			width: 446px;
+			height: 402px;
+			position: absolute;
+			right: 0;
+			top: -120px;
+		}
+
+		.keyValue_wrap {
+			height: 491px;
+			width: 100%;
+			position: relative;
+			margin: 8rem 0
+		}
+
+		.keyValue_wrap .diagram {
+			background: url(images/@bg_keyvalue_5048610644.png) no-repeat center;
+			width: 491px;
+			height: 491px;
+			margin: auto;
+			position: relative;
+		}
+
+		.keyValue_wrap .diagram .tit {
+			background: #fff;
+			display: flex;
+			flex-direction: column;
+			width: 340px;
+			height: 340px;
+			border-radius: 50%;
+			justify-content: center;
+			align-items: center;
+			color: #0e4d71;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2) inset
+		}
+
+		.keyValue_wrap .diagram .tit strong {
+			text-transform: uppercase;
+			font-size: 4rem;
+		}
+
+		.keyValue_wrap .diagram .tit p {
+			font-size: 2rem
+		}
+
+		.keyValue_wrap .keyValue {
+			display: flex;
+			flex-wrap: wrap;
+			position: absolute;
+			top: 0;
+			left: 0;
+			justify-content: space-between;
+			width: 100%;
+			height: 100%;
+			margin-top: 8rem
+		}
+
+		.keyValue_wrap dl {
+			width: calc(50% - 180px);
+			position: relative;
+			height: 50%;
+		}
+
+		.keyValue_wrap dl:before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: #000;
+			position: absolute;
+			left: 0;
+			top: 0
+		}
+
+		.keyValue_wrap dl:after {
+			content: '';
+			display: block;
+			width: 10px;
+			height: 10px;
+			background: #000;
+			border-radius: 50%;
+			position: absolute;
+			left: 0;
+			top: -5px
+		}
+
+		.keyValue_wrap dl:nth-child(1) dt {
+			color: #4eb7f0
+		}
+
+		.keyValue_wrap dl:nth-child(1):before {
+			background: #4eb7f0
+		}
+
+		.keyValue_wrap dl:nth-child(1):after {
+			background: #4eb7f0
+		}
+
+		.keyValue_wrap dl:nth-child(2) dt {
+			color: #198cc9
+		}
+
+		.keyValue_wrap dl:nth-child(2):before {
+			background: #198cc9
+		}
+
+		.keyValue_wrap dl:nth-child(2):after {
+			background: #198cc9
+		}
+
+		.keyValue_wrap dl:nth-child(3) dt {
+			color: #0e4d71
+		}
+
+		.keyValue_wrap dl:nth-child(3):before {
+			background: #0e4d71
+		}
+
+		.keyValue_wrap dl:nth-child(3):after {
+			background: #0e4d71
+		}
+
+		.keyValue_wrap dl:nth-child(4) dt {
+			color: #1070a3
+		}
+
+		.keyValue_wrap dl:nth-child(4):before {
+			background: #1070a3
+		}
+
+		.keyValue_wrap dl:nth-child(4):after {
+			background: #1070a3
+		}
+
+		.keyValue_wrap dt {
+			font-size: 3rem;
+			font-weight: bold;
+			padding: 2rem 0
+		}
+
+		.keyValue_wrap dd {
+			font-size: 2.3rem
+		}
+
+		.keyValue_wrap dl:nth-child(2n) {
+			text-align: right
+		}
+
+		.keyValue_wrap dl:nth-child(2n):after {
+			left: auto;
+			right: 0
+		}
+
+		.inf_mod_talent {
+			padding: 8rem 0;
+			background: url(images/@bg_talent_5048610644.png) no-repeat;
+			background-size: cover
+		}
+
+		.inf_mod_talent h3 {
+			color: #fff
+		}
+
+		.inf_mod_talent .talent_wrap {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 8rem
+		}
+
+		.inf_mod_talent .talent_wrap>div {
+			width: calc(20% - 10px);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			color: #fff;
+			align-items: center
+		}
+
+		.inf_mod_talent .talent_wrap>div .ico {
+			max-width: 240px;
+			height: 356px;
+			width: 100%;
+		}
+
+		.inf_mod_talent .talent_wrap>div .item01 {
+			background: url(images/@ico_talent01_5048610644.png) no-repeat center;
+			background-size: contain
+		}
+
+		.inf_mod_talent .talent_wrap>div .item02 {
+			background: url(images/@ico_talent02_5048610644.png) no-repeat center;
+			background-size: contain
+		}
+
+		.inf_mod_talent .talent_wrap>div .item03 {
+			background: url(images/@ico_talent03_5048610644.png) no-repeat center;
+			background-size: contain
+		}
+
+		.inf_mod_talent .talent_wrap>div .item04 {
+			background: url(images/@ico_talent04_5048610644.png) no-repeat center;
+			background-size: contain
+		}
+
+		.inf_mod_talent .talent_wrap>div .item05 {
+			background: url(images/@ico_talent05_5048610644.png) no-repeat center;
+			background-size: contain
+		}
+
+		.inf_mod_talent .talent_wrap>div .tit {
+			font-size: 3rem;
+			border-radius: 50px;
+			background: #333;
+			margin-bottom: 2rem;
+			padding: 0.5rem 4rem;
+			max-width: 100%
+		}
+
+		.inf_mod_talent .talent_wrap>div .desc {
+			font-size: 1.8rem
+		}
+
+		.inf_mod_talent .talent_wrap>div:nth-child(1) .tit {
+			background: #4eb7f0
+		}
+
+		.inf_mod_talent .talent_wrap>div:nth-child(2) .tit {
+			background: #01a6a0
+		}
+
+		.inf_mod_talent .talent_wrap>div:nth-child(3) .tit {
+			background: #007acc
+		}
+
+		.inf_mod_talent .talent_wrap>div:nth-child(4) .tit {
+			background: #01a6a0
+		}
+
+		.inf_mod_talent .talent_wrap>div:nth-child(5) .tit {
+			background: #4eb7f0
+		}
+
+		.inf_mod_talent .talent_wrap>div:nth-child(even) {
+			margin-top: -120px
+		}
+
+		/* 연혁 */
+		.bro_mod_history.sty02 .history>div>span {
+			background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, #48afe8 0%, #3a8fde 100%)
+		}
+
+		.bro_mod_history.sty02 .history>div ul>li .month {
+			color: #1c90cd
+		}
+
+		.mag_mod_biz .addImg {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 6rem
+		}
+
+		.mag_mod_biz .addImg>div {
+			margin-right: 4rem
+		}
+
+		.mag_mod_biz .addImg>div:last-child {
+			margin-right: 0
+		}
+
+		.mag_mod_biz .addImg>div img {
+			border-radius: 0;
+		}
+
+		.mag_mod_biz.sty05 .biz_wrap {
+			position: relative
+		}
+
+		.mag_mod_biz.sty05 .bizDiv img {
+			width: 60%;
+		}
+
+		.mag_mod_biz.sty05 .swiper-slide>div .text_area {
+			width: 40%;
+			padding-top: 4rem
+		}
+
+		.mag_mod_biz.sty05 .swiper-button-prev {
+			left: -100px
+		}
+
+		.mag_mod_biz.sty05 .swiper-button-next {
+			right: -100px
+		}
+
+		.mag_mod_biz.sty05 .swiper-slide>div {
+			padding: 0
+		}
+
+		.mag_mod_biz.sty05 h4 {
+			font-size: 4rem
+		}
+
+		.inf_mod_culture {
+			margin: 8rem 0
+		}
+
+		.inf_mod_culture .swiper-wrapper {
+			justify-content: space-between
+		}
+
+		.inf_mod_culture .swiper-slide {
+			width: calc(25% - 20px);
+			text-align: center;
+		}
+
+		.inf_mod_culture .swiper-slide>div:before {
+			content: '';
+			display: block;
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			margin: auto;
+			background: #000
+		}
+
+		.inf_mod_culture .swiper-slide .tit {
+			font-weight: bold;
+			font-size: 2.8rem;
+			margin: 2rem 0 1rem 0
+		}
+
+		.inf_mod_culture .swiper-slide .desc {
+			font-size: 2.4rem;
+			color: #727272;
+			word-break: keep-all
+		}
+
+		.inf_mod_culture .swiper-slide:nth-child(1)>div:before {
+			background: url(images/@ico_cult01_5048610644.png) no-repeat center #4eb7f0
+		}
+
+		.inf_mod_culture .swiper-slide:nth-child(2)>div:before {
+			background: url(images/@ico_cult02_5048610644.png) no-repeat center #01a6a0
+		}
+
+		.inf_mod_culture .swiper-slide:nth-child(3)>div:before {
+			background: url(images/@ico_cult03_5048610644.png) no-repeat center #198cc9
+		}
+
+		.inf_mod_culture .swiper-slide:nth-child(4)>div:before {
+			background: url(images/@ico_cult04_5048610644.png) no-repeat center #0e4d71
+		}
+
+		.mag_mod_interview.sty05 {
+			background: url(images/@bg_interview_5048610644.png) no-repeat;
+			background-size: cover
+		}
+
+		.mag_mod_review.sty03 .review_wrap>.item .desc:before {
+			background: url(images/@ico_review_5048610644.png) no-repeat center
+		}
+
+		.mag_mod_review.sty03 .review_wrap>.item:nth-child(2n) .desc:before {
+			background: url(images/@ico_review02_5048610644.png) no-repeat center
+		}
+
+		.mag_mod_review.sty03 .review_wrap>.item:nth-child(3n) .desc:before {
+			background: url(images/@ico_review03_5048610644.png) no-repeat center
+		}
+
+		.mag_mod_review.sty03 .review_wrap>.item:nth-child(4n) .desc:before {
+			background: url(images/@ico_review04_5048610644.png) no-repeat center
+		}
+
+		.mag_mod_review.sty03 .review_wrap>.item:nth-child(4n) .desc:before {
+			background: url(images/@ico_review05_5048610644.png) no-repeat center
+		}
+
+		@media all and (max-width:1460px) {
+			.mag_mod_biz.sty05 .swiper-button-prev {
+				left: 0
+			}
+
+			.mag_mod_biz.sty05 .swiper-button-next {
+				right: 0
+			}
+
+			.mag_mod_biz.sty05 .bizDiv {
+				width: calc(100% - 100px);
+				margin: auto
+			}
+		}
+
+		@media all and (max-width:1260px) {
+			.inf_mod_summary .txt {
+				width: 50%
+			}
+
+			.keyValue_wrap dl {
+				width: calc(50% - 150px)
+			}
+
+		}
+
+		@media all and (max-width:1024px) {
+			.inf_mod_summary {
+				background-position: center right 20%;
+				min-height: 550px
+			}
+
+			.inf_mod_summary .txt {
+				width: 100%;
+				text-align: center;
+			}
+
+			.inf_mod_philo .philo_wrap>div:nth-child(1):after,
+			.inf_mod_philo .philo_wrap>div:nth-child(2):after {
+				display: none
+			}
+
+			.inf_mod_philo .philo_wrap>div {
+				padding: 4rem !important;
+				margin-top: 3rem
+			}
+
+			.inf_mod_philo .philo_wrap>div:first-child {
+				margin-top: 0
+			}
+
+			.keyValue_wrap {
+				height: auto;
+			}
+
+			.keyValue_wrap .keyValue {
+				position: static;
+				height: auto;
+				margin-top: 0
+			}
+
+			.keyValue_wrap dl {
+				width: calc(50% - 20px);
+				margin-top: 4rem
+			}
+
+			.inf_mod_talent .talent_wrap {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			.inf_mod_talent .talent_wrap>div {
+				width: calc(33.333% - 13.333px);
+				margin-bottom: 5rem;
+				margin-right: 20px
+			}
+
+			.inf_mod_talent .talent_wrap {
+				margin-top: 2rem
+			}
+
+			.inf_mod_talent .talent_wrap>div:nth-child(3n) {
+				margin-right: 0
+			}
+
+			.inf_mod_talent .talent_wrap>div:nth-child(even) {
+				margin-top: 0
+			}
+
+			.inf_mod_talent .talent_wrap>div .ico {
+				height: 300px
+			}
+
+			.mag_mod_biz.sty05 .swiper-slide>div .text_area {
+				width: 100%;
+			}
+
+			.mag_mod_biz.sty05 .bizDiv img {
+				width: 100%
+			}
+
+
+			.inf_mod_culture .swiper-slide>div:before {
+				width: 130px;
+				height: 130px;
+			}
+
+			.inf_mod_culture .swiper-wrapper {
+				flex-wrap: wrap
+			}
+
+			.inf_mod_culture .swiper-slide {
+				width: calc(50% - 20px);
+				margin-bottom: 2rem
+			}
+
+			.inf_mod_culture .swiper-slide .tit {
+				font-size: 2.2rem
+			}
+
+			.inf_mod_culture .swiper-slide .desc {
+				font-size: 1.8rem
+			}
+
+			.inf_mod_culture .swiper-slide:nth-child(1)>div:before {
+				background-size: 50px
+			}
+
+			.inf_mod_culture .swiper-slide:nth-child(2)>div:before {
+				background-size: 50px
+			}
+
+			.inf_mod_culture .swiper-slide:nth-child(3)>div:before {
+				background-size: 50px
+			}
+
+			.inf_mod_culture .swiper-slide:nth-child(4)>div:before {
+				background-size: 50px
+			}
+		}
+
+		@media all and (max-width:768px) {
+			.inf_mod_summary {
+				background-position: center right 20%;
+				min-height: 400px
+			}
+
+			.inf_mod_summary .txt h2 {
+				font-size: 3rem
+			}
+
+			.inf_mod_summary .txt strong {
+				font-size: 2rem
+			}
+
+			.keyValue_wrap .diagram {
+				width: 280px;
+				height: 280px;
+				background-size: 280px;
+			}
+
+			.keyValue_wrap .diagram .tit {
+				width: 200px;
+				height: 200px;
+				text-align: center;
+			}
+
+			.keyValue_wrap .diagram .tit strong {
+				font-size: 3rem
+			}
+
+			.keyValue_wrap dt {
+				font-size: 2.6rem
+			}
+
+			.keyValue_wrap dd {
+				font-size: 2rem
+			}
+
+			.inf_mod_talent .talent_wrap>div {
+				width: calc(50% - 10px);
+			}
+
+			.inf_mod_talent .talent_wrap>div:nth-child(2n) {
+				margin-right: 0
+			}
+
+			.inf_mod_talent .talent_wrap>div:nth-child(3n) {
+				margin-right: auto
+			}
+
+		}
+
+		@media all and (max-width:640px) {
+			.mag_mod_biz .addImg {
+				flex-direction: column
+			}
+
+			.mag_mod_biz .addImg>div {
+				margin-right: 0;
+				margin-bottom: 2rem
+			}
+
+			.mag_mod_biz .addImg>div:last-child {
+				margin-bottom: 0
+			}
+		}
+
+		@media all and (max-width:480px) {
+			.inf_mod_talent .talent_wrap>div {
+				width: 100%;
+				margin-right: 0
+			}
+		}
+	</style>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@5.4.5/js/swiper.min.js"></script>
+	<script type="text/javascript"
+		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer">
+	</script>
+	<script src="https://ptb.kgoon.pw/module/jsontohtml.js"></script>
+	<script src="https://ptb.kgoon.pw/module/map.js"></script>
+	<script src="https://ptb.kgoon.pw/js/jPages.min.js"></script>
+</head>
+
+<body>
+	<!-- 모듈 추가 및 수정 -->
+	<div class="module-wrap edit_wrap com_mod_header sty02">
+		<div class="cnt-container header clearfix">
+			<div id="iconArea">
+				<div class="biz_cate cate22 green"><i></i></div>
+			</div>
+			<div class="logo imgCi"><img src="/images/logo_smaple01.png" alt=""></div>
+			<div class="info fc_000">
+				<dl class="clearfix">
+					<dt>업종</dt>
+					<dd class="incCate">업종</dd>
+					<dt>대표자</dt>
+					<dd class="ceo">대표자</dd>
+					<dt>기업형태</dt>
+					<dd class="comForm">기업형태</dd>
+				</dl>
+				<div class="action fc_000 clearfix">
+					<a href="javascript:void(0);" id="scrapYn" onclick="onCntNew();">관심기업 등록<i>♥</i></a>
+					<a href="javascript:void(0);" id="copyUrlNew" onclick="copyUrlNew();"
+						data-clipboard-action="copy">페이지 URL 복사<i>→</i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="module-wrap edit_wrap com_mod_anchor sty02">
+		<div class="cnt-container fc_fff">
+			<ul>
+				<li><a href="#summary" class="active">기업개요</a></li>
+				<li><a href="#biz">사업영역</a></li>
+				<li><a href="#recruit">채용공고</a></li>
+				<li> <a href="#news">기업뉴스</a></li>
+			</ul>
+			<div class="siteGo">사이트</div>
+		</div>
+	</div>
+
+
+
+
+	<a name="summary"></a>
+	<div class="module-wrap inf_mod_summary">
+		<div class="cnt-container">
+			<div class="txt">
+				<div class="imgCi">
+					<img src="/images/@logo_5048610644.png" alt="">
+				</div>
+				<h2>
+					<span>책임</span>을 다하는 기업
+				</h2>
+				<strong>‘세계가 주목하는 글로벌 리딩기업 크레텍’</strong>
+				<p>산업공구의 가치를 높이는 기업,<br />
+					크레텍이 대한민국 공구발전을 책임지겠습니다.</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="bg">
+		<div class="module-wrap bro_mod_finance sty07">
+			<h3 class="cnt-tit">
+				<span>cretec</span>재무정보
+			</h3>
+			<div class="cnt-container">
+
+				<div class="conts_wrap">
+					<div>
+						<div class="fiPosition">-</div>
+						<p class="tit">동종업종 내 순위</p>
+					</div>
+					<div>
+						<div class="fiCapital">-</div>
+						<p class="tit">자본금(백만원)</p>
+					</div>
+					<div>
+						<div class="fiProfit">-</div>
+						<p class="tit">당기순이익(백만원)</p>
+					</div>
+					<div>
+						<div class="fiSales">-</div>
+						<p class="tit">매출액</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--백분위정보-->
+		<div class="module-wrap mag_mod_percent sty03">
+			<div class="cnt-container">
+				<div class="percent_wrap">
+					<div class="profit">
+						<div>수익성<span class="bpProfitability">-</span></div>
+					</div>
+					<div class="growth">
+						<div>성장성<span class="bpGrowthability">-</span></div>
+					</div>
+					<div class="scale">
+						<div>규모형태<span class="bpScale">-</span></div>
+					</div>
+					<div class="stable">
+						<div>안정성<span class="bpStability">-</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//백분위정보-->
+	</div>
+
+	<div class="module-wrap inf_mod_philo">
+		<div class="cnt-container">
+			<h3 class="cnt-tit">
+				<span>cretec</span>경영철학
+			</h3>
+
+			<div class="philo_wrap">
+				<div>
+					<p class="tit">Vision</p>
+					<p class="desc vision">길을 만들어 미래를 개척하는
+						산업공구 전문기업</p>
+				</div>
+				<div>
+					<p class="tit">Mission
+						<span>사랑과 신뢰를 바탕으로</span></p>
+					<div class="desc mission">
+						<dl>
+							<dd>미션</dd>
+							<dd>미션</dd>
+							<dd>미션</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+
+			<div class="keyValue_wrap">
+				<div class="diagram">
+					<div class="tit">
+						<strong>Key value</strong>
+						<p>핵심가치</p>
+					</div>
+				</div>
+				<div class="keyValue">
+					<dl>
+						<dt>focus the client</dt>
+						<dd>고객집중</dd>
+					</dl>
+					<dl>
+						<dt>focus the client</dt>
+						<dd>고객집중</dd>
+					</dl>
+					<dl>
+						<dt>focus the client</dt>
+						<dd>고객집중</dd>
+					</dl>
+					<dl>
+						<dt>focus the client</dt>
+						<dd>고객집중</dd>
+					</dl>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="module-wrap inf_mod_talent">
+		<div class="cnt-container">
+			<h3 class="cnt-tit">
+				<span>cretec</span>인재상
+			</h3>
+			<div class="talent_wrap">
+				<div>
+					<span class="ico item01"></span>
+					<p class="tit">전문성</p>
+					<p class="desc">프로의식을 가지고<br />
+						최고를 지향하는<br />
+						전문성 있는 사람</p>
+				</div>
+				<div>
+					<span class="ico item02"></span>
+					<p class="tit">역동성</p>
+					<p class="desc">정신적, 육체적으로<br />
+						건강하고 적극적으로<br />
+						업무를 수행하는 사람</p>
+				</div>
+				<div>
+					<span class="ico item03"></span>
+					<p class="tit">책임감</p>
+					<p class="desc">주인의식을 가지고<br />
+						해야할 일을 완수하는<br />
+						책임감 있는 사람</p>
+				</div>
+				<div>
+					<span class="ico item04"></span>
+					<p class="tit">창의성</p>
+					<p class="desc">탐구정신으로<br />
+						늘 새로운 일에<br />
+						도전하는 창의적인 사람</p>
+				</div>
+				<div>
+					<span class="ico item05"></span>
+					<p class="tit">적응력</p>
+					<p class="desc">조직문화에 잘 적응하고<br />
+						융화할 수 있는<br />
+						인내심 있는 사람</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--연혁-->
+	<div class="module-wrap bro_mod_history sty02">
+		<div class="cnt-container">
+			<h3 class="cnt-tit">
+				<span>cretec</span>연혁
+			</h3>
+			<div class="history_wrap">
+				<div class="holder"></div>
+				<div id="history" class="history">
+					<!--데이터 자동 생성-->
+					<div><span>2021</span>
+						<ul>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+						</ul>
+					</div>
+					<div><span>2018</span>
+						<ul>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+						</ul>
+					</div>
+					<!--//데이터 자동 생성-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//연혁-->
+
+
+
+	<!--사업영역-->
+	<a name="biz"></a>
+	<div class="module-wrap mag_mod_biz sty05">
+		<div class="cnt-container">
+			<h3 class="cnt-tit">
+				<span>cretec</span>사업영역
+			</h3>
+
+			<div class="addImg">
+				<div>
+					<img src="/images/@img_biz01_5048610644.png" alt="작업공구">
+				</div>
+				<div>
+
+					<img src="/images/@img_biz02_5048610644.png" alt="철물,연마,목공, 사무용품">
+				</div>
+			</div>
+
+			<div class="biz_wrap">
+				<div class="bizDiv">
+					<div><img src="/images/@img_biz03_5048610644.png" alt="<span>1</span> PS Sheet">
+						<h4>타이틀</h4>
+						<p>소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개</p>
+					</div>
+					<div><img src="/images/@img_biz04_5048610644.png" alt="<span>1</span> PS Sheet">
+						<h4>타이틀</h4>
+						<p>소개</p>
+					</div>
+					<div><img src="/images/@img_biz05_5048610644.png" alt="<span>1</span> PS Sheet">
+						<h4>타이틀</h4>
+						<p>소개</p>
+					</div>
+					<div><img src="/images/@img_biz06_5048610644.png" alt="<span>1</span> PS Sheet">
+						<h4>타이틀</h4>
+						<p>소개</p>
+					</div>
+					<div><img src="/images/@img_biz07_5048610644.png" alt="<span>1</span> PS Sheet">
+						<h4>타이틀</h4>
+						<p>소개</p>
+					</div>
+					<div><img src="/images/@img_biz08_5048610644.png" alt="<span>1</span> PS Sheet">
+						<h4>타이틀</h4>
+						<p>소개</p>
+					</div>
+					<div><img src="/images/@img_biz09_5048610644.png" alt="<span>1</span> PS Sheet">
+						<h4>타이틀</h4>
+						<p>소개</p>
+					</div>
+					<div><img src="/images/@img_biz10_5048610644.png" alt="<span>1</span> PS Sheet">
+						<h4>타이틀</h4>
+						<p>소개</p>
+					</div>
+					<div><img src="/images/@img_biz11_5048610644.png" alt="<span>1</span> PS Sheet">
+						<h4>타이틀</h4>
+						<p>소개</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//사업영역-->
+
+
+	<!--조직문화&복리후생-->
+	<div class="module-wrap inf_mod_culture">
+		<div class="cnt-container">
+			<h3 class="cnt-tit">
+				<span>cretec</span>복리후생
+			</h3>
+			<div class="culture_wrap">
+				<div class="swiper dvCulture">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="module-wrap mag_mod_interview sty05">
+		<div class="cnt-container">
+			<div class="swiper-container interview_swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="iv_wrap qa_ceo">
+							<div class="interview_txt">
+								<p>대한민국 산업공구<br />
+									발전을 책임 지겠습니다.</p>
+								<h3>CEO 인터뷰</h3>
+							</div>
+							<div class="ivCeoPhoto photo">
+								<img src="/images/@img_ceo_5048610644.png" alt="ceo">
+							</div>
+							<div class="itv_border">
+								<div class="swiper ivCeo">
+									<!--데이터 자동 삽입-->
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="q">질문</div>
+											<div class="a">
+												답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="q">질문</div>
+											<div class="a">답변</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="q">질문</div>
+											<div class="a">답변</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="q">질문</div>
+											<div class="a">답변</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="q">질문</div>
+											<div class="a">답변</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="q">질문</div>
+											<div class="a">답변</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="q">질문</div>
+											<div class="a">답변</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="q">질문</div>
+											<div class="a">답변</div>
+										</div>
+									</div>
+									<!--//데이터 자동 삽입-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="iv_wrap qa_mng">
+							<div class="interview_txt">
+								<p>대한민국 산업공구<br />
+									발전을 책임 지겠습니다. </p>
+								<h3>인사담당자 인터뷰</h3>
+							</div>
+							<div class="ivMngPhoto photo"><img src="/images/mag_interview05_emp.png" alt="인사담당자"></div>
+
+							<div class="itv_border">
+								<div class="swiper ivMng">
+									<!--데이터 자동 삽입-->
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="q">질문</div>
+											<div class="a">
+												답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="q">질문</div>
+											<div class="a">답변</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="q">질문</div>
+											<div class="a">답변</div>
+										</div>
+									</div>
+									<!--//데이터 자동 삽입-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="iv_wrap qa_emp">
+							<div class="interview_txt">
+								<p>대한민국 산업공구<br />
+									발전을 책임 지겠습니다. </p>
+								<h3>재직자 인터뷰</h3>
+							</div>
+							<div class="ivEmpPhoto photo">
+								<img src="/images/mag_interview05_emp.png" alt="재직자">
+							</div>
+							<div class="itv_border">
+								<div class="swiper ivEmp">
+									<!--데이터 자동 삽입-->
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="q">질문</div>
+											<div class="a">
+												답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="q">질문</div>
+											<div class="a">답변</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="q">질문</div>
+											<div class="a">답변</div>
+										</div>
+									</div>
+									<!--//데이터 자동 삽입-->
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 기업리뷰-->
+	<div class="module-wrap mag_mod_review sty03">
+		<div class="cnt-container">
+			<h3 class="cnt-tit">
+				<span>cretec</span>기업리뷰
+			</h3>
+			<div class="review_wrap">
+				<div class="item">
+					<p class="desc">연차가 쌓일수록 다른 사람 기분이나
+						입장 신경 안쓰고 눈치 볼 필요없이
+						오래 다닌 사람들끼리 친목도모하면서
+						회사생활 즐겁게 할 수 있음
+
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">연차가 쌓일수록 다른 사람 기분이나
+						입장 신경 안쓰고 눈치 볼 필요없이
+						오래 다닌 사람들끼리 친목도모하면서
+						회사생활 즐겁게 할 수 있음
+
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">연 2회 성과급 제도
+						영업이익 % 인센티브 지급
+						야근수당, 주휴수당 지급
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">연 2회 성과급 제도
+						영업이익 % 인센티브 지급
+						야근수당, 주휴수당 지급
+					</p>
+				</div>
+				<div class="item">
+					<p class="desc">탄력근무제 시행
+						자유로운 월차사용<br />
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+						탄력근무제 시행
+						자유로운 월차사용
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //기업리뷰-->
+
+	<a id="recruit"></a>
+	<div class="module-wrap com_mod_recruit sty02" id="recruitArea" style="display: none">
+		<div class="cnt-container" id="recruitContainer">
+			<h3>채용공고</h3>
+			<table class="tb_recruit otherRecruit" summary="채용공고" style="display: none;">
+				<thead>
+					<tr>
+						<th scope="col">접수기간</th>
+						<th scope="col">채용제목</th>
+						<th scope="col">고용형태</th>
+					</tr>
+				</thead>
+				<tbody id="otherRecruitList">
+				</tbody>
+			</table>
+			<div class="box_recruit_wrap swiper">
+				<div class='swiper-wrapper'>
+
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="module-wrap edit_wrap com_mod_news sty01" style="position: relative; left: 0px; top: 0px;">
+		<a name="news"></a>
+		<div class="cnt-container">
+			<div id="news_wrap">
+			</div>
+			<div id="paging_wrap" class="paging_wrap">
+				<a href="javascript:void(0);" class="prev disable">이전</a><a href="javascript:void(0);"
+					class="current">1</a><a href="javascript:void(0);">2</a><a href="javascript:void(0);">3</a><a
+					href="javascript:void(0);">4</a><a href="javascript:void(0);">5</a><a href="javascript:void(0);"
+					class="next">다음</a>
+			</div>
+		</div>
+	</div>
+	<div class="module-wrap edit_wrap com_mod_map" style="position: relative; left: 0px; top: 0px;">
+		<div id="map"></div>
+		<div class="map_info_wrap">
+			<div class="com_info">
+				<div class="comName">기업명</div>
+				<a href="javascript:void(0);" target="_blank" class="find_road">길 찾기</a>
+				<p class="comAddress">주소</p>
+				<p class="tel">전화번호</p>
+			</div>
+			<div class="around_wrap">
+				<ul id="category">
+					<li id="MT1" data-order="0">
+						<span class="category_bg mt1"></span>
+						대형마트
+					</li>
+					<li id="CS2" data-order="1">
+						<span class="category_bg cs2"></span>
+						편의점
+					</li>
+					<li id="AC5" data-order="2">
+						<span class="category_bg ac5"></span>
+						학원
+					</li>
+					<li id="PK6" data-order="3">
+						<span class="category_bg pk6"></span>
+						주차장
+					</li>
+					<li id="OL7" data-order="4">
+						<span class="category_bg ol7"></span>
+						주유소
+					</li>
+					<li id="SW8" data-order="5">
+						<span class="category_bg sw8"></span>
+						지하철
+					</li>
+					<li id="BK9" data-order="6">
+						<span class="category_bg bk9"></span>
+						은행
+					</li>
+					<li id="CT1" data-order="7">
+						<span class="category_bg ct1"></span>
+						문화시설
+					</li>
+					<li id="AT4" data-order="8">
+						<span class="category_bg at4"></span>
+						관광명소
+					</li>
+					<li id="AD5" data-order="9">
+						<span class="category_bg ad5"></span>
+						숙박
+					</li>
+					<li id="FD6" data-order="10">
+						<span class="category_bg fd6"></span>
+						음식점
+					</li>
+					<li id="CE7" data-order="11">
+						<span class="category_bg ce7"></span>
+						카페
+					</li>
+					<li id="HP8" data-order="12">
+						<span class="category_bg hp8"></span>
+						병원
+					</li>
+					<li id="PM9" data-order="14">
+						<span class="category_bg pm9"></span>
+						약국
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script>
+		// --- 스크롤 메뉴 수정  --
+		$(window).load(function(){
+			// 메뉴 none처리 -> 로딩후 보여지게
+			$('.com_mod_anchor li a').fadeIn(300);
+		});
+		
+		$(document).ready(function () {
+			// --- 스크롤 메뉴 수정 --
+			$('.com_mod_anchor li a').hide();
+
+			var gnbOffset = $('.com_mod_anchor').offset();
+			$('.com_mod_header, .com_mod_anchor').addClass('not_fixed');
+
+			$('a').each(function () {
+				var aName = $(this).attr('name');
+				$(this).attr('id', aName)
+			});
+
+			$('.com_mod_anchor a').off("click").on('click', function() {
+				var target = $(this.hash)
+				var header = $('#header').outerHeight()
+				var not_header_height = $('.com_mod_anchor.not_fixed').outerHeight();
+				var not_header_height02 = $('.com_mod_header.not_fixed').outerHeight()
+				var header_height = $('.com_mod_anchor.fixed').outerHeight();
+				var header_height02 = $('.com_mod_header.fixed').outerHeight()
+				var offset_top = target.offset().top - not_header_height - not_header_height02 - header;
+				var offset_top02 = target.offset().top - header_height - header_height02;
+				if ($('.com_mod_header').hasClass("not_fixed")) {
+					$('html, body').animate({
+						scrollTop: offset_top - 200
+					});
+					e.preventDefault();
+				} else {
+					$('html, body').animate({
+						scrollTop: offset_top02
+					},300);
+					e.preventDefault();
+				}
+
+			});
+
+			var lastId,
+				topMenu = $(".com_mod_anchor"),
+				topMenu02 = $(".com_mod_header"),
+				topMenuHeight = topMenu.outerHeight() +topMenu02.outerHeight() + 15,
+
+				menuItems = topMenu.find("a"),
+				scrollItems = menuItems.map(function () {
+					var item = $($(this).attr("href"));
+					if (item.length) {
+						return item;
+					}
+				});
+
+			$(window).scroll(function () {
+				var fromTop = $(this).scrollTop() + topMenuHeight;
+
+				var cur = scrollItems.map(function () {
+					if ($(this).offset().top < fromTop)
+						return this;
+				});
+
+				cur = cur[cur.length - 1];
+				var id = cur && cur.length ? cur[0].id : "";
+
+				if (lastId !== id) {
+					lastId = id;
+					menuItems
+						.removeClass("active")
+						.parent().end().filter("[href='#" + id + "']").addClass("active");	
+				} 
+
+				if ($(document).scrollTop() > gnbOffset.top) {
+					$('.com_mod_header, .com_mod_anchor').addClass('fixed');
+					$('.com_mod_header, .com_mod_anchor').removeClass('not_fixed');
+					var headerHeight = $('.com_mod_header').height();
+					$('.com_mod_anchor').css('top', headerHeight + 48);
+				} else {
+					$('.com_mod_header, .com_mod_anchor').removeClass('fixed');
+					$('.com_mod_header, .com_mod_anchor').addClass('not_fixed');
+					$('.com_mod_anchor').css('top', 0);
+					$('.com_mod_header, .com_mod_anchor li:first-child a').addClass('active');
+				}
+			});
+
+		
+			// ---end 스크롤 메뉴 수정 --
+
+	
+
+
+			//mag_mod_biz.sty05 사업분야 슬라이드
+
+			var magBiz05 = $('.mag_mod_biz.sty05 .bizDiv')
+			magBiz05.addClass('swiper');
+			magBiz05.wrapInner('<div class="swiper-wrapper"></div>');
+			magBiz05.children().children().wrap('<div class="swiper-slide"></div>')
+			magBiz05.append('<div class="swiper-pagination"></div>');
+			magBiz05.append('<div class="swiper-button-prev"></div>');
+			magBiz05.append('<div class="swiper-button-next"></div>');
+			var cultureSlider = new Swiper(magBiz05, {
+				slidesPerView: 1,
+				navigation: {
+					nextEl: ".mag_mod_biz.sty05 .swiper-button-next",
+					prevEl: ".mag_mod_biz.sty05 .swiper-button-prev"
+				}
+			});
+			$('.mag_mod_biz.sty05 .bizDiv  .swiper-slide > div').each(function () {
+				$(this).find('h4, p').wrapAll('<div class="text_area"></div>')
+			});
+
+			//.mag_mod_interview.sty05 
+			var ceoIvSlider = new Swiper('.mag_mod_interview.sty05 .interview_swiper', {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				allowTouchMove: false,
+				navigation: {
+					nextEl: ".mag_mod_interview.sty05  .swiper-button-next",
+					prevEl: ".mag_mod_interview.sty05  .swiper-button-prev"
+				}
+			})
+
+		});
+	</script>
+</body>
+
+</html>

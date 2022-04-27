@@ -1,0 +1,1299 @@
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="author" content="kang2oon">
+	<title class="comName">기업명</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">
+	<link href="/css/pt-common.css" rel="stylesheet">
+	<link rel="stylesheet" href="1338132873.css">
+	<style>
+		/* 신규타입 상단처리 */
+		#main_banner,
+		.company_info_outer,
+		.wantCompany_ct_box,
+		.top_menu_newB {
+			display: none;
+		}
+
+		.wantCompany_body {
+			padding: 0;
+		}
+
+		#companyInfoWrap {
+			padding: 0 0 40px;
+		}
+
+		/* 기업별 스타일을 추가해주세요 */
+		/* 기업소개 */
+.rec_mod_summary{padding: 10rem 0;background: url(images/@bg_summary_1338132873.png) no-repeat;background-size: cover;text-align: center;position: relative;}
+.rec_mod_summary:before{content: '';display: block;width: 100%;height: 10px;background:  linear-gradient(to left, #06bf5f, #4285f3);position: absolute;top: 0;}
+.rec_mod_summary:after{content: '';display: block;width: 100%;height: 10px;background:  linear-gradient(to left, #06bf5f, #4285f3);position: absolute;bottom: 0;}
+.rec_mod_summary .slogan{color: #fff;font-size: 2.4rem;margin: 4rem 0 2rem 0;font-weight: 500}
+.rec_mod_summary .keyValue dl{display: flex;justify-content: center;}
+.rec_mod_summary .keyValue dd{color: #fff;font-size: 2.0rem;padding: 0.5rem  2rem;margin-right: 10px;border: 3px solid #22a4a5;border-radius: 10px}
+.rec_mod_summary .keyValue dd:last-child{margin-right: 0}
+
+/* 자소서 문항별 가이드 */
+.rec_mod_strategy.sty06 .bg{background: url(images/@bg_strategy_1338132873.png) no-repeat;background-size: cover;}
+.rec_mod_strategy.sty06 .guide h3{color: #333;text-align: center;}
+.rec_mod_strategy.sty06 .border_box{background: #fff;color: #333; border: 5px solid #18ae8a;border-radius: 20px;padding: 4rem}
+.rec_mod_strategy.sty06 .guide_wrap .q{font-weight: bold;}
+.rec_mod_strategy.sty06 .guide_wrap > div:nth-child(1) .q:before{content: '1.'}
+.rec_mod_strategy.sty06 .guide_wrap > div:nth-child(2) .q:before{content: '2.'}
+.rec_mod_strategy.sty06 .guide_wrap > div:nth-child(3) .q:before{content: '3.'}
+.rec_mod_strategy.sty06 .guide_wrap > div:nth-child(4) .q:before{content: '4.'}
+.rec_mod_strategy.sty06 .guide_wrap > div:nth-child(5) .q:before{content: '5.'}
+.rec_mod_strategy.sty06 .guide_wrap > div:nth-child(6) .q:before{content: '6.'}
+.rec_mod_strategy.sty06 .guide_wrap > div:nth-child(7) .q:before{content: '7.'}
+.rec_mod_strategy.sty06 .guide_wrap > div:nth-child(8) .q:before{content: '8.'}
+.rec_mod_strategy.sty06 .guide_wrap > div:nth-child(9) .q:before{content: '9.'}
+.rec_mod_strategy.sty06 .guide_wrap > div:nth-child(10) .q:before{content: '10.'}
+.rec_mod_strategy.sty06  .guide_wrap{border-bottom: 1px solid #dcdcdc;padding-bottom: 4rem;margin-bottom: 4rem}
+
+/* 최근 면접 질문*/
+.rec_mod_strategy.sty06 .recent_question{margin: 0;}
+.rec_mod_strategy.sty06 .rq_text{background: url(images/@bg_recent_question_1338132873.png) no-repeat center right !important;}
+.rec_mod_strategy.sty06 .recent_question .rq_tit{background: none;color: #323232;text-align: left;padding: 0}
+.rec_mod_strategy.sty06 .recent_question .rq_text{padding: 0;margin-top: 1rem}
+.rec_mod_strategy.sty06 .recent_question .rq_text p{width: 100%;margin-right: 0;color: #323232}
+.rec_mod_strategy.sty06 .recent_question{border: 0}
+.rec_mod_strategy.sty06 .recent_question .rq_text p:nth-child(1):before{content: '①'}
+.rec_mod_strategy.sty06 .recent_question .rq_text p:nth-child(2):before{content: '②'}
+.rec_mod_strategy.sty06 .recent_question .rq_text p:nth-child(3):before{content: '③'}
+.rec_mod_strategy.sty06 .recent_question .rq_text p:nth-child(4):before{content: '④'}
+.rec_mod_strategy.sty06 .recent_question .rq_text p:nth-child(5):before{content: '⑤'}
+.rec_mod_strategy.sty06 .recent_question .rq_text p:nth-child(6):before{content: '⑥'}
+.rec_mod_strategy.sty06 .recent_question .rq_text p:nth-child(7):before{content: '⑦'}
+.rec_mod_strategy.sty06 .recent_question .rq_text p:nth-child(8):before{content: '⑧'}
+.rec_mod_strategy.sty06 .recent_question .rq_text p:nth-child(9):before{content: '⑨'}
+.rec_mod_strategy.sty06 .recent_question .rq_text p:nth-child(10):before{content: '⑩'}
+
+/* 가산점 요인 */
+.bg02{background: linear-gradient(90deg, rgba(24,174,138,1) 0%, rgba(66,133,242,1) 100%);padding: 4rem;border-radius: 20px;margin-top: 8rem;position: relative}
+.bg02:after{content: '';display: block;background: url(images/@img_addpoint_1338132873.png) no-repeat;width: 549px;height: 455px;position: absolute;right: 0;bottom: -8rem}
+.bg02 h3{color: #fff;text-align: center;}
+.add_point{padding-bottom: 100px;background: url(images/@ico_addpoint_1338132873.png) no-repeat bottom center}
+
+/* 연혁 */
+.bro_mod_history.sty02 h3{text-align: center;font-size: 2rem}
+.bro_mod_history.sty02 h3 strong{display: block;font-size: 4rem; background: -webkit-linear-gradient(left, #0fb676, #4186f1);
+    background:-moz-linear-gradient(right, #0fb676, #4186f1);
+    background: -o-linear-gradient(right, #0fb676, #4186f1);
+    background:linear-gradient(to right, #0fb676, #4186f1);
+    -webkit-background-clip: text;
+            background-clip: text;;color: transparent;-webkit-background-clip: text;}
+
+/* 기업정보 */
+.sns_mod_info.sty01{padding: 8rem 0;background: linear-gradient(90deg, rgba(24,174,138,1) 0%, rgba(66,133,242,1) 100%)}
+.sns_mod_info.sty01 .addMsg{color: #fff;font-size: 2.4rem;text-align: center;}
+.sns_mod_info.sty01 .addMsg strong{display: block;}
+.sns_mod_info.sty01 .info_wrap{margin-top: 4rem}
+.sns_mod_info.sty01 .info_wrap li{color: #fff}
+.sns_mod_info.sty01 ul li:nth-child(1) .ico{background: url(images/@ico_info01_1338132873.png) no-repeat center;height: 106px}
+.sns_mod_info.sty01 .info_wrap li{color: #fff}
+.sns_mod_info.sty01 ul li:nth-child(2) .ico{background: url(images/@ico_info02_1338132873.png) no-repeat center;height: 106px}
+.sns_mod_info.sty01 .info_wrap li{color: #fff}
+.sns_mod_info.sty01 ul li:nth-child(3) .ico{background: url(images/@ico_info03_1338132873.png) no-repeat center;height: 106px}
+.sns_mod_info.sty01 .info_wrap li{color: #fff}
+.sns_mod_info.sty01 ul li:nth-child(4) .ico{background: url(images/@ico_info04_1338132873.png) no-repeat center;height: 106px}
+
+/* 백분위 */
+.mag_mod_percent.sty02 > div{margin-top: 0;background: none;}
+.mag_mod_percent.sty02 > div .swiper-slide{border: 1px solid #dcdcdc;}
+
+/* 제품 소개 */
+.bg_gray{background: #eeeeee;padding: 8rem 0;}
+.bg_gray h3{text-align: center;font-size: 4rem;margin-bottom: 2rem}
+.bg_gray .addMsg{font-size: 2rem;text-align: center;}
+.rec_mod_product .pd_wrap h4,
+.rec_mod_product .pd_wrap p{display: none;}
+.rec_mod_product .pd_wrap {position: relative}
+.bg_gray .swiper img{border-radius: 20px;display: block;width: 100%;height: 100%}
+.bg_gray .swiper{max-width: 1080px;margin: auto;overflow: hidden;margin-top: 4rem}
+.bg_gray .swiper-button-next,
+.bg_gray .swiper-button-prev{width: 30px;height: 55px;}
+.bg_gray .swiper-button-next:after,
+.bg_gray .swiper-button-prev:after{text-indent: -9999px;}
+.bg_gray .swiper-button-prev{background: url(images/slider01_prev.png) no-repeat;left: 0}
+.bg_gray  .swiper-button-next{background: url(images/slider01_next.png) no-repeat;right: 0;left: auto !important}
+.rec_mod_technology{margin-top: 8rem}
+
+/* swot */
+.rec_mod_swot.sty02{background: url(images/@bg_swot_1338132873.png) no-repeat;background-size: cover;padding: 8rem 0;}
+.rec_mod_swot.sty02 .diagram_area{background:none !important;}
+.rec_mod_swot.sty02 .diagram_area ul li{background: rgba(0, 0, 0, 0.7) !important;border: 3px solid #0bba6b}
+.rec_mod_swot.sty02 .diagram_area ul li strong{color: #ebff08}
+.rec_mod_swot.sty02 .txt{background: none !important;padding: 0}
+.rec_mod_swot.sty02 .txt .cnt-container{background: rgba(0, 0, 0, 0.7);border-radius: 30px;padding: 6rem;border: 3px solid #0bba6b}
+.rec_mod_swot.sty02 .txt dt{color: #ebff08 !important}
+
+/* 조직문화 */
+.mag_mod_culture{background:url(/images/@bg_culture_1338132873.png) no-repeat bottom center;padding: 8rem 0;margin: 0}
+.mag_mod_culture .cnt-container {max-width: 768px;margin: auto;}
+.mag_mod_culture .cnt-container:after{content: '';display: block;background: url(images/@img_culture_1338132873.png) no-repeat;width: 658px;height: 519px;margin: 4rem auto 0 auto;}
+.mag_mod_culture .cnt-container > h3{text-align: center;font-size: 4rem;margin-bottom: 2rem;}
+.mag_mod_culture .welfare_review_wrap{background: #fff;padding: 4rem;border-radius: 20px;border: 3px solid #0bba6b;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18) }
+.mag_mod_culture .welfare_review_wrap h3{color: #fff;background: #4285f4;display: inline-block;padding: 0.5rem 2rem;border-radius: 20px;margin-bottom: 2rem}
+.mag_mod_culture .welfare_review_wrap p{font-size: 1.8rem}
+.mag_mod_culture .welfare_review_wrap .tag{margin-top: 1.5rem}
+.mag_mod_culture .welfare_review_wrap .tag li{display: inline-block;color: #7c7c7c;margin-top: 1rem;font-style: italic;}
+.mag_mod_culture .welfare_review_wrap .tag li{margin-right: 10px}
+.mag_mod_culture .welfare_review_wrap .tag li:before{content: '#'}
+.mag_mod_culture  .swiper-wrapper{display: block;height: auto;column-count:3;-webkit-column-count:3;-moz-column-count:3;margin-top: 3rem}
+.mag_mod_culture  .swiper-wrapper .swiper-slide{border-radius: 20px;padding: 4.0rem;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18);text-align: center;background: #fff;display: inline-block;width: 100%;transform: translateZ(0);box-sizing: border-box;margin: 10px auto 10px auto;height: auto;}
+.mag_mod_culture .swiper-wrapper .swiper-slide:hover{background: linear-gradient(to bottom, #17af88 0%,#4087ef 99%);color: #fff}
+.mag_mod_culture .swiper-wrapper .swiper-slide:hover .desc{color: #fff}
+.mag_mod_culture .swiper-wrapper .tit{font-size: 2.4rem;font-weight: bold;margin-bottom: 1rem}
+.mag_mod_culture .swiper-wrapper .desc{font-size: 1.8rem;color: #666666}
+
+
+/* 기업리뷰 */
+.mag_mod_interview.sty04 {background:linear-gradient(90deg, rgba(24,174,138,1) 0%, rgba(66,133,242,1) 100%) !important;}
+.mag_mod_interview.sty04  h3{color: #fff;font-size: 4rem;text-align: center;margin-bottom: 2rem;}
+.mag_mod_interview.sty04 .iv_wrap{position: relative;} 
+.mag_mod_interview.sty04 .iv_wrap .swiper-button-prev,
+.mag_mod_interview.sty04 .iv_wrap .swiper-button-next{width: 41px;height: 77px;}
+.mag_mod_interview.sty04 .iv_wrap .swiper-button-prev:after,
+.mag_mod_interview.sty04 .iv_wrap .swiper-button-next:after{text-indent: -9999px;}
+.mag_mod_interview.sty04 .iv_wrap .swiper-button-prev{background: url(images/@interview_prev_1338132873.png) no-repeat;left:-88px}
+.mag_mod_interview.sty04 .iv_wrap .swiper-button-next{background: url(images/@interview_next_1338132873.png) no-repeat;right: -80px;left: auto !important}
+.mag_mod_interview.sty04 .iv_wrap .q:before{color: #333 !important}
+.mag_mod_interview.sty04 .swiper-pagination{display: none}
+.mag_mod_interview.sty04 .ivCeo:before{content: 'CEO';display: inline-block;background: #3790d8;color: #fff;font-size: 1.8rem;padding: .5rem 3rem;border-radius: 30px;margin-bottom: 2rem}
+.mag_mod_interview.sty04 .ivMng:before{content: '인사담당자';display: inline-block;background: #2a9db7;color: #fff;font-size: 1.8rem;padding: .5rem 3rem;border-radius: 30px;margin-bottom: 2rem}
+.mag_mod_interview.sty04 .ivEmp:before{content: '재직자';display: inline-block;background: #13b27e;color: #fff;font-size: 1.8rem;padding: .5rem 3rem;border-radius: 30px;margin-bottom: 2rem}
+
+@media all and (max-width:1460px){
+	/* 인터뷰 */
+	.mag_mod_interview.sty04 .swiper-pagination{display: block;}
+	.mag_mod_interview.sty04 .swiper-button-next,
+	.mag_mod_interview.sty04 .swiper-button-prev{display: none}
+	.mag_mod_interview.sty04 .swiper-pagination-bullet-active{background: #13b27e}
+}
+
+@media all and (max-width:1260px){
+	/* 가산점 요인 */
+	.bg02:after{display: none}
+	
+	/* 제품소개 */
+	.bg_gray .swiper{width: calc(100% - 100px)}
+}
+
+@media all and (max-width:1024px){
+	/* 문항별 가이드 */
+	.rec_mod_strategy.sty06 .rq_text{background: none !important;}
+}
+
+@media all and (max-width:768px){
+	/* 기업소개 */
+	.rec_mod_summary{padding: 6rem 0}
+	.rec_mod_summary .logo img{width: 250px}
+	.rec_mod_summary .keyValue dl{flex-wrap: wrap}
+	.rec_mod_summary .keyValue dl dd{width: calc(50% - 10px);margin-top: 1rem}
+	.rec_mod_summary .keyValue dl dd:nth-child(2){margin-right: 0}
+	
+	
+	/* 문항별 가이드 */
+	.rec_mod_strategy.sty06 .border_box{padding: 3rem 2rem}
+	.bg02{margin-top: 6rem;padding: 3rem 2rem}
+	
+	/* 기업정보 */
+	.sns_mod_info.sty01{padding: 6rem 0}
+	.sns_mod_info.sty01 .addMsg {word-break: keep-all}
+	.sns_mod_info.sty01 .addMsg br{display: none}
+	.sns_mod_info.sty01 ul li:nth-child(1) .ico{background-size: 60px;height: 70px}
+	.sns_mod_info.sty01 ul li:nth-child(2) .ico{background-size: 60px;height: 70px}
+	.sns_mod_info.sty01 ul li:nth-child(3) .ico{background-size: 60px;height: 70px}
+	.sns_mod_info.sty01 ul li:nth-child(4) .ico{background-size: 40px;height: 70px}
+	
+	/* 제품소개 */
+	.bg_gray h3{font-size: 3rem}
+	.bg_gray{padding: 6rem 0}
+	.bg_gray .addMsg{word-break: keep-all}
+	.bg_gray .addMsg br{display: none}
+	.bg_gray .swiper-button-next,
+	.bg_gray .swiper-button-prev{background-size: 20px;width: 20px;height: 40px}
+	.bg_gray .swiper-button-next {right: 0}
+	.bg_gray .swiper-button-prev {left: 0}
+	.bg_gray .swiper{width: calc(100% - 70px)}
+	
+	/* swot */
+	.rec_mod_swot.sty02{padding: 6rem 0}
+	.rec_mod_swot.sty02 .txt .cnt-container{padding: 3rem 2rem}
+	
+	/* 조직문화 */
+	.mag_mod_culture{padding: 6rem 0}
+	.mag_mod_culture .cnt-container > h3 {font-size: 3rem}
+	.mag_mod_culture .swiper-wrapper{column-count:2;-webkit-column-count:2;-moz-column-count:2;}
+	.mag_mod_culture .welfare_review_wrap{padding: 3rem 2rem}
+	.mag_mod_culture .swiper-wrapper .swiper-slide {padding: 4rem 2rem}
+	.mag_mod_culture .cnt-container:after{display: none}
+}
+
+@media all and (max-width:640px){
+	
+}
+
+@media all and (max-width:480px){
+	/* 조직문화 */
+	.mag_mod_culture .swiper-wrapper{column-count:1;-webkit-column-count:1;-moz-column-count:1;}
+}
+	</style>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@5.4.5/js/swiper.min.js"></script>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script>
+</head>
+
+<body>
+	<!-- 모듈 추가 및 수정 -->
+
+	<div class="module-wrap edit_wrap com_mod_header sty01">
+		<div class="cnt-container header clearfix">
+			<div id="iconArea">
+				<div class="biz_cate cate22 green"><i></i></div>
+			</div>
+			<div class="logo imgCi"><img src="/images/logo_smaple01.png" alt=""></div>
+			<div class="info fc_fff">
+				<dl class="clearfix">
+					<dt>업종</dt>
+					<dd class="incCate">사회적기업</dd>
+					<dt>대표자</dt>
+					<dd class="ceo">제윤경</dd>
+					<dt>기업형태</dt>
+					<dd class="comForm">사회적기업</dd>
+				</dl>
+				<div class="action fc_fff clearfix">
+					<a href="javascript:void(0);" id="scrapYn" onclick="onCntNew();">관심기업 등록<i>♥</i></a>
+					<a href="javascript:void(0);" id="copyUrlNew" onclick="copyUrlNew();" data-clipboard-action="copy">공고 바로가기<i>→</i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="module-wrap edit_wrap com_mod_anchor sty01">
+		<div class="cnt-container fc_919191">
+			<ul>
+				<li><a href="#summary"  class="active">기업개요</a></li>
+				<li><a href="#history">연혁</a></li>
+				<li><a href="#product">제품소개</a></li>
+				<li> <a href="#news">기업뉴스</a></li>
+			</ul>
+			<div class="siteGo">
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="module-wrap rec_mod_summary">
+		<div class="cnt-container">
+			<div class="logo">
+				<img src="/images/@logo02_1338132873.png" alt="대진휀스">
+				<div class="slogan">
+					슬로건
+				</div>
+				<div class="keyValue">
+					<dl>
+						<dd>고객중시</dd>
+						<dd>소통협력</dd>
+						<dd>창의혁신</dd>
+						<dd>안전제일</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a name="recruit"></a>
+	<div class="module-wrap edit_wrap com_mod_recruit sty02" id="recruitArea" style="display: none">
+		<div class="bg_bot"></div>
+		<div class="cnt-container" id="recruitContainer">
+			<h3>채용공고</h3>
+			<table class="tb_recruit otherRecruit" summary="채용공고">
+				<thead>
+					<tr>
+						<th>접수기간</th>
+						<th>채용제목</th>
+						<th>고용형태</th>
+					</tr>
+				</thead>
+				<tbody id="otherRecruitList">
+				</tbody>
+			</table>
+			<div class="box_recruit_wrap swiper">
+				<div class="swiper-wrapper">
+					<div class="box_recruit swiper-slide">
+						<h4>
+							<a href="javascript:;">채용공고명</a>
+							<span class="period">오늘까지</span>
+						</h4>
+						<hr>
+						<div class="detail_wrap">
+							<div>
+								<h5>지원자격</h5>
+								<dl class="clearfix">
+									<dt>경력</dt>
+									<dd>경력무관</dd>
+									<dt>학력</dt>
+									<dd>고졸이상</dd>
+									<dt>우대사항</dt>
+									<dd>인근거주자, 1종보통운전면허</dd>
+								</dl>
+							</div>
+							<div>
+								<h5>근무조건</h5>
+								<dl class="clearfix">
+									<dt>고용형태</dt>
+									<dd>정규직</dd>
+									<dt>급여</dt>
+									<dd>220만원 이상</dd>
+									<dt>근무지역</dt>
+									<dd>경기도 전체</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 취업전략 -->
+	<div class="module-wrap rec_mod_strategy sty06">
+		<div class="bg">
+			<!--자소서 문항별 가이드-->
+			<div class="cnt-container">
+				<div class="guide">
+					<h3>
+						자소서 문항별 작성 가이드
+					</h3>
+					<div class="border_box">
+						<div class="guide_wrap">
+							<!-- 데이터 자동삽입 -->
+							<div>
+								<div class="q">성장배경에 대해서 기술해주세요.</div>
+								<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+									현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+								</div>
+							</div>
+							<div>
+								<div class="q">성장배경에 대해서 기술해주세요.</div>
+								<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+									현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+								</div>
+							</div>
+							<!-- //데이터 자동삽입 -->
+						</div>
+						<!--//자소서 문항별 가이드-->
+						<!-- 최근 면접 질문 -->
+						<div class="recent_question">
+							<div class="rq_cont">
+								<p class="rq_tit">최근 면접 질문</p>
+								<div class="rq_text">
+									<!-- 데이터 자동삽입 -->
+									<p>주변사람들에게 어떤식의 <strong>평판</strong>을 받고 있습니까?</p>
+									<p>같이 <strong>일하기 힘든 사람</strong>은 어떤 유형의 사람입니까?</p>
+									<p>주변사람들에게 어떤식의 <strong>평판</strong>을 받고 있습니까?</p>
+									<p>같이 <strong>일하기 힘든 사람</strong>은 어떤 유형의 사람입니까?</p>
+									<p>주변사람들에게 어떤식의 <strong>평판</strong>을 받고 있습니까?</p>
+									<p>같이 <strong>일하기 힘든 사람</strong>은 어떤 유형의 사람입니까?</p>
+									<!-- //데이터 자동삽입 -->
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- //최근 면접 질문 -->
+
+				<!--가산점 요인-->
+				<div class="bg02">
+					<div class="add_point">
+						<h3>
+							가산점 요인
+						</h3>
+						<div class="cont_box">
+							<ul class="add_point_wrap">
+								<!-- 데이터 자동 삽입 -->
+								<li>
+									<strong class="tit">자격증</strong>
+									<p class="desc">대형운전면허, 지게차 면허, 전기공사업 면허</p>
+								</li>
+								<li>
+									<strong class="tit">봉사활동</strong>
+									<p class="desc">자원봉사 포털 1365 기준 봉사활동 시간</p>
+								</li>
+								<li>
+									<strong class="tit">봉사활동</strong>
+									<p class="desc">자원봉사 포털 1365 기준 봉사활동 시간</p>
+								</li>
+								<li>
+									<strong class="tit">봉사활동</strong>
+									<p class="desc">자원봉사 포털 1365 기준 봉사활동 시간</p>
+								</li>
+								<!-- //데이터 자동 삽입 -->
+							</ul>
+						</div>
+					</div>
+					<!--//가산점 요인-->
+
+					<!--최근 입사자 합격 스펙-->
+					<div class="spec mgtop_80 in_img">
+						<h3>최근 입사자 합격 스펙</h3>
+						<div class="cont_box">
+							<ul class="spec_wrap">
+								<!-- 데이터 자동 삽입-->
+								<li>
+									<strong class="tit">학점</strong>
+									<p class="desc">3.7</p>
+								</li>
+								<li>
+									<strong class="tit">학점</strong>
+									<p class="desc">3.7</p>
+								</li>
+								<li>
+									<strong class="tit">학점</strong>
+									<p class="desc">3.7</p>
+								</li>
+								<!-- //데이터 자동 삽입-->
+							</ul>
+						</div>
+						<!--//최근 입사자 합격 스펙-->
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--// bg-->
+
+		<div class="interview_tip">
+			<div class="cnt-container">
+				<h3><span>TIP</span>채용담당자가<br />직접 알려주는 면접 꿀팁!</h3>
+				<div class="interview_tip_wrap">
+					<!-- 데이터 자동 삽입 -->
+					<div class="it_area">
+						<p class="q">인사담당자로서 면접 팁을 공유해주세요~</p>
+						<p class="a"><b>회사에 대한 공부가 가장 중요합니다.</b> 그 회사에서 추진하고 있는 사업이 무엇인지, 앞으로의 방향, 회사에서 사용하는 용어나 부서까지 알고 있다면, 면접관들에게 좋은 이미지를 심어줄 수 있습니다. 은행, 증권사를 보고 대략적으로 준비하는 것은 분명 차이가 있습니다.
+							그렇기 때문에 회사에 대해 공부를 하고, 그 용어나 개념을 일부 활용할 줄 안다면 자기소개서나 면접에서 다른 지원자와 차별이 될 것입니다.</p>
+					</div>
+					<div class="it_area">
+						<p class="q">면접이라고 하면 아무래도 복장 부분에 많은 신경이 쓰이게 마련인데요~<br />
+							인사담당자님 눈에 가장 매력적인 지원자는 어떤 지원자인가요??</p>
+						<p class="a"><b>본인의 업무에 맞는 복장으로 준비해오시면 됩니다.</b> 면접전에 복장에 대한 공지가 특별히 없는 경우엔 출근을 하게 된다면 어떤 복장으로 출근을 할것인지 생각해보고 편하게 복장을 준비하시면 됩니다.</p>
+					</div>
+					<div class="it_area">
+						<p class="q">인사담당자로서 면접 팁을 공유해주세요~</p>
+						<p class="a"><b>회사에 대한 공부가 가장 중요합니다.</b> 그 회사에서 추진하고 있는 사업이 무엇인지, 앞으로의 방향, 회사에서 사용하는 용어나 부서까지 알고 있다면, 면접관들에게 좋은 이미지를 심어줄 수 있습니다. 은행, 증권사를 보고 대략적으로 준비하는 것은 분명 차이가 있습니다.
+							그렇기 때문에 회사에 대해 공부를 하고, 그 용어나 개념을 일부 활용할 줄 안다면 자기소개서나 면접에서 다른 지원자와 차별이 될 것입니다.</p>
+					</div>
+					<div class="it_area">
+						<p class="q">면접이라고 하면 아무래도 복장 부분에 많은 신경이 쓰이게 마련인데요~<br />
+							인사담당자님 눈에 가장 매력적인 지원자는 어떤 지원자인가요??</p>
+						<p class="a"><b>본인의 업무에 맞는 복장으로 준비해오시면 됩니다.</b> 면접전에 복장에 대한 공지가 특별히 없는 경우엔 출근을 하게 된다면 어떤 복장으로 출근을 할것인지 생각해보고 편하게 복장을 준비하시면 됩니다.</p>
+					</div>
+					<div class="it_area">
+						<p class="q">인사담당자로서 면접 팁을 공유해주세요~</p>
+						<p class="a"><b>회사에 대한 공부가 가장 중요합니다.</b> 그 회사에서 추진하고 있는 사업이 무엇인지, 앞으로의 방향, 회사에서 사용하는 용어나 부서까지 알고 있다면, 면접관들에게 좋은 이미지를 심어줄 수 있습니다. 은행, 증권사를 보고 대략적으로 준비하는 것은 분명 차이가 있습니다.
+							그렇기 때문에 회사에 대해 공부를 하고, 그 용어나 개념을 일부 활용할 줄 안다면 자기소개서나 면접에서 다른 지원자와 차별이 될 것입니다.</p>
+					</div>
+					<div class="it_area">
+						<p class="q">면접이라고 하면 아무래도 복장 부분에 많은 신경이 쓰이게 마련인데요~<br />
+							인사담당자님 눈에 가장 매력적인 지원자는 어떤 지원자인가요??</p>
+						<p class="a"><b>본인의 업무에 맞는 복장으로 준비해오시면 됩니다.</b> 면접전에 복장에 대한 공지가 특별히 없는 경우엔 출근을 하게 된다면 어떤 복장으로 출근을 할것인지 생각해보고 편하게 복장을 준비하시면 됩니다.</p>
+					</div>
+					<div class="it_area">
+						<p class="q">인사담당자로서 면접 팁을 공유해주세요~</p>
+						<p class="a"><b>회사에 대한 공부가 가장 중요합니다.</b> 그 회사에서 추진하고 있는 사업이 무엇인지, 앞으로의 방향, 회사에서 사용하는 용어나 부서까지 알고 있다면, 면접관들에게 좋은 이미지를 심어줄 수 있습니다. 은행, 증권사를 보고 대략적으로 준비하는 것은 분명 차이가 있습니다.
+							그렇기 때문에 회사에 대해 공부를 하고, 그 용어나 개념을 일부 활용할 줄 안다면 자기소개서나 면접에서 다른 지원자와 차별이 될 것입니다.</p>
+					</div>
+					<div class="it_area">
+						<p class="q">면접이라고 하면 아무래도 복장 부분에 많은 신경이 쓰이게 마련인데요~<br />
+							인사담당자님 눈에 가장 매력적인 지원자는 어떤 지원자인가요??</p>
+						<p class="a"><b>본인의 업무에 맞는 복장으로 준비해오시면 됩니다.</b> 면접전에 복장에 대한 공지가 특별히 없는 경우엔 출근을 하게 된다면 어떤 복장으로 출근을 할것인지 생각해보고 편하게 복장을 준비하시면 됩니다.</p>
+					</div>
+					<!-- //데이터 자동 삽입 -->
+				</div>
+				<div class="btn_wrap">
+					<div class="qm_btn_wrap">
+						<button type="button" class="qm_btn" onclick="onCntNew();">관심기업 등록하기</button>
+						<div class="qm_txt">
+							<a href="javascript:vold">도움말</a>
+							<span>관심기업으로 등록하면 채용 공고 마감일을 알람으로 받아보실 수 있습니다.</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--//blue_bg 면접 꿀팁-->
+		<!-- 취업전략 -->
+	</div>
+
+	<!--연혁-->
+	<a name="history"></a>
+	<div class="module-wrap bro_mod_history sty02">
+		<div class="cnt-container">
+			<h3>
+				최고의 가치를 제공하는 1등 휀스 기업
+				<strong>
+					DAEJIN FENCE 2020 - 2001 History
+				</strong>
+			</h3>
+			<div class="history_wrap">
+				<div class="holder"></div>
+				<div id="history" class="history">
+					<!--데이터 자동 생성-->
+					<div><span>2021</span>
+						<ul>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+						</ul>
+					</div>
+					<div><span>2018</span>
+						<ul>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+							<li>
+								<div class="month">11</div>
+								<div class="event"><span>연혁</span></div>
+							</li>
+						</ul>
+					</div>
+					<!--//데이터 자동 생성-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//연혁-->
+
+	<!--기업정보-->
+	<div class="module-wrap sns_mod_info sty01">
+		<div class="cnt-container">
+			<p class="addMsg">
+				고객감동을 위한 가치를 창출하여 인류사회에 공헌하는 회사 구현,
+				<strong>
+					고객의 가치를 지키겠습니다.
+				</strong>
+			</p>
+			<ul class="info_wrap">
+				<li>
+					<div class="ico"></div>
+					설립일
+					<div class="cnt"><span class="comBuildDate">-</span></div>
+				</li>
+				<li>
+					<div class="ico"></div>
+					매출액(백만원)
+					<div class="cnt"><span class="fiSales">-</span></div>
+				</li>
+				<li>
+					<div class="ico"></div>
+					사원수
+					<div class="cnt"><span class="fiProfit">-</span></div>
+				</li>
+				<li>
+					<div class="ico"></div>
+					자본금(백만원)
+					<div class="cnt"><span class="fiCapital">-</span></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--//기업정보-->
+
+
+	<div class="module-wrap mag_mod_percent sty02">
+		<div class="cnt-container">
+			<div class="swiper percent">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div><img src="/images/@ico_percent01_1338132873.png" alt="" /></div>
+						<div>
+							<span class="cate">규모형태</span><span class="value bpScale">-</span><br />
+							<span class="desc"></span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div><img src="/images/@ico_percent02_1338132873.png" alt="" /></div>
+						<div>
+							<span class="cate">수익성</span><span class="value bpProfitability">-</span><br />
+							<span class="desc"></span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div><img src="/images/@ico_percent03_1338132873.png" alt="" /></div>
+						<div>
+							<span class="cate">안정성</span><span class="value bpStability">-</span><br />
+							<span class="desc"></span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div><img src="/images/@ico_percent04_1338132873.png" alt="" /></div>
+						<div>
+							<span class="cate">성장성</span><span class="value bpGrowthability">-</span><br />
+							<span class="desc"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+
+	<div class="bg_gray">
+	<a name="product"></a>
+		<div class="cnt-container">
+			<div class="module-wrap rec_mod_product">
+				<h3>울타리(펜스)</h3>
+				<p class="addMsg">
+					안전과 보안을 위해 설치되는 울타리 제품으로, 학교 및 체육시설 등에 자주 사용되는 메쉬 휀스,<br />
+					군부대와 같은 보안이 중요시되는 시설에 사용하는 철책, 철망 등,<br />
+					그리고 도로변에 안전과 미관을 위해 사용되는 도로용 휀스 등이 있습니다.
+
+				</p>
+				<div class="pd_wrap">
+					<div class="product">
+						<div>
+							<img src='images/@img_product01_1338132873.jpg' alt=''>
+							<h4>타이틀</h4>
+							<p>내용</p>
+						</div>
+						<div>
+							<img src='images/@img_product02_1338132873.jpg' alt=''>
+							<h4>타이틀</h4>
+							<p>내용</p>
+						</div>
+						<div>
+							<img src='images/@img_product03_1338132873.jpg' alt=''>
+							<h4>타이틀</h4>
+							<p>내용</p>
+						</div>
+						<div>
+							<img src='images/@img_product04_1338132873.jpg' alt=''>
+							<h4>타이틀</h4>
+							<p>내용</p>
+						</div>
+						<div>
+							<img src='images/@img_product05_1338132873.jpg' alt=''>
+							<h4>타이틀</h4>
+							<p>내용</p>
+						</div>
+						<div>
+							<img src='images/@img_product06_1338132873.jpg' alt=''>
+							<h4>타이틀</h4>
+							<p>내용</p>
+						</div>
+						<div>
+							<img src='images/@img_product07_1338132873.jpg' alt=''>
+							<h4>타이틀</h4>
+							<p>내용</p>
+						</div>
+						<div>
+							<img src='images/@img_product08_1338132873.jpg' alt=''>
+							<h4>타이틀</h4>
+							<p>내용</p>
+						</div>
+						<div>
+							<img src='images/@img_product09_1338132873.jpg' alt=''>
+							<h4>타이틀</h4>
+							<p>내용</p>
+						</div>
+						<div>
+							<img src='images/@img_product10_1338132873.jpg' alt=''>
+							<h4>타이틀</h4>
+							<p>내용</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="module-wrap rec_mod_technology">
+				<div class="technology_wrap">
+					<h3>보유기술현황</h3>
+					<p class="addMsg">
+						㈜대진휀스는 다양한 인증과 특허를 획득하여<br />
+						고객에게 신뢰받는 제품을 공급하기 위해 최선을 다하고 있습니다.
+
+					</p>
+					<div class="technology swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="./images/@img_tech01_1338132873.jpg" alt="사업자등록증">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech02_1338132873.jpg" alt="TR마크 인증서">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech03_1338132873.jpg" alt="한국산업규격 표시 인증서">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech04_1338132873.jpg" alt="한국산업규격 표시 인증서">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech05_1338132873.jpg" alt="품질경영시스템인증서">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech06_1338132873.jpg" alt="단체 표준표시 인증서">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech07_1338132873.jpg" alt="기술현황">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech08_1338132873.jpg" alt="기술현황">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech09_1338132873.jpg" alt="기술현황">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech10_1338132873.jpg" alt="기술현황">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech11_1338132873.jpg" alt="기술현황">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech12_1338132873.jpg" alt="기술현황">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech13_1338132873.jpg" alt="기술현황">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech14_1338132873.jpg" alt="기술현황">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech15_1338132873.jpg" alt="기술현황">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech16_1338132873.jpg" alt="기술현황">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech17_1338132873.jpg" alt="기술현황">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech18_1338132873.jpg" alt="기술현황">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech19_1338132873.jpg" alt="기술현황">
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/@img_tech20_1338132873.jpg" alt="기술현황">
+							</div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="module-wrap edit_wrap rec_mod_swot sty02">
+		<div class="swot_wrap">
+			<h3>기업 SWOT 분석</h3>
+			<div class="diagram_area">
+				<div class="cnt-container">
+					<ul>
+						<li class="swotS">
+							<p><strong>S</strong>Strengths</p>
+						</li>
+						<li class="swotW">
+							<p><strong>W</strong>Weaknesses</p>
+						</li>
+						<li class="swotO">
+							<p><strong>O</strong>Opportunities</p>
+						</li>
+						<li class="swotT">
+							<p><strong>T</strong>Threats</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="txt">
+				<div class="cnt-container">
+					<dl class="swotS">
+						<dt>Strengths</dt>
+						<dd class="desc">Strengths</dd>
+					</dl>
+					<dl class="swotW">
+						<dt>Weaknesses</dt>
+						<dd class="desc">Weaknesses</dd>
+					</dl>
+					<dl class="swotO">
+						<dt>Opportunities</dt>
+						<dd class="desc">Opportunities</dd>
+					</dl>
+					<dl class="swotT">
+						<dt>Threats</dt>
+						<dd class="desc">Threats</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--조직문화&복리후생-->
+	<div class="module-wrap mag_mod_culture">
+		<div class="cnt-container">
+			<h3>조직문화 &amp; 복리후생</h3>
+			<!--welfare_review-->
+			<div class="welfare_review_wrap">
+				<h3>
+					현직자 <span>복지 사용후기</span>
+				</h3>
+				<div class="welfare_review">
+					<div>
+						<div class="tit">
+							<div class="team"></div>
+							<div class="name"></div>
+						</div>
+						<dv class="desc">
+							<p>저는 생산팀에서 근무하고 있는 정민기입니다.<br />
+								직무와 관련된 지게차 자격증을 취득해서 월급과 별도로 매달 수당을 받고 있습니다. <br />
+								역량을 개발함과 동시에 보상도 얻을 수 있어 일석이조입니다!
+
+
+							</p>
+							<ul class="tag">
+								<li>수평적분위기</li>
+								<li>자격증수당</li>
+								<li>주택자금대출이자지원</li>
+								<li>대학위탁교육제도</li>
+								<li>출산장려금</li>
+							</ul>
+						</dv>
+					</div>
+				</div>
+				<!--//welfare_review-->
+			</div>
+			<!--//welfare_review-->
+
+			<div class="culture_wrap">
+				<div class="swiper dvCulture">
+					<!--데이터 자동 생성-->
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<div class="tit">타이틀</div>
+								<div class="desc">내용</div>
+							</div>
+						</div>
+					</div>
+					<!--//데이터 자동 생성-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//조직문화&복리후생-->
+
+
+	<div class="module-wrap mag_mod_interview sty04">
+		<div class="cnt-container">
+			<h3>기업리뷰</h3>
+			<div class="iv_wrap qa_ceo">
+				<div class="ivCeoPhoto photo">
+					<img src="/images/@img_ceo_1338132873.png" alt="CEO">
+				</div>
+				<div class="swiper ivCeo">
+					<!--데이터 자동 삽입-->
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="q">질문</div>
+							<div class="a">답변</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="q">질문</div>
+							<div class="a">답변</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="q">질문</div>
+							<div class="a">답변</div>
+						</div>
+					</div>
+					<!--//데이터 자동 삽입-->
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+			<div class="iv_wrap qa_mng">
+				<div class="ivMngPhoto photo"><img src="/images/@img_mng_1338132873.png" alt="인사담당자"></div>
+				<div class="swiper ivMng">
+					<!--데이터 자동 삽입-->
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="q">질문</div>
+							<div class="a">답변</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="q">질문</div>
+							<div class="a">답변</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="q">질문</div>
+							<div class="a">답변</div>
+						</div>
+					</div>
+					<!--//데이터 자동 삽입-->
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+			<div class="iv_wrap qa_emp">
+				<div class="ivEmpPhoto photo">
+					<img src="/images/@img_emp_1338132873.png" alt="재직자">
+				</div>
+				<div class="swiper ivEmp">
+					<!--데이터 자동 삽입-->
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="q">질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문</div>
+							<div class="a">답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변답변</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="q">질문</div>
+							<div class="a">답변</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="q">질문</div>
+							<div class="a">답변</div>
+						</div>
+					</div>
+					<!--//데이터 자동 삽입-->
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+	</div>
+
+<a name="news"></a>
+	<div class="module-wrap edit_wrap com_mod_news sty01">
+		<div class="cnt-container">
+			<div id="news_wrap">
+				<div class="news_row">
+					<a href="javascript:vodi(0);" target="_blank" class="tit">뉴스 제목</a>
+					<div class="desc">뉴스 내용 뉴스 내용 뉴스 내용 뉴스 내용 뉴스 내용</div>
+					<div class="reg_date">2021.01.01</div>
+				</div>
+				<div class="news_row">
+					<a href="javascript:vodi(0);" target="_blank" class="tit">뉴스 제목</a>
+					<div class="desc">뉴스 내용 뉴스 내용 뉴스 내용 뉴스 내용 뉴스 내용</div>
+					<div class="reg_date">2021.01.01</div>
+				</div>
+			</div>
+			<div id="paging_wrap" class="paging_wrap">
+				<a href="javascript:void(0);" class="prev disable">이전</a><a href="javascript:void(0);" class="current">1</a><a href="javascript:void(0);">2</a><a href="javascript:void(0);">3</a><a href="javascript:void(0);">4</a><a href="javascript:void(0);">5</a><a href="javascript:void(0);" class="next">다음</a>
+			</div>
+		</div>
+	</div>
+	<div class="module-wrap edit_wrap com_mod_map">
+		<div id="map"></div>
+		<div class="map_info_wrap">
+			<div class="com_info">
+				<div class="comName">기업명</div>
+				<a href="javascript:void(0);" target="_blank" class="find_road">길 찾기</a>
+				<p class="comAddress">주소</p>
+				<p class="tel">전화번호</p>
+			</div>
+			<div class="around_wrap">
+				<ul id="category">
+					<li id="MT1" data-order="0">
+						<span class="category_bg mt1"></span>
+						대형마트
+					</li>
+					<li id="CS2" data-order="1">
+						<span class="category_bg cs2"></span>
+						편의점
+					</li>
+					<li id="AC5" data-order="2">
+						<span class="category_bg ac5"></span>
+						학원
+					</li>
+					<li id="PK6" data-order="3">
+						<span class="category_bg pk6"></span>
+						주차장
+					</li>
+					<li id="OL7" data-order="4">
+						<span class="category_bg ol7"></span>
+						주유소
+					</li>
+					<li id="SW8" data-order="5">
+						<span class="category_bg sw8"></span>
+						지하철
+					</li>
+					<li id="BK9" data-order="6">
+						<span class="category_bg bk9"></span>
+						은행
+					</li>
+					<li id="CT1" data-order="7">
+						<span class="category_bg ct1"></span>
+						문화시설
+					</li>
+					<li id="AT4" data-order="8">
+						<span class="category_bg at4"></span>
+						관광명소
+					</li>
+					<li id="AD5" data-order="9">
+						<span class="category_bg ad5"></span>
+						숙박
+					</li>
+					<li id="FD6" data-order="10">
+						<span class="category_bg fd6"></span>
+						음식점
+					</li>
+					<li id="CE7" data-order="11">
+						<span class="category_bg ce7"></span>
+						카페
+					</li>
+					<li id="HP8" data-order="12">
+						<span class="category_bg hp8"></span>
+						병원
+					</li>
+					<li id="PM9" data-order="14">
+						<span class="category_bg pm9"></span>
+						약국
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script>
+		//레이아웃 작업시 필요한 스크립트 추가
+		$(document).ready(function() {
+			var gnbOffset = $('.com_mod_anchor').offset();
+			$(window).scroll(function() {
+				if ($(document).scrollTop() > gnbOffset.top) {
+					$('.com_mod_header, .com_mod_anchor').addClass('fixed');
+					var headerHeight = $('.com_mod_header').height();
+					//console.log(headerHeight);
+					$('.com_mod_anchor').css('top', headerHeight + 48);
+				} else {
+					$('.com_mod_header, .com_mod_anchor').removeClass('fixed');
+					$('.com_mod_anchor').css('top', 0);
+				}
+			});
+			
+			var percentSlider = new Swiper(".percent", {
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				spaceBetween: 20,
+				loop: true,
+				pagination: {
+					el: ".mag_mod_percent .swiper-pagination",
+					clickable: true,
+				},
+				breakpoints: {
+					780: {
+						slidesPerView: 2,
+						slidesPerGroup: 2,
+					}
+				}
+			});
+
+			//제품 소개
+			var magBiz05 = $('.rec_mod_product .product')
+			magBiz05.addClass('swiper');
+			magBiz05.wrapInner('<div class="swiper-wrapper"></div>');
+			magBiz05.children().children().wrap('<div class="swiper-slide"></div>')
+			magBiz05.append('<div class="swiper-pagination"></div>');
+			magBiz05.append('<div class="swiper-button-prev"></div>');
+			magBiz05.append('<div class="swiper-button-next"></div>');
+			var prodctSlider = new Swiper(magBiz05, {
+				slidesPerView: 3,
+				autoHeight: true,
+				spaceBetween: 20,
+				navigation: {
+					nextEl: ".rec_mod_product .swiper-button-next",
+					prevEl: ".rec_mod_product .swiper-button-prev"
+				},
+				breakpoints: {
+					1261: {
+						slidesPerView: 3,
+					},
+					640: {
+						slidesPerView: 2,
+					},
+					0: {
+						slidesPerView: 1,
+					}
+				}
+			});
+
+			// 기술
+			var prodctSlider = new Swiper('.technology', {
+				slidesPerView: 3,
+				autoHeight: true,
+				spaceBetween: 20,
+				navigation: {
+					nextEl: ".rec_mod_technology .swiper-button-next",
+					prevEl: ".rec_mod_technology .swiper-button-prev"
+				},
+				breakpoints: {
+					1261: {
+						slidesPerView: 3,
+					},
+					640: {
+						slidesPerView: 2,
+					},
+					0: {
+						slidesPerView: 1,
+					}
+				}
+			});
+
+			// mag_mod.interview.sty04
+			$(".mag_mod_interview.sty04 .ivCeo").append('<div class="swiper-pagination"></div>');
+			var ceoIvSlider = new Swiper(".mag_mod_interview.sty04 .ivCeo", {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				//loop: true,
+				navigation: {
+					nextEl: ".mag_mod_interview.sty04 .qa_ceo .swiper-button-next",
+					prevEl: ".mag_mod_interview.sty04 .qa_ceo .swiper-button-prev"
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+					observer: true,
+					observeParents: true,
+				}
+			});
+
+			$(".mag_mod_interview.sty04 .ivMng").append('<div class="swiper-pagination"></div>');
+			var ceoIvSlider = new Swiper(".mag_mod_interview.sty04 .ivMng", {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				//loop: true,
+				navigation: {
+					nextEl: ".mag_mod_interview.sty04 .qa_mng .swiper-button-next",
+					prevEl: ".mag_mod_interview.sty04 .qa_mng .swiper-button-prev"
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+					observer: true,
+					observeParents: true,
+				}
+			});
+
+			$(".mag_mod_interview.sty04 .ivEmp").append('<div class="swiper-pagination"></div>');
+			var ceoIvSlider = new Swiper(".mag_mod_interview.sty04 .ivEmp", {
+				slidesPerView: 1,
+				spaceBetween: 0,
+				//loop: true,
+				navigation: {
+					nextEl: ".mag_mod_interview.sty04 .qa_emp .swiper-button-next",
+					prevEl: ".mag_mod_interview.sty04 .qa_emp .swiper-button-prev"
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+					observer: true,
+					observeParents: true,
+				}
+			});
+
+			// 도움말 버튼
+			$('.qm_txt a').click(function() {
+				$(this).parent().find('span').toggle()
+			})
+
+	
+
+
+		});
+	</script>
+</body></html>

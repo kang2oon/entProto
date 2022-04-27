@@ -11,6 +11,12 @@ $(document).ready(function(){
             $('.com_mod_anchor').css('top', 0);
         }
     });
+	
+	
+$('.com_mod_anchor a').click(function(){
+	$(this).addClass('active');
+	$(this).parent().siblings().children().removeClass('active');
+});
 
 
 	// 탭 컨텐츠 숨기기

@@ -432,7 +432,7 @@
 				var item = $(this).attr('data-tab');
 				$('.tab > div').removeClass('on');
 				$(this).addClass('on');
-				$('.conts > div').hide();
+				$('.conts > div:first').show();
 				$('.conts > .' + item).show();
 
 				setTimeout(function() {

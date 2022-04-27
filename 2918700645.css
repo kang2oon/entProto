@@ -1,0 +1,203 @@
+/* 신규타입 상단처리 */
+		.newCompanyInfoWrap{display:none;}
+		.wantCompany_body {
+			padding: 0;
+		}
+
+		#companyInfoWrap {
+			padding: 0 0 40px;
+		}
+
+.gray{color: #666}
+.mt30{margin-top: 3rem}
+.img_wrap {text-align: center}
+.img_wrap img{max-width: 100%}
+.cnt-container {max-width: 1080px;margin: auto}
+.pd80{padding: 8rem 0}
+.mg80{margin: 8rem 0}
+.cnt-tit{font-size: 3.6rem;text-align: center;}
+.bro_mod_header{background: url(images/@bg_vision_2918700645.png) no-repeat;background-size: cover;padding: 9rem 0;position: relative}
+.bro_mod_header:after{content: '';display: block;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.2);position: absolute;left: 0;top: 0}
+.bro_mod_header .imgCi{position: relative;z-index: 5}
+.bro_mod_header h2{margin-top: 2rem;font-size: 6rem;font-weight: 300;letter-spacing: -2px;color: #fff;position: relative;z-index: 2}
+
+.mag_mod_history.sty02 h3:after{content: '';display: block;width: 1px;height: 30px;background: #000;margin: 20px auto}
+
+.mag_mod_history.sty02 .history > div > span{color: #000000;border-top: 1px solid #000000}
+.mag_mod_history.sty02 .history > div > ul li div.month{color: #ee2028}
+
+.mag_mod_vision{background: #f2f2f2}
+.mag_mod_vision .vision_wrap{display: flex;margin-top: 6rem;background: url(images/@bg_vision02_2918700645.png) no-repeat;justify-content: center}
+.mag_mod_vision .vision_wrap .txt{margin-top:5rem;text-align: center}
+.mag_mod_vision .vision_wrap > div{width: calc(33.333% - 15px);}
+.mag_mod_vision .vision_wrap .tit{font-size: 3.5rem;text-transform: uppercase;font-weight: bold;}
+.mag_mod_vision .vision_wrap .desc{font-size: 2.2rem;margin-top: 1rem;}
+.mag_mod_vision .vision_wrap .ico{display: block;margin: auto;width: 100%;height: 389px}
+.mag_mod_vision .vision_wrap .item01{background: url(images/@ico_vision01_2918700645.png) no-repeat center;}
+.mag_mod_vision .vision_wrap .item02{background: url(images/@ico_vision02_2918700645.png) no-repeat center;}
+.mag_mod_vision .vision_wrap .item03{background: url(images/@ico_vision03_2918700645.png) no-repeat center;}
+
+
+.biz_bg{background: url(images/@biz_bs_2918700645.png) no-repeat center top -50px;padding-top: 220px; }
+.biz_bg .innerBiz{background: #fff;padding: 8rem  }
+.biz_bg .innerBiz h3{margin-bottom: 30px}
+.biz_bg .innerBiz .addMsg{color: #666;font-size: 17px;word-break: keep-all}
+
+.bsSlide_wrap{position: relative;min-height: 460px}
+.bsSlide{width: 600px;border: 1px solid #000;position: relative;padding: 30px 40px;position: relative;background: #fff;z-index: 5}
+.bsSlide_wrap:before{width: 578px;height: 460px;position: absolute;top: 50%;transform: translateY(-50%);}
+.bro_mod_biz .bsSlide_wrap:before{content: '';display: block;background: url(images/@bg_biz01_2918700645.png) no-repeat;left: 0;}
+.bsSlide .swiper{overflow: hidden;height: auto}
+.swiper-wrapper{height: auto}
+.bro_mod_biz .bsSlide {position: absolute;right: 0;top: 50%;transform: translateY(-50%);}
+.bro_mod_biz .bsSlide h4{font-size: 3.6rem;text-align: center;margin-bottom: 1rem;}
+.bro_mod_biz .bsSlide p{font-size: 1.7rem;text-align: center;color: #666;}
+.bsSlide .swiper-button-next:after,
+.bsSlide .swiper-button-prev:after{display: block;text-indent: -9999px}
+.bsSlide .swiper-button-next,
+.bsSlide .swiper-button-prev{width: 28px;height: 28px;}
+.bro_mod_biz .bsSlide{padding-top: 60px}
+.bro_mod_biz .bsSlide:before{content: '주요생산제품';display: block;font-size: 1.8rem;font-weight: 500;position: absolute;left: 40px;top: 30px}
+.bro_mod_biz .swiper-button-prev{background: url(images/@biz_prev01_2918700645.png) #ec2129 center no-repeat;left: auto;right: 65px;top: 40px}
+.bro_mod_biz .swiper-button-next{background: url(images/@biz_next01_2918700645.png) #ec2129 center no-repeat;left: auto !important;right: 30px;top: 40px}
+.pd_wrap {margin-top: 8rem}
+.pd_wrap .bsSlide_wrap:before{content: '';display: block;background: url(images/@bg_biz02_2918700645.png) no-repeat;right: 0;}
+.pd_wrap .bsSlide{position: absolute;left: 0;top: 50%;transform: translateY(-50%);}
+.pd_wrap .bsSlide h4{font-size: 2rem;margin-bottom: 1rem}
+.pd_wrap .bsSlide p{font-size: 1.7rem;color: #666}
+.pd_wrap .bsSlide {padding-bottom: 80px;}
+.pd_wrap .bsSlide .swiper-button-prev{background: url(images/@biz_prev02_2918700645.png)  center no-repeat;left: 40px;bottom: 20px;top: auto;border: 1px solid #ec2129;margin-top: 0}
+.pd_wrap .bsSlide .swiper-button-next{background: url(images/@biz_next02_2918700645.png)  center no-repeat;left: 75px !important;right: 30px;bottom: 20px;top: auto;border: 1px solid #ec2129;margin-top: 0}
+.pd_wrap .bsSlide .swiper-wrapper{height: 220px}
+.pd_wrap .bsSlide .swiper-slide {height: calc(100%/2)}
+
+
+.bro_mod_strategy{margin-top: 12rem}
+
+.bro_mod_talent .cnt-container{max-width: 1260px;margin: auto}
+.talent_wrap{display: flex;justify-content: space-between;background: url(images/@bg_talent01_2918700645.png) no-repeat top center}
+.talent_wrap > div{width: 25%;text-align: center;}
+.talent_wrap .ico{display: flex;justify-content: center;align-items: center;flex-direction: column;min-height: 216px;}
+.talent_wrap .ico p{font-size: 3rem;font-weight: bold;}
+.talent_wrap .ico  span{width: 100%;height: 70px;}
+.talent_wrap .ico .item01{background: url(images/@ico_talent01_2918700645.png) no-repeat center;}
+.talent_wrap .ico .item02{background: url(images/@ico_talent02_2918700645.png) no-repeat center;}
+.talent_wrap .ico .item03{background: url(images/@ico_talent03_2918700645.png) no-repeat center;}
+.talent_wrap .ico .item04{background: url(images/@ico_talent04_2918700645.png) no-repeat center;}
+.talent_wrap .tit{font-size: 2.5rem;margin: 2.5rem 0}
+.talent_wrap .desc{font-size: 1.8rem;color: #666666}
+
+.bro_mod_culture.sty05 .culwel_wrap:nth-child(1){background: url(images/@bg_culture_2918700645.png) no-repeat;background-size: cover}
+.bro_mod_culture.sty05 .culwel_wrap:nth-child(2){background: url(images/@bg_wf_2918700645.png) no-repeat;background-size: cover}
+
+.mag_mod_interview.sty04 {background: #f2f2f2}
+.mag_mod_interview.sty04 .cnt-tit{margin-bottom: 3rem;}
+.mag_mod_interview.sty04 .swiper-wrapper {padding-bottom: 6rem}
+.mag_mod_interview.sty04 .iv_wrap .q:before{color: #622d8d}
+.mag_mod_interview.sty04 .swiper-pagination-bullet-active{background: #622d8d}
+
+
+@media all and (max-width:1360px){
+	.talent_wrap{background-size: 100%;}
+}
+
+@media all and (max-width:1260px){
+	.mag_mod_vision .vision_wrap{max-width: 1024px;background-size: 1024px;}
+	
+	.mag_mod_vision .vision_wrap .ico{height: 369px}
+	
+	.biz_bg{padding-top: 100px}
+	
+	.talent_wrap{background: none;}
+	.talent_wrap .ico{border-radius: 30px;min-height: 180px}
+	.talent_wrap > div{width: calc(25% - 10px)}
+	.talent_wrap div:nth-child(1) .ico{border:5px solid #ffcc33;}
+	.talent_wrap div:nth-child(2) .ico{border:5px solid #ff9966;}
+	.talent_wrap div:nth-child(3) .ico{border:5px solid #ff3333;}
+	.talent_wrap div:nth-child(4) .ico{border:5px solid #993333;}
+	.talent_wrap .ico p{font-size: 2rem}
+	.talent_wrap .tit{font-size: 2rem;margin: 2rem 0}
+	.talent_wrap .desc{word-break: keep-all}
+	.talent_wrap .desc br{display: none}
+	
+}
+
+@media all and (max-width:1080px){
+	.bro_mod_header{padding: 7rem 0;background-position: right}
+	.bro_mod_header h2{font-size: 3rem}
+	.bro_mod_header .imgCi{width: 200px}
+	
+	.mag_mod_vision .vision_wrap{background: none;}
+	.mag_mod_vision .vision_wrap .ico{height: 100px;}
+	
+	.pd_wrap .bsSlide .swiper-wrapper{height: auto}
+	.pd_wrap .bsSlide .swiper-slide{height: auto}
+}
+
+
+@media all and (max-width:768px){
+	.mag_mod_vision .vision_wrap .ico{height: 85px;}
+	.mag_mod_vision .vision_wrap .item01{background-size: 75px;width: 75px}
+	.mag_mod_vision .vision_wrap .item02{background-size: 65px;width: 65px}
+	.mag_mod_vision .vision_wrap .item03{background-size: 65px;width: 65px}
+	.mag_mod_vision .vision_wrap .txt{margin-top: 2rem}
+	
+	.biz_bg{padding-top: 5rem}
+	.biz_bg .innerBiz{padding: 4rem}
+	.biz_bg .innerBiz h3{margin-bottom: 2rem;font-size: 2.6rem}
+	.biz_bg .innerBiz .addMsg{font-size: 1.7rem}
+	
+	.talent_wrap{flex-wrap: wrap}
+	.talent_wrap > div{width: calc(50% - 10px);margin-right: 20px;margin-bottom: 4rem}
+	.talent_wrap > div:nth-child(3),
+	.talent_wrap > div:nth-child(4){margin-bottom: 0}
+	.talent_wrap > div:nth-child(2n){margin-right: 0}
+}
+
+@media all and (max-width:640px){
+	.mag_mod_history.sty02{padding: 7rem 0}
+	.pd80{padding: 7rem 0}
+	.mg80{margin: 7rem 0}
+	.cnt-tit{font-size: 2.6rem}
+	
+	.mag_mod_vision .vision_wrap{flex-direction: column;margin-top: 3rem}
+	.mag_mod_vision .vision_wrap > div{width: 100%;margin-bottom: 4rem}
+	.mag_mod_vision .vision_wrap > div:last-child{margin-bottom: 0}
+	.mag_mod_vision .vision_wrap .tit{font-size: 3rem}
+	.mag_mod_vision .vision_wrap .desc{font-size: 1.8rem}
+	
+	.bsSlide_wrap:before{position:static !important;top: auto;transform: none !important;width: 100%;height: 150px;}
+	.bsSlide{width: 100%;position:relative!important;transform: none !important;top: auto !important}
+	
+	.pd_wrap{margin-top: 5rem}
+	.bsSlide{padding: 2rem}
+	.bsSlide_wrap{min-height: auto}
+	.bro_mod_biz .bsSlide:before{top: 2rem;left: 2rem;}
+	.bro_mod_biz .swiper-button-next{right: 2rem;top: 4rem;}
+	.bro_mod_biz .swiper-button-prev{right: 6rem;top: 4rem;}
+	.bro_mod_biz .bsSlide{padding-top: 45px}
+	.bro_mod_biz .bsSlide h4{font-size: 2.6rem}
+	.pd_wrap .bsSlide .swiper-button-prev{left: 2rem;bottom: 2rem}
+	.pd_wrap .bsSlide .swiper-button-next{left: 6rem !important;bottom: 2rem}
+	
+	.talent_wrap .ico{min-height: 130px}
+	.talent_wrap div:nth-child(1) .ico span{background-size: 25px;width: 25px;height: 50px}
+	.talent_wrap div:nth-child(2) .ico span{background-size: 40px;width: 40px;height: 50px}
+	.talent_wrap div:nth-child(3) .ico span{background-size: 40px;width: 40px;height: 50px}
+	.talent_wrap div:nth-child(4) .ico span{background-size: 45px;width: 45px;height: 50px}
+	.talent_wrap .tit{margin: 1.5rem 0}
+	
+	.mag_mod_interview.sty04 .iv_wrap .photo img{width: 150px}
+}
+
+@media all and (max-width:480px){
+	.bro_mod_header h2{font-size: 2.8rem;word-break: keep-all}
+	.mag_mod_vision .vision_wrap > div{margin-bottom: 3rem}
+	.mag_mod_vision .vision_wrap .item01{background-size: 55px;width: 55px;height: 45px}
+	.mag_mod_vision .vision_wrap .item02{background-size: 50px;height: 55px}
+	.mag_mod_vision .vision_wrap .item03{background-size: 45px;width: 45px;height: 45px}
+	
+	 .header .logo{max-width: 150px}
+
+	
+}

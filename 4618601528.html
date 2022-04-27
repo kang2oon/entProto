@@ -8,7 +8,7 @@
 	<meta name="author" content="kang2oon">
 	<title class="comName">기업명</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">
-	<link href="./css/pt-common.css" rel="stylesheet">
+	<link href="https://ptb.kgoon.pw/css/pt-common.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
 	<style>
 
@@ -278,7 +278,7 @@ body {color: #323232}
 	<div class="module-wrap bro_mod_summary">
 		<div class="cnt-container">
 			<div class="main_tit">
-				<div class="slogan">미션</div>
+				<div class="slogan">Show your Mind through ART</div>
 			</div>
 			<div class="imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
 		</div>
@@ -288,7 +288,7 @@ body {color: #323232}
 	<div class="module-wrap inf_mod_biz">
 		<div class="cnt-container">
 			<div class="biz_wrap">
-				<div class="bizDiv">주요사업</div>
+				<div class="bizDiv"><div><img src="undefined" alt="idraw  아이드로우"><h4>idraw  아이드로우</h4><p> 그리는 것 보다 더 멋진 건 없다라는 철학으로 기본을 탄탄하게 상상과 창의를 즐겁게 그릴 수 있는 플랫폼을 운영합니다. 직접 제작하여 특허 등록된 교구재를 활용하여 다양한 예술 콘텐츠를 개발, 연구합니다.</p></div></div>
 			</div>
 		</div>
 	</div>
@@ -714,8 +714,9 @@ body {color: #323232}
 				}
 			});
 
-			// masony 레이아웃
-			var divs = $(".dvCulture .swiper-wrapper > div");
+			// .mag_mod_culture.sty03
+			//조직문화  masony 레이아웃 
+			var divs = $(".mag_mod_culture.sty03 .dvCulture .swiper-wrapper > div");
 			if ($(window).width() > 1260) {
 				for (var i = 0; i < divs.length; i += 8) {
 					divs.slice(i, i + 8).wrapAll("<div class='masony swiper-slide'></div>");
@@ -736,11 +737,11 @@ body {color: #323232}
 
 			function initSwiper() {
 				if (ww > 1260 && dvCultureSlider == undefined) {
-					dvCultureSlider = new Swiper(".dvCulture", {
+					dvCultureSlider = new Swiper(".mag_mod_culture.sty03 .dvCulture", {
 						slidesPerView: 1,
 						navigation: {
-							nextEl: ".culture_wrap .swiper-button-next",
-							prevEl: ".culture_wrap .swiper-button-prev"
+							nextEl: ".mag_mod_culture.sty03 .swiper-button-next",
+							prevEl: ".mag_mod_culture.sty03 .swiper-button-prev"
 						}
 					});
 				} else if (ww >= 1260 && dvCultureSlider != undefined) {
@@ -757,7 +758,36 @@ body {color: #323232}
 			});
 
 
-			// dot
+
+
+			// 인터뷰
+			$('.mag_mod_interview.sty02 .cnt-container').addClass('tab_container')
+			$('.mag_mod_interview.sty02 .cnt-container').prepend("<ul class='tabs'><li class='active'><a href='javascript:vold' data-tab='tab1'>CEO</a></li><li><a href='javascript:vold' data-tab='tab2'>인사담당자</a></li><li><a href='javascript:vold' data-tab='tab3'>신입사원</a></li></ul>");
+			$('.iv_wrap').addClass('tab_content');
+			$('.qa_ceo').attr('id', 'tab1');
+			$('.qa_mng').attr('id', 'tab2');
+			$('.qa_emp').attr('id', 'tab3');
+
+			// 탭 컨텐츠 숨기기
+			$(".tab_content").hide();
+
+			// 첫번째 탭콘텐츠 보이기
+			$(".tab_container").each(function() {
+				$(this).children().children().children("li:first").addClass("active"); //Activate first tab
+				$(this).children(".tab_content").first().show();
+			});
+
+			//탭메뉴 클릭 이벤트
+			$(".tabs li a").click(function() {
+				//탭 안에 슬라이드 있을 때
+				var tab_id = $(this).attr('data-tab');
+				$(this).parent().siblings().removeClass("active");
+				$(this).parent().addClass("active");
+				$(this).parent().parent().parent().parent().find(".tab_content").hide();
+				//        var activeTab = $(this).attr("rel");
+				//        $("#" + activeTab).fadeIn();
+				$("#" + tab_id).fadeIn();
+			});
 			$(".ivCeo").append('<div class="swiper-pagination"></div>');
 			$(".ivMng").append('<div class="swiper-pagination"></div>');
 			$(".ivEmp").append('<div class="swiper-pagination"></div>');
@@ -863,34 +893,7 @@ body {color: #323232}
            		}
 			});
 
-			// 인터뷰
-			$('.mag_mod_interview.sty02 .cnt-container').addClass('tab_container')
-			$('.mag_mod_interview.sty02 .cnt-container').prepend("<ul class='tabs'><li class='active'><a href='javascript:vold' data-tab='tab1'>CEO</a></li><li><a href='javascript:vold' data-tab='tab2'>인사담당자</a></li><li><a href='javascript:vold' data-tab='tab3'>신입사원</a></li></ul>");
-			$('.iv_wrap').addClass('tab_content');
-			$('.qa_ceo').attr('id', 'tab1');
-			$('.qa_mng').attr('id', 'tab2');
-			$('.qa_emp').attr('id', 'tab3');
-
-			// 탭 컨텐츠 숨기기
-			$(".tab_content").hide();
-
-			// 첫번째 탭콘텐츠 보이기
-			$(".tab_container").each(function() {
-				$(this).children().children().children("li:first").addClass("active"); //Activate first tab
-				$(this).children(".tab_content").first().show();
-			});
-
-			//탭메뉴 클릭 이벤트
-			$(".tabs li a").click(function() {
-				//탭 안에 슬라이드 있을 때
-				var tab_id = $(this).attr('data-tab');
-				$(this).parent().siblings().removeClass("active");
-				$(this).parent().addClass("active");
-				$(this).parent().parent().parent().parent().find(".tab_content").hide();
-				//        var activeTab = $(this).attr("rel");
-				//        $("#" + activeTab).fadeIn();
-				$("#" + tab_id).fadeIn();
-			});
+		
 
 
 			// 주소-좌표 변환 객체를 생성합니다
@@ -941,6 +944,8 @@ body {color: #323232}
 					$(".find_road").attr("href", find_road);
 				}
 			});
+			
+			
 		};
 		xmlhttp.send();
 	</script>

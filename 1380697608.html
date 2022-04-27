@@ -7,10 +7,10 @@
 	<meta name="author" content="kang2oon">
 	<title class="comName">기업명</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">
-	<link href="./css/pt-common.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
+	<link href="https://ptb.kgoon.pw/css/pt-common.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
 	<style>
-			/* 신규타입 상단처리 */
+		/* 신규타입 상단처리 */
 		#main_banner,
 		.company_info_outer,
 		.wantCompany_ct_box {
@@ -25,137 +25,536 @@
 			padding: 0 0 40px;
 		}
 
-		.rec_mod_strategy.sty01 .navy_bg {background: url(/images/tongyang_strategy_bg.png) no-repeat top;position: relative;}
-		.rec_mod_strategy.sty01 .navy_bg:after {content: '';display: block;background: url(/images/tongyang_strategy_img.png) no-repeat;width: 817px;height: 593px;position: absolute;right: 30px;bottom: 0}
-		.rec_mod_strategy.sty01 .qnum {color: #ff6d56 !important}
-		.rec_mod_strategy.sty01 .self_intro_wrap {border-radius: 20px}
-		.rec_mod_strategy.sty01 .recent_question {background: url(/images/tongyang_strategy_bg02.png) no-repeat right center #ff6d56;display: block;padding: 4.0rem}
-		.rec_mod_strategy.sty01 .rq_tit {display: block;text-align: left;color: #fff;font-weight: bold}
-		.rec_mod_strategy.sty01 .rq_tit:after {display: none}
-		.rec_mod_strategy.sty01 .rq_cont {padding-bottom: 0}
-		.rec_mod_strategy.sty01 .rq_text {text-align: left}
-		.rec_mod_strategy.sty01 .cont_box {border-radius: 20px}
-		.rec_mod_strategy.sty01 .spec {position: relative}
-		.rec_mod_strategy.sty01 .spec .cont_box {width: calc(100% - 400px)}
-		.rec_mod_strategy.sty01 .spec .cont_box ul {width: 100%;}
-		.rec_mod_strategy.sty01 .spec strong {width: 220px !important}
-		.rec_mod_strategy.sty01 .spec p {width: calc(100% - 220px) !important}
-		.rec_mod_strategy .spec.in_img .cont_box:after {display: none}
-		.interview_tip {background: url(/images/tongyang_iv_bg.png) no-repeat #365696 !important;}
-		.rec_mod_strategy.sty01 .interview_tip h3 {color: #fff}
-		.rec_mod_strategy.sty01 .interview_tip .it_area_wrap {border: 0;border-radius: 20px;}
-		.rec_mod_strategy.sty01 .interview_tip .it_area_wrap:before {display: none}
-		.rec_mod_strategy.sty01 .interview_tip .it_area b {color: #ff6d56}
-		.rec_mod_strategy.sty01 .interview_tip .qm_btn {background-color: transparent;border: 1px solid #fff}
-		.inf_mod_history.sty02 {background: url(/images/tongyang_history_bg.png) no-repeat left top}
-		.inf_mod_history.sty02 .history_wrap .history {background: url(/images/bg_inf_history_sero_tongyang.png) repeat-y 50% 0}
-		.inf_mod_history.sty02 .history_wrap .history>div {background: url(/images/bg_inf_history_garo_tongyang.png) no-repeat 50% 50%}
-		.inf_mod_history.sty02 h3 {font-size: 34px;font-weight: bold;color: #000}
-		.inf_mod_history.sty02 .en {text-align: center;font-size: 18px;margin-bottom: 30px}
-		.inf_mod_history.sty02 .history_wrap .arrow_prev {background: url(/images/tongyang_history_prev.png) no-repeat #f3f3f3 !important;border-radius: 50%;}
-		.inf_mod_history.sty02 .history_wrap .arrow_next {background: url(/images/tongyang_history_next.png) no-repeat #f3f3f3 !important;border-radius: 50%;}
-		.inf_mod_history.sty02 .history_wrap .history>div>span {color: rgba(54, 86, 150, 0.5)}
-		.inf_mod_history.sty02 .history_wrap .history>div div.event span {color: #365696}
-		.rec_mod_swot.sty04 {padding: 8.0rem 0}
-		.rec_mod_swot.sty04 h3 {color: #fff;text-align: center;}
-		.rec_mod_swot.sty04 .diagram_area {border-radius: 50%;border: 0 !important;color: #fff}
-		.rec_mod_swot.sty04 .txt {color: #fff}
-		.rec_mod_swot.sty04 .swotS .diagram_area {background: #365696}
-		.rec_mod_swot.sty04 .swotS .tit {color: #365696}
-		.rec_mod_swot.sty04 .swotW .diagram_area {background: #ff6d56}
-		.rec_mod_swot.sty04 .swotW .tit {color: #ff6d56}
-		.rec_mod_swot.sty04 .swotO .diagram_area {background: #0bb0ef}
-		.rec_mod_swot.sty04 .swotO .tit {color: #0bb0ef}
-		.rec_mod_swot.sty04 .swotT .diagram_area {background: #1d9f6e}
-		.rec_mod_swot.sty04 .swotT .tit {color: #1d9f6e}
-		.rec_mod_product.sty01 h3 {color: #fff}
-		.summary_bg {background: url(/images/tongyang_summary_bg.png) no-repeat top -200px left}
-		.rec_mod_finance.sty02 .cnt-container:after{content: '';display: block;background: url(../images/rec_finance02_img01.png) no-repeat;width: 452px;height: 513px;position: absolute;top: -400px;left: 0}
-		.rec_mod_finance.sty02 .white_box_sdw{position: relative;z-index: 5}
-		.rec_mod_percent.sty01 {margin-top: 190px}
-		.rec_mod_vision.sty01 {margin-top: 300px}
-		.rec_mod_vision.sty01 p {font-size: 2.4rem;}
-		.rec_mod_vision.sty01 p .orange {color: #ff725e}
-		.rec_mod_vision.sty01 p .blue {color: #0bb0ef}
-		.rec_mod_welfare  {background: url(/images/tongyang_welfare_bg.png) no-repeat bottom left;background-size: cover}
-		.rec_mod_welfare .welfare_img {margin-top: 6.0rem}
-		.rec_mod_welfare .welfare_img .item1 {background: url(/images/tongyang_welfare_img01.png) no-repeat center;}
-		.rec_mod_welfare .welfare_img .item2 {background: url(/images/tongyang_welfare_img02.png) no-repeat center;}
-		.rec_mod_welfare .welfare_img .item3 {background: url(/images/tongyang_welfare_img03.png) no-repeat center;}
-		.rec_mod_welfare .welfare_img .item4 {background: url(/images/tongyang_welfare_img04.png) no-repeat center;}
-		.rec_mod_welfare .qm_btn {background: transparent;color: #fff;border: 1px solid #fff}
-		.rec_mod_strategy.sty01 .spec.in_img .cont_box:after{display: none}
-		.rec_mod_interview .swiper-container {color: #fff;}
-		.rec_mod_interview  .swiper-wrapper{}
-		.rec_mod_interview h3 span {color: #ffd014}
-		.rec_mod_interview .qa_ceo .swiper-button-next:after {background: url(/images/slider12_next.png) no-repeat right;width: 35px;height: 55px;text-indent: -9999px;}
-		.rec_mod_interview .qa_ceo .swiper-button-prev:after {background: url(/images/slider12_prev.png) no-repeat left;width: 35px;height: 55px;text-indent: -9999px;}
+		.rec_mod_strategy.sty01 .navy_bg {
+			background: url(/images/tongyang_strategy_bg.png) no-repeat top;
+			position: relative;
+		}
+
+		.rec_mod_strategy.sty01 .navy_bg:after {
+			content: '';
+			display: block;
+			background: url(/images/tongyang_strategy_img.png) no-repeat;
+			width: 817px;
+			height: 593px;
+			position: absolute;
+			right: 30px;
+			bottom: 0
+		}
+
+		.rec_mod_strategy.sty01 .qnum {
+			color: #ff6d56 !important
+		}
+
+		.rec_mod_strategy.sty01 .self_intro_wrap {
+			border-radius: 20px
+		}
+
+		.rec_mod_strategy.sty01 .recent_question {
+			background: url(/images/tongyang_strategy_bg02.png) no-repeat right center #ff6d56;
+			display: block;
+			padding: 4.0rem
+		}
+
+		.rec_mod_strategy.sty01 .rq_tit {
+			display: block;
+			text-align: left;
+			color: #fff;
+			font-weight: bold
+		}
+
+		.rec_mod_strategy.sty01 .rq_tit:after {
+			display: none
+		}
+
+		.rec_mod_strategy.sty01 .rq_cont {
+			padding-bottom: 0
+		}
+
+		.rec_mod_strategy.sty01 .rq_text {
+			text-align: left
+		}
+
+		.rec_mod_strategy.sty01 .cont_box {
+			border-radius: 20px
+		}
+
+		.rec_mod_strategy.sty01 .spec {
+			position: relative
+		}
+
+		.rec_mod_strategy.sty01 .spec .cont_box {
+			width: calc(100% - 400px)
+		}
+
+		.rec_mod_strategy.sty01 .spec .cont_box ul {
+			width: 100%;
+		}
+
+		.rec_mod_strategy.sty01 .spec strong {
+			width: 220px !important
+		}
+
+		.rec_mod_strategy.sty01 .spec p {
+			width: calc(100% - 220px) !important
+		}
+
+		.rec_mod_strategy .spec.in_img .cont_box:after {
+			display: none
+		}
+
+		.interview_tip {
+			background: url(/images/tongyang_iv_bg.png) no-repeat #365696 !important;
+		}
+
+		.rec_mod_strategy.sty01 .interview_tip h3 {
+			color: #fff
+		}
+
+		.rec_mod_strategy.sty01 .interview_tip .it_area_wrap {
+			border: 0;
+			border-radius: 20px;
+		}
+
+		.rec_mod_strategy.sty01 .interview_tip .it_area_wrap:before {
+			display: none
+		}
+
+		.rec_mod_strategy.sty01 .interview_tip .it_area b {
+			color: #ff6d56
+		}
+
+		.rec_mod_strategy.sty01 .interview_tip .qm_btn {
+			background-color: transparent;
+			border: 1px solid #fff
+		}
+
+		.inf_mod_history.sty02 {
+			background: url(/images/tongyang_history_bg.png) no-repeat left top
+		}
+
+		.inf_mod_history.sty02 .history_wrap .history {
+			background: url(/images/bg_inf_history_sero_tongyang.png) repeat-y 50% 0
+		}
+
+		.inf_mod_history.sty02 .history_wrap .history>div {
+			background: url(/images/bg_inf_history_garo_tongyang.png) no-repeat 50% 50%
+		}
+
+		.inf_mod_history.sty02 h3 {
+			font-size: 34px;
+			font-weight: bold;
+			color: #000
+		}
+
+		.inf_mod_history.sty02 .en {
+			text-align: center;
+			font-size: 18px;
+			margin-bottom: 30px
+		}
+
+		.inf_mod_history.sty02 .history_wrap .arrow_prev {
+			background: url(/images/tongyang_history_prev.png) no-repeat #f3f3f3 !important;
+			border-radius: 50%;
+		}
+
+		.inf_mod_history.sty02 .history_wrap .arrow_next {
+			background: url(/images/tongyang_history_next.png) no-repeat #f3f3f3 !important;
+			border-radius: 50%;
+		}
+
+		.inf_mod_history.sty02 .history_wrap .history>div>span {
+			color: rgba(54, 86, 150, 0.5)
+		}
+
+		.inf_mod_history.sty02 .history_wrap .history>div div.event span {
+			color: #365696
+		}
+
+		.rec_mod_swot.sty04 {
+			padding: 8.0rem 0
+		}
+
+		.rec_mod_swot.sty04 h3 {
+			color: #fff;
+			text-align: center;
+		}
+
+		.rec_mod_swot.sty04 .diagram_area {
+			border-radius: 50%;
+			border: 0 !important;
+			color: #fff
+		}
+
+		.rec_mod_swot.sty04 .txt {
+			color: #fff
+		}
+
+		.rec_mod_swot.sty04 .swotS .diagram_area {
+			background: #365696
+		}
+
+		.rec_mod_swot.sty04 .swotS .tit {
+			color: #365696
+		}
+
+		.rec_mod_swot.sty04 .swotW .diagram_area {
+			background: #ff6d56
+		}
+
+		.rec_mod_swot.sty04 .swotW .tit {
+			color: #ff6d56
+		}
+
+		.rec_mod_swot.sty04 .swotO .diagram_area {
+			background: #0bb0ef
+		}
+
+		.rec_mod_swot.sty04 .swotO .tit {
+			color: #0bb0ef
+		}
+
+		.rec_mod_swot.sty04 .swotT .diagram_area {
+			background: #1d9f6e
+		}
+
+		.rec_mod_swot.sty04 .swotT .tit {
+			color: #1d9f6e
+		}
+
+		.rec_mod_product.sty01 h3 {
+			color: #fff
+		}
+
+		.summary_bg {
+			background: url(/images/tongyang_summary_bg.png) no-repeat top -200px left
+		}
+
+		.rec_mod_finance.sty02 .cnt-container:after {
+			content: '';
+			display: block;
+			background: url(../images/rec_finance02_img01.png) no-repeat;
+			width: 452px;
+			height: 513px;
+			position: absolute;
+			top: -400px;
+			left: 0
+		}
+
+		.rec_mod_finance.sty02 .white_box_sdw {
+			position: relative;
+			z-index: 5
+		}
+
+		.rec_mod_percent.sty01 {
+			margin-top: 190px
+		}
+
+		.rec_mod_vision.sty01 {
+			margin-top: 300px
+		}
+
+		.rec_mod_vision.sty01 p {
+			font-size: 2.4rem;
+		}
+
+		.rec_mod_vision.sty01 p .orange {
+			color: #ff725e
+		}
+
+		.rec_mod_vision.sty01 p .blue {
+			color: #0bb0ef
+		}
+
+		.rec_mod_welfare {
+			background: url(/images/tongyang_welfare_bg.png) no-repeat bottom left;
+			background-size: cover
+		}
+
+		.rec_mod_welfare .welfare_img {
+			margin-top: 6.0rem
+		}
+
+		.rec_mod_welfare .welfare_img .item1 {
+			background: url(/images/tongyang_welfare_img01.png) no-repeat center;
+		}
+
+		.rec_mod_welfare .welfare_img .item2 {
+			background: url(/images/tongyang_welfare_img02.png) no-repeat center;
+		}
+
+		.rec_mod_welfare .welfare_img .item3 {
+			background: url(/images/tongyang_welfare_img03.png) no-repeat center;
+		}
+
+		.rec_mod_welfare .welfare_img .item4 {
+			background: url(/images/tongyang_welfare_img04.png) no-repeat center;
+		}
+
+		.rec_mod_welfare .qm_btn {
+			background: transparent;
+			color: #fff;
+			border: 1px solid #fff
+		}
+
+		.rec_mod_strategy.sty01 .spec.in_img .cont_box:after {
+			display: none
+		}
+
+		.rec_mod_interview .swiper-container {
+			color: #fff;
+		}
+
+		.rec_mod_interview .swiper-wrapper {}
+
+		.rec_mod_interview h3 span {
+			color: #ffd014
+		}
+
+		.rec_mod_interview .qa_ceo .swiper-button-next:after {
+			background: url(/images/slider12_next.png) no-repeat right;
+			width: 35px;
+			height: 55px;
+			text-indent: -9999px;
+		}
+
+		.rec_mod_interview .qa_ceo .swiper-button-prev:after {
+			background: url(/images/slider12_prev.png) no-repeat left;
+			width: 35px;
+			height: 55px;
+			text-indent: -9999px;
+		}
+
 		.rec_mod_interview .qa_mng .swiper-button-next:after,
-		.rec_mod_interview .qa_emp .swiper-button-next:after {background: url(/images/slider13_next.png) no-repeat right;width: 35px;height: 55px;text-indent: -9999px;}
-		.rec_mod_interview .swiper-button-next {right: -80px}
-		.rec_mod_interview .swiper-button-prev {left: -80px}
+		.rec_mod_interview .qa_emp .swiper-button-next:after {
+			background: url(/images/slider13_next.png) no-repeat right;
+			width: 35px;
+			height: 55px;
+			text-indent: -9999px;
+		}
+
+		.rec_mod_interview .swiper-button-next {
+			right: -80px
+		}
+
+		.rec_mod_interview .swiper-button-prev {
+			left: -80px
+		}
+
 		.rec_mod_interview .qa_mng .swiper-button-prev:after,
-		.rec_mod_interview .qa_emp .swiper-button-prev:after {background: url(/images/slider13_prev.png) no-repeat left;width: 35px;height: 55px;text-indent: -9999px;}
-		.qa_ceo {background: url(/images/tongyang_ceo_bg.png) no-repeat top left;padding: 8.0rem 0}
-		.qa_ceo h3 {text-align: center;margin-bottom: 4.0rem}
-		.qa_mng {background: url(/images/tongyang_recruiter_bg.png) no-repeat right;padding: 10.0rem 0;background-size: cover}
-		.qa_mng .cnt-container {position: relative;min-height: 500px}
+		.rec_mod_interview .qa_emp .swiper-button-prev:after {
+			background: url(/images/slider13_prev.png) no-repeat left;
+			width: 35px;
+			height: 55px;
+			text-indent: -9999px;
+		}
+
+		.qa_ceo {
+			background: url(/images/tongyang_ceo_bg.png) no-repeat top left;
+			padding: 8.0rem 0
+		}
+
+		.qa_ceo h3 {
+			text-align: center;
+			margin-bottom: 4.0rem
+		}
+
+		.qa_mng {
+			background: url(/images/tongyang_recruiter_bg.png) no-repeat right;
+			padding: 10.0rem 0;
+			background-size: cover
+		}
+
+		.qa_mng .cnt-container {
+			position: relative;
+			min-height: 500px
+		}
+
 		.qa_mng h3,
 		.qa_emp h3,
-		.rec_mod_review h3 {color: #fff}
+		.rec_mod_review h3 {
+			color: #fff
+		}
+
 		.qa_mng h3:after,
-		.qa_emp h3:after {content: 'Interview';display: inline-block;color: #fff;font-style: italic;opacity: 0.4;font-weight: 100}
-		.qa_emp {background: url(/images/tongyang_worker_bg.png) no-repeat;padding: 10.0rem 0;background-size: cover}
-		.qa_emp .cnt-container {position: relative}
-		.rec_mod_interview .swiper {overflow: hidden}
-		.rec_mod_interview.sty02 .qa_mng img {bottom: -100px}
-		.rec_mod_interview.sty02 .qa_emp img {bottom: -100px}
-		.rec_mod_review.sty01 {background: url(/images/tongyang_review_bg.png) no-repeat;background-size: cover;}
-		.rec_mod_review.sty01 h3 {font-size: 3.4rem;margin-bottom: 4.0rem}
-		.rec_mod_review h3 span {color: #ffd014}
-		.rec_mod_welfare.sty02 .welfare_review_wrap {margin-top: 8.0rem;}
-	
-		
+		.qa_emp h3:after {
+			content: 'Interview';
+			display: inline-block;
+			color: #fff;
+			font-style: italic;
+			opacity: 0.4;
+			font-weight: 100
+		}
+
+		.qa_emp {
+			background: url(/images/tongyang_worker_bg.png) no-repeat;
+			padding: 10.0rem 0;
+			background-size: cover
+		}
+
+		.qa_emp .cnt-container {
+			position: relative
+		}
+
+		.rec_mod_interview .swiper {
+			overflow: hidden
+		}
+
+		.rec_mod_interview.sty02 .qa_mng img {
+			bottom: -100px
+		}
+
+		.rec_mod_interview.sty02 .qa_emp img {
+			bottom: -100px
+		}
+
+		.rec_mod_review.sty01 {
+			background: url(/images/tongyang_review_bg.png) no-repeat;
+			background-size: cover;
+		}
+
+		.rec_mod_review.sty01 h3 {
+			font-size: 3.4rem;
+			margin-bottom: 4.0rem
+		}
+
+		.rec_mod_review h3 span {
+			color: #ffd014
+		}
+
+		.rec_mod_welfare.sty02 .welfare_review_wrap {
+			margin-top: 8.0rem;
+		}
+
+		@media screen and (-ms-high-contrast: active),
+		(-ms-high-contrast: none) {
+			.rec_mod_welfare.sty02 .welfare_img {
+				display: flex;
+				flex-wrap: wrap
+			}
+
+			.rec_mod_welfare.sty02 .welfare_img>div {
+				width: 50%
+			}
+		}
+
 		@media all and (max-width:1400px) {
-			.rec_mod_strategy.sty01 .navy_bg:after {display: none;}
-			.rec_mod_strategy.sty01 .spec .cont_box {width: 100%;}
-			.rec_mod_finance.sty02 .local_rank_wrap .lank_img span {display: none;}
+			.rec_mod_strategy.sty01 .navy_bg:after {
+				display: none;
+			}
+
+			.rec_mod_strategy.sty01 .spec .cont_box {
+				width: 100%;
+			}
+
+			.rec_mod_finance.sty02 .local_rank_wrap .lank_img span {
+				display: none;
+			}
 		}
 
 		@media all and (max-width:1260px) {
-			.rec_mod_vision.sty01 {margin-top: 100px;}
-			.rec_mod_finance.sty02 .cnt-container:after{background-size: 350px;width: 350px;height: 300px;top: -280px}
+			.rec_mod_vision.sty01 {
+				margin-top: 100px;
+			}
+
+			.rec_mod_finance.sty02 .cnt-container:after {
+				background-size: 350px;
+				width: 350px;
+				height: 300px;
+				top: -280px
+			}
 		}
 
 		@media all and (max-width:1024px) {
-			.rec_mod_vision.sty01 {margin-top: 0px}
-			.rec_mod_interview.sty02 img {opacity: 0.7;}
+			.rec_mod_vision.sty01 {
+				margin-top: 0px
+			}
+
+			.rec_mod_interview.sty02 img {
+				opacity: 0.7;
+			}
+
 			.rec_mod_interview .swiper-button-prev:after,
-			.rec_mod_interview .swiper-button-prev:after {background-size: 25px !important;width: 25px !important;height: 40px !important;}
+			.rec_mod_interview .swiper-button-prev:after {
+				background-size: 25px !important;
+				width: 25px !important;
+				height: 40px !important;
+			}
+
 			.rec_mod_interview .swiper-button-next:after,
-			.rec_mod_interview .swiper-button-next:after {background-size: 25px !important;width: 25px !important;height: 40px !important;}
-			.rec_mod_finance.sty02 .cnt-container:after{display: none}
-			.rec_mod_percent.sty01{margin-top: 60px}
+			.rec_mod_interview .swiper-button-next:after {
+				background-size: 25px !important;
+				width: 25px !important;
+				height: 40px !important;
+			}
+
+			.rec_mod_finance.sty02 .cnt-container:after {
+				display: none
+			}
+
+			.rec_mod_percent.sty01 {
+				margin-top: 60px
+			}
 		}
 
 		@media all and (max-width:768px) {
-			.rec_mod_biz.sty01 .bizDiv {display: block;}
-			.rec_mod_biz.sty01 .bizDiv>div {width: 100%;margin-right: 0;margin-bottom: 4.0rem;}
-			.rec_mod_biz.sty01 .bizDiv>div:last-child {margin-bottom: 0;}
-			.rec_mod_biz.sty01 .bizDiv img {width: 200px;}
-			.rec_mod_biz.sty01 .bizDiv h4 {margin-top: 1.0rem;}
+			.rec_mod_biz.sty01 .bizDiv {
+				display: block;
+			}
+
+			.rec_mod_biz.sty01 .bizDiv>div {
+				width: 100%;
+				margin-right: 0;
+				margin-bottom: 4.0rem;
+			}
+
+			.rec_mod_biz.sty01 .bizDiv>div:last-child {
+				margin-bottom: 0;
+			}
+
+			.rec_mod_biz.sty01 .bizDiv img {
+				width: 200px;
+			}
+
+			.rec_mod_biz.sty01 .bizDiv h4 {
+				margin-top: 1.0rem;
+			}
+
 			.rec_mod_interview.sty02 .qa_mng img,
-			.rec_mod_interview.sty02 .qa_emp img {width: 250px}
-			.rec_mod_vision.sty01 p {font-size: 2.0rem;}
-			.rec_mod_vision.sty01 p br {display: none;word-break: keep-all;}
+			.rec_mod_interview.sty02 .qa_emp img {
+				width: 250px
+			}
+
+			.rec_mod_vision.sty01 p {
+				font-size: 2.0rem;
+			}
+
+			.rec_mod_vision.sty01 p br {
+				display: none;
+				word-break: keep-all;
+			}
 		}
 
 		@media all and (max-width:640px) {
-			.inf_mod_history.sty02 .history_wrap .history {padding: 20px 0;background-position: 77px 0;}
+			.inf_mod_history.sty02 .history_wrap .history {
+				padding: 20px 0;
+				background-position: 77px 0;
+			}
+
 			.inf_mod_history.sty02 .history_wrap .arrow_prev,
-			.inf_mod_history.sty02 .history_wrap .arrow_next {left: 80px;width: 30px;height: 30px;background-size: cover !important;}
-			.inf_mod_history.sty02 .history_wrap .arrow_next {background-position: -30px 0;}
-			.inf_mod_history.sty02 .history_wrap .history>div {background-position: 72px 50%;}
+			.inf_mod_history.sty02 .history_wrap .arrow_next {
+				left: 80px;
+				width: 30px;
+				height: 30px;
+				background-size: cover !important;
+			}
+
+			.inf_mod_history.sty02 .history_wrap .arrow_next {
+				background-position: -30px 0;
+			}
+
+			.inf_mod_history.sty02 .history_wrap .history>div {
+				background-position: 72px 50%;
+			}
 		}
 
 		@media all and (max-width:480px) {}
@@ -237,11 +636,10 @@
 	<!--//채용공고형 헤더영역 style01-->
 
 	<a name="recruit"></a>
-	<div class="module-wrap com_mod_recruit sty02">
-		<div class="bg_bot"></div>
-		<div class="cnt-container">
+	<div class="module-wrap com_mod_recruit sty02" id="recruitArea" style="display:none;">
+		<div class="cnt-container" id="recruitContainer">
 			<h3>채용공고</h3>
-			<table class="tb_recruit otherRecruit" summary="채용공고">
+			<table class="tb_recruit otherRecruit" style="display:none;" summary="채용공고">
 				<thead>
 					<tr>
 						<th>접수기간</th>
@@ -250,54 +648,18 @@
 					</tr>
 				</thead>
 				<tbody id="otherRecruitList">
-					<tr>
-						<td>2021.05.31 까지</td>
-						<td>풀스택 개발자 채용/경력채용/급여250만원</td>
-						<td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
-					</tr>
-					<tr>
-						<td>상시채용</td>
-						<td>생산직 지원 채용/경력 무관/급여220만원</td>
-						<td>계약직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
-					</tr>
-					<tr>
-						<td>상시채용</td>
-						<td>경영지원팀 직원 채용/경력 무관/급여220만원</td>
-						<td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
-					</tr>
+
 				</tbody>
 			</table>
-			<div class="box_recruit">
-				<h4>경기도일자리재단 신입 직원 채용<span class="period">상시채용</span></h4>
-				<hr />
-				<div class="detail_wrap">
-					<div>
-						<h5>지원자격</h5>
-						<dl class="clearfix">
-							<dt>경력</dt>
-							<dd>경력무관</dd>
-							<dt>학력</dt>
-							<dd>고졸이상</dd>
-							<dt>우대</dt>
-							<dd>인근거주자, 1종 보통운전면허, 회계실무자격증 FAT1급 이상</dd>
-						</dl>
-					</div>
-					<div>
-						<h5>근무조건</h5>
-						<dl class="clearfix">
-							<dt>고용형태</dt>
-							<dd>정규직</dd>
-							<dt>급여</dt>
-							<dd>220만원 이상</dd>
-							<dt>근무시간</dt>
-							<dd>주5일(월~금) 08:30~17:30</dd>
-						</dl>
-					</div>
+			<div class="box_recruit_wrap swiper">
+				<div class='swiper-wrapper'>
+
 				</div>
+				<div class="swiper-pagination"></div>
 			</div>
 		</div>
 	</div>
-	
+
 	<a name="strategy"></a>
 	<div class="module-wrap rec_mod_strategy sty01">
 		<div class="navy_bg">
@@ -422,7 +784,7 @@
 					</div>
 					<!-- //데이터 자동 삽입 -->
 				</div>
-					<div class="btn_wrap">
+				<div class="btn_wrap">
 					<div class="qm_btn_wrap">
 						<button type="button" class="qm_btn" onclick="onCntNew();">관심기업 등록하기</button>
 						<div class="qm_txt">
@@ -445,7 +807,80 @@
 			<p class="en">TONG YANG HISTORY</p>
 			<div class="history_wrap">
 				<div class="holder"></div>
-				<div id="history" class="history">연혁</div>
+				<div id="history" class="history">
+					<div><span>2018</span>
+						<ul>
+							<li>
+								<div class="month"></div>
+								<div class="event"><span>제1공장 공장/사업확장</span></div>
+							</li>
+						</ul>
+					</div>
+					<div><span>2015</span>
+						<ul>
+							<li>
+								<div class="month"></div>
+								<div class="event"><span>제2공장 공장/시설확장</span></div>
+							</li>
+						</ul>
+					</div>
+					<div><span>2014</span>
+						<ul>
+							<li>
+								<div class="month"></div>
+								<div class="event"><span>경기도 지역경제발전 유공 표창</span></div>
+							</li>
+						</ul>
+					</div>
+					<div><span>2013</span>
+						<ul>
+							<li>
+								<div class="month"></div>
+								<div class="event"><span>연구개발전담부서인정, 벤처기업지정, 특허출원</span></div>
+							</li>
+						</ul>
+					</div>
+					<div><span>2012</span>
+						<ul>
+							<li>
+								<div class="month"></div>
+								<div class="event"><span>기업은행 Family 기업 선정</span></div>
+							</li>
+						</ul>
+					</div>
+					<div><span>2010</span>
+						<ul>
+							<li>
+								<div class="month"></div>
+								<div class="event"><span>한구간업안전보건공단 CLEAN 사업장인증</span></div>
+							</li>
+						</ul>
+					</div>
+					<div><span>2005</span>
+						<ul>
+							<li>
+								<div class="month"></div>
+								<div class="event"><span>한국플라스틱포장용기협회 이사 선임</span></div>
+							</li>
+						</ul>
+					</div>
+					<div><span>2000</span>
+						<ul>
+							<li>
+								<div class="month"></div>
+								<div class="event"><span>ISO 9001 인증</span></div>
+							</li>
+						</ul>
+					</div>
+					<div><span>1998</span>
+						<ul>
+							<li>
+								<div class="month"></div>
+								<div class="event"><span>㈜효성 시트(SHEET) 사업부 인수 후 동양인터그트리㈜ 설립</span></div>
+							</li>
+						</ul>
+					</div>
+				</div>
 				<div class="arrow_prev">이전</div>
 				<div class="arrow_next">이후</div>
 			</div>
@@ -524,96 +959,122 @@
 			<div class="cnt-container">
 				<h3>주요제품</h3>
 				<div class="pd_wrap">
-					<div class="product">주요제품</div>
+					<div class="product">
+						<div>
+							<img src="images/tongyang_pdimg01.png" alt="주요제품">
+							<h4>주요제품</h4>
+							<p>주요제품</p>
+						</div>
+						<div>
+							<img src="images/tongyang_pdimg02.png" alt="주요제품">
+							<h4>주요제품</h4>
+							<p>주요제품</p>
+						</div>
+						<div>
+							<img src="images/tongyang_pdimg03.png" alt="주요제품">
+							<h4>주요제품</h4>
+							<p>주요제품</p>
+						</div>
+						<div>
+							<img src="images/tongyang_pdimg04.png" alt="주요제품">
+							<h4>주요제품</h4>
+							<p>주요제품</p>
+						</div>
+						<div>
+							<img src="images/tongyang_pdimg05.png" alt="주요제품">
+							<h4>주요제품</h4>
+							<p>주요제품</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 
 
 		<div class="module-wrap rec_mod_percent sty01">
-				<div class="cnt-container">
-					<div class="percent_wrap">
-						<div class="scale">
-							<p>규모형태</p>
-							<div class="circle">
-								<p>상위 <strong class="bpScale">-</strong>%</p>
-							</div>
-						</div>
-						<div class="profit">
-							<p>수익성</p>
-							<div class="circle">
-								<p>상위 <strong class="bpProfitability">-</strong>%</p>
-							</div>
-						</div>
-						<div class="stable">
-							<p>안정성</p>
-							<div class="circle">
-								<p>상위 <strong class="bpStability">-</strong>%</p>
-							</div>
-						</div>
-						<div class="growth">
-							<p>성장성</p>
-							<div class="circle">
-								<p>상위 <strong class="bpGrowthability">-</strong>%</p>
-							</div>
-						</div>
-						</div>
-					</div>
-					</div>
-
-
-		
-	<!-- 채용공고형 기업 재무정보 style02 -->
-	<div class="module-wrap rec_mod_finance sty02">
-		<!--기업 매출 및 이익-->
-		<div class="company_sale_wrap">
 			<div class="cnt-container">
-				<!--//top-->
-				<div class="white_box_sdw section">
-					<!--chart_wrap-->
-					<div class="chart_wrap">
-						<div>
-							<h3>매출액</h3>
-							<div class="box_infomation">
-								<ul class="chart_cont">
-									<li>
-										<em>최근 매출액</em>
-										<p><strong class="fiSales">3,103</strong>(백만원)</p>
-									</li>
-									<li>
-										<em>이전전년도 대비</em>
-										<p class="diff_calc diffSalamt"><strong>6.2</strong>%</p>
-									</li>
-								</ul>
-							</div>
-							<div id="graph_fiSales2"></div>
+				<div class="percent_wrap">
+					<div class="scale">
+						<p>규모형태</p>
+						<div class="circle">
+							<p>상위 <strong class="bpScale">-</strong>%</p>
 						</div>
-
-						<div>
-							<h3>당기순이익</h3>
-							<div class="box_infomation">
-								<ul class="chart_cont">
-									<li>
-										<em>최근 당기순이익</em>
-										<p><strong class="fiProfit">208</strong>(백만원)</p>
-									</li>
-									<li>
-										<em>이전전년도 대비</em>
-										<p class="diff_calc diffNetincm"><strong>333.3</strong>%</p>
-									</li>
-								</ul>
-							</div>
-							<div id="graph_fiProfit2"></div>
-						</div>
-
 					</div>
-					<!--//chart_wrap-->
+					<div class="profit">
+						<p>수익성</p>
+						<div class="circle">
+							<p>상위 <strong class="bpProfitability">-</strong>%</p>
+						</div>
+					</div>
+					<div class="stable">
+						<p>안정성</p>
+						<div class="circle">
+							<p>상위 <strong class="bpStability">-</strong>%</p>
+						</div>
+					</div>
+					<div class="growth">
+						<p>성장성</p>
+						<div class="circle">
+							<p>상위 <strong class="bpGrowthability">-</strong>%</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<!--//기업 매출 및 이익-->
-	</div>
-	<!-- //채용공고형 기업 재무정보 style02 -->
+
+
+
+		<!-- 채용공고형 기업 재무정보 style02 -->
+		<div class="module-wrap rec_mod_finance sty02">
+			<!--기업 매출 및 이익-->
+			<div class="company_sale_wrap">
+				<div class="cnt-container">
+					<!--//top-->
+					<div class="white_box_sdw section">
+						<!--chart_wrap-->
+						<div class="chart_wrap">
+							<div>
+								<h3>매출액</h3>
+								<div class="box_infomation">
+									<ul class="chart_cont">
+										<li>
+											<em>최근 매출액</em>
+											<p><strong class="fiSales">3,103</strong>(백만원)</p>
+										</li>
+										<li>
+											<em>이전전년도 대비</em>
+											<p class="diff_calc diffSalamt"><strong>6.2</strong>%</p>
+										</li>
+									</ul>
+								</div>
+								<div id="graph_fiSales2"></div>
+							</div>
+
+							<div>
+								<h3>당기순이익</h3>
+								<div class="box_infomation">
+									<ul class="chart_cont">
+										<li>
+											<em>최근 당기순이익</em>
+											<p><strong class="fiProfit">208</strong>(백만원)</p>
+										</li>
+										<li>
+											<em>이전전년도 대비</em>
+											<p class="diff_calc diffNetincm"><strong>333.3</strong>%</p>
+										</li>
+									</ul>
+								</div>
+								<div id="graph_fiProfit2"></div>
+							</div>
+
+						</div>
+						<!--//chart_wrap-->
+					</div>
+				</div>
+			</div>
+			<!--//기업 매출 및 이익-->
+		</div>
+		<!-- //채용공고형 기업 재무정보 style02 -->
 
 
 		<div class="module-wrap rec_mod_vision sty01">
@@ -623,10 +1084,10 @@
 					<div class="swiper-container">
 						<div class="swiper-wrapper">
 							<p class="swiper-slide vision">
-
+2025년까지 국내시장의 PS시트 분야 외 PET, PP 시트 시장까지 국내최대 생산/판매를 목표로 합니다.
 							</p>
 							<p class="swiper-slide mission">
-
+최고의 품질과 고객 신뢰 고객만족을 실현하기 위해 지속적인 투자와 연구개발에 투자하겠습니다
 							</p>
 						</div>
 
@@ -644,83 +1105,81 @@
 			</div>
 		</div>
 
-		<!-- 채용공고형 기업 복리후생 style01 -->
-		<div class="module-wrap rec_mod_welfare sty02">
-			<div class="cnt-container">
-				<h3>복리후생</h3>
-				<div class="culture_wrap">
-					<div class="swiper dvCulture">
-						조직문화
-					</div>
-				</div>
-				<div class="welfare_wrap">
-					<div class="swiper welfare">
-						복리후생
-					</div>
-				</div>
-				<div class="welfare_img">
-					<div class="item1">
-						<p>중식지원</p>
-					</div>
-					<div class="item2">
-						<p>경조사지원</p>
-					</div>
-					<div class="item3">
-						<p>간식 무제한 제공</p>
-					</div>
-					<div class="item4">
-						<p>기숙사지원</p>
-					</div>
-				</div>
-			</div>
+<div class="module-wrap rec_mod_welfare sty02">
+        <div class="cnt-container">
+            <h3>복리후생</h3>
+            <div class="culture_wrap dvCulture"><div class="swiper-wrapper"><div class="swiper-slide"><div><div class="tit">공제</div><div class="desc">청년내일체움공제</div></div></div><div class="swiper-slide"><div><div class="tit">연금/보험</div><div class="desc">4대보험, 퇴직연금, 상해보험</div></div></div><div class="swiper-slide"><div><div class="tit">생활편의</div><div class="desc">건강검진, 중식제공, 근무복 지급, 간식+저녁 제공</div></div></div><div class="swiper-slide"><div><div class="tit">사내시설</div><div class="desc">휴계공간, 기숙사운영</div></div></div><div class="swiper-slide"><div><div class="tit">휴무/휴가</div><div class="desc">육아휴직, 산전 후 휴가, 보건 휴가, 출산전후휴가, 육아기 근로시간 단축제도, 가족돌봄 휴직/휴가/근로시간 단축제도</div></div></div><div class="swiper-slide"><div><div class="tit">보상/수당</div><div class="desc">창립일 선물지급, 경조사지원</div></div></div><div class="swiper-slide"><div><div class="tit">조직문화</div><div class="desc">수평적인 문화</div></div></div></div></div>
+            <div class="welfare_wrap">
+                <div class="swiper welfare"><div class="swiper-wrapper"><div class="swiper-slide facilities"><dl><dt>사내시설</dt><dd>기숙사 운영</dd></dl></div></div></div>
+            </div>
+            <div class="welfare_img">
+                <div class="item1">
+                    <p>중식지원</p>
+                </div>
+                <div class="item2">
+                    <p>경조사지원</p>
+                </div>
+                <div class="item3">
+                    <p>간식 무제한 제공</p>
+                </div>
+                <div class="item4">
+                    <p>기숙사지원</p>
+                </div>
+            </div>
+        </div>
 
-			<!--welfare_review-->
-			<div class="welfare_review_wrap section_pd">
-				<div class="cnt-container">
-					<h3>
-						현직자 <span>복지 사용후기</span>
-					</h3>
-					<div class="welfare_review">
-						<div>
-							<div class="tit">
-								<div class="team">영업팀</div><div class="name">이영호 사원</div>
-							</div>
-							<dv class="desc">
-								<p>저는 영업팀에서 근무중인 이영호라고 합니다. <br>
-									평소 출퇴근 거리가 먼 저에게 회사에서 근처에 있는 기숙사(원룸)를 제공해주어 출퇴근 시간을 줄이고 저녁식사까지 <br>
-									제공해주어 회사에서 많은것들을 해결하여 보다 여유로운 퇴근후의 삶을 지내고 있습니다.<br /><br />
+        <!--welfare_review-->
+        <div class="welfare_review_wrap section_pd">
+            <div class="cnt-container">
+                <h3>
+                    현직자 <span>복지 사용후기</span>
+                </h3>
+                <div class="welfare_review">
+                    <div>
+                        <div class="tit">
+                            <div class="team">영업팀</div><div class="name">이영호 사원</div>
+                        </div>
+                        <dv class="desc">
+                            <p>저는 영업팀에서 근무중인 이영호라고 합니다. <br>
+                                평소 출퇴근 거리가 먼 저에게 회사에서 근처에 있는 기숙사(원룸)를 제공해주어 출퇴근 시간을 줄이고 저녁식사까지 <br>
+                                제공해주어 회사에서 많은것들을 해결하여 보다 여유로운 퇴근후의 삶을 지내고 있습니다.<br><br>
 
-									#수평적인 문화 #9-6 (주5일근무) #저녁무료제공 #기숙사
-								</p>
-							</dv>
-						</div>
-					</div>
-				</div>
-				<!--//welfare_review-->
-			<div class="btn_wrap">
-					<div class="qm_btn_wrap">
-						<button type="button" class="qm_btn" onclick="onCntNew();">관심기업 등록하기</button>
-						<div class="qm_txt">
-							<a href="javascript:vold">도움말</a>
-							<span>관심기업으로 등록하면 채용 공고 마감일을 알람으로 받아보실 수 있습니다.</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--//welfare_review-->
-		</div>
-		<!-- //채용공고형 기업 복리후생 style01 -->
+                                #수평적인 문화 #9-6 (주5일근무) #저녁무료제공 #기숙사
+                            </p>
+                        </dv>
+                    </div>
+                </div>
+            </div>
+            <!--//welfare_review-->
+        <div class="btn_wrap">
+                <div class="qm_btn_wrap">
+                    <button type="button" class="qm_btn" onclick="onCntNew();">관심기업 등록하기</button>
+                    <div class="qm_txt">
+                        <a href="javascript:vold">도움말</a>
+                        <span>관심기업으로 등록하면 채용 공고 마감일을 알람으로 받아보실 수 있습니다.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//welfare_review-->
+    </div>
 
 	</div>
 	<!--//summary_bg-->
 
 
-<a name="interview"></a>
+	<a name="interview"></a>
 	<div class="module-wrap rec_mod_interview sty02">
 		<div class="iv_wrap qa_ceo">
 			<div class="cnt-container">
 				<h3>CEO 인터뷰</h3>
-				<div class="swiper ivCeo">대표이사 인터뷰</div>
+				<div class="swiper ivCeo">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><div class="q">회사의 설립배경, 경영철학, 경영이념에 대해 설명해 주세요.</div><div class="a">저희 동양인더스트리㈜는 1998년 동양나이론 (현. 주식회사 효성)에서 PS-SHEET 사업부분을 인수하여 신규 법인을 설립하였고 현재 PS, PP, PET SHEET 생산 및 판매를 하고 있습니다. 저희 동양인더스트리㈜의 경영철학은 최고 품질의 제품을 최상의 가격으로 고객이 감동할 때까지 노력을 멈추지 않겠습니다</div></div>
+						<div class="swiper-slide"><div class="q">회사의 설립배경, 경영철학, 경영이념에 대해 설명해 주세요.</div><div class="a">저희 동양인더스트리㈜는 1998년 동양나이론 (현. 주식회사 효성)에서 PS-SHEET 사업부분을 인수하여 신규 법인을 설립하였고 현재 PS, PP, PET SHEET 생산 및 판매를 하고 있습니다. 저희 동양인더스트리㈜의 경영철학은 최고 품질의 제품을 최상의 가격으로 고객이 감동할 때까지 노력을 멈추지 않겠습니다</div></div>
+						<div class="swiper-slide"><div class="q">회사의 설립배경, 경영철학, 경영이념에 대해 설명해 주세요.</div><div class="a">저희 동양인더스트리㈜는 1998년 동양나이론 (현. 주식회사 효성)에서 PS-SHEET 사업부분을 인수하여 신규 법인을 설립하였고 현재 PS, PP, PET SHEET 생산 및 판매를 하고 있습니다. 저희 동양인더스트리㈜의 경영철학은 최고 품질의 제품을 최상의 가격으로 고객이 감동할 때까지 노력을 멈추지 않겠습니다</div></div>
+					</div>
+				</div>
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-scrollbar"></div>
@@ -732,8 +1191,16 @@
 				<h3>
 					<span>인사담당자</span> 인터뷰
 				</h3>
-				<div class="ivMngPhoto photo">인사담당자 사진</div>
-				<div class="swiper ivMng">인사담당자 인터뷰</div>
+				<div class="ivMngPhoto photo">	
+				<img src="/images/tongyang_recruiter_img.png" alt="인사담당자"></div>
+				<div class="swiper ivMng">
+					
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><div class="q">회사의 설립배경, 경영철학, 경영이념에 대해 설명해 주세요.</div><div class="a">저희 동양인더스트리㈜는 1998년 동양나이론 (현. 주식회사 효성)에서 PS-SHEET 사업부분을 인수하여 신규 법인을 설립하였고 현재 PS, PP, PET SHEET 생산 및 판매를 하고 있습니다. 저희 동양인더스트리㈜의 경영철학은 최고 품질의 제품을 최상의 가격으로 고객이 감동할 때까지 노력을 멈추지 않겠습니다</div></div>
+						<div class="swiper-slide"><div class="q">회사의 설립배경, 경영철학, 경영이념에 대해 설명해 주세요.</div><div class="a">저희 동양인더스트리㈜는 1998년 동양나이론 (현. 주식회사 효성)에서 PS-SHEET 사업부분을 인수하여 신규 법인을 설립하였고 현재 PS, PP, PET SHEET 생산 및 판매를 하고 있습니다. 저희 동양인더스트리㈜의 경영철학은 최고 품질의 제품을 최상의 가격으로 고객이 감동할 때까지 노력을 멈추지 않겠습니다</div></div>
+						<div class="swiper-slide"><div class="q">회사의 설립배경, 경영철학, 경영이념에 대해 설명해 주세요.</div><div class="a">저희 동양인더스트리㈜는 1998년 동양나이론 (현. 주식회사 효성)에서 PS-SHEET 사업부분을 인수하여 신규 법인을 설립하였고 현재 PS, PP, PET SHEET 생산 및 판매를 하고 있습니다. 저희 동양인더스트리㈜의 경영철학은 최고 품질의 제품을 최상의 가격으로 고객이 감동할 때까지 노력을 멈추지 않겠습니다</div></div>
+					</div>
+				</div>
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-scrollbar"></div>
@@ -742,10 +1209,16 @@
 		<div class="iv_wrap qa_emp">
 			<div class="cnt-container">
 				<h3>
-					<span>인사담당자</span> 인터뷰
+					<span>현직자</span> 인터뷰
 				</h3>
-				<div class="ivEmpPhoto photo">인사담당자 사진</div>
-				<div class="swiper ivEmp">인사담당자 인터뷰</div>
+				<div class="ivEmpPhoto photo">
+					<img src="/images/tongyang_worker_img.png" alt="현직자">
+				</div>
+				<div class="swiper ivEmp">	<div class="swiper-wrapper">
+						<div class="swiper-slide"><div class="q">회사의 설립배경, 경영철학, 경영이념에 대해 설명해 주세요.</div><div class="a">저희 동양인더스트리㈜는 1998년 동양나이론 (현. 주식회사 효성)에서 PS-SHEET 사업부분을 인수하여 신규 법인을 설립하였고 현재 PS, PP, PET SHEET 생산 및 판매를 하고 있습니다. 저희 동양인더스트리㈜의 경영철학은 최고 품질의 제품을 최상의 가격으로 고객이 감동할 때까지 노력을 멈추지 않겠습니다</div></div>
+						<div class="swiper-slide"><div class="q">회사의 설립배경, 경영철학, 경영이념에 대해 설명해 주세요.</div><div class="a">저희 동양인더스트리㈜는 1998년 동양나이론 (현. 주식회사 효성)에서 PS-SHEET 사업부분을 인수하여 신규 법인을 설립하였고 현재 PS, PP, PET SHEET 생산 및 판매를 하고 있습니다. 저희 동양인더스트리㈜의 경영철학은 최고 품질의 제품을 최상의 가격으로 고객이 감동할 때까지 노력을 멈추지 않겠습니다</div></div>
+						<div class="swiper-slide"><div class="q">회사의 설립배경, 경영철학, 경영이념에 대해 설명해 주세요.</div><div class="a">저희 동양인더스트리㈜는 1998년 동양나이론 (현. 주식회사 효성)에서 PS-SHEET 사업부분을 인수하여 신규 법인을 설립하였고 현재 PS, PP, PET SHEET 생산 및 판매를 하고 있습니다. 저희 동양인더스트리㈜의 경영철학은 최고 품질의 제품을 최상의 가격으로 고객이 감동할 때까지 노력을 멈추지 않겠습니다</div></div>
+					</div></div>
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-scrollbar"></div>
@@ -815,30 +1288,30 @@
 		</div>
 	</div>
 	<!-- //매거진형 현직자 인터뷰 style02-->
-	
+
 	<!-- 1102추가 -->
-<a name="news"></a>
+	<a name="news"></a>
 	<div class="module-wrap com_mod_news sty01">
 		<div class="cnt-container">
-		<div id="news_wrap">
-			<div class="news_row">
-				<a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
-				<div class="desc">
-					경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
-					'2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
-					친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+			<div id="news_wrap">
+				<div class="news_row">
+					<a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
+					<div class="desc">
+						경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
+						'2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
+						친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+					</div>
+					<div class="reg_date">2021.05.15</div>
 				</div>
-				<div class="reg_date">2021.05.15</div>
-			</div>
-			<div class="news_row">
-				<a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
-				<div class="desc">
-					경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
-					'2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
-					친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+				<div class="news_row">
+					<a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
+					<div class="desc">
+						경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
+						'2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
+						친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+					</div>
+					<div class="reg_date">2021.05.15</div>
 				</div>
-				<div class="reg_date">2021.05.15</div>
-			</div>
 			</div>
 			<div class="paging_wrap">
 				<a href="javascript:void(0);" class="prev disable">이전</a>
@@ -852,7 +1325,7 @@
 		</div>
 	</div>
 
-<!-- 
+	<!-- 
 	<div class="module-wrap com_mod_news sty02">
 		<div class="cnt-container">
 			<div class="news_row">
@@ -903,8 +1376,8 @@
 		</div>
 	</div>
 뉴스 -->
-	
-	
+
+
 
 	<div class="module-wrap com_mod_map">
 		<div id="map"></div>
@@ -986,39 +1459,7 @@
 	<script src="/js/pt-common.js"></script>
 	<script src="/module/jsontohtml.js"></script>
 	<script>
-		xmlhttp.open("GET", "/module/1380697608.json");
-		xmlhttp.onloadend = function() {
-			var ctLabelData1 = $('.ctLabel span:nth-child(1)').text();
-			var ctLabelData2 = $('.ctLabel span:nth-child(2)').text();
-			var ctLabelData3 = $('.ctLabel span:nth-child(3)').text();
-			var joinCnt1 = $('.joinCnt span:nth-child(1)').text();
-			var joinCnt2 = $('.joinCnt span:nth-child(2)').text();
-			var joinCnt3 = $('.joinCnt span:nth-child(3)').text();
-			var resignCnt1 = $('.resignCnt span:nth-child(1)').text();
-			var resignCnt2 = $('.resignCnt span:nth-child(2)').text();
-			var resignCnt3 = $('.resignCnt span:nth-child(3)').text();
-			var totalCnt1 = $('.totalCnt span:nth-child(1)').text();
-			var totalCnt2 = $('.totalCnt span:nth-child(2)').text();
-			var totalCnt3 = $('.totalCnt span:nth-child(3)').text();
-			var fiYear1 = $('.financeYear span:nth-child(1)').text();
-			var fiYear2 = $('.financeYear span:nth-child(2)').text();
-			var fiYear3 = $('.financeYear span:nth-child(3)').text();
-			var fiCapital1 = $('.financeCapital span:nth-child(1)').text();
-			var fiCapital2 = $('.financeCapital span:nth-child(2)').text();
-			var fiCapital3 = $('.financeCapital span:nth-child(3)').text();
-			var fiSales1 = $('.financeSales span:nth-child(1)').text();
-			var fiSales2 = $('.financeSales span:nth-child(2)').text();
-			var fiSales3 = $('.financeSales span:nth-child(3)').text();
-			var fiProfit1 = $('.financeProfit span:nth-child(1)').text();
-        	var fiProfit2 = $('.financeProfit span:nth-child(2)').text();
-        	var fiProfit3 = $('.financeProfit span:nth-child(3)').text();
-        
-			var comName = $('h2.comName').text();
-			var comAddress = $('.comAddress').text();
 
-			//매출액
-			
-			
 		var chart32 = bb.generate({
 			bindto: "#graph_fiSales2",
 			data: {
@@ -1032,10 +1473,10 @@
 				}
 			},
 			padding: {
-				top:    20,
+				top: 20,
 				//bottom: 20,
 				//right:  0,
-				left:   40
+				left: 40
 			},
 			grid: {
 				x: {
@@ -1045,7 +1486,7 @@
 					show: true
 				}
 			},
-			axis:{
+			axis: {
 				x: {
 					type: "category",
 					categories: [2021, 2020, 2019],
@@ -1058,14 +1499,14 @@
 			bar: {
 				width: {
 					max: 60
-				} 
+				}
 			},
 			legend: {
 				show: false
 			}
 		});
-			
-		var chart42 = bb.generate({
+		
+			var chart42 = bb.generate({
 			bindto: "#graph_fiProfit2",
 			data: {
 				type: "bar",
@@ -1078,10 +1519,10 @@
 				}
 			},
 			padding: {
-				top:    20,
+				top: 20,
 				//bottom: 20,
 				//right:  0,
-				left:   40
+				left: 40
 			},
 			grid: {
 				x: {
@@ -1091,7 +1532,7 @@
 					show: true
 				}
 			},
-			axis:{
+			axis: {
 				x: {
 					type: "category",
 					categories: [2021, 2020, 2019],
@@ -1104,165 +1545,131 @@
 			bar: {
 				width: {
 					max: 60
-				} 
+				}
 			},
 			legend: {
 				show: false
 			}
 		});
+		
+		
 
-			// 주요제품
-			$('.pd_wrap').addClass('swiper-container');
-			$('.pd_wrap').append('<div class="swiper-button-next"></div><div class="swiper-button-prev"></div>');
-			$('.product').addClass('swiper-wrapper');
-			$('.product > div').addClass('swiper-slide');
+		// 주요제품
+		$('.pd_wrap').addClass('swiper-container');
+		$('.pd_wrap').append('<div class="swiper-button-next"></div><div class="swiper-button-prev"></div>');
+		$('.product').addClass('swiper-wrapper');
+		$('.product > div').addClass('swiper-slide');
 
 
-			var pdSlider = new Swiper('.pd_wrap', {
-				arrows: true,
-				slidesPerView: 5,
-				observer: true,
-				observeParents: true,
-				spaceBetween: 24,
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
+		var pdSlider = new Swiper('.pd_wrap', {
+			arrows: true,
+			slidesPerView: 5,
+			observer: true,
+			observeParents: true,
+			spaceBetween: 24,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			breakpoints: {
+				1260: {
+					slidesPerView: 5,
 				},
-				breakpoints: {
-					1260: {
-						slidesPerView: 5,
-					},
-					1024: {
-						slidesPerView: 4,
-					},
-					768: {
-						slidesPerView: 3,
-					},
+				1024: {
+					slidesPerView: 4,
+				},
+				768: {
+					slidesPerView: 3,
+				},
 
-					640: {
-						slidesPerView: 2,
-					},
-					0: {
-						slidesPerView: 2,
-					},
+				640: {
+					slidesPerView: 2,
+				},
+				0: {
+					slidesPerView: 2,
+				},
+			}
+		});
+
+		var vision = new Swiper(".vision_wrap .swiper-container", {
+			slidesPerView: 1,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: ".vision_wrap .swiper-button-next",
+				prevEl: ".vision_wrap .swiper-button-prev"
+			},
+		});
+
+		var ivCeo = new Swiper(".ivCeo", {
+			slidesPerView: 1,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: ".qa_ceo .swiper-button-next",
+				prevEl: ".qa_ceo .swiper-button-prev"
+			},
+			scrollbar: {
+				el: '.qa_ceo .swiper-scrollbar',
+				draggable: true,
+				hide: false
+			},
+			breakpoints: {
+				1260: {
+					autoHeight: false
+				},
+				300: {
+					autoHeight: true
 				}
-			});
-			
-			var vision = new Swiper(".vision_wrap .swiper-container", {
-				slidesPerView: 1,
-				spaceBetween: 30,
-				navigation: {
-					nextEl: ".vision_wrap .swiper-button-next",
-					prevEl: ".vision_wrap .swiper-button-prev"
-				},
-			});
-
-			var ivCeo = new Swiper(".ivCeo", {
-				slidesPerView: 1,
-				spaceBetween: 30,
-				navigation: {
-					nextEl: ".qa_ceo .swiper-button-next",
-					prevEl: ".qa_ceo .swiper-button-prev"
-				},
-				scrollbar: {
-					el: '.qa_ceo .swiper-scrollbar',
-					draggable: true,
-					hide: false
-				},
-				breakpoints: {
-					1260: {
-						autoHeight: false
-					},
-					300: {
-						autoHeight: true
-					}
-				}
-			});
+			}
+		});
 
 
-			var mngIvSlider = new Swiper(".ivMng", {
-				slidesPerView: 1,
-				spaceBetween: 30,
-				navigation: {
-					nextEl: ".qa_mng .swiper-button-next",
-					prevEl: ".qa_mng .swiper-button-prev"
-				},
-				scrollbar: {
-					el: '.qa_mng .swiper-scrollbar',
-					draggable: true,
-					hide: false
-				}
-			});
+		var mngIvSlider = new Swiper(".ivMng", {
+			slidesPerView: 1,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: ".qa_mng .swiper-button-next",
+				prevEl: ".qa_mng .swiper-button-prev"
+			},
+			scrollbar: {
+				el: '.qa_mng .swiper-scrollbar',
+				draggable: true,
+				hide: false
+			}
+		});
 
 
-			var empIvSlider = new Swiper(".ivEmp", {
-				slidesPerView: 1,
-				spaceBetween: 30,
-				navigation: {
-					nextEl: ".qa_emp .swiper-button-next",
-					prevEl: ".qa_emp .swiper-button-prev"
-				},
-				scrollbar: {
-					el: '.qa_emp .swiper-scrollbar',
-					draggable: true,
-					hide: false
-				}
-			});
+		var empIvSlider = new Swiper(".ivEmp", {
+			slidesPerView: 1,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: ".qa_emp .swiper-button-next",
+				prevEl: ".qa_emp .swiper-button-prev"
+			},
+			scrollbar: {
+				el: '.qa_emp .swiper-scrollbar',
+				draggable: true,
+				hide: false
+			}
+		});
 
+		$('.dvWelfare > div > div:nth-child(1)').each(function(){
+			$(this).children().addClass('wel01')
+		});
+			$('.dvWelfare > div > div:nth-child(2)').each(function(){
+			$(this).children().addClass('wel02')
+		});
 
-	
+			$('.dvWelfare > div > div:nth-child(3)').each(function(){
+			$(this).children().addClass('wel03')
+		});
 
+			$('.dvWelfare > div > div:nth-child(4)').each(function(){
+			$(this).children().addClass('wel04')
+		});
 
+			$('.dvWelfare > div > div:nth-child(5)').each(function(){
+			$(this).children().addClass('wel05')
+		});
 
-			// 주소-좌표 변환 객체를 생성합니다
-			var geocoder = new kakao.maps.services.Geocoder();
-
-			// 주소로 좌표를 검색합니다
-			geocoder.addressSearch(comAddress, function(result, status) {
-
-				// 정상적으로 검색이 완료됐으면 
-				if (status === kakao.maps.services.Status.OK) {
-
-					var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
-					//console.log(result[0].y+' / '+result[0].x);
-
-					var imageSrc = '/images/ico_mark.png', // 마커이미지의 주소입니다    
-						imageSize = new kakao.maps.Size(34, 48), // 마커이미지의 크기입니다
-						imageOption = {
-							offset: new kakao.maps.Point(16, 48)
-						};
-
-					// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-					var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption)
-
-					// 결과값으로 받은 위치를 마커로 표시합니다
-					var marker = new kakao.maps.Marker({
-						map: map,
-						position: coords,
-						image: markerImage
-					});
-
-					// 마커가 지도 위에 표시되도록 설정합니다
-					marker.setMap(map);
-
-					var content = '<div class="customoverlay">' + comName + '</div>';
-
-					var customOverlay = new kakao.maps.CustomOverlay({
-						map: map,
-						position: coords,
-						content: content,
-						yAnchor: 1
-					});
-
-					// 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
-					map.setCenter(coords);
-
-					var find_road = "https://map.kakao.com/link/to/" + comName + "," + result[0].y + "," + result[0].x;
-					//console.log(find_road);
-					$(".find_road").attr("href", find_road);
-				}
-			});
-		};
-		xmlhttp.send();
 	</script>
 </body></html>

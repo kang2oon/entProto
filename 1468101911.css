@@ -1,0 +1,46 @@
+/* 고객인터뷰 수정*/
+.mod_client_review{background: #bcfed5;padding: 8rem 0}
+.mod_client_review h3 {text-align: center;font-size: 4rem;color: #15512b;padding:  0 6rem 0}
+
+.mod_client_review .cnt-container{max-width: 1600px;margin: auto}
+.mod_client_review .client_review_wrap .item{display: flex;justify-content: space-between;align-items:flex-start}
+.mod_client_review .client_review_wrap .item >div{display: flex;align-items: flex-end;width: calc(50% - 40px);justify-content: space-between}
+.mod_client_review .client_review_wrap .q{flex-direction: row-reverse;}
+.mod_client_review .client_review_wrap>div .txt{font-size: 2.2rem;font-weight: bold;position: relative;padding: 2rem;text-align: center;border-radius: 100px;word-break: keep-all;width: calc(100% - 210px)}
+.mod_client_review .client_review_wrap .q .txt{background: #ffe6bf;margin: 2rem;}
+.mod_client_review .client_review_wrap .q .txt:after{content: '';display: block;background: url(images/@bb01_6908701822.png) no-repeat;width: 26px;height: 20px;position: absolute;left: 0}
+.mod_client_review .client_review_wrap .a{padding-top: 10rem}
+.mod_client_review .client_review_wrap .a .txt{background: #37b566;margin: 2rem;color: #fff}
+.mod_client_review .client_review_wrap .a .txt:after{content: '';display: block;background: url(images/@bb02_6908701822.png) no-repeat;width: 26px;height: 20px;position: absolute;right: 0}
+
+.mod_client_review .client_review_wrap .item:nth-child(4) .a .txt,
+.mod_client_review .client_review_wrap .item:nth-child(5) .a .txt{border-radius: 40px}
+
+.summary .cnt-container > img{max-width: 600px;width: 100%;margin-bottom: 4rem}
+.module-wrap.edit_wrap.summary {text-align: center}
+.absoluteText{position: static;background: none;transform: none !important;color: #333;font-size: 1.6rem !important;margin-bottom: 2rem}
+.vision:before{content: '비전';display: block;font-weight: bold;background: #c9c9c9;padding: 0.5rem 2rem;border-radius: 20px;color: #fff;margin-right: 2rem;width: 85px;margin: 0 auto 2rem auto}
+.mission:before{content: '미션';display: block;font-weight: bold;background: #c9c9c9;padding: 0.5rem 2rem;border-radius: 20px;color: #fff;margin-right: 2rem;width: 85px;margin: 0 auto 2rem auto}
+.keyValue:before{content: '핵심가치';display: block;font-weight: bold;background: #377cd9;padding: 0.5rem 2rem;border-radius: 20px;color: #fff;margin-right: 2rem;width: 85px;margin: 0 auto 2rem auto}
+.keyTask:before{content: '기업전략과제';display: block;font-weight: bold;background: #377cd9;padding: 0.5rem 2rem;border-radius: 20px;color: #fff;margin-right: 2rem;width: 85px;margin: 0 auto 2rem auto}
+.slogan:before{content: '슬로건';display: block;font-weight: bold;background: #546775;padding: 0.5rem 2rem;border-radius: 20px;color: #fff;margin-right: 2rem;width: 85px;margin: 0 auto 2rem auto}
+.injae:before{content: '인재상';display: block;font-weight: bold;background: #313436;padding: 0.5rem 2rem;border-radius: 20px;color: #fff;margin-right: 2rem;width: 85px;margin: 0 auto 2rem auto}
+
+
+@media all and (max-width:1260px){
+	.mod_client_review .client_review_wrap .item{flex-direction: column;}
+	.mod_client_review .client_review_wrap .item >div{width: 100%;}
+	.mod_client_review .client_review_wrap .a{padding-top: 0;margin: 3rem 0}
+	.mod_client_review .client_review_wrap>div .txt{width: calc(100% - 150px)}
+}
+
+@media all and (max-width:640px){
+	.client_review_wrap .img{display: none}
+	.mod_client_review .client_review_wrap>div .txt{width: 100%}
+	
+	.mod_client_review .client_review_wrap{margin-top: 4rem}
+	.mod_client_review .client_review_wrap .q .txt,
+	.mod_client_review .client_review_wrap .a .txt{margin: 0}
+	.mod_client_review .client_review_wrap .a{margin: 2rem 0 6rem 0}
+	.mod_client_review .client_review_wrap>div .txt{border-radius: 20px}
+}
