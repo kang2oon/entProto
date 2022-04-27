@@ -857,6 +857,16 @@
 			<div class="product">
 				<div class="item">
 					<div class="img">
+						<img src='images/a_pro_img01.png' alt=''>
+					</div>
+					<div class="txt">
+						<h4>타이틀</h4>
+						<p>다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="img">
 						<img src='images/a_pro_img02.png' alt=''>
 					</div>
 					<div class="txt">
@@ -864,6 +874,17 @@
 						<p>다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요</p>
 					</div>
 				</div>
+
+				<div class="item">
+					<div class="img">
+						<img src='images/a_pro_img03.png' alt=''>
+					</div>
+					<div class="txt">
+						<h4>타이틀</h4>
+						<p>다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요</p>
+					</div>
+				</div>
+
 				<div class="item">
 					<div class="img">
 						<img src='images/a_pro_img04.png' alt=''>
@@ -876,7 +897,7 @@
 
 				<div class="item">
 					<div class="img">
-						<img src='images/a_pro_img06.png' alt=''>
+						<img src='images/a_pro_img05.png' alt=''>
 					</div>
 					<div class="txt">
 						<h4>타이틀</h4>
@@ -892,36 +913,6 @@
 						<p>다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요</p>
 					</div>
 				</div>
-				<div class="item">
-					<div class="img">
-						<img src='images/a_pro_img06.png' alt=''>
-					</div>
-					<div class="txt">
-						<h4>타이틀</h4>
-						<p>다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요</p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src='images/a_pro_img04.png' alt=''>
-					</div>
-					<div class="txt">
-						<h4>타이틀</h4>
-						<p>다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요</p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src='images/a_pro_img02.png' alt=''>
-					</div>
-					<div class="txt">
-						<h4>타이틀</h4>
-						<p>다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요</p>
-					</div>
-				</div>
-
-
-
 			</div>
 		</div>
 	</div>
@@ -1148,7 +1139,7 @@
 						스스로 책임감을 갖고
 						주도적으로 업무처리처리</p>
 				</div>
-				
+
 				<div class="item">
 					<p class="tit">2자율과 신뢰</p>
 					<p class="desc">업무에 자율권을
@@ -1526,7 +1517,7 @@
 			<div class="interview_tip section_mg">
 				<h3 class="aType_tit02">채용담당자가 직접 알려주는 면접 꿀팁!</h3>
 				<div class="it_img">
-				<img src="images/strategy02_img04.png" alt="인사담당자 사진">
+					<img src="images/strategy02_img04.png" alt="인사담당자 사진">
 				</div>
 				<div class="interview_tip_wrap qa_area section_mg">
 					<div class="item">
@@ -1712,12 +1703,12 @@
 		});
 
 		$(document).ready(function() {
-			
-				// 관심기업 등록하기 버튼
+
+			// 관심기업 등록하기 버튼
 			$('.qm_txt a').click(function() {
 				$(this).parent().find('span').toggle()
 			})
-			
+
 			// --- 스크롤 메뉴 수정 --
 			$('.com_mod_anchor li a').hide();
 
@@ -2023,6 +2014,7 @@
 				$('.product').slick({
 					rows: 2,
 					slidesToShow: 3,
+					infinite: false,
 					prevArrow: '<button class="slick-prev black_arrow new_arrow"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>',
 					nextArrow: '<button class="slick-next black_arrow new_arrow"><span class="material-symbols-outlined">arrow_forward_ios</span></button>',
 					responsive: [{
@@ -2045,7 +2037,16 @@
 				});
 				$('.product  .slick-dots').addClass('a_dot');
 			} else {
-				proItem.addClass('lt_pro')
+				proItem.addClass('lt_pro');
+				$('.a_mod_product .product').masonry({
+					// options
+					itemSelector: '.item',
+					fitwidth: true,
+					gutter: 13,
+					horizontalOrder: true,
+					isAnimated: true
+				});
+
 			}
 
 			// 기업인증 5개 이하일 때
@@ -2151,8 +2152,6 @@
 
 				} else {
 					welItem.parent().addClass('mg_item');
-
-
 					$('.a_mod_welfare .welfare').masonry({
 						// options
 						itemSelector: '.item',
@@ -2162,7 +2161,6 @@
 						isAnimated: true
 					});
 
-
 				}
 
 			});
@@ -2170,26 +2168,26 @@
 			// 인터뷰 슬라이드
 			$('.ivCeo').slick({
 				slidesToShow: 1,
-				arrows:false,
+				arrows: false,
 				dots: true,
 				adaptiveHeight: true
 			});
 
 			$('.ivMng').slick({
 				dots: true,
-				arrows:false,
+				arrows: false,
 				adaptiveHeight: true
 			});
 
 			$('.ivEmp').slick({
 				slidesToShow: 1,
 				dots: true,
-				arrows:false,
+				arrows: false,
 				adaptiveHeight: true
 			});
 
 
-		
+
 
 
 		});

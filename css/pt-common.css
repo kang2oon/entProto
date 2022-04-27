@@ -138,7 +138,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 
 /* 사업소개 */
 .a_mod_product .product{display: flex;flex-wrap: wrap;width: 100%}
-.a_mod_product .product .item {width: calc(33.333% - 13.333px);margin-right: 20px;margin-top: 20px;border: 1px solid #dcdcdc;}
+.a_mod_product .product .item {width: calc(33.333% - 13px);margin-top: 13px;border: 1px solid #dcdcdc;}
 .a_mod_product .product .item .txt{padding: 3rem 2rem}
 .a_mod_product .product .item:nth-child(3n){margin-right: 0}
 .a_mod_product .product .item:nth-child(1),
@@ -148,7 +148,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .a_mod_product .product .item p{color: #666;font-size: 1.8rem}
 .a_mod_product .product .item .img{width: 100%}
 .a_mod_product .product .item .img img{width: 100%;display: block;}
-.a_mod_product .product .slick-list{margin: -10px}
+.a_mod_product .product .slick-list{margin: -10px;}
 .a_mod_product .product .slick-slide > div{margin: 20px 10px}
 
 /* 기업소개 */
@@ -183,6 +183,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .a_mod_biz .bizDiv .item .txt p{font-size: 2.2rem;color: #666;margin-top: 5px;word-break: keep-all}
 
 .black_arrow{color: #333 !important;}
+.black_arrow.slick-disabled{opacity: 0.3}
 .white_arrow{color: #fff !important;}
 .new_arrow.slick-prev,
 .new_arrow.slick-next{background: none;border: 0;font-size: 8rem !important;width: 70px;height: 70px}
