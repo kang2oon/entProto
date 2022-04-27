@@ -1525,7 +1525,9 @@
 
 			<div class="interview_tip section_mg">
 				<h3 class="aType_tit02">채용담당자가 직접 알려주는 면접 꿀팁!</h3>
-				<img src="images/strategy02_img04.png" alt="인사담당자 사진" class="it_img">
+				<div class="it_img">
+				<img src="images/strategy02_img04.png" alt="인사담당자 사진">
+				</div>
 				<div class="interview_tip_wrap qa_area section_mg">
 					<div class="item">
 						<p class="q">인사담당자로서 면접 팁을 공유해주세요~</p>
@@ -1542,7 +1544,7 @@
 					<div class="qm_btn_wrap">
 						<button type="button" class="qm_btn" onclick="onCntNew();">관심기업 등록하기</button>
 						<div class="qm_txt">
-							<a href="javascript:vold">도움말</a>
+							<a href="javascript:void(0);">도움말</a>
 							<span>관심기업으로 등록하면 채용 공고 마감일을 알람으로 받아보실 수 있습니다.</span>
 						</div>
 					</div>
@@ -1698,7 +1700,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@5.4.5/js/swiper.min.js"></script>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script>
 	<script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
-	<script src="https://ptb.kgoon.pw/js/pt-common.js"></script>
 	<script src="https://d3js.org/d3.v3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js">
 	</script>
@@ -1711,6 +1712,12 @@
 		});
 
 		$(document).ready(function() {
+			
+				// 관심기업 등록하기 버튼
+			$('.qm_txt a').click(function() {
+				$(this).parent().find('span').toggle()
+			})
+			
 			// --- 스크롤 메뉴 수정 --
 			$('.com_mod_anchor li a').hide();
 
@@ -2182,10 +2189,7 @@
 			});
 
 
-			// 관심기업 등록하기 버튼
-			$('.qm_txt a').click(function() {
-				$(this).parent().find('span').toggle()
-			})
+		
 
 
 		});
