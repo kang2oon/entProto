@@ -4292,6 +4292,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.a_mod_biz .bizDiv .item .txt p{font-size: 1.6rem}
 	
 	/* 주요상품 */
+	.a_mod_product .product .item{width:calc( 50% - 13px)}
 	.a_mod_product .product .slick-list{margin: 0 -5px}
 	.a_mod_product .product .slick-slide > div{margin: 0 5px}
 	.a_mod_product .product .item .txt{padding: 2rem}
