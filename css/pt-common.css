@@ -137,7 +137,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .c3 .c3-grid line {stroke-dasharray: 0;stroke:#e3e2e2}
 
 /* 사업소개 */
-.a_mod_product .product{display: flex;flex-wrap: wrap;width: 100%}
+.a_mod_product .product{display: flex;flex-wrap: wrap;width: 100%;}
 .a_mod_product .product .item {width: calc(33.333% - 13px);margin-top: 13px;border: 1px solid #dcdcdc;}
 .a_mod_product .product .item .txt{padding: 3rem 2rem}
 .a_mod_product .product .item:nth-child(3n){margin-right: 0}
@@ -4292,6 +4292,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.a_mod_biz .bizDiv .item .txt p{font-size: 1.6rem}
 	
 	/* 주요상품 */
+	.a_mod_product .product .item:nth-child(3){margin-top: 13px}
 	.a_mod_product .product .item{width:calc( 50% - 13px)}
 	.a_mod_product .product .slick-list{margin: 0 -5px}
 	.a_mod_product .product .slick-slide > div{margin: 0 5px}

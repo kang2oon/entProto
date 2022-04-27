@@ -2038,7 +2038,7 @@
 				$('.product  .slick-dots').addClass('a_dot');
 			} else {
 				proItem.addClass('lt_pro');
-				$('.a_mod_product .product').masonry({
+				var msnry = new $('.a_mod_product .product').masonry({
 					// options
 					itemSelector: '.item',
 					fitwidth: true,
@@ -2186,10 +2186,12 @@
 				adaptiveHeight: true
 			});
 
-
-
-
-
 		});
+		
+		// masonry 윈도우로드후 reload
+		$(window).load(function(){
+			msnry.reloadItems();
+		});
+		
 	</script>
 </body></html>
