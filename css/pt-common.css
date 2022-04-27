@@ -5254,18 +5254,23 @@ html{font-size: 8px}
 	/* 재무정보 */
 	.c3-line{stroke-width: 2px !important;}
 	.a_mod_emp_wrap .c3-line{stroke-width: 2px !important;}
-	.a_mod_emp_wrap .c3-circle{r:5;stroke-width: 3px !important}
-	.a_mod_emp .a_emp_legend .legend-label span{border-width: 3px;width: 13px;height: 13px}
+	.a_mod_emp_wrap .c3-circle{r:4;stroke-width: 2px !important}
+	.a_mod_emp .a_emp_legend .legend-label span{border-width: 2px;width: 13px;height: 13px}
 	.a_mod_emp_wrap .c3-circle._expanded_{r:7}
-	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div{flex-direction: column;text-align: center}
-	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div:nth-child(1){border-bottom: 1px solid #dcdcdc;padding-bottom: 1.5rem}
-	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div > div:nth-child(1){width: 100%;;margin: 5px}
-	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div > div:last-child{width: 100%;margin-left: 0}
+	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div{justify-content: center;}
+	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div > div:nth-child(1),
+	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div > div:last-child{width: auto}
+	.a_mod_emp_wrap .lastEmployeeState .total_wrap{padding: 1rem 1.5rem}
+	.a_mod_emp .a_emp_legend{margin-top: 3rem}
+	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div{font-size: 1.6rem}
+	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div > div:last-child{font-size: 1.8rem}
+	.a_mod_emp_wrap .lastEmployeeState{margin-top: 3rem}
+	.a_mod_emp_wrap .lastEmployeeState .empState_wrap{padding: 1rem 1.5rem}
+	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div{margin-bottom: .5rem}
 	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div:nth-child(1):before,
-	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div:nth-child(2):before{width: 20px;height: 20px;font-size: 1.7rem}
+	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div:nth-child(2):before{width: 15px;height: 15px;font-size: 1.7rem}
 	.a_mod_emp_wrap .lastEmployeeState .total_wrap{font-size: 1.8rem;flex-wrap: wrap;word-break: break-all}
 	.a_mod_emp_wrap .lastEmployeeState .total_wrap .lastTotal{font-size: 2.2rem}
-	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div:nth-child(1):before, .a_mod_emp_wrap .lastEmployeeState .empState_wrap > div:nth-child(2):before{margin-right: 0}
 	
 	/* 인터뷰 */
 	.a_mod_interview .iv_wrap .photo img{max-width: 100px}
