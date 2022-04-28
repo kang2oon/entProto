@@ -93,7 +93,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .aType_tit:before{content: '';display: block;width: 38px;height: 3px;background: #000;margin-bottom: 3rem}
 .aType_tit{margin-bottom: 5rem}
 .aType_tit p{font-size: 1.6rem;color: #494949 !important;letter-spacing: -1px;font-weight: 500}
-.aType_tit h3{font-size: 3rem;font-weight: 500;color: #494949 !important;text-align: left !important}
+.aType_tit h3{font-size: 2.6rem;font-weight: 500;color: #494949 !important;text-align: left !important}
 .aType_tit.white p{color: #fff !important}
 .aType_tit.white h3{color: #fff !important}
 .aType_tit.white h3 span{color: #3c9bcc !important}
@@ -169,7 +169,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 
 /* 기업 대표 문구 */
 .a_mod_repTxt{text-align: center;}
-.a_mod_repTxt p {font-size: 3rem;color: #fff;word-break: keep-all}
+.a_mod_repTxt p {font-size: 2.4rem;color: #fff;word-break: keep-all}
 
 /* 사업영역 */
 .a_mod_biz .bizDiv{display: flex;justify-content: space-between;flex-wrap: wrap;width: 100%;}

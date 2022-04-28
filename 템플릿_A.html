@@ -1704,7 +1704,9 @@
 
 		$(document).ready(function() {
 			// 메뉴 fixed
-			$('#gnb-wrap').addClass('fixed-gnb')
+			var fixGnb = $('#gnb-wrap.fixed-gnb');
+			$('#gnb-wrap').addClass('fixed-gnb');
+			$('#gnb-wrap.fixed-gnb').css('position','relative')
 
 			// 관심기업 등록하기 버튼
 			$('.qm_txt a').click(function() {
