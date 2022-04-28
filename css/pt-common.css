@@ -61,6 +61,8 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 /* ---- 보급형 템플릿 A안 ---- */
 .section_pd{padding: 7rem 0 !important}
 .section_mg{margin: 7rem 0 !important}
+.pdt0{padding-top:0 !important}
+.pd0{padding:0 !important}
 
 .slick-slider{opacity: 0; visibility: hidden; transition: opacity 1.5s ease; -webkit-transition: opacity 1.5s ease;}
 .slick-slider.slick-initialized{ visibility: visible; opacity: 1; }
