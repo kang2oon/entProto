@@ -1724,7 +1724,6 @@
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@5.4.5/js/swiper.min.js"></script>
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script>
 	<script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
 	<script src="https://d3js.org/d3.v3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js">
@@ -2227,7 +2226,9 @@
 
 		});
 
-	
+	$(window).load(function(){
+		msnry.masonry('reloadItems');
+	});
 		
 	</script>
 </body></html>
