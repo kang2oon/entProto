@@ -270,7 +270,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .a_mod_interview{background: #00aeef;}
 .a_mod_interview .iv_wrap {display: flex;background: #fff;padding: 4rem;border-radius: 20px;justify-content: space-between;margin-bottom: 3rem}
 .a_mod_interview .iv_wrap:last-child{margin-bottom: 0}
-.a_mod_interview .iv_wrap .photo{width: 200px;text-align: center;}
+.a_mod_interview .iv_wrap .photo{width: 200px;text-align: center;background: none !important}
 .a_mod_interview .iv_wrap .photo .txt{font-size: 2rem;margin-top: 1rem;font-weight: 500}
 .a_mod_interview .iv_wrap .ivSlide {width: calc(100% - 240px)}
 .a_mod_interview .iv_wrap .ivSlide .q{font-size: 2rem;font-weight: 500;position: relative;padding-left: 25px;margin-bottom: .5rem}
