@@ -173,7 +173,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 
 
 /* 기업 대표 문구 */
-.a_mod_repTxt{text-align: center;background-size: cover;min-height: 350px;display: flex;align-content: center;background-size: cover;}
+.a_mod_repTxt{text-align: center;background-size: cover;min-height: 350px;display: flex;align-content: center;background-size: cover !important;}
 .a_mod_repTxt p {font-size: 3.5rem;color: #fff;word-break: keep-all}
 
 /* 사업영역 */
