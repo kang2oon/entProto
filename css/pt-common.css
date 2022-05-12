@@ -4958,7 +4958,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
     
     /* --- 보급형 start ---*/
         /* ---보급형 A타입--- */
-    .a_mod_repTxt{min-height:200px}
+    .a_mod_repTxt{min-height:150px}
      .new_arrow.slick-prev, .new_arrow.slick-next{top: -115px !important}
     
 html{font-size: 8px}
