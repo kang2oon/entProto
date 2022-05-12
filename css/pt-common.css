@@ -4347,10 +4347,11 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div > div:last-child{font-size: 2rem}
 	
 	/* 기업문화 */
-    .a_mod_welfare_slide .new_arrow span{color: #ffff;font-size: 16px !important;width: 30px;height: 30px;border: 1px solid #fff;line-height: 30px}
-    .a_mod_welfare_slide .new_arrow.slick-prev{left: auto;right: 35px}
-    .a_mod_welfare_slide .new_arrow.slick-next{right: 0}
-    .new_arrow.slick-prev, .new_arrow.slick-next{top: -115px !important;transform: none !important;width: 30px;height: 30px;}
+    .a_mod_welfare_slide .new_arrow span{color: #ffff;font-size: 16px !important;width: 25px;height: 25px;border: 1px solid #fff;line-height: 25px}
+    .a_mod_welfare_slide .new_arrow.slick-prev{left: auto;right: 25px}
+    .a_mod_welfare_slide .new_arrow.slick-next{right: 0;}
+    .a_mod_welfare_slide .new_arrow.slick-next span{border-left: 0}
+    .new_arrow.slick-prev, .new_arrow.slick-next{top: -140px !important;transform: none !important;width: 25px !important;height: 25px !important;}
     .a_mod_welfare_slide{width: 100%}
 	.a_mod_welfare .welfare.little_item{flex-wrap: wrap}
 	.a_mod_welfare .welfare.little_item .item{flex: initial;margin-top: 10px}
@@ -4954,6 +4955,11 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 
 
 @media all and (max-width:640px){
+    
+    /* --- 보급형 start ---*/
+        /* ---보급형 A타입--- */
+     .new_arrow.slick-prev, .new_arrow.slick-next{top: -115px !important}
+    
 html{font-size: 8px}
 /* Header */	
 	.header .logo img{max-width: 200px}
