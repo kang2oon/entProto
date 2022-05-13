@@ -52,7 +52,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 
 /* ---- 보급형 anchor ---- */
 .new_com_mod_anchor.sty03{background: #218ec7}
-.new_com_mod_anchor.com_mod_anchor ul li a{padding: 1.5rem 6rem;font-size: 1.6rem;transition: all 0.3s;color: #fff;}
+.new_com_mod_anchor.com_mod_anchor ul li a{padding: 1.5rem 2.65rem;font-size: 1.6rem;transition: all 0.3s;color: #fff;}
 .new_com_mod_anchor.com_mod_anchor ul li a.active{background: #014b71}
 .new_com_mod_anchor.com_mod_anchor ul li a:hover,
 .new_com_mod_anchor.com_mod_anchor ul li a:active,
