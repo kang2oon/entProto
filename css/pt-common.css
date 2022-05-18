@@ -79,9 +79,9 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 
 .a_mod_history{background: #0b0b0b;}
 .a_mod_history h3{text-transform: uppercase;letter-spacing: 15px;opacity: 0.5}
-.a_mod_history .history_wrap .history > div ul li .month{width: 30px}
+.a_mod_history .history_wrap .history > div ul li .month{width: 40px}
 .a_mod_history .history_wrap .history > div ul li .month:after{content: '월'}
-.a_mod_history .history_wrap .history > div ul li .event{width: calc(100% - 30px)}
+.a_mod_history .history_wrap .history > div ul li .event{width: calc(100% - 40px)}
 .a_mod_history .history_wrap .slick-list{margin: 0 -10px}
 .a_mod_history .history_wrap .slick-slide{margin: 0 10px}
 .a_mod_history h3{color: #fff;font-size: 2.8rem;text-align: center;margin-bottom: 4.0rem}
