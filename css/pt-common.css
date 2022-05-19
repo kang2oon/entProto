@@ -150,7 +150,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .a_mod_product .product{display: flex;flex-wrap: wrap;width: 100%;}
 .a_mod_product .product.lt_pro {justify-content: center}
 .a_mod_product .product .item {width: calc(33.333% - 13.333px);margin-top: 20px;margin-right: 15px;border: 1px solid #dcdcdc;}
-.a_mod_product .product .ite:last-child{margin-right: 0}
+.a_mod_product .product .item:last-child{margin-right: 0}
 .a_mod_product .product .item .txt{padding: 3rem 2rem}
 .a_mod_product .product .item:nth-child(3n){margin-right: 0}
 .a_mod_product .product .item:nth-child(1),
@@ -229,7 +229,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .a_mod_finance02 .a_mod_emp_wrap{background: #fff;padding: 4rem}
 .a_mod_finance02 .conts_wrap .item .txt{margin-top: auto;}
 .a_mod_finance02 .finance_wrap .conts_wrap{display: flex;justify-content: space-between}
-.a_mod_finance02 .finance_wrap .conts_wrap .ico{display: flex;justify-content: center;margin-bottom: 2rem;max-height:60px;align-items: center}
+.a_mod_finance02 .finance_wrap .conts_wrap .ico{display: flex;justify-content: center;margin-bottom: 2rem;max-height:75px;align-items: center}
 .a_mod_finance02 .finance_wrap .conts_wrap .ico img{height:100%}
 .a_mod_finance02 .finance_wrap .conts_wrap > div{text-align: center;display: flex;flex-direction: column;}
 .a_mod_finance02 .finance_wrap .conts_wrap > div div{font-size: 2.2rem;font-weight: bold;color: #0083d6}
@@ -486,8 +486,33 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 
 
 /* 주요 상품 */
-.b_mod_product .product{display: flex;}
-.b_mod_product .product {}
+.b_mod_product .product{display: flex;flex-wrap: wrap}
+.b_mod_product .product.little_item {justify-content: center}
+.b_mod_product .product .item{width: calc(25% - 15px);margin-right: 20px;margin-top: 50px}
+.b_mod_product .product .item:nth-child(-n+4){margin-top: 0}
+.b_mod_product .product .item:nth-child(4n){margin-right: 0}
+.b_mod_product .product .item .txt{text-align: center;margin-top: 1.5rem;color: #666666}
+.b_mod_product .product .item .txt h4{font-weight: 500;margin-bottom: .5rem}
+
+/* 직원수*/
+.b_mod_emp {background: #f3f3f3}
+.b_mod_emp #graph_empCnt02{height: 100%}
+.b_mod_emp .total_wrap{background: #6986e4;color: #fff;display: flex;align-items: center;justify-content: center;padding: 1rem;font-size: 2.8rem}
+.b_mod_emp .total_wrap > div:first-child:before{content: '';display: inline-block;background: url(../images/inf_emp_ico.png) no-repeat;width: 50px;height: 50px;margin-right: 20px;vertical-align:baseline}
+.b_mod_emp .total_wrap .lastTotal{font-size: 7.0rem;margin-left: 3.0rem}
+.b_mod_emp .total_wrap > div{color: #fff}
+.b_mod_emp .empState_wrap{display: flex;}
+.b_mod_emp .empState_wrap > div{width: calc(50% - 40px);margin: 4.0rem 80px 0 0;text-align: center;font-size: 2.4rem;padding-top: 120px;display: flex;justify-content: center;position: relative;padding-top: 90px;}
+.b_mod_emp .empState_wrap .lastJoin_wrap:before{content: '';display: block;background: url(../images/inf_emp_ico02.png) no-repeat;width: 182px;height: 56px;position: absolute;left: 50%;top: 0;transform: translateX(-50%)}
+.b_mod_emp .empState_wrap .lastResign_wrap:before{content: '';display: block;background: url(../images/inf_emp_ico03.png) no-repeat;width: 182px;height: 56px;position: absolute;left: 50%;top: 0;transform: translateX(-50%)}
+.b_mod_emp .empState_wrap .lastJoin_wrap .lastJoin{color: #00e1bd;margin-left: 3rem}
+.b_mod_emp .empState_wrap .lastResign{color: #b5bac5;margin-left: 3rem}
+.b_mod_emp .empState_wrap > div:last-child{margin-right: 0}
+.b_mod_emp #legend02 {display: flex;justify-content: center;margin-top: auto}
+.b_mod_emp #legend02 li{display: flex;align-items: center;margin-right: 20px;color: #555;font-size: 1.6rem}
+.b_mod_emp #legend02 li:last-child{margin-right: 0}
+.b_mod_emp .b_emp_wrap{margin-top: 7rem;display: flex;justify-content: space-between}
+.b_mod_emp .b_emp_wrap > div{width:calc(50% - 20px)}
 
 /*---------------------- 2022 보급형 end ----------------------*/
 
