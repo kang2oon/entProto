@@ -31,26 +31,23 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 
 /* ---- 보급형 header ---- */
 .new_com_mod_header.com_mod_header{padding: 30px 0}
-.new_com_mod_header.com_mod_header .info dl {margin: 0 0 15px 0;max-width: calc(100% - 58px);display: flex;}
-.new_com_mod_header.com_mod_header .info dl dt{font-size: 1.8rem;margin-right: 0;vertical-align: middle;font-weight: 400;width: 45px}
+.new_com_mod_header.com_mod_header .info dl {margin: 0px 0 15px 0;max-width: calc(100% - 300px)}
+.new_com_mod_header.com_mod_header .info dl dt{font-size: 1.8rem;margin-right: 0;vertical-align: middle;font-weight: 400}
 .new_com_mod_header.com_mod_header .info dl dt:after{content: ':';display: inline;margin: 0 2px }
-.new_com_mod_header.com_mod_header .info dl dd{font-weight: 400;font-size: 1.8rem;word-break: break-all;width: calc(100% - 45px)}
+.new_com_mod_header.com_mod_header .info dl dd{font-weight: 400;font-size: 1.8rem}
+.new_com_mod_header #iconArea{display: none}
 .new_com_mod_header .tag{display: flex;flex-wrap: wrap;background: #f3f3f3;padding: 2px 5px}
 .new_com_mod_header .tag li{margin: 5px;font-size: 1.5rem;color: #666;}
 .new_com_mod_header .tag li:before{content: '#';}
-.new_com_mod_header .action {display: flex;margin-top: 20px}
+.new_com_mod_header .action {position: absolute;right: 0;top: 0;display: flex;}
 .new_com_mod_header .action a{font-size: 1.4rem;font-weight: 500;display: flex;align-items: center;}
 .new_com_mod_header .action a i{font-style: normal;width: 3rem;height: 3rem;border-radius: 50%;display: flex;flex-direction: column;align-items: center;justify-content: center;margin-left: 2rem}
 .new_com_mod_header .action #scrapYn{color: #da0011;}
 .new_com_mod_header .action #scrapYn i {border: 1px solid #da0011;color: #da0011}
 .new_com_mod_header .action #scrapYn.active i{background: #da0011 ;color: #fff}
 .new_com_mod_header .action #copyUrlNew i{border: 1px solid #343434}
-.new_com_mod_header .header .logo {float: none;margin-right: 50px;max-width: 200px;text-align: left !important}
 .new_com_mod_header .header .info{float: none;width: calc(100% - 200px)}
 .new_com_mod_header .header .logo img{max-height: 90px;max-width: 200px}
-.new_com_mod_header .header #iconArea{position: absolute;right: 0;top: -30px;} 
-.new_com_mod_header .header .biz_cate {padding: 10px 14px;top: -30px;position: static}
-.new_com_mod_header .header .biz_cate i{background-size: 290px;width: 29px;height: 29px;margin: 0 auto 5px}
 
 .new_com_mod_header.fixed .tag{display: none}
 .new_com_mod_anchor.com_mod_anchor.fixed ul li a{padding: 10px 40px}
@@ -435,14 +432,14 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 /* 기업소개 */
 .b_mod_summary{background: #43d1a1;}
 .b_mod_summary .b_summary_wrap{display: flex;justify-content: space-between}
-.b_mod_summary .b_summary_wrap .item{display: flex;flex-direction: column;;text-align: center;background: url(../images/b_summary_poly.png) no-repeat center;width:300px;height: 271px;background-size: 300px;padding: 45px 70px}
-.b_mod_summary .b_summary_wrap .img{max-height: 72px;display: flex;flex-direction: column; justify-content: center;align-items: center;}
+.b_mod_summary .b_summary_wrap.moreText .item{height: auto;background: none;border: 5px solid #fff;padding: 30px}
+.b_mod_summary .b_summary_wrap .item{display: flex;flex-direction: column;;text-align: center;background: url(../images/b_summary_poly.png) no-repeat center;width:300px;height: 271px;background-size: 300px;padding: 40px 70px}
+.b_mod_summary .b_summary_wrap .img{min-height: 72px;display: flex;flex-direction: column; justify-content: center;align-items: center;}
 .b_mod_summary .b_summary_wrap .img img{max-height: 100%}
 .b_mod_summary .b_summary_wrap div .txt{display: flex;flex-direction: column;}
 .b_mod_summary .b_summary_wrap div:last-child{margin-right: 0}
-.b_mod_summary .b_summary_wrap .item h4{font-size: 2.6rem;margin: 1rem 0;}
+.b_mod_summary .b_summary_wrap .item h4{font-size: 2.6rem;margin: 0.5rem 0;}
 .b_mod_summary .b_summary_wrap .item .txt p{font-size: 1.6rem;color: #fff;}
-
 
 /*---------------------- 2022 보급형 end ----------------------*/
 
@@ -4001,10 +3998,10 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 
 @media all and (max-width:1024px){
 	/*---------------------- 2022 보급형 start ----------------------*/
+    .new_com_mod_header .header .info,
+    .new_com_mod_header.com_mod_header .info dl,
+    .new_com_mod_header .tag{width: 100%;max-width: 100%}
     
-    /* header */
-    .new_com_mod_header .header .info{width: 100%;}
-	
 	/* ---- 보급형 템플릿 A안 ---- */
 	.a_mod_summary .a_summary_wrap .txt{padding: 3rem}
 	.a_mod_summary .a_summary_wrap p{font-size: 2rem}
@@ -5019,20 +5016,13 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
         /* ---보급형 A타입--- */
     .a_mod_repTxt{min-height:150px}
      .new_arrow.slick-prev, .new_arrow.slick-next{top: -115px !important}
-    .new_com_mod_header.com_mod_header{padding: 10px 0}
-    .new_com_mod_header .header .logo{max-width: 130px;margin: 0 auto 10px auto}
-    .new_com_mod_header .header .logo img{max-width: 100% !important}
-    .new_com_mod_header.com_mod_header .info dl,
-    .new_com_mod_header.com_mod_header .info dl dt,
-    .new_com_mod_header.com_mod_header .info dl dd{width: auto;}
-    .new_com_mod_header.com_mod_header .info dl dd{margin-top: 0}
     
 html{font-size: 8px}
 /* Header */	
-	.header .logo img{max-width: 150px}
-	.header .info dl{margin: 1.2rem 0 2.0rem;max-width: 100%}
+	.header .logo img{max-width: 200px}
+	.header .info dl{margin: 1.2rem 0 2.0rem}
 	.header .info dl dt{font-size: 1.4rem;}
-	.header .info dl dd{margin-right: 2.0rem;font-size: 1.6rem;}
+	.header .info dl dd{margin-right: 2.0rem;font-size: 1.6rem}
 	.sty01 .header .action a{font-size: 1.4rem;padding: 0.5rem 1.0rem}
 	
 /* 공통 영역 start*/
@@ -5617,6 +5607,5 @@ html{font-size: 8px}
 	.bro_mod_finance.sty06 .cnt-container .conts_wrap{padding: 3rem 2rem}
 	.bro_mod_finance.sty06 .cnt-container .conts_wrap .summary .tab_tit{padding: 0 0 1rem}
 }
-
 
 

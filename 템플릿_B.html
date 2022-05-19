@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,6 +39,7 @@
         .top_menu_newB {
             display: none
         }
+
     </style>
 </head>
 
@@ -487,10 +489,10 @@
     <div class="module-wrap com_mod_header new_com_mod_header sty03">
         <div class="cnt-container header clearfix">
             <div id="iconArea">
-				<div class="biz_cate cate green">
-					<i></i>
-				</div>
-	        </div>
+                <div class="biz_cate cate green">
+                    <i></i>
+                </div>
+            </div>
             <div class="logo imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
             <div class="info fc_000">
                 <dl class="clearfix">
@@ -632,11 +634,7 @@
                         <h4>VISION</h4>
                         <p class="vision">
                             블록체인 기술 기반
-                            솔류션 블록체인 기술 기반
-                            솔류션 블록체인 기술 기반
-                            솔류션 블록체인 기술 기반
-                            솔류션 블록체인 기술 기반
-                            솔류션
+                            솔류션 블록체인 기술
                         </p>
                     </div>
                 </div>
@@ -651,7 +649,13 @@
                             블록체인 기술의
                             대중화 블록체인 기술의
                             대중화 블록체인 기술의
+                            대중화
                             대중화 블록체인 기술의
+                            대중화 블록체인 기술의
+                            대중화
+                            대중화 블록체인 기술의
+                            대중화 블록체인 기술의
+                            대중화
                             대중화 블록체인 기술의
                             대중화 블록체인 기술의
                             대중화
@@ -669,14 +673,6 @@
                             지속 가능한
                             제품 개발지속 가능한
                             제품 개발지속 가능한
-                            제품 개발지속 가능한
-                            제품 개발지속 가능한
-                            제품 개발지속 가능한
-                            제품 개발지속 가능한
-                            제품 개발지속 가능한
-                            제품 개발지속 가능한
-                            제품 개발지속 가능한
-                            제품 개발
                         </p>
                     </div>
                 </div>
@@ -1963,7 +1959,19 @@
                     // ---end 스크롤 메뉴 수정 --
 
                     // 기업 summary 3줄 이상일 때 (글자 수)
-                    var rows = value.split('\n').length; // 줄바꿈 개수
-               
+                        $('.b_mod_summary .b_summary_wrap').each(function(){
+                        var item =  $('.b_mod_summary .b_summary_wrap .item .txt p');
+                        var heightOfDiv = item.height();
+                            
+                            alert(heightOfDiv)
+                            if (heightOfDiv > 72) {
+                                $(".b_mod_summary .b_summary_wrap").addClass('moreText')
+                            }
+                            
+                      });
+
+        });
     </script>
-</body></html>
+</body>
+
+</html>
