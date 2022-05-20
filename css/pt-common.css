@@ -53,6 +53,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .new_com_mod_anchor.com_mod_anchor.fixed ul li a{padding: 10px 40px}
 
 /* ---- 보급형 anchor ---- */
+.new_rep_Img.com_rep_Img {height: 380px;display: block !important;background-size: cover;background-repeat: no-repeat}
 .new_com_mod_anchor.sty03{background: #218ec7}
 .new_com_mod_anchor.com_mod_anchor ul li a{padding: 1.5rem 2.65rem;font-size: 1.6rem;transition: all 0.3s;color: #fff;}
 .new_com_mod_anchor.com_mod_anchor ul li a.active{background: #014b71}
@@ -392,7 +393,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .a_mod_strategy .qm_btn_wrap .qm_txt a{background-color: #181818;background-size:10px;width:40px;height:40px;top:-20px}
 
 /* ----  보급형 연혁 템플릿 B안 start ---- */
-.bType_tit {text-align: center;font-size: 3.5rem;text-transform: uppercase;font-weight: bold}
+.bType_tit {text-align: center;font-size: 3.5rem;text-transform: uppercase;font-weight: bold;margin-bottom: 7rem}
 .bType_tit span{color: #c3c3c3;font-size: 3.2rem;display: block;}
 .bType_tit span:after{content: '';display: block;width: 1px;height: 22px;background: #000;margin: 15px auto}
 .bType_tit02{font-size: 3.2rem;text-align: center;margin-bottom: 4rem;font-weight: 500}
@@ -537,8 +538,65 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .b_mod_emp .lastEmployeeState{margin-top: 4rem}
 
 /* 기업문화 & 복리후생 */
-.b_mod_welfare .b_mod_welfare_slide{}
-.b_mod_welfare .b_mod_welfare_slide{}
+.b_mod_welfare .b_mod_welfare_slide #Culture .item .img{display: flex;justify-content: center;align-items: center;}
+.b_mod_welfare .b_mod_welfare_slide #Culture .item .txt{text-align: center}
+.b_mod_welfare .b_mod_welfare_slide #Culture .item .txt .tit{font-size: 2.2rem;color: #3660b7;letter-spacing: 2px;margin:1rem 0}
+.b_mod_welfare .b_mod_welfare_slide #Culture .item .txt .desc{font-size: 1.7rem;letter-spacing: -0.5px;word-break: keep-all}
+
+.b_mod_welfare .b_mod_welfare_slide #Culture.little_item{display: flex;justify-content: space-between}
+.b_mod_welfare .b_mod_welfare_slide #Culture.little_item .item{flex: 1 1 ;margin-right: 30px}
+.b_mod_welfare .b_mod_welfare_slide #Culture.little_item .item:last-child{margin-right: 0}
+.b_mod_welfare .b_mod_welfare_slide #Culture.many_item .slick-slide > div{display: flex;}
+.b_mod_welfare .b_mod_welfare_slide #Culture.many_item  .item{margin: 20px }
+.b_mod_welfare .welfare + .welfare {margin-top: 9rem}
+.b_mod_welfare #welfare .item{background: #ddd;height: 100%;padding: 4rem 9rem;display: flex !important;flex-direction: column;color: #fff;text-align: center;border-radius: 100px}
+.b_mod_welfare #welfare .item .tit{font-size: 2rem;font-weight: bold;margin-bottom: 1rem}
+.b_mod_welfare #welfare .slick-track{display: flex;}
+.b_mod_welfare #welfare .slick-list {margin: 0 - 5px}
+.b_mod_welfare #welfare .slick-track .slick-slide{height: auto}
+.b_mod_welfare #welfare .slick-track .slick-slide > div{height: 100%}
+.b_mod_welfare #welfare .item ul{text-align: center;display: flex;flex-wrap: wrap}
+.b_mod_welfare #welfare .item ul li{position: relative;text-align: left;padding-left: 10px;width: calc(50% - 5px);text-align: center;margin-top: 5px}
+.b_mod_welfare #welfare .item ul li:nth-child(){}
+.b_mod_welfare #welfare .item ul li:nth-child(2n){margin-right: 0}
+.b_mod_welfare #welfare .slick-slide{margin: 0 5px}
+.b_mod_welfare #welfare .slick-slide:nth-child(odd) .item{background: #54c4d0;}
+.b_mod_welfare #welfare .slick-slide:nth-child(even) .item{background: #4967c1; }
+
+.b_mod_welfare .slick-dotted.slick-slider,
+.b_mod_interview .slick-dotted.slick-slider{margin-bottom: 0}
+.b_mod_welfare  .slick-dots,
+.b_mod_interview  .slick-dots {position: sticky;margin-top: 3rem}
+
+/* b dot */
+.b_dot.slick-dots li{width: auto;height: auto;margin: 0 5px }
+.b_dot.slick-dots li.slick-active button{background: #91a0ce;width: 38px;border-radius: 30px}
+.b_dot.slick-dots li button{width: 14px;height: 14px;opacity: 1;background: #ccc}
+
+/* 인터뷰 */
+.b_mod_interview{background: #f1f1f1}
+.b_mod_interview .bType_tit{margin-bottom: 7rem}
+.b_mod_interview .iv_wrap{background: #fff;border-radius: 10px;box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);padding: 6rem 5rem;}
+.b_mod_interview .iv_wrap + .iv_wrap {margin-top: 2rem}
+.b_mod_interview .iv_wrap .photo{text-align: center;margin-bottom: 5rem}
+.b_mod_interview .iv_wrap .photo .txt{color: #6300d6;font-weight: bold;font-size: 2rem;margin-top: 1rem}
+.b_mod_interview .iv_wrap .item .q{font-size: 1.8rem;margin-bottom: 1rem;font-weight: 500;position: relative;padding-left: 20px;}
+.b_mod_interview .iv_wrap .item .q:before{content: 'Q.';display: block;position: absolute;left: 0;top: 0}
+.b_mod_interview .iv_wrap .item .a{font-size: 1.8rem;}
+.b_mod_interview .iv_wrap .ivSlide{position: relative;padding: 0 8rem}
+.b_mod_interview .iv_wrap .ivSlide:before{content: '“';display: block;font-size: 10rem;font-weight: bold;color: #6300d6;position: absolute;;left: 0;top: 0;line-height: 90px}
+.b_mod_interview .iv_wrap .ivSlide:after{content: '”';display: block;font-size: 10rem;font-weight: bold;color: #6300d6;position: absolute;right: 0;bottom: 0;line-height: 90px}
+
+.b_mod_interview .iv_wrap .b_dot.slick-dots li.slick-active button{background: #6300d6}
+
+/* 인재상 */
+.b_mod_talent .talent_wrap{display: flex;justify-content: space-between}
+.b_mod_talent .talent_wrap .item{flex: 1 1;margin-right: 5rem;text-align: center;}
+.b_mod_talent .talent_wrap .item:last-child{margin-right: 0;}
+.b_mod_talent .talent_wrap .item .img{margin-bottom: 2rem}
+.b_mod_talent .talent_wrap .item .tit{font-size: 2.4rem;text-transform: uppercase;margin-bottom: 1.5rem}
+.b_mod_talent .talent_wrap .item .desc{font-size: 2rem;color: #666}
+
 
 /*---------------------- 2022 보급형 end ----------------------*/
 
