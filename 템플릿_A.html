@@ -1688,6 +1688,9 @@
 		});
 
 		$(document).ready(function() {
+            
+            $(".slick-slider").not('.slick-initialized').slick();
+            
 			// 메뉴 fixed
 			var fixGnb = $('#gnb-wrap.fixed-gnb');
 			$('#gnb-wrap').addClass('fixed-gnb');

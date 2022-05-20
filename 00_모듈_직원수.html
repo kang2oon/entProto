@@ -256,72 +256,72 @@
 
 			//차트영역
 			var chart2 = bb.generate({
-				bindto: "#graph_empCnt02",
-				data: {
-					type: "bar",
-					// ******* 아래 columns 항목은 퍼블시 디자인 확인 영역 등록시 주석처리******
-					columns: [
-							["입사자", 55, 33, 11,55, 33, 11,55, 33, 11,55, 33],
-						["퇴사자", 55, 33, 11,55, 33, 11,55, 33, 11,55, 33],
-						["총원", 55, 33, 11,55, 33, 11,55, 33, 11,55, 33]
-					],
-					// ******관리자 등록시 아래 columns 영역 주석풀고 등록 ******	
-					//					columns: [
-					//						joinCntList,
-					//						resignCntList,
-					//						totalCntList
-					//					],
-					colors: {
-						입사자: "rgb(0, 200, 200)",
-						퇴사자: "rgb(205, 198, 198)",
-						총원: "rgb(83, 110, 194)"
-					}
-				},
-				axis: {
-					x: {
-						type: "category",
-						//아래 categories 항목은 퍼블시 디자인 확인 영역 등록시 주석처리
-						categories: ['202110', '202109', '202108', '202107','202106','202105','202104','202103','202102','202101','202012','202111'],
-						// ******관리자 등록시 아래 categories 영역 주석풀고 등록 ******
-						//  categories: ctLabelDataList,
-						 tick: {
-                                    fit: true,
-                                    multiline: false,
-                                    autorotate: true,
-                                    rotate: 30,
-                                }
-					}
-				},
-				grid: {
-					x: {
-						show: false,
-					},
-					y: {
-						show: true
-					}
-				},
-				padding: {
-					bottom: 40,
-					right: 40,
-				},
-				bar: {
-					padding: 3,
-					width: {
-						max: 30
-					},
-					radius: {
-						ratio: 0.5
-					}
-				},
-				legend: {
-					contents: {
-						bindto: "#legend02",
-						template: "<li><span style='width:15px;height:15px;border-radius:50% 50% 0 0;display:inline-block;margin-right:5px;background:{=COLOR}'></span>{=TITLE}</li>"
-					}
-				}
+			bindto: "#graph_empCnt02",
+			data: {
+			type: "bar",
+			// ******* 아래 columns 항목은 퍼블시 디자인 확인 영역 등록시 주석처리******
+			columns: [
+			["입사자", 55, 33, 11,55, 33, 11,55, 33, 11,55, 33],
+			["퇴사자", 55, 33, 11,55, 33, 11,55, 33, 11,55, 33],
+			["총원", 55, 33, 11,55, 33, 11,55, 33, 11,55, 33]
+			],
+			// ******관리자 등록시 아래 columns 영역 주석풀고 등록 ******
+			// columns: [
+			// joinCntList,
+			// resignCntList,
+			// totalCntList
+			// ],
+			colors: {
+			입사자: "rgb(0, 200, 200)",
+			퇴사자: "rgb(205, 198, 198)",
+			총원: "rgb(83, 110, 194)"
+			}
+			},
+			axis: {
+			x: {
+			type: "category",
+			//아래 categories 항목은 퍼블시 디자인 확인 영역 등록시 주석처리
+			categories: ['202110', '202109', '202108', '202107','202106','202105','202104','202103','202102','202101','202012','202111'],
+			// ******관리자 등록시 아래 categories 영역 주석풀고 등록 ******
+			// categories: ctLabelDataList,
+			tick: {
+			fit: true,
+			multiline: false,
+			autorotate: true,
+			rotate: 30,
+			}
+			}
+			},
+			grid: {
+			x: {
+			show: false,
+			},
+			y: {
+			show: true
+			}
+			},
+			padding: {
+			bottom: 40,
+			right: 40,
+			},
+			bar: {
+			padding: 3,
+			width: {
+			max: 30
+			},
+			radius: {
+			ratio: 0.5
+			}
+			},
+			legend: {
+			contents: {
+			bindto: "#legend02",
+			template: "<li><span style='width:15px;height:15px;border-radius:50% 50% 0 0;display:inline-block;margin-right:5px;background:{=COLOR}'></span>{=TITLE}</li>"
+			}
+			}
 			});
 			setTimeout(function() {
-				chart1.resize();
+			chart1.resize();
 			}, 100);
 
 

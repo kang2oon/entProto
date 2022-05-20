@@ -215,6 +215,8 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .a_mod_cert .cert_wrap .item:nth-child(5){margin-top: 0}
 .a_mod_cert .cert_wrap .item:nth-child(5n){margin-right: 0}
 .a_mod_cert .cert_wrap .item .txt{display: flex;justify-content: center;color:#666;font-size: 1.6rem;margin-top: 1rem;flex-wrap: wrap;text-align: center}
+.a_mod_cert .cert_wrap .item .txt p,
+.a_mod_cert .cert_wrap .item .txt dd{word-break: break-all}
 .a_mod_cert .cert_wrap .item .txt p + p {margin-left: 5px}
 .a_mod_cert .cert_wrap .item .img{text-align: center;}
 
@@ -497,22 +499,46 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 /* 직원수*/
 .b_mod_emp {background: #f3f3f3}
 .b_mod_emp #graph_empCnt02{height: 100%}
-.b_mod_emp .total_wrap{background: #6986e4;color: #fff;display: flex;align-items: center;justify-content: center;padding: 1rem;font-size: 2.8rem}
-.b_mod_emp .total_wrap > div:first-child:before{content: '';display: inline-block;background: url(../images/inf_emp_ico.png) no-repeat;width: 50px;height: 50px;margin-right: 20px;vertical-align:baseline}
-.b_mod_emp .total_wrap .lastTotal{font-size: 7.0rem;margin-left: 3.0rem}
+.b_mod_emp .total_wrap{background: #24b2f0;color: #fff;display: flex;align-items: center;justify-content: center;padding: 1rem;font-size: 2rem}
+.b_mod_emp .total_wrap > div:first-child:before{content: '';display: inline-block;background: url(../images/b_inf_emp_ico.png) no-repeat;width: 35px;height: 35px;margin-right: 10px;vertical-align:baseline}
+.b_mod_emp .total_wrap .lastTotal{font-size: 4.0rem;margin-left: 3.0rem}
 .b_mod_emp .total_wrap > div{color: #fff}
-.b_mod_emp .empState_wrap{display: flex;}
-.b_mod_emp .empState_wrap > div{width: calc(50% - 40px);margin: 4.0rem 80px 0 0;text-align: center;font-size: 2.4rem;padding-top: 120px;display: flex;justify-content: center;position: relative;padding-top: 90px;}
-.b_mod_emp .empState_wrap .lastJoin_wrap:before{content: '';display: block;background: url(../images/inf_emp_ico02.png) no-repeat;width: 182px;height: 56px;position: absolute;left: 50%;top: 0;transform: translateX(-50%)}
-.b_mod_emp .empState_wrap .lastResign_wrap:before{content: '';display: block;background: url(../images/inf_emp_ico03.png) no-repeat;width: 182px;height: 56px;position: absolute;left: 50%;top: 0;transform: translateX(-50%)}
-.b_mod_emp .empState_wrap .lastJoin_wrap .lastJoin{color: #00e1bd;margin-left: 3rem}
-.b_mod_emp .empState_wrap .lastResign{color: #b5bac5;margin-left: 3rem}
-.b_mod_emp .empState_wrap > div:last-child{margin-right: 0}
+.b_mod_emp .total_wrap  .num{display: flex;align-items:baseline}
+.b_mod_emp .empState_wrap{display: flex;justify-content: space-between}
+.b_mod_emp .lastEmployeeState{max-width: 600px;margin: auto;}
+.b_mod_emp .empState_wrap .item{width: calc(50% - 20px);padding: 40px 20px}
+.b_mod_emp .empState_wrap .itemMan_wrap {display: flex;justify-content: center;}
+.b_mod_emp .empState_wrap .itemMan{width: 32px;height: 56px;position: relative;margin-right: 10px;}
+.b_mod_emp .empState_wrap .itemMan:last-child{margin-right: 0}
+.b_mod_emp .empState_wrap .itemMan .mask{background: url(../images/b_emp.png) no-repeat;width: 100%;height: 100%;position: absolute;left: 0;top: 0;}
+.b_mod_emp .empState_wrap .itemMan .progress{background: #000;width: 100%;height: 100%;}
+.b_mod_emp .empState_wrap .item .txt{text-align: center;display: flex;justify-content: center;align-items: baseline;margin-top: 2rem}
+.b_mod_emp .empState_wrap .item .txt p{font-size: 1.8rem;}
+.b_mod_emp .empState_wrap .item .txt .num{margin-left: 20px;font-size: 2.6rem}
+.b_mod_emp .empState_wrap .lastJoin_wrap .progress{background: #82c6e4}
+.b_mod_emp .empState_wrap .lastJoin_wrap .num{color: #24b2f0}
+.b_mod_emp .empState_wrap .lastResign_wrap  .progress{background: #b5bac5}
+.b_mod_emp .empState_wrap .lastResign_wrap  .num{color: #969696}
+
+
 .b_mod_emp #legend02 {display: flex;justify-content: center;margin-top: auto}
 .b_mod_emp #legend02 li{display: flex;align-items: center;margin-right: 20px;color: #555;font-size: 1.6rem}
 .b_mod_emp #legend02 li:last-child{margin-right: 0}
-.b_mod_emp .b_emp_wrap{margin-top: 7rem;display: flex;justify-content: space-between}
-.b_mod_emp .b_emp_wrap > div{width:calc(50% - 20px)}
+.b_mod_emp .b_emp_wrap{margin-top: 7rem;}
+.c3-legend-item-tile, .c3-xgrid-focus, .c3-ygrid, .c3-event-rect, .c3-bars path {shape-rendering: auto;}
+
+.b_mod_emp .domain{stroke:none;}
+.b_mod_emp .c3-axis.c3-axis-y text,
+.b_mod_emp .c3-axis.c3-axis-x text{font-size: 1.6rem;color: #666}
+.b_mod_emp .b_emp_legend{display: flex;justify-content: center;}
+.b_mod_emp .b_emp_legend > div{display: flex;flex-direction: row-reverse;align-items: center;cursor: pointer;margin-right: 20px;font-size: 1.6rem;color: #666666;}
+.b_mod_emp .b_emp_legend > div:last-child{margin-right: 0}
+.b_mod_emp .b_emp_legend > div .badge{width: 16px;height: 15px;border-radius: 50% 50% 0 0 ;margin-right:0.5rem;}
+.b_mod_emp .lastEmployeeState{margin-top: 4rem}
+
+/* 기업문화 & 복리후생 */
+.b_mod_welfare .b_mod_welfare_slide{}
+.b_mod_welfare .b_mod_welfare_slide{}
 
 /*---------------------- 2022 보급형 end ----------------------*/
 
@@ -5411,9 +5437,10 @@ html{font-size: 8px}
 	
 	
 	/* 기업 인증 */
-	.a_mod_cert .cert_wrap.many_item .item{width: calc(25% - 5.25px)}
-	.a_mod_cert .cert_wrap .item {margin-right: 7px;}
-	.a_mod_cert .cert_wrap.many_item .item:nth-child(5n){margin-right: 7px}
+	.a_mod_cert .cert_wrap.many_item .item{width: calc(33.333% - 6.666px);margin-right: 10px}
+    .a_mod_cert .cert_wrap.many_item .item:nth-child(3n){margin-right: 0}
+	.a_mod_cert .cert_wrap.many_item .item:nth-child(5n),
+    .a_mod_cert .cert_wrap.many_item .item:nth-child(4n){margin-right: auto}
 	
 	/* 재무정보 */
 	.c3-line{stroke-width: 2px !important;}
