@@ -439,7 +439,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 /* 기업소개 */
 .b_mod_summary{background: #43d1a1;}
 .b_mod_summary .b_summary_wrap{display: flex;justify-content: space-between}
-.b_mod_summary .b_summary_wrap.moreText .item{height: auto;background: none;border: 5px solid #fff;padding: 30px}
+.b_mod_summary .b_summary_wrap.moreArea .item {height: auto;background: none;border: 5px solid #fff;padding: 30px}
 .b_mod_summary .b_summary_wrap .item{display: flex;flex-direction: column;;text-align: center;background: url(../images/b_summary_poly.png) no-repeat center;width:300px;height: 271px;background-size: 300px;padding: 40px 70px}
 .b_mod_summary .b_summary_wrap .img{min-height: 72px;display: flex;flex-direction: column; justify-content: center;align-items: center;}
 .b_mod_summary .b_summary_wrap .img img{max-height: 100%}
@@ -503,6 +503,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .b_mod_product .product .item .txt h4{font-weight: 500;margin-bottom: .5rem}
 
 /* 직원수*/
+ .b_mod_emp .c3 path { shape-rendering: auto !important}
 .b_mod_emp {background: #f3f3f3}
 .b_mod_emp #graph_empCnt02{height: 100%}
 .b_mod_emp .total_wrap{background: #24b2f0;color: #fff;display: flex;align-items: center;justify-content: center;padding: 1rem;font-size: 2rem}

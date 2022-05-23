@@ -632,7 +632,7 @@
                         <h4>VISION</h4>
                         <p class="vision">
                             블록체인 기술 기반
-                            솔류션 블록체인 기술
+                            블록체인 기술 기반
                         </p>
                     </div>
                 </div>
@@ -1044,100 +1044,6 @@
                                 앞을 향해 전진합니다.</p>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="images/b_cult_img03.png" alt="">
-                        </div>
-                        <div class="txt">
-                            <p class="tit">Dream</p>
-                            <p class="desc">꿈을 실현시킬 수 있는
-                                직장 구현을 위해
-                                다같이 노력합니다.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="images/b_cult_img04.png" alt="">
-                        </div>
-                        <div class="txt">
-                            <p class="tit">Challenge</p>
-                            <p class="desc">항상 도전하는 자세로
-                                임하며, 배움을
-                                두려워하지 않습니다.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="images/b_cult_img05.png" alt="">
-                        </div>
-                        <div class="txt">
-                            <p class="tit">자율과책임</p>
-                            <p class="desc">규칙을 최소화하고
-                                본질을 생각하며
-                                스스로 움직입니다.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="images/b_cult_img06.png" alt="">
-                        </div>
-                        <div class="txt">
-                            <p class="tit">KeepGoing</p>
-                            <p class="desc">항상 최선을
-                                다하는 모습으로
-                                앞을 향해 전진합니다.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="images/b_cult_img07.png" alt="">
-                        </div>
-                        <div class="txt">
-                            <p class="tit">Dream</p>
-                            <p class="desc">꿈을 실현시킬 수 있는
-                                직장 구현을 위해
-                                다같이 노력합니다.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="images/b_cult_img08.png" alt="">
-                        </div>
-                        <div class="txt">
-                            <p class="tit">Challenge</p>
-                            <p class="desc">항상 도전하는 자세로
-                                임하며, 배움을
-                                두려워하지 않습니다.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="images/b_cult_img08.png" alt="">
-                        </div>
-                        <div class="txt">
-                            <p class="tit">Challenge</p>
-                            <p class="desc">항상 도전하는 자세로
-                                임하며, 배움을
-                                두려워하지 않습니다.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="images/b_cult_img08.png" alt="">
-                        </div>
-                        <div class="txt">
-                            <p class="tit">Challenge</p>
-                            <p class="desc">항상 도전하는 자세로
-                                임하며, 배움을
-                                두려워하지 않습니다.
-                            </p>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="welfare" id="welfare">
@@ -1520,7 +1426,6 @@
             </div>
         </div>
     </div>
-    </div>
     <!--//취업정보-->
 
     <div class="module-wrap edit_wrap com_mod_recruit sty01 section_mg pdt0" id="recruitArea" style="display:block">
@@ -1812,17 +1717,24 @@
 
             // ---end 스크롤 메뉴 수정 --
 
+
             // 기업 summary 3줄 이상일 때 (글자 수)
             $('.b_mod_summary .b_summary_wrap .item').each(function() {
-                //                        var item =  $('.b_mod_summary .b_summary_wrap .item .txt p');
-                var heightOfDiv = $(this).find('p').height() + "px";
-
-                if ($(this).find('p').height() > 48) {
-                    $(".b_mod_summary .b_summary_wrap").addClass('moreText')
+                var heightOfDiv = $('.vision_area').find('p').height();
+                var heightOfDiv02 = $('.mission_area').find('p').height();
+                var heightOfDiv03 = $('.slogan_area').find('p').height();
+                
+                if ($(this).children('.txt').find('p').height() > 48) {
+                    $(this).addClass('moreText');
                 } else {
-                    $(".b_mod_summary .b_summary_wrap").removeClass('moreText')
+                    $(this).removeClass('moreText')
                 }
 
+                if ($(this).hasClass("moreText")) {
+                    $(this).parent().addClass('moreArea');
+                } else {
+                    $(this).parent().removeClass('moreArea');
+                }
             });
 
             // 기업 인증 및 특허
@@ -1836,7 +1748,7 @@
 
             /* 주요사업영역 3개 이상일때 슬라이드*/
             $('.bizDiv').each(function() {
-                
+
                 var bizItem = $('.bizDiv .item');
                 if (bizItem.length > 3) {
                     $('.b_mod_biz .bizDiv').slick({
@@ -1861,13 +1773,13 @@
                             }
                         ]
                     });
-                    
+
                     $('.bizDiv .slick-dots').addClass('b_dot');
-                    
+
                 } else {
                     $('.bizDiv').addClass('lt_biz')
                 }
-                
+
             });
 
             // 상품영역 3개 이하일 때
@@ -2026,8 +1938,8 @@
                         categories: ['202110', '202109', '202108', '202107', '202106', '202105', '202104', '202103', '202102', '202101', '202012', '202111'],
                         tick: {
                             multiline: false,
-                            
-                         },
+
+                        },
 
                     }
                 },
@@ -2040,8 +1952,7 @@
                     }
                 },
                 padding: {
-                    bottom: 40,
-                    right: 40,
+                    bottom: 10,
                 },
                 bar: {
                     width: {
@@ -2081,7 +1992,7 @@
                 });
 
             // 모바일 chart label rotate
-        
+
 
 
             // 조직문화 ico 최대 높이 동일
@@ -2116,7 +2027,7 @@
                                 breakpoint: 1261,
                                 settings: {
                                     slidesPerRow: 3,
-                                    rows:1,
+                                    rows: 1,
                                     arrows: false,
                                     dots: true,
                                 }
@@ -2125,7 +2036,7 @@
                                 breakpoint: 769,
                                 settings: {
                                     slidesPerRow: 2,
-                                    rows:1,
+                                    rows: 1,
                                     arrows: false,
                                     dots: true,
                                 }
@@ -2143,12 +2054,12 @@
                 arrows: false,
                 dots: true,
                 infinite: true,
-                  responsive: [{
-                                breakpoint: 769,
-                                settings: {
-                                      slidesToShow: 1,
-                                }
-                  }]
+                responsive: [{
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }]
             });
 
             $('#welfare.welfare .slick-dots').addClass('b_dot');
