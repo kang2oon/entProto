@@ -185,9 +185,9 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 
 /* 사업영역 */
 .a_mod_biz .bizDiv{display: flex;justify-content: space-between;flex-wrap: wrap;width: 100%;}
-.a_mod_biz .bizDiv .item{width: calc(50% - 10px);justify-content: space-between;display: flex;flex-direction: column;align-items: flex-start;justify-content: flex-start}
+.a_mod_biz .bizDiv .item{width: calc(50% - 10px);justify-content: space-between;display: flex;flex-direction: column;align-items: flex-start;justify-content: flex-start;border: 1px solid #dcdcdc}
 .a_mod_biz .bizDiv .item .img{position: relative;z-index: 1}
-.a_mod_biz .bizDiv .item .txt{background: #fff;padding: 5rem 3rem 5rem 0;margin-top: -100px;max-width: 70%;position: relative;z-index: 5}
+.a_mod_biz .bizDiv .item .txt{background: #fff;padding: 5rem 3rem ;width: 100%;position: relative;z-index: 5;border-top: 1px solid #dcdcdc}
 .a_mod_biz .bizDiv .slick-list{margin: 0 -10px}
 .a_mod_biz .bizDiv .slick-list .slick-slide{margin: 0 10px}
 .a_mod_biz .bizDiv .item .img{width: 100%;}
@@ -489,7 +489,8 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .b_mod_biz .bizDiv .item h4{font-size: 2.2rem;color: #15938c;margin-bottom: 1rem;word-break: keep-all}
 .b_mod_biz .bizDiv .item p{font-size: 1.7rem;color: #252525;word-break: keep-all}
 .b_mod_biz .bizDiv .item .txt{margin-bottom: 4rem}
-.b_mod_biz .bizDiv .item .img{margin: auto auto 0 auto;}
+.b_mod_biz .bizDiv .item .img{margin: auto auto 0 auto;text-align: center}
+.b_mod_biz .bizDiv .item .img img {display: inline-block !important;}
 
 
 /* 주요 상품 */
@@ -4226,7 +4227,6 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.a_mod_industry .percent_wrap > div .ico img{height: 100%}
 	
 	/* 사업 영역 */
-	.a_mod_biz .bizDiv .item .txt{max-width: 85%}
 	.a_mod_biz .bizDiv .item .txt h4{font-size: 2.6rem}
 	.a_mod_biz .bizDiv .item .txt p{font-size: 1.8rem}
 	
@@ -4593,7 +4593,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.a_mod_industry > div + div{margin-top: 3rem}
 	
 	/* 사업영역 */
-	.a_mod_biz .bizDiv .item .txt{padding: 3rem 2rem 3rem 0;max-width: 90%;}
+	.a_mod_biz .bizDiv .item .txt{padding: 3rem 2rem;}
 	.a_mod_biz .bizDiv .item .txt h4{font-size: 2.2rem}
 	.a_mod_biz .bizDiv .item .txt p{font-size: 1.6rem}
 	
