@@ -5710,6 +5710,7 @@ html{font-size: 8px}
 	.a_mod_emp_wrap .lastEmployeeState .empState_wrap > div:nth-child(2):before{width: 15px;height: 15px;font-size: 1.7rem}
 	.a_mod_emp_wrap .lastEmployeeState .total_wrap{font-size: 1.8rem;flex-wrap: wrap;word-break: break-all}
 	.a_mod_emp_wrap .lastEmployeeState .total_wrap .lastTotal{font-size: 2.2rem}
+    
 	
 	/* 인터뷰 */
 	.a_mod_interview .iv_wrap .photo img{max-width: 100px}
@@ -5718,6 +5719,10 @@ html{font-size: 8px}
 	a_mod_talent .talent_wrap .item .img img{max-height: 40px}
 	.a_mod_talent .talent_wrap .item .tit{font-size: 2rem}
 	.a_mod_talent .talent_wrap .item .desc{font-size: 1.6rem}
+    
+    
+    
+    
 	
 		/*---------------------- 2022 보급형 end ----------------------*/
 	

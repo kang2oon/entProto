@@ -1836,6 +1836,7 @@
 
             /* 주요사업영역 3개 이상일때 슬라이드*/
             $('.bizDiv').each(function() {
+                
                 var bizItem = $('.bizDiv .item');
                 if (bizItem.length > 3) {
                     $('.b_mod_biz .bizDiv').slick({
@@ -1860,11 +1861,13 @@
                             }
                         ]
                     });
-
+                    
                     $('.bizDiv .slick-dots').addClass('b_dot');
+                    
                 } else {
                     $('.bizDiv').addClass('lt_biz')
                 }
+                
             });
 
             // 상품영역 3개 이하일 때
