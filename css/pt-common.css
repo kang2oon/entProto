@@ -4746,8 +4746,10 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
     .b_mod_strategy .add_point ul li, .b_mod_strategy .spec ul li{display: block;}
     .b_mod_strategy .add_point ul li .tit, .b_mod_strategy .spec ul li .tit{width: 100%;font-size: 1.8rem;margin-bottom: 1rem;display: block}
     .b_mod_strategy .add_point ul li .desc, .b_mod_strategy .spec ul li .desc{font-size: 1.8rem;width: 100%;padding-left: 0}
+    .b_mod_strategy .interview_tip_wrap{border-width: 2px}
     .b_mod_strategy .interview_tip_wrap:after{width:50px;height: 50px;background-size: 100%;}
-    .b_mod_strategy .qm_btn_wrap .qm_btn{width:calc(100% - 30px);font-size: 1.8rem;padding:1.5rem;max-width:375px;}
+    .a_mod_strategy .qm_btn_wrap{max-width: 270px}
+    .b_mod_strategy .qm_btn_wrap .qm_btn{width:calc(100% - 30px);font-size: 1.8rem;padding:1.5rem;max-width:240px;}
 	.b_mod_strategy .qm_btn_wrap .qm_txt a{display: none}
     
     .btn_wrap{margin-top: 3rem}
@@ -5320,11 +5322,24 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
      .new_arrow.slick-prev, .new_arrow.slick-next{top: -115px !important}
     
     /* ---보급형 B타입--- */
+    /* 기업정보 */
+    .b_mod_finance ul li:nth-child(1) .ico{background-size: 38px;height: 40px}
+    .b_mod_finance ul li:nth-child(2) .ico{background-size: 40px;height: 40px}
+    .b_mod_finance ul li:nth-child(3) .ico{background-size: 40px;height: 40px}
+    .b_mod_finance ul li:nth-child(4) .ico{background-size: 40px;height: 40px}
+    
       /* 비전 */
     .b_mod_summary .b_summary_wrap{flex-direction: column;}
     .b_mod_summary .b_summary_wrap .item{width: 100%;max-width: 300px;margin: 20px auto 0 auto !important;border: 2px solid #fff;padding: 3rem 2rem}
     .b_mod_summary .b_summary_wrap .item:nth-child(1){margin-top: 0 !important}
     .b_mod_summary .b_summary_wrap .item h4{font-size: 2.2rem}
+    
+    /* 백분위 */
+    .b_mod_percent .percent_wrap > div .ico{height: 40px;margin: 0 auto 1rem auto !important}
+    .b_mod_percent .percent_wrap .scale .ico:after{background-size: 40px;width: 100%;height: 40px;}
+    .b_mod_percent .percent_wrap .profit .ico:after{background-size: 40px;width: 100%;height: 40px;}
+    .b_mod_percent .percent_wrap .stable .ico:after{background-size: 40px;width: 100%;height: 40px;}
+    .b_mod_percent .percent_wrap .growth .ico:after{background-size: 30px;width: 100%;height: 40px;}
     
     /* 연혁 */
     .b_mod_history .history_wrap{margin-top: 3rem}
