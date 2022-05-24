@@ -511,11 +511,11 @@
 
     <!-- 대표이미지 -->
     <div class="com_rep_Img newCompanyInfoWrap new_rep_Img" style="background: url(images/tplA_top.png)" id="main_banner">
-    <div class="txt_area">
-			<div class="banner_company_name">
-			  	<span class="name">기업명</span>
-			</div>
-		</div>
+        <div class="txt_area">
+            <div class="banner_company_name">
+                <span class="name">기업명</span>
+            </div>
+        </div>
     </div>
     <!-- 대표이미지 -->
 
@@ -626,7 +626,6 @@
     <div class="module-wrap b_mod_summary section_pd">
         <div class="new_cnt-container">
             <div class="b_summary_wrap">
-
                 <div class="item vision_area">
                     <div class="img visionImg">
                         <img src="images/b_vision_img.png" alt="">
@@ -634,6 +633,10 @@
                     <div class="txt visionTxt">
                         <h4>VISION</h4>
                         <p class="vision">
+                            블록체인 기술 기반
+                            블록체인 기술 기반
+                            블록체인 기술 기반
+                            블록체인 기술 기반
                             블록체인 기술 기반
                             블록체인 기술 기반
                         </p>
@@ -1722,23 +1725,38 @@
 
 
             // 기업 summary 3줄 이상일 때 (글자 수)
-            $('.b_mod_summary .b_summary_wrap .item').each(function() {
+            function multiLine() {
                 var heightOfDiv = $('.vision_area').find('p').height();
                 var heightOfDiv02 = $('.mission_area').find('p').height();
                 var heightOfDiv03 = $('.slogan_area').find('p').height();
-                
-                if ($(this).children('.txt').find('p').height() > 48) {
-                    $(this).addClass('moreText');
+
+
+                if (heightOfDiv > 48) {
+                    $('.vision_area').addClass('moreText');
                 } else {
-                    $(this).removeClass('moreText')
+                    $('.vision_area').removeClass('moreText')
                 }
 
-                if ($(this).hasClass("moreText")) {
-                    $(this).parent().addClass('moreArea');
+                if (heightOfDiv02 > 48) {
+                    $('.mission_area').addClass('moreText');
                 } else {
-                    $(this).parent().removeClass('moreArea');
+                    $('.mission_area').removeClass('moreText')
                 }
-            });
+
+                if (heightOfDiv03 > 48) {
+                    $('.slogan_area').addClass('moreText');
+                } else {
+                    $('.slogan_area').removeClass('moreText')
+                }
+
+                if ($('.b_summary_wrap .item').hasClass("moreText")) {
+                    $('.b_summary_wrap').addClass('moreArea');
+                } else {
+                   $('.b_summary_wrap').removeClass('moreArea');
+                }
+            }
+            multiLine();
+           
 
             // 기업 인증 및 특허
             // 기업인증 5개 이하일 때

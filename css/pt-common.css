@@ -660,14 +660,21 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 
 /* ---- 보급형 템플릿 C안 ---- */
 .cType_tit{font-size: 4rem;font-weight: 400;text-align: center;padding-bottom: 3rem;margin-bottom: 3rem;border-bottom: 1px solid #ababab;}
-.c_mod_summary .cont_area{}
 .c_mod_summary .cont_area > * + * {margin-top: 5rem}
 .c_mod_summary .cont_txt{color: #666;font-size: 1.8rem;}
 .c_mod_summary .info_wrap{display: flex;justify-content:space-between;}
-.c_mod_summary .info_wrap > li {background: #0082e5;margin-right: 25px;width: calc(25% - 18.75px);padding: 5rem 3rem;text-align: center;color: #fff;}
+.c_mod_summary .info_wrap > li {background: #0082e5;margin-right: 15px;width: calc(25% - 11.25px);padding: 5rem 2rem;text-align: center;color: #fff;}
 .c_mod_summary .info_wrap > li:last-child{margin-right: 0}
-.c_mod_summary .info_wrap > li .cnt{}
-.c_mod_summary .info_wrap > li .tit{font-size: 2rem;}
+.c_mod_summary .info_wrap > li .cnt{font-size: 2.2rem;font-weight: bold;margin: 2rem 0 0.5rem 0}
+.c_mod_summary .info_wrap > li .tit{font-size: 1.6rem;}
+.c_mod_summary .info_wrap > li .ico{display: block;width: 100%;height: 70px;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.c_mod_summary .c_vision_wrap {display: flex;justify-content: center;}
+.c_mod_summary .c_vision_wrap .item{display: flex;border: 1px solid #0082e5;width: 300px;height: 300px;border-radius: 50%;text-align: center;padding: 7rem 4rem;margin-right: 30px;}
+.c_mod_summary .c_vision_wrap .item:last-child{margin-right: 0}
+.c_mod_summary .c_vision_wrap .item h4{font-size: 3rem}
+.c_mod_summary .c_vision_wrap .item h4:after{content: '';display: block;width: 3px;height: 30px;background: #0082e5;margin: 1rem auto}
+.c_mod_summary .c_vision_wrap .item p{font-size: 1.8rem;color: #666;word-break: keep-all}
+.c_mod_summary .c_vision_wrap .item 
 
 /*---------------------- 2022 보급형 end ----------------------*/
 
