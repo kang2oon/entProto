@@ -191,10 +191,13 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 /* 사업영역 */
 .a_mod_biz .bizDiv{display: flex;justify-content: space-between;flex-wrap: wrap;width: 100%;}
 .a_mod_biz .bizDiv .item{width: calc(50% - 10px);justify-content: space-between;display: flex;flex-direction: column;align-items: flex-start;justify-content: flex-start;border: 1px solid #dcdcdc}
+.a_mod_biz .bizDiv .slick-slider .slick-track{display: flex}
+.a_mod_biz .bizDiv .slick-list .slick-slide{margin: 0 10px;}
+.a_mod_biz .bizDiv .slick-list .slick-slide > div{height: 100%}
+.a_mod_biz .bizDiv .slick-list .slick-slide  .item{height: 100%}
 .a_mod_biz .bizDiv .item .img{position: relative;z-index: 1}
 .a_mod_biz .bizDiv .item .txt{background: #fff;padding: 5rem 3rem ;width: 100%;position: relative;z-index: 5;border-top: 1px solid #dcdcdc}
 .a_mod_biz .bizDiv .slick-list{margin: 0 -10px}
-.a_mod_biz .bizDiv .slick-list .slick-slide{margin: 0 10px}
 .a_mod_biz .bizDiv .item .img{width: 100%;}
 .a_mod_biz .bizDiv .item .img img{width: 100%;}
 .a_mod_biz .bizDiv .item .txt h4{font-size: 2.2rem;font-weight: 500}
@@ -654,6 +657,17 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .pb70{padding-bottom: 7rem}
 .b_mod_strategy .qm_btn{background: #437cff;color: #fff}
 .b_mod_strategy .qm_txt a{background-color: #000;}
+
+/* ---- 보급형 템플릿 C안 ---- */
+.cType_tit{font-size: 4rem;font-weight: 400;text-align: center;padding-bottom: 3rem;margin-bottom: 3rem;border-bottom: 1px solid #ababab;}
+.c_mod_summary .cont_area{}
+.c_mod_summary .cont_area > * + * {margin-top: 5rem}
+.c_mod_summary .cont_txt{color: #666;font-size: 1.8rem;}
+.c_mod_summary .info_wrap{display: flex;justify-content:space-between;}
+.c_mod_summary .info_wrap > li {background: #0082e5;margin-right: 25px;width: calc(25% - 18.75px);padding: 5rem 3rem;text-align: center;color: #fff;}
+.c_mod_summary .info_wrap > li:last-child{margin-right: 0}
+.c_mod_summary .info_wrap > li .cnt{}
+.c_mod_summary .info_wrap > li .tit{font-size: 2rem;}
 
 /*---------------------- 2022 보급형 end ----------------------*/
 
