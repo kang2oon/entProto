@@ -62,6 +62,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 
 .new_com_mod_anchor.sty03{background: #218ec7}
 .new_com_mod_anchor.com_mod_anchor ul li a{padding: 1.5rem 2.65rem;font-size: 1.6rem;transition: all 0.3s;color: #fff;}
+.new_com_mod_anchor.com_mod_anchor.fixed ul li a{padding: 1rem 2.65rem;}
 .new_com_mod_anchor.com_mod_anchor ul li a.active{background: #014b71}
 .new_com_mod_anchor.com_mod_anchor ul li a:hover,
 .new_com_mod_anchor.com_mod_anchor ul li a:active,
@@ -682,6 +683,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .b_mod_strategy .qm_btn{background: #437cff;color: #fff}
 .b_mod_strategy .qm_txt a{background-color: #000;}
 
+
 /* ---- 보급형 템플릿 C안 ---- */
 .cType_tit{font-size: 4rem;font-weight: 400;text-align: center;padding-bottom: 3rem;margin-bottom: 3rem;border-bottom: 1px solid #ababab;}
 .cType_tit02{font-size: 3.5rem;text-align: center;font-weight: 500;margin-bottom: 4rem}
@@ -852,9 +854,23 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .c_mod_strategy .guide_wrap .item:nth-child(10) .q:before{content: 'Q10.';display: block;font-size: 4rem;font-weight: bold;color: #0082e5}
 .c_mod_strategy .guide_wrap .item .a{width: calc(100% - 300px);padding-left: 2rem;font-size: 1.8rem;color: #7d7d7d}
 .c_mod_strategy .round_wrap{border-radius: 15px;border: 1px solid #262d7e}
-.c_mod_strategy .rq_cont{padding: 4rem;}
-.c_mod_strategy .ps_wrap{}
-
+.c_mod_strategy .rq_cont{padding: 4rem;display: flex;justify-content: space-evenly;background: url(../images/c_rq_ico.png) no-repeat right 4rem center}
+.c_mod_strategy .rq_tit{font-size: 2.6rem;font-weight: bold;width: 180px}
+.c_mod_strategy .rq_text{width: calc(100% - 200px)} 
+.c_mod_strategy .rq_text p{margin-bottom: 1rem;font-size: 1.8rem;padding-left: 25px;position: relative;}
+.c_mod_strategy .rq_text p:nth-child(1):before{content: '①';display: block;position: absolute;left: 0;top: 0}
+.c_mod_strategy .rq_text p:nth-child(2):before{content: '②';display: block;position: absolute;left: 0;top: 0}
+.c_mod_strategy .rq_text p:nth-child(3):before{content: '③';display: block;position: absolute;left: 0;top: 0}
+.c_mod_strategy .rq_text p:nth-child(4):before{content: '④';display: block;position: absolute;left: 0;top: 0}
+.c_mod_strategy .rq_text p:nth-child(5):before{content: '⑤';display: block;position: absolute;left: 0;top: 0}
+.c_mod_strategy .rq_text p:nth-child(6):before{content: '⑥';display: block;position: absolute;left: 0;top: 0}
+.c_mod_strategy .rq_text p:nth-child(7):before{content: '⑦';display: block;position: absolute;left: 0;top: 0}
+.c_mod_strategy .rq_text p:nth-child(8):before{content: '⑧';display: block;position: absolute;left: 0;top: 0}
+.c_mod_strategy .rq_text p:nth-child(9):before{content: '⑨';display: block;position: absolute;left: 0;top: 0}
+.c_mod_strategy .rq_text p:nth-child(10):before{content: '⑩';display: block;position: absolute;left: 0;top: 0}
+.c_mod_strategy .rq_text p:last-child{margin-bottom: 0}
+.c_mod_strategy .ps_wrap > div{padding: 4rem;}
+.c_mod_strategy .ps_wrap h4{font-size: 3rem;text-align: center;margin-bottom: 4rem;}
 
 /*---------------------- 2022 보급형 end ----------------------*/
 .module-wrap .white_box_sdw{background: #fff;padding: 5.0rem;border: 1px solid #ddd;position: relative;box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.08)}
