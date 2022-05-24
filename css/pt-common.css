@@ -277,6 +277,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .a_mod_welfare .welfare.little_item .item{flex: 1 1;}
 .a_mod_welfare .welfare.little_item .item + .item{margin-left: 20px}
 .a_mod_welfare .welfare .item {width:calc(25% - 20px)}
+/*
 .a_mod_welfare .welfare.mg_item .item{margin-bottom: 10px}
 .a_mod_welfare .welfare.mg_item .item:nth-child(2){background: #00aeef;}
 .a_mod_welfare .welfare.mg_item .item:nth-child(2) .tit,
@@ -284,6 +285,14 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .a_mod_welfare .welfare.mg_item .item:nth-child(8) .tit,
 .a_mod_welfare .welfare.mg_item .item:nth-child(8) .desc{color: #fff}
 .a_mod_welfare .welfare.mg_item .item:nth-child(8){background: #4067ff;color: #fff;}
+*/
+.a_mod_welfare .welfare .item{margin-bottom: 10px}
+.a_mod_welfare .welfare .item:nth-child(2){background: #00aeef;}
+.a_mod_welfare .welfare .item:nth-child(2) .tit,
+.a_mod_welfare .welfare .item:nth-child(2) .desc,
+.a_mod_welfare .welfare .item:nth-child(8) .tit,
+.a_mod_welfare .welfare .item:nth-child(8) .desc{color: #fff}
+.a_mod_welfare .welfare .item:nth-child(8){background: #4067ff;color: #fff;}
 
 .a_mod_comview .comMov{border-radius: 0;}
 .a_mod_comview .new_cnt-container > div + div{margin-top: 3rem}
@@ -4670,7 +4679,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.a_mod_welfare .welfare.little_item .item:nth-child(2){margin-top: 0}
 	.a_mod_welfare .welfare.little_item .item + .item{margin-left: 10px}
 	.a_mod_welfare .welfare.little_item .item:nth-child(3n){margin-left: 0}
-	.a_mod_welfare .welfare .item{width: calc(50% - 5px);padding: 3rem 2rem}
+	.a_mod_welfare .welfare .item{width: calc(50% - 5px);padding: 3rem 2rem;}
 	.a_mod_welfare .welfare .item .tit{font-size: 2rem;margin-bottom: .5rem}
 	.a_mod_welfare .welfare .item .desc{font-size: 1.6rem}
 	
