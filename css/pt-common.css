@@ -685,16 +685,17 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 
 
 /* ---- 보급형 템플릿 C안 ---- */
-.cType_tit{font-size: 4rem;font-weight: 400;text-align: center;padding-bottom: 3rem;margin-bottom: 3rem;border-bottom: 1px solid #ababab;}
+.cType_tit{font-size: 3.5rem;font-weight: 400;text-align: center;padding-bottom: 2rem;margin-bottom: 4rem;border-bottom: 1px solid #ababab;}
 .cType_tit02{font-size: 3.5rem;text-align: center;font-weight: 500;margin-bottom: 4rem}
+.c_mod_summary .mShow {display: none}
 .c_mod_summary .cont_area > * + * {margin-top: 5rem}
 .c_mod_summary .cont_txt{color: #666;font-size: 1.8rem;}
 .c_mod_summary .info_wrap{display: flex;justify-content:space-between;}
 .c_mod_summary .info_wrap > li {background: #0082e5;margin-right: 15px;width: calc(25% - 11.25px);padding: 5rem 2rem;text-align: center;color: #fff;}
 .c_mod_summary .info_wrap > li:last-child{margin-right: 0}
-.c_mod_summary .info_wrap > li .cnt{font-size: 2.2rem;font-weight: bold;margin: 2rem 0 0.5rem 0}
+.c_mod_summary .info_wrap > li .cnt{font-size: 2.2rem;font-weight: bold;margin: 1rem 0 0.5rem 0}
 .c_mod_summary .info_wrap > li .tit{font-size: 1.6rem;}
-.c_mod_summary .info_wrap > li .ico{display: block;width: 100%;height: 70px;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.c_mod_summary .info_wrap > li .ico{display: block;width: 100%;display: flex;flex-direction: column;justify-content: center;align-items: center;height: 46px}
 .c_mod_summary .c_vision_wrap {display: flex;justify-content: center;}
 .c_mod_summary .c_vision_wrap .item{border: 1px solid #0082e5;width: 300px;height: 300px;border-radius: 50%;text-align: center;padding: 7rem 4rem;margin-right: 30px;}
 .c_mod_summary .c_vision_wrap .item:last-child{margin-right: 0}
@@ -725,11 +726,11 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 
 /* 연혁 */
 .c_mod_history .history {position: relative;padding-top: 8rem;}
-.c_mod_history .history:before{content: '연혁';display: block;background: #0768b1;color: #fff;font-size: 3rem;text-align: center;width: 240px;border-radius: 30px;padding: 10px;margin: auto;position: absolute;left: 50%;top:0;transform: translateX(-50%);z-index: 22}
+.c_mod_history .history:before{content: '연혁';display: block;background: #0768b1;color: #fff;font-size: 2.2rem;text-align: center;width: 130px;border-radius: 30px;padding: 10px;margin: auto;position: absolute;left: 50%;top:0;transform: translateX(-50%);z-index: 22}
 .c_mod_history .history:after{content: '';display: block;width: 1px;height: 100%;background: #d9d9d9;position: absolute;left: 50%;transform: translateX(-50%);top: 0;z-index: 11}
 .c_mod_history .history > div{display: flex;align-items: flex-start;padding:90px 0 40px 0;position: relative;}
 .c_mod_history .history > div:last-child:after{border-radius: 0 0 20px 20px}
-.c_mod_history .history > div > span{font-size: 5rem;font-weight: 500;letter-spacing: -1px;position: absolute;top: 20px;line-height: 1}
+.c_mod_history .history > div > span{font-size: 4rem;font-weight: 500;letter-spacing: -1px;position: absolute;top: 30px;line-height: 1}
 .c_mod_history .history > div ul{width: calc(50% - 40px);margin-left: auto;}
 .c_mod_history .history > div:before{content: '';display: block;background: #67c3be;width: 24px;height: 24px;border-radius: 50%;position: absolute;left: 50%;top: 40px;transform: translate(-50%);z-index: 99}
 .c_mod_history .history > div ul > li{display: flex;margin-bottom: 2.0rem;color: #808080;font-size: 1.6rem;}
@@ -762,6 +763,15 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .c_mod_key .key_wrap .desc dt{font-size: 1.8rem;font-weight: bold;margin-right: 5px;white-space: nowrap;margin-right: 1rem}
 .c_mod_key .key_wrap .desc dd{font-size: 1.8rem}
 
+/* 주요상품 */
+.c_mod_product .item{text-align: center;}
+.c_mod_product .item .img{margin-bottom: 2rem;text-align: center;}
+.c_mod_product  .slick-list{margin: 0 -10px}
+.c_mod_product  .slick-slide{margin: 0 -10px}
+.c_mod_product .item .img img{display: inline-block}
+.c_mod_product .item  .txt{font-size: 1.6rem;color: #666}
+.c_mod_product .item  .txt h4{font-weight: 400;margin-bottom: 0.5rem}
+
 /* 직원수 */
 .c_mod_emp {background: #f8f8f8}
 .c_mod_emp #legend02 {display: flex;justify-content: center;margin-top: auto}
@@ -790,6 +800,8 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .c_mod_welfare .welfare_wrap{display: flex;justify-content: space-between}
 .c_mod_welfare .welfare_wrap .slide_wrap{width: calc(50% - 15px);position: relative;padding-top:40px;}
 .c_mod_welfare .welfare_wrap .slide_wrap + .slide_wrap{margin-left: 3rem;}
+.c_mod_welfare .welfare_wrap .slide_wrap .slick-list{margin: 0 -5px}
+.c_mod_welfare .welfare_wrap .slide_wrap .slick-slide{margin: 0 5px}
 .c_mod_welfare .welfare_wrap .item{border: 1px solid #dcdcdc;padding: 4rem;display: flex !important;flex-direction: column;}
 .c_mod_welfare .welfare_wrap #culture .tit:before{content: '조직문화';display: block;font-size: 2.6rem;font-weight: bold;margin-bottom: 1rem;color: #000}
 .c_mod_welfare .welfare_wrap #welfare .tit:before{content: '복리후생';display: block;font-size: 2.6rem;font-weight: bold;margin-bottom: 1rem;color: #000}
@@ -824,6 +836,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .c_mod_interview .interview_wrap{display: flex;align-items: flex-start;justify-content: center}
 .c_mod_interview .interview_wrap .iv_wrap{width: calc(33.333% - 20px);margin-right: 30px;background: #fff;border-radius: 15px;padding: 2.5rem}
 .c_mod_interview .interview_wrap .iv_wrap:last-child{margin-right: 0}
+.c_mod_interview .interview_wrap .iv_wrap .ivSlide {margin-bottom: 0}
 .c_mod_interview .interview_wrap .txt{font-size: 2rem;font-weight: bold;color: #0082e5;}
 .c_mod_interview .interview_wrap .photo {text-align: center;margin: 2rem 0;}
 .c_mod_interview .interview_wrap .q{font-size: 1.8rem;margin-bottom: 1rem;font-weight: 500}
@@ -853,8 +866,8 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .c_mod_strategy .guide_wrap .item:nth-child(9) .q:before{content: 'Q9.';display: block;font-size: 4rem;font-weight: bold;color: #0082e5}
 .c_mod_strategy .guide_wrap .item:nth-child(10) .q:before{content: 'Q10.';display: block;font-size: 4rem;font-weight: bold;color: #0082e5}
 .c_mod_strategy .guide_wrap .item .a{width: calc(100% - 300px);padding-left: 2rem;font-size: 1.8rem;color: #7d7d7d}
-.c_mod_strategy .round_wrap{border-radius: 15px;border: 1px solid #262d7e}
-.c_mod_strategy .rq_cont{padding: 4rem;display: flex;justify-content: space-evenly;background: url(../images/c_rq_ico.png) no-repeat right 4rem center}
+.c_mod_strategy .round_wrap{border-radius: 15px;border: 1px solid #262d7e;overflow: hidden}
+.c_mod_strategy .rq_cont{padding: 4rem;display: flex;justify-content: space-evenly;background: url(../images/c_rq_ico.png) no-repeat right 4rem center;background: #fff}
 .c_mod_strategy .rq_tit{font-size: 2.6rem;font-weight: bold;width: 180px}
 .c_mod_strategy .rq_text{width: calc(100% - 200px)} 
 .c_mod_strategy .rq_text p{margin-bottom: 1rem;font-size: 1.8rem;padding-left: 25px;position: relative;}
@@ -870,7 +883,46 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .c_mod_strategy .rq_text p:nth-child(10):before{content: '⑩';display: block;position: absolute;left: 0;top: 0}
 .c_mod_strategy .rq_text p:last-child{margin-bottom: 0}
 .c_mod_strategy .ps_wrap > div{padding: 4rem;}
-.c_mod_strategy .ps_wrap h4{font-size: 3rem;text-align: center;margin-bottom: 4rem;}
+.c_mod_strategy .ps_wrap h4{font-size: 2.4rem;text-align: center;margin-bottom: 4rem;}
+.c_mod_strategy .ps_wrap .add_point{background: #262d7e;}
+.c_mod_strategy .ps_wrap .ps_tit{text-align: center;}
+.c_mod_strategy .ps_wrap .ps_tit h4{border-radius: 5px;padding: 0.5rem 5rem;display: inline-block}
+.c_mod_strategy .ps_wrap .add_point h4{color: #fff;border: 1px solid #fff;}
+.c_mod_strategy .ps_wrap .add_point li{color: #fff;}
+.c_mod_strategy .ps_wrap  li{display: flex;font-size: 1.8rem;margin-bottom: 2rem;justify-content:space-between}
+.c_mod_strategy .ps_wrap  li:last-child{margin-bottom: 0}
+.c_mod_strategy .ps_wrap  li .tit{width: 130px;font-weight: 500}
+.c_mod_strategy .ps_wrap  li .desc{width: calc(100% - 150px);font-weight: 400}
+.c_mod_strategy .ps_wrap .spec{background: #fff}
+.c_mod_strategy .ps_wrap .spec ul{background: url(../images/c_spec_bg.png) no-repeat ;padding-left: 250px;min-height: 140px}
+.c_mod_strategy .ps_wrap .spec h4{background: #262d7e;color: #fff}
+.c_mod_strategy .ps_wrap .spec li .desc{color: #7b7b7b}
+
+/*면접꿀팁*/
+.c_mod_strategy .stg_bg{position: relative;padding-bottom: 7rem}
+.c_mod_strategy .stg_bg:before{content: '';display: block;height: 30%;width: 100%;background: #f8f8f8;bottom: 0;left: 0;position: absolute}
+.c_mod_strategy .interview_tip .stg_tit02{text-align: center;font-size: 3rem;color: #0b4467;}
+.c_mod_strategy .interview_tip .stg_tit02 span{position: relative;display: inline-block}
+.c_mod_strategy .interview_tip .stg_tit02 span:before{content: '';display: block;background: url(../images/c_tip_tit.png) no-repeat;width: 170px;height: 75px;position: absolute;left: -10px;top:-50%;;background-size: 170px}
+.c_mod_strategy .interview_tip .item{padding-bottom: 3rem;margin-bottom: 3rem;border-bottom: 1px solid #dddddd;position: relative;padding-left: 10rem;}
+.c_mod_strategy .interview_tip .item:before{content: '';display: block; position: absolute;font-size: 4rem;font-weight: bold;color: #0082e5;left: 0;top: 0;line-height: 1}
+.c_mod_strategy .interview_tip .item:nth-child(1):before{content: 'Q1.'}
+.c_mod_strategy .interview_tip .item:nth-child(2):before{content: 'Q2.'}
+.c_mod_strategy .interview_tip .item:nth-child(3):before{content: 'Q3.'}
+.c_mod_strategy .interview_tip .item:nth-child(4):before{content: 'Q4.'}
+.c_mod_strategy .interview_tip .item:nth-child(5):before{content: 'Q5.'}
+.c_mod_strategy .interview_tip .item:nth-child(6):before{content: 'Q6.'}
+.c_mod_strategy .interview_tip .item:nth-child(7):before{content: 'Q7.'}
+.c_mod_strategy .interview_tip .item:nth-child(8):before{content: 'Q8.'}
+.c_mod_strategy .interview_tip .item:nth-child(9):before{content: 'Q9.'}
+.c_mod_strategy .interview_tip .item:nth-child(10):before{content: 'Q10.'}
+.c_mod_strategy .interview_tip .item .q{font-size: 2.2rem;margin-bottom: 1rem;font-weight: 500}
+.c_mod_strategy .interview_tip .item .a{font-size: 1.8rem;color: #7d7d7d;}
+.c_mod_strategy .interview_tip .item .a b{color: #0082e5;}
+.c_mod_strategy .interview_tip .qm_btn{background: #0082e5;color: #fff}
+.c_mod_strategy .interview_tip .qm_txt a{background-color: #000}
+
+
 
 /*---------------------- 2022 보급형 end ----------------------*/
 .module-wrap .white_box_sdw{background: #fff;padding: 5.0rem;border: 1px solid #ddd;position: relative;box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.08)}
@@ -4485,10 +4537,24 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
     /* 취업전략 */
     .b_mod_strategy .rq_cont:after{display: none}
     .b_mod_strategy .rq_cont .txt_area{width: 100%;}
-
     
+    /* ---- 보급형 템플릿 C안 ---- */
+    .c_mod_summary .c_vision_wrap{display: block;}
+    .c_mod_summary .c_vision_wrap .item{margin: 2rem auto !important;padding: 5rem 4rem}
+    .c_mod_summary .c_vision_wrap .item h4{font-size: 2.2rem}
+    .c_mod_summary .c_vision_wrap .item p{font-size: 1.6rem}
     
-	
+    .c_mod_percent .c_mod_finance .item{width: calc(33.333% - 6.666px);margin-right: 10px;}
+    .c_mod_percent .c_mod_finance .item:last-child{margin-right: 0}
+    .c_mod_percent .c_mod_finance .item .tit, .c_mod_percent .c_mod_finance .item .desc{font-size: 1.8rem}
+    .c_mod_percent .c_mod_finance .item .desc span{font-size: 3rem}
+    
+      .c_mod_biz .bizDiv .item{display: block;margin-bottom: 2rem;text-align: center;}
+    .c_mod_biz .bizDiv .item > div + div{margin-left: 0;margin-top: 1rem}
+    .c_mod_biz .bizDiv .item .txt{padding-top: 0;}
+    .c_mod_biz .bizDiv .item > div h4{font-size: 2.0rem;margin-bottom: .5rem}
+    .c_mod_biz .bizDiv .item > div p{font-size: 1.6rem}
+    
 	/*---------------------- 2022 보급형 end ----------------------*/
 	
 /* Header */
@@ -4766,6 +4832,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 }
 
 @media all and (max-width:768px){
+    .new_com_mod_header  .logo{width: 100%}
     .new_rep_Img.com_rep_Img#main_banner{height: 200px}
     .new_rep_Img.com_rep_Img#main_banner .banner_company_name{font-size: 2.4rem;}
 	.section_pd{padding: 40px 0 !important}
@@ -4971,6 +5038,123 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.b_mod_strategy .qm_btn_wrap .qm_txt a{display: none}
     
     .btn_wrap{margin-top: 3rem}
+    
+    	
+   /* ---- 보급형 템플릿 C안 ---- */
+    .cType_tit{font-size: 2.4rem;padding-bottom: 1rem;margin-bottom: 2rem}
+    .cType_tit02{font-size: 2.2rem;margin-bottom: 2rem}
+    /* 회사소개*/
+    .c_mod_summary .cont_txt{font-size: 1.6rem}
+    .c_mod_summary .cont_area > * + *{margin-top: 3rem}
+    .c_mod_summary .info_wrap {flex-wrap: wrap}
+    .c_mod_summary .info_wrap > li{margin-right: 5px;width: calc(50% - 5px);margin-right: 10px;padding: 3rem 2rem;}
+    .c_mod_summary .info_wrap > li:nth-child(-n+2){margin-bottom: 10px;}
+    .c_mod_summary .info_wrap > li:nth-child(2n){margin-right: 0}
+    .c_mod_summary .info_wrap > li .ico.ico01 img{width: 35px}
+    .c_mod_summary .info_wrap > li .ico.ico02 img{width: 36px}
+    .c_mod_summary .info_wrap > li .ico.ico03 img{width: 36px}
+    .c_mod_summary .info_wrap > li .ico.ico04 img{width: 36px}
+    .c_mod_summary .info_wrap > li .ico.ico04 img{width: 36px}
+    .c_mod_summary .info_wrap > li .ico{height: 36px}
+    .c_mod_summary .info_wrap > li .cnt{font-size: 1.8rem}
+    .c_mod_summary .mShow{display: block}
+    .c_mod_summary .c_vision_wrap .item{max-width: 500px;width: 100%;height: auto;border-radius: 0;padding: 3rem 2rem}
+    .c_mod_summary .c_vision_wrap .item h4:after{height: 15px;width: 2px;}
+    
+    .c_mod_percent .c_mod_finance{display: block;}
+    .c_mod_percent .c_mod_finance .item{width: 100%;margin-right: 0;margin-bottom: 2rem}
+    .c_mod_percent .c_mod_finance .item:last-child{margin-bottom: 0}
+    .c_mod_percent .c_mod_finance .item .desc span{font-size: 2.4rem}
+    .c_mod_percent .new_cnt-container > div + div{margin-top: 4rem}
+    .c_mod_percent .c_percent .item{padding: 2rem;align-items: center}
+    .c_mod_percent .c_percent .item .ico{width: 90px;display: block;}
+    .c_mod_percent .c_percent .item .tit{font-size: 2.4rem;flex-direction: column;}
+    .c_mod_percent .c_percent .item .tit span{font-size: 1.4rem;padding: 0.2rem 1.5rem;margin-bottom: 1rem}
+    .c_dot.slick-dots{margin-top: 2rem}
+    .c_dot.sty01 li button{width: 13px;height: 13px}
+    
+    /* 연혁 */
+    .c_mod_history .history{padding-top: 0;}
+    .c_mod_history .history:before{display: none}
+    .c_mod_history .history > div{padding-top: 0 !important;margin-bottom: 2rem}
+    .c_mod_history .history > div:last-child{margin-bottom: 0}
+    .c_mod_history .history > div:before{top: 0px !important;width: 13px;height: 13px}
+    .c_mod_history .history:after{left: 0;transform: none;}
+    .c_mod_history .history_wrap{margin-top: 3rem}
+	.c_mod_history .history > div{padding: 2.0rem 0 2rem 3rem;display: block;}
+	.c_mod_history .history > div > span {left: 0;transform: translateX(0);width: 100%;font-size: 2.0rem;text-align: right !important;margin-bottom: 5rem}
+	.c_mod_history .history > div > span:after{width: 20px;height: 20px;left: 10px}
+	.c_mod_history .history > div:after{left: 0px;transform: translateX(0);}
+	.c_mod_history .history > div ul{width: 100% !important;margin-top: 1rem }
+    .c_mod_history .history > div:before{left: 0 !important;top: 3rem}
+	.c_mod_history .history > div:nth-child(even) ul li{flex-direction: row;text-align: left}
+	.c_mod_history .history > div:nth-child(even) ul li .month{margin-left: 0;margin-right: 1.0rem}
+    .c_mod_history .history > div span{position: static;width: 100%;text-align: left !important}
+    
+    /* 핵심가치 */
+    .c_mod_key .key_wrap{display: block}
+    .c_mod_key .key_wrap .item{padding: 3rem 2rem}
+    .c_mod_key .key_wrap .tit{font-size: 1.8rem;}
+    .c_mod_key .key_wrap .desc dl{display: block;}
+    .c_mod_key .key_wrap .desc dt{white-space: normal;margin-bottom: 0.5rem;font-size: 1.6rem}
+    .c_mod_key .key_wrap .desc dd{font-size: 1.5rem}
+    
+   /* 기업문화 */
+    .c_mod_welfare .new_arrow.slick-prev, 
+    .c_mod_welfare .new_arrow.slick-next{top: 2rem !important;}
+    .c_mod_welfare .welfare_wrap .item{padding: 2rem}
+    .c_mod_welfare .welfare_wrap .slick-arrow{width: 20px;height: 20px;}
+    .c_mod_welfare .welfare_wrap .slick-arrow.slick-next{right: 2rem}
+    .c_mod_welfare .welfare_wrap .slick-arrow.slick-prev{right: calc(2rem + 26px) !important}
+    .c_mod_welfare .welfare_wrap{justify-content: flex-start}
+    .c_mod_welfare .welfare_wrap .slick-arrow span{font-size: 1.4rem;}
+    .c_mod_welfare .welfare_wrap .slick-arrow.slick-prev{right: 30px}
+    .c_mod_welfare .welfare_wrap .slide_wrap{width:calc(50% - 5px);padding-top: 0}
+    .c_mod_welfare .welfare_wrap .slide_wrap + .slide_wrap{margin-left: 10px}
+    .c_mod_welfare .welfare_wrap #culture .tit:before,
+    .c_mod_welfare .welfare_wrap #welfare .tit:before{font-size: 1.8rem;margin-bottom: 0.5rem}
+    .c_mod_welfare .welfare_wrap .item .tit{font-size: 1.6rem;margin-bottom: .5rem}
+    .c_mod_welfare .welfare_wrap .item .desc{font-size: 1.4rem;margin-bottom: 2rem}
+    .c_mod_welfare .welfare_wrap .item .img img{max-height: 50px}
+    
+    /* 인재상 */
+    .c_mod_talent .talent_wrap{background-image: none;padding: 2rem}
+    .c_mod_talent .talent_wrap .item{width: 100%;}
+    .c_mod_talent .talent_wrap .item .tit{margin-bottom: 0.5rem}
+    
+    /* 인터뷰 */
+    .c_mod_interview .interview_wrap{display: block}
+    .c_mod_interview .interview_wrap .iv_wrap{width: 100%;margin-right: 0;margin-bottom: 2rem;padding: 2rem;}
+    
+    /* 취업 전략 */
+    .c_mod_strategy .stg_tit{font-size: 2rem;padding-bottom: 2rem}
+    .c_mod_strategy .stg_tit:after{background-size: 270px;width: 270px;left: calc(50% + 20px);height: 40px}	
+    .c_mod_strategy .guide_wrap .item .q:before{font-size: 2.4rem !important;}
+    .c_mod_strategy .guide_wrap .item{padding-top: 55px;display: block;}
+    .c_mod_strategy .guide_wrap .item .q,
+    .c_mod_strategy .interview_tip .item .q{width: 100%;font-size: 1.8rem;margin-bottom: 1rem}
+    .c_mod_strategy .guide_wrap .item .a,
+    .c_mod_strategy .interview_tip .item .a{font-size: 1.6rem;width: 100%;padding-left: 0}
+    
+    .c_mod_strategy .rq_cont{padding: 2rem;display: block;}
+    .c_mod_strategy .rq_tit{width: 100%;margin-bottom: 1rem;font-size: 2rem}
+    .c_mod_strategy .rq_tit br{display: none}
+    .c_mod_strategy .rq_text{width: 100%;}
+    .c_mod_strategy .rq_text p{font-size: 1.6rem;padding-left: 15px}
+    .c_mod_strategy .ps_wrap > div{padding: 2rem}
+    .c_mod_strategy .ps_wrap .spec ul{background: none;min-height: a
+    ;padding-left: 0;}
+    .c_mod_strategy .ps_wrap .ps_tit h4{font-size: 2rem;margin-bottom: 2rem;font-size: 2rem;padding: 0.5rem 3rem}
+    .c_mod_strategy .ps_wrap li{display: block;font-size: 1.6rem;margin-bottom: 1rem;}
+    .c_mod_strategy .ps_wrap li .tit{width: 100%;margin-bottom: .5rem}
+    .c_mod_strategy .ps_wrap li .desc{width: 100%}
+    .c_mod_strategy .interview_tip .stg_tit02{font-size: 2rem;margin-bottom: 2rem;}
+    .c_mod_strategy .interview_tip .stg_tit02 span:before{background-size: 100px;width: 100px;height: 45px;left: -5px}
+    .c_mod_strategy .interview_tip .item:before{font-size: 2.4rem;position: static;margin-bottom: 2rem}
+    .c_mod_strategy .interview_tip .item{padding-left: 0}
+    .c_mod_strategy .qm_btn_wrap{max-width: 270px}
+    .c_mod_strategy .qm_btn_wrap .qm_btn{width:calc(100% - 30px);font-size: 1.8rem;padding:1.5rem;max-width:240px;}
+	.c_mod_strategy .qm_btn_wrap .qm_txt a{display: none}
     
 	
 /*---------------------- 2022 보급형 end ----------------------*/
@@ -5597,6 +5781,21 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
    .b_mod_welfare .b_mod_welfare_slide #Culture img{height: 100%}
     .b_mod_welfare .b_mod_welfare_slide #Culture .item .txt .tit{font-size: 2rem;}
     
+    
+    /* ---보급형 C타입--- */   
+    .c_mod_emp .c3-axis.c3-axis-y text, 
+    .c_mod_emp .c3-axis.c3-axis-x text{font-size: 1.4rem;}
+    .c_mod_emp .c3-axis.c3-axis-x text{transform: translate(10px , 5px) rotate(30deg);}
+    .c_mod_emp .lastEmployeeState .total_wrap{padding: 2rem 3rem;margin-right: 2rem;}
+    .c_mod_emp .lastEmployeeState .total_wrap .tit:before{background-size: 22px;width: 22px;height: 22px;margin-bottom: 1rem}
+    .c_mod_emp .lastEmployeeState .total_wrap .tit{font-size: 1.8rem}
+    .c_mod_emp .lastEmployeeState .total_wrap .num{font-size: 3rem;}
+    .c_mod_emp .lastEmployeeState .empState_wrap > div{margin-bottom: 2rem;padding-bottom: 2rem;padding: 0}
+    .c_mod_emp .lastEmployeeState .empState_wrap{margin-top: 0}
+    .c_mod_emp .lastEmployeeState .empState_wrap > div > div:last-child{font-size: 2.4rem}
+    
+    
+    
 html{font-size: 8px}
 /* Header */	
 	.header .logo img{max-width: 200px}
@@ -5954,10 +6153,15 @@ html{font-size: 8px}
 	.a_mod_talent .talent_wrap .item .tit{font-size: 2rem}
 	.a_mod_talent .talent_wrap .item .desc{font-size: 1.6rem}
     
-    
-    
-    
+    /* ---- 보급형 템플릿 C안 ---- */
+    .c_mod_welfare .welfare_wrap{display: block;}
+    .c_mod_welfare .welfare_wrap .slide_wrap{width: 100%;}
+    .c_mod_welfare .welfare_wrap .slide_wrap + .slide_wrap{margin-left: 0;margin-top: 1.5rem}
 	
+    .c_mod_emp .lastEmployeeState{display: block;}
+    .c_mod_emp .lastEmployeeState .total_wrap{margin-right: 0;margin-bottom: 2rem;}
+    .c_mod_emp .lastEmployeeState .total_wrap .tit:before{display: none}
+    
 		/*---------------------- 2022 보급형 end ----------------------*/
 	
      /* Common */
