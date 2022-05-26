@@ -1,2193 +1,2278 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-	<meta name="author" content="kang2oon">
-	<title class="comName">template</title>
-	<link rel="shortcut icon" href="#">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="author" content="kang2oon">
+    <title class="comName">template</title>
+    <link rel="shortcut icon" href="#">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
 
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
-	<link href="/css/pt-common.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css" />
-	<link rel="stylesheet" href="https://www.jobaba.net//resource/bxslider/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.4.5/css/swiper.min.css">
+    <link href="/css/pt-common.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css" />
+    <link rel="stylesheet" href="https://www.jobaba.net//resource/bxslider/slick.css">
 
-	<!-- 화살표웹폰트-->
-	<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
-	<style>
-		/* 신규타입 상단처리 */
-		#main_banner,
-		.company_info_outer,
-		.wantCompany_ct_box {
-			display: none;
-		}
+    <!-- 화살표웹폰트-->
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
+    <style>
+        /* 신규타입 상단처리 */
+        #main_banner,
+        .company_info_outer,
+        .wantCompany_ct_box {
+            display: none;
+        }
 
-		.wantCompany_body {
-			padding: 0;
-		}
+        .wantCompany_body {
+            padding: 0;
+        }
 
-		#companyInfoWrap {
-			padding: 0 0 40px;
-		}
+        #companyInfoWrap {
+            padding: 0 0 40px;
+        }
 
-		.top_menu_newB {
-			display: none
-		}
-	</style>
+        .top_menu_newB {
+            display: none
+        }
+    </style>
 </head>
 
 <body>
-	<div id="header" class="container-fluid">
-		<div id="gnb-wrap">
+    <div id="header" class="container-fluid">
+        <div id="gnb-wrap">
 
-			<!-- GNB -->
-			<div class="containerNew clearfix" id="mainGnbHeader">
-				<div class="logo">
-					<div class="hb_menu" tabindex="0">
-						<div class="bar1"></div>
-						<div class="bar2"></div>
-						<div class="bar3"></div>
-					</div>
-					<a href="https://www.jobaba.net/main/main.do" title="메인화면 이동">
-						<h1><img src="https://www.jobaba.net/resource/images/main/logo.png" alt="잡아바" style="padding-bottom: 0"></h1>
-					</a>
-					<p>당신이 도전할 수 있는 기회, <em>38만개!</em><!-- <a href="https://www.jobaba.net/job1004" class="packram_go_btn" target="_blank">중장년 일자리 박람회 →</a> -->
-					</p>
-				</div>
+            <!-- GNB -->
+            <div class="containerNew clearfix" id="mainGnbHeader">
+                <div class="logo">
+                    <div class="hb_menu" tabindex="0">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <a href="https://www.jobaba.net/main/main.do" title="메인화면 이동">
+                        <h1><img src="https://www.jobaba.net/resource/images/main/logo.png" alt="잡아바" style="padding-bottom: 0"></h1>
+                    </a>
+                    <p>당신이 도전할 수 있는 기회, <em>38만개!</em><!-- <a href="https://www.jobaba.net/job1004" class="packram_go_btn" target="_blank">중장년 일자리 박람회 →</a> -->
+                    </p>
+                </div>
 
-				<!-- 로그인, 회원가입, 고객센터  -->
-				<div class="search clearfix">
-					<ul class="tnb clearfix">
-
-
-						<li><a href="#none;" onclick="onNonLogin();">로그인</a></li>
-
-						<li><a href="https://www.jobaba.net/mber/sbcs/mberJoinIntro.do" title="회원가입이동">회원가입</a></li>
+                <!-- 로그인, 회원가입, 고객센터  -->
+                <div class="search clearfix">
+                    <ul class="tnb clearfix">
 
 
+                        <li><a href="#none;" onclick="onNonLogin();">로그인</a></li>
 
-
-						<li><a href="https://www.jobaba.net/hpdsk/ntc/list.do" title="고객센터 이동">고객센터</a></li>
-					</ul>
-					<div class="clearfix"></div>
-					<div class="search-bar clearfix">
-						<div class="btn_back">&lt;</div>
-						<!-- 					<input type="text" placeholder="검색어를 입력하세요." /> -->
-						<!-- 					<input type="submit" value="검색" /> -->
-						<div class="dummy_search"><span class="ds_txt">검색어를 입력하세요.</span></div>
-					</div>
-				</div>
-				<!--//로그인, 회원가입, 고객센터  -->
-
-				<!-- TOP MENU -->
-				<div class="scrollable clearfix">
-					<ul class="gnb clearfix">
-						<li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do">지원정책</a></li>
-						<li><a href="https://www.jobaba.net/introduction/mainPage.do">취업역량강화<span class="mark new"></span></a></li>
-						<li><a href="https://www.jobaba.net/empmn/enterpriseEmployList.do">채용정보</a></li>
-						<li><a href="https://www.jobaba.net/empmn/desEntNew.do">탐나는기업</a></li>
-
-						<li><a href="https://www.jobaba.net/edutrn/list2020.do">교육/행사</a></li>
-						<li><a href="https://www.jobaba.net/thema/list.do">참여/소통</a></li>
-
-					</ul>
-				</div>
-				<!--//TOP MENU -->
-
-				<!-- 통합접수시스템 -->
-				<div class="goto_wrap">
-					<ul class="goto clearfix">
-						<li><a href="https://apply.jobaba.net/bsns/bsnsListView.do" target="_blank" title="통합접수시스템 이동"><span class="goto1"></span>통합접수시스템</a></li>
-						<!--		<li><a href="https://www.jobaba.net/youngMall/youngMall.do" target="_blank" title="청년몰 이동"><span class="goto2"></span>청년몰</a></li> -->
-						<!-- <li><a href="https://account.jobaba.net/main/intro.do" target="_blank" title="청년노동자통장 이동"><span class="goto3"></span>청년노동자통장</a></li> -->
-						<li><a href="https://youth.jobaba.net/introduction" target="_blank" title="청년지원사업 이동"><span class="goto4"></span>청년지원사업·청년몰</a></li>
-						<li><a href="https://adst.jobaba.net/login/cnslLogin.do" target="_blank" title="상담사 전용 이동"><span class="goto5"></span>상담사 전용</a></li>
-
-					</ul>
-					<!-- 통합접수시스템 메뉴 -->
-					<div class="receipt_system clearfix">
-						<div class="menu_area">
-							<div class="menu_dumb">
-								<ul>
-									<li><a href="https://apply.jobaba.net/bsns/bsnsListView.do" target="_blank" title="통합접수시스템 이동">통합접수시스템</a></li>
-									<!-- 	<li><a href="https://www.jobaba.net/youngMall/youngMall.do" target="_blank" title="청년몰 이동">청년몰</a></li>  -->
-									<!-- <li><a href="https://account.jobaba.net/main/intro.do" target="_blank" title="청년통장 이동">청년통장</a></li> -->
-									<li><a href="https://youth.jobaba.net/introduction" target="_blank" title="청년지원사업 이동">청년지원사업·청년몰</a></li>
-
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--// 통합접수시스템 -->
-			</div>
-			<!--//GNB -->
-
-
-			<!-- 모바일 서브 GNB -->
-			<div class="containerNew clearfix sub_hader" id="subGnbHeader" style="display: none;">
-				<div class="m_sub_header search-bar">
-					<ul>
-						<li><span class="m_btn back" onclick="history.back();"></span></li>
-						<li>
-							<p class="mh_txt" id="mhTitle"></p>
-						</li>
-
-						<li><span class="m_btn saerch dummy_search"></span></li>
-						<li>
-							<div class="hb_menu shm" tabindex="0">
-								<div class="bar1"></div>
-								<div class="bar2"></div>
-								<div class="bar3"></div>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<!-- TOP MENU -->
-				<div class="scrollable clearfix">
-					<ul class="gnb clearfix" id="subGnbMenu">
-						<li><a href="javascript:void(0);">나를 위한 맞춤정보</a></li>
-						<li><a href="javascript:void(0);">재직지원</a></li>
-						<li><a href="javascript:void(0);">취업지원</a></li>
-						<li><a href="javascript:void(0);">창업지원</a></li>
-						<li><a href="javascript:void(0);">기업지원</a></li>
-						<li><a href="javascript:void(0);">교통/주거</a></li>
-						<li><a href="javascript:void(0);">생활/금융</a></li>
-					</ul>
-				</div>
-				<!--//TOP MENU -->
-			</div>
-			<!--//모바일 서브 -->
-
-
-			<div class="gnb-inner-wrap gnb_wrapper">
-				<div class="containerNew clearfix">
-
-					<!-- 통합사이트 바로가기 메뉴 -->
-					<div class="go_menu clearfix">
-						<div class="no_over"></div>
-						<div class="btn_search_close">닫기<img class="m_hide" src="" alt=""></div>
-						<div class="asite_area">
-							<p class="tit">잡아바 통합사이트 바로가기</p>
-							<ul>
-								<li><a href="https://www.jobaba.net/main/main.do" title="잡아바 이동"><span class="go_img ty1"></span>
-										<p class="go_txt">잡아바</p>
-									</a></li>
-								<li><a href="https://apply.jobaba.net/bsns/bsnsListView.do" target="_blank" title="통합접수시스템 이동"><span class="go_img ty2"></span>
-										<p class="go_txt">통합접수시스템</p>
-									</a></li>
-								<li><a href="https://account.ggwf.or.kr/main/intro.do" target="_blank" title="청년통장 이동"><span class="go_img ty3"></span>
-										<p class="go_txt">청년통장</p>
-									</a></li>
-								<li><a href="https://youth.jobaba.net/introduction" target="_blank" title="청년지원사업 이동"><span class="go_img ty4"></span>
-										<p class="go_txt">청년지원사업·청년몰</p>
-									</a></li>
-								<!-- 	<li><a href="https://www.jobaba.net/youngMall/youngMall.do" target="_blank" title="경기청년몰 이동"><span class="go_img ty5"></span><p class="go_txt">경기청년몰</p></a></li>  -->
-							</ul>
-						</div>
-						<div class="asite_area right">
-							<p class="tit">경기도 일자리재단 패밀리사이트 이동</p>
-							<ul>
-								<li><a href="https://www.gjf.or.kr/gjf/index.do" target="_blank" title="경기도일자리재단 이동"><span class="go_img ty6"></span>
-										<p class="go_txt">경기도일자리재단</p>
-									</a></li>
-								<li><a href="https://www.dream.go.kr/dream/index.do" target="_blank" title="꿈날개 이동"><span class="go_img ty7"></span>
-										<p class="go_txt">꿈날개</p>
-									</a></li>
-								<li><a href="https://www.dreammaru.or.kr/www/index.do" target="_blank" title="꿈마루 이동"><span class="go_img ty8"></span>
-										<p class="go_txt">꿈마루</p>
-									</a></li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- 모바일 전체메뉴 헤더 -->
-					<div class="m_all_header">
-						<ul>
-							<li><span class="m_btn back"></span></li>
-							<li>
-								<p class="mh_txt">전체메뉴</p>
-							</li>
-							<li><span class="m_btn close"></span></li>
-						</ul>
-					</div>
-
-					<!-- 모바일 로그 정보 및 바로가기 -->
-					<div class="m_menu_go">
-						<ul class="log_info">
-
-
-							<li class="login_btn"><a href="#none;" onclick="onNonLogin();">로그인</a></li>
-
-							<li class="join_btn"><a href="https://www.jobaba.net/mber/sbcs/mberJoinIntro.do" title="회원가입이동">회원가입</a></li>
+                        <li><a href="https://www.jobaba.net/mber/sbcs/mberJoinIntro.do" title="회원가입이동">회원가입</a></li>
 
 
 
-						</ul>
-						<ul class="loginfo_go_list">
-							<li><a href="https://apply.jobaba.net/bsns/bsnsListView.do"><span class="loginfo_img loginfo_ico01"></span>
-									<p>통합접수시스템</p>
-								</a></li>
-							<!-- <li><a href="https://www.jobaba.net/youngMall/youngMall.do"><span class="loginfo_img loginfo_ico02"></span><p>청년몰</p></a></li>
+
+                        <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do" title="고객센터 이동">고객센터</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <div class="search-bar clearfix">
+                        <div class="btn_back">&lt;</div>
+                        <!-- 					<input type="text" placeholder="검색어를 입력하세요." /> -->
+                        <!-- 					<input type="submit" value="검색" /> -->
+                        <div class="dummy_search"><span class="ds_txt">검색어를 입력하세요.</span></div>
+                    </div>
+                </div>
+                <!--//로그인, 회원가입, 고객센터  -->
+
+                <!-- TOP MENU -->
+                <div class="scrollable clearfix">
+                    <ul class="gnb clearfix">
+                        <li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do">지원정책</a></li>
+                        <li><a href="https://www.jobaba.net/introduction/mainPage.do">취업역량강화<span class="mark new"></span></a></li>
+                        <li><a href="https://www.jobaba.net/empmn/enterpriseEmployList.do">채용정보</a></li>
+                        <li><a href="https://www.jobaba.net/empmn/desEntNew.do">탐나는기업</a></li>
+
+                        <li><a href="https://www.jobaba.net/edutrn/list2020.do">교육/행사</a></li>
+                        <li><a href="https://www.jobaba.net/thema/list.do">참여/소통</a></li>
+
+                    </ul>
+                </div>
+                <!--//TOP MENU -->
+
+                <!-- 통합접수시스템 -->
+                <div class="goto_wrap">
+                    <ul class="goto clearfix">
+                        <li><a href="https://apply.jobaba.net/bsns/bsnsListView.do" target="_blank" title="통합접수시스템 이동"><span class="goto1"></span>통합접수시스템</a></li>
+                        <!--		<li><a href="https://www.jobaba.net/youngMall/youngMall.do" target="_blank" title="청년몰 이동"><span class="goto2"></span>청년몰</a></li> -->
+                        <!-- <li><a href="https://account.jobaba.net/main/intro.do" target="_blank" title="청년노동자통장 이동"><span class="goto3"></span>청년노동자통장</a></li> -->
+                        <li><a href="https://youth.jobaba.net/introduction" target="_blank" title="청년지원사업 이동"><span class="goto4"></span>청년지원사업·청년몰</a></li>
+                        <li><a href="https://adst.jobaba.net/login/cnslLogin.do" target="_blank" title="상담사 전용 이동"><span class="goto5"></span>상담사 전용</a></li>
+
+                    </ul>
+                    <!-- 통합접수시스템 메뉴 -->
+                    <div class="receipt_system clearfix">
+                        <div class="menu_area">
+                            <div class="menu_dumb">
+                                <ul>
+                                    <li><a href="https://apply.jobaba.net/bsns/bsnsListView.do" target="_blank" title="통합접수시스템 이동">통합접수시스템</a></li>
+                                    <!-- 	<li><a href="https://www.jobaba.net/youngMall/youngMall.do" target="_blank" title="청년몰 이동">청년몰</a></li>  -->
+                                    <!-- <li><a href="https://account.jobaba.net/main/intro.do" target="_blank" title="청년통장 이동">청년통장</a></li> -->
+                                    <li><a href="https://youth.jobaba.net/introduction" target="_blank" title="청년지원사업 이동">청년지원사업·청년몰</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// 통합접수시스템 -->
+            </div>
+            <!--//GNB -->
+
+
+            <!-- 모바일 서브 GNB -->
+            <div class="containerNew clearfix sub_hader" id="subGnbHeader" style="display: none;">
+                <div class="m_sub_header search-bar">
+                    <ul>
+                        <li><span class="m_btn back" onclick="history.back();"></span></li>
+                        <li>
+                            <p class="mh_txt" id="mhTitle"></p>
+                        </li>
+
+                        <li><span class="m_btn saerch dummy_search"></span></li>
+                        <li>
+                            <div class="hb_menu shm" tabindex="0">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- TOP MENU -->
+                <div class="scrollable clearfix">
+                    <ul class="gnb clearfix" id="subGnbMenu">
+                        <li><a href="javascript:void(0);">나를 위한 맞춤정보</a></li>
+                        <li><a href="javascript:void(0);">재직지원</a></li>
+                        <li><a href="javascript:void(0);">취업지원</a></li>
+                        <li><a href="javascript:void(0);">창업지원</a></li>
+                        <li><a href="javascript:void(0);">기업지원</a></li>
+                        <li><a href="javascript:void(0);">교통/주거</a></li>
+                        <li><a href="javascript:void(0);">생활/금융</a></li>
+                    </ul>
+                </div>
+                <!--//TOP MENU -->
+            </div>
+            <!--//모바일 서브 -->
+
+
+            <div class="gnb-inner-wrap gnb_wrapper">
+                <div class="containerNew clearfix">
+
+                    <!-- 통합사이트 바로가기 메뉴 -->
+                    <div class="go_menu clearfix">
+                        <div class="no_over"></div>
+                        <div class="btn_search_close">닫기<img class="m_hide" src="" alt=""></div>
+                        <div class="asite_area">
+                            <p class="tit">잡아바 통합사이트 바로가기</p>
+                            <ul>
+                                <li><a href="https://www.jobaba.net/main/main.do" title="잡아바 이동"><span class="go_img ty1"></span>
+                                        <p class="go_txt">잡아바</p>
+                                    </a></li>
+                                <li><a href="https://apply.jobaba.net/bsns/bsnsListView.do" target="_blank" title="통합접수시스템 이동"><span class="go_img ty2"></span>
+                                        <p class="go_txt">통합접수시스템</p>
+                                    </a></li>
+                                <li><a href="https://account.ggwf.or.kr/main/intro.do" target="_blank" title="청년통장 이동"><span class="go_img ty3"></span>
+                                        <p class="go_txt">청년통장</p>
+                                    </a></li>
+                                <li><a href="https://youth.jobaba.net/introduction" target="_blank" title="청년지원사업 이동"><span class="go_img ty4"></span>
+                                        <p class="go_txt">청년지원사업·청년몰</p>
+                                    </a></li>
+                                <!-- 	<li><a href="https://www.jobaba.net/youngMall/youngMall.do" target="_blank" title="경기청년몰 이동"><span class="go_img ty5"></span><p class="go_txt">경기청년몰</p></a></li>  -->
+                            </ul>
+                        </div>
+                        <div class="asite_area right">
+                            <p class="tit">경기도 일자리재단 패밀리사이트 이동</p>
+                            <ul>
+                                <li><a href="https://www.gjf.or.kr/gjf/index.do" target="_blank" title="경기도일자리재단 이동"><span class="go_img ty6"></span>
+                                        <p class="go_txt">경기도일자리재단</p>
+                                    </a></li>
+                                <li><a href="https://www.dream.go.kr/dream/index.do" target="_blank" title="꿈날개 이동"><span class="go_img ty7"></span>
+                                        <p class="go_txt">꿈날개</p>
+                                    </a></li>
+                                <li><a href="https://www.dreammaru.or.kr/www/index.do" target="_blank" title="꿈마루 이동"><span class="go_img ty8"></span>
+                                        <p class="go_txt">꿈마루</p>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 모바일 전체메뉴 헤더 -->
+                    <div class="m_all_header">
+                        <ul>
+                            <li><span class="m_btn back"></span></li>
+                            <li>
+                                <p class="mh_txt">전체메뉴</p>
+                            </li>
+                            <li><span class="m_btn close"></span></li>
+                        </ul>
+                    </div>
+
+                    <!-- 모바일 로그 정보 및 바로가기 -->
+                    <div class="m_menu_go">
+                        <ul class="log_info">
+
+
+                            <li class="login_btn"><a href="#none;" onclick="onNonLogin();">로그인</a></li>
+
+                            <li class="join_btn"><a href="https://www.jobaba.net/mber/sbcs/mberJoinIntro.do" title="회원가입이동">회원가입</a></li>
+
+
+
+                        </ul>
+                        <ul class="loginfo_go_list">
+                            <li><a href="https://apply.jobaba.net/bsns/bsnsListView.do"><span class="loginfo_img loginfo_ico01"></span>
+                                    <p>통합접수시스템</p>
+                                </a></li>
+                            <!-- <li><a href="https://www.jobaba.net/youngMall/youngMall.do"><span class="loginfo_img loginfo_ico02"></span><p>청년몰</p></a></li>
 						<li><a href="https://account.jobaba.net/main/intro.do"><span class="loginfo_img loginfo_ico03"></span><p>청년통장</p></a></li>  -->
-							<li><a href="https://youth.jobaba.net/introduction"><span class="loginfo_img loginfo_ico04"></span>
-									<p>청년지원사업·청년몰</p>
-								</a></li>
-							<li><a href="https://adst.jobaba.net/login/cnslLogin.do" target="_blank" title="새창 열림"><span class="loginfo_img loginfo_ico05"></span>
-									<p>상담사 전용</p>
-								</a></li>
-						</ul>
+                            <li><a href="https://youth.jobaba.net/introduction"><span class="loginfo_img loginfo_ico04"></span>
+                                    <p>청년지원사업·청년몰</p>
+                                </a></li>
+                            <li><a href="https://adst.jobaba.net/login/cnslLogin.do" target="_blank" title="새창 열림"><span class="loginfo_img loginfo_ico05"></span>
+                                    <p>상담사 전용</p>
+                                </a></li>
+                        </ul>
 
 
-						<a href="https://www.jobaba.net/psychology/mainList.do" onclick="fnBannarClickHitHis('13','1072');" target="_blank" title="심리상담 컨설팅 이동">
-						</a>
+                        <a href="https://www.jobaba.net/psychology/mainList.do" onclick="fnBannarClickHitHis('13','1072');" target="_blank" title="심리상담 컨설팅 이동">
+                        </a>
 
-						<!-- 					<a href="javascript:void(0);"> -->
-						<!-- 						<span class="loginfo_bnr"> -->
-						<!-- 							<p class="bnr_txt"> -->
-						<!-- 								코로나19 극복을 위한<br> -->
-						<!-- 								<span class="bold">특별장학생 추가모집</span> -->
-						<!-- 							</p> -->
-						<!-- 						</span> -->
-						<!-- 					</a> -->
-					</div>
+                        <!-- 					<a href="javascript:void(0);"> -->
+                        <!-- 						<span class="loginfo_bnr"> -->
+                        <!-- 							<p class="bnr_txt"> -->
+                        <!-- 								코로나19 극복을 위한<br> -->
+                        <!-- 								<span class="bold">특별장학생 추가모집</span> -->
+                        <!-- 							</p> -->
+                        <!-- 						</span> -->
+                        <!-- 					</a> -->
+                    </div>
 
-					<!-- 전체 메뉴 -->
-					<div class="all_menu clearfix" style="padding:30px 12px 28px 12px;">
-						<div class="menu_area">
-							<div class="menu_dumb">
-								<ul>
-									<li class="menu_tit"><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do">지원정책</a></li>
-									<li><a href="https://www.jobaba.net/thema/customScenarioList.do">나를 위한 맞춤 정보</a></li>
-									<!-- 							개발전<li><a href="javascript:void(0);">시군별 맞춤 정책</a></li>  -->
-									<li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do?schCl1Cd=06">재직지원</a></li>
-									<li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do?schCl1Cd=01">취업지원</a></li>
-									<li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do?schCl1Cd=08">창업지원</a></li>
+                    <!-- 전체 메뉴 -->
+                    <div class="all_menu clearfix" style="padding:30px 12px 28px 12px;">
+                        <div class="menu_area">
+                            <div class="menu_dumb">
+                                <ul>
+                                    <li class="menu_tit"><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do">지원정책</a></li>
+                                    <li><a href="https://www.jobaba.net/thema/customScenarioList.do">나를 위한 맞춤 정보</a></li>
+                                    <!-- 							개발전<li><a href="javascript:void(0);">시군별 맞춤 정책</a></li>  -->
+                                    <li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do?schCl1Cd=06">재직지원</a></li>
+                                    <li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do?schCl1Cd=01">취업지원</a></li>
+                                    <li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do?schCl1Cd=08">창업지원</a></li>
 
-									<li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do?schCl1Cd=07">기업지원</a></li>
-									<li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do?schCl1Cd=05">교통/주거</a></li>
-									<li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do?schCl1Cd=04">생활/금융</a></li>
-								</ul>
-							</div>
-							<div class="menu_dumb">
-								<ul>
-									<li class="menu_tit"><a href="https://www.jobaba.net/introduction/mainPage.do">취업역량강화</a></li>
-									<li><a href="https://www.jobaba.net/diagnosis/preDiagnosis.do">사전진단 서비스</a></li>
-									<li><a href="https://www.jobaba.net/epmtDiag/jobPrfrnc/jobPrfrncMain.do">취업역량진단 서비스</a></li>
-									<li><a href="https://www.jobaba.net/introduction/mainList.do">자기소개서 컨설팅</a></li>
+                                    <li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do?schCl1Cd=07">기업지원</a></li>
+                                    <li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do?schCl1Cd=05">교통/주거</a></li>
+                                    <li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do?schCl1Cd=04">생활/금융</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_dumb">
+                                <ul>
+                                    <li class="menu_tit"><a href="https://www.jobaba.net/introduction/mainPage.do">취업역량강화</a></li>
+                                    <li><a href="https://www.jobaba.net/diagnosis/preDiagnosis.do">사전진단 서비스</a></li>
+                                    <li><a href="https://www.jobaba.net/epmtDiag/jobPrfrnc/jobPrfrncMain.do">취업역량진단 서비스</a></li>
+                                    <li><a href="https://www.jobaba.net/introduction/mainList.do">자기소개서 컨설팅</a></li>
 
-									<li><a href="https://www.jobaba.net/auland/mainList.do">취업진로 진단검사</a></li>
-									<li><a href="https://www.jobaba.net/interview/mainList.do">AI면접 컨설팅</a></li>
-									<li><a href="https://www.jobaba.net/psychology/mainList.do">취업상담 컨설팅</a></li>
-									<li><a href="https://www.jobaba.net/mentoring/mainList.do">취업멘토링</a></li>
-									<li><a href="https://www.jobaba.net/cntn/human.do">구인·구직 추천 서비스</a></li>
-									<li><a href="https://www.jobaba.net/cntn/online.do">온라인면접 서비스</a></li>
-									<li><a href="https://www.jobaba.net/vigilance/vigilanceList.do">사후관리</a></li>
-								</ul>
-							</div>
-							<div class="menu_dumb">
-								<ul>
-									<li class="menu_tit"><a href="https://www.jobaba.net/empmn/enterpriseEmployList.do">채용정보</a></li>
-									<li><a href="https://www.jobaba.net/empmn/enterpriseEmployList.do">기업채용정보</a></li>
-									<li><a href="https://www.jobaba.net/pblcEmpmn/list.do">공공일자리</a></li>
-								</ul>
-							</div>
-							<div class="menu_dumb">
-								<ul>
-									<li class="menu_tit"><a href="https://www.jobaba.net/empmn/desEntNew.do">탐나는기업</a></li>
-									<li><a href="https://www.jobaba.net/empmn/desEntNew.do">탐나는기업</a></li>
-									<li><a href="https://www.jobaba.net/introCom/introComList.do">우리회사 홍보왕</a></li>
+                                    <li><a href="https://www.jobaba.net/auland/mainList.do">취업진로 진단검사</a></li>
+                                    <li><a href="https://www.jobaba.net/interview/mainList.do">AI면접 컨설팅</a></li>
+                                    <li><a href="https://www.jobaba.net/psychology/mainList.do">취업상담 컨설팅</a></li>
+                                    <li><a href="https://www.jobaba.net/mentoring/mainList.do">취업멘토링</a></li>
+                                    <li><a href="https://www.jobaba.net/cntn/human.do">구인·구직 추천 서비스</a></li>
+                                    <li><a href="https://www.jobaba.net/cntn/online.do">온라인면접 서비스</a></li>
+                                    <li><a href="https://www.jobaba.net/vigilance/vigilanceList.do">사후관리</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_dumb">
+                                <ul>
+                                    <li class="menu_tit"><a href="https://www.jobaba.net/empmn/enterpriseEmployList.do">채용정보</a></li>
+                                    <li><a href="https://www.jobaba.net/empmn/enterpriseEmployList.do">기업채용정보</a></li>
+                                    <li><a href="https://www.jobaba.net/pblcEmpmn/list.do">공공일자리</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_dumb">
+                                <ul>
+                                    <li class="menu_tit"><a href="https://www.jobaba.net/empmn/desEntNew.do">탐나는기업</a></li>
+                                    <li><a href="https://www.jobaba.net/empmn/desEntNew.do">탐나는기업</a></li>
+                                    <li><a href="https://www.jobaba.net/introCom/introComList.do">우리회사 홍보왕</a></li>
 
-								</ul>
-							</div>
+                                </ul>
+                            </div>
 
-							<div class="menu_dumb">
-								<ul>
-									<li class="menu_tit"><a href="https://www.jobaba.net/edutrn/list2020.do">교육/행사</a></li>
-									<li><a href="https://www.jobaba.net/edutrn/list2020.do">교육훈련</a></li>
-									<li><a href="https://www.jobaba.net/evtIfo/list2020.do">대외활동</a></li>
-									<li><a href="https://www.jobaba.net/thema/vocEduList.do">직업교육</a></li>
-									<li><a href="https://www.jobaba.net/entCntnts/exhb/exhbList.do">온라인채용박람회</a></li>
-								</ul>
-							</div>
-							<div class="menu_dumb">
-								<ul>
-									<li class="menu_tit"><a href="https://www.jobaba.net/thema/list.do">참여/소통</a></li>
-									<li><a href="https://www.jobaba.net/thema/list.do">잡학사전</a></li>
-									<li><a href="https://www.jobaba.net/localNews/localNewsList.do">우리지역정보</a></li>
-									<li><a href="https://www.jobaba.net/jobSuccNote/jobSuccNoteMain.do">취업성공수기</a></li>
-									<li><a href="https://www.jobaba.net/thema/themeInfo.do">테마정보</a></li>
-									<li><a href="https://www.jobaba.net/hpdsk/ntc/list.do">고객센터</a></li>
-									<li><a href="https://www.jobaba.net/event/list.do">이벤트</a></li>
-									<li><a href="https://www.jobaba.net/usrReg/cmmn/intro.do" target="_blank">사용자 정보등록</a></li>
-								</ul>
-							</div>
-						</div>
+                            <div class="menu_dumb">
+                                <ul>
+                                    <li class="menu_tit"><a href="https://www.jobaba.net/edutrn/list2020.do">교육/행사</a></li>
+                                    <li><a href="https://www.jobaba.net/edutrn/list2020.do">교육훈련</a></li>
+                                    <li><a href="https://www.jobaba.net/evtIfo/list2020.do">대외활동</a></li>
+                                    <li><a href="https://www.jobaba.net/thema/vocEduList.do">직업교육</a></li>
+                                    <li><a href="https://www.jobaba.net/entCntnts/exhb/exhbList.do">온라인채용박람회</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_dumb">
+                                <ul>
+                                    <li class="menu_tit"><a href="https://www.jobaba.net/thema/list.do">참여/소통</a></li>
+                                    <li><a href="https://www.jobaba.net/thema/list.do">잡학사전</a></li>
+                                    <li><a href="https://www.jobaba.net/localNews/localNewsList.do">우리지역정보</a></li>
+                                    <li><a href="https://www.jobaba.net/jobSuccNote/jobSuccNoteMain.do">취업성공수기</a></li>
+                                    <li><a href="https://www.jobaba.net/thema/themeInfo.do">테마정보</a></li>
+                                    <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do">고객센터</a></li>
+                                    <li><a href="https://www.jobaba.net/event/list.do">이벤트</a></li>
+                                    <li><a href="https://www.jobaba.net/usrReg/cmmn/intro.do" target="_blank">사용자 정보등록</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
-					</div>
-					<!-- 모바일 패밀리사이트 바로가기 메뉴 -->
-					<div class="m_f_go">
-						<p class="tit">패밀리 사이트 바로가기</p>
-						<ul class="go_list">
-							<li><a href="https://www.gjf.or.kr/gjf/index.do" target="_blank" title="경기도일자리재단 이동">경기도일자리재단</a></li>
-							<li><a href="http://www.dreammaru.or.kr" target="_blank" title="꿈마루 이동">꿈마루</a></li>
-							<li><a href="https://www.dream.go.kr" target="_blank" title="꿈날개 이동">꿈날개</a></li>
-						</ul>
-						<ul class="sns_list">
-							<li><a href="https://www.facebook.com/jobabanet" target="_blank" title="페이스북 이동"><span class="sns_img facebook_ico"></span>
-									<p>페이스북</p>
-								</a></li>
-							<li><a href="https://twitter.com/jobabanet" target="_blank" title="트위터 이동"><span class="sns_img twitter_ico"></span>
-									<p>트위터</p>
-								</a></li>
-							<li><a href="https://www.youtube.com/channel/UC69DhLD0FUmLgP9BsxitbDw" target="_blank" title="유튜브 이동"><span class="sns_img youtube_ico"></span>
-									<p>유튜브</p>
-								</a></li>
-							<li><a href="https://www.instagram.com/jobabanet/" target="_blank" title="인스타그램 이동"><span class="sns_img instar_ico"></span>
-									<p>인스타그램</p>
-								</a></li>
-						</ul>
-					</div>
+                    </div>
+                    <!-- 모바일 패밀리사이트 바로가기 메뉴 -->
+                    <div class="m_f_go">
+                        <p class="tit">패밀리 사이트 바로가기</p>
+                        <ul class="go_list">
+                            <li><a href="https://www.gjf.or.kr/gjf/index.do" target="_blank" title="경기도일자리재단 이동">경기도일자리재단</a></li>
+                            <li><a href="http://www.dreammaru.or.kr" target="_blank" title="꿈마루 이동">꿈마루</a></li>
+                            <li><a href="https://www.dream.go.kr" target="_blank" title="꿈날개 이동">꿈날개</a></li>
+                        </ul>
+                        <ul class="sns_list">
+                            <li><a href="https://www.facebook.com/jobabanet" target="_blank" title="페이스북 이동"><span class="sns_img facebook_ico"></span>
+                                    <p>페이스북</p>
+                                </a></li>
+                            <li><a href="https://twitter.com/jobabanet" target="_blank" title="트위터 이동"><span class="sns_img twitter_ico"></span>
+                                    <p>트위터</p>
+                                </a></li>
+                            <li><a href="https://www.youtube.com/channel/UC69DhLD0FUmLgP9BsxitbDw" target="_blank" title="유튜브 이동"><span class="sns_img youtube_ico"></span>
+                                    <p>유튜브</p>
+                                </a></li>
+                            <li><a href="https://www.instagram.com/jobabanet/" target="_blank" title="인스타그램 이동"><span class="sns_img instar_ico"></span>
+                                    <p>인스타그램</p>
+                                </a></li>
+                        </ul>
+                    </div>
 
-				</div>
-			</div>
+                </div>
+            </div>
 
-			<div class="gnb-inner-wrap search_wrapper">
-				<div class="containerNew">
-					<!-- 검색 메뉴 -->
-					<div class="search_menu clearfix">
-						<div class="btn_search_close">닫기<img class="m_hide" src="" alt=""></div>
-						<form id="topSrchFrm" name="topSrchFrm" action="/search/search.do" method="post" class="clearfix" novalidate="novalidate">
-							<input type="hidden" name="autoWordFlag" id="autoWordFlag" value="Y">
-							<input type="hidden" name="autoWordFlag" id="autoPreviewFlag" value="N">
-							<input type="hidden" name="subSrchTxt" id="subSrchTxt" value="">
-							<input type="hidden" name="srchOldTxt" id="srchOldTxt" value="">
-							<input class="menu_search" type="text" name="srchTxt" id="srchTxt" title="검색어 입력" placeholder="검색어를 입력하세요." autocomplete="off" onkeyup="onSearch('onkeyup',event);">
-							<input type="submit" value="검색">
-						</form>
+            <div class="gnb-inner-wrap search_wrapper">
+                <div class="containerNew">
+                    <!-- 검색 메뉴 -->
+                    <div class="search_menu clearfix">
+                        <div class="btn_search_close">닫기<img class="m_hide" src="" alt=""></div>
+                        <form id="topSrchFrm" name="topSrchFrm" action="/search/search.do" method="post" class="clearfix" novalidate="novalidate">
+                            <input type="hidden" name="autoWordFlag" id="autoWordFlag" value="Y">
+                            <input type="hidden" name="autoWordFlag" id="autoPreviewFlag" value="N">
+                            <input type="hidden" name="subSrchTxt" id="subSrchTxt" value="">
+                            <input type="hidden" name="srchOldTxt" id="srchOldTxt" value="">
+                            <input class="menu_search" type="text" name="srchTxt" id="srchTxt" title="검색어 입력" placeholder="검색어를 입력하세요." autocomplete="off" onkeyup="onSearch('onkeyup',event);">
+                            <input type="submit" value="검색">
+                        </form>
 
-						<!-- 자동완성 -->
-						<div id="autoComplete" class="search-title layer-box" style="display:none;">
-							<button type="button" class="search_close" onclick="onAutoSearchClose();">닫기</button>
-							<ul id="wordList" class="tag-txt">
-							</ul>
-							<div class="col-xs-8">
-								<ul id="previewList" class="tag-txt"></ul>
-							</div>
-							<div class="btn_g clearfix">
-								<button onclick="onAutoSearchNone()" id="autoSearchBtn">자동완성 끄기</button>
-								<!-- <button onclick="onAutoPreviewNone()" id="autoPreviewBtn">미리검색 끄기</button> -->
-							</div>
-						</div>
-						<!--//자동완성 -->
+                        <!-- 자동완성 -->
+                        <div id="autoComplete" class="search-title layer-box" style="display:none;">
+                            <button type="button" class="search_close" onclick="onAutoSearchClose();">닫기</button>
+                            <ul id="wordList" class="tag-txt">
+                            </ul>
+                            <div class="col-xs-8">
+                                <ul id="previewList" class="tag-txt"></ul>
+                            </div>
+                            <div class="btn_g clearfix">
+                                <button onclick="onAutoSearchNone()" id="autoSearchBtn">자동완성 끄기</button>
+                                <!-- <button onclick="onAutoPreviewNone()" id="autoPreviewBtn">미리검색 끄기</button> -->
+                            </div>
+                        </div>
+                        <!--//자동완성 -->
 
-						<div class="search_list clearfix">
-							<div class="search_rank">
-								<p class="tit">인기검색어</p>
-								<ul id="hotListRank">
-									<li><a href="#none" onclick="setSearchText('청년기본소득')" title="청년기본소득 이동"><span class="rank">1</span><span class="keyword">청년기본소득</span></a></li>
-									<li><a href="#none" onclick="setSearchText('청년기본소득 4분기')" title="청년기본소득 4분기 이동"><span class="rank">2</span><span class="keyword">청년기본소득 4분기</span></a></li>
-									<li><a href="#none" onclick="setSearchText('오산')" title="오산 이동"><span class="rank">3</span><span class="keyword">오산</span></a></li>
-									<li><a href="#none" onclick="setSearchText('면접수당')" title="면접수당 이동"><span class="rank">4</span><span class="keyword">면접수당</span></a></li>
-									<li><a href="#none" onclick="setSearchText('청년지원금')" title="청년지원금 이동"><span class="rank">5</span><span class="keyword">청년지원금</span></a></li>
-									<li><a href="#none" onclick="setSearchText('경기도')" title="경기도 이동"><span class="rank">6</span><span class="keyword">경기도</span></a></li>
-									<li><a href="#none" onclick="setSearchText('청년몰')" title="청년몰 이동"><span class="rank">7</span><span class="keyword">청년몰</span></a></li>
-									<li><a href="#none" onclick="setSearchText('정장대여')" title="정장대여 이동"><span class="rank">8</span><span class="keyword">정장대여</span></a></li>
-									<li><a href="#none" onclick="setSearchText('면접')" title="면접 이동"><span class="rank">9</span><span class="keyword">면접</span></a></li>
-									<li><a href="#none" onclick="setSearchText('직업상담사')" title="직업상담사 이동"><span class="rank">10</span><span class="keyword">직업상담사</span></a></li>
-								</ul>
-							</div>
-							<div class="search_tag">
-								<p class="tit">인기태그</p>
-								<ul>
+                        <div class="search_list clearfix">
+                            <div class="search_rank">
+                                <p class="tit">인기검색어</p>
+                                <ul id="hotListRank">
+                                    <li><a href="#none" onclick="setSearchText('청년기본소득')" title="청년기본소득 이동"><span class="rank">1</span><span class="keyword">청년기본소득</span></a></li>
+                                    <li><a href="#none" onclick="setSearchText('청년기본소득 4분기')" title="청년기본소득 4분기 이동"><span class="rank">2</span><span class="keyword">청년기본소득 4분기</span></a></li>
+                                    <li><a href="#none" onclick="setSearchText('오산')" title="오산 이동"><span class="rank">3</span><span class="keyword">오산</span></a></li>
+                                    <li><a href="#none" onclick="setSearchText('면접수당')" title="면접수당 이동"><span class="rank">4</span><span class="keyword">면접수당</span></a></li>
+                                    <li><a href="#none" onclick="setSearchText('청년지원금')" title="청년지원금 이동"><span class="rank">5</span><span class="keyword">청년지원금</span></a></li>
+                                    <li><a href="#none" onclick="setSearchText('경기도')" title="경기도 이동"><span class="rank">6</span><span class="keyword">경기도</span></a></li>
+                                    <li><a href="#none" onclick="setSearchText('청년몰')" title="청년몰 이동"><span class="rank">7</span><span class="keyword">청년몰</span></a></li>
+                                    <li><a href="#none" onclick="setSearchText('정장대여')" title="정장대여 이동"><span class="rank">8</span><span class="keyword">정장대여</span></a></li>
+                                    <li><a href="#none" onclick="setSearchText('면접')" title="면접 이동"><span class="rank">9</span><span class="keyword">면접</span></a></li>
+                                    <li><a href="#none" onclick="setSearchText('직업상담사')" title="직업상담사 이동"><span class="rank">10</span><span class="keyword">직업상담사</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="search_tag">
+                                <p class="tit">인기태그</p>
+                                <ul>
 
-									<li><a href="#none" onclick="setSearchText('중소기업')" title="중소기업 이동">#중소기업</a></li>
+                                    <li><a href="#none" onclick="setSearchText('중소기업')" title="중소기업 이동">#중소기업</a></li>
 
-									<li><a href="#none" onclick="setSearchText('소상공인')" title="소상공인 이동">#소상공인</a></li>
+                                    <li><a href="#none" onclick="setSearchText('소상공인')" title="소상공인 이동">#소상공인</a></li>
 
-									<li><a href="#none" onclick="setSearchText('경기도')" title="경기도 이동">#경기도</a></li>
+                                    <li><a href="#none" onclick="setSearchText('경기도')" title="경기도 이동">#경기도</a></li>
 
-									<li><a href="#none" onclick="setSearchText('청년')" title="청년 이동">#청년</a></li>
+                                    <li><a href="#none" onclick="setSearchText('청년')" title="청년 이동">#청년</a></li>
 
-									<li><a href="#none" onclick="setSearchText('취업지원')" title="취업지원 이동">#취업지원</a></li>
+                                    <li><a href="#none" onclick="setSearchText('취업지원')" title="취업지원 이동">#취업지원</a></li>
 
-									<li><a href="#none" onclick="setSearchText('취업')" title="취업 이동">#취업</a></li>
+                                    <li><a href="#none" onclick="setSearchText('취업')" title="취업 이동">#취업</a></li>
 
-									<li><a href="#none" onclick="setSearchText('코로나19')" title="코로나19 이동">#코로나19</a></li>
+                                    <li><a href="#none" onclick="setSearchText('코로나19')" title="코로나19 이동">#코로나19</a></li>
 
-									<li><a href="#none" onclick="setSearchText('해외진출')" title="해외진출 이동">#해외진출</a></li>
+                                    <li><a href="#none" onclick="setSearchText('해외진출')" title="해외진출 이동">#해외진출</a></li>
 
-									<li><a href="#none" onclick="setSearchText('R&amp;D')" title="R&amp;D 이동">#R&amp;D</a></li>
+                                    <li><a href="#none" onclick="setSearchText('R&amp;D')" title="R&amp;D 이동">#R&amp;D</a></li>
 
-									<li><a href="#none" onclick="setSearchText('청년구직자')" title="청년구직자 이동">#청년구직자</a></li>
+                                    <li><a href="#none" onclick="setSearchText('청년구직자')" title="청년구직자 이동">#청년구직자</a></li>
 
-									<!-- 								<li><a href="javascript:void(0);">#일자리/재직</a></li> -->
-								</ul>
-							</div>
-							<div class="side_bnr">
+                                    <!-- 								<li><a href="javascript:void(0);">#일자리/재직</a></li> -->
+                                </ul>
+                            </div>
+                            <div class="side_bnr">
 
-								<!-- 검색창배너 이미지 -->
-								<!-- 								<div class="swiper-slide"> -->
-								<a href="https://www.jobaba.net/mentoring/mainList.do" onclick="fnBannarClickHitHis('14','1296');" target="_blank" title="취업 멘토링 이동">
-
-							
+                                <!-- 검색창배너 이미지 -->
+                                <!-- 								<div class="swiper-slide"> -->
+                                <a href="https://www.jobaba.net/mentoring/mainList.do" onclick="fnBannarClickHitHis('14','1296');" target="_blank" title="취업 멘토링 이동">
 
 
-									<!-- 										<img class="pc_hide" src="/resource/images/main2020/side_bnr_m.png" alt=""> -->
-								</a>
-								<!-- 								</div> -->
 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<!-- 모바일 Bottom -->
-		<div class="m_bottom_fixed" style="">
-			<ul class="clearfix">
-				<li class="active"><a href="/main/main.do"><span class="home"></span>홈</a></li>
-				<li><a href="javascript:void(0);" onclick="onMyScrap();"><span class="scrap"></span>스크랩</a></li>
-				<li><a href="javascript:void(0);" onclick="onMyPage();"><span class="my"></span>마이페이지</a></li>
-				<li><a href="javascript:void(0);"><span class="last"></span>최근 본 정보</a></li>
-				<!-- 			<li><a href="javascript:void(0);"><span class="more"></span>더 보기</a></li> -->
-			</ul>
-		</div>
+                                    <!-- 										<img class="pc_hide" src="/resource/images/main2020/side_bnr_m.png" alt=""> -->
+                                </a>
+                                <!-- 								</div> -->
 
-		<div class="shadow"></div>
-		<div class="fav_menu">
-			<div class="tit">
-				자주 찾는 메뉴
-				<div class="bott_close">
-					<div class="bar1"></div>
-					<div class="bar2"></div>
-				</div>
-			</div>
-			<ul class="clearfix">
-				<li><a href="javascript:void(0);"><span class="menu1"></span>메뉴1</a></li>
-				<li><a href="javascript:void(0);"><span class="menu2"></span>메뉴2</a></li>
-				<li><a href="javascript:void(0);"><span class="menu3"></span>메뉴3</a></li>
-				<li><a href="javascript:void(0);"><span class="menu4"></span>메뉴4</a></li>
-				<li><a href="javascript:void(0);"><span class="menu5"></span>메뉴5</a></li>
-				<li><a href="javascript:void(0);"><span class="menu6"></span>메뉴6</a></li>
-				<li><a href="javascript:void(0);"><span class="menu7"></span>메뉴7</a></li>
-				<li><a href="javascript:void(0);"><span class="menu8"></span>메뉴8</a></li>
-			</ul>
-		</div>
-		<!--//모바일 Bottom -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	</div>
+        <!-- 모바일 Bottom -->
+        <div class="m_bottom_fixed" style="">
+            <ul class="clearfix">
+                <li class="active"><a href="/main/main.do"><span class="home"></span>홈</a></li>
+                <li><a href="javascript:void(0);" onclick="onMyScrap();"><span class="scrap"></span>스크랩</a></li>
+                <li><a href="javascript:void(0);" onclick="onMyPage();"><span class="my"></span>마이페이지</a></li>
+                <li><a href="javascript:void(0);"><span class="last"></span>최근 본 정보</a></li>
+                <!-- 			<li><a href="javascript:void(0);"><span class="more"></span>더 보기</a></li> -->
+            </ul>
+        </div>
 
-	<div class="module-wrap com_mod_header new_com_mod_header sty03">
-		<div class="cnt-container header clearfix">
-			<div id="iconArea">
+        <div class="shadow"></div>
+        <div class="fav_menu">
+            <div class="tit">
+                자주 찾는 메뉴
+                <div class="bott_close">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                </div>
+            </div>
+            <ul class="clearfix">
+                <li><a href="javascript:void(0);"><span class="menu1"></span>메뉴1</a></li>
+                <li><a href="javascript:void(0);"><span class="menu2"></span>메뉴2</a></li>
+                <li><a href="javascript:void(0);"><span class="menu3"></span>메뉴3</a></li>
+                <li><a href="javascript:void(0);"><span class="menu4"></span>메뉴4</a></li>
+                <li><a href="javascript:void(0);"><span class="menu5"></span>메뉴5</a></li>
+                <li><a href="javascript:void(0);"><span class="menu6"></span>메뉴6</a></li>
+                <li><a href="javascript:void(0);"><span class="menu7"></span>메뉴7</a></li>
+                <li><a href="javascript:void(0);"><span class="menu8"></span>메뉴8</a></li>
+            </ul>
+        </div>
+        <!--//모바일 Bottom -->
 
-			</div>
-			<div class="logo imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
-			<div class="info fc_000">
-				<dl class="clearfix">
-					<dt>업종</dt>
-					<dd class="incCate">업종</dd>
-				</dl>
-				<ul class="tag">
-					<li>내실이 탄탄하고 성과보상이 확실한</li>
-					<li>복지 우수기업</li>
-					<li>인증 최多기업</li>
-				</ul>
-				<div class="action fc_000 clearfix">
-					<a href="javascript:void(0);" id="scrapYn" onclick="onCntNew();" class="active">관심기업 등록<i>♥</i></a>
-					<a href="javascript:void(0);" id="copyUrlNew" onclick="copyUrlNew();" data-clipboard-action="copy">공고 바로가기<i>→</i></a>
-				</div>
-			</div>
-		</div>
-	</div>
+    </div>
 
-	<!-- 대표이미지 -->
-	<div class="module-wrap com_rep_Img">
-		<img src="images/tplA_top.png" alt="">
-	</div>
-	<!-- 대표이미지 -->
+    <div class="module-wrap com_mod_header new_com_mod_header sty03">
+        <div class="cnt-container header clearfix">
+            <div id="iconArea">
 
-	<div class="module-wrap com_mod_anchor sty03 new_com_mod_anchor">
-		<div class="cnt-container fc_fff">
-			<ul>
-				<li><a href="#summary" class="active">기업개요</a></li>
-				<li><a href="#industry">산업 내 위치</a></li>
-				<li><a href="#biz">사업영역</a></li>
-				<li><a href="#product">주요상품안내</a></li>
-				<li><a href="#finance02">재무정보</a></li>
-				<li><a href="#welfare">기업문화</a></li>
-				<li><a href="#comview">기업 전경</a></li>
-				<li><a href="#interview">인터뷰</a></li>
-				<li><a href="#talent">인재상</a></li>
-				<li><a href="#strategy">취업 정보</a></li>
-				<li><a href="#recruit">기업채용</a></li>
-				<li><a href="#map">기업위치</a></li>
-			</ul>
-			<!--
+            </div>
+            <div class="logo imgCi"><img src="/images/logo_smaple01.png" alt="" /></div>
+            <div class="info fc_000">
+                <dl class="clearfix">
+                    <dt>업종</dt>
+                    <dd class="incCate">업종</dd>
+                </dl>
+                <ul class="tag">
+                    <li>내실이 탄탄하고 성과보상이 확실한</li>
+                    <li>복지 우수기업</li>
+                    <li>인증 최多기업</li>
+                </ul>
+                <div class="action fc_000 clearfix">
+                    <a href="javascript:void(0);" id="scrapYn" onclick="onCntNew();" class="active">관심기업 등록<i>♥</i></a>
+                    <a href="javascript:void(0);" id="copyUrlNew" onclick="copyUrlNew();" data-clipboard-action="copy">공고 바로가기<i>→</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 대표이미지 -->
+    <div class="module-wrap com_rep_Img">
+        <img src="images/tplA_top.png" alt="">
+    </div>
+    <!-- 대표이미지 -->
+
+    <div class="module-wrap com_mod_anchor sty03 new_com_mod_anchor">
+        <div class="cnt-container fc_fff">
+            <ul>
+                <li><a href="#summary" class="active">기업개요</a></li>
+                <li><a href="#industry">산업 내 위치</a></li>
+                <li><a href="#biz">사업영역</a></li>
+                <li><a href="#product">주요상품안내</a></li>
+                <li><a href="#finance02">재무정보</a></li>
+                <li><a href="#welfare">기업문화</a></li>
+                <li><a href="#comview">기업 전경</a></li>
+                <li><a href="#interview">인터뷰</a></li>
+                <li><a href="#talent">인재상</a></li>
+                <li><a href="#strategy">취업 정보</a></li>
+                <li><a href="#recruit">기업채용</a></li>
+                <li><a href="#map">기업위치</a></li>
+            </ul>
+            <!--
 			<div class="siteGo">사이트</div>
 			-->
-		</div>
-	</div>
-
-	<!--기업정보-->
-
-	<!--기업 대표 문구-->
-
-	<div id="summary" class="module-wrap a_mod_repTxt section_pd" style="background:url(images/tplA_bg01.png)">
-		<div class="new_cnt-container">
-			<p>
-				핫와이드는 전자 /통신/의료기기/생활 가전 등의 다양한 분야<br>
-			</p>
-		</div>
-	</div>
-	<!--//기업 대표 문구-->
-
-	<!--연혁-->
-	<div class="module-wrap a_mod_history section_pd">
-		<div class="new_cnt-container">
-			<h3>history</h3>
-			<div class="history_wrap">
-				<!--<div class="holder"></div>-->
-				<div id="history" class="history">
-					<!--데이터 자동 생성-->
-					<div class="item"><span>2021</span>
-						<ul>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁연혁연혁연혁연혁연혁연혁연혁연혁연혁연혁연혁연혁연혁연혁연혁</span></div>
-							</li>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-						</ul>
-					</div>
-					<div class="item"><span>2018</span>
-						<ul>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-						</ul>
-					</div>
-					<div class="item"><span>2018</span>
-						<ul>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-						</ul>
-					</div>
-					<div class="item"><span>2018</span>
-						<ul>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-							<li>
-								<div class="month">11</div>
-								<div class="event"><span>연혁</span></div>
-							</li>
-						</ul>
-					</div>
-					<!--//데이터 자동 생성-->
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--//연혁-->
-
-	<!--기업소개-->
-	<div class="module-wrap a_mod_summary section_mg">
-		<div class="new_cnt-container">
-			<div class="aType_tit">
-				<p>끊임없이 성장하는 <br>
-					더 나은 세상을 만들어 갑니다. </p>
-				<h3>기업<span>소개</span>
-				</h3>
-			</div>
-			<div class="a_summary_wrap">
-				<div class="img visionImg">
-					<img src="images/a_vision_img.png" alt="">
-				</div>
-				<div class="txt visionTxt">
-					<h4>VISION</h4>
-					<p class="vision">
-						대한민국
-						지식재산권서비스를
-						이끌 차세대 리더
-					</p>
-				</div>
-				<div class="img missionImg">
-					<img src="images/a_mission_img.png" alt="">
-				</div>
-				<div class="txt missionTxt">
-					<h4>MISSION</h4>
-					<p class="mission">
-						대중들도 쉽고 편리하게
-					</p>
-				</div>
-				<div class="img sloganImg">
-					<img src="images/a_slogan_img.png" alt="">
-				</div>
-				<div class="txt sloganTxt">
-					<h4>SLOGAN</h4>
-					<p class="slogan">
-						"혁신과 신뢰로 <br>
-						열어가는 미래”
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--//기업소개-->
-
-	<!--산업 내 위치-->
-	<div class="a_mod_industry section_pd" id="industry">
-		<div class="new_cnt-container">
-			<div class="module-wrap a_mod_finance01">
-				<div class="tit_wrap">
-					<div class="aType_tit">
-						<p>끊임없이 성장하는 <br>
-							더 나은 세상을 만들어 갑니다. </p>
-						<h3>산업 <span>내 위치</span>
-						</h3>
-					</div>
-					<div class="arrow_wrap">
-						<button class="prev" type="button"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>
-						<button class="next" type="button"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
-					</div>
-				</div>
-				<div class="conts_wrap">
-					<div data-index="1" class="summary">
-						<h3 class="tab_tit">재무평가 요약</h3>
-						<div>
-							<h4>동종업종 내 순위</h4>
-							<div class="fiPosition">9위</div>
-						</div>
-						<div>
-							<h4>기업평가등급</h4>
-							<div>
-								<div class="bizGrade">BBB-</div>
-
-							</div>
-						</div>
-						<div>
-							<h4>기업인증현황</h4>
-							<div class="certified">이노비즈 인증기업, 경기도가족친화인증기이노비즈 인증기업, 경기도가족친화인증기업이노비즈 인증기업</div>
-						</div>
-					</div>
-					<div data-index="2">
-						<h3 class="tab_tit">자본금</h3>
-						<div class="unit">단위 : 백만원</div>
-						<div id="graph_fiCapital" class="line_chart"></div>
-					</div>
-					<div data-index="3">
-						<h3 class="tab_tit">매출액</h3>
-						<div class="unit">단위 : 백만원</div>
-						<div id="graph_fiSales" class="line_chart"></div>
-					</div>
-					<div data-index="4">
-						<h3 class="tab_tit">당기순이익</h3>
-						<div class="unit">단위 : 백만원</div>
-						<div id="graph_fiProfit" class="line_chart"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--백분위정보-->
-		<div class="module-wrap a_mod_percent">
-			<div class="new_cnt-container">
-				<div class="percent_wrap">
-					<div class="scale">
-						<div class="ico">
-							<img src="images/a_fin_ico01.png" alt="규모형태">
-						</div>
-						<div class="txt">
-							<p class="tit">규모형태</p>
-							<p class="num"><span class="bpScale">-</span>
-							</p>
-						</div>
-					</div>
-					<div class="growth">
-						<div class="ico">
-							<img src="images/a_fin_ico02.png" alt="성장성">
-						</div>
-						<div class="txt">
-							<p class="tit">성장성</p>
-							<p class="num">
-								<span class="bpGrowthability">-</span>
-							</p>
-						</div>
-					</div>
-
-					<div class="profit">
-						<div class="ico">
-							<img src="images/a_fin_ico03.png" alt="수익성">
-						</div>
-						<div class="txt">
-							<p class="tit">수익성</p>
-							<p class="num">
-								<span class="bpProfitability">100</span>%
-							</p>
-						</div>
-
-					</div>
-					<div class="stable">
-						<div class="ico">
-							<img src="images/a_fin_ico04.png" alt="안정성">
-						</div>
-						<div class="txt">
-							<p class="tit">안정성</p>
-							<p class="num">
-								<span class="bpStability">-</span>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--//백분위정보-->
-	<!--사업영역-->
-	<div class="a_mod_biz section_mg" id="biz">
-		<div class="new_cnt-container">
-			<div class="aType_tit">
-				<p>누구보다 뛰어난 기술력을 갖춘 </p>
-				<h3>사업 <span>영역</span>
-				</h3>
-			</div>
-			<div class="bizDiv">
-				<div class="item">
-					<div class="img">
-						<img src="images/a_biz_img01.png" alt="">
-					</div>
-					<div class="txt">
-						<h4>주요사업 바로가기</h4>
-						<p>다양한 콘텐츠는 현재 세계 주요
-							이미지 에이전시를 통해 배급되고 있습니다.</p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="images/a_biz_img01.png" alt="">
-					</div>
-					<div class="txt">
-						<h4>주요사업 바로가기</h4>
-						<p>다양한 콘텐츠는 현재 세계 주요
-							이미지 에이전시를 통해 배급되고 있습니다.</p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img"><img src="/images/a_biz_img02.png" alt=""></div>
-					<div class="txt">
-						<h4>사업영역</h4>
-						<p>다양한 콘텐츠는 현재 세계 주요
-							이미지 에이전시를 통해 배급되고 있습니다.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--//사업영역-->
-
-
-	<!--주요상품-->
-	<div class="a_mod_product section_mg" id="product">
-		<div class="new_cnt-container">
-			<h3 class="aType_tit02">
-				주요상품
-			</h3>
-			<div class="product">
-				<div class="item">
-					<div class="img">
-						<img src='images/a_pro_img01.png' alt=''>
-					</div>
-					<div class="txt">
-						<h4>타이틀</h4>
-						<p>다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요</p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src='images/a_pro_img01.png' alt=''>
-					</div>
-					<div class="txt">
-						<h4>타이틀</h4>
-						<p>다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요</p>
-					</div>
-				</div>
-
-		</div>
-	</div>
+        </div>
     </div>
-	<!--//주요상품-->
 
-	<!--기업인증-->
-	<div class="a_mod_cert section_mg">
-		<div class="new_cnt-container">
-			<h3 class="aType_tit02">
-				기업 인증 및 특허
-			</h3>
-			<div class="cert_wrap">
-				<div class="item">
-					<div class="img">
-						<img src="images/a_cert_img01.png" alt="">
-					</div>
-					<div class="txt">
-						<p class="year">2019년</p>
-						<p class="month">5월</p>
-						<p class="desc">Patent</p>
-					</div>
-				</div>
+    <!--기업정보-->
 
-				<div class="item">
-					<div class="img">
-						<img src="images/a_cert_img02.png" alt="">
-					</div>
-					<div class="txt">
-						<p class="year">2019년</p>
-						<p class="month">5월</p>
-						<p class="desc">Patent</p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="images/a_cert_img02.png" alt="">
-					</div>
-					<div class="txt">
-						<p class="year">2019년</p>
-						<p class="month">5월</p>
-						<p class="desc">Patent</p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="images/a_cert_img02.png" alt="">
-					</div>
-					<div class="txt">
-						<p class="year">2019년</p>
-						<p class="month">5월</p>
-						<p class="desc">Patent</p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="images/a_cert_img02.png" alt="">
-					</div>
-					<div class="txt">
-						<p class="year">2019년</p>
-						<p class="month">5월</p>
-						<p class="desc">Patent</p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="images/a_cert_img02.png" alt="">
-					</div>
-					<div class="txt">
-						<p class="year">2019년</p>
-						<p class="month">5월</p>
-						<p class="desc">Patent</p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="images/a_cert_img02.png" alt="">
-					</div>
-					<div class="txt">
-						<p class="year">2019년</p>
-						<p class="month">5월</p>
-						<p class="desc">Patent</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--//기업인증-->
+    <!--기업 대표 문구-->
 
-	<!--재무정보&직원수-->
-	<div class="a_mod_finance02 section_pd" id="finance02">
-		<div class="new_cnt-container">
-			<div class="module-wrap finance_wrap">
-				<div class="aType_tit">
-					<p>튼튼한 우리회사를 소개합니다.</p>
-					<h3>재무 <span>정보</span>
-					</h3>
-				</div>
-				<div class="conts_wrap">
-					<div class="item">
-						<div class="ico">
-							<img src="images/a_emp_ico01.png" alt="동종업종내 순위">
-						</div>
-						<div class="txt">
-							<div class="fiPosition">-</div>
-							<p class="tit">동종업종 내 순위</p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="ico">
-							<img src="images/a_emp_ico02.png" alt="자본금">
-						</div>
-						<div class="txt">
-							<div class="fiCapital">10000000000</div>
-							<p class="tit">자본금(백만원)</p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="ico">
-							<img src="images/a_emp_ico03.png" alt="당기순이익">
-						</div>
-						<div class="txt">
-							<div class="fiProfit">-</div>
-							<p class="tit">당기순이익(백만원)</p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="ico">
-							<img src="images/a_emp_ico04.png" alt="매출액">
-						</div>
-						<div class="txt">
-							<div class="fiSales">-</div>
-							<p class="tit">매출액</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--직원수--->
-			<div class="a_mod_emp_wrap">
-				<div class="a_mod_emp">
-					<div id="a_graph_empCnt"></div>
-				</div>
-				<div class="lastEmployeeState">
-					<div class="total_wrap">
-						<div>총 인원(명)</div>
-						<div class="num">
-							<div class="lastTotal">0</div>명
-						</div>
-					</div>
-					<div class="empState_wrap">
-						<div class="lastJoin_wrap">
-							<div>최근 1년 입사자</div>
-							<div class="lastJoin">1</div>
-						</div>
-						<div class="lastResign_wrap">
-							<div>최근 1년 퇴사자</div>
-							<div class="lastResign">2</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--직원수--->
-		</div>
-	</div>
-	<!--//재무정보&직원수-->
+    <div id="summary" class="module-wrap a_mod_repTxt section_pd" style="background:url(images/tplA_bg01.png)">
+        <div class="new_cnt-container">
+            <p>
+                핫와이드는 전자 /통신/의료기기/생활 가전 등의 다양한 분야<br>
+            </p>
+        </div>
+    </div>
+    <!--//기업 대표 문구-->
 
+    <!--연혁-->
+    <div class="module-wrap a_mod_history section_pd">
+        <div class="new_cnt-container">
+            <h3>history</h3>
+            <div class="history_wrap">
+                <!--<div class="holder"></div>-->
+                <div id="history" class="history">
+                    <!--데이터 자동 생성-->
+                    <div class="item"><span>2021</span>
+                        <ul>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁연혁연혁연혁연혁연혁연혁연혁연혁연혁연혁연혁연혁연혁연혁연혁</span></div>
+                            </li>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item"><span>2018</span>
+                        <ul>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item"><span>2018</span>
+                        <ul>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item"><span>2018</span>
+                        <ul>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                            <li>
+                                <div class="month">11</div>
+                                <div class="event"><span>연혁</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//데이터 자동 생성-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//연혁-->
 
-	<!--기업문화-->
-	<div class="a_mod_welfare section_pd" id="welfare">
-		<div class="new_cnt-container">
-			<div class="aType_tit white">
-				<p>튼튼한 우리회사를 소개합니다.</p>
-				<h3>조직문화 &amp; 복리후생
-				</h3>
-			</div>
-			<div class="a_mod_welfare_slide">
-			
-			<div class="welfare" id="Culture">
-				<div class="item">
-					<p class="tit">1수평적인 의사소통</p>
-					<p class="desc">회의나 안건 제시 시
-						상사 및 직원간의
-						수평적인 의사소통</p>
-				</div>
-				<div class="item">
-					<p class="tit">2자율과 신뢰</p>
-					<p class="desc">업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무처리업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무처리처리</p>
-				</div>
+    <!--기업소개-->
+    <div class="module-wrap a_mod_summary section_mg">
+        <div class="new_cnt-container">
+            <div class="aType_tit">
+                <p>끊임없이 성장하는 <br>
+                    더 나은 세상을 만들어 갑니다. </p>
+                <h3>기업<span>소개</span>
+                </h3>
+            </div>
+            <div class="a_summary_wrap">
+                <div class="img visionImg">
+                    <img src="images/a_vision_img.png" alt="">
+                </div>
+                <div class="txt visionTxt">
+                    <h4>VISION</h4>
+                    <p class="vision">
+                        대한민국
+                        지식재산권서비스를
+                        이끌 차세대 리더
+                    </p>
+                </div>
+                <div class="img missionImg">
+                    <img src="images/a_mission_img.png" alt="">
+                </div>
+                <div class="txt missionTxt">
+                    <h4>MISSION</h4>
+                    <p class="mission">
+                        대중들도 쉽고 편리하게
+                    </p>
+                </div>
+                <div class="img sloganImg">
+                    <img src="images/a_slogan_img.png" alt="">
+                </div>
+                <div class="txt sloganTxt">
+                    <h4>SLOGAN</h4>
+                    <p class="slogan">
+                        "혁신과 신뢰로 <br>
+                        열어가는 미래”
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//기업소개-->
 
-			</div>
-			
-			<div class="welfare" id="welfare">
-				<div class="item">
-					<p class="tit">1수평적인 의사소통</p>
-					<p class="desc">회의나 안건 제시 시
-						상사 및 직원간의
-						수평적인 의사소통</p>
-				</div>
-				<div class="item">
-					<p class="tit">2자율과 신뢰</p>
-					<p class="desc">업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무처리업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무처리처리</p>
-				</div>
-				<div class="item">
-					<p class="tit">1수평적인 의사소통</p>
-					<p class="desc">회의나 안건 제시 시
-						상사 및 직원간의
-						수평적인 의사소통</p>
-				</div>
-				<div class="item">
-					<p class="tit">2자율과 신뢰</p>
-					<p class="desc">업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무처리업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무처리처리</p>
-				</div>
-				<div class="item">
-					<p class="tit">2자율과 신뢰</p>
-					<p class="desc">업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무처리업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무처리처리</p>
-				</div>
-				<div class="item">
-					<p class="tit">2자율과 신뢰</p>
-					<p class="desc">업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무처리업무에 자율권을
-						보장하고 신뢰하기에
-						스스로 책임감을 갖고
-						주도적으로 업무처리처리</p>
-				</div>
+    <!--산업 내 위치-->
+    <div class="a_mod_industry section_pd" id="industry">
+        <div class="new_cnt-container">
+            <div class="module-wrap a_mod_finance01">
+                <div class="tit_wrap">
+                    <div class="aType_tit">
+                        <p>끊임없이 성장하는 <br>
+                            더 나은 세상을 만들어 갑니다. </p>
+                        <h3>산업 <span>내 위치</span>
+                        </h3>
+                    </div>
+                    <div class="arrow_wrap">
+                        <button class="prev" type="button"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>
+                        <button class="next" type="button"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+                    </div>
+                </div>
+                <div class="conts_wrap">
+                    <div data-index="1" class="summary">
+                        <h3 class="tab_tit">재무평가 요약</h3>
+                        <div>
+                            <h4>동종업종 내 순위</h4>
+                            <div class="fiPosition">9위</div>
+                        </div>
+                        <div>
+                            <h4>기업평가등급</h4>
+                            <div>
+                                <div class="bizGrade">BBB-</div>
 
+                            </div>
+                        </div>
+                        <div>
+                            <h4>기업인증현황</h4>
+                            <div class="certified">이노비즈 인증기업, 경기도가족친화인증기이노비즈 인증기업, 경기도가족친화인증기업이노비즈 인증기업</div>
+                        </div>
+                    </div>
+                    <div data-index="2">
+                        <h3 class="tab_tit">자본금</h3>
+                        <div class="unit">단위 : 백만원</div>
+                        <div id="graph_fiCapital" class="line_chart"></div>
+                    </div>
+                    <div data-index="3">
+                        <h3 class="tab_tit">매출액</h3>
+                        <div class="unit">단위 : 백만원</div>
+                        <div id="graph_fiSales" class="line_chart"></div>
+                    </div>
+                    <div data-index="4">
+                        <h3 class="tab_tit">당기순이익</h3>
+                        <div class="unit">단위 : 백만원</div>
+                        <div id="graph_fiProfit" class="line_chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--백분위정보-->
+        <div class="module-wrap a_mod_percent">
+            <div class="new_cnt-container">
+                <div class="percent_wrap">
+                    <div class="scale">
+                        <div class="ico">
+                            <img src="images/a_fin_ico01.png" alt="규모형태">
+                        </div>
+                        <div class="txt">
+                            <p class="tit">규모형태</p>
+                            <p class="num"><span class="bpScale">-</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="growth">
+                        <div class="ico">
+                            <img src="images/a_fin_ico02.png" alt="성장성">
+                        </div>
+                        <div class="txt">
+                            <p class="tit">성장성</p>
+                            <p class="num">
+                                <span class="bpGrowthability">-</span>
+                            </p>
+                        </div>
+                    </div>
 
-			</div>
-			</div>
-		</div>
-	</div>
-	<!--//기업문화-->
+                    <div class="profit">
+                        <div class="ico">
+                            <img src="images/a_fin_ico03.png" alt="수익성">
+                        </div>
+                        <div class="txt">
+                            <p class="tit">수익성</p>
+                            <p class="num">
+                                <span class="bpProfitability">100</span>%
+                            </p>
+                        </div>
 
-
-	<!-- 기업전경 -->
-	<div class="a_mod_comview section_pd" id="comview">
-		<div class="new_cnt-container">
-			<div class="aType_tit">
-				<p>튼튼한 우리회사를 소개합니다.</p>
-				<h3>기업 <span>전경</span>
-				</h3>
-			</div>
-			<div class="img_wrap">
-				<img src="images/a_comImg.png" alt="">
-			</div>
-			<div class="comMov">
-				<iframe width="1280" height="720" src="https://www.youtube.com/embed/-ko0_ssiayo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-	<!-- //기업전경 -->
-
-
-	<!--인터뷰-->
-	<div class="a_mod_interview section_pd" id="interview">
-		<div class="new_cnt-container">
-			<div class="aType_tit white">
-				<p>CEO 및 현직자의 핵심 인터뷰</p>
-				<h3>인터뷰</h3>
-
-			</div>
-
-			<div class="iv_wrap qa_ceo">
-				<div class="ivCeoPhoto photo">
-					<img src="/images/a_ceo.png" alt="CEO">
-					<p class="txt">
-						CEO
-					</p>
-				</div>
-				<div class="ivCeo ivSlide">
-					<div class="item">
-						<div class="q">질문질문질문질문질문질문질문질문질문질문질문질문질문</div>
-						<div class="a">유료 온라인 강의를 제공하고있습니다
-							업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다
-							업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다
-							업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다
-							업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다
-							업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다
-							업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다
-							업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다
-							업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다</div>
-					</div>
-					<div class="item">
-						<div class="q">질문</div>
-						<div class="a">답변</div>
-					</div>
-					<div class="item">
-						<div class="q">질문</div>
-						<div class="a">답변</div>
-					</div>
-				</div>
-			</div>
+                    </div>
+                    <div class="stable">
+                        <div class="ico">
+                            <img src="images/a_fin_ico04.png" alt="안정성">
+                        </div>
+                        <div class="txt">
+                            <p class="tit">안정성</p>
+                            <p class="num">
+                                <span class="bpStability">-</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//백분위정보-->
+    <!--사업영역-->
+    <div class="a_mod_biz section_mg" id="biz">
+        <div class="new_cnt-container">
+            <div class="aType_tit">
+                <p>누구보다 뛰어난 기술력을 갖춘 </p>
+                <h3>사업 <span>영역</span>
+                </h3>
+            </div>
+            <div class="bizDiv">
+                <div class="item">
+                    <div class="img">
+                        <img src="images/a_biz_img01.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <h4>주요사업 바로가기</h4>
+                        <p>다양한 콘텐츠는 현재 세계 주요
+                            이미지 에이전시를 통해 배급되고 있습니다.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="images/a_biz_img01.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <h4>주요사업 바로가기</h4>
+                        <p>다양한 콘텐츠는 현재 세계 주요
+                            이미지 에이전시를 통해 배급되고 있습니다.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img"><img src="/images/a_biz_img02.png" alt=""></div>
+                    <div class="txt">
+                        <h4>사업영역</h4>
+                        <p>다양한 콘텐츠는 현재 세계 주요
+                            이미지 에이전시를 통해 배급되고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//사업영역-->
 
 
+    <!--주요상품-->
+    <div class="a_mod_product section_mg" id="product">
+        <div class="new_cnt-container">
+            <h3 class="aType_tit02">
+                주요상품
+            </h3>
+            <div class="product">
+                <div class="item">
+                    <div class="img">
+                        <img src='images/a_pro_img01.png' alt=''>
+                    </div>
+                    <div class="txt">
+                        <h4>타이틀</h4>
+                        <p>다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src='images/a_pro_img01.png' alt=''>
+                    </div>
+                    <div class="txt">
+                        <h4>타이틀</h4>
+                        <p>다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요다양한 콘텐츠는 현재 세계 주요</p>
+                    </div>
+                </div>
 
-			<div class="iv_wrap qa_mng">
-				<div class="ivMngPhoto photo">
-					<img src="/images/a_mng.png" alt="인사담당자">
-					<p class="txt">
-						인사담당자
-					</p>
-				</div>
-				<div class="ivMng ivSlide">
-					<div class="item">
-						<div class="q">질문</div>
-						<div class="a">답변</div>
-					</div>
-					<div class="item">
-						<div class="q">질문</div>
-						<div class="a">답변</div>
-					</div>
-					<div class="item">
-						<div class="q">질문</div>
-						<div class="a">답변</div>
-					</div>
-				</div>
-			</div>
+            </div>
+        </div>
+    </div>
+    <!--//주요상품-->
 
+    <!--기업인증-->
+    <div class="a_mod_cert section_mg">
+        <div class="new_cnt-container">
+            <h3 class="aType_tit02">
+                기업 인증 및 특허
+            </h3>
+            <div class="cert_wrap">
+                <div class="item">
+                    <div class="img">
+                        <img src="images/a_cert_img01.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <p class="year">2019년</p>
+                        <p class="month">5월</p>
+                        <p class="desc">Patent</p>
+                    </div>
+                </div>
 
-			<div class="iv_wrap qa_emp">
-				<div class="ivEmpPhoto photo">
-					<img src="/images/a_emp.png" alt="재직자">
-					<p class="txt">
-						재직자
-					</p>
-				</div>
-				<div class="ivEmp ivSlide">
-					<div class="item">
-						<div class="q">질문</div>
-						<div class="a">답변</div>
-					</div>
-					<div class="item">
-						<div class="q">질문</div>
-						<div class="a">답변</div>
-					</div>
-					<div class="item">
-						<div class="q">질문</div>
-						<div class="a">답변</div>
-					</div>
-				</div>
-			</div>
+                <div class="item">
+                    <div class="img">
+                        <img src="images/a_cert_img02.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <p class="year">2019년</p>
+                        <p class="month">5월</p>
+                        <p class="desc">Patent</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="images/a_cert_img02.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <p class="year">2019년</p>
+                        <p class="month">5월</p>
+                        <p class="desc">Patent</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="images/a_cert_img02.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <p class="year">2019년</p>
+                        <p class="month">5월</p>
+                        <p class="desc">Patent</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="images/a_cert_img02.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <p class="year">2019년</p>
+                        <p class="month">5월</p>
+                        <p class="desc">Patent</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="images/a_cert_img02.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <p class="year">2019년</p>
+                        <p class="month">5월</p>
+                        <p class="desc">Patent</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="images/a_cert_img02.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <div class="date">
+                            <p class="year">2019년</p>
+                            <p class="month">5월</p>
+                        </div>
+                        <p class="desc">Patent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//기업인증-->
 
-
-		</div>
-	</div>
-	<!--//인터뷰-->
-
-	<!--인재상-->
-	<div class="a_mod_talent section_pd" id="talent">
-		<div class="new_cnt-container">
-			<div class="aType_tit">
-				<p>우리회사에 취업하고 싶다면 꼭 확인하세요</p>
-				<h3>인재상</h3>
-			</div>
-			<div class="talent_wrap">
-				<div class="item">
-					<div class="img">
-						<img src="images/ico_cult02_1208183022.png" alt="인재상아이콘">
-					</div>
-					<dl class="txt">
-						<dt class="tit">Standard</dt>
-						<dd class="desc">TongRo Images produces various
-							kind of high-quality distributed.
-
-						</dd>
-					</dl>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="images/a_talent_ico02.png" alt="인재상아이콘">
-					</div>
-					<dl class="txt">
-						<dt class="tit">Special</dt>
-						<dd class="desc">TongRo Images produces various
-							kind of high-quality distributed.TongRo Images produces various
-							kind of high-quality distributed.TongRo Images produces various
-							kind of high-quality distributed.TongRo Images produces various
-							kind of high-quality distributed.
-
-						</dd>
-					</dl>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="images/a_talent_ico03.png" alt="인재상아이콘">
-					</div>
-					<dl class="txt">
-						<dt class="tit">sustainable</dt>
-						<dd class="desc">TongRo Images produces various
-							kind of high-quality distributed.
-
-						</dd>
-					</dl>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--//인재상-->
-
-
-	<!--취업정보-->
-	<div class="a_mod_strategy section_mg" id="strategy">
-		<div class="new_cnt-container">
-			<div class="aType_tit">
-				<p>우리회사에 취업하고 싶다면 꼭 확인하세요</p>
-				<h3>취업 <span>정보</span></h3>
-			</div>
-			<!--자소서 문항별 가이드-->
-			<div class="guide_wrap qa_area">
-				<!-- 데이터 자동삽입 -->
-				<div class="item">
-					<div class="q">성장배경에 대해서 기술해주세요.</div>
-					<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
-						현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
-					</div>
-				</div>
-				<div class="item">
-					<div class="q">성장배경에 대해서 기술해주세요.</div>
-					<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
-						현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
-					</div>
-				</div>
-				<div class="item">
-					<div class="q">성장배경에 대해서 기술해주세요.</div>
-					<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
-						현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
-					</div>
-				</div>
-				<div class="item">
-					<div class="q">성장배경에 대해서 기술해주세요.</div>
-					<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
-						현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
-					</div>
-				</div>
-				<div class="item">
-					<div class="q">성장배경에 대해서 기술해주세요.</div>
-					<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
-						현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
-					</div>
-				</div>
-				<div class="item">
-					<div class="q">성장배경에 대해서 기술해주세요.</div>
-					<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
-						현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
-					</div>
-				</div>
-				<div class="item">
-					<div class="q">성장배경에 대해서 기술해주세요.</div>
-					<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
-						현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
-					</div>
-				</div>
-				<div class="item">
-					<div class="q">성장배경에 대해서 기술해주세요성장배경에 대해서 기술해주세요성장배경에 대해서 기술해주세요성장배경에 대해서 기술해주세요성장배경에 대해서 기술해주세요성장배경에 대해서 기술해주세요.</div>
-					<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
-						현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
-					</div>
-				</div>
-				<div class="item">
-					<div class="q">성장배경에 대해서 기술해주세요.</div>
-					<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
-						현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
-					</div>
-				</div>
-				<div class="item">
-					<div class="q">성장배경에 대해서 기술해주세요.</div>
-					<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
-						현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
-					</div>
-				</div>
-				<div class="item">
-					<div class="q">성장배경에 대해서 기술해주세요.</div>
-					<div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
-						현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
-					</div>
-				</div>
-				<!-- //데이터 자동삽입 -->
-			</div>
-			<!--//자소서 문항별 가이드-->
-
-			<!--최근 면접질문-->
-			<div class="rq_cont">
-				<p class="rq_tit">최근 면접 질문</p>
-				<div class="rq_text">
-					<!-- 데이터 자동삽입 -->
-					<p>주변사람들에게 어떤식의 <b>평판</b>을 받고 있습니까?</p>
-					<p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
-					<p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
-					<p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
-					<p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
-					<p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
-					<p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
-					<p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
-					<p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
-					<p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
-					<!-- //데이터 자동삽입 -->
-				</div>
-			</div>
-			<!--//최근 면접질문-->
+    <!--재무정보&직원수-->
+    <div class="a_mod_finance02 section_pd" id="finance02">
+        <div class="new_cnt-container">
+            <div class="module-wrap finance_wrap">
+                <div class="aType_tit">
+                    <p>튼튼한 우리회사를 소개합니다.</p>
+                    <h3>재무 <span>정보</span>
+                    </h3>
+                </div>
+                <div class="conts_wrap">
+                    <div class="item">
+                        <div class="ico">
+                            <img src="images/a_emp_ico01.png" alt="동종업종내 순위">
+                        </div>
+                        <div class="txt">
+                            <div class="fiPosition">-</div>
+                            <p class="tit">동종업종 내 순위</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ico">
+                            <img src="images/a_emp_ico02.png" alt="자본금">
+                        </div>
+                        <div class="txt">
+                            <div class="fiCapital">10000000000</div>
+                            <p class="tit">자본금(백만원)</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ico">
+                            <img src="images/a_emp_ico03.png" alt="당기순이익">
+                        </div>
+                        <div class="txt">
+                            <div class="fiProfit">-</div>
+                            <p class="tit">당기순이익(백만원)</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ico">
+                            <img src="images/a_emp_ico04.png" alt="매출액">
+                        </div>
+                        <div class="txt">
+                            <div class="fiSales">-</div>
+                            <p class="tit">매출액</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--직원수--->
+            <div class="a_mod_emp_wrap">
+                <div class="a_mod_emp">
+                    <div id="a_graph_empCnt"></div>
+                </div>
+                <div class="lastEmployeeState">
+                    <div class="total_wrap">
+                        <div>총 인원(명)</div>
+                        <div class="num">
+                            <div class="lastTotal">0</div>명
+                        </div>
+                    </div>
+                    <div class="empState_wrap">
+                        <div class="lastJoin_wrap">
+                            <div>최근 1년 입사자</div>
+                            <div class="lastJoin">1</div>
+                        </div>
+                        <div class="lastResign_wrap">
+                            <div>최근 1년 퇴사자</div>
+                            <div class="lastResign">2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--직원수--->
+        </div>
+    </div>
+    <!--//재무정보&직원수-->
 
 
-			<div class="pns_wrap">
-				<!--가산점 요인-->
-				<div class="add_point">
-					<div class="pns_tit">
-						<h3>
-							가산점 요인
-						</h3>
-					</div>
-					<ul class="add_point_wrap">
-						<!-- 데이터 자동 삽입 -->
-						<li>
-							<strong class="tit">자격증</strong>
-							<p class="desc">대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허</p>
-						</li>
-						<li>
-							<strong class="tit">봉사활동</strong>
-							<p class="desc">자원봉사 포털 1365 기준 봉사활동 시간</p>
-						</li>
-						<li>
-							<strong class="tit">봉사활동</strong>
-							<p class="desc">자원봉사 포털 1365 기준 봉사활동 시간</p>
-						</li>
-						<li>
-							<strong class="tit">봉사활동</strong>
-							<p class="desc">자원봉사 포털 1365 기준 봉사활동 시간</p>
-						</li>
-						<!-- //데이터 자동 삽입 -->
-					</ul>
+    <!--기업문화-->
+    <div class="a_mod_welfare section_pd" id="welfare">
+        <div class="new_cnt-container">
+            <div class="aType_tit white">
+                <p>튼튼한 우리회사를 소개합니다.</p>
+                <h3>조직문화 &amp; 복리후생
+                </h3>
+            </div>
+            <div class="a_mod_welfare_slide">
 
-				</div>
+                <div class="welfare" id="Culture">
+                    <div class="item">
+                        <p class="tit">1수평적인 의사소통</p>
+                        <p class="desc">회의나 안건 제시 시
+                            상사 및 직원간의
+                            수평적인 의사소통</p>
+                    </div>
+                    <div class="item">
+                        <p class="tit">2자율과 신뢰</p>
+                        <p class="desc">업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리처리</p>
+                    </div>
+                    <div class="item">
+                        <p class="tit">2자율과 신뢰</p>
+                        <p class="desc">업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리처리</p>
+                    </div>
+                    <div class="item">
+                        <p class="tit">2자율과 신뢰</p>
+                        <p class="desc">업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리처리</p>
+                    </div>
+                    <div class="item">
+                        <p class="tit">2자율과 신뢰</p>
+                        <p class="desc">업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리처리</p>
+                    </div>
+                    <div class="item">
+                        <p class="tit">2자율과 신뢰</p>
+                        <p class="desc">업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리처리</p>
+                    </div>
+                    <div class="item">
+                        <p class="tit">2자율과 신뢰</p>
+                        <p class="desc">업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리처리</p>
+                    </div>
+                    <div class="item">
+                        <p class="tit">2자율과 신뢰</p>
+                        <p class="desc">업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리처리</p>
+                    </div>
+                    <div class="item">
+                        <p class="tit">2자율과 신뢰</p>
+                        <p class="desc">업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리처리</p>
+                    </div>
 
-				<!--//가산점 요인-->
+                </div>
 
-				<!--최근 입사자 합격 스펙-->
-				<div class="spec">
-					<div class="cont_box">
-						<div class="pns_tit">
-							<h3>최근 입사자 합격 스펙</h3>
-						</div>
-						<ul class="spec_wrap">
-							<!-- 데이터 자동 삽입-->
-							<li>
-								<strong class="tit">학점</strong>
-								<p class="desc">3.7</p>
-							</li>
-							<li>
-								<strong class="tit">토익</strong>
-								<p class="desc">750</p>
-							</li>
-							<li>
-								<strong class="tit">토익스피킹</strong>
-								<p class="desc">Lv5</p>
-							</li>
-							<!-- //데이터 자동 삽입-->
-						</ul>
-					</div>
-				</div>
-				<!--//최근 입사자 합격 스펙-->
-			</div>
-
-			<div class="interview_tip section_mg">
-				<h3 class="aType_tit02">채용담당자가 직접 알려주는 면접 꿀팁!</h3>
-				<div class="it_img">
-					<img src="images/strategy02_img04.png" alt="인사담당자 사진">
-				</div>
-				<div class="interview_tip_wrap qa_area section_mg">
-					<div class="item">
-						<p class="q">인사담당자로서 면접 팁을 공유해주세요~</p>
-						<p class="a"><b>회사에 대한 공부가 가장 중요합니다.</b> 그 회사에서 추진하고 있는 사업이 무엇인지, 앞으로의 방향, 회사에서 사용하는 용어나 부서까지 알고 있다면, 면접관들에게 좋은 이미지를 심어줄 수 있습니다. 은행, 증권사를 보고 대략적으로 준비하는 것은 분명 차이가 있습니다.
-							그렇기 때문에 회사에 대해 공부를 하고, 그 용어나 개념을 일부 활용할 줄 안다면 자기소개서나 면접에서 다른 지원자와 차별이 될 것입니다.</p>
-					</div>
-					<div class="item">
-						<p class="q">면접이라고 하면 아무래도 복장 부분에 많은 신경이 쓰이게 마련인데요~<br />
-							인사담당자님 눈에 가장 매력적인 지원자는 어떤 지원자인가요??</p>
-						<p class="a"><b>본인의 업무에 맞는 복장으로 준비해오시면 됩니다.</b> 면접전에 복장에 대한 공지가 특별히 없는 경우엔 출근을 하게 된다면 어떤 복장으로 출근을 할것인지 생각해보고 편하게 복장을 준비하시면 됩니다.</p>
-					</div>
-				</div>
-				<div class="btn_wrap">
-					<div class="qm_btn_wrap">
-						<button type="button" class="qm_btn" onclick="onCntNew();">관심기업 등록하기</button>
-						<div class="qm_txt">
-							<a href="javascript:void(0);">도움말</a>
-							<span>관심기업으로 등록하면 채용 공고 마감일을 알람으로 받아보실 수 있습니다.</span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-	<!--//취업정보-->
-
-	<a name="recruit"></a>
-	<div class="module-wrap edit_wrap com_mod_recruit sty01 section_mg pdt0" id="recruitArea" style="display:block">
-		<a name="recruit"></a>
-		<div class="bg_bot"></div>
-		<div class="new_cnt-container" id="recruitContainer">
-			<h3 class="f25">채용공고</h3>
-			<table class="tb_recruit otherRecruit" summary="채용공고"  style="display:table">
-				<thead>
-				<tr>
-					<th scope="col">접수기간</th>
-					<th scope="col">채용제목</th>
-					<th scope="col">고용형태</th>
-				</tr>
-				</thead>
-				<tbody id="otherRecruitList">
-					<tr>
-	<td>2021.05.31 까지</td><td>풀스택 개발자 채용/경력채용/급여250만원</td><td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
-	</tr>
-					<tr>
-	<td>상시채용</td><td>생산직 지원 채용/경력 무관/급여220만원</td><td>계약직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
-	</tr>
-				</tbody>
-			</table>
-			<div class="box_recruit_wrap swiper">
-				<div class="swiper-wrapper">
-					<div class="box_recruit swiper-slide">
-						<h4>
-							<a href="javascript:;">채용공고명</a>
-							<span class="period">오늘까지</span>
-						</h4>
-						<hr>
-						<div class="detail_wrap">
-							<div>
-								<h5>지원자격</h5>
-								<dl class="clearfix">
-									<dt>경력</dt>
-									<dd>경력무관</dd>
-									<dt>학력</dt>
-									<dd>고졸이상</dd>
-									<dt>우대사항</dt>
-									<dd>인근거주자, 1종보통운전면허</dd>
-								</dl>
-							</div>
-							<div>
-								<h5>근무조건</h5>
-								<dl class="clearfix">
-									<dt>고용형태</dt>
-									<dd>정규직</dd>
-									<dt>급여</dt>
-									<dd>220만원 이상</dd>
-									<dt>근무지역</dt>
-									<dd>경기도 전체</dd>
-								</dl>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-pagination"></div>
-			</div>
-		</div>
-	</div>
-	
-
-
-	<a name="news"></a>
-	<div class="module-wrap com_mod_news sty01 pd0 section_mg">
-		<div class="new_cnt-container">
-			<div id="news_wrap">
-				<div class="news_row">
-					<a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
-					<div class="desc">
-						경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
-						'2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
-						친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
-					</div>
-					<div class="reg_date">2021.05.15</div>
-				</div>
-				<div class="news_row">
-					<a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
-					<div class="desc">
-						경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
-						'2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
-						친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
-					</div>
-					<div class="reg_date">2021.05.15</div>
-				</div>
-			</div>
-			<div class="paging_wrap">
-				<a href="javascript:void(0);" class="prev disable">이전</a>
-				<a href="javascript:void(0);" class="current">1</a>
-				<a href="javascript:void(0);">2</a>
-				<a href="javascript:void(0);">3</a>
-				<a href="javascript:void(0);">4</a>
-				<a href="javascript:void(0);">5</a>
-				<a href="javascript:void(0);" class="next">다음</a>
-			</div>
-		</div>
-	</div>
-
+                <div class="welfare" id="welfare">
+                    <div class="item">
+                        <p class="tit">1수평적인 의사소통</p>
+                        <p class="desc">회의나 안건 제시 시
+                            상사 및 직원간의
+                            수평적인 의사소통</p>
+                    </div>
+                    <div class="item">
+                        <p class="tit">2자율과 신뢰</p>
+                        <p class="desc">업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리처리</p>
+                    </div>
+                    <div class="item">
+                        <p class="tit">1수평적인 의사소통</p>
+                        <p class="desc">회의나 안건 제시 시
+                            상사 및 직원간의
+                            수평적인 의사소통</p>
+                    </div>
+                    <div class="item">
+                        <p class="tit">2자율과 신뢰</p>
+                        <p class="desc">업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리처리</p>
+                    </div>
+                    <div class="item">
+                        <p class="tit">2자율과 신뢰</p>
+                        <p class="desc">업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리처리</p>
+                    </div>
+                    <div class="item">
+                        <p class="tit">2자율과 신뢰</p>
+                        <p class="desc">업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리업무에 자율권을
+                            보장하고 신뢰하기에
+                            스스로 책임감을 갖고
+                            주도적으로 업무처리처리</p>
+                    </div>
 
 
-	<div class="tn_chrat">
-	</div>
-	<div class="module-wrap com_mod_map">
-		<div id="map"></div>
-		<div class="map_info_wrap">
-			<div class="com_info">
-				<div class="comName">기업명</div>
-				<a href="javascript:void(0);" target="_blank" class="find_road">길 찾기</a>
-				<p class="comAddress">주소</p>
-				<p class="tel">전화번호</p>
-			</div>
-			<div class="around_wrap">
-				<ul id="category">
-					<li id="MT1" data-order="0">
-						<span class="category_bg mt1"></span>
-						대형마트
-					</li>
-					<li id="CS2" data-order="1">
-						<span class="category_bg cs2"></span>
-						편의점
-					</li>
-					<li id="AC5" data-order="2">
-						<span class="category_bg ac5"></span>
-						학원
-					</li>
-					<li id="PK6" data-order="3">
-						<span class="category_bg pk6"></span>
-						주차장
-					</li>
-					<li id="OL7" data-order="4">
-						<span class="category_bg ol7"></span>
-						주유소
-					</li>
-					<li id="SW8" data-order="5">
-						<span class="category_bg sw8"></span>
-						지하철
-					</li>
-					<li id="BK9" data-order="6">
-						<span class="category_bg bk9"></span>
-						은행
-					</li>
-					<li id="CT1" data-order="7">
-						<span class="category_bg ct1"></span>
-						문화시설
-					</li>
-					<li id="AT4" data-order="8">
-						<span class="category_bg at4"></span>
-						관광명소
-					</li>
-					<li id="AD5" data-order="9">
-						<span class="category_bg ad5"></span>
-						숙박
-					</li>
-					<li id="FD6" data-order="10">
-						<span class="category_bg fd6"></span>
-						음식점
-					</li>
-					<li id="CE7" data-order="11">
-						<span class="category_bg ce7"></span>
-						카페
-					</li>
-					<li id="HP8" data-order="12">
-						<span class="category_bg hp8"></span>
-						병원
-					</li>
-					<li id="PM9" data-order="14">
-						<span class="category_bg pm9"></span>
-						약국
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//기업문화-->
 
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@5.4.5/js/swiper.min.js"></script>
-	<script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
-	<script src="https://d3js.org/d3.v3.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js">
-	</script>
-	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-	<script>
-		// --- 스크롤 메뉴 수정  --
-		$(window).load(function() {
-			// 메뉴 none처리 -> 로딩후 보여지게
-			$('.com_mod_anchor li a').fadeIn(300);
-		});
 
-		$(document).ready(function() {
+    <!-- 기업전경 -->
+    <div class="a_mod_comview section_pd" id="comview">
+        <div class="new_cnt-container">
+            <div class="aType_tit">
+                <p>튼튼한 우리회사를 소개합니다.</p>
+                <h3>기업 <span>전경</span>
+                </h3>
+            </div>
+            <div class="img_wrap">
+                <img src="images/a_comImg.png" alt="">
+            </div>
+            <div class="comMov">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/-ko0_ssiayo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- //기업전경 -->
+
+
+    <!--인터뷰-->
+    <div class="a_mod_interview section_pd" id="interview">
+        <div class="new_cnt-container">
+            <div class="aType_tit white">
+                <p>CEO 및 현직자의 핵심 인터뷰</p>
+                <h3>인터뷰</h3>
+
+            </div>
+
+            <div class="iv_wrap qa_ceo">
+                <div class="ivCeoPhoto photo">
+                    <img src="/images/a_ceo.png" alt="CEO">
+                    <p class="txt">
+                        CEO
+                    </p>
+                </div>
+                <div class="ivCeo ivSlide">
+                    <div class="item">
+                        <div class="q">질문질문질문질문질문질문질문질문질문질문질문질문질문</div>
+                        <div class="a">유료 온라인 강의를 제공하고있습니다
+                            업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다
+                            업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다
+                            업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다
+                            업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다
+                            업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다
+                            업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다
+                            업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다
+                            업무 시간내에 강의 시청도 가능하며, 직원들의 업무 관련 서적도 무한 제공하고 있습니다유료 온라인 강의를 제공하고있습니다</div>
+                    </div>
+                    <div class="item">
+                        <div class="q">질문</div>
+                        <div class="a">답변</div>
+                    </div>
+                    <div class="item">
+                        <div class="q">질문</div>
+                        <div class="a">답변</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="iv_wrap qa_mng">
+                <div class="ivMngPhoto photo">
+                    <img src="/images/a_mng.png" alt="인사담당자">
+                    <p class="txt">
+                        인사담당자
+                    </p>
+                </div>
+                <div class="ivMng ivSlide">
+                    <div class="item">
+                        <div class="q">질문</div>
+                        <div class="a">답변</div>
+                    </div>
+                    <div class="item">
+                        <div class="q">질문</div>
+                        <div class="a">답변</div>
+                    </div>
+                    <div class="item">
+                        <div class="q">질문</div>
+                        <div class="a">답변</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="iv_wrap qa_emp">
+                <div class="ivEmpPhoto photo">
+                    <img src="/images/a_emp.png" alt="재직자">
+                    <p class="txt">
+                        재직자
+                    </p>
+                </div>
+                <div class="ivEmp ivSlide">
+                    <div class="item">
+                        <div class="q">질문</div>
+                        <div class="a">답변</div>
+                    </div>
+                    <div class="item">
+                        <div class="q">질문</div>
+                        <div class="a">답변</div>
+                    </div>
+                    <div class="item">
+                        <div class="q">질문</div>
+                        <div class="a">답변</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!--//인터뷰-->
+
+    <!--인재상-->
+    <div class="a_mod_talent section_pd" id="talent">
+        <div class="new_cnt-container">
+            <div class="aType_tit">
+                <p>우리회사에 취업하고 싶다면 꼭 확인하세요</p>
+                <h3>인재상</h3>
+            </div>
+            <div class="talent_wrap">
+                <div class="item">
+                    <div class="img">
+                        <img src="images/ico_cult02_1208183022.png" alt="인재상아이콘">
+                    </div>
+                    <dl class="txt">
+                        <dt class="tit">Standard</dt>
+                        <dd class="desc">TongRo Images produces various
+                            kind of high-quality distributed.
+
+                        </dd>
+                    </dl>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="images/a_talent_ico02.png" alt="인재상아이콘">
+                    </div>
+                    <dl class="txt">
+                        <dt class="tit">Special</dt>
+                        <dd class="desc">TongRo Images produces various
+                            kind of high-quality distributed.TongRo Images produces various
+                            kind of high-quality distributed.TongRo Images produces various
+                            kind of high-quality distributed.TongRo Images produces various
+                            kind of high-quality distributed.
+
+                        </dd>
+                    </dl>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="images/a_talent_ico03.png" alt="인재상아이콘">
+                    </div>
+                    <dl class="txt">
+                        <dt class="tit">sustainable</dt>
+                        <dd class="desc">TongRo Images produces various
+                            kind of high-quality distributed.
+
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//인재상-->
+
+
+    <!--취업정보-->
+    <div class="a_mod_strategy section_mg" id="strategy">
+        <div class="new_cnt-container">
+            <div class="aType_tit">
+                <p>우리회사에 취업하고 싶다면 꼭 확인하세요</p>
+                <h3>취업 <span>정보</span></h3>
+            </div>
+            <!--자소서 문항별 가이드-->
+            <div class="guide_wrap qa_area">
+                <!-- 데이터 자동삽입 -->
+                <div class="item">
+                    <div class="q">성장배경에 대해서 기술해주세요.</div>
+                    <div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+                        현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="q">성장배경에 대해서 기술해주세요.</div>
+                    <div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+                        현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="q">성장배경에 대해서 기술해주세요.</div>
+                    <div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+                        현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="q">성장배경에 대해서 기술해주세요.</div>
+                    <div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+                        현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="q">성장배경에 대해서 기술해주세요.</div>
+                    <div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+                        현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="q">성장배경에 대해서 기술해주세요.</div>
+                    <div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+                        현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="q">성장배경에 대해서 기술해주세요.</div>
+                    <div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+                        현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="q">성장배경에 대해서 기술해주세요성장배경에 대해서 기술해주세요성장배경에 대해서 기술해주세요성장배경에 대해서 기술해주세요성장배경에 대해서 기술해주세요성장배경에 대해서 기술해주세요.</div>
+                    <div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+                        현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="q">성장배경에 대해서 기술해주세요.</div>
+                    <div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+                        현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="q">성장배경에 대해서 기술해주세요.</div>
+                    <div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+                        현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="q">성장배경에 대해서 기술해주세요.</div>
+                    <div class="a">지원자의 성품과 가치관에 대해서 알고자 하는 항목입니다. 자신의 가치관이 어떤 방식으로 형성되었는지 과정에 대해서 설명하고
+                        현재는 어떤 신념을 갖고 생활하고 있는지에 대해서 작성해주시면 됩니다.
+                    </div>
+                </div>
+                <!-- //데이터 자동삽입 -->
+            </div>
+            <!--//자소서 문항별 가이드-->
+
+            <!--최근 면접질문-->
+            <div class="rq_cont">
+                <p class="rq_tit">최근 면접 질문</p>
+                <div class="rq_text">
+                    <!-- 데이터 자동삽입 -->
+                    <p>주변사람들에게 어떤식의 <b>평판</b>을 받고 있습니까?</p>
+                    <p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
+                    <p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
+                    <p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
+                    <p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
+                    <p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
+                    <p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
+                    <p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
+                    <p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
+                    <p>같이 <b>일하기 힘든 사람</b>은 어떤 유형의 사람입니까?</p>
+                    <!-- //데이터 자동삽입 -->
+                </div>
+            </div>
+            <!--//최근 면접질문-->
+
+
+            <div class="pns_wrap">
+                <!--가산점 요인-->
+                <div class="add_point">
+                    <div class="pns_tit">
+                        <h3>
+                            가산점 요인
+                        </h3>
+                    </div>
+                    <ul class="add_point_wrap">
+                        <!-- 데이터 자동 삽입 -->
+                        <li>
+                            <strong class="tit">자격증</strong>
+                            <p class="desc">대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허차 면허, 전기공사업 면허대형운전면허, 지게차 면허, 전기공사업 면허</p>
+                        </li>
+                        <li>
+                            <strong class="tit">봉사활동</strong>
+                            <p class="desc">자원봉사 포털 1365 기준 봉사활동 시간</p>
+                        </li>
+                        <li>
+                            <strong class="tit">봉사활동</strong>
+                            <p class="desc">자원봉사 포털 1365 기준 봉사활동 시간</p>
+                        </li>
+                        <li>
+                            <strong class="tit">봉사활동</strong>
+                            <p class="desc">자원봉사 포털 1365 기준 봉사활동 시간</p>
+                        </li>
+                        <!-- //데이터 자동 삽입 -->
+                    </ul>
+
+                </div>
+
+                <!--//가산점 요인-->
+
+                <!--최근 입사자 합격 스펙-->
+                <div class="spec">
+                    <div class="cont_box">
+                        <div class="pns_tit">
+                            <h3>최근 입사자 합격 스펙</h3>
+                        </div>
+                        <ul class="spec_wrap">
+                            <!-- 데이터 자동 삽입-->
+                            <li>
+                                <strong class="tit">학점</strong>
+                                <p class="desc">3.7</p>
+                            </li>
+                            <li>
+                                <strong class="tit">토익</strong>
+                                <p class="desc">750</p>
+                            </li>
+                            <li>
+                                <strong class="tit">토익스피킹</strong>
+                                <p class="desc">Lv5</p>
+                            </li>
+                            <!-- //데이터 자동 삽입-->
+                        </ul>
+                    </div>
+                </div>
+                <!--//최근 입사자 합격 스펙-->
+            </div>
+
+            <div class="interview_tip section_mg">
+                <h3 class="aType_tit02">채용담당자가 직접 알려주는 면접 꿀팁!</h3>
+                <div class="it_img">
+                    <img src="images/strategy02_img04.png" alt="인사담당자 사진">
+                </div>
+                <div class="interview_tip_wrap qa_area section_mg">
+                    <div class="item">
+                        <p class="q">인사담당자로서 면접 팁을 공유해주세요~</p>
+                        <p class="a"><b>회사에 대한 공부가 가장 중요합니다.</b> 그 회사에서 추진하고 있는 사업이 무엇인지, 앞으로의 방향, 회사에서 사용하는 용어나 부서까지 알고 있다면, 면접관들에게 좋은 이미지를 심어줄 수 있습니다. 은행, 증권사를 보고 대략적으로 준비하는 것은 분명 차이가 있습니다.
+                            그렇기 때문에 회사에 대해 공부를 하고, 그 용어나 개념을 일부 활용할 줄 안다면 자기소개서나 면접에서 다른 지원자와 차별이 될 것입니다.</p>
+                    </div>
+                    <div class="item">
+                        <p class="q">면접이라고 하면 아무래도 복장 부분에 많은 신경이 쓰이게 마련인데요~<br />
+                            인사담당자님 눈에 가장 매력적인 지원자는 어떤 지원자인가요??</p>
+                        <p class="a"><b>본인의 업무에 맞는 복장으로 준비해오시면 됩니다.</b> 면접전에 복장에 대한 공지가 특별히 없는 경우엔 출근을 하게 된다면 어떤 복장으로 출근을 할것인지 생각해보고 편하게 복장을 준비하시면 됩니다.</p>
+                    </div>
+                </div>
+                <div class="btn_wrap">
+                    <div class="qm_btn_wrap">
+                        <button type="button" class="qm_btn" onclick="onCntNew();">관심기업 등록하기</button>
+                        <div class="qm_txt">
+                            <a href="javascript:void(0);">도움말</a>
+                            <span>관심기업으로 등록하면 채용 공고 마감일을 알람으로 받아보실 수 있습니다.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--//취업정보-->
+
+    <a name="recruit"></a>
+    <div class="module-wrap edit_wrap com_mod_recruit sty01 section_mg pdt0" id="recruitArea" style="display:block">
+        <a name="recruit"></a>
+        <div class="bg_bot"></div>
+        <div class="new_cnt-container" id="recruitContainer">
+            <h3 class="f25">채용공고</h3>
+            <table class="tb_recruit otherRecruit" summary="채용공고" style="display:table">
+                <thead>
+                    <tr>
+                        <th scope="col">접수기간</th>
+                        <th scope="col">채용제목</th>
+                        <th scope="col">고용형태</th>
+                    </tr>
+                </thead>
+                <tbody id="otherRecruitList">
+                    <tr>
+                        <td>2021.05.31 까지</td>
+                        <td>풀스택 개발자 채용/경력채용/급여250만원</td>
+                        <td>정규직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+                    </tr>
+                    <tr>
+                        <td>상시채용</td>
+                        <td>생산직 지원 채용/경력 무관/급여220만원</td>
+                        <td>계약직<a href="javascript:void(0);" class="btn apply">지원하기</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="box_recruit_wrap swiper">
+                <div class="swiper-wrapper">
+                    <div class="box_recruit swiper-slide">
+                        <h4>
+                            <a href="javascript:;">채용공고명</a>
+                            <span class="period">오늘까지</span>
+                        </h4>
+                        <hr>
+                        <div class="detail_wrap">
+                            <div>
+                                <h5>지원자격</h5>
+                                <dl class="clearfix">
+                                    <dt>경력</dt>
+                                    <dd>경력무관</dd>
+                                    <dt>학력</dt>
+                                    <dd>고졸이상</dd>
+                                    <dt>우대사항</dt>
+                                    <dd>인근거주자, 1종보통운전면허</dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <h5>근무조건</h5>
+                                <dl class="clearfix">
+                                    <dt>고용형태</dt>
+                                    <dd>정규직</dd>
+                                    <dt>급여</dt>
+                                    <dd>220만원 이상</dd>
+                                    <dt>근무지역</dt>
+                                    <dd>경기도 전체</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <a name="news"></a>
+    <div class="module-wrap com_mod_news sty01 pd0 section_mg">
+        <div class="new_cnt-container">
+            <div id="news_wrap">
+                <div class="news_row">
+                    <a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
+                    <div class="desc">
+                        경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
+                        '2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
+                        친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+                    </div>
+                    <div class="reg_date">2021.05.15</div>
+                </div>
+                <div class="news_row">
+                    <a href="javascript:void(0);" class="tit">경기도 일자리재단 '2021년 경기 여성 창업리그' 개최</a>
+                    <div class="desc">
+                        경기도와 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를 발굴하고 지원하기 위해
+                        '2021년 경기 여성 창업리그'를 개최한다고 12일 밝혔다. '경기 여성 창업리그'는 경기도가 도내 여성창업
+                        친화적인 분위기를 조성하고 경기도일자리재단 여성능력개발본부는 도내 여성들의 우수한 창업 아이디어를...
+                    </div>
+                    <div class="reg_date">2021.05.15</div>
+                </div>
+            </div>
+            <div class="paging_wrap">
+                <a href="javascript:void(0);" class="prev disable">이전</a>
+                <a href="javascript:void(0);" class="current">1</a>
+                <a href="javascript:void(0);">2</a>
+                <a href="javascript:void(0);">3</a>
+                <a href="javascript:void(0);">4</a>
+                <a href="javascript:void(0);">5</a>
+                <a href="javascript:void(0);" class="next">다음</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="tn_chrat">
+    </div>
+    <div class="module-wrap com_mod_map">
+        <div id="map"></div>
+        <div class="map_info_wrap">
+            <div class="com_info">
+                <div class="comName">기업명</div>
+                <a href="javascript:void(0);" target="_blank" class="find_road">길 찾기</a>
+                <p class="comAddress">주소</p>
+                <p class="tel">전화번호</p>
+            </div>
+            <div class="around_wrap">
+                <ul id="category">
+                    <li id="MT1" data-order="0">
+                        <span class="category_bg mt1"></span>
+                        대형마트
+                    </li>
+                    <li id="CS2" data-order="1">
+                        <span class="category_bg cs2"></span>
+                        편의점
+                    </li>
+                    <li id="AC5" data-order="2">
+                        <span class="category_bg ac5"></span>
+                        학원
+                    </li>
+                    <li id="PK6" data-order="3">
+                        <span class="category_bg pk6"></span>
+                        주차장
+                    </li>
+                    <li id="OL7" data-order="4">
+                        <span class="category_bg ol7"></span>
+                        주유소
+                    </li>
+                    <li id="SW8" data-order="5">
+                        <span class="category_bg sw8"></span>
+                        지하철
+                    </li>
+                    <li id="BK9" data-order="6">
+                        <span class="category_bg bk9"></span>
+                        은행
+                    </li>
+                    <li id="CT1" data-order="7">
+                        <span class="category_bg ct1"></span>
+                        문화시설
+                    </li>
+                    <li id="AT4" data-order="8">
+                        <span class="category_bg at4"></span>
+                        관광명소
+                    </li>
+                    <li id="AD5" data-order="9">
+                        <span class="category_bg ad5"></span>
+                        숙박
+                    </li>
+                    <li id="FD6" data-order="10">
+                        <span class="category_bg fd6"></span>
+                        음식점
+                    </li>
+                    <li id="CE7" data-order="11">
+                        <span class="category_bg ce7"></span>
+                        카페
+                    </li>
+                    <li id="HP8" data-order="12">
+                        <span class="category_bg hp8"></span>
+                        병원
+                    </li>
+                    <li id="PM9" data-order="14">
+                        <span class="category_bg pm9"></span>
+                        약국
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@5.4.5/js/swiper.min.js"></script>
+    <script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js">
+    </script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        // --- 스크롤 메뉴 수정  --
+        $(window).load(function() {
+            // 메뉴 none처리 -> 로딩후 보여지게
+            $('.com_mod_anchor li a').fadeIn(300);
+        });
+
+        $(document).ready(function() {
             $(".slick-slider").not('.slick-initialized').slick();
-            
-			// 메뉴 fixed
-			var fixGnb = $('#gnb-wrap.fixed-gnb');
-			$('#gnb-wrap').addClass('fixed-gnb');
-			$('#gnb-wrap.fixed-gnb').css('position','relative')
 
-			// 관심기업 등록하기 버튼
-			$('.qm_txt a').click(function() {
-				$(this).parent().find('span').toggle()
-			})
+            // 메뉴 fixed
+            var fixGnb = $('#gnb-wrap.fixed-gnb');
+            $('#gnb-wrap').addClass('fixed-gnb');
+            $('#gnb-wrap.fixed-gnb').css('position', 'relative')
 
-			// --- 스크롤 메뉴 수정 --
-			$('.com_mod_anchor li a').hide();
+            // 관심기업 등록하기 버튼
+            $('.qm_txt a').click(function() {
+                $(this).parent().find('span').toggle()
+            })
 
-			var gnbOffset = $('.com_mod_anchor').offset();
-			$('.com_mod_header, .com_mod_anchor').addClass('not_fixed');
+            // --- 스크롤 메뉴 수정 --
+            $('.com_mod_anchor li a').hide();
 
-			$('a').each(function() {
-				var aName = $(this).attr('name');
-				$(this).attr('id', aName)
-			});
+            var gnbOffset = $('.com_mod_anchor').offset();
+            $('.com_mod_header, .com_mod_anchor').addClass('not_fixed');
 
-			$('.com_mod_anchor a').off("click").on('click', function() {
-				var target = $(this.hash)
-				var header = $('#header').outerHeight();
-				var repImg = $('.com_rep_Img').outerHeight();
-				var not_header_height = $('.com_mod_anchor.not_fixed').outerHeight();
-				var not_header_height02 = $('.com_mod_header.not_fixed').outerHeight()
-				var header_height = $('.com_mod_anchor.fixed').outerHeight();
-				var header_height02 = $('.com_mod_header.fixed').outerHeight();
+            $('a').each(function() {
+                var aName = $(this).attr('name');
+                $(this).attr('id', aName)
+            });
 
-				var offset_top = target.offset().top - not_header_height - not_header_height02 - header;
-				var offset_top02 = target.offset().top - header_height - header_height02;
+            $('.com_mod_anchor a').off("click").on('click', function() {
+                var target = $(this.hash)
+                var header = $('#header').outerHeight();
+                var repImg = $('.com_rep_Img').outerHeight();
+                var not_header_height = $('.com_mod_anchor.not_fixed').outerHeight();
+                var not_header_height02 = $('.com_mod_header.not_fixed').outerHeight()
+                var header_height = $('.com_mod_anchor.fixed').outerHeight();
+                var header_height02 = $('.com_mod_header.fixed').outerHeight();
 
-				if ($('.com_mod_header').hasClass("not_fixed")) {
-					$('html, body').animate({
-						scrollTop: offset_top + header_height + header_height02
-					});
-					e.preventDefault();
-				} else {
-					$('html, body').animate({
-						scrollTop: offset_top02
-					}, 300);
-					e.preventDefault();
-				}
+                var offset_top = target.offset().top - not_header_height - not_header_height02 - header;
+                var offset_top02 = target.offset().top - header_height - header_height02;
 
-			});
+                if ($('.com_mod_header').hasClass("not_fixed")) {
+                    $('html, body').animate({
+                        scrollTop: offset_top + header_height + header_height02
+                    });
+                    e.preventDefault();
+                } else {
+                    $('html, body').animate({
+                        scrollTop: offset_top02
+                    }, 300);
+                    e.preventDefault();
+                }
 
-			var lastId,
-				topMenu = $(".com_mod_anchor"),
-				topMenu02 = $(".com_mod_header"),
-				topMenuHeight = topMenu.outerHeight() + topMenu02.outerHeight() + 15,
+            });
 
-				menuItems = topMenu.find("a"),
-				scrollItems = menuItems.map(function() {
-					var item = $($(this).attr("href"));
-					if (item.length) {
-						return item;
-					}
-				});
+            var lastId,
+                topMenu = $(".com_mod_anchor"),
+                topMenu02 = $(".com_mod_header"),
+                topMenuHeight = topMenu.outerHeight() + topMenu02.outerHeight() + 15,
 
-			$(window).scroll(function() {
-				var fromTop = $(this).scrollTop() + topMenuHeight;
+                menuItems = topMenu.find("a"),
+                scrollItems = menuItems.map(function() {
+                    var item = $($(this).attr("href"));
+                    if (item.length) {
+                        return item;
+                    }
+                });
 
-				var cur = scrollItems.map(function() {
-					if ($(this).offset().top < fromTop)
-						return this;
-				});
+            $(window).scroll(function() {
+                var fromTop = $(this).scrollTop() + topMenuHeight;
 
-				cur = cur[cur.length - 1];
-				var id = cur && cur.length ? cur[0].id : "";
+                var cur = scrollItems.map(function() {
+                    if ($(this).offset().top < fromTop)
+                        return this;
+                });
 
-				if (lastId !== id) {
-					lastId = id;
-					menuItems
-						.removeClass("active")
-						.parent().end().filter("[href='#" + id + "']").addClass("active");
-				}
+                cur = cur[cur.length - 1];
+                var id = cur && cur.length ? cur[0].id : "";
 
-				if ($(document).scrollTop() > gnbOffset.top) {
-					$('.com_mod_header, .com_mod_anchor').addClass('fixed');
-					$('.com_mod_header, .com_mod_anchor').removeClass('not_fixed');
-					var headerHeight = $('.com_mod_header').height();
-					$('.com_mod_anchor').css('top', headerHeight + 48);
-				} else {
-					$('.com_mod_header, .com_mod_anchor').removeClass('fixed');
-					$('.com_mod_header, .com_mod_anchor').addClass('not_fixed');
-					$('.com_mod_anchor').css('top', 0);
-					$('.com_mod_header, .com_mod_anchor li:first-child a').addClass('active');
-				}
-			});
+                if (lastId !== id) {
+                    lastId = id;
+                    menuItems
+                        .removeClass("active")
+                        .parent().end().filter("[href='#" + id + "']").addClass("active");
+                }
 
-
-
-			// ---end 스크롤 메뉴 수정 --
-
-			// 연혁
-			$('.a_mod_history .history').slick({
-				slidesToShow: 3,
-				slidesToScroll: 1,
-				prevArrow: '<button class="slick-prev white_arrow new_arrow"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>',
-				nextArrow: '<button class="slick-next white_arrow new_arrow"><span class="material-symbols-outlined">arrow_forward_ios</span></button>',
-				responsive: [{
-						breakpoint: 1261,
-						settings: {
-							slidesToShow: 1,
-							arrows: false,
-							dots: true,
-						}
-					},
-					{
-						breakpoint: 769,
-						settings: {
-							slidesToShow: 1,
-							arrows: false,
-							dots: true,
-						}
-					}
-				]
-			});
-			$('.a_mod_history .history .slick-dots').addClass('a_dot');
-			$('.a_mod_history .history .slick-dots').addClass('a_dot_white');
+                if ($(document).scrollTop() > gnbOffset.top) {
+                    $('.com_mod_header, .com_mod_anchor').addClass('fixed');
+                    $('.com_mod_header, .com_mod_anchor').removeClass('not_fixed');
+                    var headerHeight = $('.com_mod_header').height();
+                    $('.com_mod_anchor').css('top', headerHeight + 48);
+                } else {
+                    $('.com_mod_header, .com_mod_anchor').removeClass('fixed');
+                    $('.com_mod_header, .com_mod_anchor').addClass('not_fixed');
+                    $('.com_mod_anchor').css('top', 0);
+                    $('.com_mod_header, .com_mod_anchor li:first-child a').addClass('active');
+                }
+            });
 
 
 
-			// 산업내위치
-			$(".conts_wrap > div:first-child").addClass('on');
-			$(".conts_wrap > div:first-child").show();
-			$('.arrow_wrap .next').click(function() {
-				var idx = $('.conts_wrap > div.on').attr('data-index');
-				var nidx = idx++;
-				var selm = $('[data-index="' + idx + '"]');
-				if (idx > 4) {
-					$('.conts_wrap > div.on').removeClass('on');
-					$('[data-index="1"]').addClass('on');
-				} else {
-					$('.conts_wrap > div.on').removeClass('on');
-					selm.addClass('on');
-				};
-				setTimeout(function() {
-					chart2.resize();
-					chart3.resize();
-					chart4.resize();
-				}, 100);
-			});
-			$('.arrow_wrap .prev').click(function() {
-				var idx = $('.conts_wrap > div.on').attr('data-index');
-				var pidx = idx--;
-				var selm = $('[data-index="' + idx + '"]');
-				if (idx < 1) {
-					$('.conts_wrap > div.on').removeClass('on');
-					$('[data-index="4"]').addClass('on');
-				} else {
-					$('.conts_wrap > div.on').removeClass('on');
-					selm.addClass('on');
-				};
-				setTimeout(function() {
-					chart2.resize();
-					chart3.resize();
-					chart4.resize();
-				}, 100);
-			});
+            // ---end 스크롤 메뉴 수정 --
 
-			var chart2 = c3.generate({
-				bindto: '#graph_fiCapital',
-				data: {
-					columns: [
-						['자본금', 300000, 900000, 30000],
-					],
-					type: 'line',
-					//차트타입
-					colors: {
-						'자본금': '#007ddd',
-					}
-				},
-				grid: {
-					y: {
-						show: true
-						// 선여부 
-					},
-				},
-				point: {
-					r: 6,
-				},
-				axis: {
-					x: {
-						type: 'category',
-						categories: ['2020', '2020', '2021']
-					}
-				},
-				bar: {
-					width: {
-						ratio: 0.3
-					}
-				},
-				legend: {
-					show: false
-				}
-			});
-
-			var chart3 = c3.generate({
-				bindto: '#graph_fiSales',
-				data: {
-					columns: [
-						['매출액', 300, 9000, 300],
-					],
-					type: 'line',
-					//차트타입
-					colors: {
-						'매출액': '#007ddd',
-					}
-				},
-				grid: {
-					y: {
-						show: true
-						// 선여부 
-					},
-				},
-				axis: {
-					x: {
-						type: 'category',
-						categories: ['2020', '2020', '2021']
-					}
-				},
-				point: {
-					r: 6,
-				},
-				bar: {
-					width: {
-						ratio: 0.3
-					}
-				},
-				legend: {
-					show: false
-				}
-			});
-
-			var chart4 = c3.generate({
-				bindto: '#graph_fiProfit',
-				data: {
-					columns: [
-						['당기순이익', 30000000000, 900000000, 300000],
-					],
-					type: 'line',
-					//차트타입
-					colors: {
-						'당기순이익': '#007ddd',
-					}
-				},
-				grid: {
-					y: {
-						show: true
-						// 선여부 
-					},
-				},
-				point: {
-					r: 6,
-				},
-				axis: {
-					x: {
-						type: 'category',
-						categories: ['2020', '2020', '2021']
-					}
-				},
-
-				bar: {
-					width: {
-						ratio: 0.3
-					}
-				},
-				legend: {
-					show: false
-				}
-			});
-
-
-			// 사업영역
-			var bizItem = $('.bizDiv .item');
-			if (bizItem.length > 2) {
-				$('.bizDiv').slick({
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					prevArrow: '<button class="slick-prev white_arrow new_arrow"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>',
-					nextArrow: '<button class="slick-next white_arrow new_arrow"><span class="material-symbols-outlined">arrow_forward_ios</span></button>',
-					responsive: [{
-							breakpoint: 1261,
-							settings: {
-								arrows: false,
-								dots: true
-							}
-						},
-						{
-							breakpoint: 769,
-							settings: {
-								slidesToShow: 1,
-								arrows: false,
-								dots: true
-							}
-						}
-					]
-				});
-
-				$('.bizDiv  .slick-dots').addClass('a_dot');
-			} else {
-				bizItem.addClass('lt_biz');
-
-			}
+            // 연혁
+            $('.a_mod_history .history').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: '<button class="slick-prev white_arrow new_arrow"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>',
+                nextArrow: '<button class="slick-next white_arrow new_arrow"><span class="material-symbols-outlined">arrow_forward_ios</span></button>',
+                responsive: [{
+                        breakpoint: 1261,
+                        settings: {
+                            slidesToShow: 1,
+                            arrows: false,
+                            dots: true,
+                        }
+                    },
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            slidesToShow: 1,
+                            arrows: false,
+                            dots: true,
+                        }
+                    }
+                ]
+            });
+            $('.a_mod_history .history .slick-dots').addClass('a_dot');
+            $('.a_mod_history .history .slick-dots').addClass('a_dot_white');
 
 
 
-			// 상품영역 개수 6개 이상일때 슬라이드
-			var proItem = $('.product .item')
-			if (proItem.length > 6) {
-				$('.product').slick({
-					rows: 2,
-					slidesToShow: 3,
-					infinite: false,
-					prevArrow: '<button class="slick-prev black_arrow new_arrow"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>',
-					nextArrow: '<button class="slick-next black_arrow new_arrow"><span class="material-symbols-outlined">arrow_forward_ios</span></button>',
-					responsive: [{
-							breakpoint: 1261,
-							settings: {
-								arrows: false,
-								dots: true
-							}
-						},
-						{
-							breakpoint: 769,
-							settings: {
-								slidesToShow: 2,
-								rows: 1,
-								arrows: false,
-								dots: true
-							}
-						}
-					]
-				});
-				$('.product  .slick-dots').addClass('a_dot');
-			} else {
-                 $('.product').addClass('lt_pro');
-			}
+            // 산업내위치
+            $(".conts_wrap > div:first-child").addClass('on');
+            $(".conts_wrap > div:first-child").show();
+            $('.arrow_wrap .next').click(function() {
+                var idx = $('.conts_wrap > div.on').attr('data-index');
+                var nidx = idx++;
+                var selm = $('[data-index="' + idx + '"]');
+                if (idx > 4) {
+                    $('.conts_wrap > div.on').removeClass('on');
+                    $('[data-index="1"]').addClass('on');
+                } else {
+                    $('.conts_wrap > div.on').removeClass('on');
+                    selm.addClass('on');
+                };
+                setTimeout(function() {
+                    chart2.resize();
+                    chart3.resize();
+                    chart4.resize();
+                }, 100);
+            });
+            $('.arrow_wrap .prev').click(function() {
+                var idx = $('.conts_wrap > div.on').attr('data-index');
+                var pidx = idx--;
+                var selm = $('[data-index="' + idx + '"]');
+                if (idx < 1) {
+                    $('.conts_wrap > div.on').removeClass('on');
+                    $('[data-index="4"]').addClass('on');
+                } else {
+                    $('.conts_wrap > div.on').removeClass('on');
+                    selm.addClass('on');
+                };
+                setTimeout(function() {
+                    chart2.resize();
+                    chart3.resize();
+                    chart4.resize();
+                }, 100);
+            });
 
-			// 기업인증 5개 이하일 때
-			var certItem = $('.cert_wrap .item')
-			if (certItem.length < 5) {
-				certItem.parent().addClass('little_item')
-			} else {
-				certItem.parent().addClass('many_item');
-			}
+            var chart2 = c3.generate({
+                bindto: '#graph_fiCapital',
+                data: {
+                    columns: [
+                        ['자본금', 300000, 900000, 30000],
+                    ],
+                    type: 'line',
+                    //차트타입
+                    colors: {
+                        '자본금': '#007ddd',
+                    }
+                },
+                grid: {
+                    y: {
+                        show: true
+                        // 선여부 
+                    },
+                },
+                point: {
+                    r: 6,
+                },
+                axis: {
+                    x: {
+                        type: 'category',
+                        categories: ['2020', '2020', '2021']
+                    }
+                },
+                bar: {
+                    width: {
+                        ratio: 0.3
+                    }
+                },
+                legend: {
+                    show: false
+                }
+            });
+
+            var chart3 = c3.generate({
+                bindto: '#graph_fiSales',
+                data: {
+                    columns: [
+                        ['매출액', 300, 9000, 300],
+                    ],
+                    type: 'line',
+                    //차트타입
+                    colors: {
+                        '매출액': '#007ddd',
+                    }
+                },
+                grid: {
+                    y: {
+                        show: true
+                        // 선여부 
+                    },
+                },
+                axis: {
+                    x: {
+                        type: 'category',
+                        categories: ['2020', '2020', '2021']
+                    }
+                },
+                point: {
+                    r: 6,
+                },
+                bar: {
+                    width: {
+                        ratio: 0.3
+                    }
+                },
+                legend: {
+                    show: false
+                }
+            });
+
+            var chart4 = c3.generate({
+                bindto: '#graph_fiProfit',
+                data: {
+                    columns: [
+                        ['당기순이익', 30000000000, 900000000, 300000],
+                    ],
+                    type: 'line',
+                    //차트타입
+                    colors: {
+                        '당기순이익': '#007ddd',
+                    }
+                },
+                grid: {
+                    y: {
+                        show: true
+                        // 선여부 
+                    },
+                },
+                point: {
+                    r: 6,
+                },
+                axis: {
+                    x: {
+                        type: 'category',
+                        categories: ['2020', '2020', '2021']
+                    }
+                },
+
+                bar: {
+                    width: {
+                        ratio: 0.3
+                    }
+                },
+                legend: {
+                    show: false
+                }
+            });
+
+
+            // 사업영역
+            var bizItem = $('.bizDiv .item');
+            if (bizItem.length > 2) {
+                $('.bizDiv').slick({
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    prevArrow: '<button class="slick-prev black_arrow new_arrow"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>',
+                    nextArrow: '<button class="slick-next black_arrow new_arrow"><span class="material-symbols-outlined">arrow_forward_ios</span></button>',
+                    responsive: [{
+                            breakpoint: 1261,
+                            settings: {
+                                arrows: false,
+                                dots: true
+                            }
+                        },
+                        {
+                            breakpoint: 769,
+                            settings: {
+                                slidesToShow: 1,
+                                arrows: false,
+                                dots: true
+                            }
+                        }
+                    ]
+                });
+
+                $('.bizDiv  .slick-dots').addClass('a_dot');
+            } else {
+                bizItem.addClass('lt_biz');
+
+            }
 
 
 
-			// 직원수 차트
-			var empChart = c3.generate({
-				bindto: '#a_graph_empCnt',
-				data: {
-					columns: [
-						['입사자', 50, 20, 50],
-						['퇴사자', 20, 15, 45],
-						['총 인원 수', 30, 35, 55],
-					],
-					type: 'line',
-					//차트타입
-					colors: {
-						'입사자': '#00aeef',
-						'퇴사자': '#d0d0d0',
-						'총인원수': '#3e69ff',
-					}
-				},
-				grid: {
-					y: {
-						show: true
-						// 선여부 
-					},
-				},
-				axis: {
-					x: {
-						type: 'category',
-						categories: ['2020', '2021', '2022']
-					}
-				},
-				legend: {
-					show: false
-				},
-				point: {
-					r: 8,
-					focus: {
-						expand: {
-							r: 12
-						}
-					}
-				},
-				onrendered: function() {
-					var $$ = this;
-					var circles = $$.getCircles();
-					for (var i = 0; i < circles.length; i++) {
-						for (var j = 0; j < circles[i].length; j++) {
-							$$.getCircles(j).style("fill", '#FFF')
-								.style("stroke", $$.color)
-								.style("stroke-width", 5);
-						}
-					}
-				}
+            // 상품영역 개수 6개 이상일때 슬라이드
+            var proItem = $('.product .item')
+            if (proItem.length > 6) {
+                $('.product').slick({
+                    rows: 2,
+                    slidesToShow: 3,
+                    infinite: false,
+                    prevArrow: '<button class="slick-prev black_arrow new_arrow"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>',
+                    nextArrow: '<button class="slick-next black_arrow new_arrow"><span class="material-symbols-outlined">arrow_forward_ios</span></button>',
+                    responsive: [{
+                            breakpoint: 1261,
+                            settings: {
+                                arrows: false,
+                                dots: true
+                            }
+                        },
+                        {
+                            breakpoint: 769,
+                            settings: {
+                                slidesToShow: 2,
+                                rows: 1,
+                                arrows: false,
+                                dots: true
+                            }
+                        }
+                    ]
+                });
+                $('.product  .slick-dots').addClass('a_dot');
+            } else {
+                $('.product').addClass('lt_pro');
+            }
 
 
-			});
 
-			// legend 커스텀
-			d3.select('.a_mod_emp').append('div', '#a_graph_empCnt')
-				.attr('class', 'a_emp_legend')
-				.selectAll('span')
-				.data(['입사자', '퇴사자', '총 인원 수'])
-				.enter().append('div').attr('class', 'legend-label')
-				.attr('data-id', function(id) {
-					return id;
-				})
-				.html(function(id) {
-					var data = empChart.data(id);
-					return id + '&nbsp&nbsp&nbsp';
-				})
-				.on('mouseover', function(id) {
-					empChart.focus(id);
-				})
-				.on('mouseout', function(id) {
-					empChart.revert();
-				})
-				.insert('span', '.legend-label').attr('class', 'badge')
-				.each(function(id) {
-					d3.select(this).style('border-color', empChart.color(id));
-				})
-				.html(function(id) {
-					return '&nbsp&nbsp&nbsp&nbsp&nbsp'
-				});
+            // 기업인증 5개 이하일 때
+            var certItem = $('.cert_wrap .item')
+            if (certItem.length < 5) {
+                certItem.parent().addClass('little_item')
+            } else {
+                certItem.parent().addClass('many_item');
+            }
 
 
-			// 기업 문화 
-			var ltItem = 5
-			var welItem = $('.a_mod_welfare .item')
 
-			$('.a_mod_welfare').each(function() {
-				if (welItem.length < ltItem) {
-					welItem.parent().addClass('little_item');
+            // 직원수 차트
+            var empChart = c3.generate({
+                bindto: '#a_graph_empCnt',
+                data: {
+                    columns: [
+                        ['입사자', 50, 20, 50],
+                        ['퇴사자', 20, 15, 45],
+                        ['총 인원 수', 30, 35, 55],
+                    ],
+                    type: 'line',
+                    //차트타입
+                    colors: {
+                        '입사자': '#00aeef',
+                        '퇴사자': '#d0d0d0',
+                        '총인원수': '#3e69ff',
+                    }
+                },
+                grid: {
+                    y: {
+                        show: true
+                        // 선여부 
+                    },
+                },
+                axis: {
+                    x: {
+                        type: 'category',
+                        categories: ['2020', '2021', '2022']
+                    }
+                },
+                legend: {
+                    show: false
+                },
+                point: {
+                    r: 8,
+                    focus: {
+                        expand: {
+                            r: 12
+                        }
+                    }
+                },
+                onrendered: function() {
+                    var $$ = this;
+                    var circles = $$.getCircles();
+                    for (var i = 0; i < circles.length; i++) {
+                        for (var j = 0; j < circles[i].length; j++) {
+                            $$.getCircles(j).style("fill", '#FFF')
+                                .style("stroke", $$.color)
+                                .style("stroke-width", 5);
+                        }
+                    }
+                }
 
-				} else {
-					welItem.parent().addClass('mg_item');
-					$('.a_mod_welfare .welfare').masonry({
-						// options
-						itemSelector: '.item',
-						fitwidth: true,
-						gutter: 10,
-						horizontalOrder: true,
-						isAnimated: true
-					});
 
-				}
+            });
 
-			});
-            
+            // legend 커스텀
+            d3.select('.a_mod_emp').append('div', '#a_graph_empCnt')
+                .attr('class', 'a_emp_legend')
+                .selectAll('span')
+                .data(['입사자', '퇴사자', '총 인원 수'])
+                .enter().append('div').attr('class', 'legend-label')
+                .attr('data-id', function(id) {
+                    return id;
+                })
+                .html(function(id) {
+                    var data = empChart.data(id);
+                    return id + '&nbsp&nbsp&nbsp';
+                })
+                .on('mouseover', function(id) {
+                    empChart.focus(id);
+                })
+                .on('mouseout', function(id) {
+                    empChart.revert();
+                })
+                .insert('span', '.legend-label').attr('class', 'badge')
+                .each(function(id) {
+                    d3.select(this).style('border-color', empChart.color(id));
+                })
+                .html(function(id) {
+                    return '&nbsp&nbsp&nbsp&nbsp&nbsp'
+                });
+
+
+            // 기업문화                 
+            $('.a_mod_welfare .welfare').masonry({
+                // options
+                itemSelector: '.item',
+                fitwidth: true,
+                gutter: 10,
+                horizontalOrder: true,
+                isAnimated: true
+            });
+
             // 기업 문화 슬라이드
             $('.a_mod_welfare_slide').slick({
-				slidesToShow: 1,
-				arrows: true,
-				adaptiveHeight: true,
+                slidesToShow: 1,
+                arrows: true,
+                adaptiveHeight: true,
                 prevArrow: '<button class="slick-prev white_arrow new_arrow"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>',
-				nextArrow: '<button class="slick-next white_arrow new_arrow"><span class="material-symbols-outlined">arrow_forward_ios</span></button>',
-           
-			});
+                nextArrow: '<button class="slick-next white_arrow new_arrow"><span class="material-symbols-outlined">arrow_forward_ios</span></button>',
 
-			// 인터뷰 슬라이드
-			$('.ivCeo').slick({
-				slidesToShow: 1,
-				arrows: false,
-				dots: true,
-				adaptiveHeight: true
-			});
+            });
 
-			$('.ivMng').slick({
-				dots: true,
-				arrows: false,
-				adaptiveHeight: true
-			});
+            // 인터뷰 슬라이드
+            $('.ivCeo').slick({
+                slidesToShow: 1,
+                arrows: false,
+                dots: true,
+                adaptiveHeight: true
+            });
 
-			$('.ivEmp').slick({
-				slidesToShow: 1,
-				dots: true,
-				arrows: false,
-				adaptiveHeight: true
-			});
-            
-            
+            $('.ivMng').slick({
+                dots: true,
+                arrows: false,
+                adaptiveHeight: true
+            });
 
-		});
+            $('.ivEmp').slick({
+                slidesToShow: 1,
+                dots: true,
+                arrows: false,
+                adaptiveHeight: true
+            });
 
-        
-        
-        
-		$(window).load(function(){
-			$('.mg_item').masonry('reloadItems');
-		});
-		
-	</script>
+
+
+        });
+
+
+
+
+        $(window).load(function() {
+            $('.mg_item').masonry('reloadItems');
+        });
+    </script>
 </body></html>

@@ -767,7 +767,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .c_mod_product .item{text-align: center;}
 .c_mod_product .item .img{margin-bottom: 2rem;text-align: center;}
 .c_mod_product  .slick-list{margin: 0 -10px}
-.c_mod_product  .slick-slide{margin: 0 -10px}
+.c_mod_product  .slick-slide{margin: 0 10px}
 .c_mod_product .item .img img{display: inline-block}
 .c_mod_product .item  .txt{font-size: 1.6rem;color: #666}
 .c_mod_product .item  .txt h4{font-weight: 400;margin-bottom: 0.5rem}
@@ -791,7 +791,6 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .c_mod_emp .lastEmployeeState .total_wrap .tit{font-size: 2rem;;margin-bottom: 0.5rem}
 .c_mod_emp .lastEmployeeState .total_wrap .tit:before{content: '';display: block;background: url(../images/c_emp_ico.png) no-repeat;width: 45px;height: 45px;margin: auto;margin-bottom: 2rem}
 .c_mod_emp .lastEmployeeState .total_wrap .num{font-size: 4rem;font-weight: bold;color: #54e1af;}
-.c_mod_emp .lastEmployeeState .empState_wrap{margin-top: 3rem}
 .c_mod_emp .lastEmployeeState .empState_wrap > div{padding: 0 1rem 2.5rem 0;margin-bottom: 2.5rem;display: flex;justify-content: space-between;border-bottom: 1px solid #c6c6c6;font-size: 1.8rem;align-items: center;}
 .c_mod_emp .lastEmployeeState .empState_wrap > div:last-child{margin-bottom: 0;}
 .c_mod_emp .lastEmployeeState .empState_wrap > div > div:last-child{font-size: 3.5rem;color: #666;margin-left: 5rem}
@@ -4833,7 +4832,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 
 @media all and (max-width:768px){
     .new_com_mod_header  .logo{width: 100%}
-    .new_rep_Img.com_rep_Img#main_banner{height: 200px}
+    .new_rep_Img.com_rep_Img#main_banner{height: 150px}
     .new_rep_Img.com_rep_Img#main_banner .banner_company_name{font-size: 2.4rem;}
 	.section_pd{padding: 40px 0 !important}
 	.section_mg{margin: 40px 0 !important}
@@ -6158,9 +6157,7 @@ html{font-size: 8px}
     .c_mod_welfare .welfare_wrap .slide_wrap{width: 100%;}
     .c_mod_welfare .welfare_wrap .slide_wrap + .slide_wrap{margin-left: 0;margin-top: 1.5rem}
 	
-    .c_mod_emp .lastEmployeeState{display: block;}
-    .c_mod_emp .lastEmployeeState .total_wrap{margin-right: 0;margin-bottom: 2rem;}
-    .c_mod_emp .lastEmployeeState .total_wrap .tit:before{display: none}
+
     
 		/*---------------------- 2022 보급형 end ----------------------*/
 	
@@ -6399,3 +6396,9 @@ html{font-size: 8px}
 }
 
 
+
+@media all and (max-width : 360px){
+        .c_mod_emp .lastEmployeeState{display: block;}
+    .c_mod_emp .lastEmployeeState .total_wrap{margin-right: 0;margin-bottom: 2rem;}
+    .c_mod_emp .lastEmployeeState .total_wrap .tit:before{display: none}
+}
