@@ -233,7 +233,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .a_mod_cert .cert_wrap .item .img{text-align: center;}
 
 .a_mod_cert .cert_wrap.little_item{justify-content: center;flex-wrap: nowrap}
-.a_mod_cert .cert_wrap.little_item .item{width: auto;}
+.a_mod_cert .cert_wrap.little_item .item{}
 .a_mod_cert .cert_wrap.little_item .item:last-child{margin-right: 0}
 
 /* 직원 수 */
