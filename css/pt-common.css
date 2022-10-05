@@ -693,7 +693,8 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .cType_tit02{font-size: 3.5rem;text-align: center;font-weight: 500;margin-bottom: 4rem}
 .c_mod_summary .mShow {display: none}
 .c_mod_summary .cont_area > * + * {margin-top: 5rem}
-.c_mod_summary .cont_txt{color: #666;font-size: 1.8rem;}
+.c_mod_summary .cont_wrap {position: relative}
+.c_mod_summary .cont_txt{color: #000;font-size: 2.6rem;word-break: keep-all;text-align: center;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%)}
 .c_mod_summary .info_wrap{display: flex;justify-content:space-between;}
 .c_mod_summary .info_wrap > li {background: #0082e5;margin-right: 15px;width: calc(25% - 11.25px);padding: 5rem 2rem;text-align: center;color: #fff;}
 .c_mod_summary .info_wrap > li:last-child{margin-right: 0}
@@ -870,7 +871,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .c_mod_strategy .guide_wrap .item:nth-child(10) .q:before{content: 'Q10.';display: block;font-size: 4rem;font-weight: bold;color: #0082e5}
 .c_mod_strategy .guide_wrap .item .a{width: calc(100% - 300px);padding-left: 2rem;font-size: 1.8rem;color: #7d7d7d}
 .c_mod_strategy .round_wrap{border-radius: 15px;border: 1px solid #262d7e;overflow: hidden}
-.c_mod_strategy .rq_cont{padding: 4rem;display: flex;justify-content: space-evenly;background: url(../images/c_rq_ico.png) no-repeat right 4rem center;background: #fff}
+.c_mod_strategy .rq_cont{padding: 4rem;display: flex;justify-content: space-evenly;background: url(../images/c_rq_ico.png) no-repeat right 4rem bottom 4rem #fff;}
 .c_mod_strategy .rq_tit{font-size: 2.6rem;font-weight: bold;width: 180px}
 .c_mod_strategy .rq_text{width: calc(100% - 200px)} 
 .c_mod_strategy .rq_text p{margin-bottom: 1rem;font-size: 1.8rem;padding-left: 25px;position: relative;}
