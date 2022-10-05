@@ -694,7 +694,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .c_mod_summary .mShow {display: none}
 .c_mod_summary .cont_area > * + * {margin-top: 5rem}
 .c_mod_summary .cont_wrap {position: relative}
-.c_mod_summary .cont_txt{color: #000;font-size: 2.6rem;word-break: keep-all;text-align: center;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%)}
+.c_mod_summary .cont_wrap .cont_txt{color: #000;font-size: 2.6rem;font-weight: 500;word-break: keep-all;text-align: center;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%)}
 .c_mod_summary .info_wrap{display: flex;justify-content:space-between;}
 .c_mod_summary .info_wrap > li {background: #0082e5;margin-right: 15px;width: calc(25% - 11.25px);padding: 5rem 2rem;text-align: center;color: #fff;}
 .c_mod_summary .info_wrap > li:last-child{margin-right: 0}
@@ -807,9 +807,11 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .c_mod_welfare .welfare_wrap .slide_wrap .slick-list{margin: 0 -5px}
 .c_mod_welfare .welfare_wrap .slide_wrap .slick-slide{margin: 0 5px}
 .c_mod_welfare .welfare_wrap .item{border: 1px solid #dcdcdc;padding: 4rem;display: flex !important;flex-direction: column;}
-.c_mod_welfare .welfare_wrap #culture .tit:before{content: '조직문화';display: block;font-size: 2.6rem;font-weight: bold;margin-bottom: 1rem;color: #000}
-.c_mod_welfare .welfare_wrap #welfare .tit:before{content: '복리후생';display: block;font-size: 2.6rem;font-weight: bold;margin-bottom: 1rem;color: #000}
+.c_mod_welfare .welfare_wrap #culture .item:before{content: '조직문화';display: block;font-size: 2.6rem;font-weight: bold;margin-bottom: 1rem;color: #000}
+.c_mod_welfare .welfare_wrap #welfare .item:before{content: '복리후생';display: block;font-size: 2.6rem;font-weight: bold;margin-bottom: 1rem;color: #000}
 .c_mod_welfare .welfare_wrap .item .tit{font-size: 2rem;color: #0082e5;font-weight: 600;margin-bottom: 1rem}
+.c_mod_welfare .welfare_wrap #culture .item{background: url(../images/c_wel_ico01.png) no-repeat right 40px bottom 40px}
+.c_mod_welfare .welfare_wrap #welfare .item{background: url(../images/c_wel_ico02.png) no-repeat right 40px bottom 40px}
 .c_mod_welfare .welfare_wrap .item .desc{font-size: 1.8rem;color: #808080;margin-bottom: 4rem}
 .c_mod_welfare .welfare_wrap .item .img{text-align: right;margin: auto 0 0 auto}
 .c_mod_welfare .welfare_wrap .item .img img{display: inline-block}
@@ -4982,6 +4984,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
     
     /* ---- 보급형 템플릿 B안 ---- */
     .b_mod_percent .title{display: none}
+	.c_mod_summary .cont_wrap .cont_txt{font-size: 2rem}
 	.b_mod_percent .percent_wrap{transform: scale(1);;height: auto}
 	.b_mod_percent .percent_wrap > div{flex-direction: column !important;width: 50%;text-align: center !important;margin-bottom: 40px;font-size: 2rem}
 	.b_mod_percent .percent_wrap > div:nth-child(3),
@@ -5115,12 +5118,14 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
     .c_mod_welfare .welfare_wrap .slick-arrow.slick-prev{right: 30px}
     .c_mod_welfare .welfare_wrap .slide_wrap{width:calc(50% - 5px);padding-top: 0}
     .c_mod_welfare .welfare_wrap .slide_wrap + .slide_wrap{margin-left: 10px}
-    .c_mod_welfare .welfare_wrap #culture .tit:before,
-    .c_mod_welfare .welfare_wrap #welfare .tit:before{font-size: 1.8rem;margin-bottom: 0.5rem}
+    .c_mod_welfare .welfare_wrap #culture .item:before,
+    .c_mod_welfare .welfare_wrap #welfare .item:before{font-size: 1.8rem;margin-bottom: 0.5rem}
     .c_mod_welfare .welfare_wrap .item .tit{font-size: 1.6rem;margin-bottom: .5rem}
     .c_mod_welfare .welfare_wrap .item .desc{font-size: 1.4rem;margin-bottom: 2rem}
     .c_mod_welfare .welfare_wrap .item .img img{max-height: 50px}
-    
+	.c_mod_welfare .welfare_wrap #culture .item{background-position: right 2rem bottom 2rem;background-size: 100px}
+    .c_mod_welfare .welfare_wrap #welfare .item{background-position: right 2rem bottom 2rem;background-size: 100px}
+	
     /* 인재상 */
     .c_mod_talent .talent_wrap{background-image: none;padding: 2rem}
     .c_mod_talent .talent_wrap .item{width: 100%;}
@@ -5140,7 +5145,7 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
     .c_mod_strategy .guide_wrap .item .a,
     .c_mod_strategy .interview_tip .item .a{font-size: 1.6rem;width: 100%;padding-left: 0}
     
-    .c_mod_strategy .rq_cont{padding: 2rem;display: block;}
+    .c_mod_strategy .rq_cont{padding: 2rem;display: block;background-size: 70px;background-position: right 2rem bottom 2rem}
     .c_mod_strategy .rq_tit{width: 100%;margin-bottom: 1rem;font-size: 2rem}
     .c_mod_strategy .rq_tit br{display: none}
     .c_mod_strategy .rq_text{width: 100%;}
