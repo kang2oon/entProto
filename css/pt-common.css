@@ -577,10 +577,10 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .b_mod_emp .lastEmployeeState{margin-top: 4rem}
 
 /* 기업문화 & 복리후생 */
-.b_mod_welfare .b_mod_welfare_slide #Culture .item .img{display: flex;justify-content: center;align-items: center;}
+.b_mod_welfare .b_mod_welfare_slide #Culture .item .img{display: flex;justify-content: center;align-items: center;margin: 0 0 1rem 0}
 .b_mod_welfare .b_mod_welfare_slide #Culture .item .txt{text-align: center}
-.b_mod_welfare .b_mod_welfare_slide #Culture .item .txt .tit{font-size: 2.2rem;color: #3660b7;letter-spacing: 2px;margin:1rem 0}
-.b_mod_welfare .b_mod_welfare_slide #Culture .item .txt .desc{font-size: 1.7rem;letter-spacing: -0.5px;word-break: keep-all}
+.b_mod_welfare .b_mod_welfare_slide #Culture .item .txt .tit{font-size: 2.2rem;color: #3660b7;letter-spacing: 2px;}
+.b_mod_welfare .b_mod_welfare_slide #Culture .item .txt .desc{font-size: 1.7rem;letter-spacing: -0.5px;word-break: keep-all;margin: 1rem 0 0 0}
 
 .b_mod_welfare .b_mod_welfare_slide #Culture.little_item{display: flex;justify-content: space-between}
 .b_mod_welfare .b_mod_welfare_slide #Culture.little_item .item{flex: 1 1 ;margin-right: 30px}
@@ -588,7 +588,7 @@ caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden}
 .b_mod_welfare .b_mod_welfare_slide #Culture.many_item .slick-slide > div{display: flex;}
 .b_mod_welfare .b_mod_welfare_slide #Culture.many_item  .item{margin: 20px }
 .b_mod_welfare .welfare + .welfare {margin-top: 9rem}
-.b_mod_welfare #welfare .item{background: #ddd;height: 100%;padding: 4rem 9rem;display: flex !important;flex-direction: column;color: #fff;text-align: center;border-radius: 100px}
+.b_mod_welfare #welfare .item{background: #ddd;height: 100%;padding: 4rem 3rem;display: flex !important;flex-direction: column;color: #fff;text-align: center;border-radius: 100px}
 .b_mod_welfare #welfare .item .tit{font-size: 2rem;font-weight: bold;margin-bottom: 1rem}
 .b_mod_welfare #welfare .slick-track{display: flex;}
 .b_mod_welfare #welfare .slick-list {margin: 0 - 5px}
@@ -4899,6 +4899,14 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
 	.a_mod_product .product .item h4{font-size: 1.8rem}
 	.a_mod_product .product .item p{font-size: 1.6rem}
 	
+	/*기업인증*/
+	.a_mod_cert .cert_wrap {flex-wrap: wrap !important}
+	.a_mod_cert .cert_wrap .item{width: calc(50% - 10px) !important;margin-right: 20px;margin-top: 20px !important}
+	.a_mod_cert .cert_wrap .item:nth-child(1),
+	.a_mod_cert .cert_wrap .item:nth-child(2){margin-top: 0 !important}
+	.a_mod_cert .cert_wrap .item:nth-child(2n){margin-right: 0}
+	.a_mod_cert .cert_wrap .item:nth-child(4n){margin-right: auto;}
+	
 	/* 재무정보 */
 	.a_mod_finance02 .finance_wrap .conts_wrap{flex-wrap: wrap;}
 	.a_mod_finance02 .finance_wrap .conts_wrap > div{width: calc(50% - 5px);margin-right: 10px;margin-top: 20px}
@@ -4999,6 +5007,11 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
     .b_mod_product .product .item{width: calc(33.333% - 10px);margin-right: 15px;margin-top: 3rem}
     .b_mod_product .product .item:nth-child(3n){margin-right: 0}
     .b_mod_product .product .item:nth-child(4n){margin-top: auto;margin-right: auto}
+	
+	.b_mod_biz .bizDiv {flex-wrap: wrap}
+	.b_mod_biz .bizDiv .item{padding: 2rem;width: calc(50% - 5px);margin-right: 10px;flex:initial;margin-bottom: 10px}
+	.b_mod_biz .bizDiv .item:last-child{margin-bottom: 0}
+	.b_mod_biz .bizDiv .item:nth-child(2n){margin-right: 0;}
     
     /* 복리후생 */
     .b_dot.slick-dots{margin-top: 2rem}
@@ -5015,9 +5028,10 @@ font-size:14px;color:#fff;background:rgba(0,0,58,.85);padding:40px 20px;
     .b_mod_interview .iv_wrap .ivSlide{padding: 0 4rem }
     
     /* 인재상 */
-    .b_mod_talent .talent_wrap{display: block;}
-    .b_mod_talent .talent_wrap .item{margin-right: 0;margin-bottom: 4rem}
-    .b_mod_talent .talent_wrap .item .img{max-width: 130px;margin: 0 auto 1.5rem auto}
+    .b_mod_talent .talent_wrap{flex-wrap: wrap;}
+    .b_mod_talent .talent_wrap .item{width: calc(50% - 10px); margin-right: 20px;margin-bottom: 4rem;flex: initial}
+	.b_mod_talent .talent_wrap .item:nth-child(2n){margin-right: 0}
+    .b_mod_talent .talent_wrap .item .img{max-width: 130px;height: 130px;margin: 0 auto 1.5rem auto}
     .b_mod_talent .talent_wrap .item:last-child{margin-bottom: 0}
     .b_mod_talent .talent_wrap .item .tit{font-size: 2rem;margin-bottom: 1rem}
     .b_mod_talent .talent_wrap .item .desc{font-size: 1.8rem}
